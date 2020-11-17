@@ -1,0 +1,1538 @@
+Version=6
+GlobalVars ~{
+    MS_Begin_FirstOk ~{
+        Type=Integer
+        Value=0
+    }
+    MS_Begin_GoSB ~{
+        Type=Integer
+        Value=0
+    }
+}
+GlobalCode=
+LocalVars ~{
+    vSBId ~{
+        Type=Integer
+        Value=0
+    }
+    tStart ~{
+        Type=Integer
+        Value=1
+    }
+    dGoodsQuestBegin ~{
+        Type=Integer
+        Value=0
+    }
+    dFlyQuestBegin ~{
+        Type=Integer
+        Value=0
+    }
+    dGoodsQuestEnd ~{
+        Type=Integer
+        Value=0
+    }
+    dGoodsQuestSell ~{
+        Type=Integer
+        Value=0
+    }
+    dAsteroidQuestBegin ~{
+        Type=Integer
+        Value=0
+    }
+    dJumpQuestBegin ~{
+        Type=Integer
+        Value=0
+    }
+    dKillQuestBegin ~{
+        Type=Integer
+        Value=0
+    }
+    dKillQuestTalkOk ~{
+        Type=Integer
+        Value=0
+    }
+    dKillQuestPartnerOk ~{
+        Type=Integer
+        Value=0
+    }
+    dKillQuestTurn ~{
+        Type=Integer
+        Value=0
+    }
+    vInitOk ~{
+        Type=Integer
+        Value=0
+    }
+    dFakeAsteroidQuestBegin ~{
+        Type=Integer
+        Value=0
+    }
+    roll ~{
+        Type=Integer
+        Value=0
+    }
+    ast_damaged ~{
+        Type=Integer
+        Value=0
+    }
+    counter ~{
+        Type=Integer
+        Value=0
+    }
+    playerStar ~{
+        Type=Dword
+        Value=0
+    }
+    playerPlanet ~{
+        Type=Dword
+        Value=0
+    }
+    otherPlanet ~{
+        Type=Dword
+        Value=0
+    }
+    PlanetNone ~{
+        Type=Dword
+        Value=0
+    }
+    Star2 ~{
+        Type=Dword
+        Value=1
+    }
+    Planet2 ~{
+        Type=Dword
+        Value=0
+    }
+    PlaceEA ~{
+        Type=Dword
+        Value=0
+    }
+    P1 ~{
+        Type=Dword
+        Value=0
+    }
+    P3 ~{
+        Type=Dword
+        Value=0
+    }
+    P4 ~{
+        Type=Dword
+        Value=0
+    }
+    P5 ~{
+        Type=Dword
+        Value=0
+    }
+    PWait ~{
+        Type=Dword
+        Value=0
+    }
+    P2 ~{
+        Type=Dword
+        Value=0
+    }
+    P6 ~{
+        Type=Dword
+        Value=0
+    }
+    P7 ~{
+        Type=Dword
+        Value=0
+    }
+    P8 ~{
+        Type=Dword
+        Value=0
+    }
+    ItemEA ~{
+        Type=Dword
+        Value=0
+    }
+    grRC ~{
+        Type=Dword
+        Value=0
+    }
+    grSB ~{
+        Type=Dword
+        Value=1
+    }
+    grMC ~{
+        Type=Dword
+        Value=2
+    }
+    grDron ~{
+        Type=Dword
+        Value=3
+    }
+    grPlayer ~{
+        Type=Dword
+        Value=4
+    }
+    grPartner ~{
+        Type=Dword
+        Value=5
+    }
+    FakeAsteroid ~{
+        Type=Dword
+        Value=6
+    }
+    dRC ~{
+        Type=Dword
+        Value=0
+    }
+    dPlanetPlayer ~{
+        Type=Dword
+        Value=1
+    }
+    dMC ~{
+        Type=Dword
+        Value=2
+    }
+    dPlanetOther ~{
+        Type=Dword
+        Value=3
+    }
+    dPlanet2 ~{
+        Type=Dword
+        Value=4
+    }
+    dDron ~{
+        Type=Dword
+        Value=5
+    }
+    dPartner ~{
+        Type=Dword
+        Value=6
+    }
+}
+Constellations=0
+Stars ~{
+    playerStar ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=False
+        NoComeKling=True
+        StarLinks ~{
+        }
+        Planets ~{
+            playerPlanet ~{
+                Race=Maloc,Peleng,People,Fei,Gaal
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Economy=Agriculture,Industrial,Mixed
+                Government=Anarchy,Dictatorship,Monarchy,Republic,Democracy
+                Range=0..100
+                Dialog=dPlanetPlayer
+            }
+            otherPlanet ~{
+                Race=Use,Maloc,Peleng,People,Fei,Gaal
+                Owner=Use,Maloc,Peleng,People,Fei,Gaal
+                Economy=Agriculture,Industrial,Mixed
+                Government=Anarchy,Dictatorship,Monarchy,Republic,Democracy
+                Range=0..100
+                Dialog=dPlanetOther
+            }
+            PlanetNone ~{
+                Race=Maloc,Peleng,People,Fei,Gaal
+                Owner=Use,None
+                Economy=Agriculture,Industrial,Mixed
+                Government=Anarchy,Dictatorship,Monarchy,Republic,Democracy
+                Range=0..100
+                Dialog=
+            }
+        }
+        Ships ~{
+            0 ~{
+                Count=1
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+                IsPlayer=True
+                Speed=0..10000
+                Weapon=Undef
+                CargoHook=0
+                EmptySpace=0
+                Rating=0..1000
+                Status ~{
+                    Trader=0..100
+                    Warrior=0..100
+                    Pirate=0..100
+                }
+                Score=0..1000000
+                Strength=0.0..0.0
+                Ruins=
+            }
+        }
+    }
+    Star2 ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=True
+        NoComeKling=True
+        StarLinks ~{
+            0 ~{
+                EndStar=playerStar (0)
+                Angle=270
+                Distance=0..30
+                Relation=0..100
+                Deviation=25
+                IsHole=False
+            }
+        }
+        Planets ~{
+            Planet2 ~{
+                Race=Use,Maloc,Peleng,People,Fei,Gaal
+                Owner=Use,Maloc,Peleng,People,Fei,Gaal
+                Economy=Agriculture,Industrial,Mixed
+                Government=Anarchy,Dictatorship,Monarchy,Republic,Democracy
+                Range=0..100
+                Dialog=dPlanet2
+            }
+        }
+        Ships ~{
+        }
+    }
+}
+Places ~{
+    PlaceEA ~{
+        Star=playerStar
+        Type=NearPlanet
+        Object=playerPlanet
+        Radius=400
+    }
+    P1 ~{
+        Star=Star2
+        Type=Free
+        Angle=0.0
+        Distance=0.20000000298023224
+        Radius=300
+    }
+    P3 ~{
+        Star=Star2
+        Type=Free
+        Angle=90.0
+        Distance=0.20000000298023224
+        Radius=300
+    }
+    P4 ~{
+        Star=Star2
+        Type=Free
+        Angle=135.0
+        Distance=0.20000000298023224
+        Radius=300
+    }
+    P5 ~{
+        Star=Star2
+        Type=Free
+        Angle=180.0
+        Distance=0.20000000298023224
+        Radius=300
+    }
+    PWait ~{
+        Star=Star2
+        Type=NearPlanet
+        Object=Planet2
+        Radius=300
+    }
+    P2 ~{
+        Star=Star2
+        Type=Free
+        Angle=45.0
+        Distance=0.20000000298023224
+        Radius=300
+    }
+    P6 ~{
+        Star=Star2
+        Type=Free
+        Angle=225.0
+        Distance=0.20000000298023224
+        Radius=300
+    }
+    P7 ~{
+        Star=Star2
+        Type=Free
+        Angle=270.0
+        Distance=0.20000000298023224
+        Radius=300
+    }
+    P8 ~{
+        Star=Star2
+        Type=Free
+        Angle=315.0
+        Distance=0.20000000298023224
+        Radius=300
+    }
+}
+Items ~{
+    ItemEA ~{
+        Place=
+        Class=Unknown
+        Type=0
+        Size=10
+        Level=1
+        Radius=150
+        Owner=None
+        Useless=
+    }
+}
+Groups ~{
+    grRC ~{
+        Planet=playerPlanet
+        State=0(stNone)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Use
+        Count=1..1
+        Speed=0..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=False
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=dRC
+        Strength=0.0..0.0
+        Ruins=RC
+    }
+    grSB ~{
+        Planet=playerPlanet
+        State=0(stNone)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Use
+        Count=1..1
+        Speed=0..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=False
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=SB
+    }
+    grMC ~{
+        Planet=playerPlanet
+        State=0(stNone)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Use
+        Count=1..1
+        Speed=0..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=False
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=dMC
+        Strength=0.0..0.0
+        Ruins=MC
+    }
+    grDron ~{
+        Planet=Planet2
+        State=1(Landing)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Use,Tranclucator
+        Count=0..0
+        Speed=0..10000
+        Weapon=Yes
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=False
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=0
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+    grPlayer ~{
+        Planet=playerPlanet
+        State=0(stNone)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+        Count=1..1
+        Speed=0..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=True
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+    grPartner ~{
+        Planet=Planet2
+        State=7(PartnerLanding)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Use,Ranger
+        Count=1..1
+        Speed=0..10000
+        Weapon=Yes
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=False
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=0
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+    FakeAsteroid ~{
+        Planet=PlanetNone
+        State=14(AsteroidWait)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Use,Tranclucator
+        Count=0..0
+        Speed=100..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=False
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+}
+GroupLinks ~{
+}
+InitCode=<<<
+  vSBId=Id(GroupToShip(grSB));
+  ShipOut(GroupToShip(grSB));
+  tStart=CurTurn();
+>>>
+TurnCode=<<<
+  if(!TipsState(5) && (GetShipPlanet(Player())==playerPlanet) && dFlyQuestBegin) {
+    Tips(5);
+  }
+  if(!TipsState(13) && GetShipPlanet(Player()) && (ShipStar(Player())!=playerStar) && dJumpQuestBegin) {
+    Tips(13);
+  }
+  if(!TipsState(3) && ShipInNormalSpace(Player()) && dFlyQuestBegin) {
+    Tips(3);
+    Tips(4);
+  }
+  if(!ShipInStar(Player(),Star2) && dKillQuestBegin) {
+    ShipOut(GroupToShip(grPartner));
+    ShipOut(GroupToShip(grDron));
+  }
+  if(!TipsState(8) && ShipInNormalSpace(Player()) && (dAsteroidQuestBegin || dFakeAsteroidQuestBegin)) {
+    Tips(8);
+    Tips(9);
+  }
+  if(!TipsState(12) && ShipInNormalSpace(Player()) && dJumpQuestBegin) {
+    Tips(12);
+  }
+  if((dKillQuestBegin && ((CurTurn()-dKillQuestTurn)>=70)) || ((CurTurn()-tStart)>(365*2+100)) || MS_Begin_GoSB) {
+    ShipOut(GroupToShip(grRC));
+    ShipOut(GroupToShip(grMC));
+    ShipOut(GroupToShip(grPlayer));
+    ShipDestroy(GroupToShip(grDron));
+    ShipDestroy(GroupToShip(FakeAsteroid));
+    ShipOut(GroupToShip(grPartner));
+    EtherIdDelete('7B7EC91E-40D2-43A8-9DCC-085A81303549');
+  }
+  if(!TipsState(10) && ShipInNormalSpace(Player()) && (ShipStar(Player())==playerStar) && dAsteroidQuestBegin && !dFakeAsteroidQuestBegin && !ItemExist(ItemEA)) {
+    Tips(10);
+    Tips(11);
+  }
+  if(dFakeAsteroidQuestBegin) {
+    if(ast_damaged==1) {
+      ast_damaged=2;
+      Ether(3,'61B80EE9-9EFF-4863-BFEC-7E14D13E7B1A',Format(CT("Script.MS_Begin.75"),"<0>",ShipName(Player())));
+    }
+    if(!ast_damaged) {
+      if(!GroupCount(FakeAsteroid)) {
+        ast_damaged=1;
+      }
+      if(GroupCount(FakeAsteroid)) {
+        if(HullDamage(GroupToShip(FakeAsteroid))) {
+          ast_damaged=1;
+        }
+      }
+    }
+  }
+  if(GroupCount(FakeAsteroid)) {
+    if(ast_damaged) {
+      if(!ShipInNormalSpace(GroupToShip(FakeAsteroid))) {
+        TransferShip(GroupToShip(FakeAsteroid),PlanetNone);
+        OrderNone(GroupToShip(FakeAsteroid));
+        ShipDestroy(GroupToShip(FakeAsteroid));
+      }
+      if(ShipInNormalSpace(GroupToShip(FakeAsteroid))) {
+        if(StarRuins(playerStar,'SB')) {
+          OrderLanding(GroupToShip(FakeAsteroid),StarRuins(playerStar,'SB'),1);
+        }
+        if(!StarRuins(playerStar,'SB')) {
+          OrderLanding(GroupToShip(FakeAsteroid),PlanetNone,1);
+        }
+      }
+    }
+  }
+  if(dGoodsQuestBegin && !dGoodsQuestSell) {
+    PlanetSetGoods(otherPlanet,1,0);
+  }
+  if(dGoodsQuestBegin && dGoodsQuestSell && !dGoodsQuestEnd && ShipInNormalSpace(Player())) {
+    dGoodsQuestEnd=1;
+  }
+  if(dGoodsQuestBegin && !dGoodsQuestEnd) {
+    if (!dGoodsQuestSell){
+    counter=GalaxyEvents()-1;
+    while (counter>=0){
+    if (GalaxyEventDate(counter)>dGoodsQuestBegin){
+    if (GalaxyEventType(counter)=='PlayerSellsGoodsToPlanet'){
+    if (GalaxyEventData(counter,0)==t_Medicine){
+    if (GalaxyEventData(counter,3)==Id(otherPlanet)){
+    dGoodsQuestSell=1;}}}}
+    counter=counter-1;}
+    }
+  }
+>>>
+DialogBegin=
+States ~{
+    stNone ~{
+        Type=Free
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=
+    }
+    Landing ~{
+        Type=Landing
+        Object=Planet2
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=<<<
+            if(dKillQuestBegin) {
+              ChangeState(6);
+              exit;
+            }
+        >>>
+    }
+    StateP1 ~{
+        Type=Move
+        Object=P1
+        Attack ~{
+            0=grPlayer
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=dDron
+        InMsg=dDron
+        Ether=
+        Code=<<<
+            if(EndState) {
+              ChangeState(10);
+              exit;
+            }
+        >>>
+    }
+    StateP6 ~{
+        Type=Move
+        Object=P6
+        Attack ~{
+            0=grPlayer
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=dDron
+        InMsg=dDron
+        Ether=
+        Code=<<<
+            if(EndState) {
+              ChangeState(4);
+              exit;
+            }
+        >>>
+    }
+    StateP7 ~{
+        Type=Move
+        Object=P7
+        Attack ~{
+            0=grPlayer
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=dDron
+        InMsg=dDron
+        Ether=
+        Code=<<<
+            if(EndState) {
+              ChangeState(5);
+              exit;
+            }
+        >>>
+    }
+    StateP8 ~{
+        Type=Move
+        Object=P8
+        Attack ~{
+            0=grPlayer
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=dDron
+        InMsg=dDron
+        Ether=
+        Code=<<<
+            if(EndState) {
+              ChangeState(2);
+              exit;
+            }
+        >>>
+    }
+    StateWait ~{
+        Type=Move
+        Object=PWait
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=dDron
+        InMsg=dDron
+        Ether=
+        Code=<<<
+            if(!dKillQuestTalkOk) {
+              Dialog(dDron,grDron);
+            }
+            if(dKillQuestTalkOk) {
+              ChangeState(2);
+              exit;
+            }
+        >>>
+    }
+    PartnerLanding ~{
+        Type=Landing
+        Object=Planet2
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=<<<
+            if(dKillQuestBegin) {
+              NoTargetToShip(CurShip,2);
+              ChangeState(8);
+              exit;
+            }
+        >>>
+    }
+    StateFollow ~{
+        Type=Follow
+        Object=grPlayer
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=dPartner
+        InMsg=dPartner
+        Ether=
+        Code=<<<
+            if(!dKillQuestPartnerOk && !CountIn(grDron,Star2)) {
+              Dialog(dPartner,grPartner);
+            }
+            if(dKillQuestPartnerOk) {
+              ChangeState(9);
+              exit;
+            }
+        >>>
+    }
+    StateJump ~{
+        Type=Jump
+        Object=playerStar
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=<<<
+            if(EndState) {
+              NoTargetToShip(CurShip,0);
+              ShipOut();
+            }
+        >>>
+    }
+    StateP2 ~{
+        Type=Move
+        Object=P2
+        Attack ~{
+            0=grPlayer
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=dDron
+        InMsg=dDron
+        Ether=
+        Code=<<<
+            if(EndState) {
+              ChangeState(11);
+              exit;
+            }
+        >>>
+    }
+    StateP3 ~{
+        Type=Move
+        Object=P3
+        Attack ~{
+            0=grPlayer
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=dDron
+        InMsg=dDron
+        Ether=
+        Code=<<<
+            if(EndState) {
+              ChangeState(12);
+              exit;
+            }
+        >>>
+    }
+    StateP4 ~{
+        Type=Move
+        Object=P4
+        Attack ~{
+            0=grPlayer
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=dDron
+        InMsg=dDron
+        Ether=
+        Code=<<<
+            if(EndState) {
+              ChangeState(13);
+              exit;
+            }
+        >>>
+    }
+    StateP5 ~{
+        Type=Move
+        Object=P5
+        Attack ~{
+            0=grPlayer
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=dDron
+        InMsg=dDron
+        Ether=
+        Code=<<<
+            if(EndState) {
+              ChangeState(3);
+              exit;
+            }
+        >>>
+    }
+    AsteroidWait ~{
+        Type=None
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=
+    }
+}
+Dialogs ~{
+    dRC ~{
+        Code=<<<
+            SkipGreeting();
+            if(MS_Begin_FirstOk==0) {
+              DChange(0);
+              exit;
+            }
+            if(MS_Begin_FirstOk==1) {
+              DChange(1);
+              exit;
+            }
+        >>>
+    }
+    dPlanetPlayer ~{
+        Code=<<<
+            SkipGreeting();
+            if(dFlyQuestBegin && !dGoodsQuestEnd && !dGoodsQuestSell) {
+              if(!dGoodsQuestBegin) {
+                if (!GroupCount(grMC)){
+                if (StarRuins(playerStar,'MC')){ShipJoin(grMC,StarRuins(playerStar,'MC'));}
+                if (!StarRuins(playerStar,'MC')){ShipJoin(grMC,BuildRuins(playerStar,t_MC));}
+                }
+                if(!vInitOk) {
+                  //DecayGoods(playerPlanet,2);
+                  UpsurgeGoods(otherPlanet,2);
+                  PlanetSetGoods(otherPlanet,2,30);
+                  AddPlanetNews(Format(CT("Script.MS_Begin.38"),"<0>",Name(otherPlanet),"<1>",Name(playerStar)));
+                  DecayGoods(otherPlanet,1);
+                  GoodsRuinsForBuy(GroupToShip(grMC),1);
+                  vInitOk=1;
+                }
+                DChange(5);
+                exit;
+              }
+              if(dGoodsQuestBegin) {
+                DChange(6);
+                exit;
+              }
+            }
+            if((dGoodsQuestEnd || dGoodsQuestSell) && !dJumpQuestBegin) {
+              dGoodsQuestEnd=1;
+              if(!dAsteroidQuestBegin) {
+                if(EtherState('615434EA-7C47-4E21-A930-064A05E6B102')==3) {
+                  Ether(4,'615434EA-7C47-4E21-A930-064A05E6B102',Format(CT("Script.MS_Begin.13"),"<0>",Name(GroupToShip(grMC)),"<1>",Name(otherPlanet),"<2>",Name(playerPlanet)),GroupToShip(grMC));
+                }
+                if(!dFakeAsteroidQuestBegin) {
+                  DChange(11);
+                  exit;
+                }
+                if(dFakeAsteroidQuestBegin) {
+                  if(ast_damaged) {
+                    if(EtherState('61B80EE9-9EFF-4863-BFEC-7E14D13E7B1A')==3) {
+                      Ether(4,'61B80EE9-9EFF-4863-BFEC-7E14D13E7B1A',Format(CT("Script.MS_Begin.75"),"<0>",ShipName(Player())));
+                    }
+                    DChange(27);
+                    exit;
+                  }
+                  if(!ast_damaged) {
+                    DChange(12);
+                    exit;
+                  }
+                }
+              }
+              if(dAsteroidQuestBegin) {
+                if(ItemExist(ItemEA)) {
+                  DChange(12);
+                  exit;
+                }
+                if(!ItemExist(ItemEA)) {
+                  if(EtherState('82CCC81B-B970-451E-ADB5-4500AC20A7EE')==3) {
+                    Ether(4,'82CCC81B-B970-451E-ADB5-4500AC20A7EE',Format(CT("Script.MS_Begin.14"),"<0>",Name(playerPlanet)));
+                  }
+                  DChange(13);
+                  exit;
+                }
+              }
+            }
+            if(dJumpQuestBegin && !dKillQuestBegin) {
+              DChange(14);
+              exit;
+            }
+            if(dKillQuestBegin) {
+              if(!CountIn(grDron,Star2)) {
+                if(EtherState('9D133C50-5A88-495A-8EBA-568FC460E6D4')==3) {
+                  Ether(4,'9D133C50-5A88-495A-8EBA-568FC460E6D4',Format(CT("Script.MS_Begin.55"),"<0>",Name(playerStar),"<1>",Name(playerPlanet)));
+                }
+                if(MS_Begin_GoSB!=1) {
+                  DChange(24);
+                  exit;
+                }
+              }
+            }
+        >>>
+    }
+    dMC ~{
+        Code=<<<
+            SkipGreeting();
+            if(dGoodsQuestBegin  && !dGoodsQuestEnd) {
+              if(!GoodsCount(Player(),1)) {
+                Tips(6);
+                DChange(7);
+                exit;
+              }
+              if(GoodsCount(Player(),1)) {
+                DChange(8);
+                exit;
+              }
+            }
+        >>>
+    }
+    dPlanetOther ~{
+        Code=<<<
+            SkipGreeting();
+            if(dGoodsQuestBegin && !dGoodsQuestEnd) {
+              if (!dGoodsQuestSell){
+              counter=GalaxyEvents()-1;
+              while (counter>=0){
+              if (GalaxyEventDate(counter)>dGoodsQuestBegin){
+              if (GalaxyEventType(counter)=='PlayerSellsGoodsToPlanet'){
+              if (GalaxyEventData(counter,0)==t_Medicine){
+              if (GalaxyEventData(counter,3)==Id(otherPlanet)){
+              dGoodsQuestSell=1;}}}}
+              counter=counter-1;}
+              }
+              //;
+              if(!dGoodsQuestSell) {
+                DChange(9);
+                exit;
+              }
+              if(dGoodsQuestSell) {
+                DChange(10);
+                exit;
+              }
+            }
+        >>>
+    }
+    dPlanet2 ~{
+        Code=<<<
+            SkipGreeting();
+            if(dJumpQuestBegin) {
+              if(ShipFuelLow(Player())) {
+                DChange(15);
+                exit;
+              }
+              if(!ShipFuelLow(Player())) {
+                if(!dKillQuestBegin) {
+                  if(EtherState('4F6C2F29-4A02-46E9-BF8B-467EC1EC4246')==3) {
+                    Ether(4,'4F6C2F29-4A02-46E9-BF8B-467EC1EC4246',Format(CT("Script.MS_Begin.15"),"<0>",Name(Star2),"<1>",Name(Planet2)));
+                  }
+                  DChange(16);
+                  exit;
+                }
+                if(dKillQuestBegin) {
+                  DChange(17);
+                  exit;
+                }
+              }
+            }
+        >>>
+    }
+    dDron ~{
+        Code=<<<
+            DChange(18);
+            exit;
+        >>>
+    }
+    dPartner ~{
+        Code=<<<
+            if(CountIn(grDron,Star2)) {
+              DChange(19);
+              exit;
+            }
+            if(!CountIn(grDron,Star2)) {
+              DChange(20);
+              exit;
+            }
+        >>>
+    }
+}
+DialogMsgs ~{
+    0 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Begin.64"),"<0>",ShortName(GroupToShip(grRC))));    DAdd(0);
+
+        >>>
+    }
+    1 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Begin.65"));    DAdd(1);
+            DAdd(2);
+
+        >>>
+    }
+    2 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Begin.81"),"<0>",ShortName(IdToShip(vSBId))));    DAdd(3);
+
+        >>>
+    }
+    3 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Begin.10"),"<0>",Name(playerPlanet)));    DAdd(4);
+
+        >>>
+    }
+    4 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Begin.9"),"<0>",ShortName(GroupToShip(grRC))));    DAdd(5);
+
+        >>>
+    }
+    5 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Begin.56"),"<0>",ShortName(GroupToShip(grMC)),"<1>",Name(otherPlanet)));    DAdd(6);
+
+        >>>
+    }
+    6 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Begin.17"),"<0>",Name(otherPlanet)));    DAdd(7);
+
+        >>>
+    }
+    7 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Begin.18"),"<0>",Name(otherPlanet)));    DAdd(8);
+
+        >>>
+    }
+    8 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Begin.19"),"<0>",Name(otherPlanet)));    DAdd(9);
+
+        >>>
+    }
+    9 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Begin.79"));    DAdd(10);
+
+        >>>
+    }
+    10 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Begin.21"),"<0>",Name(playerPlanet)));    DAdd(11);
+
+        >>>
+    }
+    11 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Begin.22"));    DAdd(12);
+
+        >>>
+    }
+    12 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Begin.23"));    DAdd(13);
+
+        >>>
+    }
+    13 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Begin.24"),"<0>",Name(Star2),"<1>",Name(Planet2)));    DAdd(14);
+
+        >>>
+    }
+    14 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Begin.25"),"<0>",Name(Star2),"<1>",Name(Planet2)));    DAdd(14);
+
+        >>>
+    }
+    15 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Begin.26"));    DAdd(15);
+
+        >>>
+    }
+    16 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Begin.59"),"<0>",Name(playerPlanet)));    DAdd(16);
+
+        >>>
+    }
+    17 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Begin.60"),"<0>",Name(playerPlanet)));    DAdd(16);
+
+        >>>
+    }
+    18 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Begin.61"));    DAdd(17);
+
+        >>>
+    }
+    19 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Begin.30"));    DAdd(18);
+
+        >>>
+    }
+    20 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Begin.63"));    DAdd(19);
+            DAdd(21);
+
+        >>>
+    }
+    21 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Begin.32"));    DAdd(20);
+
+        >>>
+    }
+    22 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Begin.33"));    DAdd(22);
+
+        >>>
+    }
+    23 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Begin.34"));    DAdd(23);
+
+        >>>
+    }
+    24 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Begin.35"));    DAdd(24);
+
+        >>>
+    }
+    25 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Begin.36"),"<0>",ShortName(IdToShip(vSBId))));    DAdd(25);
+
+        >>>
+    }
+    26 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Begin.80"));    DAdd(26);
+
+        >>>
+    }
+    27 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Begin.70"));    DAdd(27);
+
+        >>>
+    }
+    28 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Begin.77"));    dAsteroidQuestBegin=1;
+            dFakeAsteroidQuestBegin=0;
+            if(!ItemExist(ItemEA)) {
+              UselessItemCreate('ExampleAsteroid',ItemEA,PlaceEA);
+            }
+            DAdd(28);
+
+        >>>
+    }
+}
+DialogAnswers ~{
+    0 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Begin.78"));
+        Code=<<<
+            DChange(26);
+            exit;
+        >>>
+    }
+    1 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Begin.4"));
+        Code=<<<
+            MS_Begin_FirstOk=2;
+            dFlyQuestBegin=1;
+            Tips(0);
+            Tips(1);
+            Tips(2);
+            Ether(3,'1792236E-42D0-43A2-B7CB-01B3283560FF',Format(CT("Script.MS_Begin.12"),"<0>",Name(playerPlanet)));
+            DChange(3);
+            exit;
+        >>>
+    }
+    2 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Begin.5"));
+        Code=<<<
+            MS_Begin_GoSB=1;
+            Ether(3,'7B7EC91E-40D2-43A8-9DCC-085A81303549',Format(CT("Script.MS_Begin.6"),"<0>",ShortName(IdToShip(vSBId))),IdToShip(vSBId));
+            MS_Begin_FirstOk=2;
+            DChange(2);
+            exit;
+        >>>
+    }
+    3 ~{
+        Command=
+        Answer=DAnswer(Format(CT("Script.MS_Begin.7"),"<0>",ShortName(GroupToShip(grRC))));
+        Code=<<<
+            DChange(4);
+            exit;
+        >>>
+    }
+    4 ~{
+        Command=hangar
+        Answer=DAnswer('hangar~'+CT("Script.MS_Begin.11"));
+        Code=
+    }
+    5 ~{
+        Command=exit
+        Answer=DAnswer('exit');
+        Code=
+    }
+    6 ~{
+        Command=hangar
+        Answer=DAnswer('hangar~'+CT("Script.MS_Begin.37"));
+        Code=<<<
+            dGoodsQuestBegin=CurTurn();
+            Ether(3,'615434EA-7C47-4E21-A930-064A05E6B102',Format(CT("Script.MS_Begin.13"),"<0>",ShortName(GroupToShip(grMC)),"<1>",Name(otherPlanet),"<2>",Name(playerPlanet)),GroupToShip(grMC));
+            Ether(4,'1792236E-42D0-43A2-B7CB-01B3283560FF',Format(CT("Script.MS_Begin.12"),"<0>",Name(playerPlanet)));
+        >>>
+    }
+    7 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.MS_Begin.37"));
+        Code=
+    }
+    8 ~{
+        Command=goods
+        Answer=DAnswer('goods~'+CT("Script.MS_Begin.39"));
+        Code=<<<
+            if(!TipsState(7)) {
+              Tips(7);
+            }
+        >>>
+    }
+    9 ~{
+        Command=hangar
+        Answer=DAnswer('hangar~'+CT("Script.MS_Begin.40"));
+        Code=
+    }
+    10 ~{
+        Command=goods
+        Answer=DAnswer('goods~'+CT("Script.MS_Begin.41"));
+        Code=
+    }
+    11 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.MS_Begin.42"));
+        Code=<<<
+            dGoodsQuestEnd=1;
+        >>>
+    }
+    12 ~{
+        Command=hangar
+        Answer=DAnswer('hangar~'+CT("Script.MS_Begin.43"));
+        Code=<<<
+            roll=Rnd(1,100)%2;
+            Ether(3,'82CCC81B-B970-451E-ADB5-4500AC20A7EE',Format(CT("Script.MS_Begin.14"),"<0>",Name(playerPlanet)));
+            if(!roll) {
+              ShipJoin(FakeAsteroid,BuyTranclucator(playerPlanet));
+              SetName(GroupToShip(FakeAsteroid),CT("Script.MS_Begin.72"));
+              OrderLock(GroupToShip(FakeAsteroid),1);
+              NoDropToShip(GroupToShip(FakeAsteroid),1);
+              NoTalkToShip(GroupToShip(FakeAsteroid),1);
+              NoScanToShip(GroupToShip(FakeAsteroid),1);
+              Chameleon(GroupToShip(FakeAsteroid),'Ruins.ExampleAsteroid');
+              TransferShip(GroupToShip(FakeAsteroid),playerStar);
+              ShipSetCoords(GroupToShip(FakeAsteroid),CoordX(playerPlanet)+Rnd(-200,200),CoordY(playerPlanet)+Rnd(-200,200));
+              dFakeAsteroidQuestBegin=1;
+            }
+            if(roll) {
+              dAsteroidQuestBegin=1;
+              dFakeAsteroidQuestBegin=0;
+              if(!ItemExist(ItemEA)) {
+                UselessItemCreate('ExampleAsteroid',ItemEA,PlaceEA);
+              }
+            }
+        >>>
+    }
+    13 ~{
+        Command=hangar
+        Answer=DAnswer('hangar~'+CT("Script.MS_Begin.43"));
+        Code=
+    }
+    14 ~{
+        Command=hangar
+        Answer=DAnswer('hangar~'+CT("Script.MS_Begin.40"));
+        Code=<<<
+            dJumpQuestBegin=1;
+            if (RelationToRanger(Planet2,Player())<50){
+            RelationToRanger(Planet2,Player(),50);}
+            Ether(3,'4F6C2F29-4A02-46E9-BF8B-467EC1EC4246',Format(CT("Script.MS_Begin.15"),"<0>",Name(Star2),"<1>",Name(Planet2)));
+        >>>
+    }
+    15 ~{
+        Command=hangar
+        Answer=DAnswer('hangar~'+CT("Script.MS_Begin.44"));
+        Code=
+    }
+    16 ~{
+        Command=hangar
+        Answer=DAnswer('hangar~'+CT("Script.MS_Begin.45"));
+        Code=<<<
+            if (!dKillQuestBegin){
+            ShipJoin(grDron,BuyTranclucator(Planet2));
+            SetName(GroupToShip(grDron),CT("Script.MS_Begin.58"));}
+            dKillQuestBegin=1;
+            dKillQuestTurn=CurTurn();
+            Ether(3,'9D133C50-5A88-495A-8EBA-568FC460E6D4',Format(CT("Script.MS_Begin.55"),"<0>",Name(playerStar),"<1>",Name(playerPlanet)),GroupToShip(grDron));
+        >>>
+    }
+    17 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Begin.62"));
+        Code=<<<
+            dKillQuestTalkOk=1;
+            Tips(14);
+            Tips(15);
+            Tips(16);
+        >>>
+    }
+    18 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Begin.48"));
+        Code=
+    }
+    19 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Begin.49"));
+        Code=<<<
+            DChange(21);
+            exit;
+        >>>
+    }
+    20 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+Format(CT("Script.MS_Begin.50"),"<0>",Name(playerStar)));
+        Code=<<<
+            ShipSetPartner(GroupToShip(grPartner),Player(),365);
+            dKillQuestPartnerOk=1;
+            Tips(17);
+        >>>
+    }
+    21 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Begin.51"));
+        Code=<<<
+            DChange(22);
+            exit;
+        >>>
+    }
+    22 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Begin.52"));
+        Code=<<<
+            DChange(23);
+            exit;
+        >>>
+    }
+    23 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+Format(CT("Script.MS_Begin.50"),"<0>",Name(playerStar)));
+        Code=<<<
+            dKillQuestPartnerOk=1;
+            Tips(17);
+            ShipSetPartner(GroupToShip(grPartner),Player(),365*2);
+        >>>
+    }
+    24 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Begin.53"));
+        Code=<<<
+            DChange(25);
+            exit;
+        >>>
+    }
+    25 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+Format(CT("Script.MS_Begin.54"),"<0>",ShortName(IdToShip(vSBId))));
+        Code=<<<
+            MS_Begin_GoSB=1;
+            Ether(3,'7B7EC91E-40D2-43A8-9DCC-085A81303549',Format(CT("Script.MS_Begin.6"),"<0>",ShortName(IdToShip(vSBId))),IdToShip(vSBId));
+        >>>
+    }
+    26 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Begin.73"));
+        Code=<<<
+            MS_Begin_FirstOk=1;
+            DChange(1);
+            exit;
+        >>>
+    }
+    27 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Begin.74"));
+        Code=<<<
+            DChange(28);
+            exit;
+        >>>
+    }
+    28 ~{
+        Command=hangar
+        Answer=DAnswer('hangar~'+CT("Script.MS_Begin.40"));
+        Code=
+    }
+}

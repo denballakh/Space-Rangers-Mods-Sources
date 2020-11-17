@@ -1,0 +1,375 @@
+Version=6
+GlobalVars ~{
+}
+GlobalCode=
+LocalVars ~{
+    counter ~{
+        Type=Integer
+        Value=0
+    }
+    PB_status ~{
+        Type=Integer
+        Value=0
+    }
+    script_num ~{
+        Type=Integer
+        Value=0
+    }
+    max_days ~{
+        Type=Integer
+        Value=90
+    }
+    locations ~{
+        Type=Unknown
+        Value=None
+    }
+    quest_star ~{
+        Type=Dword
+        Value=0
+    }
+    quest_planet ~{
+        Type=Dword
+        Value=0
+    }
+    quest_started ~{
+        Type=Integer
+        Value=0
+    }
+    pb_start_text ~{
+        Type=String
+        Value=
+    }
+    pb_win_text ~{
+        Type=String
+        Value=
+    }
+    pb_lose_text ~{
+        Type=String
+        Value=
+    }
+    script_replace ~{
+        Type=Integer
+        Value=0
+    }
+    robots_location ~{
+        Type=String
+        Value=
+    }
+    pb_params ~{
+        Type=String
+        Value=
+    }
+    quest_failed ~{
+        Type=Integer
+        Value=0
+    }
+    StarNew ~{
+        Type=Dword
+        Value=0
+    }
+    PlanetNew ~{
+        Type=Dword
+        Value=0
+    }
+    GroupNew ~{
+        Type=Dword
+        Value=0
+    }
+    DialogPlanet ~{
+        Type=Dword
+        Value=0
+    }
+    DialogPlanetCancel ~{
+        Type=Dword
+        Value=1
+    }
+    DialogReplace ~{
+        Type=Dword
+        Value=2
+    }
+    DialogPlanetComplete ~{
+        Type=Dword
+        Value=3
+    }
+}
+Constellations=0
+Stars ~{
+    StarNew ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=False
+        NoComeKling=False
+        StarLinks ~{
+        }
+        Planets ~{
+            PlanetNew ~{
+                Race=Maloc,Peleng,People,Fei,Gaal
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Economy=Agriculture,Industrial,Mixed
+                Government=Anarchy,Dictatorship,Monarchy,Republic,Democracy
+                Range=0..100
+                Dialog=
+            }
+        }
+        Ships ~{
+            0 ~{
+                Count=1
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+                IsPlayer=True
+                Speed=0..10000
+                Weapon=Undef
+                CargoHook=0
+                EmptySpace=0
+                Rating=0..1000
+                Status ~{
+                    Trader=0..100
+                    Warrior=0..100
+                    Pirate=0..100
+                }
+                Score=0..1000000
+                Strength=0.0..0.0
+                Ruins=
+            }
+        }
+    }
+}
+Places ~{
+}
+Items ~{
+}
+Groups ~{
+    GroupNew ~{
+        Planet=PlanetNew
+        State=0(StateNew)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+        Count=1..1
+        Speed=100..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=True
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+}
+GroupLinks ~{
+}
+InitCode=<<<
+  locations=newarray(1);
+  counter=1;
+  while (counter<ArrayDim(array_script_names)){
+  if (array_chosen_planets[counter]==Id(PlanetNew)){script_num=counter;}
+  counter=counter+1;}
+>>>
+TurnCode=<<<
+  if (!quest_started && ShipIsTakeoff(Player())){
+  ShipOut(Player());}
+  if(GetShipPlanet(Player())) {
+    if(Id(GetShipPlanet(Player()))==quest_planet) {
+      if(!PB_status && !quest_failed && !GRobotStatus) {
+        pb_start_text=Format(CT("Script.PC_pla20.90"),"<0>",Name(IdToPlanet(quest_planet)));
+        pb_win_text=CT("Script.PC_pla20.89");
+        pb_lose_text=CT("Script.PC_pla20.88");
+        if(RobotSupport()) {
+          pb_params='62';//race and no bonuses
+          pb_params=pb_params+1;//diff
+          robots_location=CT("Script.PC_pla20.95")+Name(IdToPlanet(quest_planet))+CT("Script.PC_pla20.94")+Name(PlanetToStar(IdToPlanet(quest_planet)));
+          StartRobots('Sanatory.cmap',pb_start_text,pb_win_text,pb_lose_text,robots_location,pb_params);
+          PB_status=1;
+        }
+        if(!RobotSupport()) {
+          PB_status=1;
+          GRobotStatus=3;
+        }
+      }
+    }
+  }
+  if((PB_status==1) && (GRobotStatus>1)) {
+    PB_status=GRobotStatus;
+    GRobotStatus=0;
+    if(PB_status==3) {
+      array_quest_statuses[script_num]=3;
+      ShipOut(Player());
+      ExtremalTakeOff();
+      Ether(5,'1264A558-3760-486E-8683-4020423D1DD0',Format(CT("Script.PC_pla20.93"),"<0>",Name(PlanetNew)));
+    }
+    if(PB_status==2) {
+      Ether(0,'044BC606-48F3-46B5-B01F-7368FC24859F',Format(CT("Script.PC_pla20.92"),"<0>",Name(PlanetNew),"<1>",Name(StarNew)));
+    }
+  }
+  if(quest_started && !quest_failed && !PB_status && ((CurTurn()-quest_started)>max_days)) {
+    array_quest_statuses[script_num]=3;
+    ShipOut(Player());
+    Ether(5,'1264A558-3760-486E-8683-4020423D1DD0',Format(CT("Script.PC_pla20.91"),"<0>",Name(PlanetNew)));
+  }
+>>>
+DialogBegin=<<<
+  if(GetShipPlanet(Player())==PlanetNew) {
+    if(request_dialog && !script_replace) {
+      request_dialog=0;
+      counter=1;
+      quest_star=0;
+      while (counter<GalaxyStars()){
+      if (StarOwner(StarNearbyStars(StarNew,counter))==1){
+      if (!StarBattle(StarNearbyStars(StarNew,counter))){
+      if (StarShips(StarNearbyStars(StarNew,counter))>8){
+      if (SectorVisible(StarToCon(StarNearbyStars(StarNew,counter)))){
+      if (!Terron()){quest_star=StarNearbyStars(StarNew,counter);counter=GalaxyStars();}
+      if (Terron()){
+      if (StarNearbyStars(StarNew,counter)!=ShipStar(Terron())){
+      quest_star=StarNearbyStars(StarNew,counter);counter=GalaxyStars();}}
+      }}}}
+      counter=counter+1;}
+      if(!RobotSupport()) {
+        //replace
+        AddDialogOverride('DialogReplace',10);
+      }
+      if(RobotSupport()) {
+        if(!quest_star) {
+          if(DomiksDefeated()) {
+            if(!ControlledSystems(1)) {
+              //replace
+              AddDialogOverride('DialogReplace',10);
+            }
+            if(ControlledSystems(1)) {
+              AddDialogOverride('DialogPlanetCancel',10);
+            }
+          }
+          if(!DomiksDefeated()) {
+            AddDialogOverride('DialogPlanetCancel',10);
+          }
+        }
+        if(quest_star) {
+          quest_planet=Id(FindPlanet(quest_star,'NotMaloc,NotPeleng,NotPeople,NotFei,NotGaal,NotKling,NotPirateClan',0,100));
+          quest_star=Id(quest_star);
+          AddDialogOverride('DialogPlanet',10);
+        }
+      }
+    }
+    if(PB_status==2) {
+      AddDialogOverride('DialogPlanetComplete',10);
+    }
+  }
+>>>
+States ~{
+    StateNew ~{
+        Type=None
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=
+    }
+}
+Dialogs ~{
+    DialogPlanet ~{
+        Code=<<<
+            DChange(0);
+            exit;
+        >>>
+    }
+    DialogPlanetCancel ~{
+        Code=<<<
+            DChange(2);
+            exit;
+        >>>
+    }
+    DialogReplace ~{
+        Code=<<<
+            ShipOut(Player());
+            request_dialog=1;
+            script_replace=1;
+            ScriptRun(StarNew,PlanetNew,'PC_pla01');
+            DChange(3);
+            exit;
+        >>>
+    }
+    DialogPlanetComplete ~{
+        Code=<<<
+            array_quest_statuses[script_num]=2;
+            khan_counter=khan_counter+1;
+            ShipOut(Player());
+            PB_status=4;
+            Ether(4,'1264A558-3760-486E-8683-4020423D1DD0',Format(CT("Script.PC_pla20.96"),"<0>",Name(PlanetNew)));
+            DChange(1);
+            exit;
+        >>>
+    }
+}
+DialogMsgs ~{
+    0 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla20.83"),"<0>",ShipName(Player()),"<1>",ShipName(Player()),"<2>",Name(GalaxyStar(quest_star-1)),"<3>",Name(IdToPlanet(quest_planet))));    DAdd(0);
+            DAdd(1);
+
+        >>>
+    }
+    1 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla20.84"),"<0>",ShipName(Player())));    DAdd(2);
+
+        >>>
+    }
+    2 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla20.99"),"<0>",ShipName(Player())));    DAdd(3);
+
+        >>>
+    }
+    3 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla20.100"));    DAdd(4);
+
+        >>>
+    }
+}
+DialogAnswers ~{
+    0 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla20.73"));
+        Code=<<<
+            quest_started=CurTurn();
+            array_quest_statuses[script_num]=1;
+            Ether(3,'1264A558-3760-486E-8683-4020423D1DD0',Format(CT("Script.PC_pla20.97"),"<0>",Name(PlanetNew),"<1>",Name(StarNew),"<2>",Name(IdToPlanet(quest_planet)),"<3>",Name(PlanetToStar(IdToPlanet(quest_planet))),"<4>",GameDateTxtByTurn(CurTurn()+max_days)));
+        >>>
+    }
+    1 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla20.86"));
+        Code=
+    }
+    2 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla20.87"));
+        Code=
+    }
+    3 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla20.98"));
+        Code=
+    }
+    4 ~{
+        Command=exit
+        Answer=DAnswer('exit');
+        Code=
+    }
+}

@@ -1,0 +1,1392 @@
+Version=6
+GlobalVars ~{
+}
+GlobalCode=<<<
+  if(GetShipPirateRank(Player())<7 && !PirateWin()) {
+    GRun();
+  }
+>>>
+LocalVars ~{
+    quest_started ~{
+        Type=Integer
+        Value=0
+    }
+    points_reached ~{
+        Type=Integer
+        Value=0
+    }
+    locations ~{
+        Type=Unknown
+        Value=None
+    }
+    quest_star ~{
+        Type=Dword
+        Value=0
+    }
+    counter ~{
+        Type=Integer
+        Value=0
+    }
+    quest_complete ~{
+        Type=Integer
+        Value=0
+    }
+    quest_planet ~{
+        Type=Dword
+        Value=0
+    }
+    planet_pirate ~{
+        Type=Dword
+        Value=0
+    }
+    temp_x ~{
+        Type=Integer
+        Value=0
+    }
+    temp_y ~{
+        Type=Integer
+        Value=0
+    }
+    attack_started ~{
+        Type=Integer
+        Value=0
+    }
+    planet_owner ~{
+        Type=Integer
+        Value=0
+    }
+    quest_ship ~{
+        Type=Dword
+        Value=0
+    }
+    wb_hp ~{
+        Type=Integer
+        Value=0
+    }
+    wb_destroy ~{
+        Type=Integer
+        Value=0
+    }
+    pirate_greeting ~{
+        Type=Integer
+        Value=0
+    }
+    wb_greeting ~{
+        Type=Integer
+        Value=0
+    }
+    ask_sturm_wb ~{
+        Type=Integer
+        Value=0
+    }
+    shop_visited ~{
+        Type=Integer
+        Value=0
+    }
+    player_pirate ~{
+        Type=Integer
+        Value=0
+    }
+    player_pirate_honor ~{
+        Type=Integer
+        Value=0
+    }
+    player_agent ~{
+        Type=Integer
+        Value=0
+    }
+    tq_status ~{
+        Type=Integer
+        Value=0
+    }
+    temp_money ~{
+        Type=Integer
+        Value=0
+    }
+    diff_level ~{
+        Type=Integer
+        Value=0
+    }
+    counter2 ~{
+        Type=Integer
+        Value=0
+    }
+    temp_ship ~{
+        Type=Dword
+        Value=0
+    }
+    temp_star ~{
+        Type=Dword
+        Value=0
+    }
+    req_money ~{
+        Type=Integer
+        Value=9999
+    }
+    bonus_name ~{
+        Type=String
+        Value=
+    }
+    reward_item ~{
+        Type=String
+        Value=
+    }
+    got_item ~{
+        Type=Integer
+        Value=0
+    }
+    quest_item ~{
+        Type=Dword
+        Value=0
+    }
+    item_type ~{
+        Type=Integer
+        Value=0
+    }
+    message_invite ~{
+        Type=Integer
+        Value=0
+    }
+    tq_base_name ~{
+        Type=String
+        Value=
+    }
+    tq_module_name ~{
+        Type=String
+        Value=
+    }
+    tq_module_num ~{
+        Type=Integer
+        Value=0
+    }
+    tq_module_count ~{
+        Type=Integer
+        Value=0
+    }
+    small_delay ~{
+        Type=Integer
+        Value=0
+    }
+    tq_win_text ~{
+        Type=Unknown
+        Value=None
+    }
+    tq_lose_text ~{
+        Type=Unknown
+        Value=None
+    }
+    player_normal_baron ~{
+        Type=Integer
+        Value=0
+    }
+    pirate_ritual ~{
+        Type=Integer
+        Value=0
+    }
+    quest_end ~{
+        Type=Integer
+        Value=0
+    }
+    points ~{
+        Type=String
+        Value=
+    }
+    player_traitor ~{
+        Type=Integer
+        Value=0
+    }
+    pirates_killed ~{
+        Type=Integer
+        Value=0
+    }
+    pirates_extinct ~{
+        Type=Integer
+        Value=0
+    }
+    pirates_rank ~{
+        Type=Integer
+        Value=0
+    }
+    pirates_killed_before ~{
+        Type=Integer
+        Value=0
+    }
+    temp_planet ~{
+        Type=Dword
+        Value=0
+    }
+    pirates_made ~{
+        Type=Integer
+        Value=0
+    }
+    pirates_killed_init ~{
+        Type=Integer
+        Value=0
+    }
+    StarNew ~{
+        Type=Dword
+        Value=0
+    }
+    PlanetNew ~{
+        Type=Dword
+        Value=0
+    }
+    GroupNew ~{
+        Type=Dword
+        Value=0
+    }
+    GroupPirates ~{
+        Type=Dword
+        Value=1
+    }
+    GroupWarriors ~{
+        Type=Dword
+        Value=2
+    }
+    GroupWB ~{
+        Type=Dword
+        Value=3
+    }
+    DialogPB3 ~{
+        Type=Dword
+        Value=0
+    }
+    DialogPB1 ~{
+        Type=Dword
+        Value=1
+    }
+    DialogPiratePlanet ~{
+        Type=Dword
+        Value=2
+    }
+    DialogPiratePlanetWin ~{
+        Type=Dword
+        Value=3
+    }
+}
+Constellations=0
+Stars ~{
+    StarNew ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=False
+        NoComeKling=False
+        StarLinks ~{
+        }
+        Planets ~{
+            PlanetNew ~{
+                Race=Maloc,Peleng,People,Fei,Gaal
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Economy=Agriculture,Industrial,Mixed
+                Government=Anarchy,Dictatorship,Monarchy,Republic,Democracy
+                Range=0..100
+                Dialog=
+            }
+        }
+        Ships ~{
+            0 ~{
+                Count=1
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+                IsPlayer=True
+                Speed=0..10000
+                Weapon=Undef
+                CargoHook=0
+                EmptySpace=0
+                Rating=0..1000
+                Status ~{
+                    Trader=0..100
+                    Warrior=0..100
+                    Pirate=0..100
+                }
+                Score=0..1000000
+                Strength=0.0..0.0
+                Ruins=
+            }
+        }
+    }
+}
+Places ~{
+}
+Items ~{
+}
+Groups ~{
+    GroupNew ~{
+        Planet=PlanetNew
+        State=0(StateNew)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+        Count=1..1
+        Speed=100..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=True
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+    GroupPirates ~{
+        Planet=PlanetNew
+        State=3(StateFree)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+        Count=0..0
+        Speed=100..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=False
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+    GroupWarriors ~{
+        Planet=PlanetNew
+        State=1(StateFree)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+        Count=0..0
+        Speed=100..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=False
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+    GroupWB ~{
+        Planet=PlanetNew
+        State=2(StateFree)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+        Count=0..0
+        Speed=100..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=False
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+}
+GroupLinks ~{
+}
+InitCode=<<<
+  locations=newarray(1);
+  diff_level=GalaxyDiffLevels()/50;
+>>>
+TurnCode=<<<
+  if(!points_reached) {
+    if(ShipPirateRankPoints(Player())>=ShipNextPirateRankPoints(Player())) {
+      if(GetShipPirateRank(Player())==6) {
+        points_reached=1;
+        if(!quest_started) {
+          Ether(0,'4A06A67B-1E77-4B59-AD82-1E8EAA0199DD',Format(CT("Script.PC_part7.135"),"<0>",req_money));
+        }
+      }
+    }
+  }
+  if(attack_started && !tq_status) {
+    if(RelationToRanger(PlanetPirateClan(),Player())<25) {
+      RelationToRanger(PlanetPirateClan(),Player(),25);
+    }
+  }
+  if(quest_started) {
+    if(!pirate_greeting) {
+      if(ShipStar(Player())==PlanetToStar(PlanetPirateClan())) {
+        if(ShipInNormalSpace(Player())) {
+          pirate_greeting=1;
+          Ether(0,'93C088A4-DE17-49B1-BD11-77DD606D33C2',Format(CT("Script.PC_part7.90"),"<0>",Name(PlanetPirateClan())));
+        }
+      }
+    }
+  }
+  if(GetShipPlanet(Player())==PlanetPirateClan()) {
+    if(!ShipIsTakeoff(Player())) {
+      if(ask_sturm_wb && !player_traitor) {
+        if(tq_status==0) {
+          if((GQuestStatus==0) && !ShipInPrison(Player())) {
+            temp_money=ShipMoney(Player());
+            RelationToRanger(GetShipPlanet(Player()),Player(),100);
+            tq_status=1;
+            tq_base_name='STQ_Baron';
+            tq_module_count=4;
+            tq_module_num=1;
+            tq_module_name=tq_base_name+tq_module_num;
+            tq_win_text=newarray(5);
+            tq_lose_text=newarray(5);
+            tq_win_text[1]=CT("Script.PC_part7.162");
+            tq_win_text[2]=CT("Script.PC_part7.161");
+            tq_win_text[3]=CT("Script.PC_part7.161");
+            tq_win_text[4]=CT("Script.PC_part7.160");
+            tq_lose_text[1]=CT("Script.PC_part7.159");
+            tq_lose_text[2]=CT("Script.PC_part7.158");
+            tq_lose_text[3]=CT("Script.PC_part7.158");
+            tq_lose_text[4]=CT("Script.PC_part7.157");
+            StartTextQuest(tq_module_name,tq_win_text[tq_module_num],tq_lose_text[tq_module_num]);
+          }
+        }
+        if(tq_status==1) {
+          if(GQuestStatus==3) {
+            StartTextQuest(tq_module_name,tq_win_text[tq_module_num],tq_lose_text[tq_module_num]);
+          }
+          if(GQuestStatus==2) {
+            if(tq_module_num>=tq_module_count) {
+              GQuestStatus=0;
+              tq_status=2;
+              quest_complete=1;
+              temp_money=ShipMoney(Player(),temp_money);
+              GotoGov(2);
+              NoJump(0);
+              NoLanding(PlanetPirateClan(),1);
+              NoComeKlingToStar(PlanetToStar(PlanetPirateClan()),0);
+              if(temp_money==0) {
+                player_pirate=1;
+                GetAchievementPIRATEWIN();
+                PirateWin(1);
+                counter=0;
+                while (counter<GalaxyStars()){
+                temp_star=GalaxyStar(counter);
+                counter2=0;
+                while (counter2<StarShips(temp_star)){
+                temp_ship=StarShips(temp_star,counter2);
+                if (ShipOwner(temp_ship)<5){
+                if (ShipTypeN(temp_ship)==t_Pirate){
+                if (!Id(temp_ship)%3){
+                RelationToRanger(temp_ship,Player(),0);
+                }}}
+                counter2=counter2+1;}
+                counter=counter+1;}
+                Ether(4,'ECDF007F-C73E-48F8-84F3-D80E886FF085',Format(CT("Script.PC_part7.141"),"<0>",Name(PlanetPirateClan())));
+              }
+              if(temp_money==1) {
+                player_pirate_honor=1;
+                GetAchievementPIRATEWIN();
+                PirateWin(2);
+                Ether(4,'ECDF007F-C73E-48F8-84F3-D80E886FF085',Format(CT("Script.PC_part7.141"),"<0>",Name(PlanetPirateClan())));
+              }
+              if(temp_money==2) {
+                player_agent=1;
+                GetAchievementCOALLITION();
+                NoComeKlingToStar(PlanetToStar(PlanetPirateClan()),1);
+                PirateWin(3);
+                counter=0;
+                while (counter<GalaxyStars()){
+                temp_star=GalaxyStar(counter);
+                counter2=0;
+                while (counter2<StarShips(temp_star)){
+                temp_ship=StarShips(temp_star,counter2);
+                if (ShipOwner(temp_ship)<5){
+                if (ShipTypeN(temp_ship)==t_Transport){
+                if (!Id(temp_ship)%3){
+                RelationToRanger(temp_ship,Player(),0);
+                }}}
+                counter2=counter2+1;}
+                counter=counter+1;}
+                Ether(4,'ECDF007F-C73E-48F8-84F3-D80E886FF085',Format(CT("Script.PC_part7.141"),"<0>",Name(PlanetPirateClan())));
+              }
+            }
+            if(tq_module_num<tq_module_count) {
+              tq_module_num=tq_module_num+1;
+              tq_module_name=tq_base_name+tq_module_num;
+              StartTextQuest(tq_module_name,tq_win_text[tq_module_num],tq_lose_text[tq_module_num]);
+            }
+          }
+        }
+      }
+    }
+  }
+  if(attack_started) {
+    if(!wb_greeting) {
+      if(ShipInNormalSpace(Player())) {
+        wb_greeting=1;
+        Ether(0,'21A4D6C9-CDBF-44F3-8C89-38AEE54416BF',CT("Script.PC_part7.147"));
+        Ether(0,'26662AA1-EB67-4274-9C07-F1727322B3FA',CT("Script.PC_part7.98"));
+      }
+    }
+  }
+  if(GroupCount(GroupWB)) {
+    if(GetShipPlanet(GroupToShip(GroupWB))) {
+      if(!ask_sturm_wb) {
+        if(small_delay) {
+          ask_sturm_wb=1;
+          NoLanding(PlanetPirateClan(),0);
+          GQuestStatus=0;
+          if(GroupCount(GroupWB)) {
+            ShipDestroy(GroupToShip(GroupWB));
+          }
+          Ether(0,'DD98B503-D1A8-4909-89C1-E70D635FE81A',CT("Script.PC_part7.100"));
+          Ether(3,'ECDF007F-C73E-48F8-84F3-D80E886FF085',Format(CT("Script.PC_part7.141"),"<0>",Name(PlanetPirateClan())));
+        }
+        if(!small_delay) {
+          small_delay=1;
+        }
+      }
+    }
+  }
+  if(attack_started) {
+    if(!GroupCount(GroupWB)) {
+      if(!ask_sturm_wb) {
+        if(small_delay) {
+          ask_sturm_wb=1;
+          NoLanding(PlanetPirateClan(),0);
+          GQuestStatus=0;
+          if(GroupCount(GroupWB)) {
+            ShipDestroy(GroupToShip(GroupWB));
+          }
+          Ether(0,'DD98B503-D1A8-4909-89C1-E70D635FE81A',CT("Script.PC_part7.100"));
+          Ether(3,'ECDF007F-C73E-48F8-84F3-D80E886FF085',Format(CT("Script.PC_part7.141"),"<0>",Name(PlanetPirateClan())));
+        }
+        if(!small_delay) {
+          small_delay=1;
+        }
+      }
+    }
+  }
+  if(attack_started) {
+    if(!quest_complete) {
+      if(GroupCount(GroupPirates)==0 && !pirates_extinct) {
+        temp_star=PlanetToStar(PlanetPirateClan());
+        for (counter2=0;counter2<StarShips(temp_star);counter2=counter2+1){
+        temp_ship=StarShips(temp_star,counter2);
+        if (ShipOwner(temp_ship)!=PirateClan) continue;
+        if (ShipTypeN(temp_ship)!=t_Pirate) continue;
+        if (ShipInScript(temp_ship)) continue;
+        if (ShipIsPartner(temp_ship)) continue;
+        if (pirates_killed<1000 && GetShipPlanet(temp_ship)) ShipDestroy(temp_ship);
+        else ShipJoin(GroupPirates,temp_ship);
+        }
+      }
+      if(pirates_killed>=10 && ask_sturm_wb && tq_status==0 && !player_traitor) {
+        player_traitor=1;
+        NoLanding(PlanetPirateClan(),1);
+        RelationToRanger(PlanetPirateClan(),Player(),0);
+        ShipOwner(Player(),ShipPilotRace(Player()));
+        ShipKillFactionInCurSystem(Player(),2,1);
+        Ether(5,'ECDF007F-C73E-48F8-84F3-D80E886FF085',Format(CT("Script.PC_part7.141"),"<0>",Name(PlanetPirateClan())));
+        Ether(0,'3D658687-8B98-4FFB-84CE-8964FBE3A761',CT("Script.PC_part7.225"));
+      }
+      if(player_traitor && !pirates_extinct && pirates_killed>=1000 && GroupCount(GroupPirates)==0) {
+        pirates_extinct=1;
+        temp_star=PlanetToStar(PlanetPirateClan());
+        NoLanding(PlanetPirateClan(),0);
+        RelationToRanger(PlanetPirateClan(),Player(),100);
+        NoComeKlingToStar(PlanetToStar(PlanetPirateClan()),0);
+        Sound('Sound.LiberationSystem');
+        NoJump(0);
+        quest_complete=1;
+        quest_end=1;
+        GetAchievementCOALLITION();
+        PirateWin(3);
+        //
+        for (counter=0; counter<GalaxyStars();counter=counter+1){
+        temp_star=GalaxyStar(counter);
+        if (StarOwner(temp_star)==2) StarOwner(temp_star,0);
+        counter2=0;
+        for (counter2=0; counter2<StarShips(temp_star); counter2=counter2+1){
+        temp_ship=StarShips(temp_star,counter2);
+        if (ShipOwner(temp_ship)!=PirateClan) continue;
+        if (ShipTypeN(temp_ship)!=t_Pirate) continue;
+        if (ShipInHyperSpace(temp_ship)) continue;
+        if (Id(temp_ship)%5) ShipDestroy(temp_ship);
+        }
+        for (counter2=0; counter2<StarPlanets(temp_star); counter2=counter2+1){
+        temp_planet=StarPlanets(temp_star,counter2);
+        if (PlanetOwner(temp_planet)==PirateClan) PlanetOwner(temp_planet,PlanetRace(temp_planet));
+        }
+        }
+        Ether(0,'2C0800C6-C262-41C9-A966-4DD4189501F1',CT("Script.PC_part7.227"));
+        AddPlanetNews(CT("Script.PC_part7.226"));
+      }
+      while(GroupCount(GroupPirates)<(5+2*diff_level) && !pirates_extinct && pirates_killed<1000) {
+        if (!pirates_killed_init) {pirates_killed_before=ShipStatistic(Player(),1);pirates_killed_init=1;}
+        pirates_killed=ShipStatistic(Player(),1)-pirates_killed_before;
+        quest_planet=PlanetPirateClan();
+        planet_owner=PlanetRace(quest_planet,(Rnd(0,100)%5));
+        quest_ship=BuyWarrior(quest_planet);
+        PlanetRace(quest_planet,planet_owner);
+        ShipJoin(GroupPirates,quest_ship);
+        pirates_rank=min(6,pirates_killed/(1000/7));
+        if (player_traitor) {
+        RelationToRanger(quest_ship,Player(),0);
+        pirates_made=pirates_made+1;
+        if (2*pirates_killed<pirates_made && pirates_made>40) pirates_killed=pirates_made/2;
+        }
+        while (GetShipPirateRank(quest_ship)<pirates_rank){RaisePirateRank(quest_ship);}
+        if (ShipSkill(quest_ship,0)<pirates_rank) ShipSkill(quest_ship,0,pirates_rank);
+        if (ShipSkill(quest_ship,1)<pirates_rank) ShipSkill(quest_ship,1,pirates_rank);
+        if (ShipSkill(quest_ship,2)<pirates_rank) ShipSkill(quest_ship,2,pirates_rank);
+        for (counter=0; counter<(pirates_rank*5+1); counter=counter+1) ShipRefit(quest_ship,350+50*pirates_rank,2500000*pirates_rank);
+        ShipImproveItems(quest_ship,pirates_rank*6);
+      }
+    }
+  }
+  if(quest_end || player_normal_baron) {
+    while (GroupCount(GroupWB)){ShipOut(GroupToShip(GroupWB));}
+    while (GroupCount(GroupWarriors)){ShipOut(GroupToShip(GroupWarriors));}
+    while (GroupCount(GroupPirates)){ShipOut(GroupToShip(GroupPirates));}
+    ShipOut(Player());
+  }
+>>>
+DialogBegin=<<<
+  if(GetShipRuins(Player())>0) {
+    if(ShipType(GetShipRuins(Player()))=='PB') {
+      if(ShipInPirateClan(Player())) {
+        if(GetShipPirateRank(Player())==6) {
+          if(ShipPirateRankPoints(Player())<ShipNextPirateRankPoints(Player())) {
+            AddDialogInject('DialogPB1','',CT("Script.PC_part7.134"),1);
+          }
+          if(ShipPirateRankPoints(Player())>=ShipNextPirateRankPoints(Player())) {
+            if(!quest_started) {
+              if(ShipMoney(Player())>=req_money) {
+                GotoGov(1);
+                AddDialogOverride('DialogPB3',10);
+              }
+              if(ShipMoney(Player())<req_money) {
+                AddDialogInject('',Format(CT("Script.PC_part7.136"),"<0>",req_money),'',1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  if(GetShipPlanet(Player())==PlanetPirateClan() && !player_traitor) {
+    if(!quest_started) {
+      AddDialogInject('',Format(CT("Script.PC_part7.208"),"<0>",ShipName(Player())),'',1,1);
+    }
+    if(quest_started) {
+      if(tq_status==0) {
+        AddDialogOverride('DialogPiratePlanet',15);
+      }
+      if(tq_status==2) {
+        while (GetShipPirateRank(Player())<7){RaisePirateRank(Player());}
+        AddDialogOverride('DialogPiratePlanetWin',15);
+      }
+    }
+  }
+>>>
+States ~{
+    StateNew ~{
+        Type=None
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=
+    }
+    StateFree ~{
+        Type=Free
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=<<<
+            if(quest_complete || ShipStar(CurShip)!=PlanetToStar(PlanetPirateClan())) {
+              ShipOut(CurShip);
+            }
+        >>>
+    }
+    StateFree ~{
+        Type=Free
+        Attack ~{
+            0=GroupPirates
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=<<<
+            if (((attack_started+100)>CurTurn()) || GetShipPlanet(Player()) || GetShipRuins(Player())){
+            HullHP(CurShip,min(wb_hp,HullHP(CurShip)+1000));}
+            ShipRepairEq(CurShip);
+            if (ShipStar(CurShip)==PlanetToStar(PlanetPirateClan())){
+            if (ShipInNormalSpace(CurShip)){
+            OrderLock(CurShip,0);
+            OrderLanding(CurShip,PlanetPirateClan());
+            if (GetShipPlanet(Player()) || GetShipRuins(Player())){
+            temp_x=CoordX(PlanetPirateClan());
+            temp_y=CoordY(PlanetPirateClan());
+            OrderMove(CurShip,temp_x,temp_y);}
+            }}
+            if (GetShipPlanet(CurShip)){
+            OrderNone(CurShip);}
+        >>>
+    }
+    StateFree ~{
+        Type=Free
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=<<<
+            if(player_traitor) {
+              RelationToRanger(CurShip,Player(),0);
+              ChangeState(4);
+              exit;
+            }
+            if(quest_complete || ShipStar(CurShip)!=PlanetToStar(PlanetPirateClan())) {
+              ShipOut(CurShip);
+            }
+        >>>
+    }
+    StateFree2 ~{
+        Type=Free
+        Attack ~{
+            0=GroupNew
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=<<<
+            if(quest_complete || ShipStar(CurShip)!=PlanetToStar(PlanetPirateClan())) {
+              ShipOut(CurShip);
+            }
+        >>>
+    }
+}
+Dialogs ~{
+    DialogPB3 ~{
+        Code=<<<
+            GotoGov(2);
+            DChange(0);
+            exit;
+        >>>
+    }
+    DialogPB1 ~{
+        Code=<<<
+            points='<clrEnd>'+CT('FormRuins.PB.RankPoints.RankPoints');
+            DChange(1);
+            exit;
+        >>>
+    }
+    DialogPiratePlanet ~{
+        Code=<<<
+            GotoGov(2);
+            if(!message_invite) {
+              message_invite=1;
+              Ether(4,'96711E59-6225-4C24-9E3A-5698BCEB896D',Format(CT("Script.PC_part7.140"),"<0>",Name(PlanetPirateClan()),"<1>",Name(PlanetToStar(PlanetPirateClan()))));
+            }
+            if(!CoalitionDefeated()) {
+              if(!shop_visited) {
+                GotoGov(2);
+                NoJump(1);
+                DChange(2);
+                exit;
+              }
+              if(shop_visited) {
+                DChange(5);
+                exit;
+              }
+            }
+            if(CoalitionDefeated()) {
+              if(!pirate_ritual) {
+                DChange(7);
+                exit;
+              }
+              if(pirate_ritual) {
+                if(DomiksDefeated()) {
+                  DChange(17);
+                  exit;
+                }
+                if(!DomiksDefeated()) {
+                  DChange(15);
+                  exit;
+                }
+              }
+            }
+        >>>
+    }
+    DialogPiratePlanetWin ~{
+        Code=<<<
+            if (!got_item){
+            item_type=Rnd(0,1000)%ArrayDim(reward_eq_size);
+            if (player_agent){bonus_name=gov_mod[item_type];}
+            if (!player_agent){bonus_name=pirate_mod[item_type];}
+            bonus_name=bonus_name+' III';
+            if (FindBonusByName(bonus_name)>-1){
+            quest_item=CreateEquipmentWithSpecial(
+              FindBonusByName(bonus_name),
+              reward_eq_size[item_type],
+              GalaxyTechLevel(),
+              PlanetOwner(GetShipPlanet(Player())));
+            } else quest_item=CreateEquipment(Rnd(t_FuelTanks,t_DefGenerator),20,GalaxyTechLevel(),ShipOwner(Player()));
+            reward_item=DeleteTags(ItemFullName(quest_item));
+            AddItemToShip(Player(),quest_item);
+            if (ArrayDim(reward_eq_size)>1){
+            ArrayDelete(reward_eq_size,item_type);
+            ArrayDelete(pirate_mod,item_type);
+            ArrayDelete(gov_mod,item_type);}
+            got_item=1;}
+            DChange(6);
+            exit;
+        >>>
+    }
+}
+DialogMsgs ~{
+    0 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_part7.148"),"<0>",ShipName(Player())));    DAdd(1);
+
+        >>>
+    }
+    1 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_part7.224"),"<0>",ShipNextPirateRankPoints(Player()),"<1>",ShipPirateRankPoints(Player()),"<2>",points));    DAdd(6);
+
+        >>>
+    }
+    2 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_part7.193"),"<0>",ShipName(Player())));    DAdd(2);
+
+        >>>
+    }
+    3 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_part7.190"),"<0>",ShipName(Player())));    DAdd(0);
+
+        >>>
+    }
+    4 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_part7.94"));    DAdd(3);
+
+        >>>
+    }
+    5 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_part7.150"));    ShipRefuel(Player());
+            DAdd(4);
+
+        >>>
+    }
+    6 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_part7.194"),"<0>",ShipName(Player()),"<1>",reward_item,"<2>",Name(GalaxyStar(72-1))));    DAdd(5);
+
+        >>>
+    }
+    7 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_part7.215"),"<0>",ShipName(Player())));    DAdd(8);
+            DAdd(9);
+
+        >>>
+    }
+    8 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_part7.166"));    DAdd(10);
+
+        >>>
+    }
+    9 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_part7.216"));    DAdd(11);
+            DAdd(12);
+            DAdd(13);
+
+        >>>
+    }
+    10 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_part7.168"));    DAdd(14);
+            DAdd(15);
+            DAdd(16);
+
+        >>>
+    }
+    11 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_part7.169"));    DAdd(17);
+            DAdd(18);
+            DAdd(19);
+
+        >>>
+    }
+    12 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_part7.217"),"<0>",ShipName(Player())));    DAdd(20);
+
+        >>>
+    }
+    13 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_part7.210"),"<0>",Name(GalaxyStar(72-1))));    while (GetShipPirateRank(Player())<7){RaisePirateRank(Player());}
+            quest_complete=1;
+            NoJump(0);
+            //GetAchievementPIRATEWIN();
+            //NoComeKlingToStar(PlanetToStar(PlanetPirateClan()),0);
+            NoLanding(PlanetPirateClan(),0);
+            DAdd(21);
+            DAdd(22);
+
+        >>>
+    }
+    14 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_part7.201"),"<0>",ShipName(Player())));    DAdd(7);
+
+        >>>
+    }
+    15 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_part7.218"),"<0>",ShipName(Player()),"<1>",ShipName(Player())));    DAdd(23);
+            DAdd(24);
+
+        >>>
+    }
+    16 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_part7.197"),"<0>",ShipName(Player())));    DAdd(25);
+
+        >>>
+    }
+    17 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_part7.219"),"<0>",ShipName(Player()),"<1>",ShipName(Player())));    DAdd(26);
+            DAdd(27);
+            DAdd(28);
+
+        >>>
+    }
+    18 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_part7.220"),"<0>",ShipName(Player())));    DAdd(29);
+
+        >>>
+    }
+}
+DialogAnswers ~{
+    0 ~{
+        Command=shop
+        Answer=DAnswer('shop~'+CT("Script.PC_part7.106"));
+        Code=<<<
+            GotoGov(0);
+            shop_visited=1;
+        >>>
+    }
+    1 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.95"));
+        Code=<<<
+            quest_started=1;
+            ShipMoney(Player(),ShipMoney(Player())-req_money);
+            SectorVisible(GalaxySectors(GalaxySectors()-1),1);
+            GotoGov(0);
+            Sound('Sound.Buy');
+            Ether(3,'96711E59-6225-4C24-9E3A-5698BCEB896D',Format(CT("Script.PC_part7.140"),"<0>",Name(PlanetPirateClan()),"<1>",Name(PlanetToStar(PlanetPirateClan()))));
+            DChange(4);
+            exit;
+        >>>
+    }
+    2 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.107"));
+        Code=<<<
+            DChange(3);
+            exit;
+        >>>
+    }
+    3 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_part7.108"));
+        Code=
+    }
+    4 ~{
+        Command=takeoff
+        Answer=DAnswer('takeoff~'+CT("Script.PC_part7.153"));
+        Code=<<<
+            GotoGov(0);
+            if(!attack_started) {
+              quest_planet=FindPlanetByAdvancement(100);
+              if (!quest_planet){quest_planet=FindPlanetByAdvancement(100,2);}
+              if (!quest_planet){quest_planet=FindPlanetByAdvancement(100,1);}
+              if (quest_planet==PlanetPirateClan()){quest_planet=StarPlanets(GalaxyStar(ShipOwner(Player())),2);}
+              quest_star=PlanetToStar(quest_planet);
+              quest_ship=BuildRuins(quest_star,t_WB);
+              ShipSkill(quest_ship,0,6);
+              ShipSkill(quest_ship,1,6);
+              ShipSkill(quest_ship,2,6);
+              NoLanding(quest_ship,1);
+              wb_hp=HullHP(quest_ship);
+              wb_hp=wb_hp*10;
+              ItemSize(ShipItems(quest_ship,0),wb_hp);
+              HullHP(quest_ship,wb_hp);
+              AddItemToShip(quest_ship,CreateArt(t_ArtefactSpeed,None));
+              AddItemToShip(quest_ship,CreateArt(t_ArtefactNano,None));
+              AddItemToShip(quest_ship,CreateArt(t_ArtefactDef,None));
+              AddItemToShip(quest_ship,CreateArt(t_ArtefactPower,None));
+              AddItemToShip(quest_ship,CreateEquipment(t_RepairRobot,20,8,ShipOwner(quest_ship)));
+              AddItemToShip(quest_ship,CreateEquipment(t_DefGenerator,20,8,ShipOwner(quest_ship)));
+              AddItemToShip(quest_ship,CreateEquipment(t_Engine,20,8,ShipOwner(quest_ship)));
+              AddItemToShip(quest_ship,CreateEquipment(t_Weapon9,40,8,ShipOwner(quest_ship)));
+              AddItemToShip(quest_ship,CreateEquipment(t_Weapon9,40,8,ShipOwner(quest_ship)));
+              AddItemToShip(quest_ship,CreateEquipment(t_Weapon9,40,8,ShipOwner(quest_ship)));
+              AddItemToShip(quest_ship,CreateEquipment(t_Weapon9,40,8,ShipOwner(quest_ship)));
+              AddItemToShip(quest_ship,CreateEquipment(t_Weapon9,40,8,ShipOwner(quest_ship)));
+              ShipJoin(GroupWB,quest_ship);
+              OrderLock(quest_ship,1);
+              MakeShipEnterStar(quest_ship,PlanetToStar(PlanetPirateClan()),ShipStar(quest_ship),3);
+              //OrderMove(quest_ship,CoordX(quest_ship),CoordY(quest_ship));
+              //ShipOrder(quest_ship,7);
+              //ShipOrderObj(quest_ship,PlanetToStar(PlanetPirateClan()));
+              planet_owner=PlanetOwner(quest_planet,PlanetRace(quest_planet));
+              counter=diff_level;
+              if (diff_level==1){counter=counter+1;}
+              while(counter>0){
+              quest_ship=BuyWarrior(quest_planet);
+              ShipJoin(GroupWarriors,quest_ship);
+              for (counter2=0; counter2<10; counter2=counter2+1) ShipRefit(quest_ship,400,500000);
+              ShipImproveItems(quest_ship,10);
+              MakeShipEnterStar(quest_ship,PlanetToStar(PlanetPirateClan()),ShipStar(quest_ship),1);
+              counter=counter-1;}
+              counter=diff_level+2;
+              while(counter>0){
+              quest_ship=BuyWarrior(quest_planet);
+              ShipJoin(GroupWarriors,quest_ship);
+              for (counter2=0; counter2<10; counter2=counter2+1) ShipRefit(quest_ship,400,500000);
+              ShipImproveItems(quest_ship,10);
+              MakeShipEnterStar(quest_ship,PlanetToStar(PlanetPirateClan()),ShipStar(quest_ship),2);
+              counter=counter-1;}
+              counter=diff_level+2;
+              while(counter>0){
+              quest_ship=BuyWarrior(quest_planet);
+              ShipJoin(GroupWarriors,quest_ship);
+              for (counter2=0; counter2<10; counter2=counter2+1) ShipRefit(quest_ship,400,500000);
+              ShipImproveItems(quest_ship,10);
+              MakeShipEnterStar(quest_ship,PlanetToStar(PlanetPirateClan()),ShipStar(quest_ship),3);
+              counter=counter-1;}
+              counter=diff_level+1;
+              while(counter>0){
+              quest_ship=BuyWarrior(quest_planet);
+              ShipJoin(GroupWarriors,quest_ship);
+              for (counter2=0; counter2<10; counter2=counter2+1) ShipRefit(quest_ship,400,500000);
+              ShipImproveItems(quest_ship,10);
+              MakeShipEnterStar(quest_ship,PlanetToStar(PlanetPirateClan()),ShipStar(quest_ship),4);
+              counter=counter-1;}
+              PlanetOwner(quest_planet,planet_owner);
+              attack_started=CurTurn();
+              NoLanding(PlanetPirateClan(),1);
+              temp_star=PlanetToStar(PlanetPirateClan());
+              for (counter2=0;counter2<StarShips(temp_star);counter2=counter2+1){
+              temp_ship=StarShips(temp_star,counter2);
+              if (ShipOwner(temp_ship)!=PirateClan) continue;
+              if (ShipTypeN(temp_ship)!=t_Pirate) continue;
+              if (ShipInScript(temp_ship)) continue;
+              if (ShipIsPartner(temp_ship)) continue;
+              ShipJoin(GroupPirates,temp_ship);
+              }
+              while(GroupCount(GroupPirates)<(5+2*diff_level) && !pirates_extinct && pirates_killed<1000) {
+                if (!pirates_killed_init) {pirates_killed_before=ShipStatistic(Player(),1);pirates_killed_init=1;}
+                pirates_killed=ShipStatistic(Player(),1)-pirates_killed_before;
+                quest_planet=PlanetPirateClan();
+                planet_owner=PlanetRace(quest_planet,(Rnd(0,100)%5));
+                quest_ship=BuyWarrior(quest_planet);
+                PlanetRace(quest_planet,planet_owner);
+                ShipJoin(GroupPirates,quest_ship);
+                pirates_rank=min(6,pirates_killed/(1000/7));
+                if (player_traitor) {
+                RelationToRanger(quest_ship,Player(),0);
+                pirates_made=pirates_made+1;
+                if (2*pirates_killed<pirates_made && pirates_made>40) pirates_killed=pirates_made/2;
+                }
+                while (GetShipPirateRank(quest_ship)<pirates_rank){RaisePirateRank(quest_ship);}
+                if (ShipSkill(quest_ship,0)<pirates_rank) ShipSkill(quest_ship,0,pirates_rank);
+                if (ShipSkill(quest_ship,1)<pirates_rank) ShipSkill(quest_ship,1,pirates_rank);
+                if (ShipSkill(quest_ship,2)<pirates_rank) ShipSkill(quest_ship,2,pirates_rank);
+                for (counter=0; counter<(pirates_rank*5+1); counter=counter+1) ShipRefit(quest_ship,350+50*pirates_rank,2500000*pirates_rank);
+                ShipImproveItems(quest_ship,pirates_rank*6);
+              }
+            }
+        >>>
+    }
+    5 ~{
+        Command=takeoff
+        Answer=DAnswer('takeoff~'+CT("Script.PC_part7.131"));
+        Code=<<<
+            GotoGov(0);
+            quest_end=1;
+            ShipRefuel(Player());
+            ShipRepairEq(Player());
+        >>>
+    }
+    6 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_part7.132"));
+        Code=
+    }
+    7 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.173"));
+        Code=<<<
+            pirate_ritual=1;
+            if(pirate_ritual) {
+              if(DomiksDefeated()) {
+                DChange(17);
+                exit;
+              }
+              if(!DomiksDefeated()) {
+                DChange(15);
+                exit;
+              }
+            }
+        >>>
+    }
+    8 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.174"));
+        Code=<<<
+            DChange(9);
+            exit;
+        >>>
+    }
+    9 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.214"));
+        Code=<<<
+            DChange(8);
+            exit;
+        >>>
+    }
+    10 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.176"));
+        Code=<<<
+            DChange(9);
+            exit;
+        >>>
+    }
+    11 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.177"));
+        Code=<<<
+            DChange(10);
+            exit;
+        >>>
+    }
+    12 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.178"));
+        Code=<<<
+            DChange(10);
+            exit;
+        >>>
+    }
+    13 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.179"));
+        Code=<<<
+            DChange(10);
+            exit;
+        >>>
+    }
+    14 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.180"));
+        Code=<<<
+            DChange(11);
+            exit;
+        >>>
+    }
+    15 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.181"));
+        Code=<<<
+            DChange(11);
+            exit;
+        >>>
+    }
+    16 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.182"));
+        Code=<<<
+            DChange(11);
+            exit;
+        >>>
+    }
+    17 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.183"));
+        Code=<<<
+            DChange(12);
+            exit;
+        >>>
+    }
+    18 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.184"));
+        Code=<<<
+            DChange(12);
+            exit;
+        >>>
+    }
+    19 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.185"));
+        Code=<<<
+            DChange(12);
+            exit;
+        >>>
+    }
+    20 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.186"));
+        Code=<<<
+            DChange(13);
+            exit;
+        >>>
+    }
+    21 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.221"));
+        Code=<<<
+            pirate_ritual=1;
+            if(pirate_ritual) {
+              if(DomiksDefeated()) {
+                DChange(17);
+                exit;
+              }
+              if(!DomiksDefeated()) {
+                DChange(15);
+                exit;
+              }
+            }
+        >>>
+    }
+    22 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.188"));
+        Code=<<<
+            DChange(14);
+            exit;
+        >>>
+    }
+    23 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_part7.198"));
+        Code=<<<
+            GotoGov(0);
+            EndGame(11);
+        >>>
+    }
+    24 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.222"));
+        Code=<<<
+            tq_status=3;
+            player_normal_baron=1;
+            pirate_planet_unlocked=1;
+            GotoGov(0);
+            DChange(16);
+            exit;
+        >>>
+    }
+    25 ~{
+        Command=hangar
+        Answer=DAnswer('hangar~'+CT("Script.PC_part7.200"));
+        Code=
+    }
+    26 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.204"));
+        Code=<<<
+            DChange(18);
+            exit;
+        >>>
+    }
+    27 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.205"));
+        Code=<<<
+            DChange(18);
+            exit;
+        >>>
+    }
+    28 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_part7.206"));
+        Code=<<<
+            DChange(18);
+            exit;
+        >>>
+    }
+    29 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_part7.207"));
+        Code=<<<
+            GotoGov(0);
+            EndGame(12);
+        >>>
+    }
+}

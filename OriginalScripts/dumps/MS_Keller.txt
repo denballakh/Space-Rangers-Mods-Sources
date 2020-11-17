@@ -1,0 +1,1102 @@
+Version=6
+GlobalVars ~{
+    MS_Keller_DialogOk ~{
+        Type=Integer
+        Value=0
+    }
+}
+GlobalCode=
+LocalVars ~{
+    CntTalk ~{
+        Type=Integer
+        Value=0
+    }
+    ConjoinedResearchTalk ~{
+        Type=Integer
+        Value=0
+    }
+    research_location ~{
+        Type=Dword
+        Value=0
+    }
+    preparation_complete ~{
+        Type=Integer
+        Value=0
+    }
+    keller_arrived ~{
+        Type=Integer
+        Value=0
+    }
+    counter ~{
+        Type=Integer
+        Value=0
+    }
+    quest_ship ~{
+        Type=Dword
+        Value=0
+    }
+    quest_star ~{
+        Type=Dword
+        Value=0
+    }
+    StarKeller ~{
+        Type=Dword
+        Value=0
+    }
+    PlanetKeller ~{
+        Type=Dword
+        Value=0
+    }
+    StarPlayer ~{
+        Type=Dword
+        Value=1
+    }
+    GroupKeller ~{
+        Type=Dword
+        Value=0
+    }
+    GroupRetreatingPirates ~{
+        Type=Dword
+        Value=1
+    }
+    dKeller ~{
+        Type=Dword
+        Value=0
+    }
+    DialogPrepare ~{
+        Type=Dword
+        Value=1
+    }
+}
+Constellations=0
+Stars ~{
+    StarKeller ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=False
+        NoComeKling=False
+        StarLinks ~{
+        }
+        Planets ~{
+            PlanetKeller ~{
+                Race=Maloc,Peleng,People,Fei,Gaal
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Economy=Agriculture,Industrial,Mixed
+                Government=Anarchy,Dictatorship,Monarchy,Republic,Democracy
+                Range=0..100
+                Dialog=
+            }
+        }
+        Ships ~{
+        }
+    }
+    StarPlayer ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=False
+        NoComeKling=False
+        StarLinks ~{
+            0 ~{
+                EndStar=StarKeller (0)
+                Angle=180
+                Distance=0..150
+                Relation=0..100
+                Deviation=25
+                IsHole=False
+            }
+        }
+        Planets ~{
+        }
+        Ships ~{
+            0 ~{
+                Count=1
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+                IsPlayer=True
+                Speed=0..10000
+                Weapon=Undef
+                CargoHook=0
+                EmptySpace=0
+                Rating=0..1000
+                Status ~{
+                    Trader=0..100
+                    Warrior=0..100
+                    Pirate=0..100
+                }
+                Score=0..1000000
+                Strength=0.0..0.0
+                Ruins=
+            }
+        }
+    }
+}
+Places ~{
+}
+Items ~{
+}
+Groups ~{
+    GroupKeller ~{
+        Planet=PlanetKeller
+        State=0(stKeller)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Use,KellerK0
+        Count=1..1
+        Speed=0..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=False
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+    GroupRetreatingPirates ~{
+        Planet=PlanetKeller
+        State=1(StateRetreat)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+        Count=0..0
+        Speed=100..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=False
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+}
+GroupLinks ~{
+}
+InitCode=
+TurnCode=<<<
+  if(preparation_complete && (!keller_arrived || ((keller_arrived+5)>CurTurn())) && GroupCount(GroupKeller)) {
+    quest_star=GalaxyStar(research_location-1);
+    counter=0;
+    while (counter<StarShips(quest_star)){
+    quest_ship=StarShips(quest_star,counter);
+    if (ShipInNormalSpace(quest_ship)){
+    if (ShipTypeN(quest_ship)==t_Pirate){
+    if (!ShipInScript(quest_ship)){
+    if (ShipIsPartner(quest_ship)!=Player()){
+    OrderJump(quest_ship,PlanetToStar(PlanetPirateClan()),1);
+    OrderLock(quest_ship,1);
+    ShipJoin(GroupRetreatingPirates,quest_ship);
+    }}}}
+    counter=counter+1;}
+    if(ShipInNormalSpace(GroupToShip(GroupKeller)) && !keller_arrived ) {
+      if(Id(ShipStar(GroupToShip(GroupKeller)))==research_location) {
+        keller_arrived=CurTurn();
+        keller_new_research=2;
+      }
+    }
+  }
+  if((keller_new_research==2) && ((keller_arrived+30)<=CurTurn())) {
+    keller_new_research=3;
+    Ether(0,'30047634-2E59-4C49-9CBE-7329755DEB43',Format(CT("Script.MS_Keller.138"),"<0>",Name(GalaxyStar(research_location-1))));
+  }
+>>>
+DialogBegin=<<<
+  if(GetShipPlanet(Player()) && research_location && !preparation_complete) {
+    if(Id(PlanetToStar(GetShipPlanet(Player())))==research_location) {
+      if(PlanetOwner(GetShipPlanet(Player()))!=6) {
+        AddDialogInject('DialogPrepare','',CT("Script.MS_Keller.178"),1);
+      }
+    }
+  }
+>>>
+States ~{
+    stKeller ~{
+        Type=None
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=dKeller
+        InMsg=dKeller
+        Ether=
+        Code=
+    }
+    StateRetreat ~{
+        Type=Free
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=<<<
+            if(ShipInHyperSpace(CurShip)) {
+              OrderLock(CurShip,0);
+              ShipOut(CurShip);
+            }
+        >>>
+    }
+}
+Dialogs ~{
+    dKeller ~{
+        Code=<<<
+            if(ShipInNormalSpace(GroupToShip(GroupKeller))) {
+              if(!HaveProgramm(progIntercom)) {
+                DChange(1);
+                exit;
+              }
+              if(HaveProgramm(progIntercom)) {
+                DChange(0);
+                exit;
+              }
+            }
+            if(!ShipInNormalSpace(GroupToShip(GroupKeller)) ) {
+              CntTalk=CntTalk+1;
+              if(!MS_Keller_DialogOk) {
+                DChange(19);
+                exit;
+              }
+              if(MS_Keller_DialogOk) {
+                if(research_location) {
+                  DChange(35);
+                  exit;
+                }
+                if(!research_location) {
+                  DChange(20);
+                  exit;
+                }
+              }
+            }
+        >>>
+    }
+    DialogPrepare ~{
+        Code=<<<
+            DChange(37);
+            exit;
+        >>>
+    }
+}
+DialogMsgs ~{
+    0 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.87"));    DAdd(0);
+
+        >>>
+    }
+    1 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.29"));    DAdd(1);
+
+        >>>
+    }
+    2 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.170"));    DAdd(3);
+
+        >>>
+    }
+    3 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.61"));    DAdd(4);
+
+        >>>
+    }
+    4 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.5"));    DAdd(5);
+
+        >>>
+    }
+    5 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.62"));    DAdd(6);
+
+        >>>
+    }
+    6 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.63"));    DAdd(7);
+
+        >>>
+    }
+    7 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.64"));    DAdd(8);
+
+        >>>
+    }
+    8 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.9"));    DAdd(9);
+            DAdd(27);
+
+        >>>
+    }
+    9 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.65"));    DAdd(10);
+
+        >>>
+    }
+    10 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.66"));    DAdd(11);
+
+        >>>
+    }
+    11 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.67"));    if(HaveProgramm(progDematerial)) {
+              DAdd(22);
+            }
+            DAdd(13);
+            DAdd(14);
+
+        >>>
+    }
+    12 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.33"));    DAdd(12);
+
+        >>>
+    }
+    13 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.68"));    DAdd(15);
+
+        >>>
+    }
+    14 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.69"));    DAdd(16);
+
+        >>>
+    }
+    15 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.36"));    DAdd(17);
+
+        >>>
+    }
+    16 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.70"));    DAdd(18);
+
+        >>>
+    }
+    17 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.71"));    DAdd(19);
+
+        >>>
+    }
+    18 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.72"));    DAdd(20);
+
+        >>>
+    }
+    19 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Keller.51"),"<0>",GalaxyShipId()));    if(HaveProgramm(progDematerial)) {
+              DAdd(21);
+            }
+            DAdd(2);
+
+        >>>
+    }
+    20 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.54"));    if(HaveProgramm(progDematerial)) {
+              DAdd(21);
+            }
+            if(ConjoinedResearchTalk) {
+              DAdd(31);
+            }
+            if(!ConjoinedResearchTalk) {
+              DAdd(29);
+            }
+            DAdd(23);
+            DAdd(25);
+
+        >>>
+    }
+    21 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.55"));    DAdd(24);
+
+        >>>
+    }
+    22 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Keller.56"),"<0>",CntTalk));    DAdd(26);
+
+        >>>
+    }
+    23 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.171"));    ConjoinedResearchTalk=1;
+            DAdd(28);
+
+        >>>
+    }
+    24 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.91"));    DAdd(30);
+
+        >>>
+    }
+    25 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.95"));    DAdd(33);
+
+        >>>
+    }
+    26 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.159"));    DAdd(34);
+
+        >>>
+    }
+    27 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.139"));    DAdd(32);
+
+        >>>
+    }
+    28 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Keller.172"),"<0>",ShipName(Player())));    DAdd(36);
+
+        >>>
+    }
+    29 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.141"));    DAdd(52);
+
+        >>>
+    }
+    30 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.173"));    DAdd(37);
+
+        >>>
+    }
+    31 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.174"));    research_location=72;
+            DAdd(38);
+
+        >>>
+    }
+    32 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.109"));    DAdd(39);
+
+        >>>
+    }
+    33 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Keller.175"),"<0>",ShipName(Player())));    SetProgramm(progKellerCall,1);
+            DAdd(40);
+
+        >>>
+    }
+    34 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.111"));    DAdd(41);
+
+        >>>
+    }
+    35 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.112"));    DAdd(43);
+
+        >>>
+    }
+    36 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.113"));    DAdd(42);
+            if(HaveProgramm(progDematerial)) {
+              DAdd(44);
+            }
+
+        >>>
+    }
+    37 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Keller.179"),"<0>",ShipName(Player())));    DAdd(45);
+
+        >>>
+    }
+    38 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Keller.180"),"<0>",ShipName(Player())));    DAdd(47);
+
+        >>>
+    }
+    39 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Keller.187"),"<0>",ShipName(Player()),"<1>",ShipName(Player())));    DAdd(46);
+
+        >>>
+    }
+    40 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.128"));    DAdd(48);
+            if(HaveProgramm(progDematerial)) {
+              DAdd(44);
+            }
+
+        >>>
+    }
+    41 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.136"));    DAdd(49);
+
+        >>>
+    }
+    42 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.161"));    if(GetShipPirateRank(Player())>=7) {
+              DAdd(51);
+            }
+            if((GetShipPirateRank(Player())<7)) {
+              DAdd(50);
+            }
+
+        >>>
+    }
+    43 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.162"));    DAdd(35);
+
+        >>>
+    }
+    44 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.176"));    DAdd(53);
+
+        >>>
+    }
+    45 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.164"));    DAdd(54);
+
+        >>>
+    }
+    46 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.182"));    DAdd(55);
+
+        >>>
+    }
+    47 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Keller.188"));    DAdd(56);
+
+        >>>
+    }
+}
+DialogAnswers ~{
+    0 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Keller.14"));
+        Code=
+    }
+    1 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Keller.15"));
+        Code=
+    }
+    2 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.16"));
+        Code=<<<
+            MS_Keller_DialogOk=1;
+            DChange(2);
+            exit;
+        >>>
+    }
+    3 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.17"));
+        Code=<<<
+            DChange(3);
+            exit;
+        >>>
+    }
+    4 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.73"));
+        Code=<<<
+            DChange(4);
+            exit;
+        >>>
+    }
+    5 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.74"));
+        Code=<<<
+            DChange(5);
+            exit;
+        >>>
+    }
+    6 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.75"));
+        Code=<<<
+            DChange(6);
+            exit;
+        >>>
+    }
+    7 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.76"));
+        Code=<<<
+            DChange(7);
+            exit;
+        >>>
+    }
+    8 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.77"));
+        Code=<<<
+            DChange(8);
+            exit;
+        >>>
+    }
+    9 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.78"));
+        Code=<<<
+            DChange(9);
+            exit;
+        >>>
+    }
+    10 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.79"));
+        Code=<<<
+            DChange(10);
+            exit;
+        >>>
+    }
+    11 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.80"));
+        Code=<<<
+            DChange(11);
+            exit;
+        >>>
+    }
+    12 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Keller.42"));
+        Code=
+    }
+    13 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.89"));
+        Code=<<<
+            DChange(12);
+            exit;
+        >>>
+    }
+    14 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.81"));
+        Code=<<<
+            DChange(13);
+            exit;
+        >>>
+    }
+    15 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.82"));
+        Code=<<<
+            DChange(14);
+            exit;
+        >>>
+    }
+    16 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.83"));
+        Code=<<<
+            DChange(15);
+            exit;
+        >>>
+    }
+    17 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.84"));
+        Code=<<<
+            DChange(16);
+            exit;
+        >>>
+    }
+    18 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.85"));
+        Code=<<<
+            DChange(17);
+            exit;
+        >>>
+    }
+    19 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.86"));
+        Code=<<<
+            DChange(18);
+            exit;
+        >>>
+    }
+    20 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Keller.50"));
+        Code=<<<
+            KellerLeave();
+        >>>
+    }
+    21 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Keller.52"));
+        Code=<<<
+            KellerKill();
+        >>>
+    }
+    22 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Keller.53"));
+        Code=<<<
+            KellerKill();
+        >>>
+    }
+    23 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.57"));
+        Code=<<<
+            DChange(21);
+            exit;
+        >>>
+    }
+    24 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Keller.50"));
+        Code=
+    }
+    25 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.58"));
+        Code=<<<
+            DChange(22);
+            exit;
+        >>>
+    }
+    26 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Keller.59"));
+        Code=
+    }
+    27 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.92"));
+        Code=<<<
+            DChange(23);
+            exit;
+        >>>
+    }
+    28 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.165"));
+        Code=<<<
+            DChange(24);
+            exit;
+        >>>
+    }
+    29 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.94"));
+        Code=<<<
+            DChange(23);
+            exit;
+        >>>
+    }
+    30 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.191"));
+        Code=<<<
+            DChange(25);
+            exit;
+        >>>
+    }
+    31 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.148"));
+        Code=<<<
+            DChange(26);
+            exit;
+        >>>
+    }
+    32 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Keller.50"));
+        Code=
+    }
+    33 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.103"));
+        Code=<<<
+            DChange(45);
+            exit;
+        >>>
+    }
+    34 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.167"));
+        Code=<<<
+            DChange(42);
+            exit;
+        >>>
+    }
+    35 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Keller.50"));
+        Code=
+    }
+    36 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.149"));
+        Code=<<<
+            DChange(30);
+            exit;
+        >>>
+    }
+    37 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.150"));
+        Code=<<<
+            DChange(44);
+            exit;
+        >>>
+    }
+    38 ~{
+        Command=
+        Answer=DAnswer(Format(CT("Script.MS_Keller.116"),"<0>",Name(GalaxyStar(research_location-1))));
+        Code=<<<
+            DChange(32);
+            exit;
+        >>>
+    }
+    39 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.117"));
+        Code=<<<
+            DChange(33);
+            exit;
+        >>>
+    }
+    40 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.118"));
+        Code=<<<
+            DChange(34);
+            exit;
+        >>>
+    }
+    41 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Keller.157"));
+        Code=
+    }
+    42 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Keller.120"));
+        Code=
+    }
+    43 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.151"));
+        Code=<<<
+            if(keller_arrived) {
+              DChange(41);
+              exit;
+            }
+            if(preparation_complete && !keller_arrived) {
+              DChange(40);
+              exit;
+            }
+            if(!preparation_complete) {
+              DChange(36);
+              exit;
+            }
+        >>>
+    }
+    44 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Keller.152"));
+        Code=<<<
+            KellerKill();
+        >>>
+    }
+    45 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.183"));
+        Code=<<<
+            DChange(38);
+            exit;
+        >>>
+    }
+    46 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.MS_Keller.184"));
+        Code=
+    }
+    47 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.185"));
+        Code=<<<
+            DChange(46);
+            exit;
+        >>>
+    }
+    48 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Keller.132"));
+        Code=
+    }
+    49 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Keller.137"));
+        Code=
+    }
+    50 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.153"));
+        Code=<<<
+            DChange(27);
+            exit;
+        >>>
+    }
+    51 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.154"));
+        Code=<<<
+            if(CoalitionDefeated()) {
+              DChange(28);
+              exit;
+            }
+            if(!CoalitionDefeated()) {
+              DChange(29);
+              exit;
+            }
+        >>>
+    }
+    52 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.155"));
+        Code=<<<
+            DChange(43);
+            exit;
+        >>>
+    }
+    53 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.177"));
+        Code=<<<
+            DChange(31);
+            exit;
+        >>>
+    }
+    54 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.169"));
+        Code=<<<
+            DChange(26);
+            exit;
+        >>>
+    }
+    55 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.190"));
+        Code=<<<
+            DChange(47);
+            exit;
+        >>>
+    }
+    56 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Keller.189"));
+        Code=<<<
+            preparation_complete=1;
+            keller_new_research=1;
+            SetProgramm(progKellerCall,0);
+            KellerNewResearch(research_location);
+            DChange(39);
+            exit;
+        >>>
+    }
+}

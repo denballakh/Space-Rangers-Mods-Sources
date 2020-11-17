@@ -1,0 +1,755 @@
+Version=6
+GlobalVars ~{
+}
+GlobalCode=
+LocalVars ~{
+    quest_deadline ~{
+        Type=Integer
+        Value=0
+    }
+    quest_started ~{
+        Type=Integer
+        Value=0
+    }
+    script_num ~{
+        Type=Integer
+        Value=0
+    }
+    count_extorted ~{
+        Type=Integer
+        Value=0
+    }
+    last_check ~{
+        Type=Integer
+        Value=0
+    }
+    extort_flag ~{
+        Type=Integer
+        Value=0
+    }
+    quest_complete ~{
+        Type=Integer
+        Value=0
+    }
+    req_num ~{
+        Type=Integer
+        Value=5
+    }
+    relation_list ~{
+        Type=Unknown
+        Value=None
+    }
+    ship_id_list ~{
+        Type=Unknown
+        Value=None
+    }
+    counter ~{
+        Type=Integer
+        Value=0
+    }
+    counter2 ~{
+        Type=Integer
+        Value=0
+    }
+    temp_ship ~{
+        Type=Dword
+        Value=0
+    }
+    temp_star ~{
+        Type=Dword
+        Value=0
+    }
+    planet_relation_list ~{
+        Type=Unknown
+        Value=None
+    }
+    temp_planet ~{
+        Type=Dword
+        Value=0
+    }
+    count_sorted ~{
+        Type=Integer
+        Value=0
+    }
+    sorted_items ~{
+        Type=Integer
+        Value=0
+    }
+    counter3 ~{
+        Type=Integer
+        Value=0
+    }
+    locations ~{
+        Type=Unknown
+        Value=None
+    }
+    quest_star ~{
+        Type=Dword
+        Value=0
+    }
+    quest_star2 ~{
+        Type=Dword
+        Value=0
+    }
+    quest_state ~{
+        Type=Integer
+        Value=0
+    }
+    message_time_to_sell ~{
+        Type=Integer
+        Value=0
+    }
+    count_killed ~{
+        Type=Integer
+        Value=0
+    }
+    warrior_race ~{
+        Type=Integer
+        Value=0
+    }
+    arms_sold ~{
+        Type=Integer
+        Value=0
+    }
+    arms_quantity ~{
+        Type=Integer
+        Value=300
+    }
+    quest_failed ~{
+        Type=Integer
+        Value=0
+    }
+    StarNew ~{
+        Type=Dword
+        Value=0
+    }
+    PlanetNew ~{
+        Type=Dword
+        Value=0
+    }
+    GroupNew ~{
+        Type=Dword
+        Value=0
+    }
+    DialogPlanet ~{
+        Type=Dword
+        Value=0
+    }
+    DialogComplete ~{
+        Type=Dword
+        Value=1
+    }
+    DialogPlanetCancel ~{
+        Type=Dword
+        Value=2
+    }
+}
+Constellations=0
+Stars ~{
+    StarNew ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=False
+        NoComeKling=False
+        StarLinks ~{
+        }
+        Planets ~{
+            PlanetNew ~{
+                Race=Maloc,Peleng,People,Fei,Gaal
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Economy=Agriculture,Industrial,Mixed
+                Government=Anarchy,Dictatorship,Monarchy,Republic,Democracy
+                Range=0..100
+                Dialog=
+            }
+        }
+        Ships ~{
+            0 ~{
+                Count=1
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+                IsPlayer=True
+                Speed=0..10000
+                Weapon=Undef
+                CargoHook=0
+                EmptySpace=0
+                Rating=0..1000
+                Status ~{
+                    Trader=0..100
+                    Warrior=0..100
+                    Pirate=0..100
+                }
+                Score=0..1000000
+                Strength=0.0..0.0
+                Ruins=
+            }
+        }
+    }
+}
+Places ~{
+}
+Items ~{
+}
+Groups ~{
+    GroupNew ~{
+        Planet=PlanetNew
+        State=0(StateNew)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+        Count=1..1
+        Speed=100..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=True
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+}
+GroupLinks ~{
+}
+InitCode=<<<
+  counter=1;
+  while (counter<ArrayDim(array_script_names)){
+  if (array_chosen_planets[counter]==Id(PlanetNew)){script_num=counter;}
+  counter=counter+1;}
+  locations=newarray(1);
+>>>
+TurnCode=<<<
+  if (!quest_started && ShipIsTakeoff(Player())){
+  ShipOut(Player());}
+  if(quest_state==1) {
+    if(count_sorted<(ArrayDim(ship_id_list)-1)) {
+      sorted_items=0;
+      while(sorted_items<3*ArrayDim(relation_list)) {
+        if(count_sorted<(ArrayDim(ship_id_list)-1)) {
+          ArraySortPartial(count_sorted+1,ship_id_list,relation_list);
+          sorted_items=sorted_items+ArrayDim(relation_list)-count_sorted;
+          count_sorted=count_sorted+1;
+        }
+        if(count_sorted>=(ArrayDim(ship_id_list)-1)) {
+          sorted_items=3*ArrayDim(relation_list);
+        }
+      }
+    }
+  }
+  if(quest_started) {
+    if(quest_state==0) {
+      if(Id(ShipStar(Player()))==quest_star) {
+        relation_list=newarray(1);
+        ship_id_list=newarray(1);
+        planet_relation_list=newarray(1);
+        counter=0;
+        while (counter<GalaxyStars()){
+        temp_star=GalaxyStar(counter);
+        counter2=0;
+        while (counter2<StarShips(temp_star)){
+        temp_ship=StarShips(temp_star,counter2);
+        if (ShipOwner(temp_ship)<5){
+        if (ShipTypeN(temp_ship)<4){
+        ArrayAdd(ship_id_list,Id(temp_ship));
+        ArrayAdd(relation_list,RelationToRanger(temp_ship,Player()));
+        }}
+        counter2=counter2+1;}
+        counter=counter+1;}
+        counter=0;
+        while (counter<GalaxyStars()){
+        temp_star=GalaxyStar(counter);
+        counter2=0;
+        while (counter2<StarPlanets(temp_star)){
+        temp_planet=StarPlanets(temp_star,counter2);
+        if (PlanetOwner(temp_planet)!=6){
+        ArrayAdd(planet_relation_list,RelationToRanger(temp_planet,Player()));
+        }
+        counter2=counter2+1;}
+        counter=counter+1;}
+        ArrayDelete(relation_list,0);
+        ArrayDelete(ship_id_list,0);
+        Ether(0,'8AE1A661-EEE8-4F4C-864F-05453B8AA3E6',CT("Script.PC_pla10.95"));
+        quest_state=1;
+        if(warrior_race==0) {
+          Chameleon(Player(),'Ship.Maloc.Warrior');
+        }
+        if(warrior_race==1) {
+          Chameleon(Player(),'Ship.Peleng.Warrior');
+        }
+        if(warrior_race==2) {
+          Chameleon(Player(),'Ship.People.Warrior');
+        }
+        if(warrior_race==3) {
+          Chameleon(Player(),'Ship.Fei.Warrior');
+        }
+        if(warrior_race==4) {
+          Chameleon(Player(),'Ship.Gaal.Warrior');
+        }
+      }
+    }
+    if((quest_state==1) && !quest_failed) {
+      if(Id(ShipStar(Player()))==quest_star) {
+        if(last_check<CurTurn()) {
+          last_check=CurTurn();
+          counter=GalaxyEvents()-1;
+          while (counter>=0){
+          if (GalaxyEventDate(counter)==CurTurn()){
+          extort_flag=0;
+          if (GalaxyEventType(counter)=='PlayerExtortsMoney'){extort_flag=1;}
+          if (GalaxyEventType(counter)=='PlayerExtortsGoods'){extort_flag=1;}
+          if (GalaxyEventType(counter)=='PlayerAcceptsMoneyForTruce'){extort_flag=1;}
+          if (extort_flag){
+          if (GalaxyEventData(counter,1)==t_Transport){
+          count_extorted=count_extorted+1;}}
+          if (GalaxyEventType(counter)=='PlayerKillsShip'){
+          if (GalaxyEventData(counter,0)==t_Transport){
+          count_killed=count_killed+1;}}
+          if (GalaxyEventType(counter)=='PlayerCompanionKillsShip'){
+          if (GalaxyEventData(counter,0)==t_Transport){
+          count_killed=count_killed+1;}}
+          }
+          if (GalaxyEventDate(counter)<CurTurn()){counter=0;}
+          counter=counter-1;}
+          if((count_extorted+count_killed)>=req_num) {
+            if(!message_time_to_sell) {
+              message_time_to_sell=1;
+              counter=0;
+              while (counter<StarPlanets(GalaxyStar(quest_star-1))){
+              if (PlanetOwner(StarPlanets(GalaxyStar(quest_star-1),counter))!=6){
+              DecayGoods(StarPlanets(GalaxyStar(quest_star-1),counter),t_Arms);}
+              counter=counter+1;}
+              Ether(0,'33EAA0A0-42C9-4128-854F-DAF170EFD541',CT("Script.PC_pla10.92"));
+            }
+          }
+        }
+        if(GetShipPlanet(Player())) {
+          if((count_extorted+count_killed)>=req_num) {
+            quest_state=2;
+            ShipKillFactionInCurSystem(Player(),0,0);
+            temp_star=ShipStar(Player());
+            counter=0;
+            while(counter<StarShips(temp_star)){
+            temp_ship=StarShips(temp_star,counter);
+            if ((ShipGetBad(temp_ship)==Player()) || (ShipGetBad(Player())==temp_ship)) TruceBetweenShips(Player(),temp_ship);
+            counter=counter+1;
+            }
+            while (count_sorted<(ArrayDim(ship_id_list)-1)){
+            ArraySortPartial(count_sorted+1,ship_id_list,relation_list);
+            count_sorted=count_sorted+1;}
+            counter=0;
+            while (counter<GalaxyStars()){
+            temp_star=GalaxyStar(counter);
+            counter2=0;
+            while (counter2<StarShips(temp_star)){
+            temp_ship=StarShips(temp_star,counter2);
+            counter3=ArrayFindInSorted(ship_id_list,Id(temp_ship));
+            if (counter3>-1){
+            RelationToRanger(temp_ship,Player(),relation_list[counter3]);
+            if (ArrayDim(ship_id_list)>1){
+            ArrayDelete(ship_id_list,counter3);
+            ArrayDelete(relation_list,counter3);}
+            }
+            counter2=counter2+1;}
+            counter=counter+1;}
+            counter=0;
+            RelationToRanger(NearCivilPlanet(Player()),Player());
+            while (counter<GalaxyStars()){
+            temp_star=GalaxyStar(counter);
+            counter2=0;
+            while (counter2<StarPlanets(temp_star)){
+            temp_planet=StarPlanets(temp_star,counter2);
+            if (PlanetOwner(temp_planet)!=6){
+            RelationToRanger(temp_planet,Player(),planet_relation_list[1]);
+            ArrayDelete(planet_relation_list,1);}
+            counter2=counter2+1;}
+            counter=counter+1;}
+            if(GetShipPlanet(Player())) {
+              while (IsFilm()){1;}
+              Chameleon(Player());
+              Ether(0,'D0F4762E-C200-4981-8792-5F87A7A71116',Format(CT("Script.PC_pla10.96"),"<0>",Name(GalaxyStar(quest_star2-1))));
+            }
+            if(Id(ShipStar(Player()))!=quest_star) {
+              Chameleon(Player());
+              Ether(0,'D0F4762E-C200-4981-8792-5F87A7A71116',Format(CT("Script.PC_pla10.96"),"<0>",Name(GalaxyStar(quest_star2-1))));
+            }
+          }
+          if((count_extorted+count_killed)<req_num) {
+            array_quest_statuses[script_num]=3;
+            quest_failed=1;
+            ShipOut(Player());
+            Ether(5,'42121728-2D51-4E1B-BF62-9C09CD5FCD05',Format(CT("Script.PC_pla10.91"),"<0>",Name(PlanetNew)));
+            ShipKillFactionInCurSystem(Player(),0,0);
+            temp_star=ShipStar(Player());
+            counter=0;
+            while(counter<StarShips(temp_star)){
+            temp_ship=StarShips(temp_star,counter);
+            if ((ShipGetBad(temp_ship)==Player()) || (ShipGetBad(Player())==temp_ship)) TruceBetweenShips(Player(),temp_ship);
+            counter=counter+1;
+            }
+            while (count_sorted<(ArrayDim(ship_id_list)-1)){
+            ArraySortPartial(count_sorted+1,ship_id_list,relation_list);
+            count_sorted=count_sorted+1;}
+            counter=0;
+            while (counter<GalaxyStars()){
+            temp_star=GalaxyStar(counter);
+            counter2=0;
+            while (counter2<StarShips(temp_star)){
+            temp_ship=StarShips(temp_star,counter2);
+            counter3=ArrayFindInSorted(ship_id_list,Id(temp_ship));
+            if (counter3>-1){
+            RelationToRanger(temp_ship,Player(),relation_list[counter3]);
+            if (ArrayDim(ship_id_list)>1){
+            ArrayDelete(ship_id_list,counter3);
+            ArrayDelete(relation_list,counter3);}
+            }
+            counter2=counter2+1;}
+            counter=counter+1;}
+            counter=0;
+            RelationToRanger(NearCivilPlanet(Player()),Player());
+            while (counter<GalaxyStars()){
+            temp_star=GalaxyStar(counter);
+            counter2=0;
+            while (counter2<StarPlanets(temp_star)){
+            temp_planet=StarPlanets(temp_star,counter2);
+            if (PlanetOwner(temp_planet)!=6){
+            RelationToRanger(temp_planet,Player(),planet_relation_list[1]);
+            ArrayDelete(planet_relation_list,1);}
+            counter2=counter2+1;}
+            counter=counter+1;}
+            if(GetShipPlanet(Player())) {
+              while (IsFilm()){1;}
+              Chameleon(Player());
+              Ether(0,'D0F4762E-C200-4981-8792-5F87A7A71116',Format(CT("Script.PC_pla10.96"),"<0>",Name(GalaxyStar(quest_star2-1))));
+            }
+            if(Id(ShipStar(Player()))!=quest_star) {
+              Chameleon(Player());
+              Ether(0,'D0F4762E-C200-4981-8792-5F87A7A71116',Format(CT("Script.PC_pla10.96"),"<0>",Name(GalaxyStar(quest_star2-1))));
+            }
+          }
+        }
+      }
+      if(Id(ShipStar(Player()))!=quest_star) {
+        if((count_extorted+count_killed)>=req_num) {
+          quest_state=2;
+          ShipKillFactionInCurSystem(Player(),0,0);
+          temp_star=ShipStar(Player());
+          counter=0;
+          while(counter<StarShips(temp_star)){
+          temp_ship=StarShips(temp_star,counter);
+          if ((ShipGetBad(temp_ship)==Player()) || (ShipGetBad(Player())==temp_ship)) TruceBetweenShips(Player(),temp_ship);
+          counter=counter+1;
+          }
+          while (count_sorted<(ArrayDim(ship_id_list)-1)){
+          ArraySortPartial(count_sorted+1,ship_id_list,relation_list);
+          count_sorted=count_sorted+1;}
+          counter=0;
+          while (counter<GalaxyStars()){
+          temp_star=GalaxyStar(counter);
+          counter2=0;
+          while (counter2<StarShips(temp_star)){
+          temp_ship=StarShips(temp_star,counter2);
+          counter3=ArrayFindInSorted(ship_id_list,Id(temp_ship));
+          if (counter3>-1){
+          RelationToRanger(temp_ship,Player(),relation_list[counter3]);
+          if (ArrayDim(ship_id_list)>1){
+          ArrayDelete(ship_id_list,counter3);
+          ArrayDelete(relation_list,counter3);}
+          }
+          counter2=counter2+1;}
+          counter=counter+1;}
+          counter=0;
+          RelationToRanger(NearCivilPlanet(Player()),Player());
+          while (counter<GalaxyStars()){
+          temp_star=GalaxyStar(counter);
+          counter2=0;
+          while (counter2<StarPlanets(temp_star)){
+          temp_planet=StarPlanets(temp_star,counter2);
+          if (PlanetOwner(temp_planet)!=6){
+          RelationToRanger(temp_planet,Player(),planet_relation_list[1]);
+          ArrayDelete(planet_relation_list,1);}
+          counter2=counter2+1;}
+          counter=counter+1;}
+          if(GetShipPlanet(Player())) {
+            while (IsFilm()){1;}
+            Chameleon(Player());
+            Ether(0,'D0F4762E-C200-4981-8792-5F87A7A71116',Format(CT("Script.PC_pla10.96"),"<0>",Name(GalaxyStar(quest_star2-1))));
+          }
+          if(Id(ShipStar(Player()))!=quest_star) {
+            Chameleon(Player());
+            Ether(0,'D0F4762E-C200-4981-8792-5F87A7A71116',Format(CT("Script.PC_pla10.96"),"<0>",Name(GalaxyStar(quest_star2-1))));
+          }
+        }
+        if((count_extorted+count_killed)<req_num) {
+          array_quest_statuses[script_num]=3;
+          quest_failed=1;
+          ShipOut(Player());
+          Ether(5,'42121728-2D51-4E1B-BF62-9C09CD5FCD05',Format(CT("Script.PC_pla10.91"),"<0>",Name(PlanetNew)));
+          ShipKillFactionInCurSystem(Player(),0,0);
+          temp_star=ShipStar(Player());
+          counter=0;
+          while(counter<StarShips(temp_star)){
+          temp_ship=StarShips(temp_star,counter);
+          if ((ShipGetBad(temp_ship)==Player()) || (ShipGetBad(Player())==temp_ship)) TruceBetweenShips(Player(),temp_ship);
+          counter=counter+1;
+          }
+          while (count_sorted<(ArrayDim(ship_id_list)-1)){
+          ArraySortPartial(count_sorted+1,ship_id_list,relation_list);
+          count_sorted=count_sorted+1;}
+          counter=0;
+          while (counter<GalaxyStars()){
+          temp_star=GalaxyStar(counter);
+          counter2=0;
+          while (counter2<StarShips(temp_star)){
+          temp_ship=StarShips(temp_star,counter2);
+          counter3=ArrayFindInSorted(ship_id_list,Id(temp_ship));
+          if (counter3>-1){
+          RelationToRanger(temp_ship,Player(),relation_list[counter3]);
+          if (ArrayDim(ship_id_list)>1){
+          ArrayDelete(ship_id_list,counter3);
+          ArrayDelete(relation_list,counter3);}
+          }
+          counter2=counter2+1;}
+          counter=counter+1;}
+          counter=0;
+          RelationToRanger(NearCivilPlanet(Player()),Player());
+          while (counter<GalaxyStars()){
+          temp_star=GalaxyStar(counter);
+          counter2=0;
+          while (counter2<StarPlanets(temp_star)){
+          temp_planet=StarPlanets(temp_star,counter2);
+          if (PlanetOwner(temp_planet)!=6){
+          RelationToRanger(temp_planet,Player(),planet_relation_list[1]);
+          ArrayDelete(planet_relation_list,1);}
+          counter2=counter2+1;}
+          counter=counter+1;}
+          if(GetShipPlanet(Player())) {
+            while (IsFilm()){1;}
+            Chameleon(Player());
+            Ether(0,'D0F4762E-C200-4981-8792-5F87A7A71116',Format(CT("Script.PC_pla10.96"),"<0>",Name(GalaxyStar(quest_star2-1))));
+          }
+          if(Id(ShipStar(Player()))!=quest_star) {
+            Chameleon(Player());
+            Ether(0,'D0F4762E-C200-4981-8792-5F87A7A71116',Format(CT("Script.PC_pla10.96"),"<0>",Name(GalaxyStar(quest_star2-1))));
+          }
+        }
+      }
+    }
+    if((quest_state==2) && (last_check<CurTurn())) {
+      counter=0;
+      while (counter<StarPlanets(GalaxyStar(quest_star-1))){
+      if (PlanetOwner(StarPlanets(GalaxyStar(quest_star-1),counter))!=6){
+      PlanetSetGoods(StarPlanets(GalaxyStar(quest_star-1),counter),t_Arms,0);}
+      counter=counter+1;}
+      last_check=CurTurn();
+      counter=GalaxyEvents()-1;
+      while (counter>=0){
+      if (GalaxyEventDate(counter)==CurTurn()){
+      if (GalaxyEventType(counter)=='PlayerSellsGoodsToPlanet'){
+      if (GalaxyEventData(counter,0)==t_Arms){
+      if (Id(PlanetToStar(IdToPlanet(GalaxyEventData(counter,3))))==quest_star){
+      arms_sold=arms_sold+GalaxyEventData(counter,1);}}}
+      if (GalaxyEventType(counter)=='PlayerBuysGoodsFromPlanet'){
+      if (GalaxyEventData(counter,0)==t_Arms){
+      if (Id(PlanetToStar(IdToPlanet(GalaxyEventData(counter,3))))==quest_star){
+      arms_sold=arms_sold-GalaxyEventData(counter,1);}}}
+      }
+      if (GalaxyEventDate(counter)<CurTurn()){counter=0;}
+      counter=counter-1;}
+      if(arms_sold>=arms_quantity) {
+        quest_state=3;
+        Ether(0,'F33D16D5-0CA3-47E4-A079-45B7EFC56ECA',Format(CT("Script.PC_pla10.90"),"<0>",Name(PlanetNew),"<1>",Name(StarNew)));
+      }
+    }
+    if((quest_state<3) && !quest_failed && (CurTurn()>quest_deadline)) {
+      array_quest_statuses[script_num]=3;
+      quest_failed=1;
+      Ether(5,'42121728-2D51-4E1B-BF62-9C09CD5FCD05',Format(CT("Script.PC_pla10.89"),"<0>",Name(PlanetNew)));
+      if(quest_state!=1) {
+        ShipOut(Player());
+      }
+      if(quest_state==1) {
+        quest_state=4;
+      }
+    }
+    if(quest_state==4) {
+      if(GetShipPlanet(Player()) || (Id(ShipStar(Player()))!=quest_star)) {
+        ShipOut(Player());
+        quest_state=5;
+        ShipKillFactionInCurSystem(Player(),0,0);
+        temp_star=ShipStar(Player());
+        counter=0;
+        while(counter<StarShips(temp_star)){
+        temp_ship=StarShips(temp_star,counter);
+        if ((ShipGetBad(temp_ship)==Player()) || (ShipGetBad(Player())==temp_ship)) TruceBetweenShips(Player(),temp_ship);
+        counter=counter+1;
+        }
+        while (count_sorted<(ArrayDim(ship_id_list)-1)){
+        ArraySortPartial(count_sorted+1,ship_id_list,relation_list);
+        count_sorted=count_sorted+1;}
+        counter=0;
+        while (counter<GalaxyStars()){
+        temp_star=GalaxyStar(counter);
+        counter2=0;
+        while (counter2<StarShips(temp_star)){
+        temp_ship=StarShips(temp_star,counter2);
+        counter3=ArrayFindInSorted(ship_id_list,Id(temp_ship));
+        if (counter3>-1){
+        RelationToRanger(temp_ship,Player(),relation_list[counter3]);
+        if (ArrayDim(ship_id_list)>1){
+        ArrayDelete(ship_id_list,counter3);
+        ArrayDelete(relation_list,counter3);}
+        }
+        counter2=counter2+1;}
+        counter=counter+1;}
+        counter=0;
+        RelationToRanger(NearCivilPlanet(Player()),Player());
+        while (counter<GalaxyStars()){
+        temp_star=GalaxyStar(counter);
+        counter2=0;
+        while (counter2<StarPlanets(temp_star)){
+        temp_planet=StarPlanets(temp_star,counter2);
+        if (PlanetOwner(temp_planet)!=6){
+        RelationToRanger(temp_planet,Player(),planet_relation_list[1]);
+        ArrayDelete(planet_relation_list,1);}
+        counter2=counter2+1;}
+        counter=counter+1;}
+        if(GetShipPlanet(Player())) {
+          while (IsFilm()){1;}
+          Chameleon(Player());
+          Ether(0,'D0F4762E-C200-4981-8792-5F87A7A71116',Format(CT("Script.PC_pla10.96"),"<0>",Name(GalaxyStar(quest_star2-1))));
+        }
+        if(Id(ShipStar(Player()))!=quest_star) {
+          Chameleon(Player());
+          Ether(0,'D0F4762E-C200-4981-8792-5F87A7A71116',Format(CT("Script.PC_pla10.96"),"<0>",Name(GalaxyStar(quest_star2-1))));
+        }
+      }
+    }
+  }
+>>>
+DialogBegin=<<<
+  if(GetShipPlanet(Player())==PlanetNew) {
+    if(!quest_started && request_dialog) {
+      request_dialog=0;
+      counter=BuildListOfQuestPossibleLocations(locations,StarNew,1,255);
+      if(counter){counter=StarListToTransitPlanetList(locations,StarNew,StarNew,2*50);}
+      if(!counter) {
+        AddDialogOverride('DialogPlanetCancel',10);
+      }
+      if(counter) {
+        quest_star=PlanetToStar(locations[0]);
+        BuildListOfQuestPossibleLocations(locations,StarNew,1,255);
+        counter=StarListToTransitPlanetList(locations,StarNew,quest_star,2*50);
+        if(!counter) {
+          AddDialogOverride('DialogPlanetCancel',10);
+        }
+        if(counter) {
+          quest_star2=PlanetToStar(locations[0]);
+          warrior_race=PlanetRace(FindPlanet(quest_star2,'NotNone',0,100));
+          quest_star=Id(quest_star);
+          quest_star2=Id(quest_star2);
+          AddDialogOverride('DialogPlanet',10);
+        }
+      }
+    }
+    if((quest_state==3) && !quest_complete) {
+      AddDialogOverride('DialogComplete',10);
+    }
+  }
+>>>
+States ~{
+    StateNew ~{
+        Type=None
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=
+    }
+}
+Dialogs ~{
+    DialogPlanet ~{
+        Code=<<<
+            quest_deadline=CurTurn()+120;
+            DChange(0);
+            exit;
+        >>>
+    }
+    DialogComplete ~{
+        Code=<<<
+            array_quest_statuses[script_num]=2;
+            quest_complete=1;
+            khan_counter=khan_counter+1;
+            ShipOut(Player());
+            Ether(4,'42121728-2D51-4E1B-BF62-9C09CD5FCD05',Format(CT("Script.PC_pla10.93"),"<0>",Name(PlanetNew)));
+            DChange(1);
+            exit;
+        >>>
+    }
+    DialogPlanetCancel ~{
+        Code=<<<
+            DChange(2);
+            exit;
+        >>>
+    }
+}
+DialogMsgs ~{
+    0 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla10.99"),"<0>",ShipName(Player()),"<1>",Name(GalaxyStar(quest_star-1)),"<2>",Name(GalaxyStar(quest_star2-1)),"<3>",req_num,"<4>",Name(GalaxyStar(quest_star-1)),"<5>",GameDateTxtByTurn(quest_deadline)));    DAdd(0);
+            DAdd(2);
+
+        >>>
+    }
+    1 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla10.82"),"<0>",ShipName(Player())));    DAdd(1);
+
+        >>>
+    }
+    2 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla10.97"),"<0>",ShipName(Player())));    DAdd(3);
+
+        >>>
+    }
+}
+DialogAnswers ~{
+    0 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla10.74"));
+        Code=<<<
+            AddItemToStorage(PlanetNew,CreateGoods(t_Arms,arms_quantity));
+            array_quest_statuses[script_num]=1;
+            quest_started=1;
+            Ether(3,'42121728-2D51-4E1B-BF62-9C09CD5FCD05',Format(CT("Script.PC_pla10.100"),"<0>",Name(PlanetNew),"<1>",Name(StarNew),"<2>",req_num,"<3>",Name(GalaxyStar(quest_star-1)),"<4>",GameDateTxtByTurn(quest_deadline)));
+        >>>
+    }
+    1 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla10.75"));
+        Code=
+    }
+    2 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla10.76"));
+        Code=
+    }
+    3 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla10.98"));
+        Code=
+    }
+}

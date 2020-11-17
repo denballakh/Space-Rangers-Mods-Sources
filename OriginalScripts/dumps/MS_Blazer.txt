@@ -1,0 +1,566 @@
+Version=6
+GlobalVars ~{
+    MS_Blazer_DialogOk ~{
+        Type=Integer
+        Value=0
+    }
+    MS_Blazer_Promise ~{
+        Type=Integer
+        Value=0
+    }
+    MS_Blazer_Landing ~{
+        Type=Dword
+        Value=0
+    }
+}
+GlobalCode=
+LocalVars ~{
+    StarBlazer ~{
+        Type=Dword
+        Value=0
+    }
+    PlanetBlazer ~{
+        Type=Dword
+        Value=0
+    }
+    StarPlayer ~{
+        Type=Dword
+        Value=1
+    }
+    GroupBlazer ~{
+        Type=Dword
+        Value=0
+    }
+    dBlazer ~{
+        Type=Dword
+        Value=0
+    }
+}
+Constellations=0
+Stars ~{
+    StarBlazer ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=False
+        NoComeKling=False
+        StarLinks ~{
+        }
+        Planets ~{
+            PlanetBlazer ~{
+                Race=Maloc,Peleng,People,Fei,Gaal
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Economy=Agriculture,Industrial,Mixed
+                Government=Anarchy,Dictatorship,Monarchy,Republic,Democracy
+                Range=0..100
+                Dialog=
+            }
+        }
+        Ships ~{
+        }
+    }
+    StarPlayer ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=False
+        NoComeKling=False
+        StarLinks ~{
+            0 ~{
+                EndStar=StarBlazer (0)
+                Angle=270
+                Distance=0..1000
+                Relation=0..100
+                Deviation=25
+                IsHole=False
+            }
+        }
+        Planets ~{
+        }
+        Ships ~{
+            0 ~{
+                Count=1
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+                IsPlayer=True
+                Speed=0..10000
+                Weapon=Undef
+                CargoHook=0
+                EmptySpace=0
+                Rating=0..1000
+                Status ~{
+                    Trader=0..100
+                    Warrior=0..100
+                    Pirate=0..100
+                }
+                Score=0..1000000
+                Strength=0.0..0.0
+                Ruins=
+            }
+        }
+    }
+}
+Places ~{
+}
+Items ~{
+}
+Groups ~{
+    GroupBlazer ~{
+        Planet=PlanetBlazer
+        State=0(stBlazer)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Use,BlazerK0
+        Count=1..1
+        Speed=0..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=False
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+}
+GroupLinks ~{
+}
+InitCode=
+TurnCode=
+DialogBegin=
+States ~{
+    stBlazer ~{
+        Type=None
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=dBlazer
+        InMsg=dBlazer
+        Ether=
+        Code=
+    }
+}
+Dialogs ~{
+    dBlazer ~{
+        Code=<<<
+            if(!HaveProgramm(progIntercom)) {
+              DChange(12);
+              exit;
+            }
+            if(HaveProgramm(progIntercom) && MS_Blazer_DialogOk && MS_Blazer_Promise && !HaveProgramm(progLogicalNegation)) {
+              DChange(19);
+              exit;
+            }
+            if(HaveProgramm(progIntercom) && MS_Blazer_Landing) {
+              DChange(21);
+              exit;
+            }
+            if(HaveProgramm(progIntercom) && !(MS_Blazer_DialogOk && MS_Blazer_Promise && !HaveProgramm(progLogicalNegation))) {
+              DChange(0);
+              exit;
+            }
+        >>>
+    }
+}
+DialogMsgs ~{
+    0 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.0"));    if(MS_Blazer_DialogOk && HaveProgramm(progLogicalNegation)) {
+              DAdd(12);
+            }
+            if(!MS_Blazer_DialogOk) {
+              MS_Blazer_DialogOk=1;
+              DAdd(0);
+            }
+            if(MS_Blazer_DialogOk && !HaveProgramm(progLogicalNegation)) {
+              if(!HaveProgramm(progLogicalNegation)) {
+                DAdd(7);
+              }
+            }
+
+        >>>
+    }
+    1 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.1"));    DAdd(1);
+
+        >>>
+    }
+    2 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.2"));    DAdd(2);
+
+        >>>
+    }
+    3 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.3"));    if(CoalitionDefeated()) {
+              DAdd(26);
+            }
+            if(!CoalitionDefeated()) {
+              DAdd(3);
+            }
+
+        >>>
+    }
+    4 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.4"));    DAdd(4);
+
+        >>>
+    }
+    5 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.48"));    DAdd(5);
+
+        >>>
+    }
+    6 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.49"));    DAdd(6);
+
+        >>>
+    }
+    7 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.50"));    if(HaveProgramm(progLogicalNegation)) {
+              DAdd(12);
+            }
+            if(!HaveProgramm(progLogicalNegation)) {
+              DAdd(7);
+            }
+
+        >>>
+    }
+    8 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.51"));    DAdd(8);
+            DAdd(9);
+
+        >>>
+    }
+    9 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.52"));    DAdd(10);
+
+        >>>
+    }
+    10 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.53"));    DAdd(11);
+
+        >>>
+    }
+    11 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.11"));    DAdd(14);
+            DAdd(16);
+
+        >>>
+    }
+    12 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.12"));    DAdd(13);
+
+        >>>
+    }
+    13 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.54"));    DAdd(15);
+
+        >>>
+    }
+    14 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.14"));    DAdd(17);
+
+        >>>
+    }
+    15 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.15"));    DAdd(18);
+
+        >>>
+    }
+    16 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.55"));    DAdd(19);
+            DAdd(20);
+
+        >>>
+    }
+    17 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.17"));    DAdd(21);
+
+        >>>
+    }
+    18 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Blazer.56"),"<0>",Name(IdToPlanet(MS_Blazer_Landing))));    if(CoalitionDefeated()) {
+              DAdd(27);
+            }
+            if(!CoalitionDefeated()) {
+              DAdd(22);
+            }
+
+        >>>
+    }
+    19 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.19"));    DAdd(23);
+
+        >>>
+    }
+    20 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Blazer.20"));    DAdd(24);
+
+        >>>
+    }
+    21 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_Blazer.47"),"<0>",Name(IdToPlanet(MS_Blazer_Landing))));    DAdd(25);
+
+        >>>
+    }
+}
+DialogAnswers ~{
+    0 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.21"));
+        Code=<<<
+            DChange(1);
+            exit;
+        >>>
+    }
+    1 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.22"));
+        Code=<<<
+            DChange(2);
+            exit;
+        >>>
+    }
+    2 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.23"));
+        Code=<<<
+            DChange(3);
+            exit;
+        >>>
+    }
+    3 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.57"));
+        Code=<<<
+            DChange(4);
+            exit;
+        >>>
+    }
+    4 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.58"));
+        Code=<<<
+            DChange(5);
+            exit;
+        >>>
+    }
+    5 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.59"));
+        Code=<<<
+            DChange(6);
+            exit;
+        >>>
+    }
+    6 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.60"));
+        Code=<<<
+            DChange(7);
+            exit;
+        >>>
+    }
+    7 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.61"));
+        Code=<<<
+            DChange(8);
+            exit;
+        >>>
+    }
+    8 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Blazer.29"));
+        Code=
+    }
+    9 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.30"));
+        Code=<<<
+            DChange(9);
+            exit;
+        >>>
+    }
+    10 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.62"));
+        Code=<<<
+            MS_Blazer_Promise=1;
+            DChange(10);
+            exit;
+        >>>
+    }
+    11 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Blazer.32"));
+        Code=
+    }
+    12 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.33"));
+        Code=<<<
+            DChange(11);
+            exit;
+        >>>
+    }
+    13 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Blazer.34"));
+        Code=
+    }
+    14 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.35"));
+        Code=<<<
+            DChange(13);
+            exit;
+        >>>
+    }
+    15 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Blazer.29"));
+        Code=
+    }
+    16 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.36"));
+        Code=<<<
+            DChange(14);
+            exit;
+        >>>
+    }
+    17 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.37"));
+        Code=<<<
+            DChange(15);
+            exit;
+        >>>
+    }
+    18 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.63"));
+        Code=<<<
+            DChange(16);
+            exit;
+        >>>
+    }
+    19 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Blazer.64"));
+        Code=<<<
+            BlazerSelfDestruction();
+            ShipDestroy(GroupToShip(GroupBlazer));
+            ShipDestroyType(1);
+        >>>
+    }
+    20 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.40"));
+        Code=<<<
+            DChange(17);
+            exit;
+        >>>
+    }
+    21 ~{
+        Command=
+        Answer=DAnswer(Format(CT("Script.MS_Blazer.41"),"<0>",Name(ShipStar(GroupToShip(GroupBlazer)))));
+        Code=<<<
+            MS_Blazer_Landing=Id(NearCivilPlanet(GroupToShip(GroupBlazer)));
+            OrderLanding(GroupToShip(GroupBlazer),NearCivilPlanet(GroupToShip(GroupBlazer)),1);
+            BlazerLanding(MS_Blazer_Landing);
+            DChange(18);
+            exit;
+        >>>
+    }
+    22 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Blazer.65"));
+        Code=<<<
+            ShipDestroyType(1);
+        >>>
+    }
+    23 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.66"));
+        Code=<<<
+            DChange(20);
+            exit;
+        >>>
+    }
+    24 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Blazer.67"));
+        Code=
+    }
+    25 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Blazer.42"));
+        Code=
+    }
+    26 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Blazer.68"));
+        Code=<<<
+            DChange(4);
+            exit;
+        >>>
+    }
+    27 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Blazer.69"));
+        Code=<<<
+            ShipDestroyType(1);
+        >>>
+    }
+}

@@ -1,0 +1,265 @@
+Version=6
+GlobalVars ~{
+    MS_SB1_DialogOk ~{
+        Type=Integer
+        Value=0
+    }
+}
+GlobalCode=
+LocalVars ~{
+    tStart ~{
+        Type=Integer
+        Value=0
+    }
+    playerStar ~{
+        Type=Dword
+        Value=0
+    }
+    playerPlanet ~{
+        Type=Dword
+        Value=0
+    }
+    grSB ~{
+        Type=Dword
+        Value=0
+    }
+    dSB ~{
+        Type=Dword
+        Value=0
+    }
+}
+Constellations=0
+Stars ~{
+    playerStar ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=False
+        NoComeKling=False
+        StarLinks ~{
+        }
+        Planets ~{
+            playerPlanet ~{
+                Race=Maloc,Peleng,People,Fei,Gaal
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Economy=Agriculture,Industrial,Mixed
+                Government=Anarchy,Dictatorship,Monarchy,Republic,Democracy
+                Range=0..100
+                Dialog=
+            }
+        }
+        Ships ~{
+            0 ~{
+                Count=1
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+                IsPlayer=True
+                Speed=0..10000
+                Weapon=Undef
+                CargoHook=0
+                EmptySpace=0
+                Rating=0..1000
+                Status ~{
+                    Trader=0..100
+                    Warrior=0..100
+                    Pirate=0..100
+                }
+                Score=0..1000000
+                Strength=0.0..0.0
+                Ruins=
+            }
+        }
+    }
+}
+Places ~{
+}
+Items ~{
+}
+Groups ~{
+    grSB ~{
+        Planet=playerPlanet
+        State=0(stSB)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Use
+        Count=1..1
+        Speed=0..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=False
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=dSB
+        Strength=0.0..0.0
+        Ruins=SB
+    }
+}
+GroupLinks ~{
+}
+InitCode=<<<
+  tStart=CurTurn();
+  EtherIdAdd('7B7EC91E-40D2-43A8-9DCC-085A81303549');
+>>>
+TurnCode=<<<
+  if((CurTurn()-tStart)>(365*2+150)) {
+    if(EtherState('7B7EC91E-40D2-43A8-9DCC-085A81303549')==3) {
+      Ether(5,'7B7EC91E-40D2-43A8-9DCC-085A81303549',Format(CT("Script.MS_SB1.12"),"<0>",ShortName(GroupToShip(grSB))),GroupToShip(grSB));
+    }
+    ShipOut(GroupToShip(grSB));
+  }
+>>>
+DialogBegin=
+States ~{
+    stSB ~{
+        Type=Free
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=
+    }
+}
+Dialogs ~{
+    dSB ~{
+        Code=<<<
+            if(MS_Begin_GoSB) {
+              SkipGreeting();
+              DChange(0);
+              exit;
+            }
+        >>>
+    }
+}
+DialogMsgs ~{
+    0 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_SB1.0"));    DAdd(0);
+
+        >>>
+    }
+    1 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_SB1.1"));    DAdd(1);
+
+        >>>
+    }
+    2 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_SB1.2"));    DAdd(2);
+
+        >>>
+    }
+    3 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_SB1.3"));    DAdd(3);
+
+        >>>
+    }
+    4 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_SB1.4"));    DAdd(4);
+
+        >>>
+    }
+    5 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_SB1.24"));    DAdd(5);
+
+        >>>
+    }
+    6 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_SB1.19"));    DAdd(6);
+
+        >>>
+    }
+    7 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_SB1.25"));    DAdd(7);
+
+        >>>
+    }
+}
+DialogAnswers ~{
+    0 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_SB1.6"));
+        Code=<<<
+            DChange(1);
+            exit;
+        >>>
+    }
+    1 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_SB1.22"));
+        Code=<<<
+            DChange(2);
+            exit;
+        >>>
+    }
+    2 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_SB1.8"));
+        Code=<<<
+            DChange(3);
+            exit;
+        >>>
+    }
+    3 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_SB1.9"));
+        Code=<<<
+            DChange(4);
+            exit;
+        >>>
+    }
+    4 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_SB1.23"));
+        Code=<<<
+            DChange(7);
+            exit;
+        >>>
+    }
+    5 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_SB1.11"));
+        Code=<<<
+            MS_SB1_DialogOk=1;
+            Ether(4,'7B7EC91E-40D2-43A8-9DCC-085A81303549',Format(CT("Script.MS_SB1.12"),"<0>",ShortName(GroupToShip(grSB))),GroupToShip(grSB));
+            ShipOut(GroupToShip(grSB));
+            DChange(6);
+            exit;
+        >>>
+    }
+    6 ~{
+        Command=exit
+        Answer=DAnswer('exit');
+        Code=
+    }
+    7 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_SB1.21"));
+        Code=<<<
+            DChange(5);
+            exit;
+        >>>
+    }
+}

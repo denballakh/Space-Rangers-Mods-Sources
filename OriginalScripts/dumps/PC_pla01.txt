@@ -1,0 +1,202 @@
+Version=6
+GlobalVars ~{
+}
+GlobalCode=
+LocalVars ~{
+    required_money ~{
+        Type=Integer
+        Value=300000
+    }
+    counter ~{
+        Type=Integer
+        Value=0
+    }
+    StarNew ~{
+        Type=Dword
+        Value=0
+    }
+    PlanetNew ~{
+        Type=Dword
+        Value=0
+    }
+    GroupNew ~{
+        Type=Dword
+        Value=0
+    }
+    DialogPlanet ~{
+        Type=Dword
+        Value=0
+    }
+}
+Constellations=0
+Stars ~{
+    StarNew ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=False
+        NoComeKling=False
+        StarLinks ~{
+        }
+        Planets ~{
+            PlanetNew ~{
+                Race=Maloc,Peleng,People,Fei,Gaal
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Economy=Agriculture,Industrial,Mixed
+                Government=Anarchy,Dictatorship,Monarchy,Republic,Democracy
+                Range=0..100
+                Dialog=
+            }
+        }
+        Ships ~{
+            0 ~{
+                Count=1
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+                IsPlayer=True
+                Speed=0..10000
+                Weapon=Undef
+                CargoHook=0
+                EmptySpace=0
+                Rating=0..1000
+                Status ~{
+                    Trader=0..100
+                    Warrior=0..100
+                    Pirate=0..100
+                }
+                Score=0..1000000
+                Strength=0.0..0.0
+                Ruins=
+            }
+        }
+    }
+}
+Places ~{
+}
+Items ~{
+}
+Groups ~{
+    GroupNew ~{
+        Planet=PlanetNew
+        State=0(StateNew)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+        Count=1..1
+        Speed=100..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=True
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+}
+GroupLinks ~{
+}
+InitCode=
+TurnCode=<<<
+  if (ShipIsTakeoff(Player())){
+  ShipOut(Player());}
+>>>
+DialogBegin=<<<
+  if(GetShipPlanet(Player())==PlanetNew) {
+    if(request_dialog) {
+      request_dialog=0;
+      SFT('000');
+      AddDialogOverride('DialogPlanet',10);
+    }
+  }
+>>>
+States ~{
+    StateNew ~{
+        Type=None
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=
+    }
+}
+Dialogs ~{
+    DialogPlanet ~{
+        Code=<<<
+            DChange(0);
+            exit;
+        >>>
+    }
+}
+DialogMsgs ~{
+    0 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla01.55"),"<0>",required_money));    if(ShipMoney(Player())>=required_money) {
+              DAdd(0);
+            }
+            DAdd(1);
+
+        >>>
+    }
+    1 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla01.48"));    DAdd(2);
+
+        >>>
+    }
+    2 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla01.49"));    DAdd(3);
+
+        >>>
+    }
+}
+DialogAnswers ~{
+    0 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_pla01.51"));
+        Code=<<<
+            ShipMoney(Player(),ShipMoney(Player())-required_money);
+            khan_counter=khan_counter+1;
+            counter=1;
+            ShipOut(Player());
+            Ether(4,'DC8F7B2E-7162-45E0-B687-EEC99D65549A',Format(CT("Script.PC_pla01.56"),"<0>",Name(PlanetNew)));
+            while(counter<ArrayDim(array_script_names)) {
+              if (array_chosen_planets[counter]==Id(PlanetNew)){array_quest_statuses[counter]=2;}
+              counter=counter+1;
+            }
+            DChange(1);
+            exit;
+        >>>
+    }
+    1 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_pla01.52"));
+        Code=<<<
+            DChange(2);
+            exit;
+        >>>
+    }
+    2 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla01.53"));
+        Code=
+    }
+    3 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla01.54"));
+        Code=
+    }
+}

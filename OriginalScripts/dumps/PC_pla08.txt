@@ -1,0 +1,966 @@
+Version=6
+GlobalVars ~{
+}
+GlobalCode=
+LocalVars ~{
+    quest_ship ~{
+        Type=Dword
+        Value=0
+    }
+    talk_ship ~{
+        Type=Integer
+        Value=0
+    }
+    num_ship ~{
+        Type=Integer
+        Value=0
+    }
+    dtype ~{
+        Type=Integer
+        Value=0
+    }
+    num_deals ~{
+        Type=Integer
+        Value=0
+    }
+    req_money ~{
+        Type=Integer
+        Value=0
+    }
+    quest_planet ~{
+        Type=Dword
+        Value=0
+    }
+    counter ~{
+        Type=Integer
+        Value=0
+    }
+    script_num ~{
+        Type=Integer
+        Value=0
+    }
+    quest_started ~{
+        Type=Integer
+        Value=0
+    }
+    quest_complete ~{
+        Type=Integer
+        Value=0
+    }
+    req_num ~{
+        Type=Integer
+        Value=0
+    }
+    max_duration ~{
+        Type=Integer
+        Value=90
+    }
+    reward_money ~{
+        Type=Integer
+        Value=0
+    }
+    recall_message ~{
+        Type=Integer
+        Value=0
+    }
+    item_list ~{
+        Type=Unknown
+        Value=None
+    }
+    item_names_list ~{
+        Type=Unknown
+        Value=None
+    }
+    item_index_list ~{
+        Type=Unknown
+        Value=None
+    }
+    temp_item ~{
+        Type=Dword
+        Value=0
+    }
+    item_is_eq ~{
+        Type=Integer
+        Value=0
+    }
+    items_page ~{
+        Type=Integer
+        Value=0
+    }
+    num_items ~{
+        Type=Integer
+        Value=0
+    }
+    chosen_num ~{
+        Type=Integer
+        Value=0
+    }
+    temp_str ~{
+        Type=String
+        Value=
+    }
+    quest_failed ~{
+        Type=Integer
+        Value=0
+    }
+    StarNew ~{
+        Type=Dword
+        Value=0
+    }
+    PlanetNew ~{
+        Type=Dword
+        Value=0
+    }
+    GroupNew ~{
+        Type=Dword
+        Value=0
+    }
+    GroupHired ~{
+        Type=Dword
+        Value=1
+    }
+    DialogPlanet ~{
+        Type=Dword
+        Value=0
+    }
+    DialogPlanetCancel ~{
+        Type=Dword
+        Value=1
+    }
+    DialogPlanetComplete ~{
+        Type=Dword
+        Value=2
+    }
+    DialogMercOnTheWay ~{
+        Type=Dword
+        Value=3
+    }
+    DialogMerc ~{
+        Type=Dword
+        Value=4
+    }
+}
+Constellations=0
+Stars ~{
+    StarNew ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=False
+        NoComeKling=False
+        StarLinks ~{
+        }
+        Planets ~{
+            PlanetNew ~{
+                Race=Maloc,Peleng,People,Fei,Gaal
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Economy=Agriculture,Industrial,Mixed
+                Government=Anarchy,Dictatorship,Monarchy,Republic,Democracy
+                Range=0..100
+                Dialog=
+            }
+        }
+        Ships ~{
+            0 ~{
+                Count=1
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+                IsPlayer=True
+                Speed=0..10000
+                Weapon=Undef
+                CargoHook=0
+                EmptySpace=0
+                Rating=0..1000
+                Status ~{
+                    Trader=0..100
+                    Warrior=0..100
+                    Pirate=0..100
+                }
+                Score=0..1000000
+                Strength=0.0..0.0
+                Ruins=
+            }
+        }
+    }
+}
+Places ~{
+}
+Items ~{
+}
+Groups ~{
+    GroupNew ~{
+        Planet=PlanetNew
+        State=0(StateNew)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+        Count=1..1
+        Speed=100..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=True
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+    GroupHired ~{
+        Planet=PlanetNew
+        State=2(StateJump)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+        Count=0..0
+        Speed=100..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=False
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+}
+GroupLinks ~{
+}
+InitCode=<<<
+  counter=1;
+  while (counter<ArrayDim(array_script_names)){
+  if (array_chosen_planets[counter]==Id(PlanetNew)){script_num=counter;}
+  counter=counter+1;}
+>>>
+TurnCode=<<<
+  if (!quest_started && ShipIsTakeoff(Player())){
+  ShipOut(Player());}
+  if((num_deals>=req_num) && quest_started) {
+    if(!recall_message) {
+      recall_message=1;
+      Ether(3,'8AF3302C-A12F-484F-A801-0E02F3978856',Format(CT("Script.PC_pla08.141"),"<0>",Name(PlanetNew),"<1>",Name(StarNew)));
+    }
+  }
+  if(quest_started && !recall_message && !quest_failed) {
+    if((quest_started+max_duration)<CurTurn()) {
+      Ether(5,'8AF3302C-A12F-484F-A801-0E02F3978856',Format(CT("Script.PC_pla08.140"),"<0>",Name(PlanetNew)));
+      while (GroupCount(GroupHired)){ShipOut(GroupToShip(GroupHired));}
+      ShipOut(Player());
+      quest_failed=1;
+      array_quest_statuses[script_num]=3;
+      NoComeKlingToStar(StarNew,0);
+    }
+  }
+>>>
+DialogBegin=<<<
+  if(GetShipPlanet(Player())==PlanetNew) {
+    if(!quest_complete) {
+      if(!quest_started && request_dialog) {
+        request_dialog=0;
+        if(ControlledSystems(0)<5) {
+          AddDialogOverride('DialogPlanetCancel',10);
+        }
+        if(ControlledSystems(0)>=5) {
+          req_num=1+GalaxyDiffLevels()/50;
+          AddDialogOverride('DialogPlanet',10);
+        }
+      }
+      if(quest_started && (num_deals>=req_num) && !quest_complete) {
+        AddDialogOverride('DialogPlanetComplete',10);
+      }
+    }
+  }
+  if(GetTalkShip() && !quest_failed && quest_started && !recall_message) {
+    quest_ship=GetTalkShip();
+    if(PlanetOwner(PlanetNew)<5) {
+      if(!ShipInScript(quest_ship)) {
+        if((ShipType(quest_ship)=='Pirate') || (ShipType(quest_ship)=='Ranger')) {
+          if(ShipIsPartner(quest_ship)!=Player()) {
+            AddDialogInject('DialogMerc','',CT("Script.PC_pla08.142"),1);
+          }
+        }
+      }
+    }
+    if(PlanetOwner(PlanetNew)==7) {
+      if(ShipOwner(quest_ship)==7) {
+        if(!ShipInScript(quest_ship)) {
+          if((ShipType(quest_ship)=='Pirate') || (ShipType(quest_ship)=='Ranger')) {
+            if(ShipIsPartner(quest_ship)!=Player()) {
+              AddDialogInject('DialogMerc','',CT("Script.PC_pla08.142"),1);
+            }
+          }
+        }
+      }
+    }
+  }
+>>>
+States ~{
+    StateNew ~{
+        Type=None
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=
+    }
+    StateNone ~{
+        Type=None
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=
+    }
+    StateJump ~{
+        Type=Jump
+        Object=StarNew
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=DialogMercOnTheWay
+        InMsg=DialogMercOnTheWay
+        Ether=
+        Code=<<<
+            if(EndState) {
+              ChangeState(3);
+              exit;
+            }
+        >>>
+    }
+    StateLand ~{
+        Type=Landing
+        Object=PlanetNew
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=DialogMercOnTheWay
+        InMsg=DialogMercOnTheWay
+        Ether=
+        Code=<<<
+            if(EndState) {
+              ChangeState(1);
+              exit;
+            }
+        >>>
+    }
+}
+Dialogs ~{
+    DialogPlanet ~{
+        Code=<<<
+            if(PlanetOwner(PlanetNew)==7) {
+              DChange(18);
+              exit;
+            }
+            if(PlanetOwner(PlanetNew)<5) {
+              DChange(0);
+              exit;
+            }
+        >>>
+    }
+    DialogPlanetCancel ~{
+        Code=<<<
+            DChange(1);
+            exit;
+        >>>
+    }
+    DialogPlanetComplete ~{
+        Code=<<<
+            reward_money=GalaxyMoney(4);
+            DChange(2);
+            exit;
+        >>>
+    }
+    DialogMercOnTheWay ~{
+        Code=<<<
+            DChange(3);
+            exit;
+        >>>
+    }
+    DialogMerc ~{
+        Code=<<<
+            req_money=ShipWealth(quest_ship)/5;
+            if(ShipGetBad(quest_ship)!=Player()) {
+              if(ShipGetBad(Player())!=quest_ship) {
+                DChange(7);
+                exit;
+              }
+              if(ShipGetBad(Player())==quest_ship) {
+                if(ShipInFear(quest_ship)) {
+                  DChange(4);
+                  exit;
+                }
+                if(!ShipInFear(quest_ship)) {
+                  DChange(5);
+                  exit;
+                }
+              }
+            }
+            if(ShipGetBad(quest_ship)==Player()) {
+              if(ShipInFear(quest_ship)) {
+                DChange(4);
+                exit;
+              }
+              if(!ShipInFear(quest_ship)) {
+                DChange(5);
+                exit;
+              }
+            }
+        >>>
+    }
+}
+DialogMsgs ~{
+    0 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla08.151"),"<0>",ShipName(Player()),"<1>",ShipName(Player()),"<2>",req_num,"<3>",ShipName(Player()),"<4>",max_duration,"<5>",req_num));    DAdd(0);
+            DAdd(2);
+
+        >>>
+    }
+    1 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla08.161"),"<0>",ShipName(Player())));    DAdd(1);
+
+        >>>
+    }
+    2 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla08.152"),"<0>",ShipName(Player()),"<1>",ShipName(Player()),"<2>",reward_money));    array_quest_statuses[script_num]=2;
+            khan_counter=khan_counter+1;
+            quest_complete=1;
+            ShipOut(Player());
+            while(GroupCount(GroupHired)){ShipOut(GroupToShip(GroupHired));}
+            NoComeKlingToStar(StarNew,0);
+            Ether(4,'8AF3302C-A12F-484F-A801-0E02F3978856',Format(CT("Script.PC_pla08.144"),"<0>",Name(PlanetNew)));
+            DAdd(3);
+
+        >>>
+    }
+    3 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla08.105"));    DAdd(4);
+
+        >>>
+    }
+    4 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla08.107"));    DAdd(6);
+
+        >>>
+    }
+    5 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla08.153"));    DAdd(5);
+
+        >>>
+    }
+    6 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla08.109"));    TruceBetweenShips(Player(),quest_ship);
+            ShipJoin(GroupHired,quest_ship);
+            num_deals=num_deals+1;
+            DAdd(7);
+
+        >>>
+    }
+    7 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla08.110"));    DAdd(8);
+
+        >>>
+    }
+    8 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla08.154"));    DAdd(9);
+            DAdd(10);
+            DAdd(11);
+
+        >>>
+    }
+    9 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla08.112"),"<0>",req_money));    if(ShipMoney(Player())>=req_money) {
+              DAdd(12);
+            }
+            DAdd(11);
+
+        >>>
+    }
+    10 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla08.155"));    if((num_items-items_page*5)>0) {
+              DAdd(14);
+            }
+            if((num_items-items_page*5)>1) {
+              DAdd(15);
+            }
+            if((num_items-items_page*5)>2) {
+              DAdd(16);
+            }
+            if((num_items-items_page*5)>3) {
+              DAdd(17);
+            }
+            if((num_items-items_page*5)>4) {
+              DAdd(18);
+            }
+            if(num_items>5) {
+              DAdd(19);
+            }
+            DAdd(20);
+
+        >>>
+    }
+    11 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla08.119"));    DAdd(13);
+
+        >>>
+    }
+    12 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla08.120"));    DAdd(22);
+            DAdd(23);
+            DAdd(24);
+
+        >>>
+    }
+    13 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla08.121"));    DAdd(22);
+            DAdd(23);
+            DAdd(24);
+
+        >>>
+    }
+    14 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla08.122"));    DAdd(21);
+
+        >>>
+    }
+    15 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla08.123"));    DAdd(25);
+
+        >>>
+    }
+    16 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla08.132"),"<0>",Name(ShipIsPartner(quest_ship))));    DAdd(26);
+
+        >>>
+    }
+    17 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla08.133"));    DAdd(26);
+
+        >>>
+    }
+    18 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla08.156"),"<0>",ShipName(Player()),"<1>",ShipName(Player()),"<2>",req_num,"<3>",ShipName(Player()),"<4>",max_duration,"<5>",req_num));    DAdd(0);
+            DAdd(2);
+
+        >>>
+    }
+    19 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla08.157"));    DAdd(27);
+
+        >>>
+    }
+}
+DialogAnswers ~{
+    0 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla08.93"));
+        Code=<<<
+            array_quest_statuses[script_num]=1;
+            quest_started=CurTurn();
+            item_list=newarray(1);
+            item_names_list=newarray(1);
+            item_index_list=newarray(1);
+            NoComeKlingToStar(StarNew,1);
+            if(PlanetOwner(PlanetNew)==7) {
+              Ether(3,'8AF3302C-A12F-484F-A801-0E02F3978856',Format(CT("Script.PC_pla08.150"),"<0>",Name(PlanetNew),"<1>",Name(StarNew),"<2>",req_num,"<3>",GameDateTxtByTurn(CurTurn()+max_duration)));
+            }
+            if(PlanetOwner(PlanetNew)<5) {
+              Ether(3,'8AF3302C-A12F-484F-A801-0E02F3978856',Format(CT("Script.PC_pla08.158"),"<0>",Name(PlanetNew),"<1>",Name(StarNew),"<2>",req_num,"<3>",GameDateTxtByTurn(CurTurn()+max_duration)));
+            }
+        >>>
+    }
+    1 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla08.162"));
+        Code=
+    }
+    2 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla08.136"));
+        Code=
+    }
+    3 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla08.137"));
+        Code=
+    }
+    4 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.PC_pla08.106"));
+        Code=
+    }
+    5 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.PC_pla08.159"));
+        Code=
+    }
+    6 ~{
+        Command=
+        Answer=DAnswer(Format(CT("Script.PC_pla08.138"),"<0>",Name(PlanetNew)));
+        Code=<<<
+            if(PirateType(quest_ship)>0) {
+              DChange(19);
+              exit;
+            }
+            if(PirateType(quest_ship)==0) {
+              if(ShipIsPartner(quest_ship)) {
+                DChange(16);
+                exit;
+              }
+              if(!ShipIsPartner(quest_ship)) {
+                if(ShipPartners(quest_ship)) {
+                  DChange(17);
+                  exit;
+                }
+                if(!ShipPartners(quest_ship)) {
+                  DChange(6);
+                  exit;
+                }
+              }
+            }
+        >>>
+    }
+    7 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.PC_pla08.159"));
+        Code=
+    }
+    8 ~{
+        Command=
+        Answer=DAnswer(Format(CT("Script.PC_pla08.138"),"<0>",Name(PlanetNew)));
+        Code=<<<
+            if(PirateType(quest_ship)==0) {
+              if(!ShipIsPartner(quest_ship)) {
+                if(!ShipPartners(quest_ship)) {
+                  DChange(8);
+                  exit;
+                }
+                if(ShipPartners(quest_ship)) {
+                  DChange(17);
+                  exit;
+                }
+              }
+              if(ShipIsPartner(quest_ship)) {
+                DChange(16);
+                exit;
+              }
+            }
+            if(PirateType(quest_ship)>0) {
+              DChange(19);
+              exit;
+            }
+        >>>
+    }
+    9 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_pla08.114"));
+        Code=<<<
+            DChange(9);
+            exit;
+        >>>
+    }
+    10 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_pla08.115"));
+        Code=<<<
+            ArrayClear(item_list);
+            ArrayClear(item_names_list);
+            ArrayClear(item_index_list);
+            counter=0;
+            while(counter<ShipItems(Player())) {
+              temp_item=ShipItems(Player(),counter);
+              counter=counter+1;
+              if(!ItemIsInUse(temp_item)) {
+                item_is_eq=0;
+                if (ItemType(temp_item)==t_Engine){item_is_eq=1;}
+                if (ItemType(temp_item)==t_FuelTanks){item_is_eq=1;}
+                if (ItemType(temp_item)==t_Radar){item_is_eq=1;}
+                if (ItemType(temp_item)==t_Scaner){item_is_eq=1;}
+                if (ItemType(temp_item)==t_RepairRobot){item_is_eq=1;}
+                if (ItemType(temp_item)==t_CargoHook){item_is_eq=1;}
+                if (ItemType(temp_item)==t_DefGenerator){item_is_eq=1;}
+                if (ItemInScript(temp_item)){item_is_eq=0;}
+                if (item_is_eq){
+                ArrayAdd(item_list,temp_item);
+                temp_str=ItemFullName(temp_item);
+                temp_str=temp_str+', '+ItemCost(temp_item);
+                temp_str=temp_str+'cr., '+ItemSize(temp_item)+'ò.';
+                ArrayAdd(item_names_list,temp_str);
+                ArrayAdd(item_index_list,counter-1);}
+              }
+            }
+            num_items=ArrayDim(item_list)-1;
+            items_page=0;
+            if(num_items) {
+              DChange(10);
+              exit;
+            }
+            if(!num_items) {
+              DChange(11);
+              exit;
+            }
+        >>>
+    }
+    11 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.PC_pla08.116"));
+        Code=
+    }
+    12 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_pla08.117"));
+        Code=<<<
+            ShipMoney(Player(),ShipMoney(Player())-req_money);
+            Sound('Sound.Buy');
+            ShipJoin(GroupHired,quest_ship);
+            num_deals=num_deals+1;
+            DChange(15);
+            exit;
+        >>>
+    }
+    13 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.PC_pla08.159"));
+        Code=
+    }
+    14 ~{
+        Command=
+        Answer=DAnswer(Format(CT("Script.PC_pla08.124"),"<0>",item_names_list[1+items_page*5]));
+        Code=<<<
+            chosen_num=1+items_page*5;
+            temp_item=item_list[chosen_num];
+            if((ItemCost(temp_item)*150)>=(req_money*100)) {
+              if(ItemSize(temp_item)<=ShipFreeSpace(quest_ship)) {
+                AddItemToShip(quest_ship,GetItemFromShip(Player(),item_index_list[chosen_num]));
+                ShipJoin(GroupHired,quest_ship);
+                num_deals=num_deals+1;
+                DChange(14);
+                exit;
+              }
+              if(ItemSize(temp_item)>ShipFreeSpace(quest_ship)) {
+                DChange(13);
+                exit;
+              }
+            }
+            if((ItemCost(temp_item)*150)<(req_money*100)) {
+              DChange(12);
+              exit;
+            }
+        >>>
+    }
+    15 ~{
+        Command=
+        Answer=DAnswer(Format(CT("Script.PC_pla08.124"),"<0>",item_names_list[2+items_page*5]));
+        Code=<<<
+            chosen_num=2+items_page*5;
+            temp_item=item_list[chosen_num];
+            if((ItemCost(temp_item)*150)>=(req_money*100)) {
+              if(ItemSize(temp_item)<=ShipFreeSpace(quest_ship)) {
+                AddItemToShip(quest_ship,GetItemFromShip(Player(),item_index_list[chosen_num]));
+                ShipJoin(GroupHired,quest_ship);
+                num_deals=num_deals+1;
+                DChange(14);
+                exit;
+              }
+              if(ItemSize(temp_item)>ShipFreeSpace(quest_ship)) {
+                DChange(13);
+                exit;
+              }
+            }
+            if((ItemCost(temp_item)*150)<(req_money*100)) {
+              DChange(12);
+              exit;
+            }
+        >>>
+    }
+    16 ~{
+        Command=
+        Answer=DAnswer(Format(CT("Script.PC_pla08.124"),"<0>",item_names_list[3+items_page*5]));
+        Code=<<<
+            chosen_num=3+items_page*5;
+            temp_item=item_list[chosen_num];
+            if((ItemCost(temp_item)*150)>=(req_money*100)) {
+              if(ItemSize(temp_item)<=ShipFreeSpace(quest_ship)) {
+                AddItemToShip(quest_ship,GetItemFromShip(Player(),item_index_list[chosen_num]));
+                ShipJoin(GroupHired,quest_ship);
+                num_deals=num_deals+1;
+                DChange(14);
+                exit;
+              }
+              if(ItemSize(temp_item)>ShipFreeSpace(quest_ship)) {
+                DChange(13);
+                exit;
+              }
+            }
+            if((ItemCost(temp_item)*150)<(req_money*100)) {
+              DChange(12);
+              exit;
+            }
+        >>>
+    }
+    17 ~{
+        Command=
+        Answer=DAnswer(Format(CT("Script.PC_pla08.124"),"<0>",item_names_list[4+items_page*5]));
+        Code=<<<
+            chosen_num=4+items_page*5;
+            temp_item=item_list[chosen_num];
+            if((ItemCost(temp_item)*150)>=(req_money*100)) {
+              if(ItemSize(temp_item)<=ShipFreeSpace(quest_ship)) {
+                AddItemToShip(quest_ship,GetItemFromShip(Player(),item_index_list[chosen_num]));
+                ShipJoin(GroupHired,quest_ship);
+                num_deals=num_deals+1;
+                DChange(14);
+                exit;
+              }
+              if(ItemSize(temp_item)>ShipFreeSpace(quest_ship)) {
+                DChange(13);
+                exit;
+              }
+            }
+            if((ItemCost(temp_item)*150)<(req_money*100)) {
+              DChange(12);
+              exit;
+            }
+        >>>
+    }
+    18 ~{
+        Command=
+        Answer=DAnswer(Format(CT("Script.PC_pla08.124"),"<0>",item_names_list[5+items_page*5]));
+        Code=<<<
+            chosen_num=5+items_page*5;
+            temp_item=item_list[chosen_num];
+            if((ItemCost(temp_item)*150)>=(req_money*100)) {
+              if(ItemSize(temp_item)<=ShipFreeSpace(quest_ship)) {
+                AddItemToShip(quest_ship,GetItemFromShip(Player(),item_index_list[chosen_num]));
+                ShipJoin(GroupHired,quest_ship);
+                num_deals=num_deals+1;
+                DChange(14);
+                exit;
+              }
+              if(ItemSize(temp_item)>ShipFreeSpace(quest_ship)) {
+                DChange(13);
+                exit;
+              }
+            }
+            if((ItemCost(temp_item)*150)<(req_money*100)) {
+              DChange(12);
+              exit;
+            }
+        >>>
+    }
+    19 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_pla08.125"));
+        Code=<<<
+            items_page=items_page+1;
+            if (items_page*5>=num_items){items_page=0;}
+            DChange(10);
+            exit;
+        >>>
+    }
+    20 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.PC_pla08.116"));
+        Code=
+    }
+    21 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.PC_pla08.160"));
+        Code=
+    }
+    22 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_pla08.127"));
+        Code=<<<
+            DChange(10);
+            exit;
+        >>>
+    }
+    23 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.PC_pla08.128"));
+        Code=
+    }
+    24 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_pla08.129"));
+        Code=<<<
+            DChange(9);
+            exit;
+        >>>
+    }
+    25 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.PC_pla08.159"));
+        Code=
+    }
+    26 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.PC_pla08.159"));
+        Code=
+    }
+    27 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.PC_pla08.159"));
+        Code=
+    }
+}

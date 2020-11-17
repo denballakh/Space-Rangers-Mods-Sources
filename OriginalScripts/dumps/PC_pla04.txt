@@ -1,0 +1,535 @@
+Version=6
+GlobalVars ~{
+}
+GlobalCode=
+LocalVars ~{
+    counter ~{
+        Type=Integer
+        Value=0
+    }
+    temp_item ~{
+        Type=Dword
+        Value=0
+    }
+    quest_deadline ~{
+        Type=Integer
+        Value=0
+    }
+    zond_cost ~{
+        Type=Integer
+        Value=0
+    }
+    quest_planet ~{
+        Type=Integer
+        Value=0
+    }
+    need_to_build_station ~{
+        Type=Integer
+        Value=0
+    }
+    quest_started ~{
+        Type=Integer
+        Value=0
+    }
+    quest_star ~{
+        Type=Dword
+        Value=0
+    }
+    quest_ship ~{
+        Type=Dword
+        Value=0
+    }
+    script_num ~{
+        Type=Integer
+        Value=0
+    }
+    quest_complete ~{
+        Type=Integer
+        Value=0
+    }
+    bomb_instruct ~{
+        Type=Integer
+        Value=0
+    }
+    talk_complete ~{
+        Type=Integer
+        Value=0
+    }
+    quest_failed ~{
+        Type=Integer
+        Value=0
+    }
+    base_destroyed ~{
+        Type=Integer
+        Value=0
+    }
+    StarNew ~{
+        Type=Dword
+        Value=0
+    }
+    PlanetNew ~{
+        Type=Dword
+        Value=0
+    }
+    ItemBomb ~{
+        Type=Dword
+        Value=0
+    }
+    GroupNew ~{
+        Type=Dword
+        Value=0
+    }
+    GroupSB ~{
+        Type=Dword
+        Value=1
+    }
+    DialogPlanet ~{
+        Type=Dword
+        Value=0
+    }
+    DialogCancelWait ~{
+        Type=Dword
+        Value=1
+    }
+    DialogComplete ~{
+        Type=Dword
+        Value=2
+    }
+    DialogCancelPirate ~{
+        Type=Dword
+        Value=3
+    }
+    DialogCancel ~{
+        Type=Dword
+        Value=4
+    }
+}
+Constellations=0
+Stars ~{
+    StarNew ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=False
+        NoComeKling=False
+        StarLinks ~{
+        }
+        Planets ~{
+            PlanetNew ~{
+                Race=Maloc,Peleng,People,Fei,Gaal
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Economy=Agriculture,Industrial,Mixed
+                Government=Anarchy,Dictatorship,Monarchy,Republic,Democracy
+                Range=0..100
+                Dialog=
+            }
+        }
+        Ships ~{
+            0 ~{
+                Count=1
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+                IsPlayer=True
+                Speed=0..10000
+                Weapon=Undef
+                CargoHook=0
+                EmptySpace=0
+                Rating=0..1000
+                Status ~{
+                    Trader=0..100
+                    Warrior=0..100
+                    Pirate=0..100
+                }
+                Score=0..1000000
+                Strength=0.0..0.0
+                Ruins=
+            }
+        }
+    }
+}
+Places ~{
+}
+Items ~{
+    ItemBomb ~{
+        Place=
+        Class=Unknown
+        Type=0
+        Size=10
+        Level=1
+        Radius=150
+        Owner=None
+        Useless=
+    }
+}
+Groups ~{
+    GroupNew ~{
+        Planet=PlanetNew
+        State=0(StateNew)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+        Count=1..1
+        Speed=100..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=True
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+    GroupSB ~{
+        Planet=PlanetNew
+        State=1(StateFree)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+        Count=0..0
+        Speed=100..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=False
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+}
+GroupLinks ~{
+}
+InitCode=<<<
+  counter=1;
+  while (counter<ArrayDim(array_script_names)){
+  if (array_chosen_planets[counter]==Id(PlanetNew)){script_num=counter;}
+  counter=counter+1;}
+>>>
+TurnCode=<<<
+  if (!quest_started){
+  if (ShipIsTakeoff(Player())){
+  ShipOut(Player());}}
+  if(ItemIn(ItemBomb,Player())) {
+    if(!bomb_instruct) {
+      bomb_instruct=1;
+      Ether(0,'91DA2592-E274-4026-A35D-C93CFBC621F9',CT("Script.PC_pla04.69"));
+    }
+  }
+  if(need_to_build_station) {
+    if(ShipStar(Player())!=StarNew) {
+      if(!StarOwner(StarNew)) {
+        quest_ship=StarRuins(StarNew,'SB');
+        if (!quest_ship){quest_ship=BuildRuins(StarNew,t_SB);}
+        ShipJoin(GroupSB,quest_ship);
+        quest_deadline=CurTurn()+180;
+        need_to_build_station=0;
+        Ether(3,'314766DE-1C96-435C-84D2-A7263E81412B',Format(CT("Script.PC_pla04.86"),"<0>",Name(PlanetNew),"<1>",Name(StarNew),"<2>",Name(GroupToShip(GroupSB)),"<3>",Name(IdToPlanet(quest_planet)),"<4>",Name(PlanetToStar(IdToPlanet(quest_planet))),"<5>",GameDateTxtByTurn(quest_deadline)));
+        Ether(0,'6AC2D8A5-B6E4-4E52-A7FF-7BE63E892833',Format(CT("Script.PC_pla04.97"),"<0>",Name(StarNew),"<1>",Name(GroupToShip(GroupSB))));
+      }
+    }
+  }
+  if(quest_started && !quest_failed && !base_destroyed) {
+    if(!need_to_build_station) {
+      if(GroupCount(GroupSB)) {
+        if(CurTurn()<=quest_deadline) {
+          if(ItemIn(ItemBomb,StarNew)) {
+            if(Dist(GroupToShip(GroupSB),ItemBomb)<200) {
+              ItemDestroy(ItemBomb,1);
+              ShipDestroy(GroupToShip(GroupSB));
+            }
+          }
+        }
+        if(CurTurn()>quest_deadline) {
+          array_quest_statuses[script_num]=3;
+          quest_failed=1;
+          ShipOut(GroupToShip(GroupSB));
+          ShipOut(Player());
+          NoComeKlingToStar(StarNew,0);
+          if (ItemExist(ItemBomb)) {ReleaseItemFromScript(ItemBomb);}
+          NoComeKlingToStar(StarNew,0);
+          Ether(5,'314766DE-1C96-435C-84D2-A7263E81412B',Format(CT("Script.PC_pla04.80"),"<0>",Name(PlanetNew)));
+        }
+      }
+      if(!GroupCount(GroupSB)) {
+        if (ItemExist(ItemBomb)) {ReleaseItemFromScript(ItemBomb);}
+        NoComeKlingToStar(StarNew,0);
+        base_destroyed=1;
+        Ether(0,'A5B53136-794C-45A5-BAD2-3D6AE692FBBD',Format(CT("Script.PC_pla04.79"),"<0>",Name(PlanetNew),"<1>",Name(StarNew)));
+      }
+    }
+  }
+>>>
+DialogBegin=<<<
+  if(GetShipPlanet(Player())==PlanetNew) {
+    if(!quest_started) {
+      if(request_dialog) {
+        if(PlanetOwner(PlanetNew)>=5) {
+          request_dialog=0;
+          //AddDialogOverride('DialogCancel',10);
+          AddDialogOverride('DialogCancelPirate',10);
+        }
+        if(PlanetOwner(PlanetNew)<5) {
+          request_dialog=0;
+          counter=1;
+          quest_planet=0;
+          while (counter<GalaxyStars()){
+          quest_star=StarNearbyStars(StarNew,counter);
+          if (StarOwner(quest_star)==0){
+          if (SectorVisible(StarToCon(quest_star))){
+          quest_planet=FindPlanet(quest_star,'NotMaloc,NotPeleng,NotPeople,NotFei,NotGaal',0,100);
+          if (quest_planet){counter=GalaxyStars();}}}
+          counter=counter+1;}
+          if(!quest_planet) {
+            AddDialogOverride('DialogCancel',10);
+          }
+          if(quest_planet) {
+            if(StarRuins(StarNew,'SB')) {
+              if(ShipInScript(StarRuins(StarNew,'SB'))) {
+                AddDialogOverride('DialogCancelWait',10);
+              }
+              if(!ShipInScript(StarRuins(StarNew,'SB'))) {
+                quest_planet=Id(quest_planet);
+                quest_ship=StarRuins(StarNew,'SB');
+                if (!quest_ship){need_to_build_station=1;}
+                zond_cost=GalaxyMoney(4);
+                AddDialogOverride('DialogPlanet',10);
+              }
+            }
+            if(!StarRuins(StarNew,'SB')) {
+              quest_planet=Id(quest_planet);
+              quest_ship=StarRuins(StarNew,'SB');
+              if (!quest_ship){need_to_build_station=1;}
+              zond_cost=GalaxyMoney(4);
+              AddDialogOverride('DialogPlanet',10);
+            }
+          }
+        }
+      }
+    }
+    if(quest_started && !need_to_build_station && !GroupCount(GroupSB) && !quest_complete) {
+      AddDialogOverride('DialogComplete',10);
+    }
+  }
+>>>
+States ~{
+    StateNew ~{
+        Type=None
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=
+    }
+    StateFree ~{
+        Type=Free
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=
+    }
+}
+Dialogs ~{
+    DialogPlanet ~{
+        Code=<<<
+            if(!need_to_build_station) {
+              quest_deadline=CurTurn()+180;
+              DChange(0);
+              exit;
+            }
+            if(need_to_build_station) {
+              DChange(2);
+              exit;
+            }
+        >>>
+    }
+    DialogCancelWait ~{
+        Code=<<<
+            DChange(3);
+            exit;
+        >>>
+    }
+    DialogComplete ~{
+        Code=<<<
+            array_quest_statuses[script_num]=2;
+            khan_counter=khan_counter+1;
+            quest_complete=1;
+            ShipOut(Player());
+            NoComeKlingToStar(StarNew,0);
+            Ether(4,'314766DE-1C96-435C-84D2-A7263E81412B',Format(CT("Script.PC_pla04.83"),"<0>",Name(PlanetNew)));
+            DChange(4);
+            exit;
+        >>>
+    }
+    DialogCancelPirate ~{
+        Code=<<<
+            DChange(5);
+            exit;
+        >>>
+    }
+    DialogCancel ~{
+        Code=<<<
+            DChange(6);
+            exit;
+        >>>
+    }
+}
+DialogMsgs ~{
+    0 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla04.87"),"<0>",Name(quest_ship),"<1>",ShipName(Player()),"<2>",Name(IdToPlanet(quest_planet)),"<3>",Name(PlanetToStar(IdToPlanet(quest_planet))),"<4>",zond_cost,"<5>",GameDateTxtByTurn(quest_deadline)));    if(ShipMoney(Player())>=zond_cost) {
+              DAdd(1);
+            }
+            DAdd(2);
+            DAdd(4);
+
+        >>>
+    }
+    1 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla04.70"));    DAdd(0);
+
+        >>>
+    }
+    2 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla04.98"),"<0>",ShipName(Player()),"<1>",Name(IdToPlanet(quest_planet)),"<2>",Name(PlanetToStar(IdToPlanet(quest_planet))),"<3>",zond_cost));    if(ShipMoney(Player())>=zond_cost) {
+              DAdd(1);
+            }
+            DAdd(2);
+            DAdd(4);
+
+        >>>
+    }
+    3 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_pla04.57"));    DAdd(3);
+
+        >>>
+    }
+    4 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla04.56"),"<0>",ShipName(Player())));    DAdd(5);
+
+        >>>
+    }
+    5 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla04.93"),"<0>",ShipName(Player()),"<1>",ShipName(Player())));    DAdd(6);
+
+        >>>
+    }
+    6 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_pla04.99"),"<0>",ShipName(Player())));    DAdd(7);
+
+        >>>
+    }
+}
+DialogAnswers ~{
+    0 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla04.71"));
+        Code=
+    }
+    1 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_pla04.72"));
+        Code=<<<
+            ShipMoney(Player(),ShipMoney(Player())-zond_cost);
+            Sound('Sound.Buy');
+            temp_item=CreateZond(4,4,3,3,3);
+            ItemCost(temp_item,zond_cost);
+            AddItemToShip(Player(),temp_item);
+            NoComeKlingToStar(StarNew,1);
+            quest_ship=StarRuins(StarNew,'SB');
+            if (quest_ship){ShipJoin(GroupSB,quest_ship);}
+            temp_item=CreateQuestItem('Usl_SpecialBomb');
+            AddItemToPlanet(IdToPlanet(quest_planet),temp_item);
+            LinkItemToScript(temp_item,ItemBomb);
+            array_quest_statuses[script_num]=1;
+            quest_started=1;
+            if(!need_to_build_station) {
+              quest_deadline=CurTurn()+180;
+              Ether(3,'314766DE-1C96-435C-84D2-A7263E81412B',Format(CT("Script.PC_pla04.86"),"<0>",Name(PlanetNew),"<1>",Name(StarNew),"<2>",Name(GroupToShip(GroupSB)),"<3>",Name(IdToPlanet(quest_planet)),"<4>",Name(PlanetToStar(IdToPlanet(quest_planet))),"<5>",GameDateTxtByTurn(quest_deadline)));
+            }
+            if(need_to_build_station) {
+              Ether(3,'314766DE-1C96-435C-84D2-A7263E81412B',Format(CT("Script.PC_pla04.100"),"<0>",Name(PlanetNew),"<1>",Name(StarNew),"<2>",Name(IdToPlanet(quest_planet)),"<3>",Name(PlanetToStar(IdToPlanet(quest_planet)))));
+            }
+            DChange(1);
+            exit;
+        >>>
+    }
+    2 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla04.73"));
+        Code=
+    }
+    3 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla04.91"));
+        Code=
+    }
+    4 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla04.74"));
+        Code=<<<
+            NoComeKlingToStar(StarNew,1);
+            quest_ship=StarRuins(StarNew,'SB');
+            if (quest_ship){ShipJoin(GroupSB,quest_ship);}
+            temp_item=CreateQuestItem('Usl_SpecialBomb');
+            AddItemToPlanet(IdToPlanet(quest_planet),temp_item);
+            LinkItemToScript(temp_item,ItemBomb);
+            array_quest_statuses[script_num]=1;
+            quest_started=1;
+            if(!need_to_build_station) {
+              quest_deadline=CurTurn()+180;
+              Ether(3,'314766DE-1C96-435C-84D2-A7263E81412B',Format(CT("Script.PC_pla04.86"),"<0>",Name(PlanetNew),"<1>",Name(StarNew),"<2>",Name(GroupToShip(GroupSB)),"<3>",Name(IdToPlanet(quest_planet)),"<4>",Name(PlanetToStar(IdToPlanet(quest_planet))),"<5>",GameDateTxtByTurn(quest_deadline)));
+            }
+            if(need_to_build_station) {
+              Ether(3,'314766DE-1C96-435C-84D2-A7263E81412B',Format(CT("Script.PC_pla04.100"),"<0>",Name(PlanetNew),"<1>",Name(StarNew),"<2>",Name(IdToPlanet(quest_planet)),"<3>",Name(PlanetToStar(IdToPlanet(quest_planet)))));
+            }
+        >>>
+    }
+    5 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla04.75"));
+        Code=
+    }
+    6 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla04.96"));
+        Code=
+    }
+    7 ~{
+        Command=planet
+        Answer=DAnswer('planet~'+CT("Script.PC_pla04.96"));
+        Code=
+    }
+}

@@ -1,0 +1,190 @@
+Version=6
+GlobalVars ~{
+    MS_SB2_DialogOk ~{
+        Type=Integer
+        Value=0
+    }
+}
+GlobalCode=<<<
+  if(MS_SB1_DialogOk && !MS_SB2_DialogOk && !DomiksDefeated()) {
+    if(ShipRank(Player())>0) {
+      GRun();
+    }
+  }
+>>>
+LocalVars ~{
+    playerStar ~{
+        Type=Dword
+        Value=0
+    }
+    playerPlanet ~{
+        Type=Dword
+        Value=0
+    }
+    GroupNew ~{
+        Type=Dword
+        Value=0
+    }
+    dSB ~{
+        Type=Dword
+        Value=0
+    }
+}
+Constellations=0
+Stars ~{
+    playerStar ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=False
+        NoComeKling=False
+        StarLinks ~{
+        }
+        Planets ~{
+            playerPlanet ~{
+                Race=Maloc,Peleng,People,Fei,Gaal
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Economy=Agriculture,Industrial,Mixed
+                Government=Anarchy,Dictatorship,Monarchy,Republic,Democracy
+                Range=0..100
+                Dialog=
+            }
+        }
+        Ships ~{
+            0 ~{
+                Count=1
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+                IsPlayer=True
+                Speed=0..10000
+                Weapon=Undef
+                CargoHook=0
+                EmptySpace=0
+                Rating=0..1000
+                Status ~{
+                    Trader=0..100
+                    Warrior=0..100
+                    Pirate=0..100
+                }
+                Score=0..1000000
+                Strength=0.0..0.0
+                Ruins=
+            }
+        }
+    }
+}
+Places ~{
+}
+Items ~{
+}
+Groups ~{
+    GroupNew ~{
+        Planet=playerPlanet
+        State=0(StateNew)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+        Count=1..1
+        Speed=100..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=True
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+}
+GroupLinks ~{
+}
+InitCode=
+TurnCode=<<<
+  if(MS_SB2_DialogOk || DomiksDefeated()) {
+    ShipOut(Player());
+  }
+>>>
+DialogBegin=<<<
+  if(GetShipRuins(Player())>0) {
+    if(ShipType(GetShipRuins(Player()))=='SB') {
+      if(!MS_SB2_DialogOk && !DomiksDefeated()) {
+        AddDialogOverride('dSB',150);
+      }
+    }
+  }
+>>>
+States ~{
+    StateNew ~{
+        Type=None
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=
+    }
+}
+Dialogs ~{
+    dSB ~{
+        Code=<<<
+            DChange(0);
+            exit;
+        >>>
+    }
+}
+DialogMsgs ~{
+    0 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_SB2.5"));    DAdd(0);
+
+        >>>
+    }
+    1 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_SB2.6"));    DAdd(1);
+
+        >>>
+    }
+    2 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_SB2.7"));    DAdd(2);
+
+        >>>
+    }
+}
+DialogAnswers ~{
+    0 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_SB2.3"));
+        Code=<<<
+            DChange(1);
+            exit;
+        >>>
+    }
+    1 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_SB2.4"));
+        Code=<<<
+            MS_SB2_DialogOk=1;
+            ShipOut(Player());
+            DChange(2);
+            exit;
+        >>>
+    }
+    2 ~{
+        Command=exit
+        Answer=DAnswer('exit');
+        Code=
+    }
+}

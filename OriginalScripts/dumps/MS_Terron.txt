@@ -1,0 +1,562 @@
+Version=6
+GlobalVars ~{
+    MS_Terron_DialogOk ~{
+        Type=Integer
+        Value=0
+    }
+    MS_Terron_ToStar ~{
+        Type=Integer
+        Value=0
+    }
+    MS_Terron_Crack ~{
+        Type=Integer
+        Value=0
+    }
+}
+GlobalCode=
+LocalVars ~{
+    StarTerron ~{
+        Type=Dword
+        Value=0
+    }
+    Planet ~{
+        Type=Dword
+        Value=0
+    }
+    StarPlayer ~{
+        Type=Dword
+        Value=1
+    }
+    PlaceToStar ~{
+        Type=Dword
+        Value=0
+    }
+    GroupTerron ~{
+        Type=Dword
+        Value=0
+    }
+    dTerron ~{
+        Type=Dword
+        Value=0
+    }
+}
+Constellations=0
+Stars ~{
+    StarTerron ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=False
+        NoComeKling=False
+        StarLinks ~{
+        }
+        Planets ~{
+            Planet ~{
+                Race=Maloc,Peleng,People,Fei,Gaal
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Economy=Agriculture,Industrial,Mixed
+                Government=Anarchy,Dictatorship,Monarchy,Republic,Democracy
+                Range=0..100
+                Dialog=
+            }
+        }
+        Ships ~{
+        }
+    }
+    StarPlayer ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=False
+        NoComeKling=False
+        StarLinks ~{
+            0 ~{
+                EndStar=StarTerron (0)
+                Angle=270
+                Distance=0..1000
+                Relation=0..100
+                Deviation=25
+                IsHole=False
+            }
+        }
+        Planets ~{
+        }
+        Ships ~{
+            0 ~{
+                Count=1
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+                IsPlayer=True
+                Speed=0..10000
+                Weapon=Undef
+                CargoHook=0
+                EmptySpace=0
+                Rating=0..1000
+                Status ~{
+                    Trader=0..100
+                    Warrior=0..100
+                    Pirate=0..100
+                }
+                Score=0..1000000
+                Strength=0.0..0.0
+                Ruins=
+            }
+        }
+    }
+}
+Places ~{
+    PlaceToStar ~{
+        Star=StarTerron
+        Type=Free
+        Angle=0.0
+        Distance=0.0
+        Radius=0
+    }
+}
+Items ~{
+}
+Groups ~{
+    GroupTerron ~{
+        Planet=Planet
+        State=0(stTerron)
+        Owner=Kling
+        Type=Use,TerronK0
+        Count=1..1
+        Speed=0..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=False
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+}
+GroupLinks ~{
+}
+InitCode=
+TurnCode=
+DialogBegin=
+States ~{
+    stTerron ~{
+        Type=None
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=dTerron
+        InMsg=dTerron
+        Ether=
+        Code=<<<
+            if(MS_Terron_ToStar) {
+              ChangeState(1);
+              exit;
+            }
+        >>>
+    }
+    stToStar ~{
+        Type=Move
+        Object=PlaceToStar
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=dTerron
+        InMsg=dTerron
+        Ether=
+        Code=
+    }
+}
+Dialogs ~{
+    dTerron ~{
+        Code=<<<
+            if(!HaveProgramm(progIntercom)) {
+              DChange(20);
+              exit;
+            }
+            if(HaveProgramm(progIntercom) && MS_Terron_Crack) {
+              DChange(21);
+              exit;
+            }
+            if(HaveProgramm(progIntercom) && MS_Terron_ToStar) {
+              DChange(15);
+              exit;
+            }
+            if(HaveProgramm(progIntercom) && !MS_Terron_DialogOk && !MS_Terron_ToStar && !MS_Terron_Crack) {
+              MS_Terron_DialogOk=1;
+              DChange(0);
+              exit;
+            }
+            if(HaveProgramm(progIntercom) && MS_Terron_DialogOk && !MS_Terron_ToStar && !MS_Terron_Crack) {
+              DChange(16);
+              exit;
+            }
+        >>>
+    }
+}
+DialogMsgs ~{
+    0 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.0"));    DAdd(0);
+
+        >>>
+    }
+    1 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.1"));    DAdd(1);
+
+        >>>
+    }
+    2 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.2"));    DAdd(2);
+
+        >>>
+    }
+    3 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.3"));    DAdd(4);
+
+        >>>
+    }
+    4 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.4"));    DAdd(5);
+
+        >>>
+    }
+    5 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.5"));    DAdd(3);
+
+        >>>
+    }
+    6 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.6"));    DAdd(6);
+            DAdd(7);
+            DAdd(17);
+
+        >>>
+    }
+    7 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.7"));    if(HaveProgramm(progSabCrack)) {
+              DAdd(11);
+            }
+            DAdd(8);
+            DAdd(9);
+
+        >>>
+    }
+    8 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.8"));    DAdd(12);
+
+        >>>
+    }
+    9 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.52"));    DAdd(13);
+            DAdd(14);
+            if(RobotSupport()) {
+              DAdd(15);
+            }
+            DAdd(9);
+
+        >>>
+    }
+    10 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.46"));    DAdd(16);
+
+        >>>
+    }
+    11 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.47"));    DAdd(16);
+
+        >>>
+    }
+    12 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.48"));    DAdd(16);
+
+        >>>
+    }
+    13 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.13"));    DAdd(10);
+
+        >>>
+    }
+    14 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.14"));    if(HaveProgramm(progEnergotron)) {
+              DAdd(19);
+            }
+            DAdd(6);
+            DAdd(7);
+
+        >>>
+    }
+    15 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.15"));    DAdd(21);
+
+        >>>
+    }
+    16 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.16"));    DAdd(6);
+            DAdd(7);
+            DAdd(17);
+
+        >>>
+    }
+    17 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.17"));    DAdd(23);
+
+        >>>
+    }
+    18 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.18"));    DAdd(18);
+
+        >>>
+    }
+    19 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.19"));    DAdd(20);
+
+        >>>
+    }
+    20 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.20"));    DAdd(22);
+
+        >>>
+    }
+    21 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_Terron.45"));    DAdd(24);
+
+        >>>
+    }
+}
+DialogAnswers ~{
+    0 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Terron.21"));
+        Code=<<<
+            DChange(1);
+            exit;
+        >>>
+    }
+    1 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Terron.22"));
+        Code=<<<
+            DChange(2);
+            exit;
+        >>>
+    }
+    2 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Terron.23"));
+        Code=<<<
+            DChange(5);
+            exit;
+        >>>
+    }
+    3 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Terron.24"));
+        Code=<<<
+            DChange(3);
+            exit;
+        >>>
+    }
+    4 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Terron.25"));
+        Code=<<<
+            DChange(4);
+            exit;
+        >>>
+    }
+    5 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Terron.26"));
+        Code=<<<
+            DChange(6);
+            exit;
+        >>>
+    }
+    6 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Terron.27"));
+        Code=
+    }
+    7 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Terron.28"));
+        Code=<<<
+            DChange(7);
+            exit;
+        >>>
+    }
+    8 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Terron.29"));
+        Code=
+    }
+    9 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Terron.30"));
+        Code=<<<
+            DChange(13);
+            exit;
+        >>>
+    }
+    10 ~{
+        Command=exit_end
+        Answer=DAnswer('exit_end~'+CT("Script.MS_Terron.31"));
+        Code=
+    }
+    11 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Terron.32"));
+        Code=<<<
+            DChange(8);
+            exit;
+        >>>
+    }
+    12 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Terron.33"));
+        Code=<<<
+            DChange(9);
+            exit;
+        >>>
+    }
+    13 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Terron.49"));
+        Code=<<<
+            TerronWeaponLock();
+            MS_Terron_Crack=1;
+            DChange(10);
+            exit;
+        >>>
+    }
+    14 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Terron.50"));
+        Code=<<<
+            TerronGrowLock();
+            MS_Terron_Crack=1;
+            DChange(11);
+            exit;
+        >>>
+    }
+    15 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Terron.51"));
+        Code=<<<
+            TerronLandingLock();
+            MS_Terron_Crack=1;
+            DChange(12);
+            exit;
+        >>>
+    }
+    16 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Terron.53"));
+        Code=
+    }
+    17 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Terron.38"));
+        Code=<<<
+            DChange(14);
+            exit;
+        >>>
+    }
+    18 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Terron.39"));
+        Code=<<<
+            DChange(19);
+            exit;
+        >>>
+    }
+    19 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Terron.40"));
+        Code=<<<
+            DChange(18);
+            exit;
+        >>>
+    }
+    20 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_Terron.41"));
+        Code=<<<
+            MS_Terron_ToStar=1;
+            TerronToStar();
+            DChange(17);
+            exit;
+        >>>
+    }
+    21 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Terron.42"));
+        Code=
+    }
+    22 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Terron.43"));
+        Code=
+    }
+    23 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Terron.44"));
+        Code=
+    }
+    24 ~{
+        Command=exit
+        Answer=DAnswer('exit~'+CT("Script.MS_Terron.37"));
+        Code=
+    }
+}

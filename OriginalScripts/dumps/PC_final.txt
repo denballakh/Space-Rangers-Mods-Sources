@@ -1,0 +1,1149 @@
+Version=6
+GlobalVars ~{
+    pirate_planet_unlocked ~{
+        Type=Integer
+        Value=0
+    }
+    keller_new_research ~{
+        Type=Integer
+        Value=0
+    }
+}
+GlobalCode=<<<
+  GRun();
+>>>
+LocalVars ~{
+    clan_win_choice ~{
+        Type=Integer
+        Value=0
+    }
+    domic_win_choice ~{
+        Type=Integer
+        Value=0
+    }
+    end_type ~{
+        Type=Integer
+        Value=0
+    }
+    clan_win_ether ~{
+        Type=Integer
+        Value=0
+    }
+    domic_win_ether ~{
+        Type=Integer
+        Value=0
+    }
+    dtype ~{
+        Type=Integer
+        Value=0
+    }
+    pirate_win_type ~{
+        Type=Integer
+        Value=0
+    }
+    last_turn_taxes ~{
+        Type=Integer
+        Value=0
+    }
+    capture_allowed ~{
+        Type=Integer
+        Value=0
+    }
+    capture_attempt ~{
+        Type=Integer
+        Value=0
+    }
+    coal_defeat_grats ~{
+        Type=Integer
+        Value=0
+    }
+    StarNew ~{
+        Type=Dword
+        Value=0
+    }
+    PlanetNew ~{
+        Type=Dword
+        Value=0
+    }
+    GroupNew ~{
+        Type=Dword
+        Value=0
+    }
+    DialogRCWin4 ~{
+        Type=Dword
+        Value=0
+    }
+    DialogPBWin1 ~{
+        Type=Dword
+        Value=1
+    }
+    DialogPBWin2 ~{
+        Type=Dword
+        Value=2
+    }
+    DialogPBWin3 ~{
+        Type=Dword
+        Value=3
+    }
+    DialogPBWin4 ~{
+        Type=Dword
+        Value=4
+    }
+    DialogRCWin1 ~{
+        Type=Dword
+        Value=5
+    }
+    DialogRCWin2 ~{
+        Type=Dword
+        Value=6
+    }
+    DialogRCWin3 ~{
+        Type=Dword
+        Value=7
+    }
+    DialogRCWin5 ~{
+        Type=Dword
+        Value=8
+    }
+    DialogPBAfter ~{
+        Type=Dword
+        Value=9
+    }
+    DialogPBRetire ~{
+        Type=Dword
+        Value=10
+    }
+    DialogPBGrats ~{
+        Type=Dword
+        Value=11
+    }
+}
+Constellations=0
+Stars ~{
+    StarNew ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=False
+        NoComeKling=False
+        StarLinks ~{
+        }
+        Planets ~{
+            PlanetNew ~{
+                Race=Maloc,Peleng,People,Fei,Gaal
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Economy=Agriculture,Industrial,Mixed
+                Government=Anarchy,Dictatorship,Monarchy,Republic,Democracy
+                Range=0..100
+                Dialog=
+            }
+        }
+        Ships ~{
+            0 ~{
+                Count=1
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+                IsPlayer=True
+                Speed=0..10000
+                Weapon=Undef
+                CargoHook=0
+                EmptySpace=0
+                Rating=0..1000
+                Status ~{
+                    Trader=0..100
+                    Warrior=0..100
+                    Pirate=0..100
+                }
+                Score=0..1000000
+                Strength=0.0..0.0
+                Ruins=
+            }
+        }
+    }
+}
+Places ~{
+}
+Items ~{
+}
+Groups ~{
+    GroupNew ~{
+        Planet=PlanetNew
+        State=0(StateNew)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+        Count=1..1
+        Speed=100..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=True
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+}
+GroupLinks ~{
+}
+InitCode=
+TurnCode=<<<
+  if(GVideoStatus>1) {
+    if(end_type==1) {
+      GVideoStatus=0;
+      end_type=0;
+      if(domic_win_choice==2) {
+        EndGame(15);
+      }
+    }
+    if(end_type==2) {
+      GVideoStatus=0;
+      end_type=0;
+      if(!clan_win_choice) {
+        if (PirateWin()==1){EndGame(9);}
+        if (PirateWin()==2){EndGame(10);}
+      }
+      if(clan_win_choice) {
+        if (PirateWin()==1){EndGame(16);}
+        if (PirateWin()==2){EndGame(17);}
+      }
+    }
+    if(end_type==3) {
+      GVideoStatus=0;
+      end_type=0;
+      EndGame(18);
+    }
+  }
+  if(PirateWin() && (PirateWin()<4) && !clan_win_ether && ShipInNormalSpace(Player())) {
+    clan_win_ether=1;
+    if(PirateWin()==3) {
+      Ether(3,'BABB37FE-1007-4A51-A103-DB9EBEAA4C10',CT("Script.PC_final.250"));
+    }
+    if(PirateWin()!=3) {
+      Ether(3,'BABB37FE-1007-4A51-A103-DB9EBEAA4C10',CT("Script.PC_final.186"));
+    }
+  }
+  if(!pirate_win_type) {
+    pirate_win_type=PirateWin();
+  }
+  if((PirateWin()==3) && (ControlledSystems(2)==1) && !capture_allowed) {
+    NoComeKlingToStar(PlanetToStar(PlanetPirateClan()),0);
+    capture_allowed=1;
+    if(ControlledSystems(0)>0) {
+      Ether(0,'F58A7397-0157-4296-B8D8-6CC70DA1B37C',Format(CT("Script.PC_final.229"),"<0>",Name(PlanetToStar(PlanetPirateClan()))));
+    }
+  }
+  if(DomiksDefeated() && ((keller_new_research==3) || !keller_new_research || !Keller()) && !domic_win_ether) {
+    domic_win_ether=1;
+    if(CoalitionDefeated()) {
+      Ether(4,'CF24B7E4-65CC-434A-9944-89B3CFC08CC5',Format(CT("Script.PC_final.197"),"<0>",ShipName(Player()),"<1>",ShipName(Player())));
+    }
+  }
+  if(StarToCon(PlanetToStar(PlanetPirateClan()))==StarToCon(ShipStar(Player()))) {
+    if((ShipKillFactionInCurSystem(Player(),2)>2) && ShipInNormalSpace(Player()) && !CoalitionDefeated() && !(GetShipPirateRank(Player())<=6 && ShipStar(Player())==PlanetToStar(PlanetPirateClan()))) {
+      if(PirateWin()!=3) {
+        if(!capture_attempt) {
+          capture_attempt=1;
+          Ether(0,'EA3514BE-637D-46EF-8E5A-0BBDA2C9306B',Format(CT("Script.PC_final.239"),"<0>",ShipName(Player()),"<1>",Name(ShipStar(Player()))));
+        }
+      }
+      if(PirateWin()==3) {
+        if(PlanetToStar(PlanetPirateClan())==ShipStar(Player())) {
+          if(ControlledSystems(2)>1) {
+            if(!capture_attempt) {
+              capture_attempt=1;
+              Ether(0,'EA3514BE-637D-46EF-8E5A-0BBDA2C9306B',Format(CT("Script.PC_final.239"),"<0>",ShipName(Player()),"<1>",Name(ShipStar(Player()))));
+            }
+          }
+        }
+      }
+    }
+  }
+  if(!pirate_planet_unlocked) {
+    if(PlanetOwner(PlanetPirateClan())<5) {
+      pirate_planet_unlocked=1;
+      NoLanding(PlanetPirateClan(),0);
+    }
+  }
+>>>
+DialogBegin=<<<
+  if(GetShipRuins(Player())>0) {
+    if(ShipType(GetShipRuins(Player()))=='PB') {
+      if(ShipInPirateClan(Player())) {
+        AddDialogInject('',Format(CT("Script.PC_final.196"),"<0>",ShipName(Player())),'',10,1);
+        AddDialogInject('',CT("Script.PC_final.195"),'',9,0);
+        if (!DomiksDefeated() || !((keller_new_research==3) || !keller_new_research || !Keller())){
+        AddDialogInject('',CT("Script.PC_final.194"),'',8,0);}
+        if (DomiksDefeated() && ((keller_new_research==3) || !keller_new_research || !Keller())){
+        AddDialogInject('',CT("Script.PC_final.226"),'',8,0);}
+        if (CoalitionDefeated()){
+        if ((DomiksDefeated() && ((keller_new_research==3) || !keller_new_research || !Keller())) || (ControlledSystems(1)<ControlledSystems(2))){
+        AddDialogInject('DialogPBRetire',CT("Script.PC_final.225"),CT("Script.PC_final.198"),7,0);
+        }}
+        if (PlayerMayTakeSubCrack()){
+        AddDialogInject('',Format(CT("Script.PC_final.193"),"<0>",SubCrackCost()),'',7,0);
+        }
+        dtype=((Id(GetShipRuins(Player()))+CurTurn())/7)%6;
+        if (dtype==0){
+        AddDialogInject('',Format(CT("Script.PC_final.192"),"<0>",ShipName(Player())),'',6,0);
+        }
+        if (dtype==1){
+        AddDialogInject('',Format(CT("Script.PC_final.191"),"<0>",ShipName(Player())),'',6,0);
+        }
+        if (dtype==2){
+        AddDialogInject('',Format(CT("Script.PC_final.190"),"<0>",ShipName(Player())),'',6,0);
+        }
+        if (dtype==3){
+        AddDialogInject('',Format(CT("Script.PC_final.189"),"<0>",ShipName(Player())),'',6,0);
+        }
+        if (dtype==4){
+        AddDialogInject('',Format(CT("Script.PC_final.188"),"<0>",ShipName(Player())),'',6,0);
+        }
+      }
+      if(CoalitionDefeated() && !coal_defeat_grats &&!DomiksDefeated()) {
+        AddDialogOverride('DialogPBGrats',9);
+      }
+      if(!clan_win_choice) {
+        if(pirate_win_type==1) {
+          if(DomiksDefeated()) {
+            AddDialogOverride('DialogPBWin1',10);
+          }
+          if(!DomiksDefeated()) {
+            AddDialogOverride('DialogPBWin2',10);
+          }
+        }
+        if(pirate_win_type==2) {
+          if(DomiksDefeated()) {
+            AddDialogOverride('DialogPBWin3',10);
+          }
+          if(!DomiksDefeated()) {
+            AddDialogOverride('DialogPBWin4',10);
+          }
+        }
+      }
+    }
+    if(ShipType(GetShipRuins(Player()))=='RC') {
+      if(DomiksDefeated() && !domic_win_choice) {
+        if(!PirateWin()) {
+          AddDialogOverride('DialogRCWin1',10);
+        }
+        if(PirateWin()) {
+          if(!(PirateWin()==3)) {
+            AddDialogOverride('DialogRCWin2',10);
+          }
+          if((PirateWin()==3)) {
+            AddDialogOverride('DialogRCWin3',10);
+          }
+        }
+      }
+      if(domic_win_choice && (PirateWin()==3) && !clan_win_choice) {
+        AddDialogOverride('DialogRCWin4',10);
+      }
+      if(!DomiksDefeated() && (PirateWin()==3) && !clan_win_choice) {
+        AddDialogOverride('DialogRCWin5',10);
+      }
+    }
+  }
+  if(GetShipPlanet(Player())>0) {
+    if((GetShipPirateRank(Player())>=7) && (Id(PlanetToStar(GetShipPlanet(Player())))==72) && (PlanetOwner(GetShipPlanet(Player()))==7)) {
+      if(!keller_new_research) {
+        dtype=((16*Id(GetShipPlanet(Player()))+CurTurn())/20)%4;
+        if(dtype==0) {
+          AddDialogInject('',Format(CT("Script.PC_final.213"),"<0>",ShipName(Player())),'',10,1);
+          if((CurTurn()-last_turn_taxes)>=10) {
+            AddDialogInject('',Format(CT("Script.PC_final.208"),"<0>",1000*min(100,(CurTurn()-last_turn_taxes))),'',9,0);
+            ShipMoney(Player(),ShipMoney(Player())+1000*min(100,(CurTurn()-last_turn_taxes)));
+            last_turn_taxes=CurTurn();
+            Sound('Sound.Buy');
+          }
+        }
+        if(dtype==1) {
+          AddDialogInject('',Format(CT("Script.PC_final.212"),"<0>",ShipName(Player())),'',10,1);
+          if((CurTurn()-last_turn_taxes)>=10) {
+            AddDialogInject('',Format(CT("Script.PC_final.208"),"<0>",1000*min(100,(CurTurn()-last_turn_taxes))),'',9,0);
+            ShipMoney(Player(),ShipMoney(Player())+1000*min(100,(CurTurn()-last_turn_taxes)));
+            last_turn_taxes=CurTurn();
+            Sound('Sound.Buy');
+          }
+        }
+        if(dtype==2) {
+          AddDialogInject('',Format(CT("Script.PC_final.211"),"<0>",ShipName(Player())),'',10,1);
+          if((CurTurn()-last_turn_taxes)>=10) {
+            AddDialogInject('',Format(CT("Script.PC_final.208"),"<0>",1000*min(100,(CurTurn()-last_turn_taxes))),'',9,0);
+            ShipMoney(Player(),ShipMoney(Player())+1000*min(100,(CurTurn()-last_turn_taxes)));
+            last_turn_taxes=CurTurn();
+            Sound('Sound.Buy');
+          }
+        }
+        if(dtype==3) {
+          AddDialogInject('',Format(CT("Script.PC_final.210"),"<0>",ShipName(Player()),"<1>",ShipName(Player())),'',10,1);
+          if((CurTurn()-last_turn_taxes)>=10) {
+            AddDialogInject('',Format(CT("Script.PC_final.208"),"<0>",1000*min(100,(CurTurn()-last_turn_taxes))),'',9,0);
+            ShipMoney(Player(),ShipMoney(Player())+1000*min(100,(CurTurn()-last_turn_taxes)));
+            last_turn_taxes=CurTurn();
+            Sound('Sound.Buy');
+          }
+        }
+      }
+      if((keller_new_research==1) && Keller()) {
+        AddDialogInject('',Format(CT("Script.PC_final.214"),"<0>",ShipName(Player()),"<1>",ShipName(Keller())),'',10,1);
+      }
+      if((keller_new_research==2) && Keller()) {
+        AddDialogInject('',Format(CT("Script.PC_final.216"),"<0>",ShipName(Player()),"<1>",ShipName(Keller())),'',10,1);
+      }
+      if((keller_new_research==3) && Keller()) {
+        dtype=((20*Id(GetShipPlanet(Player()))+CurTurn())/20)%5;
+        if(dtype==0) {
+          AddDialogInject('',Format(CT("Script.PC_final.223"),"<0>",ShipName(Player())),'',10,1);
+        }
+        if(dtype==1) {
+          AddDialogInject('',Format(CT("Script.PC_final.224"),"<0>",ShipName(Player())),'',10,1);
+        }
+        if(dtype==2) {
+          AddDialogInject('',Format(CT("Script.PC_final.221"),"<0>",ShipName(Player())),'',10,1);
+          AddDialogInject('',CT("Script.PC_final.220"),'',9,0);
+        }
+        if(dtype==3) {
+          AddDialogInject('',Format(CT("Script.PC_final.219"),"<0>",ShipName(Player())),'',10,1);
+        }
+        if(dtype==4) {
+          AddDialogInject('',Format(CT("Script.PC_final.218"),"<0>",ShipName(Player())),'',10,1);
+          AddDialogInject('',CT("Script.PC_final.217"),'',9,0);
+        }
+      }
+    }
+  }
+  if(GetShipPlanet(Player())==PlanetPirateClan()) {
+    if(pirate_planet_unlocked) {
+      AddDialogOverride('DialogPBAfter',10);
+    }
+  }
+>>>
+States ~{
+    StateNew ~{
+        Type=None
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=
+    }
+}
+Dialogs ~{
+    DialogRCWin4 ~{
+        Code=<<<
+            if(GetShipPirateRank(Player())<=6 ) {
+              DChange(29);
+              exit;
+            }
+            if(GetShipPirateRank(Player())==7) {
+              DChange(4);
+              exit;
+            }
+            if(EtherState('BABB37FE-1007-4A51-A103-DB9EBEAA4C10')==3) {
+              Ether(4,'BABB37FE-1007-4A51-A103-DB9EBEAA4C10',CT("Script.PC_final.250"));
+            }
+        >>>
+    }
+    DialogPBWin1 ~{
+        Code=<<<
+            if(EtherState('BABB37FE-1007-4A51-A103-DB9EBEAA4C10')==3) {
+              Ether(4,'BABB37FE-1007-4A51-A103-DB9EBEAA4C10',CT("Script.PC_final.186"));
+            }
+            DChange(0);
+            exit;
+        >>>
+    }
+    DialogPBWin2 ~{
+        Code=<<<
+            if(EtherState('BABB37FE-1007-4A51-A103-DB9EBEAA4C10')==3) {
+              Ether(4,'BABB37FE-1007-4A51-A103-DB9EBEAA4C10',CT("Script.PC_final.186"));
+            }
+            DChange(1);
+            exit;
+        >>>
+    }
+    DialogPBWin3 ~{
+        Code=<<<
+            if(EtherState('BABB37FE-1007-4A51-A103-DB9EBEAA4C10')==3) {
+              Ether(4,'BABB37FE-1007-4A51-A103-DB9EBEAA4C10',CT("Script.PC_final.186"));
+            }
+            DChange(2);
+            exit;
+        >>>
+    }
+    DialogPBWin4 ~{
+        Code=<<<
+            if(EtherState('BABB37FE-1007-4A51-A103-DB9EBEAA4C10')==3) {
+              Ether(4,'BABB37FE-1007-4A51-A103-DB9EBEAA4C10',CT("Script.PC_final.186"));
+            }
+            DChange(3);
+            exit;
+        >>>
+    }
+    DialogRCWin1 ~{
+        Code=<<<
+            DChange(9);
+            exit;
+        >>>
+    }
+    DialogRCWin2 ~{
+        Code=<<<
+            DChange(8);
+            exit;
+        >>>
+    }
+    DialogRCWin3 ~{
+        Code=<<<
+            if(EtherState('BABB37FE-1007-4A51-A103-DB9EBEAA4C10')==3) {
+              Ether(4,'BABB37FE-1007-4A51-A103-DB9EBEAA4C10',CT("Script.PC_final.250"));
+            }
+            DChange(10);
+            exit;
+        >>>
+    }
+    DialogRCWin5 ~{
+        Code=<<<
+            if(EtherState('BABB37FE-1007-4A51-A103-DB9EBEAA4C10')==3) {
+              Ether(4,'BABB37FE-1007-4A51-A103-DB9EBEAA4C10',CT("Script.PC_final.250"));
+            }
+            if(GetShipPirateRank(Player())<=6 ) {
+              DChange(30);
+              exit;
+            }
+            if(GetShipPirateRank(Player())==7) {
+              DChange(5);
+              exit;
+            }
+        >>>
+    }
+    DialogPBAfter ~{
+        Code=<<<
+            if(PlanetOwner(PlanetPirateClan())==7) {
+              DChange(19);
+              exit;
+            }
+            if(PlanetOwner(PlanetPirateClan())<5) {
+              DChange(23);
+              exit;
+            }
+        >>>
+    }
+    DialogPBRetire ~{
+        Code=<<<
+            if(GetShipPirateRank(Player())>=7) {
+              DChange(20);
+              exit;
+            }
+            if(GetShipPirateRank(Player())<7) {
+              DChange(21);
+              exit;
+            }
+        >>>
+    }
+    DialogPBGrats ~{
+        Code=<<<
+            DChange(24);
+            exit;
+        >>>
+    }
+}
+DialogMsgs ~{
+    0 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.149"),"<0>",ShipName(Player()),"<1>",ShipName(Player())));    DAdd(0);
+
+        >>>
+    }
+    1 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.151"),"<0>",ShipName(Player()),"<1>",ShipName(Player())));    DAdd(0);
+            DAdd(1);
+
+        >>>
+    }
+    2 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.125"),"<0>",ShipName(Player()),"<1>",ShipName(Player())));    DAdd(2);
+
+        >>>
+    }
+    3 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.126"),"<0>",ShipName(Player()),"<1>",ShipName(Player())));    DAdd(2);
+            DAdd(3);
+
+        >>>
+    }
+    4 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.154"),"<0>",ShipName(Player()),"<1>",ShipName(Player())));    DAdd(6);
+
+        >>>
+    }
+    5 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.240"),"<0>",ShipName(Player()),"<1>",ShipName(Player())));    DAdd(4);
+            DAdd(5);
+            DAdd(36);
+
+        >>>
+    }
+    6 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.152"),"<0>",ShipName(Player())));    DAdd(26);
+
+        >>>
+    }
+    7 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.146"),"<0>",ShipName(Player())));    DAdd(7);
+
+        >>>
+    }
+    8 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_final.158"));    DAdd(8);
+            DAdd(9);
+            DAdd(10);
+
+        >>>
+    }
+    9 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_final.249"));    DAdd(14);
+            DAdd(15);
+            DAdd(37);
+
+        >>>
+    }
+    10 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_final.160"));    DAdd(18);
+            DAdd(19);
+            DAdd(20);
+
+        >>>
+    }
+    11 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_final.161"));    DAdd(11);
+            DAdd(12);
+            DAdd(13);
+
+        >>>
+    }
+    12 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_final.162"));    DAdd(11);
+            DAdd(12);
+            DAdd(13);
+
+        >>>
+    }
+    13 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_final.163"));    DAdd(11);
+            DAdd(12);
+            DAdd(13);
+
+        >>>
+    }
+    14 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_final.164"));    DAdd(16);
+            DAdd(17);
+
+        >>>
+    }
+    15 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_final.165"));    DAdd(24);
+            DAdd(25);
+
+        >>>
+    }
+    16 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_final.166"));    DAdd(21);
+            DAdd(22);
+            DAdd(23);
+
+        >>>
+    }
+    17 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_final.167"));    DAdd(21);
+            DAdd(22);
+            DAdd(23);
+
+        >>>
+    }
+    18 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_final.168"));    DAdd(21);
+            DAdd(22);
+            DAdd(23);
+
+        >>>
+    }
+    19 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.180"),"<0>",ShipName(Player())));    DAdd(27);
+
+        >>>
+    }
+    20 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.201"),"<0>",ShipName(Player())));    DAdd(28);
+            DAdd(29);
+
+        >>>
+    }
+    21 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.202"),"<0>",ShipName(Player())));    DAdd(28);
+            DAdd(29);
+
+        >>>
+    }
+    22 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_final.203"));    DAdd(30);
+
+        >>>
+    }
+    23 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.227"),"<0>",ShipName(Player()),"<1>",Name(PlanetPirateClan())));    DAdd(31);
+
+        >>>
+    }
+    24 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.232"),"<0>",ShipName(Player())));    DAdd(32);
+
+        >>>
+    }
+    25 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.233"),"<0>",ShipName(Player())));    DAdd(33);
+            DAdd(34);
+
+        >>>
+    }
+    26 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_final.234"));    DAdd(35);
+
+        >>>
+    }
+    27 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.241"),"<0>",ShipName(Player())));    DAdd(4);
+            DAdd(5);
+
+        >>>
+    }
+    28 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.PC_final.248"));    DAdd(38);
+            DAdd(39);
+
+        >>>
+    }
+    29 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.251"),"<0>",ShipName(Player()),"<1>",ShipName(Player())));    DAdd(6);
+
+        >>>
+    }
+    30 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.251"),"<0>",ShipName(Player()),"<1>",ShipName(Player())));    DAdd(6);
+            DAdd(40);
+
+        >>>
+    }
+    31 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.PC_final.252"),"<0>",ShipName(Player())));    DAdd(26);
+
+        >>>
+    }
+}
+DialogAnswers ~{
+    0 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.116"));
+        Code=<<<
+            if (!CoalitionDefeated()){EndGame(5);}
+            if (CoalitionDefeated()){
+            if (!DomiksDefeated()){EndGame(11);}
+            if (DomiksDefeated()){EndGame(13);}
+            }
+        >>>
+    }
+    1 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.117"));
+        Code=<<<
+            clan_win_choice=1;
+            coal_defeat_grats=1;
+            NoLanding(PlanetPirateClan(),0);
+            pirate_planet_unlocked=1;
+            DChange(7);
+            exit;
+        >>>
+    }
+    2 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.118"));
+        Code=<<<
+            if (!CoalitionDefeated()){EndGame(6);}
+            if (CoalitionDefeated()){
+            if (!DomiksDefeated()){EndGame(11);}
+            if (DomiksDefeated()){EndGame(13);}
+            }
+        >>>
+    }
+    3 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.119"));
+        Code=<<<
+            clan_win_choice=1;
+            coal_defeat_grats=1;
+            NoLanding(PlanetPirateClan(),0);
+            pirate_planet_unlocked=1;
+            DChange(7);
+            exit;
+        >>>
+    }
+    4 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.120"));
+        Code=<<<
+            EndGame(7);
+        >>>
+    }
+    5 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.121"));
+        Code=<<<
+            DChange(6);
+            exit;
+        >>>
+    }
+    6 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.122"));
+        Code=<<<
+            EndGame(7);
+        >>>
+    }
+    7 ~{
+        Command=hangar
+        Answer=DAnswer('hangar~'+CT("Script.PC_final.144"));
+        Code=
+    }
+    8 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.169"));
+        Code=<<<
+            DChange(12);
+            exit;
+        >>>
+    }
+    9 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.170"));
+        Code=<<<
+            DChange(11);
+            exit;
+        >>>
+    }
+    10 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.171"));
+        Code=<<<
+            DChange(13);
+            exit;
+        >>>
+    }
+    11 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.172"));
+        Code=<<<
+            end_type=2;
+            StartVideo('data/outro.vdo','Outro');
+        >>>
+    }
+    12 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.173"));
+        Code=<<<
+            end_type=2;
+            StartVideo('data/outro.vdo','Outro');
+        >>>
+    }
+    13 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.174"));
+        Code=<<<
+            end_type=2;
+            StartVideo('data/outro.vdo','Outro');
+        >>>
+    }
+    14 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.175"));
+        Code=<<<
+            DChange(14);
+            exit;
+        >>>
+    }
+    15 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.176"));
+        Code=<<<
+            DChange(15);
+            exit;
+        >>>
+    }
+    16 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.172"));
+        Code=<<<
+            domic_win_choice=1;
+            end_type=1;
+            StartVideo('data/outro.vdo','Outro');
+        >>>
+    }
+    17 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.174"));
+        Code=<<<
+            domic_win_choice=1;
+            end_type=1;
+            StartVideo('data/outro.vdo','Outro');
+        >>>
+    }
+    18 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.169"));
+        Code=<<<
+            DChange(16);
+            exit;
+        >>>
+    }
+    19 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.170"));
+        Code=<<<
+            DChange(17);
+            exit;
+        >>>
+    }
+    20 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.171"));
+        Code=<<<
+            DChange(18);
+            exit;
+        >>>
+    }
+    21 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.172"));
+        Code=<<<
+            end_type=3;
+            StartVideo('data/outro.vdo','Outro');
+        >>>
+    }
+    22 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.173"));
+        Code=<<<
+            end_type=3;
+            StartVideo('data/outro.vdo','Outro');
+        >>>
+    }
+    23 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.174"));
+        Code=<<<
+            end_type=3;
+            StartVideo('data/outro.vdo','Outro');
+        >>>
+    }
+    24 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.172"));
+        Code=<<<
+            domic_win_choice=2;
+            end_type=1;
+            StartVideo('data/outro.vdo','Outro');
+        >>>
+    }
+    25 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.174"));
+        Code=<<<
+            domic_win_choice=2;
+            end_type=1;
+            StartVideo('data/outro.vdo','Outro');
+        >>>
+    }
+    26 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.177"));
+        Code=<<<
+            clan_win_choice=1;
+            NoLanding(PlanetPirateClan(),0);
+            pirate_planet_unlocked=1;
+        >>>
+    }
+    27 ~{
+        Command=shop
+        Answer=DAnswer('shop~'+CT("Script.PC_final.179"));
+        Code=
+    }
+    28 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.204"));
+        Code=<<<
+            if(GetShipPirateRank(Player())>=7) {
+              EndGame(13);
+            }
+            if(GetShipPirateRank(Player())<7) {
+              EndGame(14);
+            }
+        >>>
+    }
+    29 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.205"));
+        Code=<<<
+            DChange(22);
+            exit;
+        >>>
+    }
+    30 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.206"));
+        Code=
+    }
+    31 ~{
+        Command=shop
+        Answer=DAnswer('shop~'+CT("Script.PC_final.228"));
+        Code=
+    }
+    32 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.235"));
+        Code=<<<
+            coal_defeat_grats=1;
+            DChange(25);
+            exit;
+        >>>
+    }
+    33 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.236"));
+        Code=<<<
+            DChange(26);
+            exit;
+        >>>
+    }
+    34 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.237"));
+        Code=
+    }
+    35 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.PC_final.238"));
+        Code=
+    }
+    36 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.242"));
+        Code=<<<
+            DChange(27);
+            exit;
+        >>>
+    }
+    37 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.244"));
+        Code=<<<
+            DChange(28);
+            exit;
+        >>>
+    }
+    38 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.247"));
+        Code=<<<
+            DChange(14);
+            exit;
+        >>>
+    }
+    39 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.246"));
+        Code=<<<
+            DChange(15);
+            exit;
+        >>>
+    }
+    40 ~{
+        Command=
+        Answer=DAnswer(CT("Script.PC_final.121"));
+        Code=<<<
+            DChange(31);
+            exit;
+        >>>
+    }
+}

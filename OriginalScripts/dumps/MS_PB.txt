@@ -1,0 +1,268 @@
+Version=6
+GlobalVars ~{
+    MS_PB_DialogOk ~{
+        Type=Integer
+        Value=0
+    }
+}
+GlobalCode=<<<
+  if(MS_SB1_DialogOk && !MS_PB_DialogOk && !DomiksDefeated()) {
+    GRun();
+  }
+>>>
+LocalVars ~{
+    info_cost ~{
+        Type=Integer
+        Value=500
+    }
+    playerStar ~{
+        Type=Dword
+        Value=0
+    }
+    playerPlanet ~{
+        Type=Dword
+        Value=0
+    }
+    GroupNew ~{
+        Type=Dword
+        Value=0
+    }
+    dPB ~{
+        Type=Dword
+        Value=0
+    }
+}
+Constellations=0
+Stars ~{
+    playerStar ~{
+        Constellation=-1
+        IsSubspace=False
+        NoKling=False
+        NoComeKling=False
+        StarLinks ~{
+        }
+        Planets ~{
+            playerPlanet ~{
+                Race=Maloc,Peleng,People,Fei,Gaal
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Economy=Agriculture,Industrial,Mixed
+                Government=Anarchy,Dictatorship,Monarchy,Republic,Democracy
+                Range=0..100
+                Dialog=
+            }
+        }
+        Ships ~{
+            0 ~{
+                Count=1
+                Owner=Maloc,Peleng,People,Fei,Gaal
+                Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+                IsPlayer=True
+                Speed=0..10000
+                Weapon=Undef
+                CargoHook=0
+                EmptySpace=0
+                Rating=0..1000
+                Status ~{
+                    Trader=0..100
+                    Warrior=0..100
+                    Pirate=0..100
+                }
+                Score=0..1000000
+                Strength=0.0..0.0
+                Ruins=
+            }
+        }
+    }
+}
+Places ~{
+}
+Items ~{
+}
+Groups ~{
+    GroupNew ~{
+        Planet=playerPlanet
+        State=0(StateNew)
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Type=Ranger,Warrior,Pirate,Transport,Liner,Diplomat
+        Count=1..1
+        Speed=100..10000
+        Weapon=Undef
+        CargoHook=0
+        EmptySpace=0
+        Friendship=Free
+        AddPlayer=True
+        Rating=0..1000
+        Score=0..1000000
+        Status ~{
+            Trader=0..100
+            Warrior=0..100
+            Pirate=0..100
+        }
+        SearchDist=10000
+        Dialog=
+        Strength=0.0..0.0
+        Ruins=
+    }
+}
+GroupLinks ~{
+}
+InitCode=
+TurnCode=<<<
+  if(MS_PB_DialogOk || DomiksDefeated()) {
+    ShipOut(Player());
+  }
+>>>
+DialogBegin=<<<
+  if(GetShipRuins(Player())>0) {
+    if(ShipType(GetShipRuins(Player()))=='PB') {
+      if(!MS_PB_DialogOk && !DomiksDefeated()) {
+        AddDialogOverride('dPB',150);
+      }
+    }
+  }
+>>>
+States ~{
+    StateNew ~{
+        Type=None
+        Attack ~{
+        }
+        TakeItem=
+        TakeAll=False
+        OutMsg=
+        InMsg=
+        Ether=
+        Code=
+    }
+}
+Dialogs ~{
+    dPB ~{
+        Code=<<<
+            DChange(0);
+            exit;
+        >>>
+    }
+}
+DialogMsgs ~{
+    0 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_PB.0"));    DAdd(0);
+
+        >>>
+    }
+    1 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_PB.16"),"<0>",info_cost));    if(ShipMoney(Player())>=info_cost) {
+              DAdd(1);
+            }
+            if((ShipMoney(Player())<info_cost) && ShipMoney(Player())) {
+              DAdd(5);
+            }
+            if(!ShipMoney(Player())) {
+              DAdd(6);
+            }
+
+        >>>
+    }
+    2 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_PB.2"));    DAdd(3);
+
+        >>>
+    }
+    3 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_PB.3"));    DAdd(2);
+
+        >>>
+    }
+    4 ~{
+        Name=
+        Code=<<<
+            DText(CT("Script.MS_PB.15"));    DAdd(4);
+
+        >>>
+    }
+    5 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_PB.17"),"<0>",info_cost));    DAdd(3);
+
+        >>>
+    }
+    6 ~{
+        Name=
+        Code=<<<
+            DText(Format(CT("Script.MS_PB.18"),"<0>",ShipName(Player())));    DAdd(3);
+
+        >>>
+    }
+}
+DialogAnswers ~{
+    0 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_PB.5"));
+        Code=<<<
+            DChange(1);
+            exit;
+        >>>
+    }
+    1 ~{
+        Command=
+        Answer=DAnswer(Format(CT("Script.MS_PB.19"),"<0>",info_cost));
+        Code=<<<
+            ShipMoney(Player(),ShipMoney(Player())-info_cost);
+            Sound('Sound.Buy');
+            MS_PB_DialogOk=1;
+            ShipOut(Player());
+            DChange(2);
+            exit;
+        >>>
+    }
+    2 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_PB.11"));
+        Code=<<<
+            DChange(4);
+            exit;
+        >>>
+    }
+    3 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_PB.12"));
+        Code=<<<
+            DChange(3);
+            exit;
+        >>>
+    }
+    4 ~{
+        Command=restart
+        Answer=DAnswer('restart~'+CT("Script.MS_PB.13"));
+        Code=
+    }
+    5 ~{
+        Command=
+        Answer=DAnswer(Format(CT("Script.MS_PB.20"),"<0>",ShipMoney(Player())));
+        Code=<<<
+            ShipMoney(Player(),0);
+            Sound('Sound.Buy');
+            MS_PB_DialogOk=1;
+            ShipOut(Player());
+            DChange(5);
+            exit;
+        >>>
+    }
+    6 ~{
+        Command=
+        Answer=DAnswer(CT("Script.MS_PB.21"));
+        Code=<<<
+            MS_PB_DialogOk=1;
+            ShipOut(Player());
+            DChange(6);
+            exit;
+        >>>
+    }
+}
