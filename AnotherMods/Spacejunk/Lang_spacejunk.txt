@@ -1,0 +1,451 @@
+Script ~{
+    AMod_Spacejunk ~{
+		Settings ~{
+			NumberOfPages=10
+			ObjTypes ~{
+				Count=2
+				0=Items
+				1=Ships
+			}
+		}
+		Text ~{
+			PageText=<L> / <R>
+			Items ~{
+				Format=<name><td=220><race><td=240><TL><td=260><cost><td=340><dist><td=390><size>
+				Empty=---
+			}
+			Ships ~{
+				Format=<name><td=250><race><td=270><dist><td=330><HP>/<hullsize>
+				Empty=---
+			}
+			RaceColors ~{
+				Empty=<color=0,0,0>--</color>
+				0=<color=255,0,0>[]</color>
+				1=<color=0,255,0>[]</color>
+				2=<color=0,148,255>[]</color>
+				3=<color=255,147,241>[]</color>
+				4=<color=237,247,62>[]</color>
+				5=<color=97,167,190>[</color>
+				6=<color=0,0,0>[]</color>
+				7=<color=255,255,255>[]</color>
+				Kling ~{
+					0=<color=255,0,0>]</color>
+					1=<color=0,0,255>]</color>
+					2=<color=0,255,0>]</color>
+				}
+				PirateClan ~{
+					0=<color=255,255,255>[</color><color=255,0,0>]</color>
+					1=<color=255,255,255>[</color><color=0,255,0>]</color>
+					2=<color=255,255,255>[</color><color=0,0,255>]</color>
+					3=<color=255,255,255>[</color><color=255,0,255>]</color>
+					4=<color=255,255,255>[</color><color=255,255,0>]</color>
+				}
+				Klissan=<color=93,182,93>[]</color>
+				AMod_Invaders=<color=255,127,0>[]</color>
+			}
+			TLColors ~{
+				7=127,255,255
+				6=127,255,255
+				5=127,255,255
+				4=0,255,255
+				3=0,255,127
+				2=0,255,0
+				1=127,255,0
+				0=255,255,0
+				-1=255,127,0
+				-2=127,63,0
+				-3=63,63,0
+				-4=0,0,0
+				-5=0,0,0
+				-6=0,0,0
+				-7=0,0,0
+			}
+		}
+		InitCode ~{
+			0=//SFT('>>> InitCode');
+			0=str path = 'Script.AMod_Spacejunk.';
+			0=GSJ_pages_cnt = CT(path+'Settings.NumberOfPages');
+			0=GSJ_lines_cnt = 20;
+			0=GSJ_current_page = 0;
+			0=GSJ_total_pages = 0;
+			0=GSJ_objects_cnt = 0;
+			0=GSJ_objects = newarray(1);
+			0=GSJ_type = 0;
+			0=GSJ_sort_type = 0;
+			0=for (int i = 0; i < GSJ_lines_cnt; i = i + 1) InterfaceState('StarMap', 'sjItemButton' + i, 1);
+			0=InterfaceState('StarMap', 'sjMainPanel', 1);
+			0=InterfaceState('StarMap', 'sjPageButtonR', 0);
+			0=InterfaceState('StarMap', 'sjPageButtonL', 0);
+		}
+		TurnCode ~{
+			0=//SFT('>>> TurnCode, Date: ' + GameDateTxtByTurn(CurTurn()));
+			0=if (InterfaceState('StarMap', 'sjInfoPanel') == 1)
+			0 ~{
+				0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.OpenPanel'));
+			}
+			0=//InterfaceState('StarMap', 'sjInfoPanel', 0);
+			0=//InterfaceState('StarMap', 'sjOpenPanelButton', 1);
+		}
+		PressCodes ~{
+			OpenPanel ~{
+				0=//SFT('>>> OpenPanel');
+				0=str path = 'Script.AMod_Spacejunk.';
+				0=ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Functions.UpdateSortType'));
+				0=ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Functions.UpdateObjects'));
+				0=ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Functions.UpdatePage'));
+				0=GSJ_current_page = min(max(GSJ_current_page, 0), GSJ_total_pages);
+                0=InterfaceState('StarMap','sjOpenPanelButton',0);
+                0=InterfaceState('StarMap','sjInfoPanel',1);
+				0=InterfaceState('StarMap','sjLeftControlPanel',1);
+			}
+            ClosePanel ~{
+				0=//SFT('>>> ClosePanel');
+                0=InterfaceState('StarMap','sjOpenPanelButton',1);
+                0=InterfaceState('StarMap','sjInfoPanel',0);
+				0=InterfaceState('StarMap','sjLeftControlPanel',0);
+            }
+            Center ~{
+				0=//SFT('>>> Center, center_button_n: ' + center_button_n);
+				0=str path = 'Script.AMod_Spacejunk.';
+				0=str objtype = CT(path+'Settings.ObjTypes.'+GSJ_type);
+                0=int object_id = GSJ_objects[center_button_n + GSJ_current_page * GSJ_lines_cnt];
+				0=ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Functions.'+objtype+'.Center'), 'id', object_id);
+                0=//dword item = IdToItem(item_id);
+                0=//StarMapCenterView(CoordX(item), CoordY(item), 1);
+            }
+			PageLeft ~{
+				0=//SFT('>>> PageLeft');
+				0=GSJ_current_page = GSJ_current_page - 1;
+				0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.Functions.UpdatePage'));
+			}
+			PageRight ~{
+				0=//SFT('>>> PageRight');
+				0=GSJ_current_page = GSJ_current_page + 1;
+				0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.Functions.UpdatePage'));
+			}
+			SortTypeInc ~{
+				0=//SFT('>>> SortTypeInc');
+				0=GSJ_sort_type = GSJ_sort_type + 1;
+				0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.Functions.UpdateControlPanel'));
+			}
+			SortTypeDec ~{
+				0=//SFT('>>> SortTypeDec');
+				0=GSJ_sort_type = GSJ_sort_type - 1;
+				0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.Functions.UpdateControlPanel'));
+			}
+			ObjTypeInc ~{
+				0=//SFT('>>> ObjTypeInc');
+				0=GSJ_type = GSJ_type + 1;
+				0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.Functions.UpdateControlPanel'));
+			}
+			ObjTypeDec ~{
+				0=//SFT('>>> ObjTypeDec');
+				0=GSJ_type = GSJ_type - 1;
+				0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.Functions.UpdateControlPanel'));
+			}
+		}
+		Utils ~{
+			ReplaceOnce ~{
+				0=/*s - где заменить, s1 - что заменить, s2 - на что заменить, result - результат*/
+				0=int pos = findsubstr(s, s1);
+				0=int len = count(s1);
+				0=str result;
+				0=if (pos == -1) result = s;
+				0=else if (pos == 0) result = s2 + substr(s, pos + len);
+				0=else result = substr(s, 0, pos) + s2 + substr(s, pos + len);
+			}
+			Replace ~{
+				0=/*s - где заменить, params='s1|s2|s3|s4|...' - правила замены, sep - разделитель в params, result - результат*/
+				0=while (findsubstr(params, sep) != -1)
+				0 ~{
+					0=int pos1 = findsubstr(params, sep);
+					0=str s1 = substr(params, 0, pos1);
+					0=params = substr(params, pos1 + 1);
+					0=int pos2 = findsubstr(params, sep);
+					0=str s2 = substr(params, 0, pos2);
+					0=params = substr(params, pos2 + 1);
+					0=s = ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.Utils.ReplaceOnce'), 's', s, 's1', s1, 's2', s2, 'result');
+				}
+				0=str result = s;
+			}
+			RaceString ~{
+				0=str result;
+				0=str path = 'Script.AMod_Spacejunk.Text.RaceColors.';
+				0=int race = ItemOwner(item);
+				0=int subrace = ItemSubrace(item);
+				0=str customrace = '';
+				0=if (ItemType(item) >= t_Hull && ItemType(item) <= t_UselessCountableItem) customrace = EqCustomFaction(item);
+				0=result = CT(path+race);
+				0=if (race == Kling) result = CT(path+race) + CT(path+'Kling.'+subrace);
+				0=if(BlockExist(path+customrace)) result = CT(path+customrace);
+				0=if (!(ItemType(item) >= t_Hull && ItemType(item) <= t_UselessCountableItem)) result = CT(path+'Empty');
+			}
+			RaceString_Ship ~{
+				0=str result;
+				0=str path = 'Script.AMod_Spacejunk.Text.RaceColors.';
+				0=int shiprace = ShipOwner(ship);
+				0=int pilotrace = ShipPilotRace(ship); 
+				0=int subrace = ItemSubrace(ShipItems(ship, 0));
+				0=str customrace = ShipCustomFaction(ship);
+				0=result = CT(path+shiprace);
+				0=if (shiprace == Kling) result = CT(path+shiprace) + CT(path+'Kling.'+subrace);
+				0=if(shiprace == PirateClan) result = CT(path+'PirateClan.'+pilotrace);
+				0=if(BlockExist(path+customrace)) result = CT(path+customrace);
+				0=//if (!(ItemType(ship) >= t_Hull && ItemType(ship) <= t_UselessCountableItem)) result = CT(path+'Empty');
+			}
+			ItemTechLevel ~{
+				0=str result = '';
+				0=if (ItemType(item) >= t_Hull && ItemType(item) <= t_CustomWeapon)
+				0 ~{
+					0=int TL = ItemLevel(item);
+					0=result = '<color=' + CT('Script.AMod_Spacejunk.Text.TLColors.' + (TL - GalaxyTechLevel())) + '>' + substr('ABCDEFGH', TL - 1, 1) + '</color>';
+				}
+			}
+			GetPageText ~{
+				0=//SFT('>>> GetPageText');
+                0=str result = DeleteTags(Format(CT('Script.AMod_Spacejunk.Text.PageText'), '<L>', GSJ_current_page + 1, '<R>', GSJ_total_pages + 1));
+			}
+		}
+        Functions ~{
+			UpdateControlPanel ~{
+				0=str path = 'Script.AMod_Spacejunk.';
+				0=ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Functions.UpdateObjType'));
+				0=ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Functions.UpdateSortType'));
+				0=ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Functions.UpdateObjects'));
+				0=ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Functions.UpdatePage'));
+			}
+			UpdateSortType ~{
+				0=str path = 'Script.AMod_Spacejunk.';
+				0=str objtype = CT(path+'Settings.ObjTypes.'+GSJ_type);
+				0=if (GSJ_sort_type < 0) GSJ_sort_type = 0 + CT(path+'Functions.'+objtype+'.SortKey.Count') - 1;
+				0=if (GSJ_sort_type > (0 + CT(path+'Functions.'+objtype+'.SortKey.Count') - 1)) GSJ_sort_type = 0;
+				0=InterfaceText('StarMap', 'sjSortTypeLabel', CT(path+'Functions.'+objtype+'.SortKey.'+GSJ_sort_type+'.Description'));
+			}
+			UpdateObjType ~{
+				0=str path = 'Script.AMod_Spacejunk.';
+				0=if (GSJ_type < 0) GSJ_type = 0 + CT(path+'Settings.ObjTypes.Count') - 1;
+				0=if (GSJ_type > (0 + CT(path+'Settings.ObjTypes.Count') - 1)) GSJ_type = 0;
+				0=str objtype = CT(path+'Settings.ObjTypes.'+GSJ_type);
+				0=InterfaceText('StarMap', 'sjObjTypeLabel', CT(path+'Functions.'+objtype+'.TypeDescription'));
+			}
+			UpdateObjects ~{
+				0=//SFT('>>> UpdateObjects');
+				0=str path = 'Script.AMod_Spacejunk.';
+				0=str objtype = CT(path+'Settings.ObjTypes.'+GSJ_type);
+				0=//SFT('Object type: '+objtype + ' cnt '+CT(path+'Settings.ObjTypes.Count'));
+				0=unknown itemArray = ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Functions.'+objtype+'.Update'), 'itemArray');
+				0=int items_cnt = ArrayDim(itemArray);
+				0=GSJ_objects = newarray(GSJ_pages_cnt * GSJ_lines_cnt);
+				0=for(int i = 0; i < GSJ_pages_cnt * GSJ_lines_cnt; i = i + 1)
+				0 ~{
+					0=if(i < items_cnt) GSJ_objects[i] = itemArray[i];
+					0=else GSJ_objects[i] = -1;
+				}
+				0=GSJ_total_pages = max(min((items_cnt - 1) / GSJ_lines_cnt, GSJ_pages_cnt - 1), 0);
+			}
+			UpdatePage ~{
+				0=//SFT('>>> UpdatePage');
+				0=str path = 'Script.AMod_Spacejunk.';
+				0=str objtype = CT(path+'Settings.ObjTypes.'+GSJ_type);
+				0=GSJ_current_page = min(max(GSJ_current_page, 0), GSJ_total_pages);
+				0=for(int i = 0; i < GSJ_lines_cnt; i = i + 1)
+				0 ~{
+					0=int index = GSJ_lines_cnt * GSJ_current_page + i;
+					0=int object_id = GSJ_objects[index];
+					0=ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Functions.' + objtype + '.Display'), 'object_id', object_id, 'index', i);
+				}
+				0=InterfaceState('StarMap', 'sjPageButtonL', GSJ_current_page != 0);
+				0=InterfaceState('StarMap', 'sjPageButtonR', GSJ_current_page != GSJ_total_pages);
+				0=InterfaceText('StarMap', 'sjPageText', ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Utils.GetPageText'), 'result'));
+			}
+			_ObjType ~{
+				Center ~{
+					0=dword item = IdToItem(object_id);
+					0=StarMapCenterView(CoordX(item), CoordY(item), 1);
+				}
+				Update ~{
+					0=itemArray - массив Id объектов, sort_key_array - массив для ключей сортировки; без возвращаемого значения
+					0=записывает все объекты этого типа в массив GSJ_objects
+				}
+				SortKey ~{
+					Count=
+					n ~{
+						Description=
+						Code ~{
+							0=object - объект; result - значение, по которому объекты будут отсортированы
+							0=считает значение, по которому будут сортироваться объекты
+						}
+				}
+				Display ~{
+					0=object_id - Id объекта; index - номер строки для отображения
+					0=отображает всю необходимую информацию об объекте на определенной строке таблички
+				}
+			}
+			Items ~{
+				Center ~{
+				    0=dword item = IdToItem(object_id);
+					0=StarMapCenterView(CoordX(item), CoordY(item), 1);
+				}
+				Update ~{
+					0=//SFT('>>> UpdateItems');
+					0=str path = 'Script.AMod_Spacejunk.';
+					0=str objtype = CT(path+'Settings.ObjTypes.'+GSJ_type);
+					0=unknown itemArray = newarray(1);
+					0=unknown sort_key_array = newarray(1);
+					0=for(int i = 0; i < StarItems(ShipStar(Player())); i = i + 1)
+					0 ^{
+						0=dword item = StarItems(ShipStar(Player()),i);
+						0=ArrayAdd(itemArray, Id(item));
+						0=ArrayAdd(sort_key_array, ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Functions.'+objtype+'.SortKey.'+GSJ_sort_type+'.Code'), 'object', item, 'result'));
+					}
+					0=ArrayDelete(itemArray, 0);
+					0=ArrayDelete(sort_key_array, 0);
+					0=ArraySort(sort_key_array, itemArray);
+					0=free(sort_key_array);
+				}
+				TypeDescription=предметы
+				SortKey ~{
+					Count=6
+					0 ~{
+						Description=цена
+						Code ~{
+							0=int result = -ItemCost(object);
+						}
+					}
+					1 ~{
+						Description=тип
+						Code ~{
+							0=int result = -ItemType(object);
+						}
+					}
+					2 ~{
+						Description=ТУ
+						Code ~{
+							0=int result = -ItemLevel(object);
+						}
+					}
+					3 ~{
+						Description=цена/<br>вес
+						Code ~{
+							0=int result = -(1000 * ItemCost(object)) / (ItemSize(object) + 1);
+						}
+					}
+					4 ~{
+						Description=вес
+						Code ~{
+							0=int result = -ItemSize(object);
+						}
+					}
+					5 ~{
+						Description=акрин
+						Code ~{
+							0=int result = EqSpecial(object);
+						}
+					}
+				}
+				Display ~{
+					0=//SFT('>>> DisplayItem, id: ' + object_id + ' index: ' + index);
+					0=str path = 'Script.AMod_Spacejunk.';
+					0=str text;
+					0=if(object_id != -1)
+					0 ~{
+						0=str name; str cost; str size; str dist; str TL; str race;
+						0=dword object = IdToItem(object_id);
+						0=name = ItemFullName(object);
+						0=if (count(DeleteTags(name)) > 20)
+						0 ~{
+							0=name = substr(DeleteTags(name), 0, 20) + '...';
+						}
+						0=cost = ''+ItemCost(object)+' cr.';
+						0=size = ''+ItemSize(object)+' т';
+						0=dist = '<color=100,100,100>('+Dist(Player(), object)+')</color>';
+						0=TL = ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Utils.ItemTechLevel'), 'item', object, 'result');
+						0=race = ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Utils.RaceString'), 'item', object, 'result');
+						0=//text = Format(CT(path+'Text.ItemFormat'), '<dist>', dist, '<name>', name, '<size>', size, '<cost>', cost, '<TL>', TL);
+						0=text = ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Utils.Replace'), 's', CT(path+'Text.Items.Format'), 'params', '<dist>$'+dist+'$<name>$'+name+'$<size>$'+size+'$<cost>$'+cost+'$<TL>$'+TL+'$<race>$'+race+'$', 'sep', '$', 'result');
+					}
+					0=else
+					0 ~{
+						0=text = CT(path+'Text.Items.Empty');
+					}
+					0=InterfaceState('StarMap', 'sjItemButton' + index, object_id != -1);
+					0=InterfaceText('StarMap', 'sjItem' + index, text);
+				}
+			}
+			Ships ~{
+				Center ~{
+				    0=dword ship = IdToShip(object_id);
+					0=StarMapCenterView(CoordX(ship), CoordY(ship), 1);
+				}
+				Update ~{
+					0=//SFT('>>> Update Ships');
+					0=str path = 'Script.AMod_Spacejunk.';
+					0=str objtype = CT(path+'Settings.ObjTypes.'+GSJ_type);
+					0=unknown itemArray = newarray(1);
+					0=unknown sort_key_array = newarray(1);
+					0=for(int i = 0; i < StarShips(ShipStar(Player())); i = i + 1)
+					0 ^{
+						0=dword ship = StarShips(ShipStar(Player()), i);
+						0=if (ship == Player()) continue;
+						0=ArrayAdd(itemArray, Id(ship));
+						0=ArrayAdd(sort_key_array, ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Functions.'+objtype+'.SortKey.'+GSJ_sort_type+'.Code'), 'object', ship, 'result'));
+					}
+					0=ArrayDelete(itemArray, 0);
+					0=ArrayDelete(sort_key_array, 0);
+					0=ArraySort(sort_key_array, itemArray);
+					0=free(sort_key_array);
+				}
+				TypeDescription=кор
+				SortKey ~{
+					Count=3
+					0 ~{
+						Description=ХП
+						Code ~{
+							0=int result = -HullHP(ShipItems(object,0));
+						}
+					}
+					1 ~{
+						Description=тип
+						Code ~{
+							0=int result = -ShipType(object);
+						}
+					}
+					2 ~{
+						Description=расстояние
+						Code ~{
+							0=int result = Dist(object, Player());
+						}
+					}
+				}
+				Display ~{
+					0=//SFT('>>> DisplayShip, id: ' + object_id + ' index: ' + index);
+					0=str path = 'Script.AMod_Spacejunk.';
+					0=str text;
+					0=if(object_id != -1)
+					0 ~{
+						Format=//<name><td=250><race><td=270><dist><td=330><HP>/<hullsize>
+						0=str name; str race; str dist; str HP; str hullsize;
+						0=dword object = IdToShip(object_id);
+						0=name = ShipName(object);
+						0=if (count(DeleteTags(name)) > 25)
+						0 ~{
+							0=name = substr(DeleteTags(name), 0, 25) + '...';
+						}
+						0=HP = HullHP(ShipItems(object,0));
+						0=hullsize = ItemSize(ShipItems(object,0));
+						0=dist = '<color=100,100,100>('+Dist(Player(), object)+')</color>';
+						0=race = ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Utils.RaceString_Ship'), 'ship', object, 'result');
+						0=//text = Format(CT(path+'Text.ItemFormat'), '<dist>', dist, '<name>', name, '<size>', size, '<cost>', cost, '<TL>', TL);
+						0=text = ExecuteCodeFromString(GenerateCodeStringFromBlock(path+'Utils.Replace'), 's', CT(path+'Text.Ships.Format'), 'params', '<name>$'+name+'$<race>$'+race+'$<dist>$'+dist+'$<HP>$'+HP+'$<hullsize>$'+hullsize+'$', 'sep', '$', 'result');
+					}
+					0=else
+					0 ~{
+						0=text = CT(path+'Text.Ships.Empty');
+					}
+					0=InterfaceState('StarMap', 'sjItemButton' + index, object_id != -1);
+					0=InterfaceText('StarMap', 'sjItem' + index, text);
+				}
+			}
+        }
+    }
+}

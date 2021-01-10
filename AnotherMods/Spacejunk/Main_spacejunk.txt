@@ -1,0 +1,765 @@
+Data ^{
+    Script ^{
+        mod_spacejunk=1,Script.mod_spacejunk
+    }
+}
+ML ^{
+    StarMap ^{
+        Panel ^{
+            SpacejunkPanel ^{
+                Panel ^{
+                    Active=False
+                    GraphButton ^{
+                        ImageDown=GI,Bm.FormStarMap.OpenedPanelButton
+                        ImageNormal=GI,Bm.FormStarMap.OpenedPanelButton
+                        ImageNormalA=GI,Bm.FormStarMap.OpenedPanelButton
+                        Kind=Normal
+                        KindHit=Rect
+                        MouseBlocking=True
+                        MouseBlockingTest=False
+                        Name=sjOpenPanelButton
+                        OnPressCode ~{
+							0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.OpenPanel'));
+                        }
+                        Pos=12,55,0
+                        Size=16,537
+                        Style=Style.GB.SoundNormal
+                    }
+                    Image ^{
+                        Image=GI,Bm.FormStarMap.OpenedPanel
+                        Pos=0,11,-5
+                        Size=30,628
+                    }
+					Panel ~{
+						Active=False
+						Name=sjLeftControlPanel
+						Pos=0,0,-6
+						Size=30,628
+                        GraphButton ^{
+                            ImageDown=GI,Bm.FormCount2.2AddD
+                            ImageNormal=GI,Bm.FormCount2.2AddN
+                            ImageNormalA=GI,Bm.FormCount2.2AddA
+                            Kind=Normal
+                            KindHit=Rect
+                            MouseBlocking=True
+                            MouseBlockingTest=False
+                            Name=sjSortTypeInc
+                            OnPressCode ~{
+								0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.SortTypeInc'));
+                            }
+                            Pos=1,50
+                            Size=21,21
+                            Style=Style.GB.SoundNormal
+                        }
+						Label ^{
+							AlignX=Left
+							AlignY=Center
+							Font=Font.2SmallBold
+							Name=sjSortTypeLabel
+							Pos=1,71
+							Size=29,29
+							Text=
+							TextColor=255,255,255
+							WordWrap=True
+						}
+                        GraphButton ^{
+                            ImageDown=GI,Bm.FormCount2.2SubD
+                            ImageNormal=GI,Bm.FormCount2.2SubN
+                            ImageNormalA=GI,Bm.FormCount2.2SubA
+                            Kind=Normal
+                            KindHit=Rect
+                            MouseBlocking=True
+                            MouseBlockingTest=False
+                            Name=sjSortTypeDec
+                            OnPressCode ~{
+								0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.SortTypeDec'));
+                            }
+                            Pos=1,100
+                            Size=21,21
+                            Style=Style.GB.SoundNormal
+                        }
+						GraphButton ^{
+                            ImageDown=GI,Bm.FormCount2.2AddD
+                            ImageNormal=GI,Bm.FormCount2.2AddN
+                            ImageNormalA=GI,Bm.FormCount2.2AddA
+                            Kind=Normal
+                            KindHit=Rect
+                            MouseBlocking=True
+                            MouseBlockingTest=False
+                            Name=sjObjTypeInc
+                            OnPressCode ~{
+								0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.ObjTypeInc'));
+                            }
+                            Pos=1,250
+                            Size=21,21
+                            Style=Style.GB.SoundNormal
+                        }
+						Label ^{
+							AlignX=Left
+							AlignY=Center
+							Font=Font.2SmallBold
+							Name=sjObjTypeLabel
+							Pos=1,271
+							Size=29,29
+							Text=
+							TextColor=255,255,255
+							WordWrap=True
+						}
+                        GraphButton ^{
+                            ImageDown=GI,Bm.FormCount2.2SubD
+                            ImageNormal=GI,Bm.FormCount2.2SubN
+                            ImageNormalA=GI,Bm.FormCount2.2SubA
+                            Kind=Normal
+                            KindHit=Rect
+                            MouseBlocking=True
+                            MouseBlockingTest=False
+                            Name=sjObjTypeDec
+                            OnPressCode ~{
+								0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.ObjTypeDec'));
+                            }
+                            Pos=1,300
+                            Size=21,21
+                            Style=Style.GB.SoundNormal
+                        }
+					}
+                    Name=sjMainPanel
+                    Panel ^{
+                        Active=False
+                        GraphButton ^{
+                            ImageDown=GI,Bm.FormStarMap.OpenedPanelButton
+                            ImageNormal=GI,Bm.FormStarMap.OpenedPanelButton
+                            ImageNormalA=GI,Bm.FormStarMap.OpenedPanelButton
+                            Kind=Normal
+                            KindHit=Rect
+                            MouseBlocking=True
+                            MouseBlockingTest=False
+                            Name=sjClosePanelButton
+                            OnPressCode ~{
+								0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.ClosePanel'));
+                            }
+                            Pos=507,44,0
+                            Size=16,537
+                            Style=Style.GB.SoundNormal
+                        }
+                        Image ^{
+                            Image=GI,Bm.FormStarMap.sjPanelCenter
+                            MouseBlocking=True
+                            MouseBlockingTest=True
+                            Pos=0,0,0
+                            Size=520,628
+                        }
+                        Name=sjInfoPanel
+                        Panel ^{
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton0
+                                OnPressCode ~{
+									0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 0);
+                                }
+                                Pos=5,8,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton1
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 1);
+                                }
+                                Pos=5,38,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton2
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 2);
+                                }
+                                Pos=5,68,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton3
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 3);
+                                }
+                                Pos=5,98,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton4
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 4);
+                                }
+                                Pos=5,128,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton5
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 5);
+                                }
+                                Pos=5,158,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton6
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 6);
+                                }
+                                Pos=5,188,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton7
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 7);
+                                }
+                                Pos=5,218,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton8
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 8);
+                                }
+                                Pos=5,248,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton9
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 9);
+                                }
+                                Pos=5,278,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton10
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 10);
+                                }
+                                Pos=5,308,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton11
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 11);
+                                }
+                                Pos=5,338,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton12
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 12);
+                                }
+                                Pos=5,368,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton13
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 13);
+                                }
+                                Pos=5,398,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton14
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 14);
+                                }
+                                Pos=5,428,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton15
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 15);
+                                }
+                                Pos=5,458,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton16
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 16);
+                                }
+                                Pos=5,488,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton17
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 17);
+                                }
+                                Pos=5,518,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton18
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 18);
+                                }
+                                Pos=5,548,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.ItemCenterD
+                                ImageNormal=GI,Bm.FormStarMap.ItemCenterN
+                                ImageNormalA=GI,Bm.FormStarMap.ItemCenterA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjItemButton19
+                                OnPressCode ~{
+                                    0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.Center'), 'center_button_n', 19);
+                                }
+                                Pos=5,578,0
+                                Size=23,24
+                                Style=Style.GB.SoundNormal
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem0
+                                Pos=40,4,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem1
+                                Pos=40,34,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem2
+                                Pos=40,64,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem3
+                                Pos=40,94,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem4
+                                Pos=40,124,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem5
+                                Pos=40,154,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem6
+                                Pos=40,184,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem7
+                                Pos=40,214,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem8
+                                Pos=40,244,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem9
+                                Pos=40,274,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem10
+                                Pos=40,304,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem11
+                                Pos=40,334,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem12
+                                Pos=40,364,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem13
+                                Pos=40,394,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem14
+                                Pos=40,424,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem15
+                                Pos=40,454,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem16
+                                Pos=40,484,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem17
+                                Pos=40,514,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem18
+                                Pos=40,544,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Label ^{
+                                AlignX=Left
+                                AlignY=CenterEx
+                                Font=Font.2SmallBold
+                                Name=sjItem19
+                                Pos=40,574,0
+                                Size=420,33
+                                Text=---
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Pos=30,0,-3
+                            Size=500,610
+                        }
+                        Panel ^{
+							GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.sjPageLeftD
+                                ImageNormal=GI,Bm.FormStarMap.sjPageLeftN
+                                ImageNormalA=GI,Bm.FormStarMap.sjPageLeftA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjPageButtonL
+                                OnPressCode ~{
+									0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.PageLeft'));
+                                }
+                                Pos=0,0,0
+                                Size=15,11
+                                Style=Style.GB.SoundNormal
+                            }
+                            GraphButton ^{
+                                ImageDown=GI,Bm.FormStarMap.sjPageRightD
+                                ImageNormal=GI,Bm.FormStarMap.sjPageRightN
+                                ImageNormalA=GI,Bm.FormStarMap.sjPageRightA
+                                Kind=Normal
+                                KindHit=Rect
+                                MouseBlocking=True
+                                MouseBlockingTest=False
+                                Name=sjPageButtonR
+                                OnPressCode ~{
+									0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.AMod_Spacejunk.PressCodes.PageRight'));
+                                }
+                                Pos=65,0,0
+                                Size=15,11
+                                Style=Style.GB.SoundNormal
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormStarMap.sjPageLeftH
+                                Pos=0,0,0
+                                Size=15,11
+                            }
+                            Image ^{
+                                Image=GI,Bm.FormStarMap.sjPageRightH
+                                Pos=65,0,0
+                                Size=15,11
+                            }
+                            Label ^{
+                                AlignX=Center
+                                AlignY=Center
+                                Font=Font.2Small
+                                Name=sjPageText
+                                Pos=20,0,0
+                                Size=40,11
+                                Text=1
+                                TextColor=255,255,255
+                                WordWrap=False
+                            }
+                            Pos=220,605,-1
+                            Size=80,11
+                        }
+                        Pos=0,11,-2
+                        Size=520,628
+                    }
+                    Pos=-1,20,-15
+                    PosAutoCorrection=True
+                    PosAutoCorrectionXCoef=0
+                    PosAutoCorrectionYCoef=0.5
+                    Size=530,640
+                }
+            }
+        }
+    }
+}
