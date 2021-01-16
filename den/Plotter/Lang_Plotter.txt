@@ -1,0 +1,50 @@
+Script ^{
+    Plotter ~{
+		Settings ~{
+			height=500
+			width=500
+		}
+		Functions ~{
+			OpenButton ~{
+				0=InterfaceState('StarMap', 'PlotterPanel', 1);
+				0=InterfaceState('StarMap', 'PlotterOpenButton', 0);
+			}
+			CloseButton ~{
+				0=InterfaceState('StarMap', 'PlotterPanel', 0);
+				0=InterfaceState('StarMap', 'PlotterOpenButton', 1);
+			}
+            Plot ~{
+                0=int HEIGHT = 0 + CT('Script.Plotter.Settings.height');
+                0=int N = 0 + CT('Script.Plotter.Settings.width');
+                0=float x1, x2, y1, y2;
+                0=int h1, h2;
+                0=x2 = 0;
+                0=y2 = ExecuteCodeFromString(f, 'x', x2, 'i', 0, 'result'); y2 = max(min(y2, 1.0), 0.0);
+                0=h2 = round(y2 * (HEIGHT - 1));
+                0=for (int i = 0; i < N; i = i + 1)
+                0 ~{
+                    0=x1 = x2;
+                    0=y1 = y2;
+                    0=h1 = h2;
+                    0=x2 = 1.0 * (i + 1) / N;
+                    0=y2 = ExecuteCodeFromString(f, 'x', x2, 'i', i+1, 'result'); y2 = max(min(y2, 1.0), 0.0); 
+                    0=h2 = round(y2 * (HEIGHT - 1));
+                    0=int delta = h2 - h1;
+					0=if (i == N-1) 
+					0 ~{
+						0=if (delta > 0) delta = delta + 1;
+						0=if (delta < 0) delta = delta - 1;
+					}
+                    0=int img = max(1, abs(delta));
+                    0=int pos = HEIGHT - h1;
+                    0=if (delta == 0) pos = pos - 1;
+                    0=if (delta > 0) pos = pos - abs(delta);
+                    0=if (!ResourceExist('Bm.Plotter.Segments.'+img)) continue;
+                    0=InterfaceImage('StarMap', 'plotter_segment_'+i, 'GI,Bm.Plotter.Segments.'+img);
+                    0=InterfacePos('StarMap', 'plotter_segment_'+i, 0, pos, 0);
+                    0=InterfaceSize('StarMap', 'plotter_segment_'+i, 1, img);
+                }
+            }
+		}
+    }
+}

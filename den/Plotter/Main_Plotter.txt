@@ -1,0 +1,3066 @@
+Data ^{
+    Script ^{
+        Plotter=1,Script.Plotter
+    }
+}
+ML ~{
+    StarMap ~{
+        Panel ~{
+            PlotterPanel ~{
+                Panel ~{
+                    Name=PlotterMainPanel
+                    Pos=0,0,-100
+                    Size=540,540
+					GraphButton ~{
+						ImageDown=GI,Bm.FormCount2.2AddD
+						ImageNormal=GI,Bm.FormCount2.2AddN
+						ImageNormalA=GI,Bm.FormCount2.2AddA
+						Kind=Normal
+						KindHit=Rect
+						MouseBlocking=True
+						MouseBlockingTest=False
+						Name=PlotterOpenButton
+						OnPressCode ~{
+							0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.Plotter.Functions.OpenButton'));
+						}
+						Pos=0,0,0
+						Size=21,21
+						Style=Style.GB.SoundNormal
+					}
+					Panel ~{
+						Name=PlotterPanel
+						Pos=0,0
+						Size=540,540
+						Image ~{
+                            Image=GI,Bm.Plotter.BG
+                            Pos=0,0,-1
+                            Size=540,540
+							MouseBlocking=True
+							MouseBlockingTest=True
+                        }
+						GraphButton ~{
+							ImageDown=GI,Bm.FormCount2.2SubD
+							ImageNormal=GI,Bm.FormCount2.2SubN
+							ImageNormalA=GI,Bm.FormCount2.2SubA
+							Kind=Normal
+							KindHit=Rect
+							MouseBlocking=True
+							MouseBlockingTest=False
+							Name=PlotterCloseButton
+							OnPressCode ~{
+								0=ExecuteCodeFromString(GenerateCodeStringFromBlock('Script.Plotter.Functions.CloseButton'));
+							}
+							Pos=0,0,-2
+							Size=21,21
+							Style=Style.GB.SoundNormal
+						}
+                        Panel ~{
+							Size=500,500
+							Pos=20,20,-2
+							Image ~{
+								Image=
+								Pos=0,0,0
+								Size=1,1
+								Name=plotter_segment_0
+							}
+							Image ~{
+								Image=
+								Pos=1,0,0
+								Size=1,1
+								Name=plotter_segment_1
+							}
+							Image ~{
+								Image=
+								Pos=2,0,0
+								Size=1,1
+								Name=plotter_segment_2
+							}
+							Image ~{
+								Image=
+								Pos=3,0,0
+								Size=1,1
+								Name=plotter_segment_3
+							}
+							Image ~{
+								Image=
+								Pos=4,0,0
+								Size=1,1
+								Name=plotter_segment_4
+							}
+							Image ~{
+								Image=
+								Pos=5,0,0
+								Size=1,1
+								Name=plotter_segment_5
+							}
+							Image ~{
+								Image=
+								Pos=6,0,0
+								Size=1,1
+								Name=plotter_segment_6
+							}
+							Image ~{
+								Image=
+								Pos=7,0,0
+								Size=1,1
+								Name=plotter_segment_7
+							}
+							Image ~{
+								Image=
+								Pos=8,0,0
+								Size=1,1
+								Name=plotter_segment_8
+							}
+							Image ~{
+								Image=
+								Pos=9,0,0
+								Size=1,1
+								Name=plotter_segment_9
+							}
+							Image ~{
+								Image=
+								Pos=10,0,0
+								Size=1,1
+								Name=plotter_segment_10
+							}
+							Image ~{
+								Image=
+								Pos=11,0,0
+								Size=1,1
+								Name=plotter_segment_11
+							}
+							Image ~{
+								Image=
+								Pos=12,0,0
+								Size=1,1
+								Name=plotter_segment_12
+							}
+							Image ~{
+								Image=
+								Pos=13,0,0
+								Size=1,1
+								Name=plotter_segment_13
+							}
+							Image ~{
+								Image=
+								Pos=14,0,0
+								Size=1,1
+								Name=plotter_segment_14
+							}
+							Image ~{
+								Image=
+								Pos=15,0,0
+								Size=1,1
+								Name=plotter_segment_15
+							}
+							Image ~{
+								Image=
+								Pos=16,0,0
+								Size=1,1
+								Name=plotter_segment_16
+							}
+							Image ~{
+								Image=
+								Pos=17,0,0
+								Size=1,1
+								Name=plotter_segment_17
+							}
+							Image ~{
+								Image=
+								Pos=18,0,0
+								Size=1,1
+								Name=plotter_segment_18
+							}
+							Image ~{
+								Image=
+								Pos=19,0,0
+								Size=1,1
+								Name=plotter_segment_19
+							}
+							Image ~{
+								Image=
+								Pos=20,0,0
+								Size=1,1
+								Name=plotter_segment_20
+							}
+							Image ~{
+								Image=
+								Pos=21,0,0
+								Size=1,1
+								Name=plotter_segment_21
+							}
+							Image ~{
+								Image=
+								Pos=22,0,0
+								Size=1,1
+								Name=plotter_segment_22
+							}
+							Image ~{
+								Image=
+								Pos=23,0,0
+								Size=1,1
+								Name=plotter_segment_23
+							}
+							Image ~{
+								Image=
+								Pos=24,0,0
+								Size=1,1
+								Name=plotter_segment_24
+							}
+							Image ~{
+								Image=
+								Pos=25,0,0
+								Size=1,1
+								Name=plotter_segment_25
+							}
+							Image ~{
+								Image=
+								Pos=26,0,0
+								Size=1,1
+								Name=plotter_segment_26
+							}
+							Image ~{
+								Image=
+								Pos=27,0,0
+								Size=1,1
+								Name=plotter_segment_27
+							}
+							Image ~{
+								Image=
+								Pos=28,0,0
+								Size=1,1
+								Name=plotter_segment_28
+							}
+							Image ~{
+								Image=
+								Pos=29,0,0
+								Size=1,1
+								Name=plotter_segment_29
+							}
+							Image ~{
+								Image=
+								Pos=30,0,0
+								Size=1,1
+								Name=plotter_segment_30
+							}
+							Image ~{
+								Image=
+								Pos=31,0,0
+								Size=1,1
+								Name=plotter_segment_31
+							}
+							Image ~{
+								Image=
+								Pos=32,0,0
+								Size=1,1
+								Name=plotter_segment_32
+							}
+							Image ~{
+								Image=
+								Pos=33,0,0
+								Size=1,1
+								Name=plotter_segment_33
+							}
+							Image ~{
+								Image=
+								Pos=34,0,0
+								Size=1,1
+								Name=plotter_segment_34
+							}
+							Image ~{
+								Image=
+								Pos=35,0,0
+								Size=1,1
+								Name=plotter_segment_35
+							}
+							Image ~{
+								Image=
+								Pos=36,0,0
+								Size=1,1
+								Name=plotter_segment_36
+							}
+							Image ~{
+								Image=
+								Pos=37,0,0
+								Size=1,1
+								Name=plotter_segment_37
+							}
+							Image ~{
+								Image=
+								Pos=38,0,0
+								Size=1,1
+								Name=plotter_segment_38
+							}
+							Image ~{
+								Image=
+								Pos=39,0,0
+								Size=1,1
+								Name=plotter_segment_39
+							}
+							Image ~{
+								Image=
+								Pos=40,0,0
+								Size=1,1
+								Name=plotter_segment_40
+							}
+							Image ~{
+								Image=
+								Pos=41,0,0
+								Size=1,1
+								Name=plotter_segment_41
+							}
+							Image ~{
+								Image=
+								Pos=42,0,0
+								Size=1,1
+								Name=plotter_segment_42
+							}
+							Image ~{
+								Image=
+								Pos=43,0,0
+								Size=1,1
+								Name=plotter_segment_43
+							}
+							Image ~{
+								Image=
+								Pos=44,0,0
+								Size=1,1
+								Name=plotter_segment_44
+							}
+							Image ~{
+								Image=
+								Pos=45,0,0
+								Size=1,1
+								Name=plotter_segment_45
+							}
+							Image ~{
+								Image=
+								Pos=46,0,0
+								Size=1,1
+								Name=plotter_segment_46
+							}
+							Image ~{
+								Image=
+								Pos=47,0,0
+								Size=1,1
+								Name=plotter_segment_47
+							}
+							Image ~{
+								Image=
+								Pos=48,0,0
+								Size=1,1
+								Name=plotter_segment_48
+							}
+							Image ~{
+								Image=
+								Pos=49,0,0
+								Size=1,1
+								Name=plotter_segment_49
+							}
+							Image ~{
+								Image=
+								Pos=50,0,0
+								Size=1,1
+								Name=plotter_segment_50
+							}
+							Image ~{
+								Image=
+								Pos=51,0,0
+								Size=1,1
+								Name=plotter_segment_51
+							}
+							Image ~{
+								Image=
+								Pos=52,0,0
+								Size=1,1
+								Name=plotter_segment_52
+							}
+							Image ~{
+								Image=
+								Pos=53,0,0
+								Size=1,1
+								Name=plotter_segment_53
+							}
+							Image ~{
+								Image=
+								Pos=54,0,0
+								Size=1,1
+								Name=plotter_segment_54
+							}
+							Image ~{
+								Image=
+								Pos=55,0,0
+								Size=1,1
+								Name=plotter_segment_55
+							}
+							Image ~{
+								Image=
+								Pos=56,0,0
+								Size=1,1
+								Name=plotter_segment_56
+							}
+							Image ~{
+								Image=
+								Pos=57,0,0
+								Size=1,1
+								Name=plotter_segment_57
+							}
+							Image ~{
+								Image=
+								Pos=58,0,0
+								Size=1,1
+								Name=plotter_segment_58
+							}
+							Image ~{
+								Image=
+								Pos=59,0,0
+								Size=1,1
+								Name=plotter_segment_59
+							}
+							Image ~{
+								Image=
+								Pos=60,0,0
+								Size=1,1
+								Name=plotter_segment_60
+							}
+							Image ~{
+								Image=
+								Pos=61,0,0
+								Size=1,1
+								Name=plotter_segment_61
+							}
+							Image ~{
+								Image=
+								Pos=62,0,0
+								Size=1,1
+								Name=plotter_segment_62
+							}
+							Image ~{
+								Image=
+								Pos=63,0,0
+								Size=1,1
+								Name=plotter_segment_63
+							}
+							Image ~{
+								Image=
+								Pos=64,0,0
+								Size=1,1
+								Name=plotter_segment_64
+							}
+							Image ~{
+								Image=
+								Pos=65,0,0
+								Size=1,1
+								Name=plotter_segment_65
+							}
+							Image ~{
+								Image=
+								Pos=66,0,0
+								Size=1,1
+								Name=plotter_segment_66
+							}
+							Image ~{
+								Image=
+								Pos=67,0,0
+								Size=1,1
+								Name=plotter_segment_67
+							}
+							Image ~{
+								Image=
+								Pos=68,0,0
+								Size=1,1
+								Name=plotter_segment_68
+							}
+							Image ~{
+								Image=
+								Pos=69,0,0
+								Size=1,1
+								Name=plotter_segment_69
+							}
+							Image ~{
+								Image=
+								Pos=70,0,0
+								Size=1,1
+								Name=plotter_segment_70
+							}
+							Image ~{
+								Image=
+								Pos=71,0,0
+								Size=1,1
+								Name=plotter_segment_71
+							}
+							Image ~{
+								Image=
+								Pos=72,0,0
+								Size=1,1
+								Name=plotter_segment_72
+							}
+							Image ~{
+								Image=
+								Pos=73,0,0
+								Size=1,1
+								Name=plotter_segment_73
+							}
+							Image ~{
+								Image=
+								Pos=74,0,0
+								Size=1,1
+								Name=plotter_segment_74
+							}
+							Image ~{
+								Image=
+								Pos=75,0,0
+								Size=1,1
+								Name=plotter_segment_75
+							}
+							Image ~{
+								Image=
+								Pos=76,0,0
+								Size=1,1
+								Name=plotter_segment_76
+							}
+							Image ~{
+								Image=
+								Pos=77,0,0
+								Size=1,1
+								Name=plotter_segment_77
+							}
+							Image ~{
+								Image=
+								Pos=78,0,0
+								Size=1,1
+								Name=plotter_segment_78
+							}
+							Image ~{
+								Image=
+								Pos=79,0,0
+								Size=1,1
+								Name=plotter_segment_79
+							}
+							Image ~{
+								Image=
+								Pos=80,0,0
+								Size=1,1
+								Name=plotter_segment_80
+							}
+							Image ~{
+								Image=
+								Pos=81,0,0
+								Size=1,1
+								Name=plotter_segment_81
+							}
+							Image ~{
+								Image=
+								Pos=82,0,0
+								Size=1,1
+								Name=plotter_segment_82
+							}
+							Image ~{
+								Image=
+								Pos=83,0,0
+								Size=1,1
+								Name=plotter_segment_83
+							}
+							Image ~{
+								Image=
+								Pos=84,0,0
+								Size=1,1
+								Name=plotter_segment_84
+							}
+							Image ~{
+								Image=
+								Pos=85,0,0
+								Size=1,1
+								Name=plotter_segment_85
+							}
+							Image ~{
+								Image=
+								Pos=86,0,0
+								Size=1,1
+								Name=plotter_segment_86
+							}
+							Image ~{
+								Image=
+								Pos=87,0,0
+								Size=1,1
+								Name=plotter_segment_87
+							}
+							Image ~{
+								Image=
+								Pos=88,0,0
+								Size=1,1
+								Name=plotter_segment_88
+							}
+							Image ~{
+								Image=
+								Pos=89,0,0
+								Size=1,1
+								Name=plotter_segment_89
+							}
+							Image ~{
+								Image=
+								Pos=90,0,0
+								Size=1,1
+								Name=plotter_segment_90
+							}
+							Image ~{
+								Image=
+								Pos=91,0,0
+								Size=1,1
+								Name=plotter_segment_91
+							}
+							Image ~{
+								Image=
+								Pos=92,0,0
+								Size=1,1
+								Name=plotter_segment_92
+							}
+							Image ~{
+								Image=
+								Pos=93,0,0
+								Size=1,1
+								Name=plotter_segment_93
+							}
+							Image ~{
+								Image=
+								Pos=94,0,0
+								Size=1,1
+								Name=plotter_segment_94
+							}
+							Image ~{
+								Image=
+								Pos=95,0,0
+								Size=1,1
+								Name=plotter_segment_95
+							}
+							Image ~{
+								Image=
+								Pos=96,0,0
+								Size=1,1
+								Name=plotter_segment_96
+							}
+							Image ~{
+								Image=
+								Pos=97,0,0
+								Size=1,1
+								Name=plotter_segment_97
+							}
+							Image ~{
+								Image=
+								Pos=98,0,0
+								Size=1,1
+								Name=plotter_segment_98
+							}
+							Image ~{
+								Image=
+								Pos=99,0,0
+								Size=1,1
+								Name=plotter_segment_99
+							}
+							Image ~{
+								Image=
+								Pos=100,0,0
+								Size=1,1
+								Name=plotter_segment_100
+							}
+							Image ~{
+								Image=
+								Pos=101,0,0
+								Size=1,1
+								Name=plotter_segment_101
+							}
+							Image ~{
+								Image=
+								Pos=102,0,0
+								Size=1,1
+								Name=plotter_segment_102
+							}
+							Image ~{
+								Image=
+								Pos=103,0,0
+								Size=1,1
+								Name=plotter_segment_103
+							}
+							Image ~{
+								Image=
+								Pos=104,0,0
+								Size=1,1
+								Name=plotter_segment_104
+							}
+							Image ~{
+								Image=
+								Pos=105,0,0
+								Size=1,1
+								Name=plotter_segment_105
+							}
+							Image ~{
+								Image=
+								Pos=106,0,0
+								Size=1,1
+								Name=plotter_segment_106
+							}
+							Image ~{
+								Image=
+								Pos=107,0,0
+								Size=1,1
+								Name=plotter_segment_107
+							}
+							Image ~{
+								Image=
+								Pos=108,0,0
+								Size=1,1
+								Name=plotter_segment_108
+							}
+							Image ~{
+								Image=
+								Pos=109,0,0
+								Size=1,1
+								Name=plotter_segment_109
+							}
+							Image ~{
+								Image=
+								Pos=110,0,0
+								Size=1,1
+								Name=plotter_segment_110
+							}
+							Image ~{
+								Image=
+								Pos=111,0,0
+								Size=1,1
+								Name=plotter_segment_111
+							}
+							Image ~{
+								Image=
+								Pos=112,0,0
+								Size=1,1
+								Name=plotter_segment_112
+							}
+							Image ~{
+								Image=
+								Pos=113,0,0
+								Size=1,1
+								Name=plotter_segment_113
+							}
+							Image ~{
+								Image=
+								Pos=114,0,0
+								Size=1,1
+								Name=plotter_segment_114
+							}
+							Image ~{
+								Image=
+								Pos=115,0,0
+								Size=1,1
+								Name=plotter_segment_115
+							}
+							Image ~{
+								Image=
+								Pos=116,0,0
+								Size=1,1
+								Name=plotter_segment_116
+							}
+							Image ~{
+								Image=
+								Pos=117,0,0
+								Size=1,1
+								Name=plotter_segment_117
+							}
+							Image ~{
+								Image=
+								Pos=118,0,0
+								Size=1,1
+								Name=plotter_segment_118
+							}
+							Image ~{
+								Image=
+								Pos=119,0,0
+								Size=1,1
+								Name=plotter_segment_119
+							}
+							Image ~{
+								Image=
+								Pos=120,0,0
+								Size=1,1
+								Name=plotter_segment_120
+							}
+							Image ~{
+								Image=
+								Pos=121,0,0
+								Size=1,1
+								Name=plotter_segment_121
+							}
+							Image ~{
+								Image=
+								Pos=122,0,0
+								Size=1,1
+								Name=plotter_segment_122
+							}
+							Image ~{
+								Image=
+								Pos=123,0,0
+								Size=1,1
+								Name=plotter_segment_123
+							}
+							Image ~{
+								Image=
+								Pos=124,0,0
+								Size=1,1
+								Name=plotter_segment_124
+							}
+							Image ~{
+								Image=
+								Pos=125,0,0
+								Size=1,1
+								Name=plotter_segment_125
+							}
+							Image ~{
+								Image=
+								Pos=126,0,0
+								Size=1,1
+								Name=plotter_segment_126
+							}
+							Image ~{
+								Image=
+								Pos=127,0,0
+								Size=1,1
+								Name=plotter_segment_127
+							}
+							Image ~{
+								Image=
+								Pos=128,0,0
+								Size=1,1
+								Name=plotter_segment_128
+							}
+							Image ~{
+								Image=
+								Pos=129,0,0
+								Size=1,1
+								Name=plotter_segment_129
+							}
+							Image ~{
+								Image=
+								Pos=130,0,0
+								Size=1,1
+								Name=plotter_segment_130
+							}
+							Image ~{
+								Image=
+								Pos=131,0,0
+								Size=1,1
+								Name=plotter_segment_131
+							}
+							Image ~{
+								Image=
+								Pos=132,0,0
+								Size=1,1
+								Name=plotter_segment_132
+							}
+							Image ~{
+								Image=
+								Pos=133,0,0
+								Size=1,1
+								Name=plotter_segment_133
+							}
+							Image ~{
+								Image=
+								Pos=134,0,0
+								Size=1,1
+								Name=plotter_segment_134
+							}
+							Image ~{
+								Image=
+								Pos=135,0,0
+								Size=1,1
+								Name=plotter_segment_135
+							}
+							Image ~{
+								Image=
+								Pos=136,0,0
+								Size=1,1
+								Name=plotter_segment_136
+							}
+							Image ~{
+								Image=
+								Pos=137,0,0
+								Size=1,1
+								Name=plotter_segment_137
+							}
+							Image ~{
+								Image=
+								Pos=138,0,0
+								Size=1,1
+								Name=plotter_segment_138
+							}
+							Image ~{
+								Image=
+								Pos=139,0,0
+								Size=1,1
+								Name=plotter_segment_139
+							}
+							Image ~{
+								Image=
+								Pos=140,0,0
+								Size=1,1
+								Name=plotter_segment_140
+							}
+							Image ~{
+								Image=
+								Pos=141,0,0
+								Size=1,1
+								Name=plotter_segment_141
+							}
+							Image ~{
+								Image=
+								Pos=142,0,0
+								Size=1,1
+								Name=plotter_segment_142
+							}
+							Image ~{
+								Image=
+								Pos=143,0,0
+								Size=1,1
+								Name=plotter_segment_143
+							}
+							Image ~{
+								Image=
+								Pos=144,0,0
+								Size=1,1
+								Name=plotter_segment_144
+							}
+							Image ~{
+								Image=
+								Pos=145,0,0
+								Size=1,1
+								Name=plotter_segment_145
+							}
+							Image ~{
+								Image=
+								Pos=146,0,0
+								Size=1,1
+								Name=plotter_segment_146
+							}
+							Image ~{
+								Image=
+								Pos=147,0,0
+								Size=1,1
+								Name=plotter_segment_147
+							}
+							Image ~{
+								Image=
+								Pos=148,0,0
+								Size=1,1
+								Name=plotter_segment_148
+							}
+							Image ~{
+								Image=
+								Pos=149,0,0
+								Size=1,1
+								Name=plotter_segment_149
+							}
+							Image ~{
+								Image=
+								Pos=150,0,0
+								Size=1,1
+								Name=plotter_segment_150
+							}
+							Image ~{
+								Image=
+								Pos=151,0,0
+								Size=1,1
+								Name=plotter_segment_151
+							}
+							Image ~{
+								Image=
+								Pos=152,0,0
+								Size=1,1
+								Name=plotter_segment_152
+							}
+							Image ~{
+								Image=
+								Pos=153,0,0
+								Size=1,1
+								Name=plotter_segment_153
+							}
+							Image ~{
+								Image=
+								Pos=154,0,0
+								Size=1,1
+								Name=plotter_segment_154
+							}
+							Image ~{
+								Image=
+								Pos=155,0,0
+								Size=1,1
+								Name=plotter_segment_155
+							}
+							Image ~{
+								Image=
+								Pos=156,0,0
+								Size=1,1
+								Name=plotter_segment_156
+							}
+							Image ~{
+								Image=
+								Pos=157,0,0
+								Size=1,1
+								Name=plotter_segment_157
+							}
+							Image ~{
+								Image=
+								Pos=158,0,0
+								Size=1,1
+								Name=plotter_segment_158
+							}
+							Image ~{
+								Image=
+								Pos=159,0,0
+								Size=1,1
+								Name=plotter_segment_159
+							}
+							Image ~{
+								Image=
+								Pos=160,0,0
+								Size=1,1
+								Name=plotter_segment_160
+							}
+							Image ~{
+								Image=
+								Pos=161,0,0
+								Size=1,1
+								Name=plotter_segment_161
+							}
+							Image ~{
+								Image=
+								Pos=162,0,0
+								Size=1,1
+								Name=plotter_segment_162
+							}
+							Image ~{
+								Image=
+								Pos=163,0,0
+								Size=1,1
+								Name=plotter_segment_163
+							}
+							Image ~{
+								Image=
+								Pos=164,0,0
+								Size=1,1
+								Name=plotter_segment_164
+							}
+							Image ~{
+								Image=
+								Pos=165,0,0
+								Size=1,1
+								Name=plotter_segment_165
+							}
+							Image ~{
+								Image=
+								Pos=166,0,0
+								Size=1,1
+								Name=plotter_segment_166
+							}
+							Image ~{
+								Image=
+								Pos=167,0,0
+								Size=1,1
+								Name=plotter_segment_167
+							}
+							Image ~{
+								Image=
+								Pos=168,0,0
+								Size=1,1
+								Name=plotter_segment_168
+							}
+							Image ~{
+								Image=
+								Pos=169,0,0
+								Size=1,1
+								Name=plotter_segment_169
+							}
+							Image ~{
+								Image=
+								Pos=170,0,0
+								Size=1,1
+								Name=plotter_segment_170
+							}
+							Image ~{
+								Image=
+								Pos=171,0,0
+								Size=1,1
+								Name=plotter_segment_171
+							}
+							Image ~{
+								Image=
+								Pos=172,0,0
+								Size=1,1
+								Name=plotter_segment_172
+							}
+							Image ~{
+								Image=
+								Pos=173,0,0
+								Size=1,1
+								Name=plotter_segment_173
+							}
+							Image ~{
+								Image=
+								Pos=174,0,0
+								Size=1,1
+								Name=plotter_segment_174
+							}
+							Image ~{
+								Image=
+								Pos=175,0,0
+								Size=1,1
+								Name=plotter_segment_175
+							}
+							Image ~{
+								Image=
+								Pos=176,0,0
+								Size=1,1
+								Name=plotter_segment_176
+							}
+							Image ~{
+								Image=
+								Pos=177,0,0
+								Size=1,1
+								Name=plotter_segment_177
+							}
+							Image ~{
+								Image=
+								Pos=178,0,0
+								Size=1,1
+								Name=plotter_segment_178
+							}
+							Image ~{
+								Image=
+								Pos=179,0,0
+								Size=1,1
+								Name=plotter_segment_179
+							}
+							Image ~{
+								Image=
+								Pos=180,0,0
+								Size=1,1
+								Name=plotter_segment_180
+							}
+							Image ~{
+								Image=
+								Pos=181,0,0
+								Size=1,1
+								Name=plotter_segment_181
+							}
+							Image ~{
+								Image=
+								Pos=182,0,0
+								Size=1,1
+								Name=plotter_segment_182
+							}
+							Image ~{
+								Image=
+								Pos=183,0,0
+								Size=1,1
+								Name=plotter_segment_183
+							}
+							Image ~{
+								Image=
+								Pos=184,0,0
+								Size=1,1
+								Name=plotter_segment_184
+							}
+							Image ~{
+								Image=
+								Pos=185,0,0
+								Size=1,1
+								Name=plotter_segment_185
+							}
+							Image ~{
+								Image=
+								Pos=186,0,0
+								Size=1,1
+								Name=plotter_segment_186
+							}
+							Image ~{
+								Image=
+								Pos=187,0,0
+								Size=1,1
+								Name=plotter_segment_187
+							}
+							Image ~{
+								Image=
+								Pos=188,0,0
+								Size=1,1
+								Name=plotter_segment_188
+							}
+							Image ~{
+								Image=
+								Pos=189,0,0
+								Size=1,1
+								Name=plotter_segment_189
+							}
+							Image ~{
+								Image=
+								Pos=190,0,0
+								Size=1,1
+								Name=plotter_segment_190
+							}
+							Image ~{
+								Image=
+								Pos=191,0,0
+								Size=1,1
+								Name=plotter_segment_191
+							}
+							Image ~{
+								Image=
+								Pos=192,0,0
+								Size=1,1
+								Name=plotter_segment_192
+							}
+							Image ~{
+								Image=
+								Pos=193,0,0
+								Size=1,1
+								Name=plotter_segment_193
+							}
+							Image ~{
+								Image=
+								Pos=194,0,0
+								Size=1,1
+								Name=plotter_segment_194
+							}
+							Image ~{
+								Image=
+								Pos=195,0,0
+								Size=1,1
+								Name=plotter_segment_195
+							}
+							Image ~{
+								Image=
+								Pos=196,0,0
+								Size=1,1
+								Name=plotter_segment_196
+							}
+							Image ~{
+								Image=
+								Pos=197,0,0
+								Size=1,1
+								Name=plotter_segment_197
+							}
+							Image ~{
+								Image=
+								Pos=198,0,0
+								Size=1,1
+								Name=plotter_segment_198
+							}
+							Image ~{
+								Image=
+								Pos=199,0,0
+								Size=1,1
+								Name=plotter_segment_199
+							}
+							Image ~{
+								Image=
+								Pos=200,0,0
+								Size=1,1
+								Name=plotter_segment_200
+							}
+							Image ~{
+								Image=
+								Pos=201,0,0
+								Size=1,1
+								Name=plotter_segment_201
+							}
+							Image ~{
+								Image=
+								Pos=202,0,0
+								Size=1,1
+								Name=plotter_segment_202
+							}
+							Image ~{
+								Image=
+								Pos=203,0,0
+								Size=1,1
+								Name=plotter_segment_203
+							}
+							Image ~{
+								Image=
+								Pos=204,0,0
+								Size=1,1
+								Name=plotter_segment_204
+							}
+							Image ~{
+								Image=
+								Pos=205,0,0
+								Size=1,1
+								Name=plotter_segment_205
+							}
+							Image ~{
+								Image=
+								Pos=206,0,0
+								Size=1,1
+								Name=plotter_segment_206
+							}
+							Image ~{
+								Image=
+								Pos=207,0,0
+								Size=1,1
+								Name=plotter_segment_207
+							}
+							Image ~{
+								Image=
+								Pos=208,0,0
+								Size=1,1
+								Name=plotter_segment_208
+							}
+							Image ~{
+								Image=
+								Pos=209,0,0
+								Size=1,1
+								Name=plotter_segment_209
+							}
+							Image ~{
+								Image=
+								Pos=210,0,0
+								Size=1,1
+								Name=plotter_segment_210
+							}
+							Image ~{
+								Image=
+								Pos=211,0,0
+								Size=1,1
+								Name=plotter_segment_211
+							}
+							Image ~{
+								Image=
+								Pos=212,0,0
+								Size=1,1
+								Name=plotter_segment_212
+							}
+							Image ~{
+								Image=
+								Pos=213,0,0
+								Size=1,1
+								Name=plotter_segment_213
+							}
+							Image ~{
+								Image=
+								Pos=214,0,0
+								Size=1,1
+								Name=plotter_segment_214
+							}
+							Image ~{
+								Image=
+								Pos=215,0,0
+								Size=1,1
+								Name=plotter_segment_215
+							}
+							Image ~{
+								Image=
+								Pos=216,0,0
+								Size=1,1
+								Name=plotter_segment_216
+							}
+							Image ~{
+								Image=
+								Pos=217,0,0
+								Size=1,1
+								Name=plotter_segment_217
+							}
+							Image ~{
+								Image=
+								Pos=218,0,0
+								Size=1,1
+								Name=plotter_segment_218
+							}
+							Image ~{
+								Image=
+								Pos=219,0,0
+								Size=1,1
+								Name=plotter_segment_219
+							}
+							Image ~{
+								Image=
+								Pos=220,0,0
+								Size=1,1
+								Name=plotter_segment_220
+							}
+							Image ~{
+								Image=
+								Pos=221,0,0
+								Size=1,1
+								Name=plotter_segment_221
+							}
+							Image ~{
+								Image=
+								Pos=222,0,0
+								Size=1,1
+								Name=plotter_segment_222
+							}
+							Image ~{
+								Image=
+								Pos=223,0,0
+								Size=1,1
+								Name=plotter_segment_223
+							}
+							Image ~{
+								Image=
+								Pos=224,0,0
+								Size=1,1
+								Name=plotter_segment_224
+							}
+							Image ~{
+								Image=
+								Pos=225,0,0
+								Size=1,1
+								Name=plotter_segment_225
+							}
+							Image ~{
+								Image=
+								Pos=226,0,0
+								Size=1,1
+								Name=plotter_segment_226
+							}
+							Image ~{
+								Image=
+								Pos=227,0,0
+								Size=1,1
+								Name=plotter_segment_227
+							}
+							Image ~{
+								Image=
+								Pos=228,0,0
+								Size=1,1
+								Name=plotter_segment_228
+							}
+							Image ~{
+								Image=
+								Pos=229,0,0
+								Size=1,1
+								Name=plotter_segment_229
+							}
+							Image ~{
+								Image=
+								Pos=230,0,0
+								Size=1,1
+								Name=plotter_segment_230
+							}
+							Image ~{
+								Image=
+								Pos=231,0,0
+								Size=1,1
+								Name=plotter_segment_231
+							}
+							Image ~{
+								Image=
+								Pos=232,0,0
+								Size=1,1
+								Name=plotter_segment_232
+							}
+							Image ~{
+								Image=
+								Pos=233,0,0
+								Size=1,1
+								Name=plotter_segment_233
+							}
+							Image ~{
+								Image=
+								Pos=234,0,0
+								Size=1,1
+								Name=plotter_segment_234
+							}
+							Image ~{
+								Image=
+								Pos=235,0,0
+								Size=1,1
+								Name=plotter_segment_235
+							}
+							Image ~{
+								Image=
+								Pos=236,0,0
+								Size=1,1
+								Name=plotter_segment_236
+							}
+							Image ~{
+								Image=
+								Pos=237,0,0
+								Size=1,1
+								Name=plotter_segment_237
+							}
+							Image ~{
+								Image=
+								Pos=238,0,0
+								Size=1,1
+								Name=plotter_segment_238
+							}
+							Image ~{
+								Image=
+								Pos=239,0,0
+								Size=1,1
+								Name=plotter_segment_239
+							}
+							Image ~{
+								Image=
+								Pos=240,0,0
+								Size=1,1
+								Name=plotter_segment_240
+							}
+							Image ~{
+								Image=
+								Pos=241,0,0
+								Size=1,1
+								Name=plotter_segment_241
+							}
+							Image ~{
+								Image=
+								Pos=242,0,0
+								Size=1,1
+								Name=plotter_segment_242
+							}
+							Image ~{
+								Image=
+								Pos=243,0,0
+								Size=1,1
+								Name=plotter_segment_243
+							}
+							Image ~{
+								Image=
+								Pos=244,0,0
+								Size=1,1
+								Name=plotter_segment_244
+							}
+							Image ~{
+								Image=
+								Pos=245,0,0
+								Size=1,1
+								Name=plotter_segment_245
+							}
+							Image ~{
+								Image=
+								Pos=246,0,0
+								Size=1,1
+								Name=plotter_segment_246
+							}
+							Image ~{
+								Image=
+								Pos=247,0,0
+								Size=1,1
+								Name=plotter_segment_247
+							}
+							Image ~{
+								Image=
+								Pos=248,0,0
+								Size=1,1
+								Name=plotter_segment_248
+							}
+							Image ~{
+								Image=
+								Pos=249,0,0
+								Size=1,1
+								Name=plotter_segment_249
+							}
+							Image ~{
+								Image=
+								Pos=250,0,0
+								Size=1,1
+								Name=plotter_segment_250
+							}
+							Image ~{
+								Image=
+								Pos=251,0,0
+								Size=1,1
+								Name=plotter_segment_251
+							}
+							Image ~{
+								Image=
+								Pos=252,0,0
+								Size=1,1
+								Name=plotter_segment_252
+							}
+							Image ~{
+								Image=
+								Pos=253,0,0
+								Size=1,1
+								Name=plotter_segment_253
+							}
+							Image ~{
+								Image=
+								Pos=254,0,0
+								Size=1,1
+								Name=plotter_segment_254
+							}
+							Image ~{
+								Image=
+								Pos=255,0,0
+								Size=1,1
+								Name=plotter_segment_255
+							}
+							Image ~{
+								Image=
+								Pos=256,0,0
+								Size=1,1
+								Name=plotter_segment_256
+							}
+							Image ~{
+								Image=
+								Pos=257,0,0
+								Size=1,1
+								Name=plotter_segment_257
+							}
+							Image ~{
+								Image=
+								Pos=258,0,0
+								Size=1,1
+								Name=plotter_segment_258
+							}
+							Image ~{
+								Image=
+								Pos=259,0,0
+								Size=1,1
+								Name=plotter_segment_259
+							}
+							Image ~{
+								Image=
+								Pos=260,0,0
+								Size=1,1
+								Name=plotter_segment_260
+							}
+							Image ~{
+								Image=
+								Pos=261,0,0
+								Size=1,1
+								Name=plotter_segment_261
+							}
+							Image ~{
+								Image=
+								Pos=262,0,0
+								Size=1,1
+								Name=plotter_segment_262
+							}
+							Image ~{
+								Image=
+								Pos=263,0,0
+								Size=1,1
+								Name=plotter_segment_263
+							}
+							Image ~{
+								Image=
+								Pos=264,0,0
+								Size=1,1
+								Name=plotter_segment_264
+							}
+							Image ~{
+								Image=
+								Pos=265,0,0
+								Size=1,1
+								Name=plotter_segment_265
+							}
+							Image ~{
+								Image=
+								Pos=266,0,0
+								Size=1,1
+								Name=plotter_segment_266
+							}
+							Image ~{
+								Image=
+								Pos=267,0,0
+								Size=1,1
+								Name=plotter_segment_267
+							}
+							Image ~{
+								Image=
+								Pos=268,0,0
+								Size=1,1
+								Name=plotter_segment_268
+							}
+							Image ~{
+								Image=
+								Pos=269,0,0
+								Size=1,1
+								Name=plotter_segment_269
+							}
+							Image ~{
+								Image=
+								Pos=270,0,0
+								Size=1,1
+								Name=plotter_segment_270
+							}
+							Image ~{
+								Image=
+								Pos=271,0,0
+								Size=1,1
+								Name=plotter_segment_271
+							}
+							Image ~{
+								Image=
+								Pos=272,0,0
+								Size=1,1
+								Name=plotter_segment_272
+							}
+							Image ~{
+								Image=
+								Pos=273,0,0
+								Size=1,1
+								Name=plotter_segment_273
+							}
+							Image ~{
+								Image=
+								Pos=274,0,0
+								Size=1,1
+								Name=plotter_segment_274
+							}
+							Image ~{
+								Image=
+								Pos=275,0,0
+								Size=1,1
+								Name=plotter_segment_275
+							}
+							Image ~{
+								Image=
+								Pos=276,0,0
+								Size=1,1
+								Name=plotter_segment_276
+							}
+							Image ~{
+								Image=
+								Pos=277,0,0
+								Size=1,1
+								Name=plotter_segment_277
+							}
+							Image ~{
+								Image=
+								Pos=278,0,0
+								Size=1,1
+								Name=plotter_segment_278
+							}
+							Image ~{
+								Image=
+								Pos=279,0,0
+								Size=1,1
+								Name=plotter_segment_279
+							}
+							Image ~{
+								Image=
+								Pos=280,0,0
+								Size=1,1
+								Name=plotter_segment_280
+							}
+							Image ~{
+								Image=
+								Pos=281,0,0
+								Size=1,1
+								Name=plotter_segment_281
+							}
+							Image ~{
+								Image=
+								Pos=282,0,0
+								Size=1,1
+								Name=plotter_segment_282
+							}
+							Image ~{
+								Image=
+								Pos=283,0,0
+								Size=1,1
+								Name=plotter_segment_283
+							}
+							Image ~{
+								Image=
+								Pos=284,0,0
+								Size=1,1
+								Name=plotter_segment_284
+							}
+							Image ~{
+								Image=
+								Pos=285,0,0
+								Size=1,1
+								Name=plotter_segment_285
+							}
+							Image ~{
+								Image=
+								Pos=286,0,0
+								Size=1,1
+								Name=plotter_segment_286
+							}
+							Image ~{
+								Image=
+								Pos=287,0,0
+								Size=1,1
+								Name=plotter_segment_287
+							}
+							Image ~{
+								Image=
+								Pos=288,0,0
+								Size=1,1
+								Name=plotter_segment_288
+							}
+							Image ~{
+								Image=
+								Pos=289,0,0
+								Size=1,1
+								Name=plotter_segment_289
+							}
+							Image ~{
+								Image=
+								Pos=290,0,0
+								Size=1,1
+								Name=plotter_segment_290
+							}
+							Image ~{
+								Image=
+								Pos=291,0,0
+								Size=1,1
+								Name=plotter_segment_291
+							}
+							Image ~{
+								Image=
+								Pos=292,0,0
+								Size=1,1
+								Name=plotter_segment_292
+							}
+							Image ~{
+								Image=
+								Pos=293,0,0
+								Size=1,1
+								Name=plotter_segment_293
+							}
+							Image ~{
+								Image=
+								Pos=294,0,0
+								Size=1,1
+								Name=plotter_segment_294
+							}
+							Image ~{
+								Image=
+								Pos=295,0,0
+								Size=1,1
+								Name=plotter_segment_295
+							}
+							Image ~{
+								Image=
+								Pos=296,0,0
+								Size=1,1
+								Name=plotter_segment_296
+							}
+							Image ~{
+								Image=
+								Pos=297,0,0
+								Size=1,1
+								Name=plotter_segment_297
+							}
+							Image ~{
+								Image=
+								Pos=298,0,0
+								Size=1,1
+								Name=plotter_segment_298
+							}
+							Image ~{
+								Image=
+								Pos=299,0,0
+								Size=1,1
+								Name=plotter_segment_299
+							}
+							Image ~{
+								Image=
+								Pos=300,0,0
+								Size=1,1
+								Name=plotter_segment_300
+							}
+							Image ~{
+								Image=
+								Pos=301,0,0
+								Size=1,1
+								Name=plotter_segment_301
+							}
+							Image ~{
+								Image=
+								Pos=302,0,0
+								Size=1,1
+								Name=plotter_segment_302
+							}
+							Image ~{
+								Image=
+								Pos=303,0,0
+								Size=1,1
+								Name=plotter_segment_303
+							}
+							Image ~{
+								Image=
+								Pos=304,0,0
+								Size=1,1
+								Name=plotter_segment_304
+							}
+							Image ~{
+								Image=
+								Pos=305,0,0
+								Size=1,1
+								Name=plotter_segment_305
+							}
+							Image ~{
+								Image=
+								Pos=306,0,0
+								Size=1,1
+								Name=plotter_segment_306
+							}
+							Image ~{
+								Image=
+								Pos=307,0,0
+								Size=1,1
+								Name=plotter_segment_307
+							}
+							Image ~{
+								Image=
+								Pos=308,0,0
+								Size=1,1
+								Name=plotter_segment_308
+							}
+							Image ~{
+								Image=
+								Pos=309,0,0
+								Size=1,1
+								Name=plotter_segment_309
+							}
+							Image ~{
+								Image=
+								Pos=310,0,0
+								Size=1,1
+								Name=plotter_segment_310
+							}
+							Image ~{
+								Image=
+								Pos=311,0,0
+								Size=1,1
+								Name=plotter_segment_311
+							}
+							Image ~{
+								Image=
+								Pos=312,0,0
+								Size=1,1
+								Name=plotter_segment_312
+							}
+							Image ~{
+								Image=
+								Pos=313,0,0
+								Size=1,1
+								Name=plotter_segment_313
+							}
+							Image ~{
+								Image=
+								Pos=314,0,0
+								Size=1,1
+								Name=plotter_segment_314
+							}
+							Image ~{
+								Image=
+								Pos=315,0,0
+								Size=1,1
+								Name=plotter_segment_315
+							}
+							Image ~{
+								Image=
+								Pos=316,0,0
+								Size=1,1
+								Name=plotter_segment_316
+							}
+							Image ~{
+								Image=
+								Pos=317,0,0
+								Size=1,1
+								Name=plotter_segment_317
+							}
+							Image ~{
+								Image=
+								Pos=318,0,0
+								Size=1,1
+								Name=plotter_segment_318
+							}
+							Image ~{
+								Image=
+								Pos=319,0,0
+								Size=1,1
+								Name=plotter_segment_319
+							}
+							Image ~{
+								Image=
+								Pos=320,0,0
+								Size=1,1
+								Name=plotter_segment_320
+							}
+							Image ~{
+								Image=
+								Pos=321,0,0
+								Size=1,1
+								Name=plotter_segment_321
+							}
+							Image ~{
+								Image=
+								Pos=322,0,0
+								Size=1,1
+								Name=plotter_segment_322
+							}
+							Image ~{
+								Image=
+								Pos=323,0,0
+								Size=1,1
+								Name=plotter_segment_323
+							}
+							Image ~{
+								Image=
+								Pos=324,0,0
+								Size=1,1
+								Name=plotter_segment_324
+							}
+							Image ~{
+								Image=
+								Pos=325,0,0
+								Size=1,1
+								Name=plotter_segment_325
+							}
+							Image ~{
+								Image=
+								Pos=326,0,0
+								Size=1,1
+								Name=plotter_segment_326
+							}
+							Image ~{
+								Image=
+								Pos=327,0,0
+								Size=1,1
+								Name=plotter_segment_327
+							}
+							Image ~{
+								Image=
+								Pos=328,0,0
+								Size=1,1
+								Name=plotter_segment_328
+							}
+							Image ~{
+								Image=
+								Pos=329,0,0
+								Size=1,1
+								Name=plotter_segment_329
+							}
+							Image ~{
+								Image=
+								Pos=330,0,0
+								Size=1,1
+								Name=plotter_segment_330
+							}
+							Image ~{
+								Image=
+								Pos=331,0,0
+								Size=1,1
+								Name=plotter_segment_331
+							}
+							Image ~{
+								Image=
+								Pos=332,0,0
+								Size=1,1
+								Name=plotter_segment_332
+							}
+							Image ~{
+								Image=
+								Pos=333,0,0
+								Size=1,1
+								Name=plotter_segment_333
+							}
+							Image ~{
+								Image=
+								Pos=334,0,0
+								Size=1,1
+								Name=plotter_segment_334
+							}
+							Image ~{
+								Image=
+								Pos=335,0,0
+								Size=1,1
+								Name=plotter_segment_335
+							}
+							Image ~{
+								Image=
+								Pos=336,0,0
+								Size=1,1
+								Name=plotter_segment_336
+							}
+							Image ~{
+								Image=
+								Pos=337,0,0
+								Size=1,1
+								Name=plotter_segment_337
+							}
+							Image ~{
+								Image=
+								Pos=338,0,0
+								Size=1,1
+								Name=plotter_segment_338
+							}
+							Image ~{
+								Image=
+								Pos=339,0,0
+								Size=1,1
+								Name=plotter_segment_339
+							}
+							Image ~{
+								Image=
+								Pos=340,0,0
+								Size=1,1
+								Name=plotter_segment_340
+							}
+							Image ~{
+								Image=
+								Pos=341,0,0
+								Size=1,1
+								Name=plotter_segment_341
+							}
+							Image ~{
+								Image=
+								Pos=342,0,0
+								Size=1,1
+								Name=plotter_segment_342
+							}
+							Image ~{
+								Image=
+								Pos=343,0,0
+								Size=1,1
+								Name=plotter_segment_343
+							}
+							Image ~{
+								Image=
+								Pos=344,0,0
+								Size=1,1
+								Name=plotter_segment_344
+							}
+							Image ~{
+								Image=
+								Pos=345,0,0
+								Size=1,1
+								Name=plotter_segment_345
+							}
+							Image ~{
+								Image=
+								Pos=346,0,0
+								Size=1,1
+								Name=plotter_segment_346
+							}
+							Image ~{
+								Image=
+								Pos=347,0,0
+								Size=1,1
+								Name=plotter_segment_347
+							}
+							Image ~{
+								Image=
+								Pos=348,0,0
+								Size=1,1
+								Name=plotter_segment_348
+							}
+							Image ~{
+								Image=
+								Pos=349,0,0
+								Size=1,1
+								Name=plotter_segment_349
+							}
+							Image ~{
+								Image=
+								Pos=350,0,0
+								Size=1,1
+								Name=plotter_segment_350
+							}
+							Image ~{
+								Image=
+								Pos=351,0,0
+								Size=1,1
+								Name=plotter_segment_351
+							}
+							Image ~{
+								Image=
+								Pos=352,0,0
+								Size=1,1
+								Name=plotter_segment_352
+							}
+							Image ~{
+								Image=
+								Pos=353,0,0
+								Size=1,1
+								Name=plotter_segment_353
+							}
+							Image ~{
+								Image=
+								Pos=354,0,0
+								Size=1,1
+								Name=plotter_segment_354
+							}
+							Image ~{
+								Image=
+								Pos=355,0,0
+								Size=1,1
+								Name=plotter_segment_355
+							}
+							Image ~{
+								Image=
+								Pos=356,0,0
+								Size=1,1
+								Name=plotter_segment_356
+							}
+							Image ~{
+								Image=
+								Pos=357,0,0
+								Size=1,1
+								Name=plotter_segment_357
+							}
+							Image ~{
+								Image=
+								Pos=358,0,0
+								Size=1,1
+								Name=plotter_segment_358
+							}
+							Image ~{
+								Image=
+								Pos=359,0,0
+								Size=1,1
+								Name=plotter_segment_359
+							}
+							Image ~{
+								Image=
+								Pos=360,0,0
+								Size=1,1
+								Name=plotter_segment_360
+							}
+							Image ~{
+								Image=
+								Pos=361,0,0
+								Size=1,1
+								Name=plotter_segment_361
+							}
+							Image ~{
+								Image=
+								Pos=362,0,0
+								Size=1,1
+								Name=plotter_segment_362
+							}
+							Image ~{
+								Image=
+								Pos=363,0,0
+								Size=1,1
+								Name=plotter_segment_363
+							}
+							Image ~{
+								Image=
+								Pos=364,0,0
+								Size=1,1
+								Name=plotter_segment_364
+							}
+							Image ~{
+								Image=
+								Pos=365,0,0
+								Size=1,1
+								Name=plotter_segment_365
+							}
+							Image ~{
+								Image=
+								Pos=366,0,0
+								Size=1,1
+								Name=plotter_segment_366
+							}
+							Image ~{
+								Image=
+								Pos=367,0,0
+								Size=1,1
+								Name=plotter_segment_367
+							}
+							Image ~{
+								Image=
+								Pos=368,0,0
+								Size=1,1
+								Name=plotter_segment_368
+							}
+							Image ~{
+								Image=
+								Pos=369,0,0
+								Size=1,1
+								Name=plotter_segment_369
+							}
+							Image ~{
+								Image=
+								Pos=370,0,0
+								Size=1,1
+								Name=plotter_segment_370
+							}
+							Image ~{
+								Image=
+								Pos=371,0,0
+								Size=1,1
+								Name=plotter_segment_371
+							}
+							Image ~{
+								Image=
+								Pos=372,0,0
+								Size=1,1
+								Name=plotter_segment_372
+							}
+							Image ~{
+								Image=
+								Pos=373,0,0
+								Size=1,1
+								Name=plotter_segment_373
+							}
+							Image ~{
+								Image=
+								Pos=374,0,0
+								Size=1,1
+								Name=plotter_segment_374
+							}
+							Image ~{
+								Image=
+								Pos=375,0,0
+								Size=1,1
+								Name=plotter_segment_375
+							}
+							Image ~{
+								Image=
+								Pos=376,0,0
+								Size=1,1
+								Name=plotter_segment_376
+							}
+							Image ~{
+								Image=
+								Pos=377,0,0
+								Size=1,1
+								Name=plotter_segment_377
+							}
+							Image ~{
+								Image=
+								Pos=378,0,0
+								Size=1,1
+								Name=plotter_segment_378
+							}
+							Image ~{
+								Image=
+								Pos=379,0,0
+								Size=1,1
+								Name=plotter_segment_379
+							}
+							Image ~{
+								Image=
+								Pos=380,0,0
+								Size=1,1
+								Name=plotter_segment_380
+							}
+							Image ~{
+								Image=
+								Pos=381,0,0
+								Size=1,1
+								Name=plotter_segment_381
+							}
+							Image ~{
+								Image=
+								Pos=382,0,0
+								Size=1,1
+								Name=plotter_segment_382
+							}
+							Image ~{
+								Image=
+								Pos=383,0,0
+								Size=1,1
+								Name=plotter_segment_383
+							}
+							Image ~{
+								Image=
+								Pos=384,0,0
+								Size=1,1
+								Name=plotter_segment_384
+							}
+							Image ~{
+								Image=
+								Pos=385,0,0
+								Size=1,1
+								Name=plotter_segment_385
+							}
+							Image ~{
+								Image=
+								Pos=386,0,0
+								Size=1,1
+								Name=plotter_segment_386
+							}
+							Image ~{
+								Image=
+								Pos=387,0,0
+								Size=1,1
+								Name=plotter_segment_387
+							}
+							Image ~{
+								Image=
+								Pos=388,0,0
+								Size=1,1
+								Name=plotter_segment_388
+							}
+							Image ~{
+								Image=
+								Pos=389,0,0
+								Size=1,1
+								Name=plotter_segment_389
+							}
+							Image ~{
+								Image=
+								Pos=390,0,0
+								Size=1,1
+								Name=plotter_segment_390
+							}
+							Image ~{
+								Image=
+								Pos=391,0,0
+								Size=1,1
+								Name=plotter_segment_391
+							}
+							Image ~{
+								Image=
+								Pos=392,0,0
+								Size=1,1
+								Name=plotter_segment_392
+							}
+							Image ~{
+								Image=
+								Pos=393,0,0
+								Size=1,1
+								Name=plotter_segment_393
+							}
+							Image ~{
+								Image=
+								Pos=394,0,0
+								Size=1,1
+								Name=plotter_segment_394
+							}
+							Image ~{
+								Image=
+								Pos=395,0,0
+								Size=1,1
+								Name=plotter_segment_395
+							}
+							Image ~{
+								Image=
+								Pos=396,0,0
+								Size=1,1
+								Name=plotter_segment_396
+							}
+							Image ~{
+								Image=
+								Pos=397,0,0
+								Size=1,1
+								Name=plotter_segment_397
+							}
+							Image ~{
+								Image=
+								Pos=398,0,0
+								Size=1,1
+								Name=plotter_segment_398
+							}
+							Image ~{
+								Image=
+								Pos=399,0,0
+								Size=1,1
+								Name=plotter_segment_399
+							}
+							Image ~{
+								Image=
+								Pos=400,0,0
+								Size=1,1
+								Name=plotter_segment_400
+							}
+							Image ~{
+								Image=
+								Pos=401,0,0
+								Size=1,1
+								Name=plotter_segment_401
+							}
+							Image ~{
+								Image=
+								Pos=402,0,0
+								Size=1,1
+								Name=plotter_segment_402
+							}
+							Image ~{
+								Image=
+								Pos=403,0,0
+								Size=1,1
+								Name=plotter_segment_403
+							}
+							Image ~{
+								Image=
+								Pos=404,0,0
+								Size=1,1
+								Name=plotter_segment_404
+							}
+							Image ~{
+								Image=
+								Pos=405,0,0
+								Size=1,1
+								Name=plotter_segment_405
+							}
+							Image ~{
+								Image=
+								Pos=406,0,0
+								Size=1,1
+								Name=plotter_segment_406
+							}
+							Image ~{
+								Image=
+								Pos=407,0,0
+								Size=1,1
+								Name=plotter_segment_407
+							}
+							Image ~{
+								Image=
+								Pos=408,0,0
+								Size=1,1
+								Name=plotter_segment_408
+							}
+							Image ~{
+								Image=
+								Pos=409,0,0
+								Size=1,1
+								Name=plotter_segment_409
+							}
+							Image ~{
+								Image=
+								Pos=410,0,0
+								Size=1,1
+								Name=plotter_segment_410
+							}
+							Image ~{
+								Image=
+								Pos=411,0,0
+								Size=1,1
+								Name=plotter_segment_411
+							}
+							Image ~{
+								Image=
+								Pos=412,0,0
+								Size=1,1
+								Name=plotter_segment_412
+							}
+							Image ~{
+								Image=
+								Pos=413,0,0
+								Size=1,1
+								Name=plotter_segment_413
+							}
+							Image ~{
+								Image=
+								Pos=414,0,0
+								Size=1,1
+								Name=plotter_segment_414
+							}
+							Image ~{
+								Image=
+								Pos=415,0,0
+								Size=1,1
+								Name=plotter_segment_415
+							}
+							Image ~{
+								Image=
+								Pos=416,0,0
+								Size=1,1
+								Name=plotter_segment_416
+							}
+							Image ~{
+								Image=
+								Pos=417,0,0
+								Size=1,1
+								Name=plotter_segment_417
+							}
+							Image ~{
+								Image=
+								Pos=418,0,0
+								Size=1,1
+								Name=plotter_segment_418
+							}
+							Image ~{
+								Image=
+								Pos=419,0,0
+								Size=1,1
+								Name=plotter_segment_419
+							}
+							Image ~{
+								Image=
+								Pos=420,0,0
+								Size=1,1
+								Name=plotter_segment_420
+							}
+							Image ~{
+								Image=
+								Pos=421,0,0
+								Size=1,1
+								Name=plotter_segment_421
+							}
+							Image ~{
+								Image=
+								Pos=422,0,0
+								Size=1,1
+								Name=plotter_segment_422
+							}
+							Image ~{
+								Image=
+								Pos=423,0,0
+								Size=1,1
+								Name=plotter_segment_423
+							}
+							Image ~{
+								Image=
+								Pos=424,0,0
+								Size=1,1
+								Name=plotter_segment_424
+							}
+							Image ~{
+								Image=
+								Pos=425,0,0
+								Size=1,1
+								Name=plotter_segment_425
+							}
+							Image ~{
+								Image=
+								Pos=426,0,0
+								Size=1,1
+								Name=plotter_segment_426
+							}
+							Image ~{
+								Image=
+								Pos=427,0,0
+								Size=1,1
+								Name=plotter_segment_427
+							}
+							Image ~{
+								Image=
+								Pos=428,0,0
+								Size=1,1
+								Name=plotter_segment_428
+							}
+							Image ~{
+								Image=
+								Pos=429,0,0
+								Size=1,1
+								Name=plotter_segment_429
+							}
+							Image ~{
+								Image=
+								Pos=430,0,0
+								Size=1,1
+								Name=plotter_segment_430
+							}
+							Image ~{
+								Image=
+								Pos=431,0,0
+								Size=1,1
+								Name=plotter_segment_431
+							}
+							Image ~{
+								Image=
+								Pos=432,0,0
+								Size=1,1
+								Name=plotter_segment_432
+							}
+							Image ~{
+								Image=
+								Pos=433,0,0
+								Size=1,1
+								Name=plotter_segment_433
+							}
+							Image ~{
+								Image=
+								Pos=434,0,0
+								Size=1,1
+								Name=plotter_segment_434
+							}
+							Image ~{
+								Image=
+								Pos=435,0,0
+								Size=1,1
+								Name=plotter_segment_435
+							}
+							Image ~{
+								Image=
+								Pos=436,0,0
+								Size=1,1
+								Name=plotter_segment_436
+							}
+							Image ~{
+								Image=
+								Pos=437,0,0
+								Size=1,1
+								Name=plotter_segment_437
+							}
+							Image ~{
+								Image=
+								Pos=438,0,0
+								Size=1,1
+								Name=plotter_segment_438
+							}
+							Image ~{
+								Image=
+								Pos=439,0,0
+								Size=1,1
+								Name=plotter_segment_439
+							}
+							Image ~{
+								Image=
+								Pos=440,0,0
+								Size=1,1
+								Name=plotter_segment_440
+							}
+							Image ~{
+								Image=
+								Pos=441,0,0
+								Size=1,1
+								Name=plotter_segment_441
+							}
+							Image ~{
+								Image=
+								Pos=442,0,0
+								Size=1,1
+								Name=plotter_segment_442
+							}
+							Image ~{
+								Image=
+								Pos=443,0,0
+								Size=1,1
+								Name=plotter_segment_443
+							}
+							Image ~{
+								Image=
+								Pos=444,0,0
+								Size=1,1
+								Name=plotter_segment_444
+							}
+							Image ~{
+								Image=
+								Pos=445,0,0
+								Size=1,1
+								Name=plotter_segment_445
+							}
+							Image ~{
+								Image=
+								Pos=446,0,0
+								Size=1,1
+								Name=plotter_segment_446
+							}
+							Image ~{
+								Image=
+								Pos=447,0,0
+								Size=1,1
+								Name=plotter_segment_447
+							}
+							Image ~{
+								Image=
+								Pos=448,0,0
+								Size=1,1
+								Name=plotter_segment_448
+							}
+							Image ~{
+								Image=
+								Pos=449,0,0
+								Size=1,1
+								Name=plotter_segment_449
+							}
+							Image ~{
+								Image=
+								Pos=450,0,0
+								Size=1,1
+								Name=plotter_segment_450
+							}
+							Image ~{
+								Image=
+								Pos=451,0,0
+								Size=1,1
+								Name=plotter_segment_451
+							}
+							Image ~{
+								Image=
+								Pos=452,0,0
+								Size=1,1
+								Name=plotter_segment_452
+							}
+							Image ~{
+								Image=
+								Pos=453,0,0
+								Size=1,1
+								Name=plotter_segment_453
+							}
+							Image ~{
+								Image=
+								Pos=454,0,0
+								Size=1,1
+								Name=plotter_segment_454
+							}
+							Image ~{
+								Image=
+								Pos=455,0,0
+								Size=1,1
+								Name=plotter_segment_455
+							}
+							Image ~{
+								Image=
+								Pos=456,0,0
+								Size=1,1
+								Name=plotter_segment_456
+							}
+							Image ~{
+								Image=
+								Pos=457,0,0
+								Size=1,1
+								Name=plotter_segment_457
+							}
+							Image ~{
+								Image=
+								Pos=458,0,0
+								Size=1,1
+								Name=plotter_segment_458
+							}
+							Image ~{
+								Image=
+								Pos=459,0,0
+								Size=1,1
+								Name=plotter_segment_459
+							}
+							Image ~{
+								Image=
+								Pos=460,0,0
+								Size=1,1
+								Name=plotter_segment_460
+							}
+							Image ~{
+								Image=
+								Pos=461,0,0
+								Size=1,1
+								Name=plotter_segment_461
+							}
+							Image ~{
+								Image=
+								Pos=462,0,0
+								Size=1,1
+								Name=plotter_segment_462
+							}
+							Image ~{
+								Image=
+								Pos=463,0,0
+								Size=1,1
+								Name=plotter_segment_463
+							}
+							Image ~{
+								Image=
+								Pos=464,0,0
+								Size=1,1
+								Name=plotter_segment_464
+							}
+							Image ~{
+								Image=
+								Pos=465,0,0
+								Size=1,1
+								Name=plotter_segment_465
+							}
+							Image ~{
+								Image=
+								Pos=466,0,0
+								Size=1,1
+								Name=plotter_segment_466
+							}
+							Image ~{
+								Image=
+								Pos=467,0,0
+								Size=1,1
+								Name=plotter_segment_467
+							}
+							Image ~{
+								Image=
+								Pos=468,0,0
+								Size=1,1
+								Name=plotter_segment_468
+							}
+							Image ~{
+								Image=
+								Pos=469,0,0
+								Size=1,1
+								Name=plotter_segment_469
+							}
+							Image ~{
+								Image=
+								Pos=470,0,0
+								Size=1,1
+								Name=plotter_segment_470
+							}
+							Image ~{
+								Image=
+								Pos=471,0,0
+								Size=1,1
+								Name=plotter_segment_471
+							}
+							Image ~{
+								Image=
+								Pos=472,0,0
+								Size=1,1
+								Name=plotter_segment_472
+							}
+							Image ~{
+								Image=
+								Pos=473,0,0
+								Size=1,1
+								Name=plotter_segment_473
+							}
+							Image ~{
+								Image=
+								Pos=474,0,0
+								Size=1,1
+								Name=plotter_segment_474
+							}
+							Image ~{
+								Image=
+								Pos=475,0,0
+								Size=1,1
+								Name=plotter_segment_475
+							}
+							Image ~{
+								Image=
+								Pos=476,0,0
+								Size=1,1
+								Name=plotter_segment_476
+							}
+							Image ~{
+								Image=
+								Pos=477,0,0
+								Size=1,1
+								Name=plotter_segment_477
+							}
+							Image ~{
+								Image=
+								Pos=478,0,0
+								Size=1,1
+								Name=plotter_segment_478
+							}
+							Image ~{
+								Image=
+								Pos=479,0,0
+								Size=1,1
+								Name=plotter_segment_479
+							}
+							Image ~{
+								Image=
+								Pos=480,0,0
+								Size=1,1
+								Name=plotter_segment_480
+							}
+							Image ~{
+								Image=
+								Pos=481,0,0
+								Size=1,1
+								Name=plotter_segment_481
+							}
+							Image ~{
+								Image=
+								Pos=482,0,0
+								Size=1,1
+								Name=plotter_segment_482
+							}
+							Image ~{
+								Image=
+								Pos=483,0,0
+								Size=1,1
+								Name=plotter_segment_483
+							}
+							Image ~{
+								Image=
+								Pos=484,0,0
+								Size=1,1
+								Name=plotter_segment_484
+							}
+							Image ~{
+								Image=
+								Pos=485,0,0
+								Size=1,1
+								Name=plotter_segment_485
+							}
+							Image ~{
+								Image=
+								Pos=486,0,0
+								Size=1,1
+								Name=plotter_segment_486
+							}
+							Image ~{
+								Image=
+								Pos=487,0,0
+								Size=1,1
+								Name=plotter_segment_487
+							}
+							Image ~{
+								Image=
+								Pos=488,0,0
+								Size=1,1
+								Name=plotter_segment_488
+							}
+							Image ~{
+								Image=
+								Pos=489,0,0
+								Size=1,1
+								Name=plotter_segment_489
+							}
+							Image ~{
+								Image=
+								Pos=490,0,0
+								Size=1,1
+								Name=plotter_segment_490
+							}
+							Image ~{
+								Image=
+								Pos=491,0,0
+								Size=1,1
+								Name=plotter_segment_491
+							}
+							Image ~{
+								Image=
+								Pos=492,0,0
+								Size=1,1
+								Name=plotter_segment_492
+							}
+							Image ~{
+								Image=
+								Pos=493,0,0
+								Size=1,1
+								Name=plotter_segment_493
+							}
+							Image ~{
+								Image=
+								Pos=494,0,0
+								Size=1,1
+								Name=plotter_segment_494
+							}
+							Image ~{
+								Image=
+								Pos=495,0,0
+								Size=1,1
+								Name=plotter_segment_495
+							}
+							Image ~{
+								Image=
+								Pos=496,0,0
+								Size=1,1
+								Name=plotter_segment_496
+							}
+							Image ~{
+								Image=
+								Pos=497,0,0
+								Size=1,1
+								Name=plotter_segment_497
+							}
+							Image ~{
+								Image=
+								Pos=498,0,0
+								Size=1,1
+								Name=plotter_segment_498
+							}
+							Image ~{
+								Image=
+								Pos=499,0,0
+								Size=1,1
+								Name=plotter_segment_499
+							}
+						}
+					}
+                }
+            }
+        }
+    }
+}
