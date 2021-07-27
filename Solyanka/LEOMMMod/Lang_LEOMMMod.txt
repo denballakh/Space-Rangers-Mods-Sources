@@ -1,0 +1,3750 @@
+MicroModuls ^{
+    EvoMMUnique_Demplifier ^{
+        Cost=140
+        Equipments=WEnergy,WSplinter
+        Fragility=75
+        KindGraph=Un
+        Name=Подсилитель
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=0
+        Size=90
+        Special=1
+        Text=Уникальный микромодуль. Небольшой реактор холодного синтеза, установленный в оружие, при активации переводит давление из камер синтеза в стволы оружия, увеличивая их огневую мощь, в то же время избыточная энергия синтеза повышает эффективность выстрела. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Надежность: <clr>+50%<clrEnd>
+        Text=Размер: <clr>-10%<clrEnd>
+        Text=Стоимость: <clr>+40%<clrEnd>
+        bonWEnergy=36
+        bonWRadius=80
+        bonWSplinter=45
+    }
+    EvoMMUnique_Droiser ^{
+        Cost=140
+        Equipments=Droid,DefGenerator
+        Fragility=75
+        KindGraph=Un
+        Name=Дроизатор
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=0
+        Size=90
+        Special=1
+        Text=Уникальный микромодуль. Изучение банка памяти дроида найденного в архивах, производилось с целью модернизации современных технологий. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Генератор поля: <bonDef> ед.
+        Text=Надежность: <clr>+50%<clrEnd>
+        Text=Размер: <clr>-10%<clrEnd>
+        Text=Стоимость: <clr>+40%<clrEnd>
+        bonDef=15
+        bonDroid=50
+    }
+    EvoMMUnique_Enricher ^{
+        Cost=140
+        Equipments=Engine,FuelTank
+        Fragility=50
+        KindGraph=Un
+        Name=Обогащатель
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=0
+        Size=90
+        Special=1
+        Text=Уникальный микромодуль. Просто создан для скорейшего обогащения. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Объем бака: <bonFuel> ед.
+        Text=Надежность: <clr>+50%<clrEnd>
+        Text=Размер: <clr>-10%<clrEnd>
+        Text=Стоимость: <clr>+40%<clrEnd>
+        bonFuel=46
+        bonJump=22
+        bonSpeed=240
+    }
+    EvoMMUnique_Rediarcher ^{
+        Cost=140
+        Equipments=Scaner,Radar,Hook
+        Fragility=75
+        KindGraph=Un
+        Name=Изучатель
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=0
+        Size=90
+        Special=1
+        Text=Уникальный микромодуль. Огромный засекреченный архив неудачных исследований Коалиции, глубоко спрятанный на секретных складах отдаленных планет. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Скорость притягивания на ближней дистанции: <bonHookMinSpeed> ед.
+        Text=Скорость притягивания на дальней дистанции: <bonHookMaxSpeed> ед.
+        Text=Надежность: <clr>+50%<clrEnd>
+        Text=Размер: <clr>-10%<clrEnd>
+        Text=Стоимость: <clr>+40%<clrEnd>
+        bonHook=70
+        bonHookMaxSpeed=3
+        bonHookMinSpeed=3
+        bonHookRadius=50
+        bonRadar=2500
+        bonScan=16
+    }
+    EvoMMUnique_Relicter ^{
+        Cost=140
+        Equipments=WMissile
+        Fragility=50
+        KindGraph=Un
+        Name=Реликтер
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=0
+        Size=90
+        Special=1
+        Text=Уникальный микромодуль. Реликтовое излучение, образующееся в гипер-пространстве, образует физические процессы, происходящие внутри гипер-пузырей, исследования которых позволили снизить массу ракетных боеголовок, тем самым увеличив их мощность. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Скорость ракет и торпед: <clr>+550<clrEnd> ед.
+        Text=Количество залпов: <bonAmmo> ед.
+        Text=Надежность: <clr>+50%<clrEnd>
+        Text=Размер: <clr>-10%<clrEnd>
+        Text=Стоимость: <clr>+40%<clrEnd>
+        bonAmmo=30
+        bonMissileSpeed=550
+        bonWMissile=40
+    }
+    EvoMMUnique_Structurizer ^{
+        Cost=140
+        Equipments=Hull
+        KindGraph=Un
+        Name=Структуризатор
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=0
+        Special=1
+        Text=Уникальный микромодуль. Содержит наноматериалы углеродоволокна с вкраплениями биофотонов. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Масса корабля: <clr>-30%<clrEnd>
+        Text=Стоимость: <clr>+40%<clrEnd>
+        Text=Открывает 3 слота для <clr>артефакта<clrEnd>.
+        Text=Открывает 1 слот для <clr>генератора защиты<clrEnd>.
+        Text=Открывает 1 слот для <clr>дроида<clrEnd>.
+        Text=Открывает 1 слот для <clr>форсажа<clrEnd>.
+        Text=Открывает 1 слот для <clr>захвата<clrEnd>.
+        Text=Открывает 1 слот для <clr>радара<clrEnd>.
+        Text=Открывает 1 слот для <clr>сканера<clrEnd>.
+        Text=Открывает 3 слота для <clr>оружия<clrEnd>.
+        bonHull=7
+        bonMass=-30
+        bonSlotArt=3
+        bonSlotDef=1
+        bonSlotDroid=1
+        bonSlotForsage=1
+        bonSlotHook=1
+        bonSlotRadar=1
+        bonSlotScaner=1
+        bonSlotWeapon=3
+    }
+    LEOContentMod_MM_001 ^{
+        Equipments=WEnergy,WSplinter,WMissile
+        Name=Тюринг
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=50
+        Size=40
+        Text=Микромодуль второго уровня. Заменяет массивную орудийную турель на силовую опору. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Размер оружия: <clr>-60%<clrEnd>
+    }
+    LEOContentMod_MM_002 ^{
+        Cost=160
+        Equipments=Droid
+        Name=Кортатор
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=30
+        Text=Микромодуль первого уровня. Данный модуль является улучшенной версией гиниромасляного насоса, широко применяемого в ремонтных роботах. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> дроидом.
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Стоимость дроида: <clr>+60%<clrEnd>
+        bonDroid=30
+    }
+    LEOContentMod_MM_003 ^{
+        Equipments=Hook
+        Name=Апперанд
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Наращивает мощность захвата, за счет увеличения эффективности преобразования энергии. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Скорость притягивания на дальней дистанции: <bonHookMaxSpeed> ед.
+        bonHook=35
+        bonHookMaxSpeed=1
+    }
+    LEOContentMod_MM_004 ^{
+        Equipments=Hook
+        Name=Парагонский
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Заменяет источник энергии захвата на более мощный. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Скорость притягивания на дальней дистанции: <bonHookMaxSpeed> ед.
+        bonHook=70
+        bonHookMaxSpeed=1
+    }
+    LEOContentMod_MM_005 ^{
+        Equipments=Hook
+        Name=Хокусан
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=30
+        Text=Микромодуль первого уровня. Изменяет периодику колебаний волнового поля захвата в соответствии с характеристиками материала захватываемого объекта, увеличивая мощность захвата. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Скорость притягивания на дальней дистанции: <bonHookMaxSpeed> ед.
+        bonHook=105
+        bonHookMaxSpeed=2
+    }
+    LEOContentMod_MM_006 ^{
+        Equipments=Hook
+        Name=Хапак
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Разработан известным ученым Сикпаком Хапугой, прославившимся своей невероятной хронической и неизлечимой клептоманией. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Скорость притягивания на ближней дистанции: <bonHookMinSpeed> ед.
+        bonHookMinSpeed=1
+        bonHookRadius=25
+    }
+    LEOContentMod_MM_007 ^{
+        Equipments=Hook
+        Name=Магнетиум
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Увеличивает потенциал генерируемого захватом поля, повышая тем самым дальность прибора. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Скорость притягивания на ближней дистанции: <bonHookMinSpeed> ед.
+        bonHookMinSpeed=1
+        bonHookRadius=50
+    }
+    LEOContentMod_MM_009 ^{
+        Equipments=DefGenerator
+        Name=Флегест
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Size=110
+        Text=Микромодуль третьего уровня. Увеличивает эффективность фильтра помех генератора защитного поля. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> генератором поля.
+        Text=Генератор поля: <bonDef> ед.
+        Text=Размер генератора поля: <clr>+10%<clrEnd>
+        bonDef=3
+    }
+    LEOContentMod_MM_010 ^{
+        Cost=85
+        Equipments=DefGenerator
+        Name=Скарфор
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Text=Микромодуль третьего уровня. Увеличивает мощность фильтра помех генератора защитного поля, добавляя контроллер пси-защиты нулевого уровня. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> генератором поля.
+        Text=Генератор поля: <bonDef> ед.
+        Text=Стоимость генератора поля: <clr>-15%<clrEnd>
+        bonDef=3
+    }
+    LEOContentMod_MM_011 ^{
+        Cost=140
+        Equipments=DefGenerator
+        Name=Сэтщит
+        Owner=Fei,Gaal,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Заменяет движущиеся части генератора защитного поля на элементы доминаторного принципа действия. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> генератором поля.
+        Text=Генератор поля: <bonDef> ед.
+        Text=Стоимость генератора поля: <clr>+40%<clrEnd>
+        bonDef=7
+    }
+    LEOContentMod_MM_012 ^{
+        Equipments=WEnergy,WSplinter
+        Name=Регенат
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=20
+        Size=120
+        Text=Микромодуль первого уровня. Снабжает оружие возможностью восстанавливать корпус владельца при попадании. Не вставляется в <clr>ракетное<clrEnd> оружие. Совместим со <clr>всеми расами<clrEnd>.
+        Text=<clr>Восстанавливает структуру корабля<clrEnd> за счет повреждений цели.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Вес: <clr>+20%<clrEnd> ед.
+        WeaponMods=Drain
+        bonWEnergy=-16
+        bonWRadius=-30
+        bonWSplinter=-20
+    }
+    LEOContentMod_MM_013 ^{
+        Equipments=DefGenerator
+        Name=Завеса
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=50
+        Size=90
+        Text=Микромодуль второго уровня. Усиливает подпитку генератора защитного поля. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> генератором поля.
+        Text=Генератор поля: <bonDef> ед.
+        Text=Размер генератора поля: <clr>-10%<clrEnd>
+        bonDef=7
+    }
+    LEOContentMod_MM_014 ^{
+        Cost=200
+        Equipments=DefGenerator
+        Name=Бронедан
+        Owner=Fei,Gaal,Kling,None
+        Priority=30
+        Size=130
+        Text=Микромодуль первого уровня. Уникальный и дорогостоящий генератор создает поверхностное отталкивающее поле с высокой степенью поглощения кинетической и тепловой энергии. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> генератором поля.
+        Text=Генератор поля: <bonDef> ед.
+        Text=Стоимость генератора поля: <clr>+100%<clrEnd>
+        Text=Размер генератора поля: <clr>+30%<clrEnd>
+        bonDef=12
+    }
+    LEOContentMod_MM_015 ^{
+        Cost=55
+        Equipments=DefGenerator
+        Name=Криптон
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=30
+        Text=Микромодуль первого уровня. Встраивает криптоновые конструкции в генератор поля. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> генератором поля.
+        Text=Генератор поля: <bonDef> ед.
+        Text=Стоимость генератора поля: <clr>-45%<clrEnd>
+        bonDef=11
+    }
+    LEOContentMod_MM_016 ^{
+        Equipments=WMissile
+        Name=Ракетрим
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Size=109
+        Text=Микромодуль третьего уровня. Содержит ненаправленные бета-проводники и комплект для зарядки дополнительных боеголовок, увеличивающий силу ракетного оружия. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оружием.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Количество залпов: <bonAmmo> шт.
+        Text=Размер оружия: <clr>+18%<clrEnd>
+        bonAmmo=9
+        bonWMissile=9
+    }
+    LEOContentMod_MM_017 ^{
+        Cost=85
+        Equipments=WMissile
+        Name=Рокетбласт
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Text=Микромодуль третьего уровня. Повышает урон орудий путем установки миниатюрных энергоузлов, генерирующих дополнительную энергию для активации залпов ракетных орудий. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оружием.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Стоимость оружия: <clr>-15%<clrEnd>
+        bonWMissile=9
+    }
+    LEOContentMod_MM_018 ^{
+        Equipments=WMissile
+        Fragility=120
+        Name=Данга
+        Owner=Fei,Gaal,Kling,None
+        Priority=50
+        Size=120
+        Text=Микромодуль второго уровня. Наполняет боеголовки ракет и торпед жидким тетрилом, значительно повышая их боевую мощь. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оружием.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Размер оружия: <clr>+20%<clrEnd>
+        Text=Надежность: <clr>-20%<clrEnd>
+        bonWMissile=22
+    }
+    LEOContentMod_MM_019 ^{
+        Cost=140
+        Equipments=WMissile
+        Fragility=130
+        Name=Кетроман
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=50
+        Text=Микромодуль второго уровня. Подключаясь к ракетному орудию, заменяет стандартную систему наведения на навигационный локатор. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оружием.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Стоимость оружия: <clr>+40%<clrEnd>
+        Text=Надежность: <clr>-30%<clrEnd>
+        bonWMissile=22
+    }
+    LEOContentMod_MM_020 ^{
+        Cost=55
+        Equipments=WMissile
+        Name=Убивант
+        Owner=Fei,Gaal,Kling,None
+        Priority=20
+        Size=105
+        Text=Микромодуль первого уровня. Увеличивает заряд ракетного оружия. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оружием.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Стоимость оружия: <clr>-45%<clrEnd>
+        Text=Размер оружия: <clr>+5%<clrEnd>
+        bonWMissile=35
+    }
+    LEOContentMod_MM_021 ^{
+        Cost=200
+        Equipments=WMissile
+        Name=Рокет-Буги
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=20
+        Text=Микромодуль первого уровня. Предназначается только для ракетного вооружения, сильно увеличивая его убойные характеристики и стоимость из-за внедрения секретных взрывчатых элементов. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оружием.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Скорость ракет и торпед: <clr>+350<clrEnd> ед.
+        Text=Стоимость оружия: <clr>+100%<clrEnd>
+        bonMissileSpeed=350
+        bonWMissile=35
+    }
+    LEOContentMod_MM_022 ^{
+        Cost=120
+        Equipments=WEnergy
+        Name=Транзистер
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Воздействует на силу энергетического оружия, используя принцип умножения мощности генератора импульса. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оружием.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Стоимость оружия: <clr>+20%<clrEnd>
+        bonWEnergy=12
+    }
+    LEOContentMod_MM_023 ^{
+        Cost=120
+        Equipments=Hull
+        Name=Бронетон
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Text=Микромодуль третьего уровня. Способен с большой скоростью генерировать сверхплотные частицы, используемые в защите корабля. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> корпусом.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Стоимость корпуса: <clr>+20%<clrEnd>
+        bonHull=3
+    }
+    LEOContentMod_MM_024 ^{
+        Equipments=WEnergy
+        Fragility=130
+        Name=Батарейн
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Size=110
+        Text=Микромодуль третьего уровня. Позволяет увеличить силу выстрела благодаря замене энергетических блоков орудий на более тяжелые. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оружием.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Размер оружия: <clr>+10%<clrEnd>
+        Text=Надежность: <clr>-30%<clrEnd>
+        bonWEnergy=12
+    }
+    LEOContentMod_MM_025 ^{
+        Cost=70
+        Equipments=WEnergy
+        Name=Ингиберт
+        Owner=Fei,Gaal,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Наносит специальное вещество, уменьшающее воздействие вредных космических лучей на энергетическое вооружение. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оружием.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Стоимость оружия: <clr>-30%<clrEnd>
+        bonWEnergy=26
+    }
+    LEOContentMod_MM_026 ^{
+        Cost=140
+        Equipments=WEnergy
+        Name=Энергаль
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=50
+        Text=Микромодуль второго уровня. Добавляется как вспомогательное устройство в синтезатор пучка для энергетических типов вооружения. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оружием.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Стоимость оружия: <clr>+40%<clrEnd>
+        bonWEnergy=26
+    }
+    LEOContentMod_MM_027 ^{
+        Cost=55
+        Equipments=WEnergy
+        Name=Диодан
+        Owner=Fei,Gaal,Kling,None
+        Priority=10
+        Text=Микромодуль первого уровня. Оплетает ствол энергетического оружия электромагнитными катушками, разгоняющие частицы энергетического луча. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оружием.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Стоимость оружия: <clr>-45%<clrEnd>
+        Text=Дальность выстрела: <bonWRadius>
+        bonWEnergy=40
+        bonWRadius=-20
+    }
+    LEOContentMod_MM_028 ^{
+        Equipments=WEnergy
+        Name=Плазманит
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=30
+        Size=120
+        Text=Микромодуль первого уровня. Выделяемая модулем плазма совершенствует термореактор и облепляет собою ствол оружия, пропитывая энергитеческую основу луча. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оружием.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Размер оружия: <clr>+20%<clrEnd>
+        bonWEnergy=40
+    }
+    LEOContentMod_MM_029 ^{
+        Cost=85
+        Equipments=WSplinter
+        Name=Фаерган
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Size=85
+        Text=Микромодуль третьего уровня. Увеличивает мощность оружия за счет оснащения осколочных снарядов капсулированными протонами. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оружием.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Стоимость оружия: <clr>-15%<clrEnd>
+        bonWSplinter=15
+    }
+    LEOContentMod_MM_030 ^{
+        Equipments=WSplinter
+        Name=Драгзис
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Size=110
+        Text=Микромодуль третьего уровня. Наращивает мощность осколочного оружия. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оружием.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Размер оружия: <clr>+10%<clrEnd>
+        bonWSplinter=15
+    }
+    LEOContentMod_MM_031 ^{
+        Cost=140
+        Equipments=WSplinter
+        Name=Гренадор
+        Owner=Fei,Gaal,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Регулирует затворный механизм осколочного оружия, повышая эффективность стрельбы. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оружием.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Стоимость оружия: <clr>+40%<clrEnd>
+        bonWSplinter=30
+    }
+    LEOContentMod_MM_032 ^{
+        Equipments=WSplinter
+        Name=Казанг
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=50
+        Size=115
+        Text=Микромодуль второго уровня. Повышает поражающий коэффициент оружия путем сингулярного усиления начального импульса. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оружием.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Размер оружия: <clr>+15%<clrEnd>
+        bonWSplinter=30
+    }
+    LEOContentMod_MM_033 ^{
+        Cost=160
+        Equipments=WSplinter
+        Name=Убантрог
+        Owner=Fei,Gaal,Kling,None
+        Priority=30
+        Text=Микромодуль первого уровня. Увеличивает разрывную мощь осколочного оружия, путем увеличения критической массы. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оружием.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Стоимость оружия: <clr>+60%<clrEnd>
+        bonWSplinter=45
+    }
+    LEOContentMod_MM_034 ^{
+        Cost=85
+        Equipments=Hull
+        Name=Ректагон
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Size=100
+        Text=Микромодуль третьего уровня. Покрывает корпус облаком наэлектризованной пыли. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> корпусом.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Стоимость корпуса: <clr>-15%<clrEnd>
+        bonHull=3
+    }
+    LEOContentMod_MM_035 ^{
+        Cost=55
+        Equipments=WSplinter
+        Name=Сжигатель
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=30
+        Text=Микромодуль первого уровня. Добавляет дополнительные поражающие элементы к снарядам, используя частицы антивещества. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оружием.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Стоимость оружия: <clr>-45%<clrEnd>
+        bonWSplinter=45
+    }
+    LEOContentMod_MM_036 ^{
+        Cost=120
+        Equipments=WEnergy,WSplinter
+        Name=Ранджер
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Снижает инерционность корректирующих систем орудия, повышая дальность стрельбы. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оружием.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Стоимость оружия: <clr>+20%<clrEnd>
+        bonWRadius=40
+    }
+    LEOContentMod_MM_037 ^{
+        Equipments=WEnergy,WSplinter
+        Name=Сколпс
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Size=110
+        Text=Микромодуль третьего уровня. Массивная рельсовая система залпового огня, предназначенная для увеличения эффективной дальности стрельбы. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оружием.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Размер оружия: <clr>+10%<clrEnd>
+        bonWRadius=40
+    }
+    LEOContentMod_MM_038 ^{
+        Cost=70
+        Equipments=WEnergy,WSplinter
+        Name=Дальнобой
+        Owner=Fei,Gaal,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Заменяет систему координат корректирующего модуля на эклиптическую, увеличивая расстояние стрельбы орудий. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оружием.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Стоимость оружия: <clr>-30%<clrEnd>
+        bonWRadius=80
+    }
+    LEOContentMod_MM_039 ^{
+        Cost=140
+        Equipments=WEnergy,WSplinter
+        Name=Виолатор
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=50
+        Text=Микромодуль второго уровня. Боевой комплекс, постоянно переходящий границы дозволенного, часто используется пилотами во время рейдов. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оружием.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Стоимость оружия: <clr>+40%<clrEnd>
+        bonWRadius=80
+    }
+    LEOContentMod_MM_040 ^{
+        Equipments=WEnergy,WSplinter
+        Fragility=70
+        Name=Бигрендж
+        Owner=Fei,Gaal,Kling,None
+        Priority=30
+        Size=120
+        Text=Микромодуль первого уровня. Надстраивает атмическую систему наведения к оружию, увеличивая радиус действия вооружения. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оружием.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Размер оружия: <clr>+20%<clrEnd>
+        Text=Надежность: <clr>+30%<clrEnd>
+        bonWRadius=120
+    }
+    LEOContentMod_MM_041 ^{
+        Cost=150
+        Equipments=WEnergy,WSplinter
+        Fragility=115
+        Name=Дельтанис
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=30
+        Text=Микромодуль первого уровня. Технологии позволяют косвенно преодолеть фундаментальный предел скорости и размера частиц в вакууме, что приводит к сильному увеличению дальности стрельбы орудий. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оружием.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Стоимость оружия: <clr>+50%<clrEnd>
+        Text=Надежность: <clr>-15%<clrEnd>
+        bonWRadius=120
+    }
+    LEOContentMod_MM_042 ^{
+        Cost=200
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator,WEnergy,WSplinter,WMissile
+        Fragility=50
+        Name=Титанод
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Заменяет быстроизнашиваемые детали оборудования и оружия на новые выполненные из более прочного сплава. Не вставляется в <clr>корпус<clrEnd>. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Надежность оборудования: <clr>+50%<clrEnd>
+        Text=Стоимость: <clr>+100%<clrEnd>
+    }
+    LEOContentMod_MM_043 ^{
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator,WEnergy,WSplinter,WMissile
+        Fragility=50
+        Name=Нанотрон
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Заменяет компоненты оборудования на нанотехнологичные аналоги. Не вставляется в <clr>корпус<clrEnd>. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Надежность оборудования: <clr>+100%<clrEnd>
+    }
+    LEOContentMod_MM_044 ^{
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator,WEnergy,WSplinter,WMissile
+        Fragility=20
+        Name=Нанокорректор
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=30
+        Size=120
+        Text=Микромодуль первого уровня. Производит обработку частей оборудования фемтосекундными импульсами. Не вставляется в <clr>корпус<clrEnd>. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Надежность оборудования: <clr>+150%<clrEnd>
+        Text=Размер: <clr>+20%<clrEnd>
+    }
+    LEOContentMod_MM_045 ^{
+        Cost=140
+        Equipments=Hull
+        Name=Броневик
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=50
+        Size=100
+        Text=Микромодуль второго уровня. Оснащает корпус корабля дополнительными листами композитной брони. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> корпусом.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Стоимость корпуса: <clr>+40%<clrEnd>
+        bonHull=7
+    }
+    LEOContentMod_MM_046 ^{
+        Cost=70
+        Equipments=Hull
+        Name=Бронь
+        Owner=Fei,Gaal,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Заменяет детали обшивки корпуса на невероятно твердые фрагменты. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> корпусом.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Стоимость корпуса: <clr>-30%<clrEnd>
+        bonHull=7
+    }
+    LEOContentMod_MM_047 ^{
+        Cost=160
+        Equipments=Hull
+        Name=Твердотел
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=30
+        Size=90
+        Text=Микромодуль первого уровня. Проводит высокочастотную бомбардировку корпуса энергоквантами, увеличивая защитные характеристики материала. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> корпусом.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Стоимость корпуса: <clr>+60%<clrEnd>
+        Text=Размер корпуса: <clr>-10%<clrEnd>
+        bonHull=11
+    }
+    LEOContentMod_MM_048 ^{
+        Cost=55
+        Equipments=Hull
+        Name=Затвердитель
+        Owner=Fei,Gaal,Kling,None
+        Priority=30
+        Text=Микромодуль первого уровня. Закрепляет свою микросеть отталкивающих стационарных наноботов, частично блокирующих получаемые повреждения. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> корпусом.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Стоимость корпуса: <clr>-45%<clrEnd>
+        bonHull=11
+    }
+    LEOContentMod_MM_049 ^{
+        Cost=85
+        Equipments=Hull
+        Name=Расширитель
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Size=115
+        Text=Микромодуль третьего уровня. За счет более рационального переоборудования помещений корабля вместимость корпуса увеличивается. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> корпусом.
+        Text=Размер корпуса: <clr>+15%<clrEnd>
+        Text=Стоимость корпуса: <clr>-15%<clrEnd>
+    }
+    LEOContentMod_MM_050 ^{
+        Cost=120
+        Equipments=Hull
+        Name=Оберон
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Size=115
+        Text=Микромодуль третьего уровня. Увеличивает вместимость корпуса. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> корпусом.
+        Text=Размер корпуса: <clr>+15%<clrEnd>
+        Text=Стоимость корпуса: <clr>+20%<clrEnd>
+    }
+    LEOContentMod_MM_051 ^{
+        Cost=200
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator,WEnergy,WSplinter,WMissile,Hull
+        Name=Ноктуа
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Покрывает оборудование тонким слоем платины, увеличивая его стоимость. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Стоимость всего оборудования: <clr>+100%<clrEnd>
+    }
+    LEOContentMod_MM_052 ^{
+        Cost=200
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator,WEnergy,WSplinter,WMissile,Hull
+        Fragility=180
+        Name=Клинер
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Покрывает оборудование тонким слоем платины, увеличивая его стоимость, но значительно снижающее надежность. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Стоимость всего оборудования: <clr>+100%<clrEnd>
+        Text=Надежность: <clr>-80%<clrEnd>
+    }
+    LEOContentMod_MM_053 ^{
+        Cost=70
+        Equipments=Hull
+        Name=Торгец
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=50
+        Size=130
+        Text=Микромодуль второго уровня. Пристраивает к корпусу дополнительный грузовой отсек, увеличивая его вместимость. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> корпусом.
+        Text=Размер корпуса: <clr>+30%<clrEnd>
+        Text=Стоимость корпуса: <clr>-30%<clrEnd>
+    }
+    LEOContentMod_MM_054 ^{
+        Equipments=Hull,Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator,WEnergy,WSplinter,WMissile
+        Fragility=1000
+        Name=Манарох - X87U35/&122
+        Owner=Gaal
+        Priority=1
+        Text=Микромодуль первого уровня. Уничтожает любое оборудование почти до нуля, но тем самым дает убер-скриптовый баф, от которого подгорает даже у <clr>гаальцев<clrEnd>.
+        Text=(все скрипты защищены)
+        bonAmmo=25
+        bonAttacks=1
+        bonDef=10
+        bonDroid=45
+        bonExtraAkrinEff=50
+        bonExtraAkrinPenalty=-50
+        bonFuel=25
+        bonHook=250
+        bonHookMaxSpeed=5
+        bonHookMinSpeed=5
+        bonHookRadius=250
+        bonHull=10
+        bonJump=25
+        bonMass=-20
+        bonMissileSpeed=250
+        bonRadar=2500
+        bonScan=25
+        bonShotSpeed=100
+        bonShots=1
+        bonSkill1=6
+        bonSkill2=6
+        bonSkill3=6
+        bonSkill4=6
+        bonSkill5=6
+        bonSkill6=6
+        bonSlotArt=4
+        bonSlotDef=1
+        bonSlotDroid=1
+        bonSlotForsage=1
+        bonSlotHook=1
+        bonSlotRadar=1
+        bonSlotScaner=1
+        bonSlotWeapon=4
+        bonSpeed=250
+        bonStimCapacity=3
+        bonWEnergy=25
+        bonWMissile=25
+        bonWRadius=75
+        bonWSplinter=25
+        bonZonds=3
+    }
+    LEOContentMod_MM_055 ^{
+        Cost=140
+        Equipments=Hull
+        Name=Элитариум
+        Owner=Fei,Gaal,Kling,None
+        Priority=50
+        Size=130
+        Text=Микромодуль второго уровня. Увеличивает обьем корпуса с помощью установки дополнительных отсеков из бронеквантового элемента. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> корпусом.
+        Text=Размер корпуса: <clr>+30%<clrEnd>
+        Text=Стоимость корпуса: <clr>+40%<clrEnd>
+    }
+    LEOContentMod_MM_056 ^{
+        Cost=55
+        Equipments=Hull
+        Name=Куб
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=30
+        Size=145
+        Text=Микромодуль первого уровня. Пристраивает к корпусу дополнительный хаб-блок, увеличивая его объем. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> корпусом.
+        Text=Размер корпуса: <clr>+45%<clrEnd>
+        Text=Стоимость корпуса: <clr>-45%<clrEnd>
+    }
+    LEOContentMod_MM_057 ^{
+        Cost=160
+        Equipments=Hull
+        Name=Максимал
+        Owner=Fei,Gaal,Kling,None
+        Priority=30
+        Size=140
+        Text=Микромодуль первого уровня. За счет более рациональной программы использования внутреннего пространства грузового отсека и устранения нефункциональных конструкций увеличивает вместимость и стоимость корпуса корабля. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> корпусом.
+        Text=Размер корпуса: <clr>+40%<clrEnd>
+        Text=Стоимость корпуса: <clr>+60%<clrEnd>
+    }
+    LEOContentMod_MM_058 ^{
+        Cost=85
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator
+        Name=Микростан
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Size=80
+        Text=Микромодуль третьего уровня. Производит ряд замен крупных тексоэлементов на более компактные, но при этом дешевые. Не вставляется в <clr>оружие и корпус<clrEnd>. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оборудованием.
+        Text=Размер оборудования: <clr>-20%<clrEnd>
+        Text=Стоимость оборудования: <clr>-15%<clrEnd>
+    }
+    LEOContentMod_MM_059 ^{
+        Cost=120
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator
+        Name=Миниап
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Size=80
+        Text=Микромодуль третьего уровня. Этот модуль предназначается для уменьшения оборудования. Не вставляется в <clr>оружие и корпус<clrEnd>. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оборудованием.
+        Text=Размер оборудования: <clr>-20%<clrEnd>
+        Text=Стоимость оборудования: <clr>+20%<clrEnd>
+    }
+    LEOContentMod_MM_060 ^{
+        Cost=140
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator
+        Name=Дриммер
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=50
+        Size=60
+        Text=Микромодуль второго уровня. Производит замену движущихся частей оборудования на более крепкие. Не вставляется в <clr>оружие и корпус<clrEnd>. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оборудованием.
+        Text=Размер оборудования: <clr>-40%<clrEnd>
+        Text=Стоимость оборудования: <clr>+40%<clrEnd>
+    }
+    LEOContentMod_MM_061 ^{
+        Cost=70
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator
+        Name=Оптимазер
+        Owner=Fei,Gaal,Kling,None
+        Priority=50
+        Size=60
+        Text=Микромодуль второго уровня. Удаляет из оборудования нефункциональные и декоративные узлы, уменьшая его габаритные размеры и стоимость. Не вставляется в <clr>оружие и корпус<clrEnd>. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оборудованием.
+        Text=Размер оборудования: <clr>-40%<clrEnd>
+        Text=Стоимость оборудования: <clr>-30%<clrEnd>
+    }
+    LEOContentMod_MM_062 ^{
+        Cost=55
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator
+        Name=Миникрон
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=30
+        Size=40
+        Text=Микромодуль первого уровня. Уменьшает расстояние в молекулярных сетках любого оборудования и компенсирует изменения внутримолекулярных сил. Не вставляется в <clr>оружие и корпус<clrEnd>. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оборудованием.
+        Text=Размер оборудования: <clr>-60%<clrEnd>
+        Text=Стоимость оборудования: <clr>-45%<clrEnd>
+    }
+    LEOContentMod_MM_063 ^{
+        Cost=160
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator
+        Name=Сдавливатель
+        Owner=Fei,Gaal,Kling,None
+        Priority=30
+        Size=40
+        Text=Микромодуль первого уровня. Заменяет наиболее крупные платы их меньшими современными аналогами. Не вставляется в <clr>оружие и корпус<clrEnd>. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оборудованием.
+        Text=Размер оборудования: <clr>-60%<clrEnd>
+        Text=Стоимость оборудования: <clr>+60%<clrEnd>
+    }
+    LEOContentMod_MM_064 ^{
+        Equipments=WMissile
+        Name=Девастат
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=70
+        Size=135
+        Text=Микромодуль третьего уровня. Оснащает дополнительную шахту для запуска <clr>ракет<clrEnd>. Совместим с оборудованием <clr>всех рас<clrEnd>.
+        Text=Дополнительные ракеты: <bonShots> ед.
+        Text=Размер оружия: <clr>+35%<clrEnd>
+        bonShots=1
+    }
+    LEOContentMod_MM_065 ^{
+        Equipments=WMissile
+        Name=Диззис
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Size=90
+        Text=Микромодуль третьего уровня. Компоненты этого токсичного вещества пагубно влияют на двигатели ракет, а контейнеры для его хранения занимают дополнительный объем. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оружием.
+        Text=Скорость ракет и торпед: <clr>+350<clrEnd> ед.
+        Text=Количество залпов: <bonAmmo> шт.
+        Text=Размер оружия: <clr>-10%<clrEnd>
+        bonAmmo=15
+        bonMissileSpeed=350
+    }
+    LEOContentMod_MM_066 ^{
+        Cost=85
+        Equipments=WMissile
+        Name=Бомбарда
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Size=110
+        Text=Микромодуль третьего уровня. Интегрирует в боеголовки громоздкие тахионные искривители. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оружием.
+        Text=Скорость ракет и торпед: <clr>+350<clrEnd> ед.
+        Text=Количество залпов: <bonAmmo> шт.
+        Text=Стоимость оружия: <clr>-15%<clrEnd>
+        Text=Размер: <clr>+10%<clrEnd>
+        bonAmmo=15
+        bonMissileSpeed=350
+    }
+    LEOContentMod_MM_067 ^{
+        Cost=140
+        Equipments=WMissile
+        Name=Леталайз
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=50
+        Text=Микромодуль второго уровня. Оснащает ракеты и торпеды сверхлегкими глюонными боеголовками, увеличивая максимальный боезапас и скорость полета реактивных снарядов. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оружием.
+        Text=Скорость ракет и торпед: <clr>+550<clrEnd> ед.
+        Text=Количество залпов: <bonAmmo> шт.
+        Text=Стоимость оружия: <clr>+40%<clrEnd>
+        bonAmmo=30
+        bonMissileSpeed=550
+    }
+    LEOContentMod_MM_068 ^{
+        Equipments=WMissile
+        Name=Диреквел
+        Owner=Fei,Gaal,Kling,None
+        Priority=50
+        Size=115
+        Text=Микромодуль второго уровня. Оснащает ракеты и торпеды малоизученной аллотропной модификацией стандартного топлива. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оружием.
+        Text=Скорость ракет и торпед: <clr>+550<clrEnd> ед.
+        Text=Количество залпов: <bonAmmo> шт.
+        Text=Размер оружия: <clr>+15%<clrEnd>
+        bonAmmo=30
+        bonMissileSpeed=550
+    }
+    LEOContentMod_MM_069 ^{
+        Cost=160
+        Equipments=WMissile
+        Name=Аскилон
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=30
+        Text=Микромодуль первого уровня. Комплексный апгрейд любых ракетных установок. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оружием.
+        Text=Скорость ракет и торпед: <clr>+750<clrEnd> ед.
+        Text=Количество залпов: <bonAmmo> шт.
+        Text=Стоимость оружия: <clr>+60%<clrEnd>
+        bonAmmo=45
+        bonMissileSpeed=750
+    }
+    LEOContentMod_MM_070 ^{
+        Cost=55
+        Equipments=WMissile
+        Name=Инферно
+        Owner=Fei,Gaal,Kling,None
+        Priority=30
+        Text=Микромодуль первого уровня. Мощнейшая система залпового огня. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оружием.
+        Text=Скорость ракет и торпед: <clr>+750<clrEnd> ед.
+        Text=Количество залпов: <bonAmmo> шт.
+        Text=Стоимость оружия: <clr>-45%<clrEnd>
+        bonAmmo=45
+        bonMissileSpeed=750
+    }
+    LEOContentMod_MM_071 ^{
+        Cost=130
+        Equipments=Hull
+        Name=Палиотва
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Text=Микромодуль третьего уровня. Популярный преобразователь корпуса для участия в экстремальных видах космического спорта. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> корпусом.
+        Text=Масса корабля: <clr>-15%<clrEnd>
+        Text=Стоимость корпуса: <clr>+30%<clrEnd>
+        bonMass=-15
+    }
+    LEOContentMod_MM_072 ^{
+        Cost=85
+        Equipments=Hull
+        Name=Субгравий
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Примитивный генератор отрицательного поля. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> корпусом.
+        Text=Масса корабля: <clr>-15%<clrEnd>
+        Text=Стоимость корпуса: <clr>-15%<clrEnd>
+        bonMass=-15
+    }
+    LEOContentMod_MM_073 ^{
+        Cost=140
+        Equipments=Hull
+        Name=Антиграв
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=50
+        Text=Микромодуль второго уровня. Ученые разобрали артефакт антигравиратор до блоков гравитонов, и с помощью материи внедрили его в свои корпуса. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> корпусом.
+        Text=Масса корабля: <clr>-30%<clrEnd>
+        Text=Стоимость корпуса: <clr>+40%<clrEnd>
+        bonMass=-30
+    }
+    LEOContentMod_MM_074 ^{
+        Cost=70
+        Equipments=Hull
+        Name=Протоформ
+        Owner=Fei,Gaal,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Базовый модуль для улучшения скорости, популярный в любых уголках вселенной. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> корпусом.
+        Text=Масса корабля: <clr>-30%<clrEnd>
+        Text=Стоимость корпуса: <clr>-30%<clrEnd>
+        bonMass=-30
+    }
+    LEOContentMod_MM_075 ^{
+        Equipments=WMissile
+        Name=Залпер
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=50
+        Size=170
+        Text=Микромодуль второго уровня. Оснащает две дополнительные шахты для запуска <clr>ракет<clrEnd>. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Дополнительные ракеты: <bonShots> ед.
+        Text=Размер оружия: <clr>+70%<clrEnd>
+        bonShots=2
+    }
+    LEOContentMod_MM_076 ^{
+        Cost=160
+        Equipments=Hull
+        Name=Анобтаний
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=30
+        Text=Микромодуль первого уровня. Успех антигравитационных технологий распространился и на модули для звездолетов самого разного класса и уровня. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> корпусом.
+        Text=Масса корабля: <clr>-45%<clrEnd>
+        Text=Стоимость корпуса: <clr>+60%<clrEnd>
+        bonMass=-45
+    }
+    LEOContentMod_MM_077 ^{
+        Cost=55
+        Equipments=Hull
+        Name=Армадилл
+        Owner=Fei,Gaal,Kling,None
+        Priority=30
+        Text=Микромодуль первого уровня. Прочная чешуя армадиллов с планеты Дайтола навела ученых на мысль, что подобную компоновку бронированных частиц можно использовать при создании межзвездных кораблей. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> корпусом.
+        Text=Масса корабля: <clr>-45%<clrEnd>
+        Text=Стоимость корпуса: <clr>-45%<clrEnd>
+        bonMass=-45
+    }
+    LEOContentMod_MM_078 ^{
+        Cost=150
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator
+        Name=Кринотан
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Size=150
+        Text=Микромодуль третьего уровня. При установке в любое бортовое акриновое оборудование увеличивает эффективность межатомных взаимодействий. Не вставляется в <clr>оружие и корпус<clrEnd>. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оборудованием.
+        Text=Положительные свойства акрина: <clr>+30%<clrEnd>
+        Text=Негативные свойства акрина: <clr>-30%<clrEnd>
+        Text=Размер оборудования: <clr>+50%<clrEnd>
+        Text=Стоимость оборудования: <clr>+50%<clrEnd>
+        bonExtraAkrinEff=30
+        bonExtraAkrinPenalty=-30
+    }
+    LEOContentMod_MM_079 ^{
+        Cost=150
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator
+        Name=Микромант
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Size=150
+        Text=Микромодуль третьего уровня. Компактный набор для микроулучшений оборудования. Не вставляется в <clr>оружие и корпус<clrEnd>. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оборудованием.
+        Text=Положительные свойства акрина: <clr>+30%<clrEnd>
+        Text=Негативные свойства акрина: <clr>-30%<clrEnd>
+        Text=Размер оборудования: <clr>+50%<clrEnd>
+        Text=Стоимость оборудования: <clr>+50%<clrEnd>
+        bonExtraAkrinEff=30
+        bonExtraAkrinPenalty=-30
+    }
+    LEOContentMod_MM_080 ^{
+        Cost=175
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator
+        Name=Скринол
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=40
+        Size=175
+        Text=Микромодуль второго уровня. Усиливает нестандартное оборудованием. Не вставляется в <clr>оружие и корпус<clrEnd>. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оборудованием.
+        Text=Положительные свойства акрина: <clr>+60%<clrEnd>
+        Text=Негативные свойства акрина: <clr>-60%<clrEnd>
+        Text=Размер оборудования: <clr>+75%<clrEnd>
+        Text=Стоимость оборудования: <clr>+75%<clrEnd>
+        bonExtraAkrinEff=60
+        bonExtraAkrinPenalty=-60
+    }
+    LEOContentMod_MM_081 ^{
+        Cost=175
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator
+        Name=Окринил
+        Owner=Fei,Gaal,Kling,None
+        Priority=40
+        Size=175
+        Text=Микромодуль второго уровня. Частично одобренное и почти лицензионное программное обеспечение для любого акринового оборудования. Не вставляется в <clr>оружие и корпус<clrEnd>. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оборудованием.
+        Text=Положительные свойства акрина: <clr>+60%<clrEnd>
+        Text=Негативные свойства акрина: <clr>-60%<clrEnd>
+        Text=Размер оборудования: <clr>+75%<clrEnd>
+        Text=Стоимость оборудования: <clr>+75%<clrEnd>
+        bonExtraAkrinEff=60
+        bonExtraAkrinPenalty=-60
+    }
+    LEOContentMod_MM_082 ^{
+        Cost=300
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator
+        Name=Тралсакринд
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=10
+        Size=200
+        Text=Микромодуль первого уровня. Создает квантовую неопределенность вокруг оборудования. Не вставляется в <clr>оружие и корпус<clrEnd>. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> оборудованием.
+        Text=Положительные свойства акрина: <clr>+90%<clrEnd>
+        Text=Негативные свойства акрина: <clr>-90%<clrEnd>
+        Text=Размер оборудования: <clr>+100%<clrEnd>
+        Text=Стоимость оборудования: <clr>+200%<clrEnd>
+        bonExtraAkrinEff=90
+        bonExtraAkrinPenalty=-90
+    }
+    LEOContentMod_MM_083 ^{
+        Cost=300
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator
+        Name=Экринат
+        Owner=Fei,Gaal,Kling,None
+        Priority=10
+        Size=200
+        Text=Микромодуль первого уровня. Представленный в ходе одной из важнейших межгалактических конференций вскоре после начала войны, этот модуль призван максимизировать все скрытые функции и особые свойства любого оборудования. Не вставляется в <clr>оружие и корпус<clrEnd>. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> оборудованием.
+        Text=Положительные свойства акрина: <clr>+90%<clrEnd>
+        Text=Негативные свойства акрина: <clr>-90%<clrEnd>
+        Text=Размер оборудования: <clr>+100%<clrEnd>
+        Text=Стоимость оборудования: <clr>+200%<clrEnd>
+        bonExtraAkrinEff=90
+        bonExtraAkrinPenalty=-90
+    }
+    LEOContentMod_MM_084 ^{
+        Equipments=Hull,Engine
+        Name=Форстарт
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Прошивается в систему управления оборудования корабля, содержит коды активации разъемов оборудования, а так же улучшенное управление <clr>двигателем<clrEnd>. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Открывает 1 слот для <clr>форсажа<clrEnd>
+        Text=Открывает 1 слот для <clr>радара<clrEnd>
+        Text=Открывает 1 слот для <clr>сканера<clrEnd>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        bonSlotForsage=1
+        bonSlotRadar=1
+        bonSlotScaner=1
+        bonSpeed=40
+    }
+    LEOContentMod_MM_085 ^{
+        Equipments=Hull,Droid
+        Name=Дронзатор
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Прошивается в систему управления оборудования корабля, содержит коды активации разъемов оборудования. Наделяет дроида повышенным энергоресурсом, что улучшает его работу. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Открывает 1 слот для <clr>дроида<clrEnd>.
+        Text=Починка дроидом <bonDroid>.
+        bonDroid=10
+        bonSlotDroid=1
+    }
+    LEOContentMod_MM_086 ^{
+        Equipments=WMissile
+        Name=Рациол
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=30
+        Size=210
+        Text=Микромодуль первого уровня. Оснащает три дополнительные шахты для запуска <clr>ракет<clrEnd>. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Дополнительные ракеты: <bonShots> ед.
+        Text=Размер оружия: <clr>+110%<clrEnd>
+        bonShots=3
+    }
+    LEOContentMod_MM_087 ^{
+        Equipments=Hull,DefGenerator
+        Name=Шиелд
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Прошивается в систему управления оборудования корабля, содержит коды активации разъемов оборудования. Наделяет генератор защиты повышенным энергоресурсом, что улучшает его работу. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Открывает 1 слот для <clr>генератора защиты<clrEnd>.
+        Text=Мощность генератора защиты: <bonDef>.
+        bonDef=3
+        bonSlotDef=1
+    }
+    LEOContentMod_MM_088 ^{
+        Equipments=Hull
+        Name=Дистансер
+        Owner=Maloc,Peleng,People,Fei,Gaal,Kling,PirateClan,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Прошивается в систему управления оборудования корабля, содержит коды активации разъемов оборудования. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Открывает 1 слот для <clr>захвата<clrEnd>.
+        bonSlotHook=1
+    }
+    LEOContentMod_MM_089 ^{
+        Equipments=Hull
+        Name=Активатор
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Прошивается в систему управления оборудования корабля, содержит коды активации разъемов оборудования. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Открывает 1 слот для <clr>генератора защиты<clrEnd>.
+        Text=Открывает 1 слот для <clr>дроида<clrEnd>.
+        Text=Открывает 1 слот для <clr>захвата<clrEnd>.
+        bonSlotDef=1
+        bonSlotDroid=1
+        bonSlotHook=1
+    }
+    LEOContentMod_MM_090 ^{
+        Equipments=Hull
+        Name=Пасифик
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Прошивается в систему управления оборудования корабля, содержит коды активации разъемов оборудования. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Открывает 1 слот для <clr>артефакта<clrEnd>.
+        Text=Броня корпуса: <bonHull> ед.
+        bonHull=2
+        bonSlotArt=1
+    }
+    LEOContentMod_MM_091 ^{
+        Equipments=Hull
+        Name=Прогрессор
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Прошивается в систему управления оборудования корабля, содержит коды активации разъемов оборудования. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Открывает 1 слот для <clr>оружия<clrEnd>.
+        bonSlotWeapon=1
+    }
+    LEOContentMod_MM_092 ^{
+        Equipments=Hull
+        Name=Панкерт
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=30
+        Text=Микромодуль первого уровня. Прошивается в систему управления оборудования корабля, содержит коды активации разъемов оборудования. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Открывает 1 слот для <clr>артефакта<clrEnd>.
+        Text=Открывает 1 слот для <clr>оружия<clrEnd>.
+        bonSlotArt=1
+        bonSlotWeapon=1
+    }
+    LEOContentMod_MM_093 ^{
+        Equipments=Hull
+        Name=Кевлар
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=30
+        Size=90
+        Text=Микромодуль первого уровня. Прошивается в систему управления оборудования корабля, содержит коды активации разъемов оборудования. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Открывает 2 слота для <clr>оружия<clrEnd>.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Размер: <clr>-10%<clrEnd>
+        bonHull=4
+        bonSlotWeapon=2
+    }
+    LEOContentMod_MM_094 ^{
+        Equipments=Hull
+        Name=Стилл
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=30
+        Size=85
+        Text=Микромодуль первого уровня. Прошивается в систему управления оборудования корабля, содержит коды активации разъемов оборудования. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Открывает 2 слота для <clr>артефакта<clrEnd>.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Размер: <clr>-20%<clrEnd>
+        bonHull=5
+        bonSlotArt=2
+    }
+    LEOContentMod_MM_095 ^{
+        Cost=85
+        Equipments=Engine
+        Name=Рунер
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Позволяет максимально реализовать скоростной потенциал двигателей. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> двигателем.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Стоимость двигателя: <clr>-15%<clrEnd>
+        bonSpeed=70
+    }
+    LEOContentMod_MM_096 ^{
+        Equipments=Hull
+        FragilityEnergy=90
+        FragilityMissile=90
+        FragilitySplinter=90
+        Name=Эквалайзер
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Text=Микромодуль третьего уровня. Покрывает <clr>корпус<clrEnd> прочным слоем нанитов, равномерно увеличивая защиту от всех видов урона. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> корпусом.
+        Text=Восприимчивость к энергетическому урону: <clr>-10%<clrEnd>
+        Text=Восприимчивость к ракетному урону: <clr>-10%<clrEnd>
+        Text=Восприимчивость к осколочному урону: <clr>-10%<clrEnd>
+        Text=Масса корабля: <clr>-10%<clrEnd>
+        bonMass=-10
+    }
+    LEOContentMod_MM_097 ^{
+        Cost=120
+        Equipments=Engine
+        Name=Энтер
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Text=Микромодуль третьего уровня. Увеличивает скорость двигателя за счет ввода субквадратичной системы вычисления расхода топлива. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> двигателем.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Стоимость двигателя: <clr>+20%<clrEnd>
+        bonSpeed=70
+    }
+    LEOContentMod_MM_098 ^{
+        Equipments=Engine
+        Fragility=125
+        Name=Спидран
+        Owner=Fei,Gaal,Kling,None
+        Priority=50
+        Size=125
+        Text=Микромодуль второго уровня. Генерирует поле нулевого трения, снижая потери энергии двигателя на выходе, за счет чего увеличивается скорость, но разрушается его корпус. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> двигателем.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Размер двигателя: <clr>+25%<clrEnd>
+        Text=Надежность двигателя: <clr>-25%<clrEnd>
+        bonSpeed=350
+    }
+    LEOContentMod_MM_099 ^{
+        Cost=130
+        Equipments=Engine
+        Name=Движн
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=50
+        Text=Микромодуль второго уровня. Уменьшает внутренний диаметр сопел двигателя путем наращивания композитных кристаллидов, в результате чего увеличивается скорость истечения реактивной струи. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> двигателем.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Стоимость двигателя: <clr>+30%<clrEnd>
+        bonSpeed=140
+    }
+    LEOContentMod_MM_100 ^{
+        Cost=160
+        Equipments=Engine
+        Name=Флаер
+        Owner=Fei,Gaal,Kling,None
+        Priority=30
+        Text=Микромодуль первого уровня. Заменяет топливные фильтры, повышая степень очистки топлива, за счет чего увеличивает скорость двигателя. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> двигателем.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Стоимость двигателя: <clr>+60%<clrEnd>
+        bonSpeed=240
+    }
+    LEOContentMod_MM_101 ^{
+        Equipments=Engine
+        Name=Дрыннн
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=30
+        Size=85
+        Text=Микромодуль первого уровня. Убирает ненужные элементы форсажа, вследствие чего форсаж может работать постоянно, но скорость двигателя не удваивается, а увеличивается. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> двигателем.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Размер двигателя: <clr>-15%<clrEnd>
+        bonSpeed=210
+    }
+    LEOContentMod_MM_102 ^{
+        Cost=85
+        Equipments=Engine
+        Name=Джампер
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Позволяет увеличить дальность действия оборудования за счет устранения статистической ошибки вычислений, проявляющейся при расчетах в предельных интервалах. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> двигателем.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Стоимость двигателя: <clr>-15%<clrEnd>
+        bonJump=8
+    }
+    LEOContentMod_MM_103 ^{
+        Equipments=Engine
+        Name=Джамп
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Size=110
+        Text=Микромодуль третьего уровня. За счет оптимизации режимов работы двигателя увеличивает дальность прыжка. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> двигателем.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Размер двигателя: <clr>+10%<clrEnd>
+        bonJump=8
+    }
+    LEOContentMod_MM_104 ^{
+        Equipments=Engine
+        Name=Прыг
+        Owner=Fei,Gaal,Kling,None
+        Priority=50
+        Size=90
+        Text=Микромодуль второго уровня. Модифицирует систему разгона двигателя, тем самым увеличивая дальность прыжка в гиперпространстве. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> двигателем.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Размер двигателя: <clr>-10%<clrEnd>
+        bonJump=16
+    }
+    LEOContentMod_MM_105 ^{
+        Cost=140
+        Equipments=Engine
+        Name=Простр
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=50
+        Text=Микромодуль второго уровня. Генерирует множество слабых импульсов в реакторе двигателя, дестабилизируя структуру топлива и ускоряя процесс его переработки в энергию, тем самым увеличивая дальность гиперпрыжка. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> двигателем.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Стоимость двигателя: <clr>+40%<clrEnd>
+        bonJump=16
+    }
+    LEOContentMod_MM_106 ^{
+        Cost=55
+        Equipments=Engine
+        Name=Крио
+        Owner=Fei,Gaal,Kling,None
+        Priority=30
+        Text=Микромодуль первого уровня. Патчит программную часть модуля навигации и моментальной коррекции двигателя, увеличивая дальность прыжка двигателя. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> двигателем.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Стоимость двигателя: <clr>-45%<clrEnd>
+        bonJump=27
+    }
+    LEOContentMod_MM_107 ^{
+        Equipments=Hull
+        FragilityEnergy=80
+        FragilityMissile=80
+        FragilitySplinter=80
+        Name=Конфидент
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Полностью изменяет структуру корпуса перемешивая кварки и произвольно меняя полярность ковалентных связей в броне. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Восприимчивость к энергетическому урону: <clr>-20%<clrEnd>
+        Text=Восприимчивость к ракетному урону: <clr>-20%<clrEnd>
+        Text=Восприимчивость к осколочному урону: <clr>-20%<clrEnd>
+    }
+    LEOContentMod_MM_108 ^{
+        Cost=160
+        Equipments=Engine
+        Name=Край
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=30
+        Text=Микромодуль первого уровня. Заменяет преобразователь на модель нового поколения, позволяющую на короткое время увеличить энергетический потенциал топлива. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> двигателем.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Стоимость двигателя: <clr>+60%<clrEnd>
+        bonJump=24
+    }
+    LEOContentMod_MM_109 ^{
+        Cost=120
+        Equipments=Engine
+        Name=Штурм
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Содержит дополнительный, высокоточный микроконтроллер для навигационных систем двигателя. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> двигателем.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Стоимость двигателя: <clr>+20%<clrEnd>
+        bonJump=4
+        bonSpeed=35
+    }
+    LEOContentMod_MM_110 ^{
+        Equipments=Engine
+        Name=Джоуль
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Size=110
+        Text=Микромодуль третьего уровня. Добавляется в навигационную систему двигателя, увеличивая тактовую частоту вычислительного блока устройства. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> двигателем.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Размер двигателя: <clr>+10%<clrEnd>
+        bonJump=4
+        bonSpeed=35
+    }
+    LEOContentMod_MM_111 ^{
+        Cost=70
+        Equipments=Engine
+        Name=Дертон
+        Owner=Fei,Gaal,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Дестабилизирует молекулярную структуру топлива, увеличивая его детонационные свойства. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> двигателем.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Стоимость двигателя: <clr>-30%<clrEnd>
+        bonJump=8
+        bonSpeed=70
+    }
+    LEOContentMod_MM_112 ^{
+        Equipments=Engine
+        Name=Дрыг
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=50
+        Size=110
+        Text=Микромодуль второго уровня. При правильной установке в двигатель замечено резкое <clr>увеличение скорости<clrEnd> и <clr	>дальности прыжка<clrEnd>. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> двигателем.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Размер двигателя: <clr>+10%<clrEnd>
+        bonJump=8
+        bonSpeed=70
+    }
+    LEOContentMod_MM_113 ^{
+        Cost=160
+        Equipments=Engine
+        Name=Стрекоза
+        Owner=Fei,Gaal,Kling,None
+        Priority=30
+        Text=Микромодуль первого уровня. Модифицирует двигательные кристальные наполнители, увеличивая скорость и дальность прыжка. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> двигателем.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Стоимость двигателя: <clr>+60%<clrEnd>
+        bonJump=12
+        bonSpeed=105
+    }
+    LEOContentMod_MM_114 ^{
+        Cost=55
+        Equipments=Engine
+        Name=Реверсион
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=30
+        Text=Микромодуль первого уровня. Значительно увеличивает скорость и дальность гиперпрыжка. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> двигателем.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Стоимость двигателя: <clr>-45%<clrEnd>
+        bonJump=12
+        bonSpeed=105
+    }
+    LEOContentMod_MM_115 ^{
+        Cost=85
+        Equipments=FuelTank
+        Name=Наполнитель
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Размягчает и деформирует стенки топливного бака, увеличивая его объем. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> топливным баком.
+        Text=Объем топливного бака: <bonFuel> ед.
+        Text=Стоимость топливного бака: <clr>-15%<clrEnd>
+        bonFuel=12
+    }
+    LEOContentMod_MM_116 ^{
+        Cost=300
+        Equipments=FuelTank
+        Name=Волум
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Text=Микромодуль третьего уровня. Увеличивает вместимость топливного бака благодаря внедрению новой технологии сжатия топлива. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> топливным баком.
+        Text=Объем топливного бака: <bonFuel> ед.
+        Text=Стоимость топливного бака: <clr>+100%<clrEnd>
+        bonFuel=12
+    }
+    LEOContentMod_MM_117 ^{
+        Cost=140
+        Equipments=FuelTank
+        Name=Пурдж
+        Owner=Fei,Gaal,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Искривляет область пространства внутри резервуара, позволяя вместить больший объем топлива при неизменной массе и размере самого бака. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> топливным баком.
+        Text=Объем топливного бака: <bonFuel> ед.
+        Text=Стоимость топливного бака: <clr>+40%<clrEnd>
+        bonFuel=24
+    }
+    LEOContentMod_MM_118 ^{
+        Equipments=Hull
+        FragilityEnergy=70
+        FragilityMissile=70
+        FragilitySplinter=70
+        Name=Поляритон
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=30
+        Size=80
+        Text=Микромодуль первого уровня. Активизирует центры распространения поверхностных электромагнитных волн в слабозащищенных местах корпуса, значительно защищая их от любого урона. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Восприимчивость к энергетическому урону: <clr>-30%<clrEnd>
+        Text=Восприимчивость к ракетному урону: <clr>-30%<clrEnd>
+        Text=Восприимчивость к осколочному урону: <clr>-30%<clrEnd>
+        Text=Размер корпуса: <clr>-20%<clrEnd>
+    }
+    LEOContentMod_MM_119 ^{
+        Equipments=FuelTank
+        Name=Бакинда
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=50
+        Size=120
+        Text=Микромодуль второго уровня. Заменяет все дорогие детали бака на более дешевые и тяжелые. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> топливным баком.
+        Text=Объем топливного бака: <bonFuel> ед.
+        Text=Размер топливного бака: <clr>+20%<clrEnd>
+        bonFuel=18
+    }
+    LEOContentMod_MM_120 ^{
+        Cost=55
+        Equipments=FuelTank
+        Name=Капасит
+        Owner=Fei,Gaal,Kling,None
+        Priority=30
+        Size=120
+        Text=Микромодуль первого уровня. Специальные наноботы производят изменения молекулярной структуры топлива, уменьшая его реальный объем, что позволяет хранить большее количество топлива при неизменных характеристиках самого топливного оборудования. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> топливным баком.
+        Text=Объем топливного бака: <bonFuel> ед.
+        Text=Стоимость топливного бака: <clr>-45%<clrEnd>
+        Text=Размер топливного бака: <clr>+20%<clrEnd>
+        bonFuel=39
+    }
+    LEOContentMod_MM_121 ^{
+        Equipments=FuelTank
+        Name=Накопитель
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=30
+        Size=85
+        Text=Микромодуль первого уровня. Разработанный модуль для превращения большей части топливного бака в потайной грузовой отсек без подозрительной потери объема. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> топливным баком.
+        Text=Объем топливного бака: <bonFuel> ед.
+        Text=Размер топливного бака: <clr>-15%<clrEnd>
+        bonFuel=31
+    }
+    LEOContentMod_MM_122 ^{
+        Cost=120
+        Equipments=Scaner
+        Name=Серч
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Встраивается в поточный блок сканера и позволяет увеличивать спектр принимаемых волн. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> сканером.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Стоимость сканера: <clr>+20%<clrEnd>
+        bonScan=4
+    }
+    LEOContentMod_MM_123 ^{
+        Cost=85
+        Equipments=Scaner
+        Name=Гугл
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Size=105
+        Text=Микромодуль третьего уровня. Подключает сканер к сети Гайднет, за счет чего каждую неделю происходит калибровка сканера и обновление программного обеспечения. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> сканером.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Стоимость сканера: <clr>-15%<clrEnd>
+        Text=Размер: <clr>+5%<clrEnd>
+        bonScan=4
+    }
+    LEOContentMod_MM_124 ^{
+        Cost=140
+        Equipments=Scaner
+        Name=Сканкейт
+        Owner=Fei,Gaal,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Заменяет магнитный генератор сканера на более дорогой импульсно-гравитационный, тем самым увеличивая мощность прибора. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> сканером.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Стоимость сканера: <clr>+40%<clrEnd>
+        bonScan=8
+    }
+    LEOContentMod_MM_125 ^{
+        Equipments=Scaner
+        Name=Координат
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=50
+        Size=115
+        Text=Микромодуль второго уровня. Встраивается в механическую часть устройства. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> сканером.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Размер сканера: <clr>+15%<clrEnd>
+        bonScan=8
+    }
+    LEOContentMod_MM_126 ^{
+        Cost=55
+        Equipments=Scaner
+        Name=Техноскан
+        Owner=Fei,Gaal,Kling,None
+        Priority=30
+        Text=Микромодуль первого уровня. Улучшает информационную аппаратуру. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> сканером.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Стоимость сканера: <clr>-45%<clrEnd>
+        bonScan=12
+    }
+    LEOContentMod_MM_127 ^{
+        Equipments=Scaner
+        Name=Скан-Тек
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=30
+        Size=85
+        Text=Микромодуль первого уровня. Подключает сканер к зашифрованной сети, при этом мощность сканера увеличивается. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> сканером.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Размер сканера: <clr>-15%<clrEnd>
+        bonScan=12
+    }
+    LEOContentMod_MM_128 ^{
+        Cost=120
+        Equipments=Radar
+        Name=Даль
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Улучшает характеристики радарных устройств. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> радаром.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Стоимость радара: <clr>+20%<clrEnd>
+        bonRadar=500
+    }
+    LEOContentMod_MM_129 ^{
+        Cost=10
+        Equipments=Engine,FuelTank,Scaner,Radar,Droid,Hook,DefGenerator,WEnergy,WSplinter,WMissile,Hull
+        Name=Нуль
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Влияет на составляющую материала любого предмета. Совместим со <clr>всеми расами<clrEnd>.
+        Text=Стоимость всего оборудования: <clr>-90%<clrEnd>
+    }
+    LEOContentMod_MM_130 ^{
+        Cost=85
+        Equipments=Radar
+        Name=Навигатор
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Text=Микромодуль третьего уровня. Устанавливает новые системы обнаружения и распознавания объектов. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> радаром.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Стоимость радара: <clr>-15%<clrEnd>
+        bonRadar=500
+    }
+    LEOContentMod_MM_131 ^{
+        Cost=70
+        Equipments=Radar
+        Name=Деталь
+        Owner=Fei,Gaal,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Улучшает характеристики волновых излучателей устройств. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> радаром.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Стоимость радара: <clr>-30%<clrEnd>
+        bonRadar=1000
+    }
+    LEOContentMod_MM_132 ^{
+        Equipments=Radar
+        Name=Настройщик
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=50
+        Size=70
+        Text=Микромодуль второго уровня. Сбрасывает все заводские настройки радара, изменяя их на более точные значения. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> радаром.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Размер радара: <clr>-30%<clrEnd>
+        bonRadar=1000
+    }
+    LEOContentMod_MM_133 ^{
+        Equipments=Radar
+        Fragility=90
+        Name=Визитор
+        Owner=Fei,Gaal,Kling,None
+        Priority=30
+        Size=95
+        Text=Микромодуль первого уровня. Производит замену блока навигации радара на новый миниатюрный, сбалансированный и высокоэффективный элемент. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> радаром.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Размер радара: <clr>-5%<clrEnd>
+        bonRadar=1800
+    }
+    LEOContentMod_MM_134 ^{
+        Cost=160
+        Equipments=Radar
+        Name=Локатор
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=30
+        Text=Микромодуль первого уровня. Квазиинтеллектуальный блок, значительно увеличивающий мощность радара, за счет использования псевдоинтуиции. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> радаром.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Стоимость радара: <clr>+60%<clrEnd>
+        bonRadar=1500
+    }
+    LEOContentMod_MM_135 ^{
+        Cost=120
+        Equipments=Droid
+        Name=Бот
+        Owner=Fei,Gaal,Kling,None
+        Priority=70
+        Text=Микромодуль третьего уровня. Обновляет программу ремонтного дроида, благодаря чему его действия становятся более точными и эффективными. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> дроидом.
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Стоимость дроида: <clr>+20%<clrEnd>
+        bonDroid=10
+    }
+    LEOContentMod_MM_136 ^{
+        Cost=85
+        Equipments=Droid
+        Name=Паскаль
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=70
+        Text=Микромодуль третьего уровня. Убирает из дроида лишние сервисные блоки, заменяя их дополнительными ремонтными модулями. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> дроидом.
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Стоимость дроида: <clr>-15%<clrEnd>
+        bonDroid=10
+    }
+    LEOContentMod_MM_137 ^{
+        Cost=70
+        Equipments=Droid
+        Name=Девайс
+        Owner=Fei,Gaal,Kling,None
+        Priority=50
+        Text=Микромодуль второго уровня. Совершенствует аккумуляторы векторного типа, благодаря чему дроид может дольше работать. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> дроидом.
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Стоимость дроида: <clr>-30%<clrEnd>
+        bonDroid=20
+    }
+    LEOContentMod_MM_138 ^{
+        Equipments=Droid
+        Name=Нанитоид
+        Owner=Maloc,Peleng,People,PirateClan,NonKling
+        Priority=50
+        Size=90
+        Text=Микромодуль второго уровня. Встраивает миниатюрный манипулятор ремонтному дроиду. Совместим только с <clr>малокским, пеленгским, человеческим и пиратским<clrEnd> дроидом.
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Размер дроида: <clr>-10%<clrEnd>
+        bonDroid=20
+    }
+    LEOContentMod_MM_139 ^{
+        Equipments=Droid
+        Fragility=80
+        Name=Щипцы
+        Owner=Fei,Gaal,Kling,None
+        Priority=30
+        Size=120
+        Text=Микромодуль первого уровня. Новейший чип для управления дроидом. Повышает его возможности до предельного. Смущает только <clr>размер<clrEnd> этого продвинутого чипа. Совместим только с <clr>фэянским, гаальским, доминаторским и неопознанным<clrEnd> дроидом.
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Размер: <clr>+20%<clrEnd>
+        Text=Надежность: <clr>+20%<clrEnd>
+        bonDroid=30
+    }
+    LEOContentMod_MM_140 ^{
+        Equipments=Engine,WEnergy
+        Name=Аккуратер
+        Owner=People,Fei,Gaal
+        Priority=40
+        Text=Микромодуль второго уровня. Перепрограммирует электронные системы двигателя и энергооружия на увеличенную точность. Совместим только с оборудованием <clr>людей, фэян<clrEnd> и <clr>гаальцев<clrEnd>.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность эн.оружия: <bonWRadius> ед.
+        bonSpeed=120
+        bonWRadius=40
+    }
+    LEOContentMod_MM_141 ^{
+        Equipments=WEnergy,WSplinter,WMissile
+        Name=Дэмдж
+        Owner=Any
+        Priority=90
+        Text=Микромодуль третьего уровня. Незначительно усиливает урон любых типов орудий за счет установки более легких и одновременно эффективных деталей в механическую часть орудия. Совместим с вооружением <clr>всех рас<clrEnd>.
+        Text=Мощность эн.оружия: <bonWEnergy>
+        Text=Мощность оск. оружия: <bonWSplinter>
+        Text=Мощность рак.оружия: <bonWMissile>
+        bonWEnergy=6
+        bonWMissile=9
+        bonWSplinter=12
+    }
+    LEOContentMod_MM_142 ^{
+        Equipments=DefGenerator
+        Fragility=80
+        Name=Завеса
+        Owner=Maloc,Peleng,People,Gaal,PirateClan,Kling
+        Priority=70
+        Text=Микромодуль третьего уровня. Усиливает подпитку генератора защитного поля, также увеличивая его надежность. С <clr>фэянскими<clrEnd> генераторами не совместим.
+        Text=Мощность ГЗП: <bonDef>
+        Text=Надежность: <clr>+20%<clrEnd>
+        bonDef=3
+    }
+    LEOContentMod_MM_143 ^{
+        Cost=150
+        Equipments=WMissile
+        Name=Рокетбласт
+        Owner=PirateClan,Kling
+        Priority=50
+        Text=Микромодуль второго уровня. Разработан <clr>пиратами<clrEnd> для усиления своей наполовину неудачной разработки "Лирекрон", однако в процессе тестирования была выявлена совместимость с другими типами ракетного оружия. Повышает урон орудий путем установки миниатюрных энергоузлов, генерирующих дополнительную энергию для активации залпов ракетных орудий. Несовместим с вооружением <clr>Коалиции<clrEnd>, но совместим с <clr>доминаторским<clrEnd>.
+        Text=Сила рак. оружия: <bonWMissile> ед.
+        Text=Стоимость: <clr>+50%<clrEnd>
+        bonWMissile=20
+    }
+    LEOContentMod_MM_144 ^{
+        Cost=150
+        Equipments=Radar,Scaner
+        KindGraph=Ultra
+        Name=Ультралокатор
+        Owner=Any
+        Priority=3
+        Text=Уникальный микромодуль. В результате экспериментов с радарами из ЧД и сканерами доминаторов был открыт рецепт получения максимальной эффективности радара и сканера. Данный эффект радиогиперпространственной волны был использован в данном особом микромодуле. Совместим с оборудованием <clr>всех рас<clrEnd>.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Стоимость: <clr>+50%<clrEnd>
+        Text=<clr>Можно получить за любое задание с незначительным шансом<clrEnd>
+        bonRadar=1620
+        bonScan=22
+    }
+    LEOContentMod_MM_145 ^{
+        Cost=100
+        Equipments=Hull
+        Name=Тарго
+        Owner=Peleng,Gaal
+        Priority=45
+        Size=125
+        Text=Микромодуль второго уровня. Разработан <clr>гаальцами<clrEnd> в рамках секретного проекта "Миротворец". После раскрытия секрета <clr>пеленгским<clrEnd> Дзухаллагом стал предлагаться рейнджерам для приобретения за ноды в центрах рейнджеров. Увеличивает обьем корпусов с помощью установки дополнительных отсеков из бронеквантового адаманция, практически не имеющего веса.
+        Text=Обьем корпуса: +<clr>25%<clrEnd>.
+    }
+    LEOContentMod_MM_146 ^{
+        Cost=150
+        Equipments=W13,W14,W15
+        KindGraph=Ultra
+        Name=Блакелрон
+        Owner=Kling
+        Priority=3
+        RacialRestriction=1
+        Size=140
+        Text=Уникальный микромодуль. Создан <clr>доминатором<clrEnd> Блазером из нодов уничтоженных терроноидов и келлероидов для усиления огневой мощи <clr>особых орудий доминаторов<clrEnd>. Однажды военный рейд на систему оккупированную Блазером принес и пару экземпляров этого модуля, после чего он был изучен Коалицией. Однако снять установленную защиту на только доминаторское оружие не удалось.
+        Text=Сила вертикса: <bonWEnergy> ед.
+        Text=Сила ИМХО-9000: <bonWSplinter> ед.
+        Text=Сила торпедного аппарата: <bonWMissile> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Размер: <clr>+40%<clrEnd>
+        Text=Стоимость: <clr>+250%<clrEnd>
+        Text=<clr>Замедление<clrEnd> врагов при попадании
+        WeaponMods=Decelerate
+        bonWEnergy=30
+        bonWMissile=60
+        bonWRadius=45
+        bonWSplinter=45
+    }
+    LEOContentMod_MM_147 ^{
+        Cost=70
+        Equipments=Engine,FuelTank,Droid,CargoHook,DefGenerator,Radar,Scaner,WEnergy,WSplinter,WMissile
+        Fragility=130
+        Name=Уравнитель
+        Owner=Fei,Gaal,People,None,Kling
+        Priority=60
+        Size=70
+        Text=Микромодуль второго уровня. По неизвестному принципу заменяет дорогие детали <clr>любого<clrEnd> оборудования более дешевыми. Снижает размер и стоимость, также снижает <clr>надежность<clrEnd>. Несовместим с <clr>малокским, пеленгским и пиратским<clrEnd> оборудованием.
+        Text=Стоимость: <clr>-30%<clrEnd>
+        Text=Размер: <clr>-30%<clrEnd>
+        Text=Надежность: <clr>-30%<clrEnd>
+    }
+    LEOContentMod_MM_148 ^{
+        Equipments=Droid,CargoHook,Scaner
+        Name=Анлок
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=32
+        Text=Микромодуль второго уровня. Комплект программных усовершенствований, внедряемый в программируемое оборудование: <clr>дроид, захват и сканер<clrEnd>. Увеличивает скорость их работы и исправляет возможные ошибки. Несовместим с оборудованием <clr>малоков<clrEnd> (какие там программы!).
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Скорость притяжки захватом: <bonHookMinSpeed> ед.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Мощность сканера: <bonScan> ед.
+        bonDroid=10
+        bonHook=40
+        bonHookMaxSpeed=2
+        bonHookMinSpeed=2
+        bonScan=7
+    }
+    LEOContentMod_MM_149 ^{
+        Equipments=FuelTank
+        Fragility=50
+        Name=Топбак
+        Owner=PirateClan
+        Priority=40
+        Text=Микромодуль второго уровня. Был создан пиратами относительно недавно. Вставляется в <clr>пиратский топливный бак<clrEnd> и повышает объем и надежность.
+        Text=Стойкость: <clr>+50%<clrEnd>
+        Text=Размер бака: <bonFuel> ед.
+        bonFuel=15
+    }
+    LEOContentMod_MM_150 ^{
+        Equipments=Hull
+        Fragility=85
+        Name=Парагейд
+        Owner=Maloc,Peleng,Fei,Gaal,PirateClan,Kling,None
+        Priority=20
+        Text=Микромодуль первого уровня. Открывает в <clr>корпусе<clrEnd> два слота под оружие и один слот под артефакт, ценой уменьшения стойкости корпуса к любому урону. Несовместим с корпусами <clr>людей<clrEnd>.
+        Text=Восприимчивость к урону: <clr>-15%<clrEnd>
+        bonSlotArt=1
+        bonSlotWeapon=2
+    }
+    LEOContentMod_MM_151 ^{
+        Equipments=Hull
+        Fragility=85
+        Name=Искатель
+        Owner=Maloc,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=20
+        Text=Микромодуль первого уровня. Открывает в <clr>корпусе<clrEnd> два слота под артефакты и один слот под оружие, ценой уменьшения стойкости корпуса к любому урону. Несовместим с корпусами <clr>пеленгов<clrEnd>.
+        Text=Восприимчивость к урону: <clr>-15%<clrEnd>
+        bonSlotArt=2
+        bonSlotWeapon=1
+    }
+    LEOContentMod_MM_152 ^{
+        Equipments=DefGenerator,Scaner
+        Name=Канал
+        Owner=Maloc,Peleng,Fei,Kling,PirateClan
+        Priority=40
+        Size=115
+        Text=Микромодуль второго уровня. Увеличивает мощность <clr>сканера<clrEnd> или <clr>генератора защиты<clrEnd>, подключая дополнительную энергоустановку, имеющую достаточно большой вес. Конфликтует с оборудованием <clr>людей и гаальцев<clrEnd>.
+        Text=Вес оборудования: <clr>+15%<clrEnd>
+        Text=Мощность генератора: <bonDef> ед.
+        Text=Мощность сканера: <bonScan> ед.
+        bonDef=6
+        bonScan=8
+    }
+    LEOContentMod_MM_153 ^{
+        Equipments=Engine,FuelTank,Radar,Scaner
+        Name=Мультиплекс
+        Owner=People,Fei,Gaal,PirateClan
+        Priority=15
+        Text=Микромодуль первого уровня. Часть тестовой серии акринового оборудования как вспомогательный модуль. Утратил часть функций, но до сих пор работает с <clr>двигателями, баками, радарами и сканерами <clrEnd> достаточной прочности, то есть исключая <clr>малокские и пеленгские<clrEnd>.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Объем бака: <bonFuel> ед.
+        Text=Акриновый бонус: <bonExtraAkrinEff>%
+        bonExtraAkrinEff=50
+        bonFuel=15
+        bonRadar=650
+        bonScan=7
+        bonSpeed=110
+    }
+    LEOContentMod_MM_154 ^{
+        Equipments=W01,W05
+        Fragility=200
+        Name=Угрожай
+        Owner=Any
+        Priority=26
+        Text=Микромодуль первого уровня. Создан одним сумасшедшим пиратом, отставным военным Коалиции. Превращает любой <clr>промышленный лазер<clrEnd> или <clr>третон<clrEnd> в оружие абсолютного уничтожения. Побочные эффекты включают в себя быстрый износ и поломку разогнанной таким образом турели.
+        Text=Урон: <bonWEnergy> ед.
+        Text=Дальнобойность: <bonWRadius> ед.
+        Text=Надежность: <clr>-50%<clrEnd>
+        WeaponMods=ScanBonus
+        bonWEnergy=45
+        bonWRadius=65
+    }
+    LEOContentMod_MM_155 ^{
+        Equipments=Radar,Scaner
+        Name=Светляк
+        Owner=PirateClan,None,People
+        Priority=95
+        Text=Микромодуль третьего уровня. Улучшает информационную аппаратуру <clr>пиратского, неизвестного и людского <clrEnd> производства. Исправляет ошибки в программе и надстраивает дополнительные узлы.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Мощность сканера: <bonScan> ед.
+        bonRadar=300
+        bonScan=4
+    }
+    LEOContentMod_MM_156 ^{
+        Cost=10
+        Equipments=Engine,FuelTank,Droid,CargoHook,DefGenerator,Radar,Scaner,WEnergy,WSplinter,WMissile
+        Fragility=200
+        Name=Уравнитель-x2.5
+        Owner=Fei,Gaal,People,None,Kling
+        Priority=30
+        Size=10
+        Text=Микромодуль первого уровня. По неизвестному принципу заменяет дорогие детали <clr>любого<clrEnd> оборудования более дешевыми. Очень сильно снижает размер и стоимость, но под вражеским огнем такое оборудование прослужит недолго. Несовместим с <clr>малокским, пеленгским и пиратским<clrEnd> оборудованием - оно бы с этим модулем сломалось сразу же.
+        Text=Стоимость: <clr>-90%<clrEnd>
+        Text=Размер: <clr>-90%<clrEnd>
+        Text=Надежность: <clr>-90%<clrEnd>
+    }
+    LEOContentMod_MM_157 ^{
+        Equipments=WEnergy
+        Name=Топор
+        Owner=Maloc,People,PirateClan,NonKling
+        Priority=31
+        Size=160
+        Text=Микромодуль второго уровня. Усиливает <clr>энергетическое оружие пиратов, малоков и людей <clrEnd>дополнительным стволом, что позволяет атаковать два раза за ход. Принцип работы позаимствован у "Опустошителя".
+        Text=Урон: <bonWEnergy> ед.
+        Text=Скорострельность: <bonAttacks> ед.
+        Text=Размер: <clr>+60%<clrEnd>
+        bonAttacks=1
+        bonWEnergy=6
+    }
+    LEOContentMod_MM_158 ^{
+        Equipments=WSplinter
+        Name=Фраг
+        Owner=People,Fei,Gaal,PirateClan
+        Priority=60
+        Text=Микромодуль второго уровня. Усовершенствует технологию снарядов осколочного оружия мощными разрывными боеголовками, позволяя увеличить урон орудий всех рас, <clr>кроме малоков и пеленгов<clrEnd>. Побочный эффект от снарядов повреждает двигатель противника.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=<clr>Наносит сильные повреждения двигателю противника<clrEnd>
+        WeaponMods=ReduceEngine
+        bonWSplinter=12
+    }
+    LEOContentMod_MM_159 ^{
+        Equipments=W16,W17,W18
+        Name=Мушкетон
+        Owner=PirateClan
+        Priority=30
+        RacialRestriction=1
+        Text=Микромодуль первого уровня. Сделан <clr>пиратами<clrEnd> для усиления акриновых орудийных разработок <clr>Эсодафер, Кафаситор и Лирекрон<clrEnd>. Несовместим с любым другим оружием других рас.
+        Text=Сила оружия: <bonWEnergy> ед.
+        bonWEnergy=22
+        bonWMissile=22
+        bonWSplinter=22
+    }
+    LEOContentMod_MM_160 ^{
+        Equipments=Hull
+        Fragility=130
+        Name=Мегаслот
+        Owner=Maloc,Peleng,Gaal
+        Priority=70
+        Size=150
+        Text=Микромодуль третьего уровня. Модифицирует внутреннюю структуру корпуса, активируя все пять слотов под <clr>оружие<clrEnd> и четыре под <clr>артефакты<clrEnd>. Вдобавок, размер корпуса увеличивается <clr>наполовину<clrEnd>. Еще одним сюрпризом является легкое гравитационное поле, снижающее <clr>массу<clrEnd> корабля. Внедрение в <clr>фэянские и человеческие<clrEnd> корпуса невозможно.
+        Text=Размер корпуса: <clr>+50%<clrEnd>
+        Text=Открывает <clr>4<clrEnd> слота артефактов, <clr>5<clrEnd> слотов оружия
+        Text=Масса корабля: <clr>-15%<clrEnd>
+        Text=Восприимчивость урона: <clr>+30%<clrEnd>
+        bonMass=-15
+        bonSlotArt=4
+        bonSlotWeapon=4
+    }
+    LEOContentMod_MM_161 ^{
+        Equipments=Droid
+        Name=Эмиттер
+        Owner=Fei,PirateClan,Kling,None
+        Priority=45
+        Size=70
+        Text=Микромодуль второго уровня. Подсоединяет к ремонтному дроиду дополнительный с лучом-эмиттером, повышающим скорость ремонта корпуса с помощью ремонтирующего луча. Изначально вставка в <clr>коалиционное<clrEnd> оборудование была невозможна, но <clr>фэяне<clrEnd> умудрились адаптировать конструкцию своих дроидов под этот модуль.
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Размер: <clr>-30%<clrEnd>
+        bonDroid=15
+    }
+    LEOContentMod_MM_162 ^{
+        Equipments=Scaner,Hull
+        Name=Интекс v.1.6
+        Owner=Maloc,Peleng,People,Fei,PirateClan
+        Priority=50
+        Text=Микромодуль второго уровня. Программный модуль с вычислительным и информационным программным обеспечением фэянской компании "Интекс", обладающим высокой точностью и скоростью выполнения операций по сравнению с обычной программой <clr>сканера<clrEnd>. Может быть встроен в <clr>корпус<clrEnd>, открывая в нем слот для установки сканера без каких-либо отрицательных последствий. Не совместим с <clr>гаальским<clrEnd> оборудованием из-за использования в нем кардинально других методов получения информации.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=В корпусе: <clr>открытие слота сканера<clrEnd>
+        bonScan=7
+        bonSlotScaner=1
+    }
+    LEOContentMod_MM_163 ^{
+        Equipments=WEnergy
+        Name=Девастатор
+        Owner=Maloc,PirateClan
+        Priority=10
+        Size=200
+        Text=Микромодуль первого уровня. Изобретен <clr>малоками<clrEnd> для установки на военные корабли для обеспечения им максимальной огневой мощи против доминаторов. Вставляется в только <clr>энергетическое<clrEnd> оружие и встраивает дополнительный сверхмощный термоядерный реактор, значительно повышающий размер и мощность орудия. <clr>Пиратское<clrEnd> оружие также поддерживается.
+        Text=Мощность эн. оружия: <bonWEnergy> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Размер орудия: <clr>+100%<clrEnd>
+        bonWEnergy=25
+        bonWRadius=60
+    }
+    LEOContentMod_MM_164 ^{
+        Equipments=Engine
+        Name=Гипервзрыв
+        Owner=Fei,Gaal
+        Priority=25
+        Size=130
+        Text=Микромодуль первого уровня. Генерирует множество слабых импульсов в реакторе двигателя, дестабилизируя структуру топлива и ускоряя процесс его переработки в энергию, тем самым увеличивая дальность гиперпрыжка. Однако при переработке топлива наблюдается побочный эффект в виде увеличения гравитационного поля вокруг двигателя. Совместим только с двигателями <clr>фэян<clrEnd> и <clr>гаальцев<clrEnd> из-за непредвиденного взрыва огромной силы, наблюдаемого в реакторах двигателей других рас при установке этого модуля.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Размер двигателя: <clr>+30%<clrEnd>
+        bonJump=32
+    }
+    LEOContentMod_MM_165 ^{
+        Cost=5
+        Equipments=Engine,FuelTank,RepairRobot,CargoHook,DefGenerator,Radar,Scaner
+        Fragility=170
+        Name=Размягчитель
+        Owner=Peleng,People,Fei,Gaal,PirateClan
+        Priority=60
+        Size=30
+        Text=Микромодуль второго уровня. Заменяет большую часть внешнего покрытия любого оборудования на непрочную и очень дешевую сталь. Это приводит к стремительному падению износостойкости и цены оборудования. Не подходит для <clr>малокского<clrEnd> оборудования, большая часть которого делается сразу из стали.
+        Text=Стоимость: <clr>-95%<clrEnd>
+        Text=Надежность: <clr>-90%<clrEnd>
+        Text=Размер: <clr>-70%<clrEnd>
+    }
+    LEOContentMod_MM_166 ^{
+        Equipments=W15
+        Name=Торпедант
+        Owner=Blazer
+        Priority=15
+        RacialRestriction=1
+        Size=130
+        Text=Микромодуль первого уровня. Разработан доминатором <clr>Блазером<clrEnd> для оснащения тяжелых линкоров класса "Бертор". Значительно увеличивает мощь <clr>торпедного аппарата<clrEnd>, надстраивая к нему очень массивную и занимающую много места дополнительную турель, выпускающую новый тип торпед, разрушающих оборудование противника. Совместим только с торпедными аппаратами блазероидного производства.
+        Text=Вес оружия: <clr>+30%<clrEnd>
+        Text=Мощность оружия: <bonWMissile> ед.
+        Text=<clr>Наносит огромный урон оборудованию цели<clrEnd>
+        WeaponMods=Destruct
+        bonWMissile=55
+    }
+    LEOContentMod_MM_167 ^{
+        Equipments=W13
+        Name=Излучатель
+        Owner=Terron
+        Priority=15
+        RacialRestriction=1
+        Size=130
+        Text=Микромодуль первого уровня. Разработан доминатором <clr>Терроном<clrEnd> для оснащения тяжелых линкоров класса "Бертор". Значительно увеличивает мощь орудия <clr>ИМХО-9000<clrEnd>, надстраивая дополнительный генератор снарядов с элементами антивещества. Полученные снаряды обладают дополнительным эффектом замедления противника. Совместим только с ИМХО-9000 терроноидного производства.
+        Text=Вес оружия: <clr>+30%<clrEnd>
+        Text=Мощность оружия: <bonWSplinter> ед.
+        Text=<clr>Замедляет цель при попадании<clrEnd>
+        WeaponMods=Decelerate
+        bonWSplinter=65
+    }
+    LEOContentMod_MM_168 ^{
+        Equipments=W14
+        Name=Вертиксатор
+        Owner=Keller
+        Priority=15
+        RacialRestriction=1
+        Size=130
+        Text=Микромодуль первого уровня. Разработан доминатором <clr>Келлером<clrEnd> для оснащения тяжелых линкоров класса "Бертор". Значительно увеличивает мощь орудия <clr>"Вертикс"<clrEnd>, надстраивая микротермоядерный реактор, увеличивающий подачу энергии в ствол орудия. Побочный эффект при попадании приводит к ослаблению корпусной брони противника. Совместим только с вертиксами келлероидного производства.
+        Text=Вес оружия: <clr>+30%<clrEnd>
+        Text=Мощность оружия: <bonWEnergy> ед.
+        Text=<clr>Уменьшает показатель брони цели<clrEnd>
+        WeaponMods=Acid
+        bonWEnergy=45
+    }
+    LEOContentMod_MM_169 ^{
+        Cost=300
+        Equipments=Any
+        Fragility=130
+        KindGraph=Ultra
+        Name=X34Y75-A13/&6
+        Owner=Any
+        Priority=1
+        Text=Уникальный микромодуль, разработка лучших умов пиратского клана при нелегальной поддержке Коалиции, являющийся вершиной отрасли технического прогресса по созданию микромодулей. Уникальный гиперпроцессорный блок перепрограммирует оборудование на достижение максимальной эффективности и внедряет акриновые элементы в его самые важные части. Тем самым достигается огромный прирост мощности любого оборудования и оружия.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность гиперпрыжка: <bonJump> ед.
+        Text=Размер бака: <bonFuel> ед.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Радиус захвата: <bonHookRadius> ед.
+        Text=Генератор ЗП: <bonDef> ед.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Мощность любого оружия: <bonWEnergy> ед.
+        Text=Дальность оружия: <bonWRadius> ед.
+        Text=Стоимость: <clr>+200%<clrEnd>
+        Text=Надежность: <clr>-30%<clrEnd>
+        bonDef=13
+        bonDroid=36
+        bonFuel=36
+        bonHook=135
+        bonHookRadius=45
+        bonHull=10
+        bonJump=18
+        bonRadar=2250
+        bonScan=18
+        bonSpeed=225
+        bonWEnergy=27
+        bonWMissile=27
+        bonWRadius=72
+        bonWSplinter=27
+    }
+    LEOContentMod_MM_170 ^{
+        Equipments=Engine,FuelTank
+        Fragility=66
+        KindGraph=Ultra
+        Name=Ультимейт
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=2
+        Text=Уникальный микромодуль. Был создан по личной инициативе двумя выдающимися учёными <clr>Коалиции<clrEnd>, имена которых, как и настоящий принцип функционирования разработки, засекречены. Известно только то, что при внедрении в любой <clr>двигатель<clrEnd> или <clr>топливный бак<clrEnd> его устойчивость в бою сильно повышается, вместе с энергетической ёмкостью.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Размер бака: <bonFuel> ед.
+        Text=Надежность: <clr>+50%<clrEnd>
+        bonFuel=45
+        bonSpeed=330
+    }
+    LEOContentMod_MM_171 ^{
+        Equipments=Engine,FuelTank,Droid,CargoHook,DefGenerator,Radar,Scaner
+        Fragility=5
+        Name=Иммортал
+        Owner=Kling
+        Priority=2
+        Size=150
+        Text=Микромодуль первого уровня. Найден коалиционными рейнджерами выпавшим из уничтоженных эквенторов Террона после неудачного военного рейда на систему Гралгар. Исследования этого микромодуля дали информацию о его предназначении - делать любое оборудование, кроме оружия и корпуса сверхпрочным, практически полностью убирая его износ. Но у него есть побочный эффект, в результате оборудование становится более тяжелым. Микромодуль абсолютно не совместим с любым оборудованием, кроме <clr>доминаторского<clrEnd>.
+        Text=Вес оборудования: <clr>+50%<clrEnd>
+        Text=Надежность: <clr>Х10<clrEnd>
+    }
+    LEOContentMod_MM_172 ^{
+        Equipments=Hull
+        Name=Модификатор
+        Owner=Peleng,People,Gaal
+        Priority=2
+        Size=120
+        Text=Микромодуль первого уровня. Встраивается в корпус и значительно модифицирует его структуру, увеличивая размер корпуса и укрепляя броню. Несовместим с корпусами <clr>малоков, фэян и пиратов<clrEnd>.
+        Text=Размер корпуса: <clr>+20%<clrEnd>
+        Text=Броня корпуса: <bonHull> ед.
+        bonHull=4
+    }
+    LEOContentMod_MM_173 ^{
+        Cost=400
+        Equipments=WEnergy,WSplinter
+        Fragility=190
+        Name=Рекоил
+        Owner=PirateClan,People,Fei,Gaal,Maloc,Peleng,NonKling
+        Priority=30
+        Text=Микромодуль первого уровня. Снабжает любой тип оружия (кроме <clr>ракетного<clrEnd>) возможностью восстанавливать корпус владельца при попадании. Ремонт зависит от наносимого орудием урона. Не совместим с оружием <clr>доминаторов<clrEnd>
+        Text=Дает: <clr>вампиризм<clrEnd> при попадании
+        Text=Надежность: <clr>-90%<clrEnd>
+        Text=Стоимость: <clr>+300%<clrEnd>
+        WeaponMods=Drain
+    }
+    LEOContentMod_MM_174 ^{
+        Equipments=WEnergy,WSplinter
+        Name=Пробиватель
+        Owner=Any
+        Priority=70
+        Size=115
+        Text=Микромодуль третьего уровня. Снабжает любой тип оружия (кроме <clr>ракетного<clrEnd>) возможностью снижать броню цели при каждом попадании.
+        Text=Снимает часть <clr>брони<clrEnd> при попадании
+        Text=Размер <clr>+15%<clrEnd>
+        WeaponMods=Acid
+    }
+    LEOContentMod_MM_175 ^{
+        Equipments=WEnergy,WSplinter
+        Name=Электрошокер
+        Owner=Any
+        Priority=70
+        Size=115
+        Text=Микромодуль третьего уровня. Снабжает любой тип оружия (кроме <clr>ракетного<clrEnd>) генератором электромагнитных импульсов, позволяя разрушать оборудование цели сильнее, чем любой другой тип вооружения.
+        Text=Наносит увеличенный урон <clr>оборудованию<clrEnd> при попадании
+        Text=Размер <clr>+15%<clrEnd>
+        WeaponMods=Destruct
+    }
+    LEOContentMod_MM_176 ^{
+        Equipments=WEnergy,WSplinter
+        Name=Перегрев
+        Owner=Any
+        Priority=70
+        Size=115
+        Text=Микромодуль третьего уровня. Снабжает любой тип оружия (кроме <clr>ракетного<clrEnd>) возможностью перегревать двигатель противника при каждом выстреле, замедляя его.
+        Text=<clr>Замедляет<clrEnd> цель при попадании
+        Text=Размер <clr>+15%<clrEnd>
+        WeaponMods=Decelerate
+    }
+    LEOContentMod_MM_177 ^{
+        Equipments=Hull
+        KindGraph=Ultra
+        Name=Трансформатор
+        Owner=Any
+        Priority=5
+        Text=Особый микромодуль первого уровня. Полностью трансформирует внутреннюю структуру любого корпуса <clr>любой расы<clrEnd>, открывая в нем <clr>все слоты<clrEnd>.
+        Text=Открывает все слоты в <clr>корпусе<clrEnd>
+        Text=Масса корабля: <clr>-10%<clrEnd>
+        Text=Броня корпуса: <bonHull> ед.
+        bonHull=3
+        bonMass=-10
+        bonSlotArt=4
+        bonSlotDef=1
+        bonSlotDroid=1
+        bonSlotForsage=1
+        bonSlotHook=1
+        bonSlotRadar=1
+        bonSlotScaner=1
+        bonSlotWeapon=5
+    }
+    LEOContentMod_MM_178 ^{
+        Equipments=WEnergy,WSplinter,WMissile
+        Name=Ультра-Мегус
+        Owner=Any
+        Priority=45
+        Size=125
+        Text=Микромодуль второго уровня. При установке в любой тип <clr>вооружения<clrEnd> значительно увеличивает мощность, за счет значительного утяжеления механической части орудия.
+        Text=Сила эн. оружия: <bonWEnergy> ед.
+        Text=Сила оск. оружия: <bonWSplinter> ед.
+        Text=Сила рак. оружия: <bonWMissile> ед.
+        Text=Размер: <clr>+25%<clrEnd>
+        bonWEnergy=15
+        bonWMissile=20
+        bonWSplinter=25
+    }
+    LEOContentMod_MM_179 ^{
+        Equipments=Engine
+        Name=Реверсион
+        Owner=People,Fei,Gaal,PirateClan,None
+        Priority=60
+        Text=Микромодуль второго уровня. Разработан совместно <clr>людьми, фэянами и гаальцами<clrEnd> для снаряжения разведывательных кораблей. Вставляется в <clr>двигатель<clrEnd> и значительно снижает дальность гиперпрыжка за счет огромного бонуса к скорости. В скором времени после разработки, модуль был выкраден <clr>пиратами<clrEnd>, которые адаптировали свои конструкции двигателей под него.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        bonJump=-15
+        bonSpeed=270
+    }
+    LEOContentMod_MM_180 ^{
+        Equipments=Hull
+        FragilityMissile=30
+        Name=Анти-Рокет
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=15
+        Text=Микромодуль первого уровня. Долгие годы ученые <clr>Коалиции<clrEnd> совместно работали над созданием максимально устойчивого к любым видам урона, и пришли к выводу, что защиту лучше всего обеспечивать с помощью микромодулей. Этот особый микромодуль позволяет сделать любой <clr>корпус<clrEnd> значительно более устойчивым к попаданиям <clr>ракетного<clrEnd> оружия без каких-либо побочных эффектов.
+        Text=Восприимчивость к <clr>ракетному<clrEnd> урону: <clr>-70%<clrEnd>
+    }
+    LEOContentMod_MM_181 ^{
+        Equipments=Hull
+        FragilityEnergy=30
+        Name=Анти-Лазер
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=15
+        Text=Микромодуль первого уровня. Долгие годы ученые <clr>Коалиции<clrEnd> совместно работали над созданием максимально устойчивого к любым видам урона, и пришли к выводу, что защиту лучше всего обеспечивать с помощью микромодулей. Этот особый микромодуль позволяет сделать любой <clr>корпус<clrEnd> значительно более устойчивым к попаданиям <clr>энергетического<clrEnd> оружия без каких-либо побочных эффектов.
+        Text=Восприимчивость к <clr>энергетическому<clrEnd> урону: <clr>-70%<clrEnd>
+    }
+    LEOContentMod_MM_182 ^{
+        Equipments=Hull
+        FragilitySplinter=30
+        Name=Анти-Страйк
+        Owner=Maloc,Peleng,People,Fei,Gaal
+        Priority=15
+        Text=Микромодуль первого уровня. Долгие годы ученые <clr>Коалиции<clrEnd> совместно работали над созданием максимально устойчивого к любым видам урона, и пришли к выводу, что защиту лучше всего обеспечивать с помощью микромодулей. Этот особый микромодуль позволяет сделать любой <clr>корпус<clrEnd> значительно более устойчивым к попаданиям <clr>осколочного<clrEnd> оружия без каких-либо побочных эффектов.
+        Text=Восприимчивость к <clr>осколочному<clrEnd> урону: <clr>-70%<clrEnd>
+    }
+    LEOContentMod_MM_183 ^{
+        Equipments=WEnergy,WSplinter,WMissile
+        Name=Максимизатор
+        Owner=Kling,None,PirateClan
+        Priority=30
+        RacialRestriction=1
+        Text=Микромодуль первого уровня. Был изобретен <clr>доминаторами<clrEnd> для усиления мощности своих орудий, однако <clr>пираты<clrEnd> после нескольких боев с ними получили несколько экземпляров этого модуля и сумели адаптировать его под свое оружие. Очень мало известно о свойствах этого модуля, за исключением того, что <clr>оружие<clrEnd> любого типа с ним всегда наносит свой максимально возможный урон, игнорируя навыки пилотов. По неизвестной причине также совместим с оборудованием из <clr>чёрных дыр<clrEnd>.
+        Text=<clr>Оружие наносит максимальный урон вне зависимости от навыков и рандома<clrEnd>
+        WeaponMods=NoDelta
+    }
+    LEOContentMod_MM_184 ^{
+        Equipments=Hull,FuelTank,Droid,DefGenerator,Engine,Scaner,Radar,CargoHook
+        Name=Акрин-Мод v0.1
+        Owner=Any
+        Priority=90
+        Text=Микромодуль первого уровня. Незначительно увеличивает положительные эффекты любого <clr>акринового<clrEnd> оборудования и уменьшает негативные.
+        Text=Положительный эффект: <bonExtraAkrinEff>%
+        Text=Отрицательный эффект: <bonExtraAkrinPenalty>%
+        bonExtraAkrinEff=15
+        bonExtraAkrinPenalty=-15
+    }
+    LEOContentMod_MM_185 ^{
+        Equipments=Hull,FuelTank,Droid,DefGenerator,Engine,Scaner,Radar,CargoHook
+        Name=Акрин-Мод v0.2
+        Owner=Any
+        Priority=60
+        Text=Микромодуль второго уровня. Увеличивает положительные эффекты любого <clr>акринового<clrEnd> оборудования и уменьшает негативные.
+        Text=Положительный эффект: <bonExtraAkrinEff>%
+        Text=Отрицательный эффект: <bonExtraAkrinPenalty>%
+        bonExtraAkrinEff=30
+        bonExtraAkrinPenalty=-30
+    }
+    LEOContentMod_MM_186 ^{
+        Equipments=Hull,FuelTank,Droid,DefGenerator,Engine,Scaner,Radar,CargoHook
+        Name=Акрин-Мод v0.3
+        Owner=Any
+        Priority=30
+        Text=Микромодуль первого уровня. Значительно увеличивает положительные эффекты любого <clr>акринового<clrEnd> оборудования и уменьшает негативные.
+        Text=Положительный эффект: <bonExtraAkrinEff>%
+        Text=Отрицательный эффект: <bonExtraAkrinPenalty>%
+        bonExtraAkrinEff=45
+        bonExtraAkrinPenalty=-45
+    }
+    LEOContentMod_MM_187 ^{
+        Equipments=WEnergy,WSplinter
+        KindGraph=Ultra
+        Name=Каратель-YK42B
+        Owner=Any
+        Priority=1
+        Size=1000
+        Text=Уникальный микромодуль первого уровня. Лучшая разработка пиратского клана за всю историю его существования. Внутри микромодуля - комплект самых различных программных и аппаратных усовершенствований для <clr>энергетического и осколочного оружия<clrEnd>, который добавляет к выстрелу множество модификаторов, позволяющих уничтожить противника в самые короткие сроки. Однако такое количество улучшений значительно увеличивает <clr>вес<clrEnd> оружия, практически в <clr>10<clrEnd> раз.
+        Text=Размер орудия: <clr>+1000%<clrEnd>
+        WeaponMods=Destruct,Decelerate,Drain,Acid,Shock,Magnetic,MoreDrop,DropCargo,BlockWeapon,BlockDroid,ScanBonus,BonusToDamaged,ReduceEngine,NoDelta
+    }
+    LEOContentMod_MM_188 ^{
+        Equipments=Engine,FuelTank,Droid,CargoHook,DefGenerator,Radar,Scaner,WEnergy,WSplinter,WMissile
+        Name=Микромикрон
+        Owner=Kling
+        Priority=20
+        RacialRestriction=1
+        Size=25
+        Text=Микромодуль первого уровня. Разработан <clr>доминаторами<clrEnd> для снаряжения легких истребителей класса "Штип". Используя новейшие доминаторские технологии в области миниатюризации, <clr>уменьшает<clrEnd> вес любого типа оборудования ровно в <clr>4 раза<clrEnd>. Не совместим с <clr>корпусами<clrEnd> и оборудованием других рас.
+        Text=Размер оборудования: <clr>-75%<clrEnd>
+    }
+    LEOContentMod_MM_189 ^{
+        Equipments=WMissile
+        Name=Ультрабомбер
+        Owner=PirateClan,None
+        Priority=20
+        Text=Микромодуль первого уровня. Встраивается в любой вид <clr>ракетного<clrEnd> оружия и увеличивает количество <clr>ракет<clrEnd>, выпускаемых залпом, а также их скорость полета и максимальный боезапас орудия. Является чисто <clr>пиратской<clrEnd> разработкой, но по неизвестным причинам совместим также и с <clr>неизвестным<clrEnd> оборудованием.
+        Text=Дополнительно ракет в залпе: <bonShots>
+        Text=Увеличение скорости ракеты: <clr>+550<clrEnd> ед.
+        Text=Дополнительный боезапас: <bonAmmo> ед.
+        bonAmmo=10
+        bonMissileSpeed=550
+        bonShots=2
+    }
+    LEOContentMod_MM_190 ^{
+        Equipments=Hook
+        Name=Цап-Цап
+        Owner=Peleng,PirateClan
+        Priority=60
+        Text=Микромодуль второго уровня. Разработан в условиях бортовой лаборатории одним из пеленгских пиратов - головорезов. Перенаправляет электрические потоки корабля на подпитку захвата, что увеличивает дальность поднятия на борт грузов. Только <clr>пеленгскими<clrEnd> и <clr>пиратскими<clrEnd> типами захватов, к сожалению, так как лякуша специально вмонтировал в этот модуль блокираторную систему на все остальные расы.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        bonHookRadius=65
+    }
+    LEOContentMod_MM_191 ^{
+        Cost=300
+        Equipments=Hull
+        Fragility=110
+        KindGraph=Ultra
+        Name=Акриниум
+        Owner=Any
+        Priority=3
+        Special=1
+        Text=Уникальный микромодуль. Нейтрализует все <clr>негативные акриновые<clrEnd> эффекты любого <clr>корпуса<clrEnd>. А так же покрывает внешнюю обшивку корабля наночастицами, увеличивая при этом броню, но снижая его восприимчивость. При этом корпус значительно дорожает.
+        Text=Стоимость: <clr>+200%<clrEnd>
+        Text=Броня корпуса: <bonHull>
+        Text=Восприимчивость к урону: <clr>-10%<clrEnd>
+        bonExtraAkrinPenalty=-100
+        bonHull=10
+    }
+    LEOContentMod_MM_192 ^{
+        Cost=25
+        Equipments=Any
+        Fragility=50
+        KindGraph=Ultra
+        Name=Эконом
+        Owner=Any
+        Priority=3
+        Size=50
+        Text=Уникальный микромодуль. При применении к <clr>любому<clrEnd> оборудованию, снижает его вес в <clr>2 раза<clrEnd> и стоимость - в <clr>4 раза<clrEnd>. Совместимость с <clr>корпусом<clrEnd> имеется, но крайне не рекомендуется!
+        Text=Стоимость: <clr>-75%<clrEnd>
+        Text=Размер: <clr>-50%<clrEnd>
+        Text=Надежность: <clr>+50%<clrEnd>
+        Text=Положительные свойства акрина: <clr>+100%<clrEnd>
+        Text=Негативные свойства акрина: <clr>+50%<clrEnd>
+        bonExtraAkrinEff=100
+        bonExtraAkrinPenalty=50
+    }
+    LEOContentMod_MM_193 ^{
+        Equipments=Hull,Engine,FuelTank,Radar,Scaner,Droid,Hook,DefGenerator
+        Name=Перевёртыш
+        Owner=Any
+        Priority=50
+        Text=Микромодуль второго уровня. Результат неудачного эксперимента коалиционных учёных по внедрению нового подхода к усилению акриновых свойств оборудования. Ошибка в расчетах модуляции сигнала дельта-излучения привела к непредсказуемому эффекту: при установке данного микромодуля в оборудование, свойства <clr>акрина<clrEnd> изменились на диаметрально противоположные.
+        Text=<clr>Положительные свойства акрина<clrEnd> становятся <clr>отрицательными<clrEnd>, а <clr>отрицательные<clrEnd> - <clr>положительными<clrEnd>.
+        bonExtraAkrinEff=-200
+        bonExtraAkrinPenalty=-200
+    }
+    MolderMM_001 ^{
+        Equipments=FuelTank,Engine,Radar,Scaner,Droid,Hook,DefGenerator
+        Fragility=130
+        Name=Кринто
+        Owner=Peleng,Fei,Kling
+        Priority=20
+        Text=Микромодуль первого уровня. При установке в любое бортовое акриновое оборудование увеличивает эффективную дальность межатомных взаимодействий, делая его более прочным и усиливая положительные свойства на <clr>50%<clrEnd> и негативные на <clr>+50%<clrEnd>. В основе работы данного микромодуля лежит механизм Гнуука-Сааба, тщательно исследованный <clr>фэянами<clrEnd> и нелегально скопированный <clr>пеленгами<clrEnd>.
+        Text=Положительные свойства акрина: <clr>+50%<clrEnd>
+        Text=Негативные свойства акрина: <clr>+50%<clrEnd>
+        Text=Надежность: <clr>-30%<clrEnd>
+        bonExtraAkrinEff=50
+        bonExtraAkrinPenalty=50
+    }
+    MolderMM_002 ^{
+        Equipments=Hull
+        FragilityEnergy=110
+        FragilityMissile=80
+        FragilitySplinter=90
+        Name=Блад
+        Owner=Any
+        Priority=80
+        Size=110
+        Text=Микромодуль третьего уровня. Покрывает <clr>корпус<clrEnd> прочным слоем нанитов, неравномерно увеличивая/уменьшая защиту от всех видов урона. Совместим с технологиями <clr>любой<clrEnd> расы.
+        Text=Восприимчивость к энергетическому: <clr>+10%<clrEnd>
+        Text=Восприимчивость к ракетному: <clr>-20%<clrEnd>
+        Text=Восприимчивость к осколочному: <clr>-10%<clrEnd>
+        Text=Размер: <clr>+10%<clrEnd>
+    }
+    MolderMM_003 ^{
+        Cost=150
+        Equipments=WEnergy,WSplinter,WMissile
+        Fragility=130
+        Name=Малабом
+        Owner=Maloc,NonKling
+        Priority=80
+        Size=110
+        Text=Микромодуль третьего уровня. В очередной раз малоки постарались доказать, что для оружия важнее всего размер, калибр и грохот при выстреле. В целом, нельзя сказать, что их попытки провалились, но полученные при этом новые свойства могут шокировать даже бывалых воинов. Разумеется, подобный модуль может быть использован только для <clr>малокских орудий<clrEnd>, хотя никто с этим изначально и не спорил.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Размер: <clr>+10%<clrEnd>
+        Text=Стоимость: <clr>+50%<clrEnd>
+        Text=Надежность: <clr>-30%<clrEnd>
+        bonWEnergy=9
+        bonWMissile=12
+        bonWSplinter=18
+    }
+    MolderMM_004 ^{
+        Cost=90
+        Equipments=WEnergy,WSplinter,WMissile
+        Fragility=100
+        Name=Трак
+        Owner=People,Kling
+        Priority=85
+        Size=90
+        Text=Микромодуль третьего уровня. Скромный модуль для улучшения функционала любого вооружения <clr>людей<clrEnd>. Незначительно увеличивает урон и дальность стрельбы, а также частично уменьшает размер и стоимость за счет использования новых полимеров и конструкционных сплавов.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Стоимость: <clr>-10%<clrEnd>
+        Text=Размер: <clr>-10%<clrEnd>
+        bonWEnergy=3
+        bonWMissile=3
+        bonWRadius=20
+        bonWSplinter=3
+    }
+    MolderMM_005 ^{
+        Equipments=Hull
+        FragilityEnergy=90
+        FragilityMissile=110
+        FragilitySplinter=80
+        Name=Гретчег
+        Owner=Maloc,Peleng,Kling
+        Priority=72
+        RacialRestriction=1
+        Text=Микромодуль третьего уровня. Полностью изменяет структуру корпуса <clr>малококской или пеленгской<clrEnd> расы, перемешивая кварки и произвольно меняя полярность ковалентных связей в броне и <clr>сопротивляемости<clrEnd>.
+        Text=Восприимчивость к энергетическому: <clr>-10%<clrEnd>
+        Text=Восприимчивость к ракетному: <clr>+10%<clrEnd>
+        Text=Восприимчивость к осколочному: <clr>-20%<clrEnd>
+    }
+    MolderMM_006 ^{
+        Equipments=Engine,Radar,Hook,Hull
+        Fragility=100
+        Name=Стансер
+        Owner=Maloc,Peleng,People,Fei,Gaal,Kling,PirateClan,None
+        Priority=78
+        Text=Микромодуль третьего уровня. Изначально модуль являлся продуктом группы свободного поиска, исследовавшей самые удаленные уголки галактики. Вскоре после начала войны был адаптирован для <clr>двигателя, радара и захвата<clrEnd> для увеличения их эффективного радиуса действия. При интегрировании в корпус также производит некоторые преобразования, а именно - открывает слоты радара и захвата.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Радиус действия радара: <bonRadar> ед.
+        bonHookRadius=30
+        bonJump=5
+        bonRadar=500
+        bonSlotHook=1
+        bonSlotRadar=1
+    }
+    MolderMM_007 ^{
+        Equipments=Droid
+        Fragility=190
+        Name=Овердэл
+        Owner=Kling,PirateClan,None
+        Priority=71
+        RacialRestriction=1
+        Size=90
+        Text=Микромодуль третьего уровня. Убирает из <clr>ремонтного дроида<clrEnd> все ограничители и предохранители, позволяя ему работать с предельной эффективностью. Незначительно снижается его вес. Разумеется, долго несчастный робот работать не сможет, поэтому данная процедура распространена только у <clr>пиратов, доминаторов и неизвестных рас<clrEnd>, ведь они не подписывали Конвенцию по защите прав дроидов.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Надежность: <clr>-90%<clrEnd>
+        Text=Размер: <clr>-10%<clrEnd>
+        bonDroid=33
+    }
+    MolderMM_008 ^{
+        Equipments=Hull,Engine
+        Fragility=85
+        Name=Протокол-42
+        Owner=Kling
+        Priority=90
+        RacialRestriction=1
+        Size=85
+        Text=Микромодуль третьего уровня. Активизирует редко используемый защитный протокол, вшитый в любой <clr>доминаторский<clrEnd> двигатель и корпус. Защитные свойства и Надежность при этом незначительно увеличиваются.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Надежность: <clr>+15%<clrEnd>
+        Text=Размер: <clr>-15%<clrEnd>
+        bonHull=1
+    }
+    MolderMM_009 ^{
+        Cost=60
+        Equipments=WSplinter
+        Fragility=100
+        Name=Утконос
+        Owner=People,Fei,PirateClan,Kling
+        Priority=93
+        Size=100
+        Text=Микромодуль третьего уровня. Дополнительная насадка на стволы орудий <clr>осколочного<clrEnd> типа. Массово используется на медлительных кораблях для компенсации недостатка дальности стрельбы при незначительном уменьшении пробивной силы. Сочетается исключительно с оборудованием <clr>людей, фэян и пиратского клана<clrEnd>.
+        Text=Стоимость: <clr>-40%<clrEnd>
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        bonWRadius=40
+        bonWSplinter=-4
+    }
+    MolderMM_010 ^{
+        Equipments=Hull
+        Name=Драйв
+        Owner=Any
+        Priority=85
+        Text=Микромодуль третьего уровня. Популярный преобразователь <clr>корпуса<clrEnd> для участия в экстремальных видах космического спорта. Гарантировано открывает слот <clr>форсажа<clrEnd> и облегчает любой корабль.
+        Text=Масса корабля: <bonMass><clr>%<clrEnd>
+        bonMass=-10
+        bonSlotForsage=1
+    }
+    MolderMM_011 ^{
+        Cost=115
+        Equipments=W18
+        Fragility=130
+        Name=Хладер
+        Owner=PirateClan
+        Priority=76
+        Size=115
+        Text=Микромодуль третьего уровня. Покрывает боеголовки ракет <clr>лирекрона<clrEnd> разъедающей все живое и неживое оболочкой, способной частично уменьшать броню противника. Компоненты этого токсичного вещества пагубно влияют на двигатели ракет и сами пусковые установки, а контейнеры для его хранения занимают дополнительный объем.
+        Text=Надежность: <clr>-30%<clrEnd>
+        Text=Стоимость: <clr>+15%<clrEnd>
+        Text=Размер: <clr>+15%<clrEnd>
+        Text=Скорость эм-ракет: <clr>+350<clrEnd> ед.
+        Text=<clr>Вызывает эффект нанокоррозии<clrEnd>
+        WeaponMods=Acid
+        bonMissileSpeed=350
+    }
+    MolderMM_012 ^{
+        Equipments=Hull
+        Name=Гравитекс
+        Owner=Maloc,Peleng,Kling
+        Priority=82
+        Text=Микромодуль третьего уровня. Примитивный генератор отрицательного поля, который до сих пор используется на допотопных кораблях <clr>малоков и пеленгов<clrEnd>. Гарантировано уменьшает массу и ухудшает репутацию среди торговцев, ведь точно определить массу товара в трюме становится куда сложнее.
+        Text=Масса корабля: <bonMass><clr>%<clrEnd>
+        Text=Навык торговли: <bonSkill4>
+        bonMass=-30
+        bonSkill4=-1
+    }
+    MolderMM_013 ^{
+        Cost=100
+        Equipments=WEnergy
+        Fragility=100
+        Name=Гальваник
+        Owner=Peleng,People,Fei,Kling
+        Priority=77
+        Size=115
+        Text=Микромодуль третьего уровня. Добавочный тепловой накопитель для <clr>энергетического<clrEnd> оружия. Позволяет орудиям закапливать мощные и чуть менее дальнобойные разряды, приводящие к <clr>ионизации<clrEnd> поверхности цели. Подобные устройства бесполезны для несовершенного <clr>малокского<clrEnd> оборудования, в то время как <clr>гаальцы<clrEnd> отказались от этого модуля по причине его "неэтичности".
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Размер: <clr>+15%<clrEnd>
+        Text=<clr>Вызывает эффект ионизации<clrEnd>
+        WeaponMods=Shock
+        bonWEnergy=4
+        bonWRadius=-25
+    }
+    MolderMM_014 ^{
+        Equipments=Hull
+        Name=Форм
+        Owner=Any
+        Priority=90
+        Text=Микромодуль третьего уровня. Базовый модуль для улучшения скоростных и защитных характеристик корабля. Умеренный уровень технологий породил подобные устройства, популярные в любых уголках вселенной.
+        Text=Масса корабля: <bonMass><clr>%<clrEnd>
+        Text=Броня корпуса: <bonHull> ед.
+        bonHull=1
+        bonMass=-8
+    }
+    MolderMM_015 ^{
+        Equipments=Hull
+        Name=Бронник
+        Owner=Peleng,Kling
+        Priority=80
+        Text=Микромодуль третьего уровня. Прочная чешуя армадиллов с планеты Дайтола навела <clr>пеленгов<clrEnd> на мысль, что подобную компоновку бронированных частиц можно использовать при создании межзвездных кораблей. Несмотря на свою тяжесть, покров дикого армадилла действительно дает хороший <clr>прирост брони<clrEnd>, а сам вид до сих пор крайне далек от вымирания из-за своей агрессивности и тяги к неумеренному размножению.
+        Text=Масса корабля: <bonMass><clr>%<clrEnd>
+        Text=Броня корпуса: <bonHull> ед.
+        bonHull=7
+        bonMass=30
+    }
+    MolderMM_016 ^{
+        Equipments=Hull
+        Name=Торгашоц
+        Owner=Peleng,People,NonKling
+        Priority=91
+        Size=125
+        Text=Микромодуль третьего уровня. Украшает корабли <clr>людей и пеленгов<clrEnd> красивыми картинами и пейзажами со скрытой и ненавязчивой рекламой. Благодаря такому апгрейду, трюмы могут вместить больше товаров, причем их привлекательность для клиентов также возрастет.
+        Text=Размер корабля: <clr>+25%<clrEnd>
+        Text=Навык торговли: <bonSkill4>
+        bonSkill4=2
+    }
+    MolderMM_017 ^{
+        Cost=85
+        Equipments=WMissile
+        Fragility=100
+        Name=Бомбер
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=87
+        Size=110
+        Text=Микромодуль третьего уровня. Интегрирует в боеголовки <clr>любых ракет или торпед<clrEnd> громоздкие тахионные искривители, замедляющие перемещение пораженной цели. С другой стороны, хотя такие ракеты и займут больше места в отсеках для боеприпасов, их огромный урон приятно удивит любую расу, отдающую предпочтение ракетному вооружению.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Количество залпов: <bonAmmo> шт.
+        Text=Скорость ракет: <clr>+350<clrEnd> ед.
+        Text=<clr>Замедляет цель при попадании<clrEnd>
+        Text=Размер: <clr>+10%<clrEnd>
+        Text=Стоимость: <clr>-15%<clrEnd>
+        WeaponMods=Decelerate
+        bonAmmo=-10
+        bonMissileSpeed=350
+        bonWMissile=5
+    }
+    MolderMM_018 ^{
+        Cost=130
+        Equipments=FuelTank,Engine,Radar,Scaner,Droid,Hook,DefGenerator
+        Fragility=70
+        Name=Кринтокс
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling
+        Priority=72
+        Size=70
+        Text=Микромодуль третьего уровня. Компактный набор для микроулучшений оборудования <clr>любой расы<clrEnd>. Не взаимодействует с <clr>орудиями и корпусом<clrEnd>, но приятно улучшает функционал любого <clr>акрина<clrEnd>, попутно уменьшая его размер и повышая <clr>Надежность<clrEnd>. Лучший выбор для скромных пилотов, предпочитающих микроапгрейды в ограниченном объеме. Но <clr>стоимость<clrEnd> вырастает из-за улучшений.
+        Text=Положительные свойства акрина: <clr>+30%<clrEnd>
+        Text=Размер: <clr>-30%<clrEnd>
+        Text=Надежность: <clr>+30%<clrEnd>
+        bonExtraAkrinEff=30
+    }
+    MolderMM_019 ^{
+        Equipments=Radar,Scaner,Droid
+        Fragility=100
+        Name=Нелегатор
+        Owner=Peleng,PirateClan,Kling
+        Priority=74
+        Text=Микромодуль третьего уровня. Устанавливает высокопроизводительный и нелегальный софт на <clr>дроид, сканер или радар<clrEnd>, если они произведены <clr>пеленгами или пиратским кланом<clrEnd>. Никаких отрицательных побочных эффектов подобная операция не вызывает, если не считать страшных мук совести у владельцев. Впрочем, в случае пеленгов и пиратского клана о подобном беспокоиться не стоит.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Радиус действия радара: <bonRadar> ед.
+        Text=Мощность сканера: <bonScan> ед.
+        bonDroid=9
+        bonRadar=630
+        bonScan=5
+    }
+    MolderMM_020 ^{
+        Cost=165
+        Equipments=Scaner,Hook,DefGenerator
+        Fragility=100
+        Name=Эксабайт
+        Owner=Maloc,People,Fei,Gaal,Kling
+        Priority=79
+        Text=Микромодуль третьего уровня. Данный суперпроцессор был создан ввиду постоянных запросов на увеличение вычислительных возможностей бортового оборудования. При установке в <clr>захват, генератор защитного поля или сканер<clrEnd> любой расы, кроме <clr>пеленгов<clrEnd> - можно получить неплохой прирост их функционала по увеличенной цене.
+        Text=Скорость притягивания захвата: <bonHookMaxSpeed> ед.
+        Text=Мощность генератора поля: <bonDef> ед.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Стоимость: <clr>+65%<clrEnd>
+        bonDef=3
+        bonHookMaxSpeed=5
+        bonHookMinSpeed=5
+        bonScan=4
+    }
+    MolderMM_021 ^{
+        Cost=100
+        Equipments=WEnergy,WSplinter,WMissile
+        Fragility=125
+        Name=Заграбласт
+        Owner=Maloc,Peleng,People,Fei,PirateClan,NonKling
+        Priority=85
+        Size=85
+        Text=Микромодуль третьего уровня. Интергалактическая разработка улучшения <clr>орудий<clrEnd>, значительно облегчающая жизнь пиратам и другим сомнительным личностям. Больше добычи, сброс груза прямо во время ограбления и прочее, что делает разбойную жизнь такой романтичной и прибыльной. Несовместимо с оборудованием принципиальных <clr>гаальцев<clrEnd>.
+        Text=Надежность: <clr>-20%<clrEnd>
+        Text=Размер: <clr>-15%<clrEnd>
+        Text=<clr>Пораженная цель может выбросить груз с небольшим шансом<clrEnd>
+        Text=<clr>После уничтожения цели остается больше оборудования<clrEnd>
+        WeaponMods=DropCargo,MoreDrop
+    }
+    MolderMM_022 ^{
+        Equipments=FuelTank
+        Fragility=100
+        Name=Фемтоатт
+        Owner=Gaal,NonKling
+        Priority=73
+        Size=15
+        Text=Микромодуль третьего уровня. Простейший пространственный компрессор, способный изменять структуру <clr>топливных баков<clrEnd>, произведенных <clr>гаальцами<clrEnd>. Негативные последствия подобного одноразового преобразователя, были исключены, по сравнению с итоговым уменьшением размера всей конструкции.
+        Text=Размер: <clr>-85%<clrEnd>
+        Text=Объем бака: <bonFuel> ед.
+        bonFuel=6
+    }
+    MolderMM_023 ^{
+        Cost=210
+        Equipments=Hull,Radar,Hook
+        Fragility=100
+        Name=Техногарп
+        Owner=Gaal,NonKling
+        Priority=82
+        Size=100
+        Text=Микромодуль третьего уровня. Новое поколение мирного и крайне продвинутого программного обеспечения, созданное мудрыми <clr>гаальцами<clrEnd>. Благодаря близости к абсолютному просвещению в корпусе <clr>открывается слот радара<clrEnd>, мощность <clr>радара<clrEnd> и <clr>захвата<clrEnd> растет, а итоговый навык техники любого пилота увеличивается в арифметической прогрессии. И все это далеко не бесплатно, конечно.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Навык техники: <bonSkill3>
+        Text=Стоимость: <clr>+110%<clrEnd>
+        bonHook=11
+        bonRadar=220
+        bonSkill3=2
+        bonSlotRadar=1
+    }
+    MolderMM_024 ^{
+        Equipments=Hull
+        FragilityEnergy=115
+        FragilityMissile=80
+        FragilitySplinter=80
+        Name=Дистрибьютор
+        Owner=Maloc,Peleng,Fei,Gaal,Kling
+        Priority=60
+        RacialRestriction=1
+        Text=Микромодуль второго уровня. Изменяет настройки активной системы защиты, в результате чего теплопроводность материалов, а значит и уязвимость к всплескам <clr>энергии<clrEnd> растет, а твердость возрастает, что уменьшает возможный урон от <clr>материальных<clrEnd> атак. Создается собственная гравитация корабля, что позволяет значительно снизить его <clr>массу<clrEnd>, путем <clr>ослабления обшивки корпуса<clrEnd>. Отсутствует совместимость с <clr>человеческими<clrEnd> корпусами.
+        Text=Восприимчивость к энергетическому урону: <clr>+15%<clrEnd>
+        Text=Восприимчивость к осколочному урону: <clr>-20%<clrEnd>
+        Text=Восприимчивость к ракетному урону: <clr>-20%<clrEnd>
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Масса корабля: <bonMass><clr>%<clrEnd>
+        bonHull=-1
+        bonMass=-50
+    }
+    MolderMM_025 ^{
+        Cost=125
+        Equipments=WEnergy,WSplinter,WMissile
+        Fragility=120
+        Name=Медидум
+        Owner=Maloc,NonKling
+        Priority=40
+        Size=160
+        Text=Микромодуль второго уровня. Специльная разработка малокского армейского подразделения. Увеличение размера <clr>орудия<clrEnd> ведет к увеличению урона и дальности - к такому парадоксальному выводу пришли гениальные ученые, решившие воплотить этот принцип в жизнь. Патент навсегда зарегистрирован в высшем <clr>Малокском<clrEnd> оборонном ведомстве.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Размер: <clr>+60%<clrEnd>
+        Text=Стоимость: <clr>+25%<clrEnd>
+        Text=Надежность: <clr>-20%<clrEnd>
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        bonWEnergy=24
+        bonWMissile=18
+        bonWRadius=60
+        bonWSplinter=30
+    }
+    MolderMM_026 ^{
+        Cost=300
+        Equipments=DefGenerator
+        Fragility=300
+        Name=Соларит
+        Owner=PirateClan,NonKling
+        Priority=45
+        Size=200
+        Text=Микромодуль второго уровня. Созданный в лабораториях, подконтрольным <clr>пиратам<clrEnd>, данный модуль позволяет перевести генератор защитного поля в режим экстремальной производительности в ущерб его надежности. Стоимость оборудования также становится несколько выше, так что не советуется забывать откладывать средства на постоянный ремонт.
+        Text=Мощность защитного поля: <bonDef><clr>%<clrEnd>
+        Text=Надежность: <clr>-200%<clrEnd>
+        Text=Стоимость: <clr>+200%<clrEnd>
+        Text=Размер: <clr>+100%<clrEnd>
+        bonDef=25
+    }
+    MolderMM_027 ^{
+        Cost=10
+        Equipments=FuelTank,Engine,Radar,Scaner,Droid,Hook,DefGenerator,WEnergy,WSplinter,WMissile
+        Fragility=10
+        Name=Гибернатор
+        Owner=Maloc,Peleng,People,Fei,Gaal,NonKling
+        Priority=55
+        Size=10
+        Text=Микромодуль второго уровня. Относительно удачная попытка ведущих инженеров <clr>Коалиции<clrEnd> по внедрению темпоральных технологий в жизнь. Благодаря искривлению времени в ограниченном пространстве, любое оборудование начинает потреблять лишь незначительную часть энергии, занимать меньше места и работать намного дольше с низкими потерями эффективности. Модуль несовместим с корпусом по понятным причинам.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Объем бака: <bonFuel> ед.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Генератор поля: <bonDef> ед.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Размер: <clr>-90%<clrEnd>
+        Text=Стоимость: <clr>-90%<clrEnd>
+        Text=Надежность: <clr>+90%<clrEnd>
+        bonDef=-3
+        bonDroid=-5
+        bonFuel=-6
+        bonHook=-10
+        bonHookRadius=-20
+        bonJump=-3
+        bonRadar=-300
+        bonScan=-4
+        bonSpeed=-40
+        bonWEnergy=-5
+        bonWMissile=-7
+        bonWRadius=-20
+        bonWSplinter=-9
+    }
+    MolderMM_028 ^{
+        Equipments=Hull
+        FragilityEnergy=100
+        FragilityMissile=88
+        FragilitySplinter=88
+        Name=Маневрит
+        Owner=Any
+        Priority=65
+        Size=85
+        Text=Микромодуль второго уровня. Производит подпространственное преобразование любого <clr>корпуса<clrEnd> путем ликвидации части анизотропных связей в молекулах. В результате корабль становится меньше и легче избегает материального урона.
+        Text=Восприимчивость к осколочному урону: <clr>-12%<clrEnd>
+        Text=Восприимчивость к ракетному урону: <clr>-12%<clrEnd>
+        Text=Навык маневренности: <clr>+2<clrEnd>
+        Text=Размер корпуса: <clr>-15%<clrEnd>
+        bonSkill2=2
+    }
+    MolderMM_029 ^{
+        Cost=200
+        Equipments=Hull,DefGenerator
+        Fragility=85
+        Name=Нода Бене
+        Owner=Kling
+        Priority=43
+        RacialRestriction=1
+        Size=115
+        Text=Микромодуль второго уровня. Как давно известно, ноды - это материал с весьма широким диапазоном свойств и областей применения. Поэтому неудивительно, что и сами <clr>доминаторы<clrEnd> используют их особенности для создания новых нанодобавок в броню или в элементы питания защитного поля. Данный модуль увеличивает размер и стоимость <clr>корпуса<clrEnd> и <clr>генератора защитного поля<clrEnd>, а также повышает их экранирующие возможности.
+        Text=Мощность защитного поля: <bonDef> ед.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Надежность: <clr>+15%<clrEnd>
+        Text=Размер: <clr>+15%<clrEnd>
+        Text=Стоимость: <clr>+100%<clrEnd>
+        bonDef=6
+        bonHull=6
+    }
+    MolderMM_030 ^{
+        Cost=160
+        Equipments=WMissile
+        Fragility=100
+        Name=Миссайл
+        Owner=Blazer
+        Priority=50
+        RacialRestriction=1
+        Size=100
+        Text=Микромодуль второго уровня. Разработка доминаторов серии <clr>Блазер<clrEnd>, созданная для эффективного противодействия силам Коалиции. Оснащает <clr>ракеты и торпеды<clrEnd> сверхлегкими глюонными боеголовками, разрушающими броню и сковывающими движение кораблей противника. Благодаря ничтожному весу также увеличивается максимальный боезапас и скорость полета реактивных снарядов.
+        Text=Количество залпов: <bonAmmo> ед.
+        Text=Скорость ракет и торпед: <clr>+550<clrEnd> ед.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Стоимость оружия: <clr>+60%<clrEnd>
+        WeaponMods=Acid,Decelerate
+        bonAmmo=40
+        bonMissileSpeed=550
+        bonWMissile=15
+    }
+    MolderMM_031 ^{
+        Cost=100
+        Equipments=Hull
+        Name=Серфенол
+        Priority=61
+        Size=120
+        Text=Микромодуль второго уровня. Данный микромодуль производит поверхностную настройку всего высокотехнологичного оборудования на корабле, в результате чего становятся доступными слоты <clr>форсажа, дроида и радара и генератора защиты<clrEnd>. А так же добавляет маленький грузовой отсек. Совместим с <clr>корпусами<clrEnd> всех рас.
+        Text=Размер корпуса: <clr>+20%<clrEnd>
+        bonSlotDef=1
+        bonSlotDroid=1
+        bonSlotForsage=1
+        bonSlotRadar=1
+    }
+    MolderMM_032 ^{
+        Cost=100
+        Equipments=Hull,Scaner
+        Name=Блэдхаунд
+        Owner=Peleng,PirateClan,Kling
+        Priority=68
+        Size=90
+        Text=Микромодуль второго уровня. Сбрасывает все заводские настройки с <clr>корпуса или сканера<clrEnd>, изменяя их на более точные значения. Как итог - в корпусе открывает <clr>слот сканера и одного артефакта<clrEnd>, а в самом сканере повышается расчетная мощность. Незначительно уменьшает модифицируемое оборудование <clr>пеленгов и пиратов<clrEnd>.
+        Text=Размер: <clr>-10%<clrEnd>
+        Text=Мощность сканера: <bonScan> ед.
+        bonScan=6
+        bonSlotArt=1
+        bonSlotScaner=1
+    }
+    MolderMM_033 ^{
+        Cost=100
+        Equipments=Hull
+        Name=Титанокорректор
+        Owner=People,Gaal,NonKling
+        Priority=35
+        Size=100
+        Text=Микромодуль второго уровня. Гармонизирует <clr>корпус<clrEnd> в соответствии с моделью пацифистского баланса, а именно - снимает блокировку <clr>форсажа, дроида, захвата, защитного генератора, радара и сканера<clrEnd> и слегка наращивает броню, но блокирует один из слотов орудий. Используется только <clr>людьми и гаальцами<clrEnd>.
+        Text=Броня корпуса: <clr>+3<clrEnd> ед.
+        bonHull=3
+        bonSlotDef=1
+        bonSlotDroid=1
+        bonSlotForsage=1
+        bonSlotHook=1
+        bonSlotRadar=1
+        bonSlotScaner=1
+        bonSlotWeapon=-1
+    }
+    MolderMM_034 ^{
+        Cost=250
+        Equipments=W16
+        Name=Эсо-бафер
+        Owner=PirateClan
+        Priority=34
+        Size=85
+        Text=Микромодуль второго уровня. Крупномасштабное улучшение <clr>эсодафера<clrEnd>, проспонсированное лично пиратским бароном. Многочисленные жалобы на недостаточную дальность, огромный размер и слабую пробивную силу были наконец-то тщательно разобраны и рассмотрены. Разумеется, стоимость подобной технологии делает ремонт дороже в разы, но чего только не сделаешь ради пиратского кодекса чести.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Размер: <clr>-15%<clrEnd>
+        Text=Стоимость: <clr>+150%<clrEnd>
+        bonWRadius=70
+        bonWSplinter=7
+    }
+    MolderMM_035 ^{
+        Cost=140
+        Equipments=FuelTank,Engine,Radar,Scaner,Droid,Hook,DefGenerator,WEnergy,WSplinter,WMissile
+        Fragility=20
+        Name=Гаалитор
+        Owner=PirateClan,NonKling
+        Priority=46
+        Size=80
+        Text=Микромодуль второго уровня. Заменяет детали любого оборудования <clr>пиратского клана<clrEnd> на ультрасовременные гаальские компоненты. На выходе получается значительно более надежное, дорогое и компактное оборудование, причем без ущерба изначальному функционалу.
+        Text=Надежность: <clr>+80%<clrEnd>
+        Text=Размер: <clr>-20%<clrEnd>
+        Text=Стоимость: <clr>+40%<clrEnd>
+    }
+    MolderMM_036 ^{
+        Cost=100
+        Equipments=WMissile
+        Fragility=120
+        Name=Выхлоп
+        Owner=Peleng,People,Gaal,Kling
+        Priority=65
+        RacialRestriction=1
+        Size=100
+        Text=Микромодуль второго уровня. Оснащает ракеты и торпеды малоизученной аллотропной модификацией стандартного топлива. Токсичные компоненты нового горючего сильно портят ракетные шахты при многократных запусках и значительно увеличивают максимальную скорость полета реактивных снарядов. Подобным топливом пользуются исключительно <clr>пеленги, люди и гаальцы<clrEnd>.
+        Text=Надежность: <clr>-20%<clrEnd>
+        Text=Скорость полета ракет: <clr>+1000<clrEnd> ед.
+        bonMissileSpeed=1000
+    }
+    MolderMM_037 ^{
+        Cost=100
+        Equipments=WSplinter
+        Fragility=80
+        Name=Дрейк
+        Owner=Maloc,Peleng,Fei,Kling
+        Priority=52
+        RacialRestriction=1
+        Size=100
+        Text=Микромодуль второго уровня. Массивная рельсовая система залпового огня, предназначенная для ускорения <clr>осколочных<clrEnd> снарядов и увеличения эффективной дальности стрельбы. Устанавливается в орудия <clr>малоков, пеленгов и фэян<clrEnd> и славится своей надежностью.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Надежность: <clr>+20%<clrEnd>
+        bonWRadius=80
+    }
+    MolderMM_038 ^{
+        Cost=150
+        Equipments=Hull,FuelTank,Engine,Radar,Scaner,Droid,Hook,DefGenerator
+        Fragility=115
+        Name=Скрайнил
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling
+        Priority=67
+        Text=Микромодуль второго уровня. Частично одобренное и почти лицензионное программное обеспечение для любого <clr>акринового оборудования<clrEnd>, кроме орудий. Выигрыш в стоимости и скорости софта не до конца окупает ослабления дополнительных функций.
+        Text=Положительные свойства акрина: <clr>+15%<clrEnd>
+        Text=Негативные свойства акрина: <clr>-100%<clrEnd>
+        Text=Стоимость: <clr>+50%<clrEnd>
+        bonExtraAkrinEff=15
+        bonExtraAkrinPenalty=-100
+    }
+    MolderMM_039 ^{
+        Cost=250
+        Equipments=FuelTank,Engine,Radar,Scaner,Droid,Hook,DefGenerator
+        Fragility=100
+        Name=Апкринд
+        Owner=Maloc,Gaal,PirateClan,Kling
+        Priority=43
+        Size=150
+        Text=Микромодуль второго уровня. Как истинные альтруисты, разработавшие данный модуль <clr>гаальцы<clrEnd> поделились своими гениальными идеями не только с <clr>Малоками<clrEnd>, но и по никому неизвестным причинам даже с <clr>пиратским кланом<clrEnd>. Впрочем, вовсе не факт, что эта разработка действительно повернет ход войны в чью-то пользу - ведь помимо усиления нестандартных плюсов неплохо усиливаются и минусы, да и стоимость подобного апгрейда зашкаливает, при этом совмещение с <clr>оружием<clrEnd> невозможно.
+        Text=Положительные свойства акрина: <clr>+150%<clrEnd>
+        Text=Негативные свойства акрина: <clr>+150%<clrEnd>
+        Text=Стоимость: <clr>+150%<clrEnd>
+        Text=Размер: <clr>+50%<clrEnd>
+        bonExtraAkrinEff=150
+        bonExtraAkrinPenalty=150
+    }
+    MolderMM_040 ^{
+        Cost=100
+        Equipments=Droid
+        Fragility=100
+        Name=Коартатор
+        Owner=Gaal,Kling
+        Priority=69
+        Size=65
+        Text=Микромодуль второго уровня. Данный модуль является улучшенной версией гиниромасляного насоса, широко применяемого в ремонтных роботах. <clr>Гаальцы<clrEnd> заменили масло сверхтекучей жидкостью, которой не нужны громоздкие перегонные установки для поддержания своих свойств. В результате <clr>дроиды<clrEnd> стали ремонтировать быстрее и потеряли часть бесполезного объема.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Размер: <clr>-35%<clrEnd>
+        bonDroid=12
+    }
+    MolderMM_041 ^{
+        Cost=150
+        Equipments=Droid
+        Fragility=100
+        Name=Двацерг
+        Owner=People,Kling
+        Priority=58
+        Size=125
+        Text=Микромодуль второго уровня. В течение долгих лет после клисанской войны <clr>человечество<clrEnd> старалось нарастить выживаемость своих кораблей, дабы учесть печальный опыт пройденных противостояний. Полученный в ходе исследований модуль для <clr>ремотных дроидов<clrEnd> даст фору многим разработкам, если не учитывать его не слишком приятные побочные эффекты.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Размер: <clr>+25%<clrEnd>
+        Text=Стоимость: <clr>+50%<clrEnd>
+        bonDroid=24
+    }
+    MolderMM_042 ^{
+        Cost=100
+        Equipments=Hull
+        Fragility=100
+        Name=Эмгырр
+        Owner=Maloc,Kling
+        Priority=49
+        Size=100
+        Text=Микромодуль второго уровня. Воплощение <clr>малокской<clrEnd> страсти к войне и боевым действиям, реализованное через умеренно посредственный модуль. При установке в любой <clr>корпус<clrEnd> характерного красного окраса открывает два дополнительных <clr>слота орудия<clrEnd>, а также усиливает <clr>броню<clrEnd> корпуса, увеличивает самоуверенность и <clr>точность<clrEnd> пилота.
+        Text=Навык атаки: <bonSkill1>
+        Text=Броня корпуса: <bonHull> ед.
+        bonHull=2
+        bonSkill1=1
+        bonSlotWeapon=2
+    }
+    MolderMM_043 ^{
+        Cost=100
+        Equipments=Hull
+        Fragility=89
+        Name=Торнадос
+        Owner=Peleng,People,Fei,Gaal,Kling
+        Priority=40
+        RacialRestriction=1
+        Size=93
+        Text=Микромодуль второго уровня. Типичный представитель нейтриновых ускорителей для разгона межзвездных кораблей. Хорошо сочетается с любыми типами энергетических полей, вследствие чего открывает <clr>слот защитного генератора и форсажа<clrEnd>, обеспечивая приращение <clr>прочностных свойств корпуса<clrEnd> за счет встраивания ускорителей в малоиспользуемые отсеки трюма. К сожалению, <clr>малоки<clrEnd> так и не смогли разобраться в подобной методике.
+        Text=Размер: <clr>-7%<clrEnd>
+        Text=Надежность: <clr>+11%<clrEnd>
+        bonSlotDef=1
+        bonSlotForsage=1
+    }
+    MolderMM_044 ^{
+        Cost=190
+        Equipments=Hull
+        Fragility=90
+        Name=Макларен
+        Owner=People,Kling
+        Priority=60
+        Size=100
+        Text=Микромодуль второго уровня. Наследие клана <clr>людей<clrEnd>, знаменитых своими талантами в мастерстве гоночного спорта. По слухам, сам Михаэль Шульман приложил шлем к созданию этого модуля, поэтому любой <clr>корпус<clrEnd> под его воздействием становится легче, прочнее, маневреннее и гораздо ценнее.
+        Text=Стоимость: <clr>+90%<clrEnd>
+        Text=Надежность: <clr>+10%<clrEnd>
+        Text=Навык маневренности: <bonSkill2>
+        Text=Масса корабля: <bonMass><clr>%<clrEnd>
+        bonMass=-15
+        bonSkill2=3
+    }
+    MolderMM_045 ^{
+        Cost=100
+        Equipments=Hull
+        Fragility=80
+        Name=Композиторий
+        Owner=People,Fei,Kling
+        Priority=66
+        Size=100
+        Text=Микромодуль второго уровня. <clr>Человеческая<clrEnd> наука, изучающая синтез композитных сплавов, внезапно остановилась из-за фундаментальных физических ограничений. К счастью, на помощь пришли находчивые <clr>фэяне<clrEnd>, предложившие лаконичный выход из ситуации: можно уменьшить <clr>массу<clrEnd> любого корабля, если заменить обшивку с кубонитовой на лауритовую. Броня незначительно ослабнет, но выигрыш в массе будет того стоить.
+        Text=Надежность: <clr>+20%<clrEnd>
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Масса корабля: <bonMass><clr>%<clrEnd>
+        bonHull=-1
+        bonMass=-30
+    }
+    MolderMM_046 ^{
+        Cost=200
+        Equipments=WMissile
+        Fragility=50
+        Name=Мэйхаммер
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=62
+        Size=130
+        Text=Микромодуль второго уровня. Добавляет к любому <clr>ракетному<clrEnd> оружию необычайно прочный и массивный блок с пространственным искажателем, способным вместить в себя огромное количество управляемых снарядов. К сожалению, своевременное восполнение настолько огромного боезапаса обойдется очень и очень недешево.
+        Text=Количество залпов: <bonAmmo> шт.
+        Text=Стоимость: <clr>+100%<clrEnd>
+        Text=Надежность: <clr>+100%<clrEnd>
+        Text=Размер: <clr>+30%<clrEnd>
+        bonAmmo=300
+    }
+    MolderMM_047 ^{
+        Equipments=WEnergy
+        Name=Гелиос
+        Owner=Maloc,Peleng,People,Fei,Gaal,Kling
+        Priority=63
+        Size=86
+        Text=Микромодуль второго уровня. Представляет собой адронный преобразователь, заменяющий базовую версию электромагнитного генератора, на новую и облегченную, что приводит к <clr>снижению веса<clrEnd>, в <clr>энергетическом<clrEnd> оружии <clr>любой расы<clrEnd>. Повышение температуры и мощности потока ведет к увеличению урона, хотя дальность поражения при этом частично страдает.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Размер: <clr>-14%<clrEnd>
+        bonWEnergy=17
+        bonWRadius=-14
+    }
+    MolderMM_048 ^{
+        Equipments=Hull
+        FragilityEnergy=50
+        FragilityMissile=125
+        FragilitySplinter=75
+        Name=Сфера
+        Owner=Maloc,Peleng,People,Fei,Kling
+        Priority=12
+        RacialRestriction=1
+        Text=Микромодуль первого уровня. Активизирует центры распространения поверхностных электромагнитных волн в слабозащищенных местах <clr>корпуса<clrEnd>, значительно защищая их от энергетического и частично осколочного урона. Существенным недостатком данной системы является уязвимость к ракетному оружию, для которого новая защита препятствия не представляет. А так же, микромодуль издает нано-напыление на корпус увеличивая его броню. <clr>Гаальцы<clrEnd> уже давно отказались от подобной технологии по неизвестным соображениям.
+        Text=Восприимчивость к энергетическому урону: <clr>-50%<clrEnd>
+        Text=Восприимчивость к осколочному урону: <clr>-25%<clrEnd>
+        Text=Восприимчивость к ракетному урону: <clr>+25%<clrEnd>
+        Text=Броня корпуса: <clr>+3<clrEnd> ед.
+        bonHull=3
+    }
+    MolderMM_049 ^{
+        Cost=200
+        Equipments=WEnergy,WSplinter,WMissile
+        Fragility=150
+        Name=Шерман
+        Owner=Maloc,NonKling
+        Priority=10
+        Size=200
+        Text=Микромодуль первого уровня. Вершина творческой мысли в деле уничтожения ваших врагов. Разработанный <clr>Малоками<clrEnd> мощнейший модуль превращает любое <clr>оружие<clrEnd> этой расы в смертоносный и скорострельный орудийный комплекс. Все характеристики, интересующие настоящих воинов - сильно растут, мелочи же вроде <clr>размера, стоимости и надежности<clrEnd> - падают.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Размер: <clr>+100%<clrEnd>
+        Text=Стоимость: <clr>+100%<clrEnd>
+        Text=Надежность: <clr>-50%<clrEnd>
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Количество выстрелов за ход: <clr>+1<clrEnd>
+        bonAttacks=1
+        bonWEnergy=24
+        bonWMissile=30
+        bonWRadius=75
+        bonWSplinter=36
+    }
+    MolderMM_050 ^{
+        Cost=225
+        Equipments=Hull,Droid
+        Fragility=60
+        Name=Этельстар
+        Owner=Kling
+        Priority=10
+        RacialRestriction=1
+        Size=130
+        Text=Микромодуль первого уровня. Мощнейший самовосстанавливающийся комплекс, созданный каждой серией <clr>доминаторов<clrEnd> по отдельности. Совмещает в себе самые смелые идеи по управлению микромиром - от кварковых решеток до мезонных конденсаторов. Разумеется, конечной целью является парадоксальное увеличение <clr>брони<clrEnd> и восстановительных способностей <clr>дроидов<clrEnd>.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Надежность: <clr>+40%<clrEnd>
+        Text=Размер: <clr>+30%<clrEnd>
+        Text=Стоимость: <clr>+125%<clrEnd>
+        bonDroid=36
+        bonHull=9
+    }
+    MolderMM_051 ^{
+        Cost=400
+        Equipments=WEnergy,WSplinter,WMissile
+        Fragility=150
+        Name=Мучитель
+        Owner=PirateClan,NonKling
+        Priority=3
+        RacialRestriction=1
+        Size=180
+        Text=Микромодуль первого уровня. Этот модуль заслуженно признается одной из самых опасных разработок <clr>пиратского клана<clrEnd>. Преобразует любое оружие в настоящую машину смерти, причем смерти долгой и мучительной. Модифицированное вооружение способно <clr>заблокировать дроид, орудия<clrEnd>, а также серьезно повреждает обшивку и все <clr>внутреннее устройство<clrEnd> корабля противника, в том числе путем <clr>ионизации, нанокоррозии и наведенных помех<clrEnd>. Возможно, что единственным шансом противостоять подобному может быть тот факт, что буквально все характеристики носителя также значительно ухудшаются.
+        Text=<clr>Для всех эффектов необходимо превышение мощности сканера над защитой цели<clrEnd>
+        Text=Размер: <clr>+80%<clrEnd>
+        Text=Стоимость: <clr>+300%<clrEnd>
+        Text=Надежность: <clr>-50%<clrEnd>
+        WeaponMods=ReduceEngine,BonusToDamaged,BlockDroid,ScanBonus,BlockWeapon,Decelerate,Destruct,Acid,Shock,Magnetic
+    }
+    MolderMM_052 ^{
+        Cost=180
+        Equipments=WEnergy
+        Fragility=100
+        Name=Морфий
+        Owner=Keller
+        Priority=1
+        RacialRestriction=1
+        Size=20
+        Text=Микромодуль первого уровня. Усилительный модуль <clr>энергетического<clrEnd> оружия для доминаторов серии <clr>Келлер<clrEnd>. Используя знания о гиперпространстве, позволяет возвращать часть энергии при выстреле и использовать её для частичной подпитки собственных систем. Основными недостатками комплекса являются резкое падение эффективной дальности стрельбы и увеличение стоимости, а главными достоинствами - уменьшение размера и поверхностная <clr>ионизация<clrEnd> цели.
+        Text=Размер: <clr>-80%<clrEnd>
+        Text=Стоимость: <clr>+80%<clrEnd>
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=<clr>Восстанавливает структуру корабля за счёт повреждений цели<clrEnd>
+        Text=<clr>Вызывает эффект ионизации<clrEnd>
+        WeaponMods=Drain,Shock
+        bonWRadius=-50
+    }
+    MolderMM_053 ^{
+        Cost=100
+        Equipments=WSplinter
+        Fragility=100
+        Name=Омегамма
+        Owner=Terron
+        Priority=10
+        RacialRestriction=1
+        Size=160
+        Text=Микромодуль первого уровня. Пакет улучшений для <clr>осколочного<clrEnd> вооружения <clr>терроноидов<clrEnd>. Точное происхождение разработки неизвестно, однако установлено, что улучшенные таким образом материальные снаряды способны блокировать работу <clr>дроида и орудий<clrEnd> противника. Вдобавок растет эффективная дистанция прицеливания, очередность стрельбы и минимальный возможный урон.
+        Text=Размер: <clr>+60%<clrEnd>
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=<clr>Орудие всегда наносит максимальный урон<clrEnd>
+        WeaponMods=BlockDroid,BlockWeapon,NoDelta
+        bonShotSpeed=60
+        bonWRadius=60
+    }
+    MolderMM_054 ^{
+        Cost=300
+        Equipments=Hull
+        FragilityEnergy=125
+        FragilityMissile=115
+        FragilitySplinter=40
+        Name=Спецэфир
+        Owner=People,Kling
+        Priority=10
+        Text=Микромодуль первого уровня. Обрабатывает корпус высокомолекулярными соединениями эфира, благоприятно влияющим на работу нестандартного оборудования, а так же обволакивает обшивку корабля, уменьшая до минимума урон от осколочного вооружения. Правда обратной стороной является то, что повышается восприимчивость от энергетического и немного от ракетного. Открывает <clr>4 слота артефакта<clrEnd> и существенно увеличивает стоимость <clr>корпусов людей<clrEnd>.
+        Text=Стоимость корпуса: <clr>+200%<clrEnd>
+        Text=Восприимчивость к ракетному вооружению: <clr>+15%<clrEnd>
+        Text=Восприимчивость к энергетическому вооружению: <clr>+25%<clrEnd>
+        Text=Восприимчивость к осколочному вооружению: <clr>-60%<clrEnd>
+        bonSlotArt=4
+    }
+    MolderMM_055 ^{
+        Cost=100
+        Equipments=Hull
+        FragilityEnergy=60
+        Name=Вольтрон
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+        Priority=30
+        Size=100
+        Text=Микромодуль первого уровня. Крайне нестабильный квантронный источник энергии, скрытый в этом модуле, способен резко преобразить <clr>любой корпус<clrEnd>. Электронный выброс гарантирует работу <clr>форсажа, генератора щита, артефакта и дополнительного орудия<clrEnd>. А так же выброс сильно повышает защиту от <clr>энергетического<clrEnd> оружия.
+        Text=Восприимчивость к энергетическому урону: <clr>-40%<clrEnd>
+        bonSlotArt=1
+        bonSlotDef=1
+        bonSlotForsage=1
+        bonSlotWeapon=1
+    }
+    MolderMM_056 ^{
+        Equipments=Hull
+        Name=Зиолтий
+        Owner=Gaal,Kling
+        Priority=10
+        RacialRestriction=1
+        Text=Микромодуль первого уровня. Спешная попытка исправить баланс противостояния с доминаторами в пользу Коалиции, на этот раз <clr>гаальское изобретение<clrEnd>. Недостаток огневой мощи и слабая необходимость в использовании нестандартного оборудования силами регулярной армии привели к созданию данного модуля: он способен <clr>увеличить число орудий на три и активизировать слот захвата<clrEnd> ценой <clr>демонтажа всего одного артефакта<clrEnd>. Воистину это новая надежда в долгой войне, ведь броня корпуса после этой трансформации существенно возрастает.
+        Text=Броня корпуса: <bonHull> ед.
+        bonHull=10
+        bonSlotArt=-1
+        bonSlotHook=1
+        bonSlotWeapon=3
+    }
+    MolderMM_057 ^{
+        Cost=100
+        Equipments=WEnergy,WSplinter
+        Fragility=120
+        Name=Троу
+        Owner=People,Gaal,PirateClan,Kling
+        Priority=28
+        Size=80
+        Text=Микромодуль первого уровня. Боевой комплекс, постоянно переходящий границы дозволенного, часто используется <clr>пиратами<clrEnd> во время их мерзких рейдов. Благодаря доблестным военным Коалиции был взят взаймы и исследован <clr>человеческими и гаальскими<clrEnd> учеными на предмет совместимости со стандартными орудиями, причем эксперименты оказались удачными. Главным недостатком данного модуля является плохо спроектированная система охлаждения и смазки, что негативно влияет на <clr>надежность<clrEnd> орудия. Ну а положительно сказывается то, что заменяются некоторые элементы подачи энергии на нанотехнологичные, что уменьшает <clr>размер<clrEnd>.
+        Text=Надежность: <clr>-20%<clrEnd>
+        Text=Размер: <clr>-20%<clrEnd>
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        bonWRadius=90
+    }
+    MolderMM_058 ^{
+        Cost=180
+        Equipments=WEnergy,WSplinter
+        Fragility=100
+        Name=Анигмата
+        Owner=None,NonKling
+        Priority=25
+        Size=130
+        Text=Микромодуль первого уровня. Созданный на основе обломков кораблей <clr>неизвестной расы<clrEnd>, данный модуль может стать настоящей находкой для любого засвегдатая черных дыр. За счет умеренной надбавочной стоимости можно получить хороший прирост дальности и урона для <clr>энергетических и осколочных<clrEnd> пушек. Нельзя забывать о том, что делался он из обломков, а в связи с этим, добавляется много лишнего хлама, который увеличивает вес.
+        Text=Стоимость: <clr>+80%<clrEnd>
+        Text=Размер: <clr>+30%<clrEnd>
+        Text=Сила энергетического оружия: <bonWEnergy>
+        Text=Сила осколочного оружия: <bonWSplinter>
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        bonWEnergy=17
+        bonWRadius=22
+        bonWSplinter=39
+    }
+    MolderMM_059 ^{
+        Cost=100
+        Equipments=FuelTank,Engine,Radar,Scaner,Droid,Hook,DefGenerator
+        Fragility=100
+        Name=Апгрейд
+        Owner=Maloc,People,Fei,PirateClan,Kling
+        Priority=10
+        Size=225
+        Text=Микромодуль первого уровня. Представленный в ходе одной из важнейших межгалактических конференций вскоре после начала войны, этот модуль призван максимизировать все скрытые функции и особые свойства любого оборудования любой расы. К сожалению, его создатель был убит при загадочных обстоятельствах, а схожие образцы были обнаружены на кораблях <clr>пиратского клана<clrEnd>. <clr>Пеленги и гаальцы<clrEnd> вскоре вышли из соглашения по использованию этого модуля, по причине невозможности его совмещения с <clr>оружием и корпусом<clrEnd>.
+        Text=Положительные свойства акрина: <clr>+100%<clrEnd>
+        Text=Негативные свойства акрина: <clr>-25%<clrEnd>
+        Text=Размер: <clr>+125%<clrEnd>
+        bonExtraAkrinEff=100
+        bonExtraAkrinPenalty=-25
+    }
+    MolderMM_060 ^{
+        Cost=100
+        Equipments=W04,W18,SS
+        Fragility=100
+        Name=Багги
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,Kling,None
+        Priority=1
+        RacialRestriction=1
+        Size=180
+        Text=Микромодуль первого уровня. Комплексный апгрейд любых <clr>ракетных установок<clrEnd>, кроме торпедного аппарата и мультиплета. Благодаря гениальности своего создателя, Аска Илона, модуль дает значительные бонусы <clr>вне зависимости от расовой принадлежности<clrEnd> орудия. Итоговый размер модифицированной установки, разумеется, ощутимо возрастает.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Скорость полета ракет: <clr>+550<clrEnd> ед.
+        Text=Количество залпов: <bonAmmo> шт.
+        Text=Количество ракет в залпе: <bonShots>
+        Text=Размер: <clr>+80%<clrEnd>
+        bonAmmo=35
+        bonMissileSpeed=550
+        bonShots=2
+        bonWMissile=15
+    }
+    MolderMM_061 ^{
+        Equipments=Droid
+        Fragility=10
+        Name=Махпа
+        Owner=Maloc,Fei,Kling
+        Priority=10
+        Size=200
+        Text=Микромодуль первого уровня. Внушающая ужас, несущая хаос, разрушение и боль третья версия самого страшного <clr>малокского<clrEnd> проекта в истории галактики. Будучи в отчаянии, <clr>фэяне<clrEnd> предложили свои услуги по наладке всех узлов этого чудесного механизма, в результате чего вместо орудия массового подавления получился <clr>огромный и практически неуязвимый дроид<clrEnd>.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Надежность: <clr>+90%<clrEnd>
+        Text=Размер: <clr>+100%<clrEnd>
+        bonDroid=40
+    }
+    MolderMM_062 ^{
+        Cost=350
+        Equipments=FuelTank,Engine,Radar,Scaner,Droid,Hook,DefGenerator,WEnergy,WSplinter,WMissile
+        Fragility=75
+        Name=Патч 0.99 гамма
+        Owner=Maloc,Peleng,Fei,Kling
+        Priority=1
+        Size=75
+        Text=Микромодуль первого уровня. Третья и последняя версия популярнейшего патча для любого корабельного оборудования. Заметно повышает производительность всех узлов и систем, но на выходе при этом получаются крайне хаотические значения. Лицензирование не было произведено для <clr>людей и гаальцев<clrEnd> по их собственному желанию: дробные числа крайне мешают людям в бизнес-расчетах, гаальцы же предпочитают порядок хаосу.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Объем бака: <bonFuel> ед.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Генератор поля: <bonDef> ед.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Размер: <clr>-25%<clrEnd>
+        Text=Стоимость: <clr>+250%<clrEnd>
+        Text=Надежность: <clr>+25%<clrEnd>
+        bonDef=7
+        bonDroid=22
+        bonFuel=25
+        bonHook=46
+        bonHookRadius=39
+        bonJump=9
+        bonRadar=1050
+        bonScan=8
+        bonSpeed=109
+        bonWEnergy=16
+        bonWMissile=21
+        bonWRadius=25
+        bonWSplinter=26
+    }
+    MolderMM_063 ^{
+        Cost=100
+        Equipments=Hull
+        Fragility=94
+        Name=Отвертка
+        Owner=Peleng,People,Gaal,Kling
+        Priority=5
+        Size=112
+        Text=Микромодуль первого уровня. Широко распространенный набор из комбинированных схем, открытых <clr>пеленгами, людьми или гаальцами<clrEnd>. При установке подобной надстройки в корпус можно наблюдать рост прочности и размера всего звездолета, а при удачной трансформации - открываются дополнительные слоты для <clr>артефакта, радара и сканера<clrEnd>.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Размер корпуса: <clr>+12%<clrEnd>
+        Text=Надежность корпуса: <clr>+6%<clrEnd>
+        bonHull=3
+        bonSlotArt=1
+        bonSlotRadar=1
+        bonSlotScaner=1
+    }
+    MolderMM_064 ^{
+        Equipments=Hull,Radar
+        Fragility=110
+        Name=Пинкертон
+        Owner=Fei,Kling
+        Priority=20
+        RacialRestriction=1
+        Size=135
+        Text=Микромодуль первого уровня. Шпионский модуль, используемый высшими эшелонами <clr>фэянских<clrEnd> следователей и детективов. Некритично увеличивает размер <clr>корпуса или радара<clrEnd>, взамен усиливая их навигационные свойства и прочностные характеристики. Более того, искусственный интеллект модифицированного таким образом блока усиливает способности пилота по обращению с любым оборудованием.
+        Text=Размер: <clr>+35%<clrEnd>
+        Text=Надежность: <clr>-10%<clrEnd>
+        Text=Радиус действия радара: <bonRadar> ед.
+        Text=Навык техники: <bonSkill3>
+        bonRadar=2000
+        bonSkill3=3
+    }
+    MolderMM_065 ^{
+        Cost=100
+        Equipments=Hull
+        Fragility=100
+        Name=Хиипи-бана
+        Owner=Gaal,Kling
+        Priority=20
+        RacialRestriction=1
+        Size=100
+        Text=Микромодуль первого уровня. Разработка <clr>Гаальцев<clrEnd>, датируемая шестидесятыми годами тридцать третьего века, во времена расцвета антивоенного движения. Модуль окрашивает <clr>корпус<clrEnd> во все цвета спектра Краа, что символизирует мировую гармонию и дает мощную броню. <clr>Масса<clrEnd> корабля при этом тоже возрастает.
+        Text=Масса корабля: <clr>+12%<clrEnd>
+        Text=Броня корпуса: <bonHull> ед.
+        bonHull=12
+        bonMass=12
+    }
+    MolderMM_066 ^{
+        Cost=100
+        Equipments=Hull
+        Fragility=130
+        Name=Эрзаситалл
+        Owner=Fei,PirateClan,Kling
+        Priority=10
+        Size=100
+        Text=Микромодуль первого уровня. Заменяет детали обшивки <clr>корпуса<clrEnd> на невероятно твердые, но не слишком прочные фрагменты. Корабль, покрытый таким материалом, сильно выигрывает при обстреле слабыми орудиями, но плохо сопротивляется по-настоящему значительному ущербу. Во всей галактике подобное вещество используют лишь <clr>фэяне и пиратский клан<clrEnd>.
+        Text=Восприимчивость корпуса: <clr>+30%<clrEnd>
+        Text=Броня корпуса: <bonHull> ед.
+        bonHull=20
+    }
+    MolderMM_067 ^{
+        Cost=300
+        Equipments=Hull
+        Fragility=130
+        Name=Дирижабл
+        Owner=Peleng,Fei,Kling
+        Priority=25
+        Size=100
+        Text=Микромодуль первого уровня. Успех антигравитационных технологий <clr>Доминаторов<clrEnd> распространился и на модули для <clr>корпусов<clrEnd> звездолетов самого разного класса и уровня. В данном случае была попытка использовать особый материал - анобтаниум, сверхлегкое вещество, достаточно прочное для строительства космических кораблей, но плохо защищающее от ионизирующего излучения. Лишь <clr>пеленги и фэяне<clrEnd> рискнули иногда прибегать к подобному веществу в кораблестроении.
+        Text=Масса корабля: <bonMass><clr>%<clrEnd>
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Стоимость: <clr>+200%<clrEnd>
+        Text=Восприимчивость ко всем видам урона: <clr>+30%<clrEnd>
+        bonHull=-3
+        bonMass=-75
+    }
+    MolderMM_068 ^{
+        Cost=100
+        Equipments=W01,W02,W03,W05,W06,W07,W08,W09,W10,W11,W12,PlasmaGun,ExzoShocker,Atomizer,CryoProjector,FusionQuasar
+        Fragility=100
+        Name=Дельта
+        Owner=Gaal,None,Kling
+        Priority=5
+        RacialRestriction=1
+        Size=125
+        Text=Микромодуль первого уровня. Данный модуль был найден во время раскопок, спешно проведенных во время начала войны с клисанами. Технологии <clr>неизвестной расы<clrEnd> позволяют косвенно преодолеть фундаментальный предел скорости и размера частиц в вакууме, что приводит к сильному увеличению <clr>дальности стрельбы<clrEnd> орудий, не являющихся ракетными, а также увеличивает вес всей конструкции. Как истинные наследники, лишь <clr>гаальцы<clrEnd> адаптировали этот микромодуль под свои нужды, а также <clr>доминаторы<clrEnd>, которые, к счастью, так и не смогли совместить его с <clr>ИМХО-9000<clrEnd> или <clr>вертиксом<clrEnd>.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Размер: <clr>+25%<clrEnd>
+        bonWEnergy=-17
+        bonWRadius=300
+        bonWSplinter=-24
+    }
+    MolderMM_069 ^{
+        Cost=100
+        Equipments=Engine
+        Fragility=67
+        Name=Кривдвиг
+        Owner=Peleng,Kling
+        Priority=25
+        Size=25
+        Text=Микромодуль первого уровня. Создает квантовую неопределенность вокруг двигательного отсека в кораблях <clr>пеленгского<clrEnd> производства. Эффект распространяется исключительно на <clr>акриновое<clrEnd> оборудование, и весьма неоднозначно -  помимо резкого сжатия, происходит дестабилизация систем позиционирования. Все это приводит как к падению <clr>маневренности<clrEnd> и <clr>точности<clrEnd> , так и к хаотичному изменению дополнительных свойств самого <clr>двигателя<clrEnd>.
+        Text=Навык точности: <bonSkill1>
+        Text=Навык маневренности: <bonSkill2>
+        Text=Положительные свойства акрина: <clr>+75%<clrEnd>
+        Text=Негативные свойства акрина: <clr>-75%<clrEnd>
+        Text=Размер: <clr>-75%<clrEnd>
+        Text=Надежность: <clr>+33%<clrEnd>
+        bonExtraAkrinEff=75
+        bonExtraAkrinPenalty=-75
+        bonSkill1=-2
+        bonSkill2=-2
+    }
+    MolderMM_070 ^{
+        Cost=100
+        Equipments=W04
+        Fragility=150
+        Name=Смерч
+        Owner=Maloc,People,PirateClan,Kling
+        Priority=5
+        RacialRestriction=1
+        Size=300
+        Text=Микромодуль первого уровня. Мощнейшая система залпового огня, запрещенная на законодательном уровне среди всех рас, кроме <clr>малоков, людей<clrEnd> и конечно же <clr>пиратского клана<clrEnd>. Позволяет увеличить количество <clr>ракет<clrEnd> в залпе до <clr>10<clrEnd> единиц, и при этом снабжает их бронебойными боеголовками с уменьшенным уроном по обшивке и повышенным - по электронной начинке вражеских кораблей. Подобные рисковые операции не проходят даром - <clr>Надежность<clrEnd> любого <clr>ракетомета<clrEnd> гарантированно падает.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Скорость ракет: <clr>+750<clrEnd> ед.
+        Text=Количество ракет в залпе: <bonShots> шт.
+        Text=Надежность: <clr>-50%<clrEnd>
+        Text=Размер: <clr>+200%<clrEnd>
+        Text=<clr>Ракеты сильно повреждают оборудование цели<clrEnd>
+        WeaponMods=Destruct
+        bonMissileSpeed=750
+        bonShots=7
+        bonWMissile=-10
+    }
+    MolderMM_071 ^{
+        Cost=100
+        Equipments=Radar,Scaner
+        Fragility=100
+        Name=Саггацит
+        Owner=Gaal,PirateClan,Kling
+        Priority=15
+        RacialRestriction=1
+        Size=100
+        Text=Микромодуль первого уровня. Инсталлирует псевдотелепатический навигатор в <clr>радары и сканеры<clrEnd>, полностью изменяя механизм обработки получаемой информации. Несмотря на все заверения <clr>гаальцев<clrEnd>, подобные манипуляции обязательно снижают выходные характеристики навигационного оборудования, еще и без наблюдаемых сдвигов в лучшую сторону. Впрочем, если что точно и меняется, так это чувство собственного превосходства у владельца и жалость окружающих, что приводит к росту некоторых навыков. <clr>Пираты<clrEnd> тоже адаптировали для себя этот модуль, хотя толком неизвестно, зачем.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Навык атаки: <bonSkill1>
+        Text=Навык маневренности: <bonSkill2>
+        Text=Навык обаяния: <bonSkill5>
+        bonRadar=-600
+        bonScan=-6
+        bonSkill1=2
+        bonSkill2=2
+        bonSkill5=3
+    }
+    MolderMM_072 ^{
+        Cost=25
+        Equipments=W11
+        Fragility=190
+        Name=Гекатомб
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan,None,Kling
+        Priority=20
+        RacialRestriction=1
+        Size=150
+        Text=Микромодуль первого уровня. Переводит любой <clr>дезинтегратор<clrEnd> в режим максимальной перегрузки, катастрофически увеличивая наносимый урон, что сопровождается резким падением дальности выстрела и прочности. Модифицированное орудие при этом становится значительно больше и теряет в цене, так как после использования его проще переработать, чем ремонтировать.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Надежность: <clr>-90%<clrEnd>
+        Text=Размер: <clr>+50%<clrEnd>
+        Text=Стоимость: <clr>-75%<clrEnd>
+        bonWEnergy=90
+        bonWRadius=-180
+    }
+    MolderMM_073 ^{
+        Cost=75
+        Equipments=Atomizer
+        Fragility=75
+        Name=Молекулятор
+        Priority=28
+        Size=75
+        Text=Микромодуль первого уровня. Изменяет размер снарядов любого <clr>атомайзера<clrEnd>, увеличивая атомные цепочки до молекулярных. В результате <clr>улучшаются все параметры орудия<clrEnd> и одновременно незначительно падает урон, так как проникающая способность раскаленных молекул оказывается ниже изначальной.
+        Text=Прочность: <clr>+25%<clrEnd>
+        Text=Размер: <clr>-25%<clrEnd>
+        Text=Стоимость: <clr>-25%<clrEnd>
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        bonWRadius=150
+        bonWSplinter=-15
+    }
+    MolderMM_074 ^{
+        Cost=100
+        Equipments=Mauler
+        Fragility=65
+        Name=Тириол
+        Owner=PirateClan
+        Priority=65
+        Size=65
+        Text=Микромодуль второго уровня. Заменяет систему отвода остаточных газов и уменьшает итоговую отдачу <clr>маулера<clrEnd>. Очень ценится среди <clr>пиратского клана<clrEnd> из-за распространенности и удобства использования - ведь итоговый размер системы серьезно уменьшается, что критично для данного типа орудия.
+        Text=Прочность: <clr>+35%<clrEnd>
+        Text=Размер: <clr>-35%<clrEnd>
+    }
+    MolderMM_075 ^{
+        Cost=500
+        Equipments=Multiplet
+        Fragility=150
+        Name=Мортоарис
+        Priority=20
+        Size=125
+        Text=Микромодуль первого уровня. Комплект полной ребалансировки и тотального уничтожения целей при минимальных затратах и максимуме удовольствия. Астролитовая начинка боеголовок значительно повышает <clr>урон<clrEnd> от детонации, при этом плотность упаковки ракет повышается в несколько раз, и теперь стрельба может осуществлятся практически бесконечно. К недостатками данного модуля относят совместимость только с <clr>мультиплетом<clrEnd>, а также значительное уменьшение итоговой прочности при увеличенном объеме всей конструкции.
+        Text=Количество ракет: <bonAmmo> ед.
+        Text=Прочность: <clr>-50%<clrEnd>
+        Text=Размер: <clr>+25%<clrEnd>
+        Text=Стоимость: <clr>+400%<clrEnd>
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Скорость ракет: <clr>+350<clrEnd> ед.
+        WeaponMods=ScanBonus
+        bonAmmo=150
+        bonMissileSpeed=350
+        bonWMissile=16
+    }
+    MolderMM_076 ^{
+        Cost=100
+        Equipments=Multiplet
+        Fragility=50
+        Name=Скринжал
+        Priority=50
+        Size=100
+        Text=Микромодуль второго уровня. Экономный блок распределения энергии, устанавливаемый только на <clr>мультиплетные ракетные установки<clrEnd>. Вместо <clr>трех<clrEnd> ракет за ход будет выпускаться всего <clr>две<clrEnd>, сам боекомплект также увеличивается, что благотворно повлияет на продолжительность боя и <clr>надежность<clrEnd> орудия, ведь пусковые шахты будут страдать значительно меньше. При этом часть запасенной энергии может быть использована для усиления ракетного потенциала, в частности - для роста начальной <clr>скорости ракет<clrEnd> с интеллектуальным блоком.
+        Text=Количество ракет: <clr>+60<clrEnd> ед.
+        Text=Количество ракет за ход: <clr>-1<clrEnd>
+        Text=Прочность: <clr>+50%<clrEnd>
+        Text=Скорость полета ракет: <clr>+750<clrEnd> ед.
+        bonAmmo=60
+        bonAttacks=-1
+        bonMissileSpeed=750
+    }
+    MolderMM_077 ^{
+        Cost=100
+        Equipments=Multiplet
+        Fragility=90
+        Name=Консидер
+        Priority=95
+        Size=85
+        Text=Микромодуль третьего уровня. Базовое улучшение для ракетных установок <clr>мультиплет<clrEnd>. Значительно повышен  боезапас за счет варьирования остальных характеристик орудия. Новые снаряды компактнее и обладают чуть меньшим боевым зарядом, что, впрочем незначительно повлияет на ход всего боя.
+        Text=Количество ракет: <clr>+30<clrEnd> ед.
+        Text=Прочность: <clr>+10%<clrEnd>
+        Text=Размер: <clr>-15%<clrEnd>
+        bonAmmo=30
+    }
+}

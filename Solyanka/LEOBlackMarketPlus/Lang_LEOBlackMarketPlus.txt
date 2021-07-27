@@ -1,0 +1,1823 @@
+BlackMarketShopList ~{
+    Version=16.10.2020
+    MinEquipmentsInStock=9
+    MaxEquipmentsInStock=18
+    MinWeaponsInStock=8
+    MaxWeaponsInStock=16
+    MinArtefactsInStock=4
+    MaxArtefactsInStock=8
+    MinModificationsInStock=6
+    MaxModificationsInStock=12
+    MinMicromodulsInStock=6
+    MaxMicromodulsInStock=12
+    Hulls ~{
+        ReadMe=Параметр Race читается игрой почти как Owner, за исключением того, что в случае с корпусом можно указать в Race неизвестную расу None. Параметр HullType предусматривает следующие возможные значения (допустимо установить лишь одно значение без перечислений): Ranger, Warrior, Pirate, Transport, Liner, Diplomat, WarriorBig. Параметр HullSerieChance определяет шанс с которым на корпус будет наложена одна из серий, перечисленных в параметре HullSerie (если параметр HullSerieChance не указан, то шанс на наложение серии будет приравнян к 100%). Параметр HullSerie принимает имена разделов с сериями корпусов (доступно перечисление нескольких серий через запятую без пробелов). Если значение OwnerPirateClan (параметр опционален) больше нуля, то корпус получит пиратскую эмблему, даже будучи имея коалиционную расу (эмблема будет иметь цвет соответствующей расы). Параметры CustomFactionChance и CustomFaction (доступно перечисление нескольких фракций через запятую без пробелов) опциональны.
+        ReadMeMore=Параметры OneHullSellingChance, TwoHullsSellingChance и т.д. означают шансы, при которых в продаже ЧР появятся одновременно 1, 2, 3, 4 или 5 корпусов. Опциональный параметр SubRace обозначает серию доминаторов (применяется только к доминаторским корпусам) и имеет 3 значения Blazer, Keller, Terron или Any (допустимо добавлять значения без пробелов через запятую).
+        OneHullSellingChance=50
+        TwoHullsSellingChance=30
+        ThreeHullsSellingChance=20
+        FourHullsSellingChance=15
+        FiveHullsSellingChance=10
+        100 ~{
+            Name=Корпус "Гиперион" I
+            BonusNum=LEOContentMod_Giperion_1
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Race=Coalition,PirateClan
+            ChangePriorityOn=0
+        }
+        101 ~{
+            Name=Корпус "Гиперион" II
+            BonusNum=LEOContentMod_Giperion_2
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Race=Coalition,PirateClan
+            ChangePriorityOn=0
+        }
+        102 ~{
+            Name=Корпус "Гиперион" III
+            BonusNum=LEOContentMod_Giperion_3
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Race=Coalition,PirateClan
+            ChangePriorityOn=0
+        }
+        103 ~{
+            Name=Корпус "Гиперион" IV
+            BonusNum=LEOContentMod_Giperion_4
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion
+            Race=Coalition,PirateClan
+            ChangePriorityOn=0
+        }
+        104 ~{
+            Name=Крутейший фантом
+            BonusNum=LEOContentMod_HullFei_PC5
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion
+            Race=Coalition,PirateClan
+            ChangePriorityOn=0
+        }
+        105 ~{
+            Name=Катаури МК2
+            BonusNum=LEOContentMod_HullKlissan_MK2
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Owner=Kling
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=CurTurn()>GShuKlissanFirstStart+62
+        }
+        106 ~{
+            Name=Злейший бамбай
+            BonusNum=LEOContentMod_HullMaloc_PC5
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion
+            Race=Coalition,PirateClan
+            ChangePriorityOn=0
+        }
+        107 ~{
+            Name=Корпус "Викинг"
+            BonusNum=LEOContentMod_Viking
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Race=Coalition,PirateClan
+            ChangePriorityOn=0
+        }
+        108 ~{
+            Name=Корпус "Мираж"
+            BonusNum=LEOContentMod_Wraith
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Race=Coalition,PirateClan
+            ChangePriorityOn=0
+        }
+        109 ~{
+            Name=Корпус "Мираж"
+            BonusNum=LEOContentMod_WraithJunker
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Race=Coalition,PirateClan
+            ChangePriorityOn=0
+        }
+        110 ~{
+            Name=Горизонт
+            BonusNum=LEOLastHulls_G1
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Race=Coalition,PirateClan
+            ChangePriorityOn=0
+        }
+        111 ~{
+            Name=Черный призрак
+            BonusNum=LEOLastHulls_G2
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Race=Coalition,PirateClan
+            ChangePriorityOn=0
+        }
+        112 ~{
+            Name=Приговор
+            BonusNum=LEOLastHulls_G3
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Race=Coalition,PirateClan
+            ChangePriorityOn=0
+        }
+        113 ~{
+            Name=Колокол
+            BonusNum=LEOLastHulls_G4
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Race=Coalition,PirateClan
+            ChangePriorityOn=0
+        }
+        114 ~{
+            Name=Цербер
+            BonusNum=LEOLastHulls_G5
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Race=Coalition,PirateClan
+            ChangePriorityOn=0
+        }
+        115 ~{
+            Name=Эгемон
+            BonusNum=LEOLastHulls_K1
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Owner=Kling
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=CurTurn()>GShuKlissanFirstStart+62
+        }
+        116 ~{
+            Name=Нондус
+            BonusNum=LEOLastHulls_K2
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Owner=Kling
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=CurTurn()>GShuKlissanFirstStart+62
+        }
+        117 ~{
+            Name=Катаури
+            BonusNum=LEOLastHulls_K3
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Owner=Kling
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=CurTurn()>GShuKlissanFirstStart+62
+        }
+        118 ~{
+            Name=Рогит
+            BonusNum=LEOLastHulls_K4
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Owner=Kling
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=CurTurn()>GShuKlissanFirstStart+62
+        }
+        119 ~{
+            Name=Мутенок
+            BonusNum=LEOLastHulls_K5
+            HullType=Ranger
+            HullSerieChance=10
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Owner=Kling
+            CustomFactionChance=100
+            CustomFaction=Klissan
+            SpawnCondition=CurTurn()>GShuKlissanFirstStart+62
+        }
+        120 ~{
+            Name=Неизвестный объект прототип I
+            BonusNum=LEOContentMod_UnknowObjectPro_X0
+            HullType=Ranger
+            HullSerieChance=5
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Race=None
+            ChangePriorityOn=0
+        }
+        121 ~{
+            Name=Неизвестный объект прототип II
+            BonusNum=LEOContentMod_UnknowObjectPro_X1
+            HullType=Ranger
+            HullSerieChance=5
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Race=None
+            ChangePriorityOn=0
+        }
+        122 ~{
+            Name=Неизвестный объект прототип III
+            BonusNum=LEOContentMod_UnknowObjectPro_X2
+            HullType=Ranger
+            HullSerieChance=5
+            HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
+            Race=None
+            ChangePriorityOn=0
+        }
+        Count=130
+    }
+    Equipment ~{
+        ReadMe=Параметр ItemType строго обязателен и должен содержать в себе один тип оборудования без перечислений. Возможные названия типов для параметра ItemType можно найти в разделе SellingWithoutAcrynChance. Параметр Owner (возможно перечисление рас через запятую без пробелов, где значение Coalition трактуется как 5 основных игровых рас) опционален для заполнения и заменит собой этот же параметр из основного раздела акрина (возможно перечисление рас через запятую без пробелов), а при его там отсутствии взят по умолчанию (все расы, кроме доминаторов и неизвестной). Значение Any всегда толкуется в Owner как все расы, кроме неизвестной. Параметр AverageSize (означает средний вес, где N/2 - минимальный вес, а N*2 - максимальный) опционален и при его отсутствии вес будет рассчитан внутри скрипта на общих основаниях. Параметры CustomFactionChance и CustomFaction (возможно перечисление разных фракций через запятую без пробелов) опциональны и не обязательны к добавлению. Все остальные параметры (включая счётчики Count) строго обязательны к заполнению для любого акрина.
+        ReadMeMore=Получить неизвестную расу для любого предмета возможно лишь через шанс, указанный в параметре NoneRaceChance, а получить минимальный вес возможно как при рандомном броске, так и через шанс, указанный в параметре MinSizeChance. Модификаторы DomRaceCostCoef и NoneRaceCostCoef (могут принимать дробные значения) используются для увеличения стоимости предметов (прямо перед добавлением в магазин), имеющих доминаторскую и неизвестную расу соответственно. Опциональный параметр SubRace обозначает серию доминаторов (применяется только к доминаторскому оборудованию) и имеет 3 значения Blazer, Keller, Terron или Any (допустимо добавлять значения без пробелов через запятую). При установке в BonusNum значения None, данное оборудование будет всегда появляться в магазине без акрина.
+        ReadMeMoreAgain=Параметры внутри раздела SellingWithoutAcrynChance отвечают за шанс появления в магазине соответствующего типа оборудования без акрина вообще.
+        200 ~{
+            Name=Боевой дроид I
+            BonusNum=LEOContentMod_BattleDroid_1
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        201 ~{
+            Name=Боевой дроид II
+            BonusNum=LEOContentMod_BattleDroid_2
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        202 ~{
+            Name=Боевой дроид III
+            BonusNum=LEOContentMod_BattleDroid_3
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        203 ~{
+            Name=Сидеральный дроид I
+            BonusNum=LEOContentMod_Droid_Sid1
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        204 ~{
+            Name=Сидеральный дроид II
+            BonusNum=LEOContentMod_Droid_Sid2
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        205 ~{
+            Name=Сидеральный дроид III
+            BonusNum=LEOContentMod_Droid_Sid3
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        206 ~{
+            Name=Кибернетический дроид I
+            BonusNum=LEOContentMod_Droid_Un1
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        207 ~{
+            Name=Кибернетический дроид II
+            BonusNum=LEOContentMod_Droid_Un2
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        208 ~{
+            Name=Кибернетический дроид III
+            BonusNum=LEOContentMod_Droid_Un3
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        209 ~{
+            Name=Боевой дроид "Зевс" I
+            BonusNum=LEOContentMod_Droid_War1
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        210 ~{
+            Name=Боевой дроид "Зевс" II
+            BonusNum=LEOContentMod_Droid_War2
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        211 ~{
+            Name=Боевой дроид "Зевс" II
+            BonusNum=LEOContentMod_Droid_War3
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        212 ~{
+            Name=Сборочный дроид I
+            BonusNum=LEOContentMod_SborDroid_1
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        213 ~{
+            Name=Сборочный дроид II
+            BonusNum=LEOContentMod_SborDroid_2
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        214 ~{
+            Name=Сборочный дроид III
+            BonusNum=LEOContentMod_SborDroid_3
+            ItemType=Droid
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        215 ~{
+            Name=Сидеральный генератор защиты I
+            BonusNum=LEOContentMod_DefGenerator_Sid1
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        216 ~{
+            Name=Сидеральный генератор защиты II
+            BonusNum=LEOContentMod_DefGenerator_Sid2
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        217 ~{
+            Name=Сидеральный генератор защиты III
+            BonusNum=LEOContentMod_DefGenerator_Sid3
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        218 ~{
+            Name=Дефлекторный генератор защиты I
+            BonusNum=LEOContentMod_DefGenerator_Un1
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        219 ~{
+            Name=Дефлекторный генератор защиты II
+            BonusNum=LEOContentMod_DefGenerator_Un2
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        220 ~{
+            Name=Дефлекторный генератор защиты III
+            BonusNum=LEOContentMod_DefGenerator_Un3
+            ItemType=DefGenerator
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        221 ~{
+            Name=Технотронный двигатель I
+            BonusNum=LEOContentMod_Engine_AAA1
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        222 ~{
+            Name=Технотронный двигатель II
+            BonusNum=LEOContentMod_Engine_AAA2
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        223 ~{
+            Name=Технотронный двигатель III
+            BonusNum=LEOContentMod_Engine_AAA3
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        224 ~{
+            Name=Сидеральный двигатель I
+            BonusNum=LEOContentMod_Engine_Sid1
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        225 ~{
+            Name=Сидеральный двигатель II
+            BonusNum=LEOContentMod_Engine_Sid2
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        226 ~{
+            Name=Сидеральный двигатель III
+            BonusNum=LEOContentMod_Engine_Sid3
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        227 ~{
+            Name=Нуль-пространственный двигатель I
+            BonusNum=LEOContentMod_Engine_Un1
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        228 ~{
+            Name=Нуль-пространственный двигатель II
+            BonusNum=LEOContentMod_Engine_Un2
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        229 ~{
+            Name=Нуль-пространственный двигатель III
+            BonusNum=LEOContentMod_Engine_Un3
+            ItemType=Engine
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        230 ~{
+            Name=Технотронный топливный бак I
+            BonusNum=LEOContentMod_FuelTank_AAA1
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        231 ~{
+            Name=Технотронный топливный бак II
+            BonusNum=LEOContentMod_FuelTank_AAA2
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        232 ~{
+            Name=Технотронный топливный бак III
+            BonusNum=LEOContentMod_FuelTank_AAA3
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        233 ~{
+            Name=Сидеральный топливный бак I
+            BonusNum=LEOContentMod_FuelTank_Sid1
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        234 ~{
+            Name=Сидеральный топливный бак II
+            BonusNum=LEOContentMod_FuelTank_Sid2
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        235 ~{
+            Name=Сидеральный топливный бак III
+            BonusNum=LEOContentMod_FuelTank_Sid3
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        236 ~{
+            Name=Модульный топливный бак I
+            BonusNum=LEOContentMod_FuelTank_Un1
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        237 ~{
+            Name=Модульный топливный бак II
+            BonusNum=LEOContentMod_FuelTank_Un2
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        238 ~{
+            Name=Модульный топливный бак III
+            BonusNum=LEOContentMod_FuelTank_Un3
+            ItemType=FuelTank
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        239 ~{
+            Name=Кибернетический захват I
+            BonusNum=LEOContentMod_KibHook_01
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        240 ~{
+            Name=Кибернетический захват II
+            BonusNum=LEOContentMod_KibHook_02
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        241 ~{
+            Name=Кибернетический захват III
+            BonusNum=LEOContentMod_KibHook_03
+            ItemType=Hook
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        242 ~{
+            Name=Сидеральный радар I
+            BonusNum=LEOContentMod_Radar_Sid1
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        243 ~{
+            Name=Сидеральный радар II
+            BonusNum=LEOContentMod_Radar_Sid2
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        244 ~{
+            Name=Сидеральный радар III
+            BonusNum=LEOContentMod_Radar_Sid3
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        245 ~{
+            Name=Ретранслирующий радар I
+            BonusNum=LEOContentMod_Radar_Un1
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        246 ~{
+            Name=Ретранслирующий радар II
+            BonusNum=LEOContentMod_Radar_Un2
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        247 ~{
+            Name=Ретранслирующий радар III
+            BonusNum=LEOContentMod_Radar_Un3
+            ItemType=Radar
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        248 ~{
+            Name=Сидеральный сканер I
+            BonusNum=LEOContentMod_Scaner_Sid1
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        249 ~{
+            Name=Сидеральный сканер II
+            BonusNum=LEOContentMod_Scaner_Sid2
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        250 ~{
+            Name=Сидеральный сканер III
+            BonusNum=LEOContentMod_Scaner_Sid3
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        251 ~{
+            Name=Информационный сканер I
+            BonusNum=LEOContentMod_Scaner_Un1
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        252 ~{
+            Name=Информационный сканер II
+            BonusNum=LEOContentMod_Scaner_Un2
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        253 ~{
+            Name=Информационный сканер III
+            BonusNum=LEOContentMod_Scaner_Un3
+            ItemType=Scaner
+            NoneRaceChance=5
+            MinSizeChance=50
+            ChangePriorityOn=0
+            Owner=Coalition,PirateClan
+        }
+        Count=253
+    }
+    Weapon ~{
+        ReadMe=Параметр Owner (возможно перечисление рас через запятую без пробелов, где значение Coalition трактуется как 5 основных игровых рас) желателен для заполнения только для кастомных пушек (по умолчанию без него будут выбраны все расы, кроме доминаторов и неизвестной), а для оригинальных орудий Owner по умолчанию будет взят из основной игры (3 только доминаторских, 3 только пиратских, остальные для всех). Значение Any в Owner всегда толкуется как все расы, кроме неизвестной. Параметр AverageSize (означает средний вес, где N/2 - минимальный вес, а N*2 - максимальный) сугубо опционален и при его отсутствии вес будет взят из основных параметров пушки. Параметр Owner для модификаций опционален, по умолчанию он будет взят из раздела акрина данной модификации, а при его там отсутствии, наследован от Owner основной пушки. Если в список добавляется кастомное орудие, то в параметре Origin должно быть указано точное название скрипта того мода, в котором объявляется данное орудие. Параметры CustomFactionChance и CustomFaction (возможно перечисление разных фракций через запятую без разрывов) опциональны и не обязательны к добавлению. Все остальные параметры (включая счётчики Count) строго обязательны к заполнению для любой пушки.
+        ReadMeMore=Получить неизвестную расу для любого оружия возможно лишь через шанс, указанный в параметре NoneRaceChance, а получить минимальный вес возможно как при рандомном броске, так и через шанс, указанный в параметре MinSizeChance. Модификаторы DomRaceCostCoef и NoneRaceCostCoef (могут принимать дробные значения) используются для увеличения стоимости предметов (прямо перед добавлением в магазин), имеющих доминаторскую и неизвестную расу соответственно. Опциональный параметр SubRace обозначает серию доминаторов (применяется только к доминаторскому оружию/модификации) и имеет 3 значения Blazer, Keller, Terron или Any (допустимо добавлять значения без пробелов через запятую).
+        ReadMeMoreAgain=Отдельные опциональные параметры Owner, CustomFactionChance и CustomFaction могут быть установлены для модификаций орудия. При этом в момент создания орудия в скрипте, значения расы будут взяты из модификации в том случае, если создаётся орудие с модификацией и из основного раздела орудия в том случае, если создаётся немодифицированная пушка. Таким образом, вы сможете создать, например, модификации орудия, принадлежащие какой-то конкретной расе/расам, как оригинальной, так и кастомной/кастомным, несмотря на то, что основное немодифицированное орудие будет доступно для производства всем остальным.
+        OriginalWeaponsRaceSet ~{
+            t_Weapon1=191
+            t_Weapon2=191
+            t_Weapon3=191
+            t_Weapon4=191
+            t_Weapon5=191
+            t_Weapon6=191
+            t_Weapon7=191
+            t_Weapon8=191
+            t_Weapon9=191
+            t_Weapon10=191
+            t_Weapon11=191
+            t_Weapon12=191
+            t_Weapon13=32
+            t_Weapon14=32
+            t_Weapon15=32
+            t_Weapon16=128
+            t_Weapon17=128
+            t_Weapon18=128
+        }
+        150 ~{
+            Name=Атомайзер
+            Origin=ExzoShocker
+            WeaponType=Atomizer
+            GalaxyTechLevel=4
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=LEOContentMod_Atomizer_Dish
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Джавитoр"
+                    BonusNum=LEOContentMod_Atomizer_Dja
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Экстремум"
+                    BonusNum=LEOContentMod_Atomizer_Ext
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name="Лифoкар"
+                    BonusNum=LEOContentMod_Atomizer_Lif
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=4
+            }
+        }
+        151 ~{
+            Name=Криогенный прожектор
+            Origin=ExzoShocker
+            WeaponType=CryoProjector
+            GalaxyTechLevel=7
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=LEOContentMod_CryoProjector_Dish
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Армoлок"
+                    BonusNum=LEOContentMod_CryoProjector_Arm
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Экстремум"
+                    BonusNum=LEOContentMod_CryoProjector_Ext
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name="Дифрoд"
+                    BonusNum=LEOContentMod_CryoProjector_Dif
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name="Магнетрон"
+                    BonusNum=LEOContentMod_CryoProjector_Mag
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=5
+            }
+        }
+        152 ~{
+            Name=Экзошокер
+            Origin=ExzoShocker
+            WeaponType=ExzoShocker
+            GalaxyTechLevel=5
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Эвольвента"
+                    BonusNum=LEOContentMod_ExzoShocker_Evo
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=LEOContentMod_ExzoShocker_Ext
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Лифoкар"
+                    BonusNum=LEOContentMod_ExzoShocker_Lif
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=3
+            }
+        }
+        153 ~{
+            Name=Термоядерный квазар
+            Origin=ExzoShocker
+            WeaponType=FusionQuasar
+            GalaxyTechLevel=3
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=LEOContentMod_FusionQuasar_Dish
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Джавитoр"
+                    BonusNum=LEOContentMod_FusionQuasar_Dja
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Экстремум"
+                    BonusNum=LEOContentMod_FusionQuasar_Ext
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name="Магнетрон"
+                    BonusNum=LEOContentMod_FusionQuasar_Mag
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=4
+            }
+        }
+        154 ~{
+            Name=Маулер
+            Origin=ExzoShocker
+            WeaponType=Mauler
+            GalaxyTechLevel=6
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=LEOContentMod_Mauler_Dish
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Джавитoр"
+                    BonusNum=LEOContentMod_Mauler_Dja
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Экстремум"
+                    BonusNum=LEOContentMod_Mauler_Ext
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name="Инвeйтер"
+                    BonusNum=LEOContentMod_Mauler_Inv
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name="Стилeрмейн"
+                    BonusNum=LEOContentMod_Mauler_Stil
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=5
+            }
+        }
+        155 ~{
+            Name=Мультиплет
+            Origin=ExzoShocker
+            WeaponType=Multiplet
+            GalaxyTechLevel=4
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Экстремум"
+                    BonusNum=LEOContentMod_Multiplet_Ext
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Лифoкар"
+                    BonusNum=LEOContentMod_Multiplet_Lif
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Сардариан-X1"
+                    BonusNum=LEOContentMod_Multiplet_Sar_X1
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name="Сардариан-X2"
+                    BonusNum=LEOContentMod_Multiplet_Sar_X2
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name="Сардариан-X3"
+                    BonusNum=LEOContentMod_Multiplet_Sar_X3
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=5
+            }
+        }
+        156 ~{
+            Name=МаБоКиТ-79
+            Origin=Mod_EvoMabokit
+            WeaponType=SS
+            GalaxyTechLevel=1
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дифрoд"
+                    BonusNum=LEOContentMod_SS_Dif
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Адрoптер"
+                    BonusNum=LEOContentMod_SS_Drop
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Экстремум"
+                    BonusNum=LEOContentMod_SS_Ext
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name="Инвeйтер"
+                    BonusNum=LEOContentMod_SS_Inv
+                    ChangePriorityOn=0
+                }
+                5 ~{
+                    Name="Лифoкар"
+                    BonusNum=LEOContentMod_SS_Lif
+                    ChangePriorityOn=0
+                }
+                6 ~{
+                    Name="Мислерант-X1"
+                    BonusNum=LEOContentMod_SS_Mis_X1
+                    ChangePriorityOn=0
+                }
+                7 ~{
+                    Name="Мислерант-X2"
+                    BonusNum=LEOContentMod_SS_Mis_X2
+                    ChangePriorityOn=0
+                }
+                8 ~{
+                    Name="Мислерант-X3"
+                    BonusNum=LEOContentMod_SS_Mis_X3
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=8
+            }
+        }
+        157 ~{
+            Name=Торпедомет
+            Origin=ExzoShocker
+            WeaponType=Torpedomet
+            GalaxyTechLevel=5
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Спид-дроп"
+                    BonusNum=LEOContentMod_TorpedometSpeedDrop
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=1
+            }
+        }
+        158 ~{
+            Name=Промышленный лазер
+            Origin=Original
+            WeaponType=t_Weapon1
+            GalaxyTechLevel=1
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Магнетрон"
+                    BonusNum=LEOContentMod_W01_Mag
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=3
+            }
+        }
+        159 ~{
+            Name=Осколочное орудие
+            Origin=Original
+            WeaponType=t_Weapon2
+            GalaxyTechLevel=1
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ExpTC_DyshotMissile
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=2
+            }
+        }
+        160 ~{
+            Name=Лезка
+            Origin=Original
+            WeaponType=t_Weapon3
+            GalaxyTechLevel=2
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Магнетрон"
+                    BonusNum=LEOContentMod_W03_Mag
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=3
+            }
+        }
+        161 ~{
+            Name=Ракетомёт
+            Origin=Original
+            WeaponType=t_Weapon4
+            GalaxyTechLevel=4
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Мислерант-X1"
+                    BonusNum=LEOContentMod_W04_Mis_X1
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Мислерант-X2"
+                    BonusNum=LEOContentMod_W04_Mis_X2
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Мислерант-X3"
+                    BonusNum=LEOContentMod_W04_Mis_X3
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=4
+            }
+        }
+        162 ~{
+            Name=Третон
+            Origin=Original
+            WeaponType=t_Weapon5
+            GalaxyTechLevel=4
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Магнетрон"
+                    BonusNum=LEOContentMod_W05_Mag
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=3
+            }
+        }
+        163 ~{
+            Name=Волновой фазер
+            Origin=Original
+            WeaponType=t_Weapon6
+            GalaxyTechLevel=4
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Магнетрон"
+                    BonusNum=LEOContentMod_W06_Mag
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Танатос"
+                    BonusNum=LEOContentMod_W06_Tan
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=4
+            }
+        }
+        164 ~{
+            Name=Потоковый бластер
+            Origin=Original
+            WeaponType=t_Weapon7
+            GalaxyTechLevel=5
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ExpTC_DyshotMissile
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=2
+            }
+        }
+        165 ~{
+            Name=Электронный резак
+            Origin=Original
+            WeaponType=t_Weapon8
+            GalaxyTechLevel=5
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Магнетрон"
+                    BonusNum=LEOContentMod_W08_Mag
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Танатос"
+                    BonusNum=LEOContentMod_W08_Tan
+                    ChangePriorityOn=0
+                }
+                4 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=4
+            }
+        }
+        166 ~{
+            Name=Мультирезонатор
+            Origin=Original
+            WeaponType=t_Weapon9
+            GalaxyTechLevel=6
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ExpTC_DyshotMissile
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=2
+            }
+        }
+        167 ~{
+            Name=Атомный визион
+            Origin=Original
+            WeaponType=t_Weapon10
+            GalaxyTechLevel=7
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Магнетрон"
+                    BonusNum=LEOContentMod_W10_Mag
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=3
+            }
+        }
+        168 ~{
+            Name=Дезинтегратор
+            Origin=Original
+            WeaponType=t_Weapon11
+            GalaxyTechLevel=7
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Магнетрон"
+                    BonusNum=LEOContentMod_W11_Mag
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=3
+            }
+        }
+        169 ~{
+            Name=Турбогравир
+            Origin=Original
+            WeaponType=t_Weapon12
+            GalaxyTechLevel=8
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Магнетрон"
+                    BonusNum=LEOContentMod_W12_Mag
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=3
+            }
+        }
+        170 ~{
+            Name=Эсодафер
+            Origin=Original
+            WeaponType=t_Weapon16
+            GalaxyTechLevel=4
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ExpTC_DyshotMissile
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=2
+            }
+        }
+        171 ~{
+            Name=Кафаситор
+            Origin=Original
+            WeaponType=t_Weapon17
+            GalaxyTechLevel=4
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ExpTC_DyshotEnergy
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Магнетрон"
+                    BonusNum=LEOContentMod_W17_Mag
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=3
+            }
+        }
+        172 ~{
+            Name=Лирекрон
+            Origin=Original
+            WeaponType=t_Weapon18
+            GalaxyTechLevel=4
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=LEOContentMod_W18_Mis
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=2
+            }
+        }
+        173 ~{
+            Name=Аннигилятор поля
+            Origin=sub_gun
+            WeaponType=gaal_vision
+            GalaxyTechLevel=8
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ShuEmitter_DyshotGaalVision
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Магнетрон"
+                    BonusNum=LEOContentMod_gaal_vision_Mag
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=2
+            }
+        }
+        174 ~{
+            Name=Разрывное орудие
+            Origin=sub_gun
+            WeaponType=frag_gun
+            GalaxyTechLevel=4
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ShuEmitter_DyshotFragGun
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=2
+            }
+        }
+        176 ~{
+            Name=Гравитонный лучемет
+            Origin=sub_gun
+            WeaponType=grav_beam
+            GalaxyTechLevel=4
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ShuEmitter_DyshotGravBeam
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Магнетрон"
+                    BonusNum=LEOContentMod_grav_beam_Mag
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=2
+            }
+        }
+        176 ~{
+            Name=Боевой лазер ТБ-47
+            Origin=sub_gun
+            WeaponType=maloc_laser
+            GalaxyTechLevel=3
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ShuEmitter_DyshotMalocLaser
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=2
+            }
+        }
+        177 ~{
+            Name=Боевой лазер ТБ-42
+            Origin=sub_gun
+            WeaponType=maloc_laser2
+            GalaxyTechLevel=3
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ShuEmitter_DyshotMalocLaser
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=2
+            }
+        }
+        178 ~{
+            Name=Фотонная пушка М4
+            Origin=sub_gun
+            WeaponType=photon_gun
+            GalaxyTechLevel=1
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ShuEmitter_DyshotPhotonGun
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=2
+            }
+        }
+        179 ~{
+            Name=Фотонная пушка М3
+            Origin=sub_gun
+            WeaponType=photon_gun2
+            GalaxyTechLevel=1
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ShuEmitter_DyshotPhotonGun
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=2
+            }
+        }
+        180 ~{
+            Name=Фотонная пушка М2
+            Origin=sub_gun
+            WeaponType=photon_gun3
+            GalaxyTechLevel=1
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ShuEmitter_DyshotPhotonGun
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=2
+            }
+        }
+        181 ~{
+            Name=Пульсган R21
+            Origin=sub_gun
+            WeaponType=pulse_gun
+            GalaxyTechLevel=7
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ShuEmitter_DyshotPulseGun
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=2
+            }
+        }
+        182 ~{
+            Name=Пульсган R20
+            Origin=sub_gun
+            WeaponType=pulse_gun2
+            GalaxyTechLevel=7
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ShuEmitter_DyshotPulseGun
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=2
+            }
+        }
+        183 ~{
+            Name=Ретрактор
+            Origin=sub_gun
+            WeaponType=slow_gun
+            GalaxyTechLevel=5
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ShuEmitter_DyshotSlowGun
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Магнетрон"
+                    BonusNum=LEOContentMod_slow_gun_Mag
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=3
+            }
+        }
+        184 ~{
+            Name=Прожектор вихря
+            Origin=sub_gun
+            WeaponType=sphere_gun
+            GalaxyTechLevel=8
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ShuEmitter_DyshotSphereGun
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=2
+            }
+        }
+        185 ~{
+            Name=Сплэшевый лазер
+            Origin=sub_gun
+            WeaponType=splash_faser
+            GalaxyTechLevel=3
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Дишот"
+                    BonusNum=ShuEmitter_DyshotSplashFaser
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Магнетрон"
+                    BonusNum=LEOContentMod_splash_faser_Mag
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=3
+            }
+        }
+        186 ~{
+            Name=Бластер Е-11
+            Origin=sub_gun
+            WeaponType=laser_gun
+            GalaxyTechLevel=6
+            Owner=Coalition,PirateClan
+            NoneRaceChance=5
+            MinSizeChance=50
+            SellingWithoutModsChance=50
+            Modifications ~{
+                1 ~{
+                    Name="Тришот"
+                    BonusNum=ShuEmitter_TryshotLaserGun
+                    ChangePriorityOn=0
+                }
+                2 ~{
+                    Name="Экстремум"
+                    BonusNum=ShuMM_Extrimium
+                    ChangePriorityOn=0
+                }
+                3 ~{
+                    Name="Магнетрон"
+                    BonusNum=LEOContentMod_laser_gun_Mag
+                    ChangePriorityOn=0
+                }
+                RestrictionNote=Не более 15 модификаций!
+                Count=3
+            }
+        }
+        Count=186
+    }
+}

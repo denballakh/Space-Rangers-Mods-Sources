@@ -1,0 +1,2776 @@
+HullType ^{
+    MolderHulls_Abaddon ^{
+        Artefact=0
+        Cost=86
+        Def=1
+        Droid=0
+        Forsage=-1
+        Fragility=109
+        Hook=1
+        Name=Абаддон
+        Probability=1
+        Race=Maloc
+        Radar=1
+        Scaner=1
+        ShipType=Transport,Liner,Diplomat,Ranger,Pirate,Warrior
+        Size=112
+        Text=Качественно новая серия базовых малокских корпусов третьего поколения.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_AgentBond ^{
+        Artefact=4
+        Cost=320
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=80
+        Hook=1
+        Name=Агент Бонд
+        Probability=11
+        Race=People
+        Radar=1
+        Scaner=1
+        ShipType=Ranger
+        Size=80
+        Text=Мечта сверхсекретного агента или ответственного рейнджера. Размер корабля позволяет успеть вылететь из любого вражеского ангара за секунду до его закрытия.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Amalteus ^{
+        Artefact=0
+        Cost=73
+        Def=1
+        Droid=0
+        Forsage=-1
+        Fragility=82
+        Hook=1
+        Name=Амальтеус
+        Probability=8
+        Race=Fei
+        Radar=1
+        Scaner=1
+        ShipType=Ranger
+        Size=91
+        Text=Необычайно красивый и качественный корпус из экологически чистых материалов. Инновационные технологии обеспечивают низкую себестоимость всех узлов и систем.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Amfibial ^{
+        Artefact=2
+        Cost=325
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=75
+        Hook=1
+        Name=Амфибиал
+        Probability=8
+        Race=Peleng,People
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=85
+        Text=Уникальная разработка пеленгов и людей. Данная боевая машина способна вести бой как в глубинах космоса, так и в жидких средах.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Argotar ^{
+        Artefact=1
+        Cost=90
+        Def=-1
+        Droid=1
+        Forsage=1
+        Fragility=115
+        Hook=1
+        Name=Арготар
+        Probability=2
+        Race=Maloc
+        Radar=1
+        Scaner=1
+        ShipType=Ranger,Pirate
+        Size=95
+        Text=Классический выбор начинающего воителя или пирата. Не рекомендуется для продолжительных боев.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Arkana ^{
+        Artefact=3
+        Cost=35
+        Def=-1
+        Droid=-1
+        Forsage=1
+        Fragility=100
+        Hook=-1
+        Name=Аркана
+        Probability=10
+        Race=Maloc,Peleng,People,Fei,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=100
+        Text=Дешевый одноразовый корпус для внезапных рейдов. Максимальное вооружение и минимальный срок жизни.
+        Weapon=4
+        Year=0
+    }
+    MolderHulls_AromatPrevoshodstva ^{
+        Artefact=0
+        Cost=315
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=106
+        Hook=1
+        Name=Аромат превосходства
+        Probability=9
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Ranger,Warrior
+        Size=175
+        Text=Надежный вариант для матерого воина. Все системы управления адаптированы только под четыре конечности.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_AsketPlus ^{
+        Artefact=-1
+        Cost=45
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=117
+        Hook=1
+        Name=Аскет-плюс
+        Probability=10
+        Race=Maloc,Fei,Gaal
+        Radar=1
+        Scaner=-1
+        ShipType=Diplomat,Ranger
+        Size=85
+        Text=Недорогой корпус, изготовленный из вторичных материалов. Популярен среди неприхотливых личностей и бедных рейнджеров.
+        Weapon=-2
+        Year=0
+    }
+    MolderHulls_Bespalin ^{
+        Artefact=-1
+        Cost=70
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=104
+        Hook=1
+        Name=Беспалин
+        Probability=3
+        Race=Peleng,People
+        Radar=1
+        Scaner=1
+        ShipType=Ranger,Pirate
+        Size=85
+        Text=Неприметное судно без опознавательных знаков и сигнальных огней. Используется как для темных дел, так и для выноса космического мусора.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Binokular ^{
+        Artefact=1
+        Cost=165
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=72
+        Hook=1
+        Name=Бинокуляр
+        Probability=6
+        Race=Gaal
+        Radar=-1
+        Scaner=1
+        ShipType=Diplomat,Ranger
+        Size=90
+        Text=Доступная среда для телепатически одаренных гаальцев воплощена в этом замечательном корабле. Монтаж радара невозможен, что причиняет некоторые неудобства.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_BoevoeBezumie ^{
+        Artefact=-4
+        Cost=165
+        Def=-1
+        Droid=-1
+        Forsage=1
+        Fragility=67
+        Hook=-1
+        Name=Боевое безумие
+        Probability=5
+        Race=Maloc,Peleng,People
+        Radar=1
+        Scaner=-1
+        ShipType=Warrior
+        Size=160
+        Text=Редкий и странный корабль для полного упоения битвой. Все узлы корабля работают таким образом, чтобы обеспечить максимальный атакующий потенциал.
+        Weapon=4
+        Year=0
+    }
+    MolderHulls_BoevoiHvacher ^{
+        Artefact=-1
+        Cost=370
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=92
+        Hook=1
+        Name=Боевой хвачер
+        Probability=6
+        Race=Maloc,Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Ranger,Warrior
+        Size=180
+        Text=Прочный и быстрый корабль общего назначения. Под общим, разумеется, понимается исключительно военное.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_BolotnyiGryazun ^{
+        Artefact=3
+        Cost=165
+        Def=1
+        Droid=-1
+        Forsage=-1
+        Fragility=90
+        Hook=1
+        Name=Болотный грязун
+        Probability=7
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Ranger,Pirate,Warrior
+        Size=130
+        Text=Агрессивная серия корпусов для вспыльчивых пеленгов. Отсутствие форсажа и дроида не мешает наслаждаться огнем из всех орудий.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Broneshai ^{
+        Artefact=2
+        Cost=335
+        Def=-1
+        Droid=1
+        Forsage=1
+        Fragility=39
+        Hook=1
+        Name=Бронешай
+        Probability=40
+        Race=Peleng
+        Radar=1
+        Scaner=-1
+        ShipType=Warrior
+        Size=115
+        Text=Экспериментальный проект пеленгов по созданию живой брони. Обладает великолепной сопротивляемостью к урону, но конфликтует с генератором защитного поля и сканером.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Bychelogr ^{
+        Artefact=-1
+        Cost=80
+        Def=-1
+        Droid=1
+        Forsage=-1
+        Fragility=130
+        Hook=-1
+        Name=Бычелогр
+        Probability=5
+        Race=Maloc
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=200
+        Text=Дешевый корпус для немотивированно агрессивых личностей. Прилагается комплект книг по психологии для растопки двигателя.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Chegremong ^{
+        Artefact=1
+        Cost=133
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=102
+        Hook=0
+        Name=Чегремонг
+        Probability=1
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Transport,Liner,Diplomat,Ranger,Pirate,Warrior
+        Size=120
+        Text=Последнее слово в совершенстве пеленгской и заимствованой мысли. Среди обычных кораблей, разумеется.
+        Weapon=1
+        Year=15
+    }
+    MolderHulls_Chempion ^{
+        Artefact=4
+        Cost=800
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=53
+        Hook=1
+        Name=Чемпион
+        Probability=40
+        Race=Maloc,Peleng,People,Fei,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=150
+        Text=Элитный многоцелевой корабль, созданный пиратскими инженерами для победителей межгалактических кулачных боев. Практически не встречается в продаже.
+        Weapon=4
+        Year=0
+    }
+    MolderHulls_ChestISila ^{
+        Artefact=-2
+        Cost=310
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=100
+        Hook=1
+        Name=Честь и сила
+        Probability=5
+        Race=Maloc,People
+        Radar=1
+        Scaner=1
+        ShipType=Ranger,Warrior
+        Size=200
+        Text=Внушительный корпус для новых героев и любителей подвигов во имя условных ценностей. Артефакты частично демонтированы за ненадобностью.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Dantargo ^{
+        Artefact=2
+        Cost=450
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=95
+        Hook=1
+        Name=Дантагро
+        Probability=6
+        Race=Maloc
+        Radar=1
+        Scaner=1
+        ShipType=Ranger
+        Size=140
+        Text=Сверхсекретный корпус, запущенный в серийное производство вскоре после битвы при Гралгаре. Гарантирует превосходство над большинством противников.
+        Weapon=4
+        Year=0
+    }
+    MolderHulls_Desantnik ^{
+        Artefact=-2
+        Cost=220
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=120
+        Hook=-1
+        Name=Десантник
+        Probability=5
+        Race=Maloc,People
+        Radar=1
+        Scaner=-1
+        ShipType=Warrior
+        Size=195
+        Text=Тяжелый десантный бот, предназначенный для высадки на планеты, захваченные доминаторами. Ограниченный боевой функционал компенсируется огромной вместимостью и инерцией массы.
+        Weapon=-1
+        Year=0
+    }
+    MolderHulls_Diletal ^{
+        Artefact=0
+        Cost=200
+        Def=1
+        Droid=0
+        Forsage=-1
+        Fragility=140
+        Hook=0
+        Name=Дилетал
+        Probability=5
+        Race=Peleng,People
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=200
+        Text=Громоздкое и неповоротливое судно с увеличенным вдвое трюмом. Из-за грубо сработанной деформации прочность швов значительно упала.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Dissonans ^{
+        Artefact=2
+        Cost=213
+        Def=-1
+        Droid=1
+        Forsage=0
+        Fragility=137
+        Hook=1
+        Name=Диссонанс
+        Probability=8
+        Race=Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Ranger,Warrior
+        Size=142
+        Text=Разбалансированный корпус для тех, чья душа мечется и ищет покоя. Вероятно, что дополнительные орудия значительно помогут в этом начинании.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Djaiosheish ^{
+        Artefact=1
+        Cost=120
+        Def=0
+        Droid=0
+        Forsage=1
+        Fragility=105
+        Hook=0
+        Name=Джаошейш
+        Probability=1
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Transport,Liner,Diplomat,Ranger,Pirate,Warrior
+        Size=117
+        Text=Пеленгское судно предпоследнего поколения, оснащенное всем необходимым оборудованием.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Djakuna ^{
+        Artefact=1
+        Cost=200
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=115
+        Hook=1
+        Name=Джакуна
+        Probability=8
+        Race=People
+        Radar=1
+        Scaner=1
+        ShipType=Ranger
+        Size=165
+        Text=Комфортабельная и престижная серия человеческих корпусов, созданная по чертежам известных гедонистов. Режим форсажа не поддерживается для максимального наслаждения полетом.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Dzuhallagat ^{
+        Artefact=4
+        Cost=275
+        Def=1
+        Droid=-1
+        Forsage=1
+        Fragility=62
+        Hook=1
+        Name=Дзухаллагат
+        Probability=12
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Diplomat,Ranger,Pirate
+        Size=90
+        Text=Неприметный корабль-шпион. Оснащен мощным маскирующим полем и ослабленным вооружением во избежание лишних подозрений.
+        Weapon=-1
+        Year=0
+    }
+    MolderHulls_Ekscesson ^{
+        Artefact=1
+        Cost=500
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=70
+        Hook=1
+        Name=Эксцессон
+        Probability=9
+        Race=Maloc,Peleng,People,Fei,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=110
+        Text=Эксклюзивная серия корпусов для всех рас, созданная по заказу антипиратского отдела. Изящество форм и современные технологии в прочной оболочке из фуллерита.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Eliital ^{
+        Artefact=-1
+        Cost=700
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=60
+        Hook=1
+        Name=Элиитал
+        Probability=11
+        Race=Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=220
+        Text=Сверхпрочное и дорогое судно для самых богатых и вычурных ренегатов. Многочисленные палубы украшены пальмами, платиной и алмазными попугаями, и даже не спрашивайте, зачем.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_ElitaAihary ^{
+        Artefact=2
+        Cost=610
+        Def=1
+        Droid=-1
+        Forsage=1
+        Fragility=100
+        Hook=1
+        Name=Элита Айхарры
+        Probability=6
+        Race=Maloc
+        Radar=1
+        Scaner=1
+        ShipType=Ranger,Warrior
+        Size=280
+        Text=Тяжелый корпус, созданный для выдающихся воинов. Размеры трюма позволяют складировать огромное количество боевых трофеев, но для дроида места так и не нашлось.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Energoproton ^{
+        Artefact=0
+        Cost=500
+        Def=0
+        Droid=0
+        Forsage=0
+        FragilityEnergy=10
+        Hook=0
+        Name=Энергопротон
+        Probability=10
+        Race=Fei,Gaal,Maloc,Peleng,People
+        Radar=0
+        Scaner=0
+        ShipType=Warrior
+        Size=120
+        Text=Экспериментальная разработка ученых всех рас. В этом корпусе оборудована система подавления любых энергетических импульсов внешнего воздействия, путем вживления в каждый отсек микро-генераторов защиты.
+        Weapon=0
+        Year=20
+    }
+    MolderHulls_Enfiloitra ^{
+        Artefact=0
+        Cost=144
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=90
+        Hook=0
+        Name=Энфилойра
+        Probability=1
+        Race=Fei
+        Radar=1
+        Scaner=1
+        ShipType=Transport,Liner,Diplomat,Ranger,Pirate,Warrior
+        Size=85
+        Text=Третье поколение распространенных фэянских корпусов, со всеми доступными базовыми функциями.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Esminec ^{
+        Artefact=1
+        Cost=190
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=90
+        Hook=-1
+        Name=Эсминец
+        Probability=8
+        Race=People
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=130
+        Text=Многоцелевой звездолет военного сопровождения. Быстроходный и надежный эскорт в большинстве критических ситуаций.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Etalon ^{
+        Artefact=0
+        Cost=140
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=95
+        Hook=1
+        Name=Эталон
+        Probability=1
+        Race=People
+        Radar=1
+        Scaner=1
+        ShipType=Transport,Liner,Diplomat,Ranger,Pirate,Warrior
+        Size=110
+        Text=Окончательный вариант типового корабля людей. Улучшено вооружение и доступно все стандартное оборудование.
+        Weapon=1
+        Year=15
+    }
+    MolderHulls_FantomAs ^{
+        Artefact=0
+        Cost=185
+        Def=1
+        Droid=-1
+        Forsage=1
+        Fragility=46
+        Hook=-1
+        Name=Фантом-ас
+        Probability=10
+        Race=Fei
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=85
+        Text=Необычно прочный звездолет для участия в рискованных и обязательно не слишком легальных соревнованиях. Дроид и захват убраны за ненадобностью.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Felintangra ^{
+        Artefact=1
+        Cost=250
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=88
+        Hook=1
+        Name=Фелитангра
+        Probability=5
+        Race=Maloc,Fei
+        Radar=1
+        Scaner=-1
+        ShipType=Pirate
+        Size=120
+        Text=Изящество фэянской мысли, умноженное на малокскую силу. По неизвестным причинам побочным результатом является полная блокировка сканера.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Fiziralli ^{
+        Artefact=2
+        Cost=180
+        Def=0
+        Droid=0
+        Forsage=1
+        Fragility=81
+        Hook=0
+        Name=Физиралли
+        Probability=4
+        Race=Fei
+        Radar=1
+        Scaner=0
+        ShipType=Transport,Liner,Warrior
+        Size=90
+        Text=Изящный фэянский корабль с форсированными движками, приспособленный для торговых или военных нужд. Легко уходит от пиратов или дает им полноценный отпор.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Flagmander ^{
+        Artefact=3
+        Cost=250
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=30
+        Hook=1
+        Name=Флагмандер
+        Probability=12
+        Race=Maloc,Peleng,People,Fei,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=75
+        Text=Практически неуязвимый корпус, спроектированный специально для высшего командного состава Коалиции. Обладает минимальной огневой мощью и идеальными защитными системами.
+        Weapon=-4
+        Year=0
+    }
+    MolderHulls_Flangovat ^{
+        Artefact=1
+        Cost=110
+        Def=-1
+        Droid=1
+        Forsage=1
+        Fragility=41
+        Hook=0
+        Name=Фланговат
+        Probability=5
+        Race=People
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=30
+        Text=Скоростной человеческий истребитель, идеально подходящий для точечных ударов. Отлично уклоняется от большинства атак, но при этом лишен защитного поля.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Forzac ^{
+        Artefact=-1
+        Cost=160
+        Def=-1
+        Droid=1
+        Forsage=1
+        Fragility=55
+        Hook=1
+        Name=Форзац
+        Probability=7
+        Race=Peleng,People,Fei,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=65
+        Text=Дерзкая разработка пиратских ученых по интегрированию в свои корабли лучших защитных систем, позаимствованных у коалиции. Слоты под артефакты редуцированы.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Fregat ^{
+        Artefact=3
+        Cost=290
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=68
+        Hook=-1
+        Name=Фрегат
+        Probability=7
+        Race=People
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=145
+        Text=Неизбежное развитие военной индустрии приводит к подобным преспективным разработкам. На борту этого корабля можно разместить любые современные способы уничтожения ближнего своего.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Gailieo ^{
+        Artefact=-1
+        Cost=147
+        Def=1
+        Droid=1
+        Forsage=0
+        Fragility=85
+        Hook=0
+        Name=Гайлиэо
+        Probability=1
+        Race=Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Transport,Liner,Diplomat,Ranger,Pirate,Warrior
+        Size=80
+        Text=Модернизированная версия стандартного гаальского корабля.
+        Weapon=-1
+        Year=15
+    }
+    MolderHulls_Galamol ^{
+        Artefact=1
+        Cost=155
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=130
+        Hook=1
+        Name=Галамол
+        Probability=5
+        Race=Maloc,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=190
+        Text=Одна из многочисленных попыток гаальских ренегалов приучить малоков к регулярному использованию дроида. Попытка в целом удачная, но весьма топорная.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Galeon ^{
+        Artefact=2
+        Cost=240
+        Def=1
+        Droid=-1
+        Forsage=1
+        Fragility=75
+        Hook=1
+        Name=Галеон
+        Probability=6
+        Race=People
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=135
+        Text=Подобные корабли находятся в подчинении у самых богатых планет людей, ведь их техническое оснащение практически совершенно. Даже отсутствие дроида мало сказывается на огромной огневой мощи этой серии.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_GarmoniyaRazuma ^{
+        Artefact=1
+        Cost=90
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=115
+        Hook=-1
+        Name=Гармония разума
+        Probability=2
+        Race=Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=110
+        Text=Название серии говорит само за себя. Лучший выбор для хладнокровных и нечестолюбивых военных пилотов.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_GastRolli ^{
+        Artefact=2
+        Cost=110
+        Def=1
+        Droid=-1
+        Forsage=1
+        Fragility=96
+        Hook=0
+        Name=Гаст-ролли
+        Probability=4
+        Race=Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Diplomat,Pirate
+        Size=90
+        Text=Прогулочная яхта для суровых фанатов гаальского роока. Дроид, как всегда, в ремонте из-за последнего выступления.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Geotryaska ^{
+        Artefact=3
+        Cost=145
+        Def=1
+        Droid=-1
+        Forsage=0
+        Fragility=96
+        Hook=1
+        Name=Геотряска
+        Probability=3
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=100
+        Text=Патрульный фрегат пограничных спецслужб. Обеспечен слотами под большую часть нестандартного оборудования.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Giperbola ^{
+        Artefact=0
+        Cost=275
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=150
+        Hook=1
+        Name=Гипербола
+        Probability=7
+        Race=People
+        Radar=1
+        Scaner=1
+        ShipType=Transport,Liner,Diplomat,Ranger,Pirate,Warrior
+        Size=225
+        Text=Заслоняющий соседние звезды корпус, популярный среди страдающих гигантизмом людей.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Graukaan ^{
+        Artefact=3
+        Cost=265
+        Def=1
+        Droid=0
+        Forsage=1
+        Fragility=45
+        Hook=1
+        Name=Граукаан
+        Probability=7
+        Race=Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Transport,Ranger
+        Size=105
+        Text=Прочный транспортировщик грауков для работ в дальнем космосе. Основную часть корабля занимают бесчисленные системы жизнеобеспечения.
+        Weapon=-1
+        Year=0
+    }
+    MolderHulls_Graviolt ^{
+        Artefact=0
+        Cost=200
+        Def=1
+        Droid=-1
+        Forsage=1
+        Fragility=45
+        Hook=1
+        Name=Гравилот
+        Probability=10
+        Race=Gaal
+        Radar=1
+        Scaner=-1
+        ShipType=Warrior
+        Size=80
+        Text=Военный корабль, обшивка которого обработана антигравирными сплавами. Действие последних значительно снижает проникающую способность любого негативного воздействия.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Gromdai ^{
+        Artefact=0
+        Cost=140
+        Def=1
+        Droid=-1
+        Forsage=1
+        Fragility=90
+        Hook=1
+        Name=Громдай
+        Probability=2
+        Race=Maloc
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=110
+        Text=Улучшенная базовая версия пиратского корпуса для малоков. Повышенная безрассудность владельца гарантируется.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Grubazavr ^{
+        Artefact=-1
+        Cost=200
+        Def=1
+        Droid=-1
+        Forsage=-1
+        Fragility=55
+        Hook=1
+        Name=Грубазавр
+        Probability=3
+        Race=Maloc,Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Ranger,Pirate
+        Size=165
+        Text=Вместительное судно для борьбы с доминаторами, а также для устрашения и ограбления ближнего своего. Часть оборудования отсутствует, но размеры и прочность поражают воображение.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Gruzohvat ^{
+        Artefact=0
+        Cost=150
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=115
+        Hook=1
+        Name=Грузохват
+        Probability=7
+        Race=Peleng,Gaal
+        Radar=1
+        Scaner=-1
+        ShipType=Transport,Ranger,Pirate
+        Size=190
+        Text=Просторный грузовой корабль, изначально предназначенный для сбора обломков после продолжительных боев. Адаптирован для пиратских и рейнджерскх нужд.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_GubitelnayaHvatka ^{
+        Artefact=1
+        Cost=400
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=62
+        Hook=-1
+        Name=Губительная хватка
+        Probability=8
+        Race=Maloc,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Ranger,Warrior
+        Size=100
+        Text=Один из немногих совместных проектов малоков и гаальцев. Совершенство в области технологий абсолютной защиты для тех, кто не нуждается в сборе космического хлама.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_GvardeecRvuzona ^{
+        Artefact=0
+        Cost=180
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=96
+        Hook=1
+        Name=Гвардеец Рвузона
+        Probability=3
+        Race=Maloc
+        Radar=1
+        Scaner=-1
+        ShipType=Ranger,Warrior
+        Size=115
+        Text=Идеальный выбор для бравого воина, недолюбливающего сканеры. Корпус покрыт настоящими и декоративными шрамами от бесчисленных сражений.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Hainsaop ^{
+        Artefact=4
+        Cost=350
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=86
+        Hook=1
+        Name=Хайнсаоп
+        Probability=12
+        Race=Gaal
+        Radar=-1
+        Scaner=0
+        ShipType=Ranger
+        Size=125
+        Text=Наглядная иллюстрация современного взгляда гаальцев на устаревшие навигационные системы. Несмотря на все попытки, эволюция телепатии проходит далеко не так быстро, как они надеялись.
+        Weapon=4
+        Year=0
+    }
+    MolderHulls_Hranitel ^{
+        Artefact=-3
+        Cost=280
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=69
+        Hook=-1
+        Name=Хранитель
+        Probability=12
+        Race=Peleng,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=160
+        Text=Уникальный военный корпус, собранный по чертежам неизвестной расы. Согласно легендам, именно такие корабли восстановят равновесие во всей галактике.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_HvatkaMertveca ^{
+        Artefact=-4
+        Cost=360
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=107
+        Hook=1
+        Name=Хватка мертвеца
+        Probability=7
+        Race=Maloc,People,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=160
+        Text=Пиратский корабль для маньяков с необычным вкусом. Артефакты отсутствуют, ведь одно название корпуса уже напоминает о неотвратимости смерти.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Icukini ^{
+        Artefact=1
+        Cost=140
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=115
+        Hook=1
+        Name=Йцукини
+        Probability=5
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=155
+        Text=Просторное судно для лякушей, промышляющих контрабандой человеческих грузов.
+        Weapon=-1
+        Year=0
+    }
+    MolderHulls_IdealynyiBalans ^{
+        Artefact=0
+        Cost=195
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=82
+        Hook=1
+        Name=Идеальный баланс
+        Probability=3
+        Race=Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Ranger
+        Size=95
+        Text=Не слишком мощный, не слишком быстрый и не слишком защищенный корабль, символизирующий равновесие сил.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Inkassator ^{
+        Artefact=-3
+        Cost=133
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=72
+        Hook=1
+        Name=Инкассатор
+        Probability=4
+        Race=People
+        Radar=1
+        Scaner=1
+        ShipType=Transport,Warrior
+        Size=92
+        Text=Тяжелобронированный корабль для перевозки особо ценных грузов. Весь функционал направлен на максимальную защиту содержимого трюмов.
+        Weapon=-1
+        Year=0
+    }
+    MolderHulls_Intellium ^{
+        Artefact=4
+        Cost=860
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=85
+        Hook=1
+        Name=Интеллиум
+        Probability=15
+        Race=Fei
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=120
+        Text=Необычайно редкий и потому крайне дорогой военный крейсер. Все узлы оборудования функционируют с максимальной эффективностью.
+        Weapon=4
+        Year=0
+    }
+    MolderHulls_Invalners ^{
+        Artefact=1
+        Cost=660
+        Def=-1
+        Droid=1
+        Forsage=-1
+        Fragility=22
+        Hook=1
+        Name=Инвалнерс
+        Probability=40
+        Race=People,Fei,Gaal
+        Radar=-1
+        Scaner=-1
+        ShipType=Ranger,Warrior
+        Size=100
+        Text=Технологический прорыв в области пропускающих способностей защитных полей. Корпус одобрен всеми расами коалиции, за исключением малоков и пеленгов, которые посчитали подобную непробиваемость трусостью.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_IzumrudnyiKamysh ^{
+        Artefact=1
+        Cost=60
+        Def=1
+        Droid=1
+        Forsage=0
+        Fragility=135
+        Hook=1
+        Name=Изумрудный камыш
+        Probability=3
+        Race=Peleng
+        Radar=1
+        Scaner=-1
+        ShipType=Diplomat,Ranger,Pirate
+        Size=140
+        Text=Представитель класса кораблей для пеленгов с низким уровнем достатка. Показная технологичность опровергается в первом же настоящем бою.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Jabechanz ^{
+        Artefact=0
+        Cost=250
+        Def=1
+        Droid=1
+        Forsage=0
+        Fragility=140
+        Hook=0
+        Name=Жабечанз
+        Probability=7
+        Race=Peleng
+        Radar=1
+        Scaner=0
+        ShipType=Transport,Liner,Ranger
+        Size=250
+        Text=Тяжелое и неповоротливое судно для перевоза важных персон или грузов. Для комфорта и сохранности содержимого установлены дополнительные системы защиты.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_JajdaKrovi ^{
+        Artefact=1
+        Cost=125
+        Def=-1
+        Droid=1
+        Forsage=0
+        Fragility=110
+        Hook=1
+        Name=Жажда крови
+        Probability=8
+        Race=People
+        Radar=1
+        Scaner=0
+        ShipType=Pirate
+        Size=105
+        Text=Людской пиратский корабль с агрессивным профилем. Основной прогресс по сравнению со стандартной серией - добавленный слот орудия и артефакта.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Kapibara ^{
+        Artefact=1
+        Cost=110
+        Def=1
+        Droid=1
+        Forsage=0
+        Fragility=110
+        Hook=1
+        Name=Капибара
+        Probability=2
+        Race=Peleng
+        Radar=1
+        Scaner=-1
+        ShipType=Warrior
+        Size=130
+        Text=Проверенный временем военный корпус. Предусмотрено место для дроида за счет демонтажа слота сканера.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Karbonagg ^{
+        Artefact=2
+        Cost=285
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=85
+        Hook=-1
+        Name=Карбонагг
+        Probability=8
+        Race=Peleng,Fei
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=100
+        Text=Боевое судно последователей древней религии несховательства. До сих пор в галактике встречаются воинственные фэяне и пеленги, отвергающие саму идею захвата.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Katarsis ^{
+        Artefact=3
+        Cost=195
+        Def=1
+        Droid=0
+        Forsage=-1
+        Fragility=83
+        Hook=1
+        Name=Катарсис
+        Probability=7
+        Race=Gaal
+        Radar=1
+        Scaner=0
+        ShipType=Warrior
+        Size=95
+        Text=Несколько переоцененный корпус для достойных гаальцев, которые обрели согласие со своей личностью. Результатом этого часто становится осознание, что они рождены для войны.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Ketomainer ^{
+        Artefact=0
+        Cost=220
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=105
+        Hook=1
+        Name=Кетамайнер
+        Probability=3
+        Race=Peleng
+        Radar=1
+        Scaner=0
+        ShipType=Pirate
+        Size=175
+        Text=Популярный корпус среди ловцов кетамоинов - вододышаших с планеты Джыцказ. Оснащен сетями и удочными установками.
+        Weapon=-1
+        Year=0
+    }
+    MolderHulls_Kliper ^{
+        Artefact=1
+        Cost=70
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=88
+        Hook=-1
+        Name=Клипер
+        Probability=2
+        Race=People
+        Radar=1
+        Scaner=-1
+        ShipType=Warrior
+        Size=90
+        Text=Распространенный вариант военного корпуса людей. Скромные габариты позволяют маневрировать как в астероидных полях, так и под огнем нарушителей закона.
+        Weapon=-1
+        Year=0
+    }
+    MolderHulls_Klodain ^{
+        Artefact=3
+        Cost=170
+        Def=0
+        Droid=1
+        Forsage=-1
+        Fragility=91
+        Hook=1
+        Name=Клойдан
+        Probability=9
+        Race=People,Fei
+        Radar=1
+        Scaner=1
+        ShipType=Ranger
+        Size=133
+        Text=Универсальное судно для стратегических операций. Мозговитые фэяне доработали человеческую идею, добавив места под нестандартные системы.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Kollapsar ^{
+        Artefact=-2
+        Cost=240
+        Def=1
+        Droid=-1
+        Forsage=-1
+        Fragility=118
+        Hook=-1
+        Name=Коллапсар
+        Probability=9
+        Race=Peleng,People
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=300
+        Text=Гигантский военный корабль, оснащенный дезактивированным коллапсорным генератором. Используется Коалицией в качестве пробивного тарана доминаторских флотилий.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Kontrafakt ^{
+        Artefact=-2
+        Cost=25
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=125
+        Hook=-1
+        Name=Контрафакт
+        Probability=25
+        Race=Maloc,Peleng,People,Fei,Gaal
+        Radar=-1
+        Scaner=1
+        ShipType=Ranger,Pirate
+        Size=125
+        Text=Серия корпусов, созданная из отходов и отбросов. Некоторые важнейшие слоты были демонтированы, чтобы не развалилось все остальное.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Koriolan ^{
+        Artefact=-1
+        Cost=133
+        Def=0
+        Droid=1
+        Forsage=1
+        Fragility=94
+        Hook=0
+        Name=Кориолан
+        Probability=1
+        Race=Fei
+        Radar=1
+        Scaner=1
+        ShipType=Transport,Liner,Diplomat,Ranger,Pirate,Warrior
+        Size=82
+        Text=Продвинутый вариант стандартного фэянского корпуса.
+        Weapon=-1
+        Year=15
+    }
+    MolderHulls_Kvazireflector ^{
+        Artefact=-1
+        Cost=415
+        Def=-1
+        Droid=1
+        Forsage=-1
+        Fragility=19
+        Hook=-1
+        Name=Квазирефлектор
+        Probability=9
+        Race=Fei
+        Radar=1
+        Scaner=-1
+        ShipType=Transport,Liner,Diplomat,Ranger,Pirate,Warrior
+        Size=60
+        Text=Непробиваемый фэянский корпус с неполным функционалом. Ценой невероятных усилий удалось сохранить работоспособность слотов дроида и радара.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Legioner ^{
+        Artefact=-1
+        Cost=275
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=102
+        Hook=-1
+        Name=Легионер
+        Probability=5
+        Race=Maloc,People
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=215
+        Text=Патрульный корабль для борьбы с нарушителями границ и полчищами доминаторов. Возможность побега на форсаже не предусмотрена.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Leposakc ^{
+        Artefact=1
+        Cost=210
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=79
+        Hook=1
+        Name=Лепосакц
+        Probability=5
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Diplomat,Ranger
+        Size=90
+        Text=Изящный корпус, популярный среди пеленгш репродуктивного возраста. Под толстым слоем декоративной обшивки спрятана не менее толстая броня.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Leviop ^{
+        Artefact=-2
+        Cost=120
+        Def=1
+        Droid=0
+        Forsage=-1
+        Fragility=135
+        Hook=0
+        Name=Левиоп
+        Probability=9
+        Race=People,Fei,Gaal
+        Radar=1
+        Scaner=-1
+        ShipType=Warrior
+        Size=180
+        Text=Серия больших корпусов пониженной прочности, легко собираемых из подручных материалов на любых планетах людей, фэян и гаальцев.
+        Weapon=-1
+        Year=0
+    }
+    MolderHulls_Lyaobab ^{
+        Artefact=-1
+        Cost=140
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=98
+        Hook=1
+        Name=Ляобаб
+        Probability=2
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Ranger
+        Size=110
+        Text=Замечательный выбор для рейнджера-новичка. Зеленая обшивка украшена внутренностями четверогов и жемчужной слизью.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Mahouni ^{
+        Artefact=2
+        Cost=120
+        Def=0
+        Droid=0
+        Forsage=1
+        Fragility=107
+        Hook=-1
+        Name=Махоуни
+        Probability=3
+        Race=People
+        Radar=1
+        Scaner=0
+        ShipType=Ranger,Warrior
+        Size=110
+        Text=Корпус для веселых и целеустремленных стражей порядка. Основная часть радости обеспечивается дополнительными слотами под артефакты.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_MalinovyiCherpak ^{
+        Artefact=4
+        Cost=550
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=125
+        Hook=1
+        Name=Малиновый черпак
+        Probability=10
+        Race=Maloc,Peleng,People,Fei,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=240
+        Text=Тонированная золотом обшивка и мягкие малиновые тона добавят авторитета любому богатому проходимцу. Уважение и презрение чудесно гармонируют с усиленным вооружением.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Massarakch ^{
+        Artefact=1
+        Cost=170
+        Def=-1
+        Droid=1
+        Forsage=1
+        Fragility=85
+        Hook=1
+        Name=Массаракч
+        Probability=6
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Ranger
+        Size=120
+        Text=Свежий взгляд на универсальные рейнджерские корабли. Отсутствие щита не должно огорчать истинного любителя пострелять.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Metambai ^{
+        Artefact=1
+        Cost=210
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=100
+        Hook=1
+        Name=Метамбай
+        Probability=5
+        Race=Maloc
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=130
+        Text=Распространенная модель для матерого малока-пирата. Повышенная выживаемость обеспечивается слотами под большую часть современного оборудования.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_MiFlibusta ^{
+        Artefact=1
+        Cost=235
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=93
+        Hook=1
+        Name=Ми Флибуста
+        Probability=12
+        Race=Maloc,Peleng,People,Fei,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=110
+        Text=Всеми любимый, популярный и по-настоящему классический корпус пиратского братства. Добавлено все, что так любят отъявленные подонки.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Mineralorik ^{
+        Artefact=0
+        Cost=175
+        Def=1
+        Droid=0
+        Forsage=1
+        Fragility=95
+        Hook=1
+        Name=Минералорик
+        Probability=5
+        Race=Fei
+        Radar=1
+        Scaner=1
+        ShipType=Ranger,Pirate
+        Size=145
+        Text=Идеальный космический корабль для охоты за астероидами. Наличие захвата, форсажа и большого количества свободного места гарантируется.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_MirnyiShuler ^{
+        Artefact=0
+        Cost=70
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=95
+        Hook=1
+        Name=Мирный шулер
+        Probability=9
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=90
+        Text=Идеальный корабль для старых лякушей. Невысокая стоимость делает корпус доступным даже для не самых удачливых пиратов в молодости.
+        Weapon=-2
+        Year=0
+    }
+    MolderHulls_Montoara ^{
+        Artefact=1
+        Cost=360
+        Def=1
+        Droid=-1
+        Forsage=-1
+        Fragility=87
+        Hook=1
+        Name=Монтоара
+        Probability=12
+        Race=Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=260
+        Text=Тяжелый корпус гаальского корабля огневой поддержки. Из-за огромных габаритов ремонтируется только на верфях и не нуждается в дроиде.
+        Weapon=4
+        Year=0
+    }
+    MolderHulls_MorskayaBalanda ^{
+        Artefact=0
+        Cost=195
+        Def=1
+        Droid=-1
+        Forsage=1
+        Fragility=91
+        Hook=1
+        Name=Морская баланда
+        Probability=6
+        Race=Peleng,Fei
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=135
+        Text=Корпус среднего класса, популярный среди пиратов-вегетарианцев. Режим питания не помешал добавить на корабль немного атакующих систем вместо ремонтного дроида.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_NastoyashiiDetektiv ^{
+        Artefact=4
+        Cost=145
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=95
+        Hook=1
+        Name=Настоящий детектив
+        Probability=10
+        Race=Maloc,Peleng,People,Fei,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Diplomat,Warrior
+        Size=85
+        Text=Совместный проект всех рас Коалиции для борьбы с пиратами. Неприметный и эффективный корпус для расследования запутанных преступлений.
+        Weapon=-1
+        Year=0
+    }
+    MolderHulls_Nautilus ^{
+        Artefact=2
+        Cost=255
+        Def=1
+        Droid=-1
+        Forsage=-1
+        Fragility=91
+        Hook=1
+        Name=Наутилус
+        Probability=4
+        Race=Peleng
+        Radar=1
+        Scaner=-1
+        ShipType=Warrior
+        Size=190
+        Text=Проверенная боями и невзгодами модель. Внушительный размер корпуса позволяет разместить в нем полный комплект вооружения.
+        Weapon=4
+        Year=0
+    }
+    MolderHulls_Neotvratimost ^{
+        Artefact=0
+        Cost=400
+        Def=-1
+        Droid=1
+        Forsage=1
+        Fragility=95
+        Hook=1
+        Name=Неотвратимость
+        Probability=8
+        Race=Peleng,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Ranger
+        Size=220
+        Text=Внушительных размеров корпус, увешанный всевозможными атакующими системами. Идеально подходит для медленного и грозного нависания над врагом.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_NepolnyiShvah ^{
+        Artefact=2
+        Cost=180
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=105
+        Hook=1
+        Name=Неполный Швах
+        Probability=12
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=105
+        Text=Редкая модификация пеленгского крейсера среднего класса. Полный комплект стандартного оборудования за умеренную цену.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Normativ ^{
+        Artefact=0
+        Cost=125
+        Def=1
+        Droid=1
+        Forsage=0
+        Fragility=98
+        Hook=1
+        Name=Норматив
+        Probability=1
+        Race=People
+        Radar=1
+        Scaner=0
+        ShipType=Transport,Liner,Diplomat,Ranger,Pirate,Warrior
+        Size=106
+        Text=Новое слово в производстве людских звездолетов со всеми базовыми функциями.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_NuSalamander ^{
+        Artefact=-1
+        Cost=205
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=88
+        Hook=1
+        Name=Нью Саламандер
+        Probability=6
+        Race=Peleng
+        Radar=1
+        Scaner=0
+        ShipType=Ranger,Pirate,Warrior
+        Size=95
+        Text=Боевое судно для пеленгов с высоким достатком. Модернизированный двигательный отсек позволяет ускорить доставку важных грузов или сбор податей с мирного населения.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Obshak ^{
+        Artefact=-4
+        Cost=175
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=85
+        Hook=-1
+        Name=Общак
+        Probability=12
+        Race=Maloc,Peleng,People,Fei,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=205
+        Text=Громоздкое и защищенное судно, предназначенное для хранения награбленных пиратских ценностей. Боевой функционал ограничен, а захват демонтирован для отсутствия искушений.
+        Weapon=-1
+        Year=0
+    }
+    MolderHulls_Original ^{
+        Artefact=-1
+        Cost=110
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=101
+        Hook=0
+        Name=Оригинал
+        Probability=1
+        Race=People
+        Radar=1
+        Scaner=0
+        ShipType=Transport,Liner,Diplomat,Ranger,Pirate,Warrior
+        Size=103
+        Text=Стандартный человеческий корпус второго поколения.
+        Weapon=0
+        Year=15
+    }
+    MolderHulls_Patologoanatom ^{
+        Artefact=2
+        Cost=180
+        Def=1
+        Droid=0
+        Forsage=1
+        Fragility=100
+        Hook=1
+        Name=Патологоанатом
+        Probability=2
+        Race=People
+        Radar=1
+        Scaner=0
+        ShipType=Pirate
+        Size=160
+        Text=Темные дела всегда заканчиваются тем, что нужно убирать последствия. Именно такие корпуса советуются тем, кто занимается подобной профилактической деятельностью.
+        Weapon=-1
+        Year=0
+    }
+    MolderHulls_Peregovorshik ^{
+        Artefact=1
+        Cost=115
+        Def=1
+        Droid=0
+        Forsage=1
+        Fragility=86
+        Hook=1
+        Name=Переговорщик
+        Probability=5
+        Race=Maloc,Peleng,People
+        Radar=1
+        Scaner=-1
+        ShipType=Pirate
+        Size=75
+        Text=Мобильная радиостанция для контактов пиратов с властями. Минимум вооружения и максимум скорости, маневренности и наглости.
+        Weapon=-2
+        Year=0
+    }
+    MolderHulls_Peregreid ^{
+        Artefact=4
+        Cost=290
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=30
+        Hook=1
+        Name=Перегрейд
+        Probability=9
+        Race=People,Fei
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=40
+        Text=Пиратские инженеры снова доказывают, что и они умеют создавать крайне высокотехнологичные корабли. В какой-то момент в чертежи закралась ошибка, поэтому итоговый размер скорее рассчитан на котят, а не на людей или фэян.
+        Weapon=4
+        Year=0
+    }
+    MolderHulls_Plasmelyar ^{
+        Artefact=4
+        Cost=650
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=48
+        Hook=-1
+        Name=Плазмелляр
+        Probability=20
+        Race=Peleng,Fei
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=120
+        Text=Закрытый научный проект фэян и пеленгов. Феноменальные характеристики корабля так и не смогли компенсировать стоимость его компонентов.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Pleosagra ^{
+        Artefact=-4
+        Cost=130
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=90
+        Hook=1
+        Name=Плеосагра
+        Probability=8
+        Race=Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=105
+        Text=Нетипичный корпус для высокотехнологичной расы. Основной упор сделан не на качество оборудования, а на количество орудий.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_PoslannikHaosa ^{
+        Artefact=1
+        Cost=375
+        Def=0
+        Droid=1
+        Forsage=1
+        Fragility=77
+        Hook=1
+        Name=Посланник хаоса
+        Probability=17
+        Race=People,Gaal
+        Radar=1
+        Scaner=0
+        ShipType=Pirate
+        Size=50
+        Text=Подобные корабли обычно используют любители посеять смуту или жесткие уклонисты от налогов. Иными словами, малой кровью владельцев таких звездолетов не взять.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_PoslednyaaNadejda ^{
+        Artefact=3
+        Cost=270
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=81
+        Hook=1
+        Name=Последняя надежда
+        Probability=20
+        Race=Peleng,People,Fei,Gaal
+        Radar=1
+        Scaner=-1
+        ShipType=Ranger,Warrior
+        Size=100
+        Text=Рейнджерский и военный корпус, созданный в отчаянной попытке отражения доминаторской и пиратской агрессий. Включает в себя самые лучшие идеи ученых Коалиции.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Prohodimec ^{
+        Artefact=2
+        Cost=230
+        Def=1
+        Droid=-1
+        Forsage=1
+        Fragility=87
+        Hook=1
+        Name=Проходимец
+        Probability=8
+        Race=Peleng
+        Radar=1
+        Scaner=0
+        ShipType=Ranger
+        Size=135
+        Text=Серия корпусов с завышенной ценой и неизменным качеством. Продается исключительно уважаемым пеленгам-рейнджерам.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_PustynniTechnic ^{
+        Artefact=0
+        Cost=110
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=85
+        Hook=1
+        Name=Пустынный техник
+        Probability=2
+        Race=Maloc
+        Radar=1
+        Scaner=1
+        ShipType=Diplomat,Ranger
+        Size=92
+        Text=Стандартный корабль технического обслуживания в дальнем космосе. Приспособлен для повышенных нагрузок на все системы.
+        Weapon=-2
+        Year=0
+    }
+    MolderHulls_Ralytorol ^{
+        Artefact=3
+        Cost=171
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=75
+        Hook=1
+        Name=Ральторол
+        Probability=1
+        Race=Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Transport,Liner,Diplomat,Ranger,Pirate,Warrior
+        Size=90
+        Text=Финальная версия базового гаальского звездолета со всем возможным стандартным оборудованием.
+        Weapon=0
+        Year=15
+    }
+    MolderHulls_Rassekatel ^{
+        Artefact=0
+        Cost=90
+        Def=1
+        Droid=-1
+        Forsage=1
+        Fragility=87
+        Hook=1
+        Name=Рассекатель
+        Probability=6
+        Race=People
+        Radar=1
+        Scaner=1
+        ShipType=Ranger,Pirate,Warrior
+        Size=70
+        Text=Обтекаемые формы позволяют этому кораблю преодолевать полчища врагов без лишних проблем, если не считать за проблему отсутствие ремонта в открытом космосе.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Raznoglaas ^{
+        Artefact=-1
+        Cost=140
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=85
+        Hook=1
+        Name=Разноглаас
+        Probability=5
+        Race=Gaal
+        Radar=1
+        Scaner=0
+        ShipType=Pirate
+        Size=115
+        Text=Далеко не все гаальцы преподчитают мирный способ разрешения споров. Именно для них пираты и собрали этот корпус.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Replicant ^{
+        Artefact=2
+        Cost=90
+        Def=1
+        Droid=0
+        Forsage=0
+        Fragility=80
+        Hook=0
+        Name=Репликант
+        Probability=4
+        Race=Peleng,People,Gaal
+        Radar=1
+        Scaner=-1
+        ShipType=Pirate
+        Size=50
+        Text=Распространенная серия технологичных пиратских корпусов. Обладает уменьшенным размером и эффективной защитой.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_RjavyiSmerch ^{
+        Artefact=0
+        Cost=160
+        Def=-1
+        Droid=1
+        Forsage=1
+        Fragility=93
+        Hook=1
+        Name=Ржавый смерч
+        Probability=5
+        Race=Maloc,Peleng,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Ranger,Pirate
+        Size=133
+        Text=Боевой корабль, снискавший дурную славу. Пользуется успехом как у рейнджеров, так и у пиратов, несмотря на отсутствие защитного генератора.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Sagrahh ^{
+        Artefact=-1
+        Cost=88
+        Def=0
+        Droid=0
+        Forsage=-1
+        Fragility=114
+        Hook=0
+        Name=Саграхх
+        Probability=1
+        Race=Maloc
+        Radar=0
+        Scaner=0
+        ShipType=Transport,Liner,Diplomat,Ranger,Pirate,Warrior
+        Size=124
+        Text=Улучшенный стандартный малокский корпус второго поколения.
+        Weapon=0
+        Year=15
+    }
+    MolderHulls_Savaal ^{
+        Artefact=1
+        Cost=159
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=81
+        Hook=0
+        Name=Саваал
+        Probability=1
+        Race=Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Transport,Liner,Diplomat,Ranger,Pirate,Warrior
+        Size=85
+        Text=Третье поколение кораблей гаальцев - еще дороже, еще совершенее.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Seerendipno ^{
+        Artefact=4
+        Cost=485
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=90
+        Hook=1
+        Name=Сеерендипно
+        Probability=25
+        Race=Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Ranger
+        Size=118
+        Text=Серия гаальских кораблей названа в честь одного из создателей гиперпространственного пузыря. В память о великом ученом был создан практически идеальный корабль с широчайшим спектром возможностей.
+        Weapon=4
+        Year=0
+    }
+    MolderHulls_Selezar ^{
+        Artefact=3
+        Cost=380
+        Def=1
+        Droid=-1
+        Forsage=1
+        Fragility=78
+        Hook=-1
+        Name=Селезар
+        Probability=10
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Pirate,Warrior
+        Size=185
+        Text=Гибрид военного корабля и вооруженного до зубов пиратского прихвостня. Конструкторы серии не предусмотрели слоты захвата и дроида.
+        Weapon=4
+        Year=0
+    }
+    MolderHulls_Setavr ^{
+        Artefact=0
+        Cost=225
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=77
+        Hook=1
+        Name=Сэтавр
+        Probability=5
+        Race=Maloc,Fei,Gaal
+        Radar=1
+        Scaner=-1
+        ShipType=Pirate
+        Size=85
+        Text=Будучи изначально гаальской разработкой, этот корпус был украден и распространен среди всего пиратского братства. Адаптировать его для пеленгов и людей так и не удалось.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Shahimat ^{
+        Artefact=4
+        Cost=530
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=57
+        Hook=1
+        Name=Шахымат
+        Probability=15
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=270
+        Text=Пеленгский линейный корабль. Редкая и дорогая серия, ведь гораздо проще спонсировать мафию, чем тратить средства на приличный военный флот.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Shaman ^{
+        Artefact=1
+        Cost=90
+        Def=1
+        Droid=-1
+        Forsage=1
+        Fragility=89
+        Hook=1
+        Name=Шаман
+        Probability=5
+        Race=Maloc,Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=65
+        Text=Ритуальный военный корпус, который часто встречается в отдаленных уголках галактики. Владельцу гарантируется уважительное отношение на всех отсталых планетах.
+        Weapon=-1
+        Year=0
+    }
+    MolderHulls_Shergan ^{
+        Artefact=0
+        Cost=98
+        Def=0
+        Droid=0
+        Forsage=0
+        Fragility=108
+        Hook=0
+        Name=Шегран
+        Probability=1
+        Race=Peleng
+        Radar=1
+        Scaner=0
+        ShipType=Transport,Liner,Diplomat,Ranger,Pirate,Warrior
+        Size=105
+        Text=Модернизированная серия стандартных пеленгских корпусов.
+        Weapon=0
+        Year=15
+    }
+    MolderHulls_Shiobanga ^{
+        Artefact=1
+        Cost=130
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=99
+        Hook=1
+        Name=Шиобанга
+        Probability=3
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Ranger
+        Size=65
+        Text=Легкий корпус с налетом непосредственности для самых бесшабашных пеленгов. Рекомендуется постоянный режим форсажа для полноты ощущений.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Shovancer ^{
+        Artefact=2
+        Cost=120
+        Def=1
+        Droid=0
+        Forsage=0
+        Fragility=86
+        Hook=1
+        Name=Сховансер
+        Probability=3
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=75
+        Text=Корабль, разработанный пеленгами в рамках холодной войны с пиратами. Обладает небольшим размером и дополнительными слотами под артефакты.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Shtaab ^{
+        Artefact=3
+        Cost=340
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=65
+        Hook=1
+        Name=Штааб
+        Probability=15
+        Race=Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=125
+        Text=Прекрасно оснащенный гаальский крейсер связи. Как правило, используется при скоординированных атаках на системы доминаторов.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Shusher ^{
+        Artefact=-1
+        Cost=95
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=100
+        Hook=-1
+        Name=Шушер
+        Probability=6
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=85
+        Text=Мелкий корпус для провинившихся военных. В качестве наказания часто демонтирован захват.
+        Weapon=-1
+        Year=0
+    }
+    MolderHulls_Sintapod ^{
+        Artefact=1
+        Cost=145
+        Def=1
+        Droid=0
+        Forsage=-1
+        Fragility=100
+        Hook=1
+        Name=Синтапод
+        Probability=4
+        Race=Fei
+        Radar=1
+        Scaner=0
+        ShipType=Pirate
+        Size=115
+        Text=Возмутительно нейтральный корпус для фэян, однажды переступивших через черту закона. Возврату не подлежит.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Sintejator ^{
+        Artefact=-1
+        Cost=140
+        Def=1
+        Droid=-1
+        Forsage=-1
+        Fragility=125
+        Hook=1
+        Name=Синтежатор
+        Probability=5
+        Race=Maloc
+        Radar=1
+        Scaner=1
+        ShipType=Transport,Liner,Diplomat,Ranger
+        Size=210
+        Text=Обилие просторных отсеков натолкнуло малоков на создание этого вместилища своих вкусовых предпочтений. Большая часть стандартного оборудования заменена на более "полезные" пищевые синтезаторы.
+        Weapon=-1
+        Year=0
+    }
+    MolderHulls_Slepodar ^{
+        Artefact=2
+        Cost=130
+        Def=-1
+        Droid=1
+        Forsage=1
+        Fragility=93
+        Hook=1
+        Name=Слеподар
+        Probability=3
+        Race=People
+        Radar=1
+        Scaner=-1
+        ShipType=Pirate
+        Size=125
+        Text=Пиратская посудина с урезанными навигационными способностями. Также не добавляет привлекательности полное отсутствие защитного поля.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Smotrashyi ^{
+        Artefact=0
+        Cost=75
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=112
+        Hook=0
+        Name=Смотрящий
+        Probability=7
+        Race=People
+        Radar=1
+        Scaner=1
+        ShipType=Pirate,Warrior
+        Size=97
+        Text=Полуофициальный корабль контроля границ отдельных планетарных систем и пиратских территорий. Взамен слота орудия обязательно установлен сканер.
+        Weapon=-1
+        Year=0
+    }
+    MolderHulls_Sobludatel ^{
+        Artefact=-2
+        Cost=86
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=117
+        Hook=0
+        Name=Соблюдатель
+        Probability=4
+        Race=Fei
+        Radar=1
+        Scaner=0
+        ShipType=Transport,Liner,Ranger
+        Size=160
+        Text=Серия корпусов для добропорядочных и честных фэян. Концепт корабля создан на средства благотворительных торговых фондов.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Svarganad ^{
+        Artefact=1
+        Cost=230
+        Def=-1
+        Droid=1
+        Forsage=1
+        Fragility=78
+        Hook=1
+        Name=Сварганад
+        Probability=3
+        Race=Maloc
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=130
+        Text=Грубый малокский корпус из толстых слоев нанитовой брони. В угоду прочности был добавлен слот дроида вместо генератора защитного поля.
+        Weapon=-1
+        Year=0
+    }
+    MolderHulls_Taburet ^{
+        Artefact=1
+        Cost=520
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=91
+        Hook=1
+        Name=Трабурет
+        Probability=5
+        Race=Maloc
+        Radar=1
+        Scaner=1
+        ShipType=Ranger,Pirate,Warrior
+        Size=150
+        Text=Хорошо продуманная и закаленная в боях машина смерти. Основным недостатком этого корабля малоки считают его запредельную стоимость изготовления.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Taldarim ^{
+        Artefact=4
+        Cost=333
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=111
+        Hook=1
+        Name=Талдарим
+        Probability=15
+        Race=Fei,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Ranger,Warrior
+        Size=170
+        Text=Внушительная боевая машина фэянско-гаальской ассоциации наемников. Зарекомендовала себя как синоним качества и силы.
+        Weapon=3
+        Year=0
+    }
+    MolderHulls_Tassadeo ^{
+        Artefact=2
+        Cost=155
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=86
+        Hook=1
+        Name=Тассадэо
+        Probability=1
+        Race=Fei
+        Radar=1
+        Scaner=1
+        ShipType=Transport,Liner,Diplomat,Ranger,Pirate,Warrior
+        Size=88
+        Text=Хорошо защищенный стандартный фэянский корабль последнего поколения.
+        Weapon=1
+        Year=15
+    }
+    MolderHulls_TemnayaStorona ^{
+        Artefact=4
+        Cost=310
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=77
+        Hook=1
+        Name=Темная сторона
+        Probability=20
+        Race=Peleng,Fei,Gaal
+        Radar=-1
+        Scaner=-1
+        ShipType=Pirate
+        Size=110
+        Text=Пиратская версия корабля межгалактических сектантов. Согласно их теории, тьма слепа и всевидяща одновременно.
+        Weapon=4
+        Year=0
+    }
+    MolderHulls_TerminatorX325 ^{
+        Artefact=0
+        Cost=500
+        Def=0
+        Droid=0
+        Forsage=0
+        FragilitySplinter=10
+        Hook=0
+        Name=Терминатор X325
+        Probability=10
+        Race=Fei,Gaal,Maloc,Peleng,People
+        Radar=0
+        Scaner=0
+        ShipType=Warrior
+        Size=120
+        Text=Экспериментальная разработка ученых всех рас. Сверхмощная, непробиваемая обшивка. Корпус прошит двухметровым слоем титана, позволяя любому осколочному оружию буквально отскакивать от обшивки.
+        Weapon=0
+        Year=20
+    }
+    MolderHulls_Tetragon ^{
+        Artefact=2
+        Cost=185
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=110
+        Hook=1
+        Name=Тетрагон
+        Probability=5
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Ranger
+        Size=110
+        Text=Пеленгские инженеры всегда мечтали воплотить в боевом корабле свое уважение к цифре "четыре". Судя по популярности серии, им это вполне удалось.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Tritogor ^{
+        Artefact=1
+        Cost=160
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=82
+        Hook=0
+        Name=Тритогор
+        Probability=7
+        Race=Peleng,People
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=95
+        Text=Корабль военного назначения с отличными маневровыми двигателями. Основным недостатком серии является ослабленное вооружение.
+        Weapon=-1
+        Year=0
+    }
+    MolderHulls_Turboblast ^{
+        Artefact=0
+        Cost=500
+        Def=0
+        Droid=0
+        Forsage=0
+        FragilityMissile=10
+        Hook=0
+        Name=Турбобласт
+        Probability=10
+        Race=Fei,Gaal,Maloc,Peleng,People
+        Radar=0
+        Scaner=0
+        ShipType=Warrior
+        Size=120
+        Text=Экспериментальная разработка ученых всех рас. Корпус сделан из самых прочных материалов анобтаниума, блокирующий урон от любых ракетных установок.
+        Weapon=0
+        Year=20
+    }
+    MolderHulls_Utrambonni ^{
+        Artefact=-2
+        Cost=220
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=91
+        Hook=1
+        Name=Утрамбонни
+        Probability=6
+        Race=Fei
+        Radar=1
+        Scaner=1
+        ShipType=Ranger
+        Size=110
+        Text=Утяжеленный корпус для яростных представителей фэянской расы. Дополнительное вооружение еще никогда не было таким своевременным.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Vandal ^{
+        Artefact=0
+        Cost=80
+        Def=-1
+        Droid=-1
+        Forsage=1
+        Fragility=67
+        Hook=1
+        Name=Вандал
+        Probability=7
+        Race=Peleng,People,Fei
+        Radar=1
+        Scaner=1
+        ShipType=Ranger,Pirate
+        Size=80
+        Text=Небольшое маневренное судно, предназначенное для дерзких налетов и мелких краж. Впрочем, благородные цели тоже не исключены.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Velfatiks ^{
+        Artefact=-1
+        Cost=160
+        Def=-1
+        Droid=1
+        Forsage=1
+        Fragility=106
+        Hook=1
+        Name=Вэлфатис
+        Probability=7
+        Race=Fei
+        Radar=1
+        Scaner=1
+        ShipType=Ranger
+        Size=135
+        Text=Серия фэянских и гаальских корпусов с увеличенным полезным объемом. Орудийные палубы установлены в энергетических узлах, ранее питающих защитный генератор.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Vyshibala ^{
+        Artefact=-1
+        Cost=80
+        Def=-1
+        Droid=1
+        Forsage=-1
+        Fragility=145
+        Hook=1
+        Name=Вышибала
+        Probability=5
+        Race=Maloc,People
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=170
+        Text=Устаревший корпус для низших сословий в пиратской иерархии. Как правило, такие корабли отправляют на передовую и после о них не жалеют.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Yanvelber ^{
+        Artefact=-1
+        Cost=97
+        Def=1
+        Droid=-1
+        Forsage=1
+        Fragility=107
+        Hook=1
+        Name=Янвелбер
+        Probability=5
+        Race=Gaal
+        Radar=1
+        Scaner=-1
+        ShipType=Transport,Ranger
+        Size=107
+        Text=Уцененный корабль для неторопливых торговцев янвелбом. Часто встречается в захолустных краях вселенной.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_ZagnutyiKruk ^{
+        Artefact=2
+        Cost=330
+        Def=1
+        Droid=-1
+        Forsage=-1
+        Fragility=83
+        Hook=1
+        Name=Загнутый крюк
+        Probability=10
+        Race=Maloc,People
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=65
+        Text=Миниатюрный антикварный корпус, по ошибке причисленный к перспективным разработкам. Выполнен в стиле древнечеловеческих и малокских флибустьеров.
+        Weapon=1
+        Year=0
+    }
+    MolderHulls_Zahvatilla ^{
+        Artefact=4
+        Cost=180
+        Def=0
+        Droid=0
+        Forsage=1
+        Fragility=102
+        Hook=1
+        Name=Захватилла
+        Probability=7
+        Race=Maloc,People,Fei,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Pirate
+        Size=120
+        Text=Пиратское судно, увешанное всевозможным нестандартным оборудованием. Отлично подходит для захвата бесхозных предметов и систем Коалиции.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_Zarsonis ^{
+        Artefact=1
+        Cost=95
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=107
+        Hook=1
+        Name=Зарсонис
+        Probability=1
+        Race=Maloc
+        Radar=1
+        Scaner=1
+        ShipType=Transport,Liner,Diplomat,Ranger,Pirate,Warrior
+        Size=130
+        Text=Вершина эволюции малоков в массовом производстве серийных корпусов.
+        Weapon=0
+        Year=15
+    }
+    MolderHulls_Zucshkach ^{
+        Artefact=4
+        Cost=175
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=95
+        Hook=-1
+        Name=Зусшкач
+        Probability=6
+        Race=Peleng
+        Radar=1
+        Scaner=1
+        ShipType=Warrior
+        Size=140
+        Text=Боевой корабль, названный в честь Верховного Лякуши времен клисанской войны. Этот герой не только отбил все атаки на свою родную планету, но еще и отлично подзаработал на этом.
+        Weapon=2
+        Year=0
+    }
+    MolderHulls_Zugradon ^{
+        Artefact=0
+        Cost=265
+        Def=1
+        Droid=1
+        Forsage=-1
+        Fragility=84
+        Hook=1
+        Name=Зуградон
+        Probability=3
+        Race=Maloc
+        Radar=1
+        Scaner=1
+        ShipType=Pirate,Warrior
+        Size=140
+        Text=Корпус назван в честь истребленного вида малокской фауны, чуть не уничтожившего суровую расу в самом начале эволюции. Многочисленные репродукции украшают все отсеки корабля и крайне ценятся пиратами.
+        Weapon=0
+        Year=0
+    }
+    MolderHulls_ZvezdnyiOhotnik ^{
+        Artefact=2
+        Cost=170
+        Def=1
+        Droid=1
+        Forsage=1
+        Fragility=104
+        Hook=1
+        Name=Звездный охотник
+        Probability=6
+        Race=Maloc,People,Gaal
+        Radar=1
+        Scaner=1
+        ShipType=Ranger
+        Size=105
+        Text=Универсальный исследовательский корабль, отлично оборудованный для дальних межзвездных перелетов. Прекрасно подойдет для охотника за знаниями и ужасно - для охотника за головами.
+        Weapon=-1
+        Year=0
+    }
+}

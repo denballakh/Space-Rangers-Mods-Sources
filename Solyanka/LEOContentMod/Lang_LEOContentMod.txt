@@ -1,0 +1,1799 @@
+MicroModuls ^{
+    ExpHullsBases_GSOM ^{
+        Equipments=Hull
+        FragilityEnergy=70
+        FragilityMissile=70
+        FragilitySplinter=70
+        Name=Корпус ГСОМ-1
+        Priority=50
+        Special=1
+        Text=Новейшая встроенная система улучшает стандартное оборудование и корректирует орудия.<br>
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Восприимчивость к урону: <clr>-30%<clrEnd>
+        Text=Навык точности: <bonSkill1>
+        Text=Навык маневренности: <bonSkill2>
+        Text=Навык техники: <bonSkill3>
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Генератор поля: <bonDef> ед.
+        bonDef=11
+        bonDroid=30
+        bonHull=11
+        bonSkill1=6
+        bonSkill2=6
+        bonSkill3=6
+        bonWEnergy=35
+        bonWMissile=40
+        bonWRadius=120
+        bonWSplinter=45
+    }
+    ExpHullsBases_Hurricane ^{
+        Equipments=Hull
+        FragilityEnergy=80
+        FragilityMissile=80
+        FragilitySplinter=80
+        Name=Корпус станции Ураган
+        Priority=50
+        Special=1
+        Text=Новейшая встроенная система улучшает стандартное оборудование и корректирует орудия.<br>
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Восприимчивость к урону: <clr>-20%<clrEnd>
+        Text=Навык точности: <bonSkill1>
+        Text=Навык маневренности: <bonSkill2>
+        Text=Навык техники: <bonSkill3>
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Генератор поля: <bonDef> ед.
+        bonDef=7
+        bonDroid=20
+        bonHull=7
+        bonSkill1=4
+        bonSkill2=4
+        bonSkill3=4
+        bonWEnergy=22
+        bonWMissile=26
+        bonWRadius=80
+        bonWSplinter=30
+    }
+    ExpHullsBases_Polyxen ^{
+        Equipments=Hull
+        FragilityEnergy=90
+        FragilityMissile=90
+        FragilitySplinter=90
+        Name=Поликсенатный корпус станции
+        Priority=50
+        Special=1
+        Text=Новейшая встроенная система улучшает стандартное оборудование и корректирует орудия.<br>
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Восприимчивость к урону: <clr>-10%<clrEnd>
+        Text=Навык точности: <bonSkill1>
+        Text=Навык маневренности: <bonSkill2>
+        Text=Навык техники: <bonSkill3>
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Генератор поля: <bonDef> ед.
+        bonDef=3
+        bonDroid=10
+        bonHull=3
+        bonSkill1=2
+        bonSkill2=2
+        bonSkill3=2
+        bonWEnergy=9
+        bonWMissile=12
+        bonWRadius=40
+        bonWSplinter=15
+    }
+    ExpScienceRanks_TickAttackMode ^{
+        Cost=100
+        CustomTag=ExpScienceRanks_TickAttackMode
+        Equipments=Hull
+        KindGraph=MA
+        LockedAcryn=3
+        Name=Клещ: боевой режим
+        NonSearchable=1
+        Priority=50
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Как только люди, во время галактической конференции по изучению черных дыр увидели прототип этого корпуса, сразу окрестили его "Клещ". Название мгновенно закрепилось за корпусом</color>
+        Text=<color=248,252,248>Единственный минус этого почти идеального корабля-трансформера то, что ключевые отверстия корпуса находятся слишком близко. Таким образом:</color>
+        Text=<color=248,252,248>В режиме</color> атаки <color=248,252,248>листовые пластины брони сдвигаются назад от орудийного отсека, частично перекрывая выходные сопла двигателя, за счет чего происходит небольшое снижение его мощности, но при этом увеличиваются наносимые повреждения.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        bonSpeed=-150
+        bonWEnergy=20
+        bonWMissile=30
+        bonWRadius=50
+        bonWSplinter=40
+    }
+    ExpScienceRanks_TickDefenseMode ^{
+        Cost=100
+        CustomTag=ExpScienceRanks_TickDefenseMode
+        Equipments=Hull
+        FragilityEnergy=70
+        FragilityMissile=70
+        FragilitySplinter=70
+        KindGraph=MD
+        LockedAcryn=3
+        Name=Клещ: защитный режим
+        NonSearchable=1
+        Priority=50
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Как только люди, во время галактической конференции по изучению черных дыр увидели прототип этого корпуса, сразу окрестили его "Клещ". Название мгновенно закрепилось за корпусом</color>
+        Text=<color=248,252,248>Единственный минус этого почти идеального корабля-трансформера то, что ключевые отверстия корпуса находятся слишком близко. Таким образом:</color>
+        Text=<color=248,252,248>В режиме</color> защиты <color=248,252,248>бронепластины сдвигаются вперед, сужая орудийные амбразуры, что сильно затрудняет работу системы наведения, которая уже не способна эффективно находить уязвимости противника, что существенно снижает наносимый урон и немного дальность стрельбы, при этом увеличивая защиту</color>
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Сила энергетического оружия: <bonWEnergy> ед.
+        Text=Сила осколочного оружия: <bonWSplinter> ед.
+        Text=Сила ракетного оружия: <bonWMissile> ед.
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Эффективность дроида: <bonDroid> ед.
+        bonDroid=50
+        bonHull=10
+        bonWEnergy=-20
+        bonWMissile=-30
+        bonWRadius=-50
+        bonWSplinter=-40
+    }
+    ExpScienceRanks_TickSpeedMode ^{
+        Cost=100
+        CustomTag=ExpScienceRanks_TickSpeedMode
+        Equipments=Hull
+        FragilityEnergy=125
+        FragilityMissile=125
+        FragilitySplinter=125
+        KindGraph=MG
+        LockedAcryn=3
+        Name=Клещ: скоростной режим
+        NonSearchable=1
+        Priority=50
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Как только люди, во время галактической конференции по изучению черных дыр увидели прототип этого корпуса, сразу окрестили его "Клещ". Название мгновенно закрепилось за корпусом</color>
+        Text=<color=248,252,248>Единственный минус этого почти идеального корабля-трансформера то, что ключевые отверстия корпуса находятся слишком близко. Таким образом:</color>
+        Text=<color=248,252,248>В </color>гибридном <color=248,252,248>режиме бронепластины раздвигаются немного в стороны, что позволяет увеличить скорость двигателя без ущерба работе системы наведения орудий, но при этом увеличивается получаемый урон.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        bonJump=12
+        bonSpeed=450
+    }
+    LEOContentMod_BattleDroid_1 ^{
+        AcrynSerie=Боевой дроид
+        Cost=250
+        Equipments=Droid
+        Fragility=90
+        KindGraph=BATTLE_DRD
+        LevelsCount=3
+        Name=Боевой дроид I
+        OnPlanets=0
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+        Priority=10
+        Ruins=Any
+        SerieLevel1=LEOContentMod_BattleDroid_1
+        SerieLevel2=LEOContentMod_BattleDroid_2
+        SerieLevel3=LEOContentMod_BattleDroid_3
+        Size=120
+        Special=1
+        Text=<color=248,252,248>Восстановленная по старым схемам акриновая модификация дроида, идеальная для продолжительных боевых действий. Прочные и эффективные узлы данного ремонтного робота обеспечивают максимальный коэффициент полезного действия любых орудий в ущерб всем остальным видам оборудования. Повышенная Надежность гарантирует увеличенный срок эксплуатации орудийных палуб в бою, а заодно и жизненно важных органов пилота.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Мощность защитного поля: <bonDef> ед.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Сила любого оружия: <bonWEnergy> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Масса корабля: <bonMass><clr>%<clrEnd>
+        bonDef=-2
+        bonDroid=-2
+        bonHookRadius=-15
+        bonJump=-1
+        bonMass=5
+        bonRadar=-100
+        bonScan=-1
+        bonSpeed=-10
+        bonWEnergy=5
+        bonWMissile=5
+        bonWRadius=25
+        bonWSplinter=5
+    }
+    LEOContentMod_BattleDroid_2 ^{
+        AcrynSerie=Боевой дроид
+        Cost=400
+        Equipments=Droid
+        Fragility=80
+        KindGraph=BATTLE_DRD
+        LevelsCount=3
+        Name=Боевой дроид II
+        OnPlanets=0
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+        Priority=30
+        Ruins=Any
+        SerieLevel1=LEOContentMod_BattleDroid_1
+        SerieLevel2=LEOContentMod_BattleDroid_2
+        SerieLevel3=LEOContentMod_BattleDroid_3
+        Size=110
+        Special=1
+        Text=<color=248,252,248>Восстановленная по старым схемам акриновая модификация дроида, идеальная для продолжительных боевых действий. Прочные и эффективные узлы данного ремонтного робота обеспечивают максимальный коэффициент полезного действия любых орудий в ущерб всем остальным видам оборудования. Повышенная Надежность гарантирует увеличенный срок эксплуатации орудийных палуб в бою, а заодно и жизненно важных органов пилота.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Мощность защитного поля: <bonDef> ед.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Сила любого оружия: <bonWEnergy> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Масса корабля: <bonMass><clr>%<clrEnd>
+        bonDef=-3
+        bonDroid=-5
+        bonHookRadius=-25
+        bonJump=-2
+        bonMass=10
+        bonRadar=-200
+        bonScan=-2
+        bonSpeed=-20
+        bonWEnergy=10
+        bonWMissile=10
+        bonWRadius=40
+        bonWSplinter=10
+    }
+    LEOContentMod_BattleDroid_3 ^{
+        AcrynSerie=Боевой дроид
+        BlockMM=1
+        Cost=600
+        Equipments=Droid
+        Fragility=70
+        KindGraph=BATTLE_DRD
+        LevelsCount=3
+        LockedAcryn=1
+        Name=Боевой дроид III
+        OnPlanets=0
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+        Priority=50
+        Ruins=Any
+        SerieLevel1=LEOContentMod_BattleDroid_1
+        SerieLevel2=LEOContentMod_BattleDroid_2
+        SerieLevel3=LEOContentMod_BattleDroid_3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Восстановленная по старым схемам акриновая модификация дроида, идеальная для продолжительных боевых действий. Прочные и эффективные узлы данного ремонтного робота обеспечивают максимальный коэффициент полезного действия любых орудий в ущерб всем остальным видам оборудования. Повышенная Надежность гарантирует увеличенный срок эксплуатации орудийных палуб в бою, а заодно и жизненно важных органов пилота.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Мощность защитного поля: <bonDef> ед.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Сила любого оружия: <bonWEnergy> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        bonDef=-5
+        bonDroid=-8
+        bonHookRadius=-35
+        bonJump=-4
+        bonRadar=-400
+        bonScan=-4
+        bonSpeed=-40
+        bonWEnergy=20
+        bonWMissile=20
+        bonWRadius=60
+        bonWSplinter=20
+    }
+    LEOContentMod_DefGenerator_Sid1 ^{
+        AcrynSerie=Сидеральный генератор защиты
+        Cost=115
+        Equipments=DefGenerator
+        Fragility=166
+        KindGraph=15
+        LevelsCount=3
+        Name=Сидеральный генератор защиты I
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=10
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_DefGenerator_Sid1
+        SerieLevel2=LEOContentMod_DefGenerator_Sid2
+        SerieLevel3=LEOContentMod_DefGenerator_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-1
+        bonMass=-3
+        bonSpeed=40
+    }
+    LEOContentMod_DefGenerator_Sid2 ^{
+        AcrynSerie=Сидеральный генератор защиты
+        Cost=115
+        Equipments=DefGenerator
+        Fragility=160
+        KindGraph=15
+        LevelsCount=3
+        Name=Сидеральный генератор защиты II
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_DefGenerator_Sid1
+        SerieLevel2=LEOContentMod_DefGenerator_Sid2
+        SerieLevel3=LEOContentMod_DefGenerator_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-2
+        bonMass=-5
+        bonSpeed=55
+    }
+    LEOContentMod_DefGenerator_Sid3 ^{
+        AcrynSerie=Сидеральный генератор защиты
+        Cost=115
+        Equipments=DefGenerator
+        Fragility=153
+        KindGraph=15
+        LevelsCount=3
+        Name=Сидеральный генератор защиты III
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=50
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_DefGenerator_Sid1
+        SerieLevel2=LEOContentMod_DefGenerator_Sid2
+        SerieLevel3=LEOContentMod_DefGenerator_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-3
+        bonMass=-7
+        bonSpeed=80
+    }
+    LEOContentMod_DefGenerator_Un1 ^{
+        AcrynSerie=Дефлекторный генератор защиты
+        Cost=200
+        Equipments=DefGenerator
+        KindGraph=Un
+        LevelsCount=3
+        Name=Дефлекторный генератор защиты I
+        Priority=10
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_DefGenerator_Un1
+        SerieLevel2=LEOContentMod_DefGenerator_Un2
+        SerieLevel3=LEOContentMod_DefGenerator_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый генератор защиты был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту, что позволяет значительно усилить огневую мощь бортовых орудий корабля.</color>
+        Text=Сила любого оружия: <bonWEnergy> ед.
+        bonWEnergy=2
+        bonWMissile=2
+        bonWSplinter=2
+    }
+    LEOContentMod_DefGenerator_Un2 ^{
+        AcrynSerie=Дефлекторный генератор защиты
+        Cost=300
+        Equipments=DefGenerator
+        KindGraph=Un
+        LevelsCount=3
+        Name=Дефлекторный генератор защиты II
+        Priority=30
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_DefGenerator_Un1
+        SerieLevel2=LEOContentMod_DefGenerator_Un2
+        SerieLevel3=LEOContentMod_DefGenerator_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый генератор защиты был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту, что позволяет значительно усилить огневую мощь бортовых орудий корабля.</color>
+        Text=Сила любого оружия: <bonWEnergy> ед.
+        bonWEnergy=4
+        bonWMissile=4
+        bonWSplinter=4
+    }
+    LEOContentMod_DefGenerator_Un3 ^{
+        AcrynSerie=Дефлекторный генератор защиты
+        Cost=400
+        Equipments=DefGenerator
+        KindGraph=Un
+        LevelsCount=3
+        Name=Дефлекторный генератор защиты III
+        Priority=50
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_DefGenerator_Un1
+        SerieLevel2=LEOContentMod_DefGenerator_Un2
+        SerieLevel3=LEOContentMod_DefGenerator_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый генератор защиты был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту, что позволяет значительно усилить огневую мощь бортовых орудий корабля.</color>
+        Text=Сила любого оружия: <bonWEnergy> ед.
+        bonWEnergy=8
+        bonWMissile=8
+        bonWSplinter=8
+    }
+    LEOContentMod_Droid_Sid1 ^{
+        AcrynSerie=Сидеральный дроид
+        Cost=115
+        Equipments=Droid
+        Fragility=166
+        KindGraph=17
+        LevelsCount=3
+        Name=Сидеральный дроид I
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=10
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_Droid_Sid1
+        SerieLevel2=LEOContentMod_Droid_Sid2
+        SerieLevel3=LEOContentMod_Droid_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-1
+        bonMass=-3
+        bonSpeed=40
+    }
+    LEOContentMod_Droid_Sid2 ^{
+        AcrynSerie=Сидеральный дроид
+        Cost=115
+        Equipments=Droid
+        Fragility=160
+        KindGraph=17
+        LevelsCount=3
+        Name=Сидеральный дроид II
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_Droid_Sid1
+        SerieLevel2=LEOContentMod_Droid_Sid2
+        SerieLevel3=LEOContentMod_Droid_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-2
+        bonMass=-5
+        bonSpeed=55
+    }
+    LEOContentMod_Droid_Sid3 ^{
+        AcrynSerie=Сидеральный дроид
+        Cost=115
+        Equipments=Droid
+        Fragility=153
+        KindGraph=17
+        LevelsCount=3
+        Name=Сидеральный дроид III
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=50
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_Droid_Sid1
+        SerieLevel2=LEOContentMod_Droid_Sid2
+        SerieLevel3=LEOContentMod_Droid_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-3
+        bonMass=-7
+        bonSpeed=80
+    }
+    LEOContentMod_Droid_Un1 ^{
+        AcrynSerie=Кибернетический дроид
+        Cost=200
+        Equipments=Droid
+        KindGraph=Un
+        LevelsCount=3
+        Name=Кибернетический дроид I
+        Priority=10
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_Droid_Un1
+        SerieLevel2=LEOContentMod_Droid_Un2
+        SerieLevel3=LEOContentMod_Droid_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый ремонтный дроид был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту,, что позволяет значительно усилить защитное поле корабля.</color>
+        Text=Мощность ГЗП: <bonDef> ед.
+        Text=Дальность радара: <bonRadar> ед.
+        bonDef=2
+        bonRadar=-50
+    }
+    LEOContentMod_Droid_Un2 ^{
+        AcrynSerie=Кибернетический дроид
+        Cost=300
+        Equipments=Droid
+        KindGraph=Un
+        LevelsCount=3
+        Name=Кибернетический дроид II
+        Priority=20
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_Droid_Un1
+        SerieLevel2=LEOContentMod_Droid_Un2
+        SerieLevel3=LEOContentMod_Droid_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый ремонтный дроид был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту, что позволяет значительно усилить защитное поле корабля.</color>
+        Text=Мощность ГЗП: <bonDef> ед.
+        Text=Дальность радара: <bonRadar> ед.
+        bonDef=4
+        bonRadar=-100
+    }
+    LEOContentMod_Droid_Un3 ^{
+        AcrynSerie=Кибернетический дроид
+        Cost=400
+        Equipments=Droid
+        KindGraph=Un
+        LevelsCount=3
+        Name=Кибернетический дроид III
+        Priority=30
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_Droid_Un1
+        SerieLevel2=LEOContentMod_Droid_Un2
+        SerieLevel3=LEOContentMod_Droid_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый ремонтный дроид был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту, что позволяет значительно усилить защитное поле корабля.</color>
+        Text=Мощность ГЗП: <bonDef> ед.
+        Text=Дальность радара: <bonRadar> ед.
+        bonDef=6
+        bonRadar=-150
+    }
+    LEOContentMod_Droid_War1 ^{
+        AcrynSerie=Боевой дроид "Зевс"
+        Cost=200
+        Equipments=Droid
+        Fragility=500
+        KindGraph=War
+        LevelsCount=3
+        Name=Боевой дроид "Зевс" I
+        OnPlanets=1
+        Priority=10
+        SerieLevel1=LEOContentMod_Droid_War1
+        SerieLevel2=LEOContentMod_Droid_War2
+        SerieLevel3=LEOContentMod_Droid_War3
+        Special=1
+        Text=Этот дроид по сути представляет собой дополнительную автоматическую бластерную турель, размещаемую в отсеке дроида и расстреливающую врагов из двух лазерных стволов, установленных на нее. Дроид абсолютно не способен ремонтировать корпус корабля, не выполняет свою основную функцию, но при этом сильно увеличивает огневую мощь орудий.
+        Text=Урон любого оружия: <bonWEnergy> ед.
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        bonDroid=-10
+        bonHookRadius=-40
+        bonWEnergy=10
+        bonWMissile=10
+        bonWRadius=-40
+        bonWSplinter=10
+    }
+    LEOContentMod_Droid_War2 ^{
+        AcrynSerie=Боевой дроид "Зевс"
+        Cost=400
+        Equipments=Droid
+        Fragility=500
+        KindGraph=War
+        LevelsCount=3
+        Name=Боевой дроид "Зевс" II
+        OnPlanets=1
+        Priority=30
+        SerieLevel1=LEOContentMod_Droid_War1
+        SerieLevel2=LEOContentMod_Droid_War2
+        SerieLevel3=LEOContentMod_Droid_War3
+        Special=1
+        Text=Этот дроид по сути представляет собой дополнительную автоматическую бластерную турель, размещаемую в отсеке дроида и расстреливающую врагов из двух лазерных стволов, установленных на нее. Дроид абсолютно не способен ремонтировать корпус корабля, не выполняет свою основную функцию, но при этом сильно увеличивает огневую мощь орудий.
+        Text=Урон любого оружия: <bonWEnergy> ед.
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        bonDroid=-20
+        bonHookRadius=-80
+        bonWEnergy=20
+        bonWMissile=20
+        bonWRadius=-80
+        bonWSplinter=20
+    }
+    LEOContentMod_Droid_War3 ^{
+        AcrynSerie=Боевой дроид "Зевс"
+        BlockMM=1
+        Cost=600
+        Equipments=Droid
+        Fragility=500
+        KindGraph=War
+        LevelsCount=3
+        Name=Боевой дроид "Зевс" III
+        OnPlanets=1
+        Priority=50
+        SerieLevel1=LEOContentMod_Droid_War1
+        SerieLevel2=LEOContentMod_Droid_War2
+        SerieLevel3=LEOContentMod_Droid_War3
+        Special=1
+        Text=Этот дроид по сути представляет собой дополнительную автоматическую бластерную турель, размещаемую в отсеке дроида и расстреливающую врагов из двух лазерных стволов, установленных на нее. Дроид абсолютно не способен ремонтировать корпус корабля, не выполняет свою основную функцию, но при этом сильно увеличивает огневую мощь орудий.
+        Text=Урон любого оружия: <bonWEnergy> ед.
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        bonDroid=-30
+        bonHookRadius=-120
+        bonWEnergy=30
+        bonWMissile=30
+        bonWRadius=-120
+        bonWSplinter=30
+    }
+    LEOContentMod_Engine_AAA1 ^{
+        AcrynSerie=Технотронный двигатель
+        Cost=110
+        Equipments=Engine
+        KindGraph=AAA
+        LevelsCount=3
+        Name=Технотронный двигатель I
+        Priority=10
+        Ruins=RC,MC,CB
+        SerieLevel1=LEOContentMod_Engine_AAA1
+        SerieLevel2=LEOContentMod_Engine_AAA2
+        SerieLevel3=LEOContentMod_Engine_AAA3
+        Size=130
+        Special=1
+        Text=<color=248,252,248>Оборудование, разработанное частной компанией "КосмоДрайв Инкорпорейтед". На рынок вышло ограниченной партией. С помощью особых акриновых элементов встраивается в энергосистему двигателя и генератора поля, увеличивая их эффективность. Однако возрастающие нагрузки приводят к периодическим ошибкам в работе другого оборудования, в особенности дроида.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Генератор поля: <bonDef> ед.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Навык техники: <bonSkill3> ед.
+        bonDef=2
+        bonDroid=-10
+        bonSkill3=-1
+        bonSpeed=40
+    }
+    LEOContentMod_Engine_AAA2 ^{
+        AcrynSerie=Технотронный двигатель
+        Cost=110
+        Equipments=Engine
+        KindGraph=AAA
+        LevelsCount=3
+        Name=Технотронный двигатель II
+        Priority=30
+        Ruins=RC,MC,CB
+        SerieLevel1=LEOContentMod_Engine_AAA1
+        SerieLevel2=LEOContentMod_Engine_AAA2
+        SerieLevel3=LEOContentMod_Engine_AAA3
+        Size=130
+        Special=1
+        Text=<color=248,252,248>Оборудование, разработанное частной компанией "КосмоДрайв Инкорпорейтед". На рынок вышло ограниченной партией. С помощью особых акриновых элементов встраивается в энергосистему двигателя и генератора поля, увеличивая их эффективность. Однако возрастающие нагрузки приводят к периодическим ошибкам в работе другого оборудования, в особенности дроида.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Генератор поля: <bonDef> ед.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Навык техники: <bonSkill3> ед.
+        bonDef=4
+        bonDroid=-20
+        bonSkill3=-2
+        bonSpeed=80
+    }
+    LEOContentMod_Engine_AAA3 ^{
+        AcrynSerie=Технотронный двигатель
+        Cost=110
+        Equipments=Engine
+        KindGraph=AAA
+        LevelsCount=3
+        Name=Технотронный двигатель III
+        Priority=50
+        Ruins=RC,MC,CB
+        SerieLevel1=LEOContentMod_Engine_AAA1
+        SerieLevel2=LEOContentMod_Engine_AAA2
+        SerieLevel3=LEOContentMod_Engine_AAA3
+        Size=130
+        Special=1
+        Text=<color=248,252,248>Оборудование, разработанное частной компанией "КосмоДрайв Инкорпорейтед". На рынок вышло ограниченной партией. С помощью особых акриновых элементов встраивается в энергосистему двигателя и генератора поля, увеличивая их эффективность. Однако возрастающие нагрузки приводят к периодическим ошибкам в работе другого оборудования, в особенности дроида.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Генератор поля: <bonDef> ед.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Навык техники: <bonSkill3> ед.
+        bonDef=6
+        bonDroid=-30
+        bonSkill3=-3
+        bonSpeed=120
+    }
+    LEOContentMod_Engine_Sid1 ^{
+        AcrynSerie=Сидеральный двигатель
+        Cost=115
+        Equipments=Engine
+        Fragility=166
+        KindGraph=17
+        LevelsCount=3
+        Name=Сидеральный двигатель I
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=10
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_Engine_Sid1
+        SerieLevel2=LEOContentMod_Engine_Sid2
+        SerieLevel3=LEOContentMod_Engine_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-1
+        bonMass=-3
+        bonSpeed=40
+    }
+    LEOContentMod_Engine_Sid2 ^{
+        AcrynSerie=Сидеральный двигатель
+        Cost=115
+        Equipments=Engine
+        Fragility=160
+        KindGraph=17
+        LevelsCount=3
+        Name=Сидеральный двигатель II
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_Engine_Sid1
+        SerieLevel2=LEOContentMod_Engine_Sid2
+        SerieLevel3=LEOContentMod_Engine_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-2
+        bonMass=-5
+        bonSpeed=55
+    }
+    LEOContentMod_Engine_Sid3 ^{
+        AcrynSerie=Сидеральный двигатель
+        Cost=115
+        Equipments=Engine
+        Fragility=153
+        KindGraph=17
+        LevelsCount=3
+        Name=Сидеральный двигатель III
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=50
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_Engine_Sid1
+        SerieLevel2=LEOContentMod_Engine_Sid2
+        SerieLevel3=LEOContentMod_Engine_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-3
+        bonMass=-7
+        bonSpeed=80
+    }
+    LEOContentMod_Engine_Un1 ^{
+        AcrynSerie=Нуль-пространственный двигатель
+        Cost=200
+        Equipments=Engine
+        KindGraph=Un
+        LevelsCount=3
+        Name=Нуль-пространственный двигатель I
+        Priority=10
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_Engine_Un1
+        SerieLevel2=LEOContentMod_Engine_Un2
+        SerieLevel3=LEOContentMod_Engine_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый гипердвигатель был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту, что позволяет значительно усилить эффективность работы дроида.</color>
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        bonDroid=10
+        bonHookRadius=-20
+    }
+    LEOContentMod_Engine_Un2 ^{
+        AcrynSerie=Нуль-пространственный двигатель
+        Cost=300
+        Equipments=Engine
+        KindGraph=Un
+        LevelsCount=3
+        Name=Нуль-пространственный двигатель II
+        Priority=30
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_Engine_Un1
+        SerieLevel2=LEOContentMod_Engine_Un2
+        SerieLevel3=LEOContentMod_Engine_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый гипердвигатель был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту, что позволяет значительно усилить эффективность работы дроида.</color>
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        bonDroid=20
+        bonHookRadius=-40
+    }
+    LEOContentMod_Engine_Un3 ^{
+        AcrynSerie=Нуль-пространственный двигатель
+        Cost=400
+        Equipments=Engine
+        KindGraph=Un
+        LevelsCount=3
+        Name=Нуль-пространственный двигатель III
+        Priority=50
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_Engine_Un1
+        SerieLevel2=LEOContentMod_Engine_Un2
+        SerieLevel3=LEOContentMod_Engine_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый гипердвигатель был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту, что позволяет значительно усилить эффективность работы дроида.</color>
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        bonDroid=30
+        bonHookRadius=-60
+    }
+    LEOContentMod_FuelTank_AAA1 ^{
+        AcrynSerie=Технотронный топливный бак
+        Cost=110
+        Equipments=FuelTank
+        KindGraph=AAA
+        LevelsCount=3
+        Name=Технотронный топливный бак I
+        Priority=10
+        Ruins=RC,MC,CB
+        SerieLevel1=LEOContentMod_FuelTank_AAA1
+        SerieLevel2=LEOContentMod_FuelTank_AAA2
+        SerieLevel3=LEOContentMod_FuelTank_AAA3
+        Size=130
+        Special=1
+        Text=<color=248,252,248>Оборудование, разработанное частной компанией "КосмоДрайв Инкорпорейтед". На рынок вышло ограниченной партией. С помощью особых акриновых элементов встраивается в энергосистему двигателя и генератора поля, увеличивая их эффективность. Однако возрастающие нагрузки приводят к периодическим ошибкам в работе другого оборудования, в особенности дроида.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Генератор поля: <bonDef> ед.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Навык техники: <bonSkill3> ед.
+        bonDef=2
+        bonDroid=-10
+        bonSkill3=-1
+        bonSpeed=40
+    }
+    LEOContentMod_FuelTank_AAA2 ^{
+        AcrynSerie=Технотронный топливный бак
+        Cost=110
+        Equipments=FuelTank
+        KindGraph=AAA
+        LevelsCount=3
+        Name=Технотронный топливный бак II
+        Priority=30
+        Ruins=RC,MC,CB
+        SerieLevel1=LEOContentMod_FuelTank_AAA1
+        SerieLevel2=LEOContentMod_FuelTank_AAA2
+        SerieLevel3=LEOContentMod_FuelTank_AAA3
+        Size=130
+        Special=1
+        Text=<color=248,252,248>Оборудование, разработанное частной компанией "КосмоДрайв Инкорпорейтед". На рынок вышло ограниченной партией. С помощью особых акриновых элементов встраивается в энергосистему двигателя и генератора поля, увеличивая их эффективность. Однако возрастающие нагрузки приводят к периодическим ошибкам в работе другого оборудования, в особенности дроида.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Генератор поля: <bonDef> ед.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Навык техники: <bonSkill3> ед.
+        bonDef=4
+        bonDroid=-20
+        bonSkill3=-2
+        bonSpeed=80
+    }
+    LEOContentMod_FuelTank_AAA3 ^{
+        AcrynSerie=Технотронный топливный бак
+        Cost=110
+        Equipments=FuelTank
+        KindGraph=AAA
+        LevelsCount=3
+        Name=Технотронный топливный бак III
+        Priority=50
+        Ruins=RC,MC,CB
+        SerieLevel1=LEOContentMod_FuelTank_AAA1
+        SerieLevel2=LEOContentMod_FuelTank_AAA2
+        SerieLevel3=LEOContentMod_FuelTank_AAA3
+        Size=130
+        Special=1
+        Text=<color=248,252,248>Оборудование, разработанное частной компанией "КосмоДрайв Инкорпорейтед". На рынок вышло ограниченной партией. С помощью особых акриновых элементов встраивается в энергосистему двигателя и генератора поля, увеличивая их эффективность. Однако возрастающие нагрузки приводят к периодическим ошибкам в работе другого оборудования, в особенности дроида.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Генератор поля: <bonDef> ед.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Навык техники: <bonSkill3> ед.
+        bonDef=6
+        bonDroid=-30
+        bonSkill3=-3
+        bonSpeed=120
+    }
+    LEOContentMod_FuelTank_Sid1 ^{
+        AcrynSerie=Сидеральный топливный бак
+        Cost=115
+        Equipments=FuelTank
+        Fragility=166
+        KindGraph=15
+        LevelsCount=3
+        Name=Сидеральный топливный бак I
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=10
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_FuelTank_Sid1
+        SerieLevel2=LEOContentMod_FuelTank_Sid2
+        SerieLevel3=LEOContentMod_FuelTank_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-1
+        bonMass=-3
+        bonSpeed=40
+    }
+    LEOContentMod_FuelTank_Sid2 ^{
+        AcrynSerie=Сидеральный топливный бак
+        Cost=115
+        Equipments=FuelTank
+        Fragility=160
+        KindGraph=15
+        LevelsCount=3
+        Name=Сидеральный топливный бак II
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_FuelTank_Sid1
+        SerieLevel2=LEOContentMod_FuelTank_Sid2
+        SerieLevel3=LEOContentMod_FuelTank_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-2
+        bonMass=-5
+        bonSpeed=55
+    }
+    LEOContentMod_FuelTank_Sid3 ^{
+        AcrynSerie=Сидеральный топливный бак
+        Cost=115
+        Equipments=FuelTank
+        Fragility=153
+        KindGraph=15
+        LevelsCount=3
+        Name=Сидеральный топливный бак III
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=50
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_FuelTank_Sid1
+        SerieLevel2=LEOContentMod_FuelTank_Sid2
+        SerieLevel3=LEOContentMod_FuelTank_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-3
+        bonMass=-7
+        bonSpeed=80
+    }
+    LEOContentMod_FuelTank_Un1 ^{
+        AcrynSerie=Модульный топливный бак
+        Cost=200
+        Equipments=FuelTank
+        KindGraph=Un
+        LevelsCount=3
+        Name=Модульный топливный бак I
+        Priority=10
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_FuelTank_Un1
+        SerieLevel2=LEOContentMod_FuelTank_Un2
+        SerieLevel3=LEOContentMod_FuelTank_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый топливный бак был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту, что позволяет значительно усилить мощность и дальность захвата.</color>
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Скорость притягивания на ближней дистанции: <bonHookMinSpeed> ед.
+        Text=Скорость притягивания на дальней дистанции: <bonHookMaxSpeed> ед.
+        bonHook=10
+        bonHookMaxSpeed=1
+        bonHookMinSpeed=1
+        bonHookRadius=20
+    }
+    LEOContentMod_FuelTank_Un2 ^{
+        AcrynSerie=Модульный топливный бак
+        Cost=300
+        Equipments=FuelTank
+        KindGraph=Un
+        LevelsCount=3
+        Name=Модульный топливный бак II
+        Priority=30
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_FuelTank_Un1
+        SerieLevel2=LEOContentMod_FuelTank_Un2
+        SerieLevel3=LEOContentMod_FuelTank_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый топливный бак был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту, что позволяет значительно усилить мощность и дальность захвата.</color>
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Скорость притягивания на ближней дистанции: <bonHookMinSpeed> ед.
+        Text=Скорость притягивания на дальней дистанции: <bonHookMaxSpeed> ед.
+        bonHook=20
+        bonHookMaxSpeed=2
+        bonHookMinSpeed=2
+        bonHookRadius=40
+    }
+    LEOContentMod_FuelTank_Un3 ^{
+        AcrynSerie=Модульный топливный бак
+        Cost=400
+        Equipments=FuelTank
+        KindGraph=Un
+        LevelsCount=3
+        Name=Модульный топливный бак III
+        Priority=50
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_FuelTank_Un1
+        SerieLevel2=LEOContentMod_FuelTank_Un2
+        SerieLevel3=LEOContentMod_FuelTank_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый топливный бак был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту, что позволяет значительно усилить мощность и дальность захвата.</color>
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Скорость притягивания на ближней дистанции: <bonHookMinSpeed> ед.
+        Text=Скорость притягивания на дальней дистанции: <bonHookMaxSpeed> ед.
+        bonHook=30
+        bonHookMaxSpeed=3
+        bonHookMinSpeed=3
+        bonHookRadius=60
+    }
+    LEOContentMod_Giperion_1 ^{
+        Cost=200
+        CustomTag=LEOContentMod_Giperion_1_Hull
+        Equipments=Hull
+        HullGraphSize=130
+        KindGraph=Hyperion
+        Name=Корпус "Гиперион" I
+        OnPlanets=0
+        Priority=10
+        Ruins=WB,RC
+        Size=130
+        Special=1
+        Text=<color=248,252,248>Специальный корпус, сделанный по заказу сети центра рейнджеров и военных коалиции. Эксперимент по созданию этого корпуса выдался удачным. Существует несколько видов образцов подобного эксперимента с различными свойствами и технологиями.</color>
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Мощность энергетического оружия: <bonWEnergy> ед.
+        Text=Мощность осколочного оружия: <bonWSplinter> ед.
+        Text=Мощность ракетного оружия: <bonWMissile> ед.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        bonJump=3
+        bonSlotArt=-2
+        bonSlotHook=-1
+        bonSlotWeapon=-2
+        bonSpeed=-30
+        bonWEnergy=5
+        bonWMissile=8
+        bonWRadius=-20
+        bonWSplinter=11
+    }
+    LEOContentMod_Giperion_2 ^{
+        Cost=400
+        CustomTag=LEOContentMod_Giperion_2_Hull
+        Equipments=Hull
+        HullGraphSize=130
+        KindGraph=Hyperion
+        Name=Корпус "Гиперион" II
+        OnPlanets=0
+        Priority=30
+        Ruins=WB,RC
+        Size=130
+        Special=1
+        Text=<color=248,252,248>Специальный корпус, сделанный по заказу сети центра рейнджеров и военных коалиции. Эксперимент по созданию этого корпуса выдался удачным. Существует несколько видов образцов подобного эксперимента с различными свойствами и технологиями.</color>
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Мощность энергетического оружия: <bonWEnergy> ед.
+        Text=Мощность осколочного оружия: <bonWSplinter> ед.
+        Text=Мощность ракетного оружия: <bonWMissile> ед.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        bonJump=6
+        bonSlotArt=-1
+        bonSlotForsage=-1
+        bonSlotWeapon=-1
+        bonSpeed=-60
+        bonWEnergy=10
+        bonWMissile=16
+        bonWRadius=-40
+        bonWSplinter=22
+    }
+    LEOContentMod_Giperion_3 ^{
+        Cost=600
+        CustomTag=LEOContentMod_Giperion_3_Hull
+        Equipments=Hull
+        HullGraphSize=130
+        KindGraph=Hyperion
+        Name=Корпус "Гиперион" III
+        OnPlanets=0
+        Priority=50
+        Ruins=WB,RC
+        Size=130
+        Special=1
+        Text=<color=248,252,248>Специальный корпус, сделанный по заказу сети центра рейнджеров и военных коалиции. Эксперимент по созданию этого корпуса выдался удачным. Существует несколько видов образцов подобного эксперимента с различными свойствами и технологиями.</color>
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Мощность энергетического оружия: <bonWEnergy> ед.
+        Text=Мощность осколочного оружия: <bonWSplinter> ед.
+        Text=Мощность ракетного оружия: <bonWMissile> ед.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        bonJump=10
+        bonSlotArt=-1
+        bonSlotWeapon=-1
+        bonSpeed=-90
+        bonWEnergy=15
+        bonWMissile=24
+        bonWRadius=-60
+        bonWSplinter=33
+    }
+    LEOContentMod_Giperion_4 ^{
+        Cost=800
+        CustomTag=LEOContentMod_Giperion_4_Hull
+        Equipments=Hull
+        HullGraphSize=130
+        KindGraph=Hyperion
+        Name=Корпус "Гиперион" IV
+        OnPlanets=0
+        Priority=90
+        Ruins=WB,RC
+        Size=130
+        Special=1
+        Text=<color=248,252,248>Специальный корпус, сделанный по заказу сети центра рейнджеров и военных коалиции. Эксперимент по созданию этого корпуса выдался удачным. Существует несколько видов образцов подобного эксперимента с различными свойствами и технологиями.</color>
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Мощность энергетического оружия: <bonWEnergy> ед.
+        Text=Мощность осколочного оружия: <bonWSplinter> ед.
+        Text=Мощность ракетного оружия: <bonWMissile> ед.
+        bonJump=6
+        bonWEnergy=10
+        bonWMissile=16
+        bonWRadius=40
+        bonWSplinter=22
+    }
+    LEOContentMod_HullFei_PC5 ^{
+        Cost=600
+        CustomTag=LEOContentMod_HullFei_PC5_Hull
+        Equipments=Hull
+        Fragility=90
+        KindGraph=Fei_PC
+        Name=Крутейший фантом
+        OnPlanets=0
+        Priority=60
+        Ruins=PB
+        Size=110
+        Special=1
+        Text=<color=248,252,248>Эта версия "Крутого" корпуса была эксклюзивно модифицирована знаменитым пиратским техником-фэянином Иллиани. Система движения корпуса усовершенствована для достижения более высоких скоростей, а энергоустановка перепрограммирована на усиление подпитки генератора поля. Однако есть и побочные эффекты, мешающие работе захвата и периодически уменьшающие прочность всего оборудования.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Генератор поля: <bonDef> ед.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Навык техники: <bonSkill3> ед.
+        Text=Масса корабля: <bonMass><clr>%<clrEnd> ед.
+        bonDef=15
+        bonHook=-50
+        bonMass=-10
+        bonSkill3=-3
+        bonSpeed=250
+    }
+    LEOContentMod_HullKlissan_MK2 ^{
+        Cost=800
+        Equipments=Hull
+        KindGraph=Klissan
+        Name=Катаури МК2
+        OnPlanets=0
+        Priority=90
+        Ruins=0
+        Size=90
+        Special=1
+        Text=<color=248,252,248>Уникальный корпус, воссозданный учеными из трехсотлетних клисанских технологий, затерянных где-то в анналах космоса. Модулярная обработка акрином подарила этому корпусу вторую жизнь, позволив использовать его наряду с современными высокими технологиями. Корпус имеет уникальные возможности перемещения в гипер и обычном пространстве, незаменимые как для боевых действий, так и для научных исследований.</color>
+        Text=Навык техники: <bonSkill3>
+        Text=Навык маневренности: <bonSkill2>
+        Text=Скорость двигателя: <bonSpeed>
+        Text=Починка дроидом: <bonDroid>
+        Text=Сила ракетного оружия: <bonWMissile>
+        Text=Дальность прыжка: <bonJump>
+        Text=Мощность ГЗП: <bonDef>
+        bonDef=-12
+        bonDroid=20
+        bonJump=-10
+        bonSkill2=-1
+        bonSkill3=3
+        bonSlotArt=-2
+        bonSpeed=150
+        bonWMissile=20
+    }
+    LEOContentMod_HullMaloc_PC5 ^{
+        Cost=600
+        CustomTag=LEOContentMod_HullMaloc_PC5_Hull
+        Equipments=Hull
+        Fragility=90
+        KindGraph=Maloc_PC
+        Name=Злейший бамбай
+        OnPlanets=0
+        Priority=60
+        Ruins=PB
+        Size=110
+        Special=1
+        Text=<color=248,252,248>Новейшая модель пиратского корпуса для отчаянных бойцов, эксклюзивно улучшенная лучшими пиратскими техниками. Особые нанотехнологии ускоряют починку корпуса дроидом, повышают дальность стрельбы и облегчают управление кораблем в бою. Но в связи с создаваемыми нагрузками падает скорость двигателя и дальность видимости радара.</color>
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Навык точности: <bonSkill1> ед.
+        Text=Навык маневренности: <bonSkill2> ед.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        bonDroid=20
+        bonRadar=-600
+        bonSkill1=4
+        bonSkill2=-2
+        bonSpeed=-60
+        bonWRadius=60
+    }
+    LEOContentMod_KibHook_01 ^{
+        AcrynSerie=Кибернетический захват
+        Cost=125
+        Equipments=Hook
+        Fragility=130
+        KindGraph=Comp
+        LevelsCount=3
+        Name=Кибернетический захват I
+        OnPlanets=1
+        Owner=People,Fei
+        Priority=10
+        SerieLevel1=LEOContentMod_KibHook_01
+        SerieLevel2=LEOContentMod_KibHook_02
+        SerieLevel3=LEOContentMod_KibHook_03
+        Size=70
+        Special=1
+        Text=<color=248,252,248>Выпускаемое фэянами и людьми оборудование создано в режиме совместимости с другим имеющимся на корабле аппаратным обеспечением. Кибернетический захват по факту является роботом, подбирающим небольшие предметы на скромной дистанции, попутно ремонтируя корпус корабля. Слабой стороной захвата является его броня, не способная эффективно сопротивляться выстрелам.</color>
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Скорость притягивания на ближней дистанции: <bonHookMinSpeed> ед.
+        bonDroid=20
+        bonHook=-20
+        bonHookMinSpeed=-1
+        bonHookRadius=-40
+    }
+    LEOContentMod_KibHook_02 ^{
+        AcrynSerie=Кибернетический захват
+        Cost=150
+        Equipments=Hook
+        Fragility=170
+        KindGraph=Comp
+        LevelsCount=3
+        Name=Кибернетический захват II
+        OnPlanets=1
+        Owner=People,Fei
+        Priority=30
+        SerieLevel1=LEOContentMod_KibHook_01
+        SerieLevel2=LEOContentMod_KibHook_02
+        SerieLevel3=LEOContentMod_KibHook_03
+        Size=80
+        Special=1
+        Text=<color=248,252,248>Выпускаемое фэянами и людьми оборудование создано в режиме совместимости с другим имеющимся на корабле аппаратным обеспечением. Кибернетический захват по факту является роботом, подбирающим небольшие предметы на скромной дистанции, попутно ремонтируя корпус корабля. Слабой стороной захвата является его броня, не способная эффективно сопротивляться выстрелам.</color>
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Скорость притягивания на ближней дистанции: <bonHookMinSpeed> ед.
+        bonDroid=30
+        bonHook=-40
+        bonHookMinSpeed=-2
+        bonHookRadius=-80
+    }
+    LEOContentMod_KibHook_03 ^{
+        AcrynSerie=Кибернетический захват
+        Cost=175
+        Equipments=Hook
+        Fragility=200
+        KindGraph=Comp
+        LevelsCount=3
+        Name=Кибернетический захват III
+        OnPlanets=1
+        Owner=People,Fei
+        Priority=50
+        SerieLevel1=LEOContentMod_KibHook_01
+        SerieLevel2=LEOContentMod_KibHook_02
+        SerieLevel3=LEOContentMod_KibHook_03
+        Size=90
+        Special=1
+        Text=<color=248,252,248>Выпускаемое фэянами и людьми оборудование создано в режиме совместимости с другим имеющимся на корабле аппаратным обеспечением. Кибернетический захват по факту является роботом, подбирающим небольшие предметы на скромной дистанции, попутно ремонтируя корпус корабля. Слабой стороной захвата является его броня, не способная эффективно сопротивляться выстрелам.</color>
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Скорость притягивания на ближней дистанции: <bonHookMinSpeed> ед.
+        Text=Скорость притягивания на дальней дистанции: <bonHookMaxSpeed> ед.
+        bonDroid=40
+        bonHook=-60
+        bonHookMaxSpeed=-2
+        bonHookMinSpeed=-2
+        bonHookRadius=-120
+    }
+    LEOContentMod_Radar_Sid1 ^{
+        AcrynSerie=Сидеральный радар
+        Cost=115
+        Equipments=Radar
+        Fragility=166
+        KindGraph=17
+        LevelsCount=3
+        Name=Сидеральный радар I
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=10
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_Radar_Sid1
+        SerieLevel2=LEOContentMod_Radar_Sid2
+        SerieLevel3=LEOContentMod_Radar_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-1
+        bonMass=-3
+        bonSpeed=40
+    }
+    LEOContentMod_Radar_Sid2 ^{
+        AcrynSerie=Сидеральный радар
+        Cost=115
+        Equipments=Radar
+        Fragility=160
+        KindGraph=17
+        LevelsCount=3
+        Name=Сидеральный радар II
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_Radar_Sid1
+        SerieLevel2=LEOContentMod_Radar_Sid2
+        SerieLevel3=LEOContentMod_Radar_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-2
+        bonMass=-5
+        bonSpeed=55
+    }
+    LEOContentMod_Radar_Sid3 ^{
+        AcrynSerie=Сидеральный радар
+        Cost=115
+        Equipments=Radar
+        Fragility=153
+        KindGraph=17
+        LevelsCount=3
+        Name=Сидеральный радар III
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=50
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_Radar_Sid1
+        SerieLevel2=LEOContentMod_Radar_Sid2
+        SerieLevel3=LEOContentMod_Radar_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-3
+        bonMass=-7
+        bonSpeed=80
+    }
+    LEOContentMod_Radar_Un1 ^{
+        AcrynSerie=Ретранслирующий радар
+        Cost=200
+        Equipments=Radar
+        KindGraph=Un
+        LevelsCount=3
+        Name=Ретранслирующий радар I
+        Priority=10
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_Radar_Un1
+        SerieLevel2=LEOContentMod_Radar_Un2
+        SerieLevel3=LEOContentMod_Radar_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый радар был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту, что позволяет значительно усилить скорость двигателя.</color>
+        Text=Скорость: <bonSpeed> ед.
+        bonSpeed=30
+    }
+    LEOContentMod_Radar_Un2 ^{
+        AcrynSerie=Ретранслирующий радар
+        Cost=300
+        Equipments=Radar
+        KindGraph=Un
+        LevelsCount=3
+        Name=Ретранслирующий радар II
+        Priority=30
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_Radar_Un1
+        SerieLevel2=LEOContentMod_Radar_Un2
+        SerieLevel3=LEOContentMod_Radar_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый радар был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту, что позволяет значительно усилить скорость двигателя.</color>
+        Text=Скорость: <bonSpeed> ед.
+        bonSpeed=60
+    }
+    LEOContentMod_Radar_Un3 ^{
+        AcrynSerie=Ретранслирующий радар
+        Cost=400
+        Equipments=Radar
+        KindGraph=Un
+        LevelsCount=3
+        Name=Ретранслирующий радар III
+        Priority=50
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_Radar_Un1
+        SerieLevel2=LEOContentMod_Radar_Un2
+        SerieLevel3=LEOContentMod_Radar_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый радар был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту, что позволяет значительно усилить скорость двигателя.</color>
+        Text=Скорость: <bonSpeed> ед.
+        bonSpeed=90
+    }
+    LEOContentMod_SborDroid_1 ^{
+        AcrynSerie=Сборочный дроид
+        Cost=200
+        Equipments=Droid
+        Fragility=100
+        KindGraph=SB_DRD
+        LevelsCount=3
+        Name=Сборочный дроид I
+        OnPlanets=0
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+        Priority=10
+        Ruins=Any
+        SerieLevel1=LEOContentMod_SborDroid_1
+        SerieLevel2=LEOContentMod_SborDroid_2
+        SerieLevel3=LEOContentMod_SborDroid_3
+        Special=1
+        Text=<color=248,252,248>Инновационная акриновая модификация дроида для технического обслуживания космических верфей. Благодаря прецизионным настройкам и отсутствию экстремальных нагрузок, этот универсальный механизм облегчает эксплуатацию небоевых систем корабля, в том числе и за счет перераспределния огневой мощи орудий. Стоимость и размер подобных систем значительно превышают стандартные значения.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Мощность защитного поля: <bonDef> ед.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Сила любого оружия: <bonWEnergy> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Масса корабля: <bonMass><clr>%<clrEnd>
+        bonDef=1
+        bonDroid=3
+        bonHook=10
+        bonJump=2
+        bonMass=5
+        bonRadar=150
+        bonScan=1
+        bonSpeed=20
+        bonWEnergy=-3
+        bonWMissile=-3
+        bonWRadius=-10
+        bonWSplinter=-3
+    }
+    LEOContentMod_SborDroid_2 ^{
+        AcrynSerie=Сборочный дроид
+        Cost=400
+        Equipments=Droid
+        Fragility=150
+        KindGraph=SB_DRD
+        LevelsCount=3
+        Name=Сборочный дроид II
+        OnPlanets=0
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+        Priority=30
+        Ruins=Any
+        SerieLevel1=LEOContentMod_SborDroid_1
+        SerieLevel2=LEOContentMod_SborDroid_2
+        SerieLevel3=LEOContentMod_SborDroid_3
+        Special=1
+        Text=<color=248,252,248>Инновационная акриновая модификация дроида для технического обслуживания космических верфей. Благодаря прецизионным настройкам и отсутствию экстремальных нагрузок, этот универсальный механизм облегчает эксплуатацию небоевых систем корабля, в том числе и за счет перераспределния огневой мощи орудий. Стоимость и размер подобных систем значительно превышают стандартные значения.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Мощность защитного поля: <bonDef> ед.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Сила любого оружия: <bonWEnergy> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Масса корабля: <bonMass><clr>%<clrEnd>
+        bonDef=2
+        bonDroid=6
+        bonHook=20
+        bonJump=4
+        bonMass=10
+        bonRadar=300
+        bonScan=2
+        bonSpeed=40
+        bonWEnergy=-6
+        bonWMissile=-6
+        bonWRadius=-20
+        bonWSplinter=-6
+    }
+    LEOContentMod_SborDroid_3 ^{
+        AcrynSerie=Сборочный дроид
+        Cost=500
+        Equipments=Droid
+        Fragility=200
+        KindGraph=SB_DRD
+        LevelsCount=3
+        Name=Сборочный дроид III
+        OnPlanets=0
+        Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+        Priority=50
+        Ruins=Any
+        SerieLevel1=LEOContentMod_SborDroid_1
+        SerieLevel2=LEOContentMod_SborDroid_2
+        SerieLevel3=LEOContentMod_SborDroid_3
+        Special=1
+        Text=<color=248,252,248>Инновационная акриновая модификация дроида для технического обслуживания космических верфей. Благодаря прецизионным настройкам и отсутствию экстремальных нагрузок, этот универсальный механизм облегчает эксплуатацию небоевых систем корабля, в том числе и за счет перераспределния огневой мощи орудий. Стоимость и размер подобных систем значительно превышают стандартные значения.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Починка дроидом: <bonDroid> ед.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Мощность защитного поля: <bonDef> ед.
+        Text=Дальность радара: <bonRadar> ед.
+        Text=Мощность сканера: <bonScan> ед.
+        Text=Сила любого оружия: <bonWEnergy> ед.
+        Text=Дальность стрельбы: <bonWRadius> ед.
+        Text=Масса корабля: <bonMass><clr>%<clrEnd>
+        bonDef=3
+        bonDroid=10
+        bonHook=35
+        bonJump=7
+        bonMass=15
+        bonRadar=500
+        bonScan=4
+        bonSpeed=70
+        bonWEnergy=-10
+        bonWMissile=-10
+        bonWRadius=-30
+        bonWSplinter=-10
+    }
+    LEOContentMod_Scaner_Sid1 ^{
+        AcrynSerie=Сидеральный сканер
+        Cost=115
+        Equipments=Scaner
+        Fragility=166
+        KindGraph=17
+        LevelsCount=3
+        Name=Сидеральный сканер I
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=10
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_Scaner_Sid1
+        SerieLevel2=LEOContentMod_Scaner_Sid2
+        SerieLevel3=LEOContentMod_Scaner_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-1
+        bonMass=-3
+        bonSpeed=40
+    }
+    LEOContentMod_Scaner_Sid2 ^{
+        AcrynSerie=Сидеральный сканер
+        Cost=115
+        Equipments=Scaner
+        Fragility=160
+        KindGraph=17
+        LevelsCount=3
+        Name=Сидеральный сканер II
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_Scaner_Sid1
+        SerieLevel2=LEOContentMod_Scaner_Sid2
+        SerieLevel3=LEOContentMod_Scaner_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-2
+        bonMass=-5
+        bonSpeed=55
+    }
+    LEOContentMod_Scaner_Sid3 ^{
+        AcrynSerie=Сидеральный сканер
+        Cost=115
+        Equipments=Scaner
+        Fragility=153
+        KindGraph=17
+        LevelsCount=3
+        Name=Сидеральный сканер III
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=50
+        Ruins=PB,CB
+        SerieLevel1=LEOContentMod_Scaner_Sid1
+        SerieLevel2=LEOContentMod_Scaner_Sid2
+        SerieLevel3=LEOContentMod_Scaner_Sid3
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Одна из немногих акриновых технологий, созданных пиратскими учеными без посягательства на авторское право. Принцип работы состоит в создании гравитационных полей определенной формы, что приводит к умеренному снижению инерции массы любого корабля, и косвенно облегчает работу двигателя в реальном космосе. Несмотря на некоторый успех, технология все еще представляет немалую опасность для любого пилота, ведь созданные пиратами сидераторы крайне нестабильны и влияют как на поведение корабля в гиперпространстве, так и на пожарную безопасность на борту.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Масса корабля: <bonMass>%
+        bonJump=-3
+        bonMass=-7
+        bonSpeed=80
+    }
+    LEOContentMod_Scaner_Un1 ^{
+        AcrynSerie=Информационный сканер
+        Cost=200
+        Equipments=Scaner
+        KindGraph=Un
+        LevelsCount=3
+        Name=Информационный сканер I
+        Priority=10
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_Scaner_Un1
+        SerieLevel2=LEOContentMod_Scaner_Un2
+        SerieLevel3=LEOContentMod_Scaner_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый сканер был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту, что позволяет значительно увеличить дальность гиперпрыжка двигателя..</color>
+        Text=Дальность прыжка: <bonJump> ед.
+        bonJump=3
+    }
+    LEOContentMod_Scaner_Un2 ^{
+        AcrynSerie=Информационный сканер
+        Cost=300
+        Equipments=Scaner
+        KindGraph=Un
+        LevelsCount=3
+        Name=Информационный сканер II
+        Priority=30
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_Scaner_Un1
+        SerieLevel2=LEOContentMod_Scaner_Un2
+        SerieLevel3=LEOContentMod_Scaner_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый сканер был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту, что позволяет значительно увеличить дальность гиперпрыжка двигателя..</color>
+        Text=Дальность прыжка: <bonJump> ед.
+        bonJump=6
+    }
+    LEOContentMod_Scaner_Un3 ^{
+        AcrynSerie=Информационный сканер
+        Cost=400
+        Equipments=Scaner
+        KindGraph=Un
+        LevelsCount=3
+        Name=Информационный сканер III
+        Priority=50
+        Ruins=RC,SB,BK
+        SerieLevel1=LEOContentMod_Scaner_Un1
+        SerieLevel2=LEOContentMod_Scaner_Un2
+        SerieLevel3=LEOContentMod_Scaner_Un3
+        Special=1
+        Text=<color=248,252,248>Этот особый сканер был создан по заказу сети центров рейнджеров специально для самых выдающихся борцов с доминаторами и пиратами. Он снабжен многофункциональной системой кординации с другим оборудованием на борту, что позволяет значительно увеличить дальность гиперпрыжка двигателя.</color>
+        Text=Дальность прыжка: <bonJump> ед.
+        bonJump=9
+    }
+    LEOContentMod_Viking ^{
+        Cost=1000
+        CustomTag=LEOContentMod_Viking_Hull
+        Equipments=Hull
+        FragilityEnergy=75
+        FragilityMissile=100
+        FragilitySplinter=125
+        HullGraphSize=125
+        KindGraph=Viking
+        Name=Корпус "Викинг"
+        OnPlanets=1
+        Owner=People
+        Priority=50
+        Ruins=WB,RC
+        Size=100
+        Special=1
+        Text=<color=248,252,248>После Войны с Клисанами, военные инженеры Людей разработали принципиально новую боевую единицу, призванную решить одну из главных проблем армии: крайнюю уязвимость перед нападениями с воздуха. «Викинг» создан на основе тех же технологий, что и осадный танк, и должен стать идеальным боевым комплексом, объединяющим в себе функции истребителя и наземного штурмовика. К сожалению возможность трансформироваться в наземную боевую единицу у Викингов пропала, но за счет удаления громоздких гидравлических конструкций инженеры смогли добиться превосходной управляемости.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Мощность энергетического оружия: <bonWEnergy> ед.
+        Text=Эффективность дроида: <bonDroid> ед.
+        Text=Мощность ГЗП: <bonDef> ед.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Мощность осколочного оружия: <bonWSplinter> ед.
+        Text=Мощность ракетного оружия: <bonWMissile> ед.
+        bonDef=4
+        bonDroid=10
+        bonHook=-30
+        bonHookRadius=-30
+        bonSlotArt=-1
+        bonSpeed=75
+        bonWEnergy=15
+        bonWMissile=-15
+        bonWSplinter=-15
+    }
+    LEOContentMod_Wraith ^{
+        Cost=1000
+        CustomTag=LEOContentMod_Wraith_Hull
+        Equipments=Hull
+        FragilityEnergy=90
+        FragilityMissile=80
+        FragilitySplinter=120
+        HullGraphSize=120
+        KindGraph=Wraith
+        Name=Корпус "Мираж"
+        OnPlanets=1
+        Owner=People
+        Priority=50
+        Ruins=WB,RC
+        Size=150
+        Special=1
+        Text=<color=248,252,248>В первую очередь «Миражи» разрабатывались Людьми как противовоздушные истребители, и их парные залпы ракетами ВВ «Близнецы» наносили существенный урон воздушным единицам противника. К тому же, легкая броня машины, обеспечившая ему его легендарную маневренность, плохо сдерживала удары ПВО, поэтому от пилотов «Миражей» требовалась высокая наблюдательность и быстрота реагирования – в противном случае первый же удар вражеских орудий превращал истребитель в ворох дымящихся обломков.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Мощность ГЗП: <bonDef> ед.
+        Text=Навык точности: <bonSkill1> ед.
+        Text=Навык маневренности: <bonSkill2> ед.
+        Text=Навык обаяния: <bonSkill5> ед.
+        bonDef=-6
+        bonJump=8
+        bonSkill1=-1
+        bonSkill2=2
+        bonSkill5=-2
+        bonSlotArt=-1
+        bonSpeed=200
+    }
+    LEOContentMod_WraithJunker ^{
+        Cost=1000
+        CustomTag=LEOContentMod_WraithJunker_Hull
+        Equipments=Hull
+        FragilityEnergy=85
+        FragilityMissile=110
+        FragilitySplinter=85
+        HullGraphSize=120
+        KindGraph=WraithJunker
+        Name=Корпус "Мираж"
+        OnPlanets=1
+        Owner=People
+        Priority=50
+        Ruins=WB,RC
+        Size=150
+        Special=1
+        Text=<color=248,252,248>В первую очередь «Миражи» разрабатывались Людьми как противовоздушные истребители, и их парные залпы ракетами ВВ «Близнецы» наносили существенный урон воздушным единицам противника. К тому же, легкая броня машины, обеспечившая ему его легендарную маневренность, плохо сдерживала удары ПВО, поэтому от пилотов «Миражей» требовалась высокая наблюдательность и быстрота реагирования – в противном случае первый же удар вражеских орудий превращал истребитель в ворох дымящихся обломков.</color>
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Мощность ГЗП: <bonDef> ед.
+        Text=Навык маневренности: <bonSkill2> ед.
+        Text=Навык техники: <bonSkill3> ед.
+        bonDef=-3
+        bonJump=5
+        bonSkill2=2
+        bonSkill3=-1
+        bonSlotWeapon=-1
+        bonSpeed=150
+    }
+}
+Script ^{
+    Mod_ExpHullsBases ~{
+        1017=Не секрет, что повсеместно применяемые в создании космических кораблей и станций материалы крайне дороги и не экономичны. Кроме того, повреждённые бронелисты зачастую приходится заменять целиком, так как они попросту раскалываются и рассыпаются на куски.<br>У наших инженеров давно есть идея: заменить всю броню станции на поликсенатную. Поликсенат - новейший композитный пластик, который при сверхнизких температурах по прочности не уступает корабельной броне, но в тоже время крайне лёгок в повседневном обслуживании.<br>Мы можем демонтировать текущую броню и распродать её для частичного погашения расходов. <0><br><br>Сила ракетного оружия: <clr>+12<clrEnd><br>Сила энергетического оружия: <clr>+9<clrEnd><br>Сила осколочного оружия: <clr>+15<clrEnd><br>Дальность стрельбы: <clr>+40<clrEnd><br>Броня корпуса: <clr>+3<clrEnd><br>Восприимчивость к урону: <clr>-10<clrEnd>%<br>Навык точности: <clr>+2<clrEnd><br>Навык маневренности: <clr>+2<clrEnd><br>Навык техники: <clr>+2<clrEnd><br>Эффективность дроида: <clr>+10<clrEnd><br>Генератор поля: <clr>+3<clrEnd>%<br><1><br>Цена установки: <2> cr.<br><br>Новая броня будет доставлена и смонтирована тотчас же после заказа. Правда, другое особое усовершенствование после этого произвести будет уже невозможно. <3>
+        456=Это экспериментальная система сверхточного наведения, спроектированная специально для установки на коалиционные космические базы. Монтируется вместо обыкновенного радара и существенно повышает точность всех бортовых орудий:<br><br>Сила ракетного оружия: <clr>+26<clrEnd><br>Сила энергетического оружия: <clr>+22<clrEnd><br>Сила осколочного оружия: <clr>+30<clrEnd><br>Дальность стрельбы: <clr>+80<clrEnd><br>Броня корпуса: <clr>+7<clrEnd><br>Восприимчивость к урону: <clr>-20<clrEnd>%<br>Навык точности: <clr>+4<clrEnd><br>Навык маневренности: <clr>+4<clrEnd><br>Навык техники: <clr>+4<clrEnd><br>Эффективность дроида: <clr>+20<clrEnd><br>Генератор поля: <clr>+7<clrEnd>%<br><0><br>Цена установки: <1> cr.<br><br>Система будет доставлена и смонтирована тотчас же после заказа. Правда, другое особое усовершенствование после этого произвести будет уже невозможно. <2>
+        1016=Совсем недавно учёными была изобретена новая защитная технология, использующая принцип направленных сингулярных отклонений материи. Увеличение защиты происходит за счёт точечного искривления материи в местах попадания вражеских снарядов и искажения пространства на пути следования собственных выстрелов.<br>Массивный генератор встраивается в корпус, используя его детали для формирования активного поля. При этом для работы такого устройства требуется так много энергии, что устанавливать его имеет смысл лишь на автономные космические станции. <0><br><br>Сила ракетного оружия: <clr>+40<clrEnd><br>Сила энергетического оружия: <clr>+35<clrEnd><br>Сила осколочного оружия: <clr>+45<clrEnd><br>Дальность стрельбы: <clr>+120<clrEnd><br>Броня корпуса: <clr>+11<clrEnd><br>Восприимчивость к урону: <clr>-30<clrEnd>%<br>Навык точности: <clr>+6<clrEnd><br>Навык маневренности: <clr>+6<clrEnd><br>Навык техники: <clr>+6<clrEnd><br>Эффективность дроида: <clr>+30<clrEnd><br>Генератор поля: <clr>+11<clrEnd>%<br><1><br>Цена установки: <2> cr.<br><br>Генератор будет доставлен и смонтирован тотчас же после заказа. Правда, другое особое усовершенствование после этого произвести будет уже невозможно. <3>
+    }
+}

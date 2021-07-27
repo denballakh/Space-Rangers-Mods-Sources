@@ -1,0 +1,85 @@
+Artefacts ^{
+    CustomArtefacts ^{
+        EnergyNegator ^{
+            Broken=(изношен)
+            BrokenInBattle=В результате полученного в бою удара купол <color=255,240,100>Рефлектора</color> треснул пополам. В таком состоянии устройство не способно отражать урон.
+            BrokenInUse=<color=255,240,100>Рефлектор</color> сильно износился и более не функционирует. Требуется капитальный ремонт.
+            Cost=1600
+            CountsAs=t_ArtefactDef
+            Name=Поляриризационный проектор
+            NoWear=1
+            OnActCode ^{
+                01=if(ScriptItemActionType(t_OnTakingDamageEn))
+                02 ^{
+                    01=ScriptItemActParam(ScriptItemActParam()-ScriptItemActParam()/5);
+                }
+            }
+            OnActCodeTypes=t_OnTakingDamageEn
+            Text=Накрывает корпус корабля особым полем, снижающим любой входяй урон энергетического происхождения на <clr>20%<clrEnd>.
+        }
+        MinigunBlocker ^{
+            Broken=(изношен)
+            BrokenInBattle=В результате полученного в бою удара купол <color=255,240,100>Рефлектора</color> треснул пополам. В таком состоянии устройство не способно отражать урон.
+            BrokenInUse=<color=255,240,100>Рефлектор</color> сильно износился и более не функционирует. Требуется капитальный ремонт.
+            Cost=1600
+            CountsAs=t_ArtefactDef
+            Name=Молекулярный уплотнитель
+            NoWear=1
+            OnActCode ^{
+                01=if(ScriptItemActionType(t_OnTakingDamageSp) && ShipInNormalSpace(ScriptItemActShip()))
+                02 ^{
+                    01=dword gun=ScriptItemActObject1();
+                    02=if(CustomWeaponType(gun)=='Dom_minigun')
+                    03=if(Rnd(1,5)>1)ScriptItemActParam(0);
+                }
+            }
+            OnActCodeTypes=t_OnTakingDamageSp
+            Text=Уплотняет молекулярную структуру корпуса, позволяя ей поглощать около <clr>80%<clrEnd> урона особого типа осколочных орудий.
+        }
+        Reproductor ^{
+            Broken=(изношен)
+            BrokenInBattle=В результате полученного в бою удара купол <color=255,240,100>Рефлектора</color> треснул пополам. В таком состоянии устройство не способно отражать урон.
+            BrokenInUse=<color=255,240,100>Рефлектор</color> сильно износился и более не функционирует. Требуется капитальный ремонт.
+            Cost=1600
+            CountsAs=t_ArtefactDef
+            Name=Репродуктор
+            NoWear=1
+            OnActCode ^{
+                01=if(ScriptItemActionType(t_OnDroidRepair))
+                02 ^{
+                    01=ScriptItemActParam(ScriptItemActParam()+15);
+                }
+            }
+            OnActCodeTypes=t_OnDroidRepair
+            Text=Небольшой специальный модуль, работающий совместно с дианодом. Улучшает показатель ремонта корпуса на <clr>15<clrEnd> ед.
+        }
+        SplinterNegator ^{
+            Broken=(изношен)
+            BrokenInBattle=В результате полученного в бою удара купол <color=255,240,100>Рефлектора</color> треснул пополам. В таком состоянии устройство не способно отражать урон.
+            BrokenInUse=<color=255,240,100>Рефлектор</color> сильно износился и более не функционирует. Требуется капитальный ремонт.
+            Cost=1600
+            CountsAs=t_ArtefactDef
+            Name=Нанофреймер
+            NoWear=1
+            OnActCode ^{
+                01=if(ScriptItemActionType(t_OnTakingDamageSp))
+                02 ^{
+                    01=ScriptItemActParam(ScriptItemActParam()-ScriptItemActParam()/5);
+                }
+            }
+            OnActCodeTypes=t_OnTakingDamageSp
+            Text=Формирует на корпусе панцирный наноскелет, смягчающий получаемые  от осколочного оружия повреждения на <clr>20%<clrEnd>.
+        }
+    }
+}
+MicroModuls ^{
+    GTLArtDominatorGiveaway_ImmortalArt ^{
+        Equipments=Any
+        Fragility=0
+        LockedAcryn=3
+        Name=Immortal_Art
+        NonSearchable=1
+        Priority=0
+        Special=1
+    }
+}

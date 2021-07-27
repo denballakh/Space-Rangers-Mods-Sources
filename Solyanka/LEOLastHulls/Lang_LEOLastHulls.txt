@@ -1,0 +1,285 @@
+MicroModuls ~{
+    LEOLastHulls_G1 ^{
+        Cost=300
+        CustomTag=LEOLastHulls_G1_Hull
+        Equipments=Hull
+        HullGraphSize=130
+        KindGraph=G1
+        Name=Горизонт
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,CB
+        Size=150
+        Special=1
+        Text=<color=248,252,248>Пиратский корабль серии "Р". Модель "Горизонт" предназначена для нападения на торговые корабли и перевозки награбленного.</color>
+        Text=Навык маневренности: <bonSkill2>
+        Text=Навык торговли: <bonSkill4>
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Дальность захвата: <bonHookRadius>
+        Text=Дальность стрельбы: <bonWRadius>
+        bonHook=30
+        bonHookRadius=30
+        bonSkill2=-2
+        bonSkill4=2
+        bonSlotArt=-2
+        bonSlotWeapon=-2
+        bonWRadius=50
+    }
+    LEOLastHulls_G2 ^{
+        Cost=300
+        CustomTag=LEOLastHulls_G2_Hull
+        Equipments=Hull
+        KindGraph=G2
+        Name=Черный призрак
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,CB
+        Size=100
+        Special=1
+        Text=<color=248,252,248>Пиратский корабль серии "Р". Модель "Черный призрак" является кораблем повышенной маневренности.</color>
+        Text=Навык маневренности: <bonSkill2>
+        Text=Скорость двигателя: <bonSpeed>
+        Text=Дальность прыжка: <bonJump>
+        bonJump=5
+        bonSkill2=2
+        bonSlotArt=-1
+        bonSlotDef=-1
+        bonSlotWeapon=-2
+        bonSpeed=120
+    }
+    LEOLastHulls_G3 ^{
+        Cost=500
+        CustomTag=LEOLastHulls_G3_Hull
+        Equipments=Hull
+        KindGraph=G3
+        Name=Приговор
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,CB
+        Size=130
+        Special=1
+        Text=<color=248,252,248>Пиратский корабль серии "Р". Модель "Приговор"  является тяжелым штурмовым кораблем.</color>
+        Text=Мощность энергетического орудия: <bonWEnergy>
+        Text=Мощность осколочного орудия: <bonWSplinter>
+        Text=Дальность стрельбы: <bonWRadius>
+        Text=Скорость двигателя: <bonSpeed>
+        Text=Масса корабля: <clr>+15%<clrEnd>
+        bonMass=15
+        bonSlotArt=-2
+        bonSlotForsage=-1
+        bonSpeed=-70
+        bonWEnergy=15
+        bonWRadius=30
+        bonWSplinter=20
+    }
+    LEOLastHulls_G4 ^{
+        Cost=400
+        CustomTag=LEOLastHulls_G4_Hull
+        Equipments=Hull
+        KindGraph=G4
+        Name=Колокол
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,CB
+        Size=150
+        Special=1
+        Text=<color=248,252,248>Пиратский корабль серии "Р". Модель "Колокол"  обладает повышенной защищенностью.</color>
+        Text=Навык техники: <bonSkill3>
+        Text=Броня корпуса: <bonHull>
+        Text=Починка дроидом: <bonDroid>
+        Text=Мощность ГЗП: <bonDef>
+        Text=Скорость двигателя: <bonSpeed>
+        bonDef=5
+        bonDroid=15
+        bonHull=3
+        bonSkill3=2
+        bonSlotArt=-1
+        bonSlotHook=-1
+        bonSlotWeapon=-1
+        bonSpeed=-40
+    }
+    LEOLastHulls_G5 ^{
+        Cost=210
+        CustomTag=LEOLastHulls_G5_Hull
+        Equipments=Hull
+        KindGraph=G5
+        Name=Цербер
+        OnPlanets=1
+        Owner=PirateClan
+        Priority=30
+        Ruins=PB,CB
+        Size=80
+        Special=1
+        Text=<color=248,252,248>Пиратский корабль серии "Р". Модель "Цербер" является перехватчиком и отличается повышенной огневой мощью.</color>
+        Text=Навык точности: <bonSkill1>
+        Text=Навык торговли: <bonSkill4>
+        Text=Навык обаяния: <bonSkill5>
+        Text=Скорость двигателя: <bonSpeed>
+        Text=Дальность прыжка: <bonJump>
+        Text=Мощность энергетического оружия: <bonWEnergy>
+        Text=Мощность ракетного оружия: <bonWMissile>
+        Text=Мощность осколочного оружия: <bonWSplinter>
+        Text=Дальность выстрела: <bonWRadius>
+        bonJump=-5
+        bonSkill1=3
+        bonSkill4=-3
+        bonSkill5=-3
+        bonSlotArt=-3
+        bonSpeed=50
+        bonWEnergy=10
+        bonWMissile=15
+        bonWRadius=45
+        bonWSplinter=20
+    }
+    LEOLastHulls_K1 ^{
+        Cost=600
+        Equipments=Hull
+        FragilityEnergy=100
+        FragilityMissile=70
+        FragilitySplinter=100
+        HullGraphSize=200
+        KindGraph=K1
+        Name=Эгемон
+        Priority=90
+        Ruins=0
+        Size=200
+        Special=1
+        Text=<color=248,252,248>Клисанский сверхтяжелый корабль, переоборудованый под нормальное управление. Многие компоненты и устройства до сих пор не изучены.</color>
+        Text=Навык точности: <bonSkill1>
+        Text=Навык лидерства: <bonSkill5>
+        Text=Навык обаяния: <bonSkill6>
+        Text=Мощность энергетического оружия: <bonWEnergy>
+        Text=Генератор поля: <bonDef>
+        Text=Броня корпуса: <bonHull>
+        Text=Скорость: <bonSpeed>
+        Text=Масса корабля: <clr>+20%<clrEnd>
+        bonDef=5
+        bonHull=3
+        bonMass=20
+        bonSkill1=2
+        bonSkill5=-2
+        bonSkill6=-2
+        bonSlotWeapon=-1
+        bonSpeed=-100
+        bonWEnergy=20
+    }
+    LEOLastHulls_K2 ^{
+        Cost=500
+        Equipments=Hull
+        FragilityEnergy=80
+        FragilityMissile=100
+        FragilitySplinter=80
+        HullGraphSize=150
+        KindGraph=K2
+        Name=Нондус
+        Priority=70
+        Ruins=0
+        Size=150
+        Special=1
+        Text=<color=248,252,248>Клисанский тяжелый корабль, переоборудованый под нормальное управление. Многие компоненты и устройства до сих пор не изучены.</color>
+        Text=Навык точности: <bonSkill1>
+        Text=Навык маневренности: <bonSkill2>
+        Text=Навык техники: <bonSkill3>
+        Text=Броня корпуса: <bonHull>
+        Text=Дальность выстрела: <bonWRadius>
+        Text=Масса корабля: <clr>+10%<clrEnd>
+        bonHull=5
+        bonMass=10
+        bonSkill1=-2
+        bonSkill2=3
+        bonSkill3=-1
+        bonSlotWeapon=-2
+        bonWRadius=120
+    }
+    LEOLastHulls_K3 ^{
+        Cost=400
+        Equipments=Hull
+        FragilityEnergy=70
+        FragilityMissile=130
+        FragilitySplinter=80
+        HullGraphSize=110
+        KindGraph=K3
+        Name=Катаури
+        Priority=50
+        Ruins=0
+        Size=110
+        Special=1
+        Text=<color=248,252,248>Клисанский средний корабль, переоборудованый под нормальное управление. Многие компоненты и устройства до сих пор не изучены.</color>
+        Text=Навык техники: <bonSkill3>
+        Text=Скорость двигателя: <bonSpeed>
+        Text=Починка дроидом: <bonDroid>
+        Text=Мощность ракетного оружия: <bonWMissile>
+        Text=Дальность прыжка: <bonJump>
+        Text=Мощность ГЗП: <bonDef>
+        bonDef=-7
+        bonDroid=10
+        bonJump=-5
+        bonSkill3=2
+        bonSlotArt=-1
+        bonSlotWeapon=-2
+        bonSpeed=100
+        bonWMissile=15
+    }
+    LEOLastHulls_K4 ^{
+        Cost=300
+        Equipments=Hull
+        FragilityEnergy=80
+        FragilityMissile=80
+        FragilitySplinter=80
+        HullGraphSize=90
+        KindGraph=K4
+        Name=Рогит
+        Priority=30
+        Ruins=0
+        Size=90
+        Special=1
+        Text=<color=248,252,248>Клисанский легкий корабль, переоборудованый под нормальное управление. Многие компоненты и устройства до сих пор не изучены.</color>
+        Text=Навык маневренности: <bonSkill2>
+        Text=Дальность радара: <bonRadar>
+        Text=Мощность ГЗП: <bonDef>
+        Text=Мощность осколочноего оружия: <bonWEnergy>
+        Text=Мощность энергетического оружия: <bonWEnergy>
+        Text=Масса корабля: <clr>-15%<clrEnd>
+        bonDef=5
+        bonMass=-15
+        bonRadar=500
+        bonSkill2=-2
+        bonSlotArt=-1
+        bonSlotHook=-1
+        bonSlotWeapon=-3
+        bonWEnergy=10
+        bonWSplinter=18
+    }
+    LEOLastHulls_K5 ^{
+        Cost=250
+        Equipments=Hull
+        HullGraphSize=80
+        KindGraph=K5
+        Name=Мутенок
+        Priority=30
+        Ruins=0
+        Size=90
+        Special=1
+        Text=<color=248,252,248>Клисанский сверхлегкий корабль, переоборудованый под нормальное управление. Многие компоненты и устройства до сих пор не изучены.</color>
+        Text=Навык точности: <bonSkill1>
+        Text=Навык маневренности: <bonSkill2>
+        Text=Дальность радара: <bonRadar>
+        Text=Мощность сканера: <bonScan>
+        Text=Скорость двигателя: <bonSpeed>
+        Text=Дальность прыжка: <bonJump>
+        bonJump=-3
+        bonRadar=1500
+        bonScan=6
+        bonSkill1=-2
+        bonSkill2=-2
+        bonSlotArt=-2
+        bonSlotDef=-1
+        bonSlotHook=-1
+        bonSlotWeapon=-3
+        bonSpeed=300
+    }
+}

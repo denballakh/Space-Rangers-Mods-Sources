@@ -1,0 +1,59 @@
+Script ^{
+    Mod_GTLFacilitate ~{
+        43=Наши лучшие техники изобрели особую технологию, называемую Облегчитель. Рейнджер <Player> не желаете на них взглянуть?
+        44=В качестве ограниченного предложения, мы предлагаем наиболее отличившимся в научных исследованиях пилотам особые наборы,  называемые "Облегчители". Они могут снизить вес любого оборудования на 10%, но не ниже минимально возможного.<br>Количество выдаваемых наборов будет ограничено только вашим научным званием.<br>--------------------------------------------------------<br>"Облегчитель" для Вас доступен в количестве: <0> ед. по цене: <1> cr.<br>--------------------------------------------------------<br>Каждый год с 1 января мы возобновляем выдачу наборов даже при превышении лимитов.
+        34=Недостаточно средств для совершения покупки.
+        45=Благодарим вас за приобретение! Надеемся, что оно принесёт вам немало пользы.
+        21=Мне не нужны никакие наборы!
+        46=Спасибо!
+        47=Ну и ладно, обойдусь!
+        42=Купить Облегчитель
+    }
+}
+UselessItems ~{
+    Facilitate ^{
+        Cost=Huge
+        Name=Облегчитель
+        OnActCode ^{
+            01=if(ScriptItemActionType()==t_OnAnotherItem)
+            02 ^{
+                01=if(ItemType(ScriptItemActObject1())>t_Hull && ItemType(ScriptItemActObject1())<=t_CustomWeapon)
+                02 ^{
+                    01=int min=0;
+                    02=if(ItemType(ScriptItemActObject1())>t_DefGenerator && ItemType(ScriptItemActObject1())<t_CustomWeapon)
+                    03 ^{
+                        00=min=CT('Items.Weapon.Stats.'+(ItemType(ScriptItemActObject1())-t_DefGenerator)+'.AverageSize');
+                        01=min=min/2;
+                    }
+                    04=if(ItemType(ScriptItemActObject1())>t_Hull && ItemType(ScriptItemActObject1())<t_Weapon1)
+                    05 ^{
+                        00=if(ItemType(ScriptItemActObject1())==t_Radar || ItemType(ScriptItemActObject1())==t_Scaner)min=15;
+                        01=else min=20;
+                    }
+                    06=if(ItemType(ScriptItemActObject1())==t_CustomWeapon)
+                    07 ^{
+                        00=min=GetCustomWeaponData(CustomWeaponType(ScriptItemActObject1()),'AverageSize')/2;
+                    }
+                    08=if(ItemSize(ScriptItemActObject1())>min)
+                    09 ^{
+                        01=if(MessageBoxYesNo('Облегчить оборудование?'))
+                        02 ^{
+                            01=ItemSize(ScriptItemActObject1(),(ItemSize(ScriptItemActObject1())*9)/10);
+                            02=if(ItemSize(ScriptItemActObject1())<min)ItemSize(ScriptItemActObject1(),min);
+                        }
+                        03=else exit;
+                    }
+                    10=else
+                    11 ^{
+                        01=MessageBox('Невозможно совершить операцию, оборудование имеет минимальный размер');
+                        02=exit;
+                    }
+                    12=ScriptItemActParam(1);
+                }
+            }
+        }
+        Owner=None
+        Size=20
+        Text=Позволяет уменьшить размер выбранного оборудования на <clr>10<clrEnd>%, но не более минимально допустимого веса.
+    }
+}

@@ -1,0 +1,596 @@
+FormInfo ^{
+	StarInfo ^{
+		ControlledByAMod_Invaders=Контролируется арксами
+	}
+	br=<br>
+}
+GalaxyNews ^{
+	Group ^{
+		WarriorLiberator ^{
+			CreateAMod_Invaders=В системе <StarNormal> (сектор <SectorNormal>) замечена активная деятельность военных. По заключению наших аналитиков, военные планируют нанести удар <Date> по захваченной арксами системе <StarEnemy>. Если это так, то просьба всем заинтересованным рейнджерам помочь нашим вооруженным силам.
+		}
+	}
+}
+MicroModuls ^{
+	AMod_InvadersHull1 ^{
+		CustomTag=InvadersHull1
+		Equipments=Hull
+		HullGraphSize=80
+		KindGraph=InvadersHull1
+		Name=--
+		Priority=0
+		Special=1
+		bonSkill1=6
+		bonSkill2=6
+		bonSkill3=6
+		bonSpeed=300
+	}
+	AMod_InvadersHull2 ^{
+		CustomTag=InvadersHull2
+		Equipments=Hull
+		KindGraph=InvadersHull2
+		Name=--
+		Priority=0
+		Special=1
+		bonSkill1=6
+		bonSkill2=6
+		bonSkill3=6
+		bonSpeed=200
+		bonWSplinter=60
+	}
+	AMod_InvadersHull3 ^{
+		CustomTag=InvadersHull3
+		Equipments=Hull
+		Fragility=150
+		HullGraphSize=150
+		KindGraph=InvadersHull3
+		Name=--
+		Priority=0
+		Special=1
+		bonSkill1=6
+		bonSkill2=6
+		bonSkill3=6
+		bonSpeed=100
+		bonWRadius=300
+	}
+	AMod_InvadersHull4 ^{
+		CustomTag=InvadersHull4
+		Equipments=Hull
+		HullGraphSize=200
+		KindGraph=InvadersHull4
+		Name=--
+		Priority=0
+		Special=1
+		bonMissileSpeed=500
+		bonSkill1=6
+		bonSkill2=6
+		bonSkill3=6
+		bonWMissile=60
+	}
+	AMod_InvadersHull5 ^{
+		CustomTag=InvadersHull5
+		Equipments=Hull
+		FragilityEnergy=70
+		FragilityMissile=70
+		FragilitySplinter=70
+		HullGraphSize=250
+		KindGraph=InvadersHull5
+		Name=--
+		Priority=0
+		Special=1
+		bonDroid=100
+		bonHull=30
+		bonSkill1=6
+		bonSkill2=6
+		bonSkill3=6
+		bonWEnergy=60
+	}
+	AMod_Inviders_LaserTurret ^{
+		BlockImp=1
+		BlockMM=1
+		Cost=100
+		CustomTag=LaserTurret
+		Equipments=LaserTurret
+		KindGraph=LaserTurret
+		LockedAcryn=3
+		Name=<color=49,239,255>Лазерная турель</color>
+		NonSearchable=1
+		Priority=10
+		ShotVisual=80
+		Size=100
+		Special=1
+		TextReplace=<color=248,252,248>Лазерные турели дают линейным крейсерам возможность направлять в целевую область несущий смерть огненный шквал, что идеально подходит для сокрушения наступающих войск или уничтожения оборонительных позиций. Как и в случае с пушкой Ямато, линейному крейсеру необходим накопленный заряд энергии для многочисленных выстрелов. Лазерные турели наносят <CntAttacks>x(<MinDamage>-<MaxDamage>)<Bonus> единиц ущерба за один ход. Предельная дальность стрельбы составляет <Radius> и наносит дополнительный урон в радиусе до <color=255,255,102>50</color></color>
+	}
+	LEOContentMod_Umojan ^{
+		BlockImp=1
+		BlockMM=1
+		Cost=100
+		CustomTag=Umojan
+		Equipments=Hull
+		FragilityEnergy=90
+		FragilityMissile=90
+		FragilitySplinter=90
+		HullGraphSize=180
+		KindGraph=Umojan
+		LockedAcryn=3
+		Name=<color=49,239,255>Баттлкрузер</color>
+		Owner=People
+		Priority=50
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Первые крейсеры появились еще на рассвете Конфедерации и успели поучаствовать почти в каждой войне, прогремевшей в секторе Копрулу. Впрочем, со временем их функции несколько изменились: теперь крейсера уже не имеют столь неоспоримого преимущества в воздухе и в основном используются в качестве мобильных баз, способных перевозить огромное количество техники и персонала, а также совершать космические прыжки и обеспечивать безопасность экипажа даже в самых неблагоприятных условиях среды. <br> Производство столь массивного корпуса изначально сопряжено с множеством проблем, которые легко решаются применением технологий арксов. Их кристаллы, будучи подключёнными к энергосистемам корпуса, используют часть энергии на создание гравитационных аномалий, позволяющих даже стандартным двигателям сдвигать его с места. Оставшуюся энергию кристаллы хранят в себе, при необходимости автономно направляя её на поддержку важных систем, созданных с применением технологий арксов. Такое управление энергией позволяет поддерживать в рабочем состоянии корпус гораздо больших размеров, чем обычно.</color>
+		Text=Эффективность дроида: <bonDroid> ед.
+		Text=Броня корпуса: <bonHull> ед.
+		Text=Скорость двигателя: <bonSpeed> ед.
+		Text=Дальность прыжка: <bonJump> ед.
+		Text=Мощность ГЗП: <bonDef> ед.
+		bonDef=-25
+		bonDroid=30
+		bonHull=20
+		bonJump=30
+		bonSlotWeapon=-2
+		bonSpeed=1000
+	}
+}
+Planet ^{
+	AMod_Invaders ^{
+		Info ^{
+			TextAboutPlanet=Проживающая раса <Race>
+			TextAboutPlanet=Находится под контролем арксов
+			TextAboutPlanet=Посадку совершить невозможно
+		}
+	}
+}
+Script ^{
+	mod_invaders ^{
+		2=<0>
+	}
+}
+UseCodeBlocks ^{
+	BattleCruiserMainGunUse ^{
+		01=if(ShipInNormalSpace(Player()))
+		02 ^{
+			01=int charge=ShipCustomShipInfoData(Player(),'AModInvaders_YamatoGunInfo',3);
+			02=if(charge>=100)
+			03 ^{
+				01=unknown arrayT;
+				02=arrayT=newarray(1);
+				03=unknown arrayNameT;
+				04=arrayNameT=newarray(1);
+				05=int distT=CT('Items.Weapon.BattlecruiserConfig.YamatoRange');
+				06=dword targetOld=ShipCustomShipInfoTextData(Player(),'AModInvaders_YamatoGunInfo',2);
+				07=for(int i=0;i<StarShips(ShipStar(Player()));i=i+1)
+				08 ^{
+					01=dword target=StarShips(ShipStar(Player()),i);
+					02=if(target==Player())continue;
+					03=if(!ShipInNormalSpace(target))continue;
+					04=if(Dist(Player(),target)>distT)continue;
+					05=if(ObjectType(target)!=4 && ObjectType(target)!=5)continue;
+					06=if(!i)
+					07 ^{
+						01=arrayT[0]=target;
+						02=arrayNameT[0]=Name(target);
+					}
+					08=else
+					09 ^{
+						01=ArrayAdd(arrayT,target);
+						02=ArrayAdd(arrayNameT,Name(target));
+					}
+				}
+				09=if(targetOld)
+				10 ^{
+					01=ArrayAdd(arrayT,-1);
+					02=ArrayAdd(arrayNameT,CT('ShipInfo.AddInfo.CustomInfos.AModInvaders_YamatoGunInfo.ShotCancel'));
+				}
+				11=int choosed=ListBox(CT('ShipInfo.AddInfo.CustomInfos.AModInvaders_YamatoGunInfo.ChooseTarget'),arrayNameT);
+				12=if(choosed>-1)
+				13 ^{
+					01=if(choosed==(ArrayDim(arrayT)-1) && targetOld)ShipCustomShipInfoTextData(Player(),'AModInvaders_YamatoGunInfo',2,'0');
+					02=else ShipCustomShipInfoTextData(Player(),'AModInvaders_YamatoGunInfo',2,arrayT[choosed]);
+				}
+			}
+			04=else MessageBox(Format(CT('ShipInfo.AddInfo.CustomInfos.AModInvaders_YamatoGunInfo.Charging'),'<0>',charge));
+		}
+		03=else MessageBox(CT('ShipInfo.AddInfo.CustomInfos.AModInvaders_YamatoGunInfo.OnlyInSpace'));
+	}
+}
+ActCodeBlocks ^{
+	LaserGunShot ^{
+		01=if(ScriptItemActionType(t_OnStep, 0))
+		02 ^{
+			01=dword item = CurItem();
+			02=dword ship = ScriptItemActShip();
+			03=if(!ship) exit;
+			04=if(!item) exit;
+			05=if(!ItemIsInUse(item)) exit;
+			06=if(!ItemDurability(item)) exit;
+			07=dword special=FindBonusByNameInCfg('LEOContentMod_Umojan');
+			08=dword hull=ShipItems(ship,0);
+			09=if(EqSpecial(hull)==special) exit;
+			10=else
+			11 ^{
+				01=for(int i = 1; i <= ShipCntWeapon(ship); i = i + 1)
+				02 ^{
+					01=WeaponTarget(ShipWeapon(ship, i), 0);
+				}
+			}
+		}
+		03=if(ScriptItemActionType(t_OnMissileShot))
+		04 ^{
+			01=dword gun=ScriptItemActObject2();
+			02=if(gun!=CurItem())exit;
+			03=dword missile=ScriptItemActObject1();
+			04=MissileAngle(missile,Angle(WeaponTarget(gun),missile));
+			05=MissileLive(missile,CT('Items.Weapon.BattlecruiserConfig.LaserMissileFlyTime'));
+			06=MissileSpeed(missile,CT('Items.Weapon.BattlecruiserConfig.LaserMissileSpeed'));
+			07=MissilesToRearm(gun,1);
+		}
+	}
+}
+Items ^{
+	CustomCountables ^{
+		AMod_InvadersParts ^{
+			Name=Обломки Арксов
+			Text=Повреждённое оборудование из неизвестных материалов.
+		}
+	}
+	Weapon ^{
+		BattlecruiserConfig ~{
+			MinimumRank=7
+			BattlecruiserScrapCost=10000
+			HullCustomTag=Umojan
+			HullSize=2500
+			YamatoDamage=1000
+			YamatoRange=1000
+			YamatoInitialCharge=100
+			YamatoChargePerDay=20
+			YamatoEffect=Weapon.8
+			YamatoPalette=100
+			YamatoSoundOn=Sound.YamatoCharge
+			YamatoSoundFire=Sound.YamatoLaunch
+			YamatoSoundOff=Sound.YamatoDisCharge
+			LaserMissileSize=100
+			LaserMissileTechLevel=8
+			LaserMissileTechOwnerRace=7
+			LaserMissileCustomTag=LaserTurret
+			LaserMissileScrapCost=1000
+			LaserMissileSpeed=3000
+			LaserMissileFlyTime=800
+		}
+		Missile ^{
+			ArksGun4 ^{
+				Name=Торпеда И.М.Б.А
+				Text=Самонаводящаяся торпеда
+			}
+		}
+		Name ^{
+			ArksGun1=И.М.Б.А
+			ArksGun2=И.М.Б.А
+			ArksGun4=И.М.Б.А
+		}
+		Text ^{
+			ArksGun1=Поражает цель мощным энергетическим лучом, нанося <CntAttacks>x(<MinDamage>-<MaxDamage>)<Bonus> ед. урона на дистанции до <Radius>.<br>Дополнительные эффекты неизвестны.
+			ArksGun2=Поражает цель крупнокалиберными снарядами, нанося от <CntAttacks>x(<MinDamage> до <MaxDamage>)<Bonus> ед. ущерба на расстоянии до <Radius>.<br>Дополнительные эффекты неизвестны.
+			ArksGun4=Торпеды, оснащенные биполяризатором антиматерии, наносят от <CntShots>x(<MinDamage> до <MaxDamage>)<Bonus> ед. ущерба цели.<br>Количество: <Count>/<MaxCount> шт.<br>Дополнительные эффекты неизвестны.
+		}
+	}
+}
+ShipInfo ^{
+	AddInfo ^{
+		CustomInfos ^{
+			AModInvaders_YamatoGunInfo ^{
+				Charging=Орудие <color=0,50,200>Ямато</color><br>заряжено на <color=0,50,200><0>%</color>
+				ChooseTarget=Укажите цель:
+				Description=
+				Icon=1
+				Name=Орудие "Ямато"
+				OnActCode ^{
+					01=if(ScriptItemActionType(t_OnStep,1))
+					02 ^{
+						01=dword cur_info2=CurInfo();
+						02=dword target=ShipCustomShipInfoTextData(0,cur_info2,2);
+						03=if(target)
+						04 ^{
+							01=ShipCustomShipInfoTextData(0,cur_info2,2,'0');
+							02=dword ship=ScriptItemActShip();
+							03=ShipCustomShipInfoTextData(0,cur_info2,1,Id(target));
+							04=if(ShipStar(ship)==ShipStar(Player()) && ShipInNormalSpace(Player()))FilmSound(CT('Items.Weapon.BattlecruiserConfig.YamatoSoundOn'),ship);
+						}
+					}
+					03=else if(ScriptItemActionType(t_OnStep,10))
+					04 ^{
+						01=cur_info2=CurInfo();
+						02=ship=ScriptItemActShip();
+						03=int distT=CT('Items.Weapon.BattlecruiserConfig.YamatoRange');
+						04=dword targetStillAlive=ShipCustomShipInfoTextData(0,cur_info2,1);
+						05=if(targetStillAlive)
+						06 ^{
+							01=if(IdToShip(targetStillAlive))
+							02 ^{
+								01=if(Dist(ship,target)<=distT)
+								02 ^{
+									01=int damage=CT('Items.Weapon.BattlecruiserConfig.YamatoDamage');
+									02=damage=damage-ShipProtectability(target)-ShipArmor(target);
+									03=if(damage<0)damage=0;
+									04=int targetInfo=ShipFindCustomShipInfoByType(target,'LifeboatLaunchInfo');
+									05=if(targetInfo>-1)
+									06 ^{
+										01=ShipCustomShipInfoTextData(target,targetInfo,3,ship);
+										02=int temp_dmg=DealDamageToShip(target,ship,damage,1);
+										03=if(temp_dmg)damage=temp_dmg;
+									}
+									07=else damage=DealDamageToShip(target,ship,damage,1);
+									08=ShipCustomShipInfoData(0,cur_info2,3,0);
+									09=ShipCustomShipInfoTextData(0,cur_info2,1,'Shot');
+									10=if(ShipStar(ship)==ShipStar(Player()) && ShipInNormalSpace(Player()))
+									11 ^{
+										01=if(HullHP(target)>0)ShowEffect(CT('Items.Weapon.BattlecruiserConfig.YamatoEffect'),CT('Items.Weapon.BattlecruiserConfig.YamatoPalette'),target,ship,damage,0,0);
+										02=else ShowEffect(CT('Items.Weapon.BattlecruiserConfig.YamatoEffect'),CT('Items.Weapon.BattlecruiserConfig.YamatoPalette'),target,ship,damage,1,0);
+										03=FilmSound(CT('Items.Weapon.BattlecruiserConfig.YamatoSoundFire'),ship);
+									}
+								}
+								03=else
+								04 ^{
+									01=ShipCustomShipInfoTextData(0,cur_info2,1,'0');
+									02=if(ShipStar(ship)==ShipStar(Player()) && ShipInNormalSpace(Player()))FilmSound(CT('Items.Weapon.BattlecruiserConfig.YamatoSoundOff'),ship);
+								}
+							}
+							03=else
+							04 ^{
+								01=ShipCustomShipInfoTextData(0,cur_info2,1,'0');
+								02=if(ShipStar(ship)==ShipStar(Player()) && ShipInNormalSpace(Player()))FilmSound(CT('Items.Weapon.BattlecruiserConfig.YamatoSoundOff'),ship);
+							}
+						}
+					}
+					05=else if(ScriptItemActionType(t_OnStep,11))
+					06 ^{
+						01=cur_info2=CurInfo();
+						02=int charge=ShipCustomShipInfoData(0,cur_info2,3);
+						03=if(charge<100)
+						04 ^{
+							01=if(ShipCustomShipInfoTextData(0,cur_info2,1)!='Shot')ShipCustomShipInfoData(0,cur_info2,3,charge+CT('Items.Weapon.BattlecruiserConfig.YamatoChargePerDay'));
+							02=else ShipCustomShipInfoTextData(0,cur_info2,1,'0');
+							03=if(ShipCustomShipInfoData(0,cur_info2,3)>100)ShipCustomShipInfoData(0,cur_info2,3,100);
+						}
+					}
+				}
+				OnActCodeTypes=t_OnStep
+				OnActStepTypes=1,10,11
+				OnlyInSpace=Для использования орудия <color=0,50,200>Ямато</color> вы должны находиться в открытом космосе
+				ShotCancel=Отменить выстрел
+			}
+			AMod_Invaders ^{
+				Description=
+				Icon=0
+				Name=
+				OnActCode ^{
+					00=if(ScriptItemActionType(t_OnTakingDamage))ScriptItemActParam(0);
+					01=if(ScriptItemActionType(t_OnGettingWeaponHit))
+					02 ^{
+						00=if(ScriptItemActObject1()==Player())
+						01 ^{
+							00=if(ItemType(ScriptItemActObject2())==t_CustomWeapon)
+							01 ^{
+								00=if(CustomWeaponType(ScriptItemActObject2())==gunName[0])gunName0=gunName[0];
+							}
+						}
+					}
+					03=if(ScriptItemActionType(t_OnTakingDamageEn))
+					04 ^{
+						00=if(gunName0==gunName[0])
+						01 ^{
+							00=int0=ScriptItemActParam()*25;
+							01=ScriptItemActParam(int0);
+							02=arcArray[1,1]=arcArray[1,1]+int0;
+							03=gunName0=0;
+						}
+						02=else ScriptItemActParam(0);
+					}
+					05=if(ScriptItemActionType(t_OnTakingDamageSp))
+					06 ^{
+						00=if(gunName0==gunName[0])
+						01 ^{
+							00=int0=ScriptItemActParam()*25;
+							01=ScriptItemActParam(int0);
+							02=arcArray[1,1]=arcArray[1,1]+int0;
+							03=gunName0=0;
+						}
+						02=else ScriptItemActParam(0);
+					}
+					07=if(ScriptItemActionType(t_OnTakingDamageMi))
+					08 ^{
+						00=if(CustomMissileType(ScriptItemActObject1())==gunName[0])
+						01 ^{
+							00=int0=ScriptItemActParam()*13;
+							01=ScriptItemActParam(int0);
+							02=arcArray[1,1]=arcArray[1,1]+int0;
+						}
+						02=else ScriptItemActParam(0);
+					}
+				}
+				OnActCodeTypes=t_OnTakingDamage,t_OnGettingWeaponHit,t_OnTakingDamageEn,t_OnTakingDamageSp,t_OnTakingDamageMi
+			}
+			AMod_Invaders0 ^{
+				Description=
+				Icon=0
+				Name=
+				OnActCode ^{
+					00=if(ScriptItemActionType(t_OnStep,0))
+					01 ^{
+						00=dword ship=ScriptItemActShip();
+						01=int dKoef=ShipCustomShipInfoData(0,CurInfo(),1);
+						02=int damage=0;
+						03=int fSgCD=ShipCustomShipInfoData(0,CurInfo(),2);
+						04=if(fSgCD<=CurTurn())
+						05 ^{
+							00=if(ItemDurability(ShipEqInSlot(ship,t_Engine))>15)
+							01 ^{
+								00=if(ShipGetBad(ship))
+								01 ^{
+									00=int fSgS=ShipSpeed(ship);
+									01=int fSgD=Dist(ship,ShipGetBad(ship));
+									02=if(fSgD>fSgS && fSgD<=fSgS*2)OrderForsage(ship,1);
+								}
+							}
+						}
+					}
+					02=else if(ScriptItemActionType(t_OnStep,11))
+					03 ^{
+						00=if(OrderForsage(ship))
+						01 ^{
+							00=OrderForsage(ship,0);
+							01=ShipCustomShipInfoData(0,CurInfo(),2,CurTurn()+Rnd(3,7));
+						}
+					}
+					04=else if(ScriptItemActionType(t_OnDealingDamage))
+					05 ^{
+						01=if(ShipOwner(ScriptItemActObject1())==5)
+						02 ^{
+							00=if(dKoef>100)
+							01 ^{
+								00=damage=ScriptItemActParam()*dKoef;
+								01=damage=damage/100;
+								02=ScriptItemActParam(damage);
+							}
+						}
+					}
+					06=else if(ScriptItemActionType(t_OnReduceEqForsage))ScriptItemActParam(0);
+				}
+				OnActCodeTypes=t_OnReduceEqForsage,t_OnStep
+				OnActStepTypes=0,11
+			}
+			AMod_Invaders0.2 ^{
+				Description=
+				Icon=0
+				Name=
+				OnActCode ^{
+					00=if(ScriptItemActionType(t_OnStep,0))
+					01 ^{
+						00=int dKoef=ShipCustomShipInfoData(0,CurInfo(),1);
+						01=int damage=0;
+					}
+					02=else
+					03 ^{
+						01=if(ShipOwner(ScriptItemActObject1())==5)
+						02 ^{
+							00=if(dKoef>100)
+							01 ^{
+								00=damage=ScriptItemActParam()*dKoef;
+								01=damage=damage/100;
+								02=ScriptItemActParam(damage);
+							}
+						}
+					}
+				}
+				OnActCodeTypes=t_OnStep
+				OnActStepTypes=0
+			}
+			AMod_Invaders1 ^{
+				Description=
+				Icon=0
+				Name=
+				OnActCode ^{
+					00=if(ScriptItemActionType(t_OnStep,0))
+					01 ^{
+						00=int dKoef=ShipCustomShipInfoData(0,CurInfo(),1);
+						01=int damage=0;
+					}
+					02=else
+					03 ^{
+						01=if(ShipOwner(ScriptItemActObject1())==5)
+						02 ^{
+							00=if(dKoef>100)
+							01 ^{
+								00=damage=ScriptItemActParam()*dKoef;
+								01=damage=damage/100;
+								02=ScriptItemActParam(damage);
+							}
+						}
+					}
+				}
+				OnActCodeTypes=t_OnStep
+				OnActStepTypes=0
+			}
+			AMod_Invaders1.2 ^{
+				Description=
+				Icon=0
+				Name=
+				OnActCode ^{
+					01=if(ScriptItemActionType(t_OnStep,0))
+					02 ^{
+						00=int dKoef=ShipCustomShipInfoData(0,CurInfo(),1);
+						01=int damage=0;
+					}
+					03=else
+					04 ^{
+						01=if(ShipOwner(ScriptItemActObject1())==5)
+						02 ^{
+							00=if(dKoef>100)
+							01 ^{
+								00=damage=ScriptItemActParam()*dKoef;
+								01=damage=damage/100;
+								02=ScriptItemActParam(damage);
+							}
+						}
+					}
+				}
+				OnActCodeTypes=t_OnStep
+				OnActStepTypes=0
+			}
+			AMod_Invaders2 ^{
+				Description=
+				Icon=0
+				Name=
+				OnActCode ^{
+					01=if(ScriptItemActionType(t_OnStep,0))
+					02 ^{
+						00=int dKoef=ShipCustomShipInfoData(0,CurInfo(),1);
+						01=int damage=0;
+					}
+					03=else
+					04 ^{
+						01=if(ShipOwner(ScriptItemActObject1())==5)
+						02 ^{
+							00=if(dKoef>100)
+							01 ^{
+								00=damage=ScriptItemActParam()*dKoef;
+								01=damage=damage/100;
+								02=ScriptItemActParam(damage);
+							}
+						}
+					}
+				}
+				OnActCodeTypes=t_OnStep
+				OnActStepTypes=0
+			}
+		}
+	}
+}
+ShipType ^{
+	Dominator ^{
+		Keller ^{
+			AMod_Invaders0=
+			AMod_Invaders1=
+			AMod_Invaders2=
+			AMod_Invaders3=
+			AMod_Invaders4=
+		}
+	}
+	TypeName ^{
+		AMod_Invaders0=Аркс
+		AMod_Invaders1=Аркс
+		AMod_Invaders2=Аркс
+		AMod_Invaders3=Аркс
+		AMod_Invaders4=Аркс
+		AMod_InvadersRuin=Неизвестный объект
+	}
+}
+UselessItems ^{
+	ArksItem ^{
+		Cost=Small
+		Name=Неизвестный предмет
+		Owner=Peleng
+		Size=30
+		Text=Неизвестный предмет из неизвестного объекта.
+	}
+}

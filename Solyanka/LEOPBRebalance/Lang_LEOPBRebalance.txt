@@ -1,0 +1,3 @@
+RobotsMap ^{
+    PBNewSky=On
+}

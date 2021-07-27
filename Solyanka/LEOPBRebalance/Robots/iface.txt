@@ -1,0 +1,163 @@
+Base {
+	Image {
+	}
+	Image {
+		Name=titan
+	}
+	Image {
+		Name=electr
+	}
+	Image {
+		Name=energy
+	}
+	Image {
+		Name=plasma
+	}
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+	Static {//Индикаторы цены в ресурсах за конкретную деталь
+		Name=res_unit
+		xPos=22
+		yPos=255
+		zPos=0.000001
+		xSize=220
+		ySize=16
+		type=0
+		dState=0
+		sNormalX=170
+		sNormalY=31
+		sNormalWidth=512
+		sNormalHeight=512
+		params_help=x,y,smex,smey,alignx,aligny,perenos,clip_sx,clip_sy,clip_ex,clip_ey
+		Labels {
+			StateDynamicLabel {
+				Color=255,246,192,0
+				Font=Font.2Normal
+				Params=0,0,0,0,0,0,0,0,0,220,16
+				State=sNormal
+			}
+		}
+	}
+    Static {
+    }
+    Static {
+    }
+    Static {
+    }
+	Static {//Надпись "Стоимость:"
+		Name=itprice
+		xPos=58
+		yPos=239
+		zPos=0.0000001
+		xSize=68
+		ySize=16
+		type=0
+		dState=0
+		sNormalX=170
+		sNormalY=79
+		sNormalWidth=512
+		sNormalHeight=512
+		Labels {
+			StateStaticLabel {
+				Color=255,58,114,135
+				Font=Font.2Ranger
+				Params=0,0,0,0,0,0,0,0,0,170,79
+				State=sNormal
+			}
+		}
+	}
+    Static {
+    }
+    Static {
+    }
+	Static {//Блок с описанием статов деталей
+		Name=it_label1
+		xPos=24
+		yPos=183
+		zPos=0.000001
+		xSize=157
+		ySize=64
+		type=0
+		dState=0
+		sNormalX=0
+		sNormalY=105
+		sNormalWidth=512
+		sNormalHeight=512
+		params_help=x,y,smex,smey,alignx,aligny,perenos,clip_sx,clip_sy,clip_ex,clip_ey
+		Labels {
+			StateDynamicLabel {
+				Color=255,180,180,180
+				Font=Font.2Small
+				Params=0,0,0,0,0,0,1,0,0,157,64
+				State=sNormal
+			}
+		}
+	}
+	Static {//Блок с лорным описанием деталей
+		Name=it_label2
+		xPos=21
+		yPos=276
+		zPos=0.000001
+		xSize=170
+		ySize=129
+		type=0
+		dState=0
+		sNormalX=0
+		sNormalY=169
+		sNormalWidth=512
+		sNormalHeight=512
+		params_help=x,y,smex,smey,alignx,aligny,perenos,clip_sx,clip_sy,clip_ex,clip_ey
+		Labels {
+			StateDynamicLabel {
+				Color=255,80,123,140
+				Font=Font.2Small
+				Params=0,0,0,0,0,0,1,0,0,170,129
+				State=sNormal
+			}
+		}
+	}
+}

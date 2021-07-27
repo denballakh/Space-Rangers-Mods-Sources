@@ -1,0 +1,133 @@
+MicroModuls ^{
+    LEOContentMod_UnknowObjectPro_X0 ^{
+        Cost=1000
+        Equipments=Hull
+        FragilityEnergy=90
+        FragilityMissile=110
+        FragilitySplinter=70
+        HullGraphSize=130
+        KindGraph=UnknowObjectPro_X0
+        LockedAcryn=3
+        Name=<color=49,239,255>Неизвестный объект прототип I</color>
+        NoBridge=1
+        NonRepairable=1
+        OnPlanets=0
+        Owner=None
+        Priority=60
+        Ruins=0
+        Size=150
+        Special=1
+        Text=<color=248,252,248>Уникальный корпус, воссозданный военными из технологий неизвестных рас, корабли которых обитают в черных дырах. Особая микроструктура корпуса способствует максимальному увеличению боевой мощи пилота, а так же позволяет захватывать более крупные объекты в космосе и усиливать гипер-прыжок. Еще не до конца адаптированный корпус для управления, значительно снижает все небоевые навыки из-за неудобств и расположения панелей интеркома.</color>
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Скорость притягивания на дальней дистанции: <bonHookMaxSpeed> ед.
+        Text=Скорость притягивания на ближней дистанции: <bonHookMinSpeed> ед.
+        Text=Мощность энергетического оружия: <bonWEnergy> ед.
+        Text=Мощность ракетного оружия: <bonWMissile> ед.
+        Text=Мощность осколочного оружия: <bonWSplinter> ед.
+        Text=Навык торговли: <bonSkill4> ед.
+        Text=Навык обаяния: <bonSkill5> ед.
+        Text=Навык лидерства: <bonSkill6> ед.
+        bonHook=100
+        bonHookMaxSpeed=5
+        bonHookMinSpeed=5
+        bonHookRadius=50
+        bonHull=10
+        bonJump=10
+        bonSkill4=-5
+        bonSkill5=-5
+        bonSkill6=-5
+        bonSlotArt=-1
+        bonSlotDef=-1
+        bonWEnergy=15
+        bonWMissile=20
+        bonWSplinter=25
+    }
+    LEOContentMod_UnknowObjectPro_X1 ^{
+        Cost=1000
+        Equipments=Hull
+        FragilityEnergy=70
+        FragilityMissile=70
+        FragilitySplinter=70
+        HullGraphSize=130
+        KindGraph=UnknowObjectPro_X1
+        LockedAcryn=3
+        Name=<color=49,239,255>Неизвестный объект прототип II</color>
+        NoBridge=1
+        NonRepairable=1
+        OnPlanets=0
+        Owner=None
+        Priority=60
+        Ruins=0
+        Size=150
+        Special=1
+        Text=<color=248,252,248>Уникальный корпус, воссозданный военными из технологий неизвестных рас, корабли которых обитают в черных дырах. Ученые пилоты-испытатели обнаружили мощнейшую выработку энергии на этом корпусе, которая может направляться на защиту корабля, увеличение мощности двигателя, сумасшедшее увеличение мощности для всего энергетического вооружения. К сожалению, на корабле от перегрузки генерируемой энергии, создаются микроаномалии, которые снижают боевые навыки пилота, а так же оборудование ломается в 2 раза быстрее. Неудобное расположение для захвата, значительно снижает все его свойства.</color>
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Мощность энергетического оружия: <bonWEnergy> ед.
+        Text=Мощность захвата: <bonHook> ед.
+        Text=Дальность захвата: <bonHookRadius> ед.
+        Text=Навык точности: <bonSkill1> ед.
+        Text=Навык маневренности: <bonSkill2> ед.
+        Text=Навык техники: <bonSkill3> ед.
+        bonHook=-150
+        bonHookRadius=-100
+        bonHull=20
+        bonJump=25
+        bonSkill1=-3
+        bonSkill2=-3
+        bonSkill3=-3
+        bonSlotRadar=-1
+        bonSlotScaner=-1
+        bonSpeed=250
+        bonWEnergy=80
+    }
+    LEOContentMod_UnknowObjectPro_X2 ^{
+        Cost=1000
+        Equipments=Hull
+        FragilityEnergy=150
+        FragilityMissile=70
+        FragilitySplinter=70
+        HullGraphSize=130
+        KindGraph=UnknowObjectPro_X2
+        LockedAcryn=3
+        Name=<color=49,239,255>Неизвестный объект прототип III</color>
+        NoBridge=1
+        NonRepairable=1
+        OnPlanets=0
+        Owner=None
+        Priority=60
+        Ruins=0
+        Size=150
+        Special=1
+        Text=<color=248,252,248>Уникальный корпус, воссозданный военными из технологий неизвестных рас, корабли которых обитают в черных дырах. Совершенный корпус для ведения боев в черных дырах. Однако ряд факторов этого прототипа заставляет выбирать узкое направление. Сама структура корпуса слишком хрупкая и абсолютно не имеет брони. Но системы корабля настроены таким образом, что периодически генерируется электормагнитная вспышка, которая вызывает обратное действие, повышающее мощность генератора защитного поля до сверхпредельного. Ремонтному дроиду комфортно ремонтировать корпус совместно со встроенными микро-роботами. Что касается боевых систем, то про энергетическое оружие можно забыть, ибо ЭМП всплески негативно влияют на подобное оружие. Двигателю так же достается, работает с перебоями, но при ЭМП всплесках может выдать прыжок больше обычного. Боевые системы ракетного и осколочного вооружения непревзойденны. Ошеломительная, негативная атмосфера и ужасающий вид корабля, снижает ряд мирных навыков до предела. Управление кораблем удобное и так же - совершенное, что позволяет вести максимально точное прицеливание и легко уходить от выстрелов. ЭМП всплески так же негативно влияют на целостность оборудования.</color>
+        Text=Броня корпуса: <bonHull> ед.
+        Text=Дальность прыжка: <bonJump> ед.
+        Text=Скорость двигателя: <bonSpeed> ед.
+        Text=Мощность ракетного оружия: <bonWMissile> ед.
+        Text=Мощность осколочного оружия: <bonWSplinter> ед.
+        Text=Мощность энергетического оружия: <bonWEnergy> ед.
+        Text=Навык точности: <bonSkill1> ед.
+        Text=Навык маневренности: <bonSkill2> ед.
+        Text=Навык техники: <bonSkill3> ед.
+        Text=Навык торговли: <bonSkill4> ед.
+        Text=Навык обаяния: <bonSkill5> ед.
+        bonDef=30
+        bonDroid=40
+        bonHull=-15
+        bonJump=10
+        bonSkill1=6
+        bonSkill2=3
+        bonSkill3=-3
+        bonSkill4=-6
+        bonSkill5=-6
+        bonSlotWeapon=-2
+        bonSpeed=-200
+        bonWEnergy=-200
+        bonWMissile=60
+        bonWSplinter=60
+    }
+}

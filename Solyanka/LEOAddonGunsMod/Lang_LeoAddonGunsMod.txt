@@ -1,0 +1,1362 @@
+MicroModuls ^{
+	ExpPlasmaGun_Armoloc ^{
+		ShotVisual=110
+		Special=1
+	}
+	ExpPlasmaGun_Diphrode ^{
+		ShotVisual=111
+		Special=1
+	}
+	ExpPlasmaGun_Involute ^{
+		ShotVisual=113
+		Special=1
+	}
+	ExpPlasmaGun_Javitor ^{
+		ShotVisual=112
+		Special=1
+	}
+	ExpPlasmaGun_Liphocarus ^{
+		ShotVisual=115
+		Special=1
+	}
+	ExpTC_DyshotEnergy ^{
+		Cost=400
+		Equipments=W01,W03,W05,W06,W08,W10,W11,W12,W17
+		Fragility=135
+		KindGraph=Dish
+		Name="Дишот"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+		Priority=10
+		Size=200
+		Special=1
+		Text=<color=248,252,248>На это оружие установлен дополнительный энергомодуль, который подключается к работе, пока основной перезаряжается. Синхронизировав циклы их работы инженеры смогли добиться колоссального прироста скорострельности. Скорострельность такого орудия повышается вдвое.</color>
+		Text=<clr><clrEnd>
+		Text=Скорострельность: <clr>+1<clrEnd>
+		bonAttacks=1
+	}
+	ExpTC_DyshotMissile ^{
+		Cost=400
+		Equipments=W02,W07,W09,W16
+		Fragility=135
+		KindGraph=Dish
+		Name="Дишот"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+		Priority=10
+		Size=200
+		Special=1
+		Text=<color=248,252,248>На этом орудие установлена продвинутая система подачи снарядов. Материалы нулевого трения и дополнительные системы охлаждения позволили значительно снизить время, требующееся для полной перезарядки и, соответственно, снизить время простоя. Скорострельность такого орудия повышается вдвое.</color>
+		Text=<clr><clrEnd>
+		Text=Скорострельность: <clr>+1<clrEnd>
+		bonAttacks=1
+	}
+	ExpTC_MagnetronEnergy ^{
+		NonSearchable=1
+		Priority=0
+		LockedAcryn=3
+		Special=1
+	}
+	ExpTC_MagnetronSplinter ^{
+		NonSearchable=1
+		Priority=0
+		LockedAcryn=3
+		Special=1  
+	}
+	LEOContentMod_Atomizer_Dish ^{
+		Cost=400
+		Equipments=Atomizer
+		Fragility=160
+		KindGraph=Dish
+		Name="Дишот"
+		OnPlanets=1
+		Priority=10
+		ShotVisual=11
+		Size=200
+		Special=1
+		Text=<color=248,252,248>На этом орудии установлена продвинутая система подачи снарядов. Материалы нулевого трения и дополнительные системы охлаждения позволили значительно снизить время, требующееся для полной перезарядки и, соответственно, снизить время простоя. Скорострельность такого орудия повышается вдвое.</color>
+		Text=<clr><clrEnd>
+		Text=Скорострельность: <clr>+1<clrEnd>
+		bonAttacks=1
+	}
+	LEOContentMod_Atomizer_Dja ^{
+		Cost=120
+		Equipments=Atomizer
+		Fragility=100
+		KindGraph=Dja
+		Name="Джавитoр"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=11
+		Size=110
+		Special=1
+		Text=<color=248,252,248>Модифицированное для прицельного отстрела ремонтных роботов, вооружение в варианте "Джавитор" позволяет вести огонь по траектории движения дроида, тем самым получая шанс блокировать вражескому кораблю проведение ремонта в ходе битвы.</color><br> <br>
+		Text=Шанс блокировки <clr>дроида<clrEnd> обратно пропорционален размеру корпуса цели
+		Text=Мощность сканера: <bonScan> ед.
+		Text=(необходимо превышение мощности сканера над защитой цели)
+		WeaponMods=BlockDroid
+		bonScan=-1
+	}
+	LEOContentMod_Atomizer_Ext ^{
+		Cost=300
+		Equipments=Atomizer
+		Fragility=240
+		KindGraph=Ext
+		Name="Экстремум"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=11
+		Size=80
+		Special=1
+		Text=<color=248,252,248>Данное оружие оснащено экспериментальным источником энергии, способным увеличить наносимый урон до максимума, независимо от навыков пилота. Модифицированный блок занимает малый объем, но потребляет огромное количество ресурсов, вследствие чего быстро изнашивается и очень дорог в эксплуатации.</color>
+		WeaponMods=NoDelta
+	}
+	LEOContentMod_Atomizer_Lif ^{
+		Cost=120
+		Equipments=Atomizer
+		Fragility=100
+		KindGraph=Lif
+		Name="Лифoкар"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=11
+		Size=110
+		Special=1
+		Text=<color=248,252,248>Модернизированное по проекту "Лифокар" вооружение наносит дополнительный урон поврежденным целям, используя механизм последовательной сверхточной стрельбы в пробоины корпуса.</color><br> <br>
+		Text=Бонус к урону: до <clr>33%<clrEnd>
+		Text=Мощность сканера: <bonScan> ед.
+		Text=(необходимо превышение мощности сканера над защитой цели)
+		WeaponMods=BonusToDamaged
+		bonScan=-1
+	}
+	LEOContentMod_CryoProjector_Arm ^{
+		Cost=120
+		Equipments=CryoProjector
+		Fragility=100
+		KindGraph=Arm
+		Name="Армoлок"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal
+		Priority=10
+		Ruins=Any
+		ShotVisual=91
+		Size=110
+		Special=1
+		Text=<color=248,252,248>Оружие модификации "Армолок" может высокоточными выстрелами выводить из строя концентратор каналов управления вооружением цели, на некоторое время отнимая у противника способность вести ответный огонь.</color><br> <br>
+		Text=Шанс блокировки <clr>вооружения<clrEnd> обратно пропорционален размеру корпуса цели
+		Text=Мощность сканера: <bonScan> ед.
+		Text=(необходимо превышение мощности сканера над защитой цели)
+		WeaponMods=BlockWeapon
+		bonScan=-1
+	}
+	LEOContentMod_CryoProjector_Dif ^{
+		Cost=120
+		Equipments=CryoProjector
+		Fragility=100
+		KindGraph=Dif
+		Name="Дифрoд"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal
+		Priority=10
+		Ruins=Any
+		ShotVisual=94
+		Size=110
+		Special=1
+		Text=<color=248,252,248>Серийный комплект модифицированных узлов орудия и программных доработок "Дифрод", увеличивающих мощность оружия разных типов.</color><br> <br>
+		Text=Бонус к урону: <clr>15%<clrEnd>
+		Text=Мощность сканера: <bonScan> ед.
+		Text=(необходимо превышение мощности сканера над защитой цели)
+		WeaponMods=ScanBonus
+		bonScan=-1
+	}
+	LEOContentMod_CryoProjector_Dish ^{
+		Cost=400
+		Equipments=CryoProjector
+		Fragility=160
+		KindGraph=Dish
+		Name="Дишот"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal
+		Priority=10
+		ShotVisual=92
+		Size=200
+		Special=1
+		Text=<color=248,252,248>На это оружие установлен дополнительный энергомодуль, который подключается к работе, пока основной перезаряжается. Синхронизировав циклы их работы инженеры смогли добиться колоссального прироста скорострельности. Скорострельность такого орудия повышается вдвое.</color>
+		Text=<clr><clrEnd>
+		Text=Скорострельность: <clr>+1<clrEnd>
+		bonAttacks=1
+	}
+	LEOContentMod_CryoProjector_Ext ^{
+		Cost=300
+		Equipments=CryoProjector
+		Fragility=260
+		KindGraph=Ext
+		Name="Экстремум"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal
+		Priority=10
+		Ruins=Any
+		ShotVisual=93
+		Size=80
+		Special=1
+		Text=<color=248,252,248>Данное оружие оснащено экспериментальным источником энергии, способным увеличить наносимый урон до максимума, независимо от навыков пилота. Модифицированный блок занимает малый объем, но потребляет огромное количество ресурсов, вследствие чего быстро изнашивается и очень дорог в эксплуатации.</color>
+		WeaponMods=NoDelta
+	}
+	LEOContentMod_CryoProjector_Mag ^{
+		Cost=190
+		Equipments=CryoProjector
+		Fragility=130
+		KindGraph=Mag
+		Name="Магнетрон"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal
+		Priority=10
+		Ruins=Any
+		ShotVisual=95
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Источник мощного магнитного поля, установленный на данном орудии, значительно увеличивает пробивную силу любого энергетического оружия. При этом неизбежные побочные помехи существенно ухудшают как работу оборудования носителя, так и цели.</color><br> <br>
+		Text=Бонус к урону: <clr>+13<clrEnd> ед.
+		Text=Мощность сканера: <bonScan> ед.
+		Text=Дальность радара: <bonRadar> ед.
+		WeaponMods=Magnetic
+		bonRadar=-100
+		bonScan=-2
+		bonWEnergy=13
+	}
+	LEOContentMod_ExzoShocker_Evo ^{
+		Cost=160
+		Equipments=ExzoShocker
+		Fragility=125
+		KindGraph=Evo
+		Name="Эвольвента"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal
+		Priority=10
+		Ruins=Any
+		ShotVisual=7
+		Size=70
+		Special=1
+		Text=<color=248,252,248>Дальнейшее развитие орудия экзошокер. Модифицированная энергетическая установка значительно дороже и быстрее перегревается, но зато увеличивает скорострельность, дальность стрельбы и уменьшает занимаемый объем.</color><br> <br>
+		Text=Дальность стрельбы: <clr>+40<clrEnd> ед.
+		Text=<clr><clrEnd>
+		Text=Скорострельность: <clr>+1<clrEnd>
+		bonAttacks=1
+		bonWRadius=40
+	}
+	LEOContentMod_ExzoShocker_Ext ^{
+		Cost=300
+		Equipments=ExzoShocker
+		Fragility=170
+		KindGraph=Ext
+		Name="Экстремум"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal
+		Priority=10
+		Ruins=Any
+		ShotVisual=8
+		Size=80
+		Special=1
+		Text=<color=248,252,248>Данное оружие оснащено экспериментальным источником энергии, способным увеличить наносимый урон до максимума, независимо от навыков пилота. Модифицированный блок занимает малый объем, но потребляет огромное количество ресурсов, вследствие чего быстро изнашивается и очень дорог в эксплуатации.</color>
+		WeaponMods=NoDelta
+	}
+	LEOContentMod_ExzoShocker_Lif ^{
+		Cost=120
+		Equipments=ExzoShocker
+		Fragility=100
+		KindGraph=Lif
+		Name="Лифoкар"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal
+		Priority=10
+		Ruins=Any
+		ShotVisual=9
+		Size=110
+		Special=1
+		Text=<color=248,252,248>Модернизированное по проекту "Лифокар" вооружение наносит дополнительный урон поврежденным целям, используя механизм последовательной сверхточной стрельбы в пробоины корпуса.</color><br> <br>
+		Text=Бонус к урону: до <clr>33%<clrEnd>
+		Text=Мощность сканера: <bonScan> ед.
+		Text=(необходимо превышение мощности сканера над защитой цели)
+		WeaponMods=BonusToDamaged
+		bonScan=-1
+	}
+	LEOContentMod_FusionQuasar_Dish ^{
+		Cost=400
+		Equipments=FusionQuasar
+		Fragility=160
+		KindGraph=Dish
+		Name="Дишот"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal
+		Priority=10
+		ShotVisual=4
+		Size=200
+		Special=1
+		Text=<color=248,252,248>На это оружие установлен дополнительный энергомодуль, который подключается к работе, пока основной перезаряжается. Синхронизировав циклы их работы инженеры смогли добиться колоссального прироста скорострельности. Скорострельность такого орудия повышается вдвое.</color>
+		Text=<clr><clrEnd>
+		Text=Скорострельность: <clr>+1<clrEnd>
+		bonAttacks=1
+	}
+	LEOContentMod_FusionQuasar_Dja ^{
+		Cost=120
+		Equipments=FusionQuasar
+		Fragility=100
+		KindGraph=Dja
+		Name="Джавитoр"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal
+		Priority=10
+		Ruins=Any
+		ShotVisual=4
+		Size=110
+		Special=1
+		Text=<color=248,252,248>Модифицированное для прицельного отстрела ремонтных роботов, вооружение в варианте "Джавитор" позволяет вести огонь по траектории движения дроида, тем самым получая шанс блокировать вражескому кораблю проведение ремонта в ходе битвы.</color><br> <br>
+		Text=Шанс блокировки <clr>дроида<clrEnd> обратно пропорционален размеру корпуса цели
+		Text=Мощность сканера: <bonScan> ед.
+		Text=(необходимо превышение мощности сканера над защитой цели)
+		WeaponMods=BlockDroid
+		bonScan=-1
+	}
+	LEOContentMod_FusionQuasar_Ext ^{
+		Cost=300
+		Equipments=FusionQuasar
+		Fragility=170
+		KindGraph=Ext
+		Name="Экстремум"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal
+		Priority=10
+		Ruins=Any
+		ShotVisual=4
+		Size=80
+		Special=1
+		Text=<color=248,252,248>Данное оружие оснащено экспериментальным источником энергии, способным увеличить наносимый урон до максимума, независимо от навыков пилота. Модифицированный блок занимает малый объем, но потребляет огромное количество ресурсов, вследствие чего быстро изнашивается и очень дорог в эксплуатации.</color>
+		WeaponMods=NoDelta
+	}
+	LEOContentMod_FusionQuasar_Mag ^{
+		Cost=190
+		Equipments=FusionQuasar
+		Fragility=130
+		KindGraph=Mag
+		Name="Магнетрон"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal
+		Priority=10
+		Ruins=Any
+		ShotVisual=4
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Источник мощного магнитного поля, установленный на данном орудии, значительно увеличивает пробивную силу любого энергетического оружия. При этом неизбежные побочные помехи существенно ухудшают как работу оборудования носителя, так и цели.</color><br> <br>
+		Text=Бонус к урону: <clr>+9<clrEnd> ед.
+		Text=Мощность сканера: <bonScan> ед.
+		Text=Дальность радара: <bonRadar> ед.
+		WeaponMods=Magnetic
+		bonRadar=-50
+		bonScan=-1
+		bonWEnergy=9
+	}
+	LEOContentMod_Mabokit_Dif ^{
+		Cost=120
+		Equipments=Mabokit
+		Fragility=100
+		KindGraph=Dif
+		Name="Дифрoд"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal
+		Priority=10
+		Ruins=Any
+		ShotVisual=6
+		Size=110
+		Special=1
+		Text=<color=248,252,248>Серийный комплект модифицированных узлов орудия и программных доработок "Дифрод", увеличивающих мощность оружия разных типов.</color><br> <br>
+		Text=Бонус к урону: <clr>15%<clrEnd>
+		Text=Мощность сканера: <bonScan> ед.
+		Text=(необходимо превышение мощности сканера над защитой цели)
+		WeaponMods=ScanBonus
+		bonScan=-1
+	}
+	LEOContentMod_Mabokit_Drop ^{
+		Cost=120
+		Equipments=Mabokit
+		Fragility=100
+		KindGraph=Drop
+		Name="Адрoптер"
+		OnPlanets=1
+		Owner=PirateClan
+		Priority=10
+		Ruins=Any
+		ShotVisual=6
+		Size=110
+		Special=1
+		Text=<color=248,252,248>Оружие с комплексом дополнительного оборудования "Адроптер" работает по принципу Локализатора взрывной волны. Пиратская технология далека от совершенства, но всё же повышает вероятность сохранения ценных трофеев после уничтожения вражеского корабля.</color><br> <br>
+		Text=Мощность сканера: <bonScan> ед.
+		Text=(необходимо превышение мощности сканера над защитой цели)
+		WeaponMods=MoreDrop
+		bonScan=-1
+	}
+	LEOContentMod_Mabokit_Ext ^{
+		Cost=300
+		Equipments=Mabokit
+		Fragility=170
+		KindGraph=Ext
+		Name="Экстремум"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=6
+		Size=80
+		Special=1
+		Text=<color=248,252,248>Данное оружие оснащено экспериментальным источником энергии, способным увеличить наносимый урон до максимума, независимо от навыков пилота. Модифицированный блок занимает малый объем, но потребляет огромное количество ресурсов, вследствие чего быстро изнашивается и очень дорог в эксплуатации.</color>
+		WeaponMods=NoDelta
+	}
+	LEOContentMod_Mabokit_Inv ^{
+		Cost=120
+		Equipments=Mabokit
+		Fragility=100
+		KindGraph=Inv
+		Name="Инвeйтер"
+		OnPlanets=1
+		Owner=PirateClan
+		Priority=10
+		Ruins=Any
+		ShotVisual=6
+		Size=110
+		Special=1
+		Text=<color=248,252,248>Оружие версии "Инвейтер" параллельно с обычным действием подавляет работу системы зажигания цели, повреждая при этом ее <clr>двигатель<clrEnd>.</color><br> <br>
+		Text=Мощность сканера: <bonScan> ед.
+		Text=(необходимо превышение мощности сканера над защитой цели)
+		WeaponMods=ReduceEngine
+		bonScan=-1
+	}
+	LEOContentMod_Mabokit_Lif ^{
+		Cost=120
+		Equipments=Mabokit
+		Fragility=100
+		KindGraph=Lif
+		Name="Лифoкар"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=6
+		Size=110
+		Special=1
+		Text=<color=248,252,248>Модернизированное по проекту "Лифокар" вооружение наносит дополнительный урон поврежденным целям, используя механизм последовательной сверхточной стрельбы в пробоины корпуса.</color><br> <br>
+		Text=Бонус к урону: до <clr>33%<clrEnd>
+		Text=Мощность сканера: <bonScan> ед.
+		Text=(необходимо превышение мощности сканера над защитой цели)
+		WeaponMods=BonusToDamaged
+		bonScan=-1
+	}
+	LEOContentMod_Mabokit_Mis_X1 ^{
+		Cost=200
+		Equipments=Mabokit
+		Fragility=150
+		KindGraph=Mis
+		Name="Мислерант-ДЖИ2"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+		Priority=10
+		Ruins=Any
+		ShotVisual=6
+		Size=200
+		Special=1
+		Text=<color=248,252,248>Ракетные установки версии "Мислерант" обладают усовершенствованным механизмом подачи снарядов, вследствие чего растет количество ракет в каждом залпе. Расход боеприпасов значительно повышается, равно как и объем самой установки, а так же инженеры выделили дополнительный отсек для ракет.</color><br> <br>
+		Text=Снарядов в залпе: <clr>+2<clrEnd> ед.
+		Text=Количество залпов: <clr>+50<clrEnd> ед.
+		bonAmmo=60
+		bonShots=2
+	}
+	LEOContentMod_Mabokit_Mis_X2 ^{
+		Cost=400
+		Equipments=Mabokit
+		Fragility=300
+		KindGraph=Mis
+		Name="Мислерант-СЛИП"
+		OnPlanets=1
+		Owner=PirateClan
+		Priority=10
+		Ruins=PB,CB
+		ShotVisual=6
+		Size=80
+		Special=1
+		Text=<color=248,252,248>Ракетные установки версии "Мислерант" обладают усовершенствованным механизмом подачи снарядов, вследствие чего растет количество ракет в каждом залпе. Увеличенная скорость ракет - выбор настоящих убийц и пираты это отлично понимают. Разве что такое оборудование выходит из строя очень быстро, но и весит меньше обычного.</color><br> <br>
+		Text=Снарядов в залпе: <clr>+1<clrEnd> ед.
+		Text=Скорость снарядов: <clr>+750<clrEnd> ед.
+		bonMissileSpeed=750
+		bonShots=1
+	}
+	LEOContentMod_Mabokit_Mis_X3 ^{
+		Cost=800
+		Equipments=Mabokit
+		Fragility=75
+		KindGraph=Mis
+		Name="Мислерант-ПЭЙДЖ"
+		OnPlanets=1
+		Owner=Fei
+		Priority=10
+		Ruins=Any
+		ShotVisual=6
+		Size=150
+		Special=1
+		Text=<color=248,252,248>Ракетные установки версии "Мислерант" обладают усовершенствованным механизмом подачи снарядов, вследствие чего растет количество ракет в каждом залпе. Улучшенная версия, сделанная фэянами. Раз уж объем и вес оборудования увеличился, то фэяне решили проапгрейдить модификацию "Мислерант" по полной. Но такое оборудование стало сильно дорогим в обслуживании.</color><br> <br>
+		Text=Снарядов в залпе: <clr>+1<clrEnd> ед.
+		Text=Количество залпов: <clr>+25<clrEnd> ед.
+		Text=Скорость снарядов: <clr>+350<clrEnd> ед.
+		bonAmmo=25
+		bonMissileSpeed=350
+		bonShots=1
+	}
+	LEOContentMod_Mauler_Dish ^{
+		Cost=400
+		Equipments=Mauler
+		Fragility=160
+		KindGraph=Dish
+		Name="Дишот"
+		OnPlanets=1
+		Owner=PirateClan
+		Priority=10
+		ShotVisual=4
+		Size=200
+		Special=1
+		Text=<color=248,252,248>На этом орудии установлена продвинутая система подачи снарядов. Материалы нулевого трения и дополнительные системы охлаждения позволили значительно снизить время, требующееся для полной перезарядки и, соответственно, снизить время простоя. Скорострельность такого орудия повышается вдвое.</color>
+		Text=<clr><clrEnd>
+		Text=Скорострельность: <clr>+1<clrEnd>
+		bonAttacks=1
+	}
+	LEOContentMod_Mauler_Dja ^{
+		Cost=120
+		Equipments=Mauler
+		Fragility=100
+		KindGraph=Dja
+		Name="Джавитoр"
+		OnPlanets=1
+		Owner=PirateClan
+		Priority=10
+		Ruins=Any
+		ShotVisual=4
+		Size=110
+		Special=1
+		Text=<color=248,252,248>Модифицированное для прицельного отстрела ремонтных роботов, вооружение в варианте "Джавитор" позволяет вести огонь по траектории движения дроида, тем самым получая шанс блокировать вражескому кораблю проведение ремонта в ходе битвы.</color><br> <br>
+		Text=Шанс блокировки <clr>дроида<clrEnd> обратно пропорционален размеру корпуса цели
+		Text=Мощность сканера: <bonScan> ед.
+		Text=(необходимо превышение мощности сканера над защитой цели)
+		WeaponMods=BlockDroid
+		bonScan=-1
+	}
+	LEOContentMod_Mauler_Ext ^{
+		Cost=300
+		Equipments=Mauler
+		Fragility=170
+		KindGraph=Ext
+		Name="Экстремум"
+		OnPlanets=1
+		Owner=PirateClan
+		Priority=10
+		Ruins=Any
+		ShotVisual=4
+		Size=80
+		Special=1
+		Text=<color=248,252,248>Данное оружие оснащено экспериментальным источником энергии, способным увеличить наносимый урон до максимума, независимо от навыков пилота. Модифицированный блок занимает малый объем, но потребляет огромное количество ресурсов, вследствие чего быстро изнашивается и очень дорог в эксплуатации.</color>
+		WeaponMods=NoDelta
+	}
+	LEOContentMod_Mauler_Inv ^{
+		Cost=120
+		Equipments=Mauler
+		Fragility=100
+		KindGraph=Inv
+		Name="Инвeйтер"
+		OnPlanets=1
+		Owner=PirateClan
+		Priority=10
+		Ruins=Any
+		ShotVisual=4
+		Size=110
+		Special=1
+		Text=<color=248,252,248>Оружие версии "Инвейтер" параллельно с обычным действием подавляет работу системы зажигания цели, повреждая при этом ее <clr>двигатель<clrEnd>.</color><br> <br>
+		Text=Мощность сканера: <bonScan> ед.
+		Text=(необходимо превышение мощности сканера над защитой цели)
+		WeaponMods=ReduceEngine
+		bonScan=-1
+	}
+	LEOContentMod_Mauler_Stil ^{
+		Cost=120
+		Equipments=Mauler
+		Fragility=100
+		KindGraph=Stil
+		Name="Стилeрмейн"
+		OnPlanets=1
+		Owner=PirateClan
+		Priority=10
+		Ruins=Any
+		ShotVisual=4
+		Size=70
+		Special=1
+		Text=<color=248,252,248>"Стилермейн" - модификация, монтируемая на корпусе орудийной установки. Во время боя она пытается одновременно со стрельбой транслировать в центральную систему управления вражеского корабля аварийную команду на сброс груза. Вероятность срабатывания относительно невелика, однако это может дать пилоту тактическое преимущество в бою и возможность поживиться добычей.</color><br> <br>
+		Text=Шанс сброса товаров из трюма: <clr>5%<clrEnd>
+		Text=Мощность сканера: <bonScan> ед.
+		Text=(необходимо превышение мощности сканера над защитой цели)
+		WeaponMods=DropCargo
+		bonScan=-1
+	}
+	LEOContentMod_Multiplet_Ext ^{
+		Cost=300
+		Equipments=Multiplet
+		Fragility=170
+		KindGraph=Ext
+		Name="Экстремум"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=10
+		Size=80
+		Special=1
+		Text=<color=248,252,248>Данное оружие оснащено экспериментальным источником энергии, способным увеличить наносимый урон до максимума, независимо от навыков пилота. Модифицированный блок занимает малый объем, но потребляет огромное количество ресурсов, вследствие чего быстро изнашивается и очень дорог в эксплуатации.</color>
+		WeaponMods=NoDelta
+	}
+	LEOContentMod_Multiplet_Lif ^{
+		Cost=120
+		Equipments=Multiplet
+		Fragility=100
+		KindGraph=Lif
+		Name="Лифoкар"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=10
+		Size=110
+		Special=1
+		Text=<color=248,252,248>Модернизированное по проекту "Лифокар" вооружение наносит дополнительный урон поврежденным целям, используя механизм последовательной сверхточной стрельбы в пробоины корпуса.</color><br> <br>
+		Text=Бонус к урону: до <clr>33%<clrEnd>
+		Text=Мощность сканера: <bonScan> ед.
+		Text=(необходимо превышение мощности сканера над защитой цели)
+		WeaponMods=BonusToDamaged
+		bonScan=-1
+	}
+	LEOContentMod_Multiplet_Sar_X1 ^{
+		Cost=200
+		Equipments=Multiplet
+		Fragility=75
+		KindGraph=Sar
+		Name="Сардариан-X1"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=10
+		Size=125
+		Special=1
+		Text=<color=248,252,248>Распространенная модификация стационарных ракетных платформ, предназначенных для защиты орбитальных баз и флагманских кораблей. Увеличенный боезапас и повышенная прочность хорошо подойдут для продолжительных и изнуряющих боев, если, конечно, дополнительные объем и масса не станут помехой для текущих боевых задач.</color>
+		Text=Количество ракет: <clr>+120<clrEnd> ед.
+		Text=Масса корабля: <bonMass><clr>%<clrEnd>
+		bonAmmo=120
+		bonMass=2
+	}
+	LEOContentMod_Multiplet_Sar_X2 ^{
+		Cost=300
+		Equipments=Multiplet
+		Fragility=150
+		KindGraph=Sar
+		Name="Сардариан-X2"
+		OnPlanets=1
+		Owner=PirateClan
+		Priority=10
+		Ruins=PB,CB
+		ShotVisual=10
+		Size=80
+		Special=1
+		Text=<color=248,252,248>Распространенная модификация стационарных ракетных платформ, предназначенных для защиты орбитальных баз и флагманских кораблей. Увеличенная скорость ракет - выбор настоящих убийц и пираты это отлично понимают. Разве что такое оборудование выходит из строя очень быстро, но и весит меньше обычного.</color>
+		Text=Скорость ракет: <clr>+750<clrEnd> ед.
+		bonMissileSpeed=750
+	}
+	LEOContentMod_Multiplet_Sar_X3 ^{
+		Cost=300
+		Equipments=Multiplet
+		Fragility=90
+		KindGraph=Sar
+		Name="Сардариан-X3"
+		OnPlanets=1
+		Owner=People
+		Priority=10
+		Ruins=Any
+		ShotVisual=10
+		Size=130
+		Special=1
+		Text=<color=248,252,248>Распространенная модификация стационарных ракетных платформ, предназначенных для защиты орбитальных баз и флагманских кораблей. Увеличенный боезапас, дополнительная торпедная шахта и повышенная прочность хорошо подойдут для продолжительных и изнуряющих боев, если, конечно, дополнительный объем не станет помехой для текущих боевых задач.</color>
+		Text=Снарядов в залпе: <clr>+1<clrEnd> ед.
+		Text=Количество залпов: <clr>+25<clrEnd> ед.
+		Text=Скорость снарядов: <clr>+350<clrEnd> ед.
+		bonAmmo=25
+		bonMissileSpeed=350
+		bonShots=1
+	}
+	LEOContentMod_TorpedometSpeedDrop ^{
+		Cost=120
+		Equipments=Torpedomet
+		Fragility=130
+		KindGraph=SpeedDrop
+		Name="Спид-дроп"
+		OnPlanets=1
+		Owner=PirateClan
+		Priority=10
+		Ruins=PB,CB
+		ShotVisual=14
+		Size=110
+		Special=1
+		Text=<color=248,252,248>Оружие с комплексом дополнительного оборудования "Спид-дроп" работает по принципу Локализатора взрывной волны. Пиратская технология далека от совершенства, но всё же повышает вероятность сохранения ценных трофеев после уничтожения вражеского корабля. А так же, пиратам удалось повысить скорость торпед, за счет мощного пускового механизма и увеличить боекомплект.</color><br> <br>
+		Text=Мощность сканера: <bonScan> ед.
+		Text=(необходимо превышение мощности сканера над защитой цели)
+		Text=Количество ракет: <clr>+10<clrEnd> ед.
+		Text=Скорость торпед: <clr>+350<clrEnd>
+		WeaponMods=MoreDrop
+		bonAmmo=10
+		bonMissileSpeed=350
+		bonScan=-1
+	}
+	LEOContentMod_W01_Mag ^{
+		Cost=190
+		Equipments=W01
+		Fragility=130
+		KindGraph=Mag
+		Name="Магнетрон"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=2
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Источник мощного магнитного поля, установленный на данном орудии, значительно увеличивает пробивную силу любого энергетического оружия. При этом неизбежные побочные помехи существенно ухудшают как работу оборудования носителя, так и цели.</color><br> <br>
+		Text=Бонус к урону: <clr>+12<clrEnd> ед.
+		Text=Мощность сканера: <bonScan> ед.
+		Text=Дальность радара: <bonRadar> ед.
+		WeaponMods=Magnetic
+		bonRadar=-50
+		bonScan=-1
+		bonWEnergy=12
+	}
+	LEOContentMod_W03_Mag ^{
+		Cost=190
+		Equipments=W03
+		Fragility=130
+		KindGraph=Mag
+		Name="Магнетрон"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=3
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Источник мощного магнитного поля, установленный на данном орудии, значительно увеличивает пробивную силу любого энергетического оружия. При этом неизбежные побочные помехи существенно ухудшают как работу оборудования носителя, так и цели.</color><br> <br>
+		Text=Бонус к урону: <clr>+12<clrEnd> ед.
+		Text=Мощность сканера: <bonScan> ед.
+		Text=Дальность радара: <bonRadar> ед.
+		WeaponMods=Magnetic
+		bonRadar=-50
+		bonScan=-1
+		bonWEnergy=12
+	}
+	LEOContentMod_W04_Mis_X1 ^{
+		Cost=200
+		Equipments=W04
+		Fragility=150
+		KindGraph=Mis
+		Name="Мислерант-ДЖИ3"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal
+		Priority=10
+		Ruins=Any
+		Size=200
+		Special=1
+		Text=<color=248,252,248>Ракетные установки версии "Мислерант" обладают усовершенствованным механизмом подачи снарядов, вследствие чего растет количество ракет в каждом залпе. Расход боеприпасов значительно повышается, равно как и объем самой установки, а так же инженеры выделили дополнительный отсек для ракет.</color><br> <br>
+		Text=Ракет в залпе: <clr>+3<clrEnd> ед.
+		Text=Количество залпов: <clr>+60<clrEnd> ед.
+		bonAmmo=60
+		bonShots=3
+	}
+	LEOContentMod_W04_Mis_X2 ^{
+		Cost=400
+		Equipments=W04
+		Fragility=300
+		KindGraph=Mis
+		Name="Мислерант-СЛИП"
+		OnPlanets=1
+		Owner=PirateClan
+		Priority=10
+		Ruins=PB,CB
+		Size=80
+		Special=1
+		Text=<color=248,252,248>Ракетные установки версии "Мислерант" обладают усовершенствованным механизмом подачи снарядов, вследствие чего растет количество ракет в каждом залпе. Увеличенная скорость ракет - выбор настоящих убийц и пираты это отлично понимают. Разве что такое оборудование выходит из строя очень быстро, но и весит меньше обычного.</color><br> <br>
+		Text=Ракет в залпе: <clr>+1<clrEnd> ед.
+		Text=Скорость снарядов: <clr>+750<clrEnd> ед.
+		bonMissileSpeed=750
+		bonShots=1
+	}
+	LEOContentMod_W04_Mis_X3 ^{
+		Cost=800
+		Equipments=W04
+		Fragility=100
+		KindGraph=Mis
+		Name="Мислерант-ГЕОЛ"
+		OnPlanets=1
+		Owner=Gaal
+		Priority=10
+		Ruins=Any
+		Size=130
+		Special=1
+		Text=<color=248,252,248>Ракетные установки версии "Мислерант" обладают усовершенствованным механизмом подачи снарядов, вследствие чего растет количество ракет в каждом залпе. Улучшенная версия, сделанная гаальцами. Раз уж объем и вес оборудования увеличился, то гаальцы решили проапгрейдить модификацию "Мислерант" по полной. Но такое оборудование стало сильно дорогим в обслуживании.</color><br> <br>
+		Text=Ракет в залпе: <clr>+1<clrEnd> ед.
+		Text=Количество залпов: <clr>+25<clrEnd> ед.
+		Text=Скорость снарядов: <clr>+350<clrEnd> ед.
+		bonAmmo=25
+		bonMissileSpeed=350
+		bonShots=1
+	}
+	LEOContentMod_W05_Mag ^{
+		Cost=190
+		Equipments=W05
+		Fragility=130
+		KindGraph=Mag
+		Name="Магнетрон"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=1
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Источник мощного магнитного поля, установленный на данном орудии, значительно увеличивает пробивную силу любого энергетического оружия. При этом неизбежные побочные помехи существенно ухудшают как работу оборудования носителя, так и цели.</color><br> <br>
+		Text=Бонус к урону: <clr>+10<clrEnd> ед.
+		Text=Мощность сканера: <bonScan> ед.
+		Text=Дальность радара: <bonRadar> ед.
+		WeaponMods=Magnetic
+		bonRadar=-50
+		bonScan=-1
+		bonWEnergy=10
+	}
+	LEOContentMod_W06_Mag ^{
+		Cost=190
+		Equipments=W06
+		Fragility=130
+		KindGraph=Mag
+		Name="Магнетрон"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=1
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Источник мощного магнитного поля, установленный на данном орудии, значительно увеличивает пробивную силу любого энергетического оружия. При этом неизбежные побочные помехи существенно ухудшают как работу оборудования носителя, так и цели.</color><br> <br>
+		Text=Бонус к урону: <clr>+20<clrEnd> ед.
+		Text=Мощность сканера: <bonScan> ед.
+		Text=Дальность радара: <bonRadar> ед.
+		WeaponMods=Magnetic
+		bonRadar=-50
+		bonScan=-1
+		bonWEnergy=20
+	}
+	LEOContentMod_W06_Tan ^{
+		Cost=100
+		Equipments=W06
+		Fragility=110
+		KindGraph=Tan
+		Name="Танатос"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+		Priority=10
+		Ruins=Any
+		Size=150
+		Special=1
+		Text=<color=248,252,248>Редкая акриновая модификация волнового фазера и электронного резака, до сих пор будоражащая даже самые смелые умы галактики. Вследствие катастрофической нехватки дальнобойности было предложено необычное решение - позаимствовать датчики и навигаторы от систем дроида, захвата и защитного генератора. Полученный излишек энергии позволяет фокусировать энергию на более отдаленных целях, но компоновка дополнительных систем неизбежно увеличивает объем и неуклюжесть всей конструкции.</color><br> <br>
+		Text=Дальность стрельбы: <clr>+150<clrEnd> ед.
+		Text=Починка дроидом: <bonDroid> ед.
+		Text=Дальность захвата: <bonHookRadius> ед.
+		Text=Генератор щита: <bonDef> ед.
+		bonDef=-3
+		bonDroid=-3
+		bonHookRadius=-30
+		bonWRadius=150
+	}
+	LEOContentMod_W08_Mag ^{
+		Cost=190
+		Equipments=W08
+		Fragility=130
+		KindGraph=Mag
+		Name="Магнетрон"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=2
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Источник мощного магнитного поля, установленный на данном орудии, значительно увеличивает пробивную силу любого энергетического оружия. При этом неизбежные побочные помехи существенно ухудшают как работу оборудования носителя, так и цели.</color><br> <br>
+		Text=Бонус к урону: <clr>+20<clrEnd> ед.
+		Text=Мощность сканера: <bonScan> ед.
+		Text=Дальность радара: <bonRadar> ед.
+		WeaponMods=Magnetic
+		bonRadar=-100
+		bonScan=-2
+		bonWEnergy=20
+	}
+	LEOContentMod_W08_Tan ^{
+		Cost=100
+		Equipments=W08
+		Fragility=110
+		KindGraph=Tan
+		Name="Танатос"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+		Priority=10
+		Ruins=Any
+		Size=150
+		Special=1
+		Text=<color=248,252,248>Редкая акриновая модификация волнового фазера и электронного резака, до сих пор будоражащая даже самые смелые умы галактики. Вследствие катастрофической нехватки дальнобойности было предложено необычное решение - позаимствовать датчики и навигаторы от систем дроида, захвата и защитного генератора. Полученный излишек энергии позволяет фокусировать энергию на более отдаленных целях, но компоновка дополнительных систем неизбежно увеличивает объем и неуклюжесть всей конструкции.</color><br> <br>
+		Text=Дальность стрельбы: <clr>+150<clrEnd> ед.
+		Text=Починка дроидом: <bonDroid> ед.
+		Text=Дальность захвата: <bonHookRadius> ед.
+		Text=Генератор щита: <bonDef> ед.
+		bonDef=-3
+		bonDroid=-3
+		bonHookRadius=-30
+		bonWRadius=150
+	}
+	LEOContentMod_W10_Mag ^{
+		Cost=190
+		Equipments=W10
+		Fragility=130
+		KindGraph=Mag
+		Name="Магнетрон"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=2
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Источник мощного магнитного поля, установленный на данном орудии, значительно увеличивает пробивную силу любого энергетического оружия. При этом неизбежные побочные помехи существенно ухудшают как работу оборудования носителя, так и цели.</color><br> <br>
+		Text=Бонус к урону: <clr>+30<clrEnd> ед.
+		Text=Мощность сканера: <bonScan> ед.
+		Text=Дальность радара: <bonRadar> ед.
+		WeaponMods=Magnetic
+		bonRadar=-150
+		bonScan=-2
+		bonWEnergy=30
+	}
+	LEOContentMod_W11_Mag ^{
+		Cost=190
+		Equipments=W11
+		Fragility=130
+		KindGraph=Mag
+		Name="Магнетрон"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=3
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Источник мощного магнитного поля, установленный на данном орудии, значительно увеличивает пробивную силу любого энергетического оружия. При этом неизбежные побочные помехи существенно ухудшают как работу оборудования носителя, так и цели.</color><br> <br>
+		Text=Бонус к урону: <clr>+35<clrEnd> ед.
+		Text=Мощность сканера: <bonScan> ед.
+		Text=Дальность радара: <bonRadar> ед.
+		WeaponMods=Magnetic
+		bonRadar=-150
+		bonScan=-2
+		bonWEnergy=35
+	}
+	LEOContentMod_W12_Mag ^{
+		Cost=190
+		Equipments=W12
+		Fragility=130
+		KindGraph=Mag
+		Name="Магнетрон"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=3
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Источник мощного магнитного поля, установленный на данном орудии, значительно увеличивает пробивную силу любого энергетического оружия. При этом неизбежные побочные помехи существенно ухудшают как работу оборудования носителя, так и цели.</color><br> <br>
+		Text=Бонус к урону: <clr>+45<clrEnd> ед.
+		Text=Мощность сканера: <bonScan> ед.
+		Text=Дальность радара: <bonRadar> ед.
+		WeaponMods=Magnetic
+		bonRadar=-150
+		bonScan=-3
+		bonWEnergy=45
+	}
+	LEOContentMod_W17_Mag ^{
+		Cost=190
+		Equipments=W17
+		Fragility=130
+		KindGraph=Mag
+		Name="Магнетрон"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=3
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Источник мощного магнитного поля, установленный на данном орудии, значительно увеличивает пробивную силу любого энергетического оружия. При этом неизбежные побочные помехи существенно ухудшают как работу оборудования носителя, так и цели.</color><br> <br>
+		Text=Бонус к урону: <clr>+10<clrEnd> ед.
+		Text=Мощность сканера: <bonScan> ед.
+		Text=Дальность радара: <bonRadar> ед.
+		WeaponMods=Magnetic
+		bonRadar=-50
+		bonScan=-1
+		bonWEnergy=10
+	}
+	LEOContentMod_W18_Mis ^{
+		Cost=800
+		Equipments=W18
+		Fragility=300
+		KindGraph=Mis
+		Name="Мислерант-ПУФ"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+		Priority=10
+		Ruins=Any
+		Size=200
+		Special=1
+		Text=<color=248,252,248>Ракетные установки версии "Мислерант" обладают усовершенствованным механизмом подачи снарядов, вследствие чего растет количество ракет в каждом залпе. Расход боеприпасов значительно повышается, равно как и объем самой установки, поэтому инженерам пришлось выделить под это дополнительный отсек и сэкономить на топливе.</color><br> <br>
+		Text=Ракет в залпе: <clr>+3<clrEnd> ед.
+		Text=Количество залпов: <clr>+50<clrEnd> ед.
+		Text=Скорость снарядов: <clr>+750<clrEnd> ед.
+		bonAmmo=30
+		bonMissileSpeed=750
+		bonShots=3
+	}
+	LEOContentMod_gaal_vision_Mag ^{
+		Cost=190
+		Equipments=gaal_vision
+		Fragility=130
+		KindGraph=Mag
+		Name="Магнетрон"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=5
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Источник мощного магнитного поля, установленный на данном орудии, значительно увеличивает пробивную силу любого энергетического оружия. При этом неизбежные побочные помехи существенно ухудшают как работу оборудования носителя, так и цели.</color><br> <br>
+		Text=Бонус к урону: <clr>+32<clrEnd> ед.
+		Text=Мощность сканера: <bonScan> ед.
+		Text=Дальность радара: <bonRadar> ед.
+		WeaponMods=Magnetic
+		bonRadar=-150
+		bonScan=-3
+		bonWEnergy=32
+	}
+	LEOContentMod_grav_beam_Mag ^{
+		Cost=190
+		Equipments=grav_beam
+		Fragility=130
+		KindGraph=Mag
+		Name="Магнетрон"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=5
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Источник мощного магнитного поля, установленный на данном орудии, значительно увеличивает пробивную силу любого энергетического оружия. При этом неизбежные побочные помехи существенно ухудшают как работу оборудования носителя, так и цели.</color><br> <br>
+		Text=Бонус к урону: <clr>+17<clrEnd> ед.
+		Text=Мощность сканера: <bonScan> ед.
+		Text=Дальность радара: <bonRadar> ед.
+		WeaponMods=Magnetic
+		bonRadar=-50
+		bonScan=-1
+		bonWEnergy=17
+	}
+	LEOContentMod_laser_gun_Mag ^{
+		Cost=190
+		Equipments=laser_gun
+		Fragility=130
+		KindGraph=Mag
+		Name="Магнетрон"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=3
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Источник мощного магнитного поля, установленный на данном орудии, значительно увеличивает пробивную силу любого оружия. При этом неизбежные побочные помехи существенно ухудшают как работу оборудования носителя, так и цели.</color><br> <br>
+		Text=Бонус к урону: <clr>+13<clrEnd> ед.
+		Text=Мощность сканера: <bonScan> ед.
+		Text=Дальность радара: <bonRadar> ед.
+		WeaponMods=Magnetic
+		bonRadar=-100
+		bonScan=-2
+		bonWEnergy=13
+	}
+	LEOContentMod_slow_gun_Mag ^{
+		Cost=190
+		Equipments=slow_gun
+		Fragility=130
+		KindGraph=Mag
+		Name="Магнетрон"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=7
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Источник мощного магнитного поля, установленный на данном орудии, значительно увеличивает пробивную силу любого энергетического оружия. При этом неизбежные побочные помехи существенно ухудшают как работу оборудования носителя, так и цели.</color><br> <br>
+		Text=Бонус к урону: <clr>+12<clrEnd> ед.
+		Text=Мощность сканера: <bonScan> ед.
+		Text=Дальность радара: <bonRadar> ед.
+		WeaponMods=Magnetic
+		bonRadar=-100
+		bonScan=-2
+		bonWEnergy=12
+	}
+	LEOContentMod_splash_faser_Mag ^{
+		Cost=190
+		Equipments=splash_faser
+		Fragility=130
+		KindGraph=Mag
+		Name="Магнетрон"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=4
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Источник мощного магнитного поля, установленный на данном орудии, значительно увеличивает пробивную силу любого энергетического оружия. При этом неизбежные побочные помехи существенно ухудшают как работу оборудования носителя, так и цели.</color><br> <br>
+		Text=Бонус к урону: <clr>+8<clrEnd> ед.
+		Text=Мощность сканера: <bonScan> ед.
+		Text=Дальность радара: <bonRadar> ед.
+		WeaponMods=Magnetic
+		bonRadar=-50
+		bonScan=-1
+		bonWEnergy=8
+	}
+	LEOContentMod_sub_gun_Mag ^{
+		Cost=190
+		Equipments=sub_gun
+		Fragility=130
+		KindGraph=Mag
+		Name="Магнетрон"
+		OnPlanets=1
+		Priority=10
+		Ruins=Any
+		ShotVisual=4
+		Size=100
+		Special=1
+		Text=<color=248,252,248>Источник мощного магнитного поля, установленный на данном орудии, значительно увеличивает пробивную силу любого энергетического оружия. При этом неизбежные побочные помехи существенно ухудшают как работу оборудования носителя, так и цели.</color><br> <br>
+		Text=Бонус к урону: <clr>+25<clrEnd> ед.
+		Text=Мощность сканера: <bonScan> ед.
+		Text=Дальность радара: <bonRadar> ед.
+		WeaponMods=Magnetic
+		bonRadar=-100
+		bonScan=-2
+		bonWEnergy=25
+	}
+	ShuEmitter_DyshotFragGun ^{
+		Cost=450
+		Equipments=frag_gun
+		Fragility=120
+		KindGraph=Dish
+		Name="Дишот"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+		Priority=10
+		ShotVisual=5
+		Size=175
+		Special=1
+		Text=<color=248,252,248>На этом орудии установлена продвинутая система подачи снарядов. Материалы нулевого трения и дополнительные системы охлаждения позволили значительно снизить время, требующееся для полной перезарядки и, соответственно, снизить время простоя. Скорострельность такого орудия повышается вдвое.</color>
+		Text=<clr>Данное орудие лучше совместимо с модификацией, что сокращает его износ и уменьшает размер.<clrEnd>
+		Text=<clr><clrEnd>
+		Text=Скорострельность: <clr>+1<clrEnd>
+		bonAttacks=1
+	}
+	ShuEmitter_DyshotGaalVision ^{
+		Cost=415
+		Equipments=gaal_vision
+		Fragility=125
+		KindGraph=Dish
+		Name="Дишот"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+		Priority=10
+		ShotVisual=5
+		Size=180
+		Special=1
+		Text=<color=248,252,248>На это оружие установлен дополнительный энергомодуль, который подключается к работе, пока основной перезаряжается. Синхронизировав циклы их работы инженеры смогли добиться колоссального прироста скорострельности. Скорострельность такого орудия повышается вдвое.</color>
+		Text=<clr>Данное орудие лучше совместимо с модификацией, что сокращает его износ и уменьшает размер.<clrEnd>
+		Text=<clr><clrEnd>
+		Text=Скорострельность: <clr>+1<clrEnd>
+		bonAttacks=1
+	}
+	ShuEmitter_DyshotGravBeam ^{
+		Cost=450
+		Equipments=grav_beam
+		Fragility=120
+		KindGraph=Dish
+		Name="Дишот"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+		Priority=10
+		ShotVisual=5
+		Size=175
+		Special=1
+		Text=<color=248,252,248>На это оружие установлен дополнительный энергомодуль, который подключается к работе, пока основной перезаряжается. Синхронизировав циклы их работы инженеры смогли добиться колоссального прироста скорострельности. Скорострельность такого орудия повышается вдвое.</color>
+		Text=<clr>Данное орудие лучше совместимо с модификацией, что сокращает его износ и уменьшает размер.<clrEnd>
+		Text=<clr><clrEnd>
+		Text=Скорострельность: <clr>+1<clrEnd>
+		bonAttacks=1
+	}
+	ShuEmitter_DyshotMalocLaser ^{
+		Cost=400
+		Equipments=maloc_laser,maloc_laser2
+		Fragility=135
+		KindGraph=Dish
+		Name="Дишот"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+		Priority=10
+		ShotVisual=6
+		Size=200
+		Special=1
+		Text=<color=248,252,248>На это оружие установлен дополнительный энергомодуль, который подключается к работе, пока основной перезаряжается. Синхронизировав циклы их работы инженеры смогли добиться колоссального прироста скорострельности. Скорострельность такого орудия повышается вдвое.</color>
+		Text=<clr><clrEnd>
+		Text=Скорострельность: <clr>+1<clrEnd>
+		bonAttacks=1
+	}
+	ShuEmitter_DyshotPhotonGun ^{
+		Cost=450
+		Equipments=photon_gun,photon_gun2,photon_gun3
+		Fragility=120
+		KindGraph=Dish
+		Name="Дишот"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+		Priority=10
+		ShotVisual=52
+		Size=175
+		Special=1
+		Text=<color=248,252,248>На это оружие установлен дополнительный энергомодуль, который подключается к работе, пока основной перезаряжается. Синхронизировав циклы их работы инженеры смогли добиться колоссального прироста скорострельности. Скорострельность такого орудия повышается вдвое.</color>
+		Text=<clr>Данное орудие лучше совместимо с модификацией, что сокращает его износ и уменьшает размер.<clrEnd>
+		Text=<clr><clrEnd>
+		Text=Скорострельность: <clr>+1<clrEnd>
+		bonAttacks=1
+	}
+	ShuEmitter_DyshotPulseGun ^{
+		Cost=400
+		Equipments=pulse_gun,pulse_gun2
+		Fragility=135
+		KindGraph=Dish
+		Name="Дишот"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+		Priority=10
+		ShotVisual=5
+		Size=200
+		Special=1
+		Text=<color=248,252,248>На это оружие установлен дополнительный энергомодуль, который подключается к работе, пока основной перезаряжается. Синхронизировав циклы их работы инженеры смогли добиться колоссального прироста скорострельности. Скорострельность такого орудия повышается вдвое.</color>
+		Text=<clr><clrEnd>
+		Text=Скорострельность: <clr>+1<clrEnd>
+		bonAttacks=1
+	}
+	ShuEmitter_DyshotSlowGun ^{
+		Cost=450
+		Equipments=slow_gun
+		Fragility=120
+		KindGraph=Dish
+		Name="Дишот"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+		Priority=10
+		ShotVisual=7
+		Size=175
+		Special=1
+		Text=<color=248,252,248>На это оружие установлен дополнительный энергомодуль, который подключается к работе, пока основной перезаряжается. Синхронизировав циклы их работы инженеры смогли добиться колоссального прироста скорострельности. Скорострельность такого орудия повышается вдвое.</color>
+		Text=<clr>Данное орудие лучше совместимо с модификацией, что сокращает его износ и уменьшает размер.<clrEnd>
+		Text=<clr><clrEnd>
+		Text=Скорострельность: <clr>+1<clrEnd>
+		bonAttacks=1
+	}
+	ShuEmitter_DyshotSphereGun ^{
+		Cost=450
+		Equipments=sphere_gun
+		Fragility=120
+		KindGraph=Dish
+		Name="Дишот"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+		Priority=10
+		ShotVisual=15
+		Size=150
+		Special=1
+		Text=<color=248,252,248>На это оружие установлен дополнительный энергомодуль, который подключается к работе, пока основной перезаряжается. Синхронизировав циклы их работы инженеры смогли добиться колоссального прироста скорострельности. Скорострельность такого орудия повышается вдвое.</color>
+		Text=<clr>Данное орудие лучше совместимо с модификацией, что сокращает его износ и уменьшает размер.<clrEnd>
+		Text=<clr><clrEnd>
+		Text=Скорострельность: <clr>+1<clrEnd>
+		bonAttacks=1
+	}
+	ShuEmitter_DyshotSplashFaser ^{
+		Cost=400
+		Equipments=splash_faser
+		Fragility=135
+		KindGraph=Dish
+		Name="Дишот"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+		Priority=10
+		ShotVisual=4
+		Size=200
+		Special=1
+		Text=<color=248,252,248>На это оружие установлен дополнительный энергомодуль, который подключается к работе, пока основной перезаряжается. Синхронизировав циклы их работы инженеры смогли добиться колоссального прироста скорострельности. Скорострельность такого орудия повышается вдвое.</color>
+		Text=<clr><clrEnd>
+		Text=Скорострельность: <clr>+1<clrEnd>
+		bonAttacks=1
+		
+	}
+	ExpTC_TryshotLaserGun ^{
+		Cost=250
+		Equipments=laser_gun
+		Fragility=125
+		KindGraph=Dish
+		Name="Тришот"
+		OnPlanets=1
+		Owner=Maloc,Peleng,People,Fei,Gaal,PirateClan
+		Priority=10
+		ShotVisual=3
+		Size=150
+		Special=1
+		Text=<color=248,252,248>На это оружие установлен дополнительный энергомодуль, который подключается к работе, пока основной перезаряжается. Синхронизировав циклы их работы инженеры смогли добиться колоссального прироста скорострельности. Скорострельность такого орудия повышается в полтора раза.</color>
+		Text=<clr><clrEnd>
+		Text=Скорострельность: <clr>+1<clrEnd>
+		bonAttacks=1
+	}
+	ShuMM_ExtremumEnergy ^{
+		Cost=200
+		Equipments=W01,W03,W05,W06,W08,W10,W11,W12,W17,sub_gun,grav_beam,splash_faser,gaal_vision,slow_gun,sphere_gun,pulse_gun,pulse_gun2,maloc_laser,maloc_laser2,photon_gun,photon_gun2,photon_gun3
+		Fragility=170
+		Name="Экстремум"
+		OnPlanets=1
+		Owner=PirateClan
+		Priority=10
+		Ruins=PB,CB
+		Size=80
+		Special=1
+		Text=<color=248,252,248>Данное оружие оснащено экспериментальным источником энергии, способным увеличить наносимый урон до максимума, независимо от навыков пилота. Модифицированный блок занимает малый объем, но потребляет огромное количество ресурсов, вследствие чего быстро изнашивается и очень дорог в эксплуатации. Излюбленная модификация пиратов, предпочитающих внезапность и мощность надежности и стабильности.</color>
+		WeaponMods=NoDelta
+	}
+	ShuMM_ExtremumSplinter ^{
+		Cost=200
+		Equipments=W02,W07,W09,frag_gun,laser_gun
+		Fragility=170
+		Name="Экстремум"
+		OnPlanets=1
+		Owner=PirateClan
+		Priority=10
+		Ruins=PB,CB
+		Size=80
+		Special=1
+		Text=<color=248,252,248>Данное оружие оснащено экспериментальным источником энергии, способным увеличить наносимый урон до максимума, независимо от навыков пилота. Модифицированный блок занимает малый объем, но потребляет огромное количество ресурсов, вследствие чего быстро изнашивается и очень дорог в эксплуатации. Излюбленная модификация пиратов, предпочитающих внезапность и мощность надежности и стабильности.</color>
+		WeaponMods=NoDelta
+	}
+	ShuMM_Torpedo ^{
+		BlockMM=1
+		Priority=10
+		Special=1
+	}
+}

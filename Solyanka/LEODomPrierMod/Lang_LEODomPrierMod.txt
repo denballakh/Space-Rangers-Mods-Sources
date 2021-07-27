@@ -1,0 +1,443 @@
+MicroModuls ~{
+    LEOContentMod_Prier1 ^{
+        Equipments=Hull
+        Fragility=95
+        KindGraph=Spec
+        Name=Прайер-1
+        Owner=Kling
+        Priority=15
+        RacialRestriction=1
+        Size=250
+        Text=Микромодуль первого уровня. Тотальная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для апгрейда корабля до мощнейшей боевой машины. Разблокировать механизмы совместимости ученым коалиции и пиратов так и не удалось, поэтому данный модуль пригоден только к разборке на ноды.
+        bonHull=12
+        bonMass=50
+        bonSkill1=3
+        bonSkill2=3
+    }
+    LEOContentMod_HPrier1 ^{
+        Equipments=Hull
+        Name=<color=49,239,255>Прайер-1</color>
+        Owner=Kling
+        Priority=15
+        RacialRestriction=1
+        Special=1
+        Text=<color=49,239,255>Тотальная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для апгрейда корабля до мощнейшей боевой машины.</color>
+        Text=---------------------
+        Text=Масса корабля: <clr>+50%<clrEnd>
+        Text=Размер корпуса: <clr>+150%<clrEnd>
+        Text=Прочность корпуса: <clr>+5%<clrEnd>
+        Text=Броня корпуса: <clr>+12<clrEnd> ед.
+        Text=Навык атаки: <clr>+3<clrEnd>
+        Text=Навык маневренности: <clr>+3<clrEnd>
+        Text=Починка дроидом: <bonDroid> ед.
+        bonDroid=-45
+    }
+    LEOContentMod_Prier2 ^{
+        Equipments=Hull
+        Fragility=35
+        KindGraph=Spec
+        Name=Прайер-2
+        Owner=Kling
+        Priority=15
+        RacialRestriction=1
+        Size=150
+        Text=Микромодуль первого уровня. Тотальная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для увеличения точности орудий и общего атакующего потенциала. Разблокировать механизмы совместимости ученым коалиции и пиратов так и не удалось, поэтому данный модуль пригоден только к разборке на ноды.
+        bonHull=3
+        bonMass=30
+        bonSkill1=3
+    }
+    LEOContentMod_HPrier2 ^{
+        Equipments=Hull
+        Name=<color=49,239,255>Прайер-2</color>
+        Owner=Kling
+        Priority=15
+        RacialRestriction=1
+        Special=1
+        Text=<color=49,239,255>Тотальная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для увеличения точности орудий и общего атакующего потенциала.</color>
+        Text=---------------------
+        Text=Масса корабля: <clr>+30%<clrEnd>
+        Text=Размер корпуса: <clr>+50%<clrEnd>
+        Text=Прочность корпуса: <clr>+65%<clrEnd>
+        Text=Броня корпуса: <clr>+3<clrEnd>
+        Text=Навык атаки: <clr>+3<clrEnd>
+        Text=Починка дроидом: <bonDroid> ед.
+        bonDroid=-45
+    }
+    LEOContentMod_Prier3 ^{
+        Equipments=Hull
+        Fragility=20
+        KindGraph=Spec
+        Name=Прайер-3
+        Owner=Kling
+        Priority=15
+        RacialRestriction=1
+        Size=50
+        Text=Микромодуль первого уровня. Тотальная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для увеличения маневренности и выживаемости. Разблокировать механизмы совместимости ученым коалиции и пиратов так и не удалось, поэтому данный модуль пригоден только к разборке на ноды.
+        bonHull=-3
+        bonMass=-60
+        bonSkill2=3
+    }
+    LEOContentMod_HPrier3 ^{
+        Equipments=Hull
+        Name=<color=49,239,255>Прайер-3</color>
+        Owner=Kling
+        Priority=15
+        RacialRestriction=1
+        Special=1
+        Text=<color=49,239,255>Тотальная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для увеличения маневренности и выживаемости.</color>
+        Text=---------------------
+        Text=Масса корабля:<clr>-60%<clrEnd>
+        Text=Размер корпуса: <clr>-50%<clrEnd>
+        Text=Прочность корпуса: <clr>+80%<clrEnd>
+        Text=Броня корпуса: <clr>-3<clrEnd> ед.
+        Text=Навык маневренности: <clr>+3<clrEnd>
+        Text=Починка дроидом: <bonDroid> ед.
+        bonDroid=-45
+    }
+    LEOContentMod_Prier4 ^{
+        Equipments=Hull
+        Fragility=95
+        Name=Прайер-4
+        Owner=Kling
+        Priority=45
+        RacialRestriction=1
+        Size=190
+        Text=Микромодуль второго уровня. Масштабная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для апгрейда корабля до мощнейшей боевой машины. Разблокировать механизмы совместимости ученым коалиции и пиратов так и не удалось, поэтому данный модуль пригоден только к разборке на ноды.
+        bonHull=8
+        bonMass=40
+        bonSkill1=2
+        bonSkill2=2
+    }
+    LEOContentMod_HPrier4 ^{
+        Equipments=Hull
+        Name=<color=49,239,255>Прайер-4</color>
+        Owner=Kling
+        Priority=45
+        RacialRestriction=1
+        Special=1
+        Text=<color=49,239,255>Масштабная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для апгрейда корабля до мощнейшей боевой машины.</color>
+        Text=---------------------
+        Text=Масса корабля: <clr>+40%<clrEnd>
+        Text=Размер корпуса: <clr>+90%<clrEnd>
+        Text=Прочность корпуса: <clr>+5%<clrEnd>
+        Text=Броня корпуса: <clr>+8<clrEnd> ед.
+        Text=Навык атаки: <clr>+2<clrEnd>
+        Text=Навык маневренности: <clr>+2<clrEnd>
+        Text=Починка дроидом: <bonDroid> ед.
+        bonDroid=-30
+    }
+    LEOContentMod_Prier5 ^{
+        Equipments=Hull
+        Fragility=75
+        Name=Прайер-5
+        Owner=Kling
+        Priority=45
+        RacialRestriction=1
+        Size=130
+        Text=Микромодуль второго уровня. Масштабная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для увеличения точности орудий и общего атакующего потенциала. Разблокировать механизмы совместимости ученым коалиции и пиратов так и не удалось, поэтому данный модуль пригоден только к разборке на ноды.
+        bonHull=2
+        bonMass=20
+        bonSkill1=2
+    }
+    LEOContentMod_HPrier5 ^{
+        Equipments=Hull
+        Name=<color=49,239,255>Прайер-5</color>
+        Owner=Kling
+        Priority=45
+        RacialRestriction=1
+        Special=1
+        Text=<color=49,239,255>Масштабная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для увеличения точности орудий и общего атакующего потенциала.</color>
+        Text=---------------------
+        Text=Масса корабля: <clr>+20%<clrEnd>
+        Text=Размер корпуса: <clr>+30%<clrEnd>
+        Text=Прочность корпуса: <clr>+25%<clrEnd>
+        Text=Броня корпуса: <clr>+2<clrEnd> ед.
+        Text=Навык атаки: <clr>+2<clrEnd>
+        Text=Починка дроидом: <bonDroid> ед.
+        bonDroid=-30
+    }
+    LEOContentMod_Prier6 ^{
+        Equipments=Hull
+        Fragility=50
+        Name=Прайер-6
+        Owner=Kling
+        Priority=45
+        RacialRestriction=1
+        Size=60
+        Text=Микромодуль второго уровня. Масштабная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для увеличения маневренности и выживаемости. Разблокировать механизмы совместимости ученым коалиции и пиратов так и не удалось, поэтому данный модуль пригоден только к разборке на ноды.
+        bonHull=-2
+        bonMass=-35
+        bonSkill2=2
+    }
+    LEOContentMod_HPrier6 ^{
+        Equipments=Hull
+        Name=<color=49,239,255>Прайер-6</color>
+        Owner=Kling
+        Priority=45
+        RacialRestriction=1
+        Special=1
+        Text=<color=49,239,255>Масштабная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для увеличения маневренности и выживаемости.</color>
+        Text=---------------------
+        Text=Масса корабля: <clr>-35%<clrEnd>
+        Text=Размер корпуса: <clr>-40%<clrEnd>
+        Text=Прочность корпуса: <clr>+50%<clrEnd>
+        Text=Броня корпуса: <clr>-2<clrEnd> ед.
+        Text=Навык маневренности: <clr>+2<clrEnd>
+        Text=Починка дроидом: <bonDroid> ед.
+        bonDroid=-30
+    }
+    LEOContentMod_Prier7 ^{
+        Equipments=Hull
+        Fragility=95
+        Name=Прайер-7
+        Owner=Kling
+        Priority=75
+        RacialRestriction=1
+        Size=130
+        Text=Микромодуль третьего уровня. Точечная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для апгрейда корабля до мощнейшей боевой машины. Разблокировать механизмы совместимости ученым коалиции и пиратов так и не удалось, поэтому данный модуль пригоден только к разборке на ноды.
+        bonHull=4
+        bonMass=30
+        bonSkill1=1
+        bonSkill2=1
+    }
+    LEOContentMod_HPrier7 ^{
+        Equipments=Hull
+        Name=<color=49,239,255>Прайер-7</color>
+        Owner=Kling
+        Priority=75
+        RacialRestriction=1
+        Special=1
+        Text=<color=49,239,255>Точечная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для апгрейда корабля до мощнейшей боевой машины.</color>
+        Text=---------------------
+        Text=Масса корабля: <clr>+30%<clrEnd>
+        Text=Размер корпуса: <clr>+30%<clrEnd>
+        Text=Прочность корпуса: <clr>+5%<clrEnd>
+        Text=Броня корпуса: <clr>+4<clrEnd> ед.
+        Text=Навык атаки: <clr>+1<clrEnd>
+        Text=Навык маневренности: <clr>+1<clrEnd>
+        Text=Починка дроидом: <bonDroid> ед.
+        bonDroid=-15
+    }
+    LEOContentMod_Prier8 ^{
+        Equipments=Hull
+        Fragility=85
+        Name=Прайер-8
+        Owner=Kling
+        Priority=75
+        RacialRestriction=1
+        Size=110
+        Text=Микромодуль третьего уровня. Точечная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для увеличения точности орудий и общего атакующего потенциала. Разблокировать механизмы совместимости ученым коалиции и пиратов так и не удалось, поэтому данный модуль пригоден только к разборке на ноды.
+        bonHull=1
+        bonMass=10
+        bonSkill1=1
+    }
+    LEOContentMod_HPrier8 ^{
+        Equipments=Hull
+        Name=<color=49,239,255>Прайер-8</color>
+        Owner=Kling
+        Priority=75
+        RacialRestriction=1
+        Special=1
+        Text=<color=49,239,255>Точечная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для увеличения точности орудий и общего атакующего потенциала.</color>
+        Text=---------------------
+        Text=Масса корабля: <clr>+10%<clrEnd>
+        Text=Размер корпуса: <clr>+10%<clrEnd>
+        Text=Прочность корпуса: <clr>+15%<clrEnd>
+        Text=Броня корпуса: <clr>+1<clrEnd> ед.
+        Text=Навык атаки: <clr>+1<clrEnd>
+        Text=Починка дроидом: <bonDroid> ед.
+        bonDroid=-15
+    }
+    LEOContentMod_Prier9 ^{
+        Equipments=Hull
+        Fragility=70
+        Name=Прайер-9
+        Owner=Kling
+        Priority=75
+        RacialRestriction=1
+        Size=70
+        Text=Микромодуль третьего уровня. Точечная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для увеличения маневренности и выживаемости. Разблокировать механизмы совместимости ученым коалиции и пиратов так и не удалось, поэтому данный модуль пригоден только к разборке на ноды.
+        bonHull=-1
+        bonMass=-15
+        bonSkill2=1
+    }
+    LEOContentMod_HPrier9 ^{
+        Equipments=Hull
+        Name=<color=49,239,255>Прайер-9</color>
+        Owner=Kling
+        Priority=75
+        RacialRestriction=1
+        Special=1
+        Text=<color=49,239,255>Точечная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для увеличения маневренности и выживаемости.</color>
+        Text=---------------------
+        Text=Масса корабля: <clr>-15%<clrEnd>
+        Text=Размер корпуса: <clr>-30%<clrEnd>
+        Text=Прочность корпуса: <clr>+30%<clrEnd>
+        Text=Броня корпуса: <clr>-1<clrEnd> ед.
+        Text=Навык маневренности: <clr>+1<clrEnd>
+        Text=Починка дроидом: <bonDroid> ед.
+        bonDroid=-15
+    }
+    LEOContentMod_Prier10 ^{
+        Equipments=Hull
+        FragilityEnergy=130
+        FragilityMissile=130
+        FragilitySplinter=10
+        KindGraph=Prier
+        Name=ХЭД-Прайер
+        Owner=Kling
+        Priority=1
+        RacialRestriction=1
+        Size=300
+        Text=Микромодуль первого уровня. Тотальная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для апгрейда корабля до мощнейшей боевой машины. Разблокировать механизмы совместимости ученым коалиции и пиратов так и не удалось, поэтому данный модуль пригоден только к разборке на ноды.
+        bonHull=20
+        bonMass=50
+        bonSkill1=6
+        bonSkill2=6
+    }
+    LEOContentMod_HPrier10 ^{
+        Equipments=Hull
+        Name=<color=49,239,255>ХЭД-Прайер</color>
+        Owner=Kling
+        Priority=1
+        RacialRestriction=1
+        Special=1
+        Text=<color=49,239,255>Тотальная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для апгрейда корабля до мощнейшей боевой машины.</color>
+        Text=---------------------
+        Text=Навык атаки: <clr>+6<clrEnd>
+        Text=Навык маневренности: <clr>+6<clrEnd>
+        Text=Броня корпуса: <clr>+20<clrEnd> ед.
+        Text=Масса корабля: <clr>+50%<clrEnd>
+        Text=Дальность выстрела: <bonWRadius> ед.
+        Text=Размер корпуса: <clr>+200%<clrEnd>
+        Text=Защита от осколочного вооружения: <clr>+90%<clrEnd>
+        bonWRadius=250
+    }
+    LEOContentMod_Prier11 ^{
+        Equipments=Hull
+        FragilityEnergy=10
+        FragilityMissile=130
+        FragilitySplinter=130
+        KindGraph=Prier
+        Name=МЭЙН-Прайер
+        Owner=Kling
+        Priority=1
+        RacialRestriction=1
+        Size=300
+        Text=Микромодуль первого уровня. Тотальная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для апгрейда корабля до мощнейшей боевой машины. Разблокировать механизмы совместимости ученым коалиции и пиратов так и не удалось, поэтому данный модуль пригоден только к разборке на ноды.
+        bonHull=20
+        bonMass=50
+        bonSkill1=6
+        bonSkill2=6
+    }
+    LEOContentMod_HPrier11 ^{
+        Equipments=Hull
+        Name=<color=49,239,255>МЭЙН-Прайер</color>
+        Owner=Kling
+        Priority=1
+        RacialRestriction=1
+        Special=1
+        Text=<color=49,239,255>Тотальная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для апгрейда корабля до мощнейшей боевой машины.</color>
+        Text=---------------------
+        Text=Навык атаки: <clr>+6<clrEnd>
+        Text=Навык маневренности: <clr>+6<clrEnd>
+        Text=Броня корпуса: <clr>+20<clrEnd> ед.
+        Text=Масса корабля: <clr>+50%<clrEnd>
+        Text=Мощность всего оружия: <bonWEnergy> ед.
+        Text=Размер корпуса: <clr>+200%<clrEnd>
+        Text=Защита от энергетического вооружения: <clr>+90%<clrEnd>
+        bonWEnergy=50
+        bonWMissile=50
+        bonWSplinter=50
+    }
+    LEOContentMod_Prier12 ^{
+        Equipments=Hull
+        FragilityEnergy=130
+        FragilityMissile=10
+        FragilitySplinter=130
+        KindGraph=Prier
+        Name=БОСС-Прайер
+        Owner=Kling
+        Priority=1
+        RacialRestriction=1
+        Size=300
+        Text=Микромодуль первого уровня. Тотальная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для апгрейда корабля до мощнейшей боевой машины. Разблокировать механизмы совместимости ученым коалиции и пиратов так и не удалось, поэтому данный модуль пригоден только к разборке на ноды.
+        bonHull=20
+        bonMass=50
+        bonSkill1=6
+        bonSkill2=6
+    }
+    LEOContentMod_HPrier12 ^{
+        Equipments=Hull
+        Name=<color=49,239,255>БОСС-Прайер</color>
+        Owner=Kling
+        Priority=1
+        RacialRestriction=1
+        Special=1
+        Text=<color=49,239,255>Тотальная модификация <clr>доминаторских<clrEnd> корпусов, предназначенная для апгрейда корабля до мощнейшей боевой машины.</color>
+        Text=---------------------
+        Text=Навык атаки: <clr>+6<clrEnd>
+        Text=Навык маневренности: <clr>+6<clrEnd>
+        Text=Броня корпуса: <clr>+20<clrEnd> ед.
+        Text=Масса корабля: <clr>+50%<clrEnd>
+        Text=Мощность всего оружия: <bonWEnergy> ед.
+        Text=Дальность выстрела: <bonWRadius> ед.
+        Text=Размер корпуса: <clr>+200%<clrEnd>
+        Text=Защита от ракетного вооружения: <clr>+90%<clrEnd>
+        bonWEnergy=50
+        bonWMissile=50
+        bonWRadius=250
+        bonWSplinter=50
+    }
+}
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            GraphicsPBOSS ^{
+                Description=Визуально видимая аура прайера
+                Icon=0
+                Name=Аура БОСС прайера
+                OnActCode ^{
+                    01=dword ship=ScriptItemActShip();
+                    02=if(ScriptItemActionType(t_OnStep,3))
+                    03 ^{
+                        01=if(ShipStar(ship)==ShipStar(Player()))
+                        02=ShowStaticEffect('AuraPraierBOSSEffect',CoordX(ship),CoordY(ship));
+                    }
+                }
+                OnActCodeTypes=t_OnEnteringForm,t_OnStep
+                OnActStepTypes=3
+            }
+            GraphicsPHEAD ^{
+                Description=Визуально видимая аура прайера
+                Icon=0
+                Name=Аура ХЭД прайера
+                OnActCode ^{
+                    01=dword ship=ScriptItemActShip();
+                    02=if(ScriptItemActionType(t_OnStep,3))
+                    03 ^{
+                        01=if(ShipStar(ship)==ShipStar(Player()))
+                        02=ShowStaticEffect('AuraPraierHEADEffect',CoordX(ship),CoordY(ship));
+                    }
+                }
+                OnActCodeTypes=t_OnEnteringForm,t_OnStep
+                OnActStepTypes=3
+            }
+            GraphicsPMAIN ^{
+                Description=Визуально видимая аура прайера
+                Icon=0
+                Name=Аура МЭЙН прайера
+                OnActCode ^{
+                    01=dword ship=ScriptItemActShip();
+                    02=if(ScriptItemActionType(t_OnStep,3))
+                    03 ^{
+                        01=if(ShipStar(ship)==ShipStar(Player()))
+                        02=ShowStaticEffect('AuraPraierMAINEffect',CoordX(ship),CoordY(ship));
+                    }
+                }
+                OnActCodeTypes=t_OnEnteringForm,t_OnStep
+                OnActStepTypes=3
+            }
+        }
+    }
+}

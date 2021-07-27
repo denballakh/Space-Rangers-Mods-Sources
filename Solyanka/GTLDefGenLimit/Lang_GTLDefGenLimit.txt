@@ -1,0 +1,23 @@
+ShipInfo ^{
+    AddInfo ^{
+        CustomInfos ^{
+            DefChecking ^{
+                Description=Инфошка для среза защиты до 60
+                Icon=0
+                Name=Деф Чекер
+                OnActCode ^{
+                    01=ShipCustomShipInfoData(Player(),CurInfo(),1,ShipProtectability(Player())-60);
+                    02=if(ScriptItemActionType(t_OnStep))
+                    03 ^{
+                        01=if(ShipProtectability(Player())<=60)exit;
+                        02=else
+                        03 ^{
+                            01=ShipSpecialBonuses(Player(),bonDef,-ShipCustomShipInfoData(Player(),CurInfo(),1));
+                        }
+                    }
+                }
+                OnActCodeTypes=t_OnEnteringForm,t_OnStep
+            }
+        }
+    }
+}
