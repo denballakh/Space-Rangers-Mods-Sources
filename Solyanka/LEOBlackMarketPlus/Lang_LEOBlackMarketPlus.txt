@@ -1,5 +1,5 @@
 BlackMarketShopList ~{
-    Version=16.10.2020
+    Version=29.07.2021
     MinEquipmentsInStock=9
     MaxEquipmentsInStock=18
     MinWeaponsInStock=8
@@ -72,7 +72,7 @@ BlackMarketShopList ~{
             Owner=Kling
             CustomFactionChance=100
             CustomFaction=Klissan
-            SpawnCondition=CurTurn()>GShuKlissanFirstStart+62
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
         }
         106 ~{
             Name=Злейший бамбай
@@ -164,7 +164,7 @@ BlackMarketShopList ~{
             Owner=Kling
             CustomFactionChance=100
             CustomFaction=Klissan
-            SpawnCondition=CurTurn()>GShuKlissanFirstStart+62
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
         }
         116 ~{
             Name=Нондус
@@ -175,7 +175,7 @@ BlackMarketShopList ~{
             Owner=Kling
             CustomFactionChance=100
             CustomFaction=Klissan
-            SpawnCondition=CurTurn()>GShuKlissanFirstStart+62
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
         }
         117 ~{
             Name=Катаури
@@ -186,7 +186,7 @@ BlackMarketShopList ~{
             Owner=Kling
             CustomFactionChance=100
             CustomFaction=Klissan
-            SpawnCondition=CurTurn()>GShuKlissanFirstStart+62
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
         }
         118 ~{
             Name=Рогит
@@ -197,7 +197,7 @@ BlackMarketShopList ~{
             Owner=Kling
             CustomFactionChance=100
             CustomFaction=Klissan
-            SpawnCondition=CurTurn()>GShuKlissanFirstStart+62
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
         }
         119 ~{
             Name=Мутенок
@@ -208,7 +208,7 @@ BlackMarketShopList ~{
             Owner=Kling
             CustomFactionChance=100
             CustomFaction=Klissan
-            SpawnCondition=CurTurn()>GShuKlissanFirstStart+62
+            SpawnCondition=IsScriptActive('Mod_ShuKlissan') &&& CurTurn() > GShuKlissanFirstStart + 93
         }
         120 ~{
             Name=Неизвестный объект прототип I
