@@ -170,7 +170,8 @@ MicroModuls ^{
         bonSpeed=450
     }
     LEOContentMod_BattleDroid_1 ^{
-        AcrynSerie=Боевой дроид
+        AcrynSerie=Боевой дроид I-III
+        AcrynLevel=1
         Cost=250
         Equipments=Droid
         Fragility=90
@@ -211,7 +212,8 @@ MicroModuls ^{
         bonWSplinter=5
     }
     LEOContentMod_BattleDroid_2 ^{
-        AcrynSerie=Боевой дроид
+        AcrynSerie=Боевой дроид I-III
+        AcrynLevel=2
         Cost=400
         Equipments=Droid
         Fragility=80
@@ -252,7 +254,8 @@ MicroModuls ^{
         bonWSplinter=10
     }
     LEOContentMod_BattleDroid_3 ^{
-        AcrynSerie=Боевой дроид
+        AcrynSerie=Боевой дроид I-III
+        AcrynLevel=3
         BlockMM=1
         Cost=600
         Equipments=Droid
@@ -293,7 +296,8 @@ MicroModuls ^{
         bonWSplinter=20
     }
     LEOContentMod_DefGenerator_Sid1 ^{
-        AcrynSerie=Сидеральный генератор защиты
+        AcrynSerie=Сидеральный генератор защиты I-III
+        AcrynLevel=1
         Cost=115
         Equipments=DefGenerator
         Fragility=166
@@ -318,7 +322,8 @@ MicroModuls ^{
         bonSpeed=40
     }
     LEOContentMod_DefGenerator_Sid2 ^{
-        AcrynSerie=Сидеральный генератор защиты
+        AcrynSerie=Сидеральный генератор защиты I-III
+        AcrynLevel=2
         Cost=115
         Equipments=DefGenerator
         Fragility=160
@@ -343,7 +348,8 @@ MicroModuls ^{
         bonSpeed=55
     }
     LEOContentMod_DefGenerator_Sid3 ^{
-        AcrynSerie=Сидеральный генератор защиты
+        AcrynSerie=Сидеральный генератор защиты I-III
+        AcrynLevel=3
         Cost=115
         Equipments=DefGenerator
         Fragility=153
@@ -368,7 +374,8 @@ MicroModuls ^{
         bonSpeed=80
     }
     LEOContentMod_DefGenerator_Un1 ^{
-        AcrynSerie=Дефлекторный генератор защиты
+        AcrynSerie=Дефлекторный генератор защиты I-III
+        AcrynLevel=1
         Cost=200
         Equipments=DefGenerator
         KindGraph=Un
@@ -387,7 +394,8 @@ MicroModuls ^{
         bonWSplinter=2
     }
     LEOContentMod_DefGenerator_Un2 ^{
-        AcrynSerie=Дефлекторный генератор защиты
+        AcrynSerie=Дефлекторный генератор защиты I-III
+        AcrynLevel=2
         Cost=300
         Equipments=DefGenerator
         KindGraph=Un
@@ -406,7 +414,8 @@ MicroModuls ^{
         bonWSplinter=4
     }
     LEOContentMod_DefGenerator_Un3 ^{
-        AcrynSerie=Дефлекторный генератор защиты
+        AcrynSerie=Дефлекторный генератор защиты I-III
+        AcrynLevel=3
         Cost=400
         Equipments=DefGenerator
         KindGraph=Un
@@ -425,7 +434,8 @@ MicroModuls ^{
         bonWSplinter=8
     }
     LEOContentMod_Droid_Sid1 ^{
-        AcrynSerie=Сидеральный дроид
+        AcrynSerie=Сидеральный дроид I-III
+        AcrynLevel=1
         Cost=115
         Equipments=Droid
         Fragility=166
@@ -450,7 +460,8 @@ MicroModuls ^{
         bonSpeed=40
     }
     LEOContentMod_Droid_Sid2 ^{
-        AcrynSerie=Сидеральный дроид
+        AcrynSerie=Сидеральный дроид I-III
+        AcrynLevel=2
         Cost=115
         Equipments=Droid
         Fragility=160
@@ -475,7 +486,8 @@ MicroModuls ^{
         bonSpeed=55
     }
     LEOContentMod_Droid_Sid3 ^{
-        AcrynSerie=Сидеральный дроид
+        AcrynSerie=Сидеральный дроид I-III
+        AcrynLevel=3
         Cost=115
         Equipments=Droid
         Fragility=153
@@ -500,7 +512,8 @@ MicroModuls ^{
         bonSpeed=80
     }
     LEOContentMod_Droid_Un1 ^{
-        AcrynSerie=Кибернетический дроид
+        AcrynSerie=Кибернетический дроид I-III
+        AcrynLevel=1
         Cost=200
         Equipments=Droid
         KindGraph=Un
@@ -519,7 +532,8 @@ MicroModuls ^{
         bonRadar=-50
     }
     LEOContentMod_Droid_Un2 ^{
-        AcrynSerie=Кибернетический дроид
+        AcrynSerie=Кибернетический дроид I-III
+        AcrynLevel=2
         Cost=300
         Equipments=Droid
         KindGraph=Un
@@ -538,7 +552,8 @@ MicroModuls ^{
         bonRadar=-100
     }
     LEOContentMod_Droid_Un3 ^{
-        AcrynSerie=Кибернетический дроид
+        AcrynSerie=Кибернетический дроид I-III
+        AcrynLevel=3
         Cost=400
         Equipments=Droid
         KindGraph=Un
@@ -557,7 +572,8 @@ MicroModuls ^{
         bonRadar=-150
     }
     LEOContentMod_Droid_War1 ^{
-        AcrynSerie=Боевой дроид "Зевс"
+        AcrynSerie=Боевой дроид "Зевс" I-III
+        AcrynLevel=1
         Cost=200
         Equipments=Droid
         Fragility=500
@@ -583,7 +599,8 @@ MicroModuls ^{
         bonWSplinter=10
     }
     LEOContentMod_Droid_War2 ^{
-        AcrynSerie=Боевой дроид "Зевс"
+        AcrynSerie=Боевой дроид "Зевс" I-III
+        AcrynLevel=2
         Cost=400
         Equipments=Droid
         Fragility=500
@@ -609,7 +626,8 @@ MicroModuls ^{
         bonWSplinter=20
     }
     LEOContentMod_Droid_War3 ^{
-        AcrynSerie=Боевой дроид "Зевс"
+        AcrynSerie=Боевой дроид "Зевс" I-III
+        AcrynLevel=3
         BlockMM=1
         Cost=600
         Equipments=Droid
@@ -636,7 +654,8 @@ MicroModuls ^{
         bonWSplinter=30
     }
     LEOContentMod_Engine_AAA1 ^{
-        AcrynSerie=Технотронный двигатель
+        AcrynSerie=Технотронный двигатель I-III
+        AcrynLevel=1
         Cost=110
         Equipments=Engine
         KindGraph=AAA
@@ -660,7 +679,8 @@ MicroModuls ^{
         bonSpeed=40
     }
     LEOContentMod_Engine_AAA2 ^{
-        AcrynSerie=Технотронный двигатель
+        AcrynSerie=Технотронный двигатель I-III
+        AcrynLevel=2
         Cost=110
         Equipments=Engine
         KindGraph=AAA
@@ -684,7 +704,8 @@ MicroModuls ^{
         bonSpeed=80
     }
     LEOContentMod_Engine_AAA3 ^{
-        AcrynSerie=Технотронный двигатель
+        AcrynSerie=Технотронный двигатель I-III
+        AcrynLevel=3
         Cost=110
         Equipments=Engine
         KindGraph=AAA
@@ -708,7 +729,8 @@ MicroModuls ^{
         bonSpeed=120
     }
     LEOContentMod_Engine_Sid1 ^{
-        AcrynSerie=Сидеральный двигатель
+        AcrynSerie=Сидеральный двигатель I-III
+        AcrynLevel=1
         Cost=115
         Equipments=Engine
         Fragility=166
@@ -733,7 +755,8 @@ MicroModuls ^{
         bonSpeed=40
     }
     LEOContentMod_Engine_Sid2 ^{
-        AcrynSerie=Сидеральный двигатель
+        AcrynSerie=Сидеральный двигатель I-III
+        AcrynLevel=2
         Cost=115
         Equipments=Engine
         Fragility=160
@@ -758,7 +781,8 @@ MicroModuls ^{
         bonSpeed=55
     }
     LEOContentMod_Engine_Sid3 ^{
-        AcrynSerie=Сидеральный двигатель
+        AcrynSerie=Сидеральный двигатель I-III
+        AcrynLevel=3
         Cost=115
         Equipments=Engine
         Fragility=153
@@ -783,7 +807,8 @@ MicroModuls ^{
         bonSpeed=80
     }
     LEOContentMod_Engine_Un1 ^{
-        AcrynSerie=Нуль-пространственный двигатель
+        AcrynSerie=Нуль-пространственный двигатель I-III
+        AcrynLevel=1
         Cost=200
         Equipments=Engine
         KindGraph=Un
@@ -802,7 +827,8 @@ MicroModuls ^{
         bonHookRadius=-20
     }
     LEOContentMod_Engine_Un2 ^{
-        AcrynSerie=Нуль-пространственный двигатель
+        AcrynSerie=Нуль-пространственный двигатель I-III
+        AcrynLevel=2
         Cost=300
         Equipments=Engine
         KindGraph=Un
@@ -821,7 +847,8 @@ MicroModuls ^{
         bonHookRadius=-40
     }
     LEOContentMod_Engine_Un3 ^{
-        AcrynSerie=Нуль-пространственный двигатель
+        AcrynSerie=Нуль-пространственный двигатель I-III
+        AcrynLevel=3
         Cost=400
         Equipments=Engine
         KindGraph=Un
@@ -840,7 +867,8 @@ MicroModuls ^{
         bonHookRadius=-60
     }
     LEOContentMod_FuelTank_AAA1 ^{
-        AcrynSerie=Технотронный топливный бак
+        AcrynSerie=Технотронный топливный бак I-III
+        AcrynLevel=1
         Cost=110
         Equipments=FuelTank
         KindGraph=AAA
@@ -864,7 +892,8 @@ MicroModuls ^{
         bonSpeed=40
     }
     LEOContentMod_FuelTank_AAA2 ^{
-        AcrynSerie=Технотронный топливный бак
+        AcrynSerie=Технотронный топливный бак I-III
+        AcrynLevel=2
         Cost=110
         Equipments=FuelTank
         KindGraph=AAA
@@ -888,7 +917,8 @@ MicroModuls ^{
         bonSpeed=80
     }
     LEOContentMod_FuelTank_AAA3 ^{
-        AcrynSerie=Технотронный топливный бак
+        AcrynSerie=Технотронный топливный бак I-III
+        AcrynLevel=3
         Cost=110
         Equipments=FuelTank
         KindGraph=AAA
@@ -912,7 +942,8 @@ MicroModuls ^{
         bonSpeed=120
     }
     LEOContentMod_FuelTank_Sid1 ^{
-        AcrynSerie=Сидеральный топливный бак
+        AcrynSerie=Сидеральный топливный бак I-III
+        AcrynLevel=1
         Cost=115
         Equipments=FuelTank
         Fragility=166
@@ -937,7 +968,8 @@ MicroModuls ^{
         bonSpeed=40
     }
     LEOContentMod_FuelTank_Sid2 ^{
-        AcrynSerie=Сидеральный топливный бак
+        AcrynSerie=Сидеральный топливный бак I-III
+        AcrynLevel=2
         Cost=115
         Equipments=FuelTank
         Fragility=160
@@ -962,7 +994,8 @@ MicroModuls ^{
         bonSpeed=55
     }
     LEOContentMod_FuelTank_Sid3 ^{
-        AcrynSerie=Сидеральный топливный бак
+        AcrynSerie=Сидеральный топливный бак I-III
+        AcrynLevel=3
         Cost=115
         Equipments=FuelTank
         Fragility=153
@@ -987,7 +1020,8 @@ MicroModuls ^{
         bonSpeed=80
     }
     LEOContentMod_FuelTank_Un1 ^{
-        AcrynSerie=Модульный топливный бак
+        AcrynSerie=Модульный топливный бак I-III
+        AcrynLevel=1
         Cost=200
         Equipments=FuelTank
         KindGraph=Un
@@ -1010,7 +1044,8 @@ MicroModuls ^{
         bonHookRadius=20
     }
     LEOContentMod_FuelTank_Un2 ^{
-        AcrynSerie=Модульный топливный бак
+        AcrynSerie=Модульный топливный бак I-III
+        AcrynLevel=2
         Cost=300
         Equipments=FuelTank
         KindGraph=Un
@@ -1033,7 +1068,8 @@ MicroModuls ^{
         bonHookRadius=40
     }
     LEOContentMod_FuelTank_Un3 ^{
-        AcrynSerie=Модульный топливный бак
+        AcrynSerie=Модульный топливный бак I-III
+        AcrynLevel=3
         Cost=400
         Equipments=FuelTank
         KindGraph=Un
@@ -1243,7 +1279,8 @@ MicroModuls ^{
         bonWRadius=60
     }
     LEOContentMod_KibHook_01 ^{
-        AcrynSerie=Кибернетический захват
+        AcrynSerie=Кибернетический захват I-III
+        AcrynLevel=1
         Cost=125
         Equipments=Hook
         Fragility=130
@@ -1269,7 +1306,8 @@ MicroModuls ^{
         bonHookRadius=-40
     }
     LEOContentMod_KibHook_02 ^{
-        AcrynSerie=Кибернетический захват
+        AcrynSerie=Кибернетический захват I-III
+        AcrynLevel=2
         Cost=150
         Equipments=Hook
         Fragility=170
@@ -1295,7 +1333,8 @@ MicroModuls ^{
         bonHookRadius=-80
     }
     LEOContentMod_KibHook_03 ^{
-        AcrynSerie=Кибернетический захват
+        AcrynSerie=Кибернетический захват I-III
+        AcrynLevel=3
         Cost=175
         Equipments=Hook
         Fragility=200
@@ -1323,7 +1362,8 @@ MicroModuls ^{
         bonHookRadius=-120
     }
     LEOContentMod_Radar_Sid1 ^{
-        AcrynSerie=Сидеральный радар
+        AcrynSerie=Сидеральный радар I-III
+        AcrynLevel=1
         Cost=115
         Equipments=Radar
         Fragility=166
@@ -1348,7 +1388,8 @@ MicroModuls ^{
         bonSpeed=40
     }
     LEOContentMod_Radar_Sid2 ^{
-        AcrynSerie=Сидеральный радар
+        AcrynSerie=Сидеральный радар I-III
+        AcrynLevel=2
         Cost=115
         Equipments=Radar
         Fragility=160
@@ -1373,7 +1414,8 @@ MicroModuls ^{
         bonSpeed=55
     }
     LEOContentMod_Radar_Sid3 ^{
-        AcrynSerie=Сидеральный радар
+        AcrynSerie=Сидеральный радар I-III
+        AcrynLevel=3
         Cost=115
         Equipments=Radar
         Fragility=153
@@ -1398,7 +1440,8 @@ MicroModuls ^{
         bonSpeed=80
     }
     LEOContentMod_Radar_Un1 ^{
-        AcrynSerie=Ретранслирующий радар
+        AcrynSerie=Ретранслирующий радар I-III
+        AcrynLevel=1
         Cost=200
         Equipments=Radar
         KindGraph=Un
@@ -1415,7 +1458,8 @@ MicroModuls ^{
         bonSpeed=30
     }
     LEOContentMod_Radar_Un2 ^{
-        AcrynSerie=Ретранслирующий радар
+        AcrynSerie=Ретранслирующий радар I-III
+        AcrynLevel=2
         Cost=300
         Equipments=Radar
         KindGraph=Un
@@ -1432,7 +1476,8 @@ MicroModuls ^{
         bonSpeed=60
     }
     LEOContentMod_Radar_Un3 ^{
-        AcrynSerie=Ретранслирующий радар
+        AcrynSerie=Ретранслирующий радар I-III
+        AcrynLevel=3
         Cost=400
         Equipments=Radar
         KindGraph=Un
@@ -1449,7 +1494,8 @@ MicroModuls ^{
         bonSpeed=90
     }
     LEOContentMod_SborDroid_1 ^{
-        AcrynSerie=Сборочный дроид
+        AcrynSerie=Сборочный дроид I-III
+        AcrynLevel=1
         Cost=200
         Equipments=Droid
         Fragility=100
@@ -1489,7 +1535,8 @@ MicroModuls ^{
         bonWSplinter=-3
     }
     LEOContentMod_SborDroid_2 ^{
-        AcrynSerie=Сборочный дроид
+        AcrynSerie=Сборочный дроид I-III
+        AcrynLevel=2
         Cost=400
         Equipments=Droid
         Fragility=150
@@ -1529,7 +1576,8 @@ MicroModuls ^{
         bonWSplinter=-6
     }
     LEOContentMod_SborDroid_3 ^{
-        AcrynSerie=Сборочный дроид
+        AcrynSerie=Сборочный дроид I-III
+        AcrynLevel=3
         Cost=500
         Equipments=Droid
         Fragility=200
@@ -1569,7 +1617,8 @@ MicroModuls ^{
         bonWSplinter=-10
     }
     LEOContentMod_Scaner_Sid1 ^{
-        AcrynSerie=Сидеральный сканер
+        AcrynSerie=Сидеральный сканер I-III
+        AcrynLevel=1
         Cost=115
         Equipments=Scaner
         Fragility=166
@@ -1594,7 +1643,8 @@ MicroModuls ^{
         bonSpeed=40
     }
     LEOContentMod_Scaner_Sid2 ^{
-        AcrynSerie=Сидеральный сканер
+        AcrynSerie=Сидеральный сканер I-III
+        AcrynLevel=2
         Cost=115
         Equipments=Scaner
         Fragility=160
@@ -1619,7 +1669,8 @@ MicroModuls ^{
         bonSpeed=55
     }
     LEOContentMod_Scaner_Sid3 ^{
-        AcrynSerie=Сидеральный сканер
+        AcrynSerie=Сидеральный сканер I-III
+        AcrynLevel=3
         Cost=115
         Equipments=Scaner
         Fragility=153
@@ -1644,7 +1695,8 @@ MicroModuls ^{
         bonSpeed=80
     }
     LEOContentMod_Scaner_Un1 ^{
-        AcrynSerie=Информационный сканер
+        AcrynSerie=Информационный сканер I-III
+        AcrynLevel=1
         Cost=200
         Equipments=Scaner
         KindGraph=Un
@@ -1661,7 +1713,8 @@ MicroModuls ^{
         bonJump=3
     }
     LEOContentMod_Scaner_Un2 ^{
-        AcrynSerie=Информационный сканер
+        AcrynSerie=Информационный сканер I-III
+        AcrynLevel=2
         Cost=300
         Equipments=Scaner
         KindGraph=Un
@@ -1678,7 +1731,8 @@ MicroModuls ^{
         bonJump=6
     }
     LEOContentMod_Scaner_Un3 ^{
-        AcrynSerie=Информационный сканер
+        AcrynSerie=Информационный сканер I-III
+        AcrynLevel=3
         Cost=400
         Equipments=Scaner
         KindGraph=Un
