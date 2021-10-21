@@ -218,6 +218,7 @@ BlackMarketShopList ~{
             HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
             Race=None
             ChangePriorityOn=0
+            SpawnCondition=~FindBonusByNameInCfg('LEOContentMod_UnknowObjectPro_X0')
         }
         121 ~{
             Name=Неизвестный объект прототип II
@@ -227,6 +228,7 @@ BlackMarketShopList ~{
             HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
             Race=None
             ChangePriorityOn=0
+            SpawnCondition=~FindBonusByNameInCfg('LEOContentMod_UnknowObjectPro_X0')
         }
         122 ~{
             Name=Неизвестный объект прототип III
@@ -236,6 +238,7 @@ BlackMarketShopList ~{
             HullSerie=MolderHulls_Broneshai,MolderHulls_Energoproton,MolderHulls_Flagmander,MolderHulls_Invalners,MolderHulls_Kvazireflector,MolderHulls_Peregreid,MolderHulls_TerminatorX325,MolderHulls_Turboblast,MolderHulls_Chempion,99
             Race=None
             ChangePriorityOn=0
+            SpawnCondition=~FindBonusByNameInCfg('LEOContentMod_UnknowObjectPro_X0')
         }
         Count=130
     }
