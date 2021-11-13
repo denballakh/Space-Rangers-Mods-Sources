@@ -22,7 +22,7 @@ UselessItems ^{
         Owner=Peleng
         Size=5
         Text=В контейнере находится бактериологическое оружие.
-        Text=(Можно сдать на <clr>ВБ-ПБ-МЦ<clrEnd>)
+        Text=(Можно сдать на <clr>ПБ-МЦ-Доминион<clrEnd>)
     }
     Usl_12 ^{
         Cost=Average
@@ -39,6 +39,14 @@ UselessItems ^{
         Size=1
         Text=Церемониальный грязевой торт из болотной жижи и крови пакряков. Имеет отвратительный запах.
         Text=(Можно сдать на <clr>ЦР<clrEnd>)
+    }
+    Usl_16 ^{
+        Cost=Average
+        Name=Одежда
+        Owner=Peleng
+        Size=3
+        Text=Комплект меняющих цвет пеленгских плащей.
+        Text=(Можно сдать на <clr>ВБ-ПБ<clrEnd>)
     }
     Usl_18 ^{
         Cost=Small
@@ -88,6 +96,14 @@ UselessItems ^{
         Text=Большое количество всевозможного религиозного инвентаря различных религий.
         Text=(Можно сдать на <clr>МЦ-ЦР<clrEnd>)
     }
+    Usl_23 ^{
+        Cost=Average
+        Name=Часовой механизм
+        Owner=People
+        Size=1
+        Text=Механизм для знаменитых аморфных часов.
+        Text=(Можно сдать на <clr>НБ<clrEnd>)
+    }
     Usl_25 ^{
         Cost=Big
         Name=Дизодан
@@ -118,7 +134,7 @@ UselessItems ^{
         Owner=People
         Size=1
         Text=Коробка с шифром шифра для агента.
-        Text=(Можно сдать на <clr>ЦР<clrEnd>)
+        Text=(Можно сдать на <clr>ЦР-Доминион<clrEnd>)
     }
     Usl_29 ^{
         Cost=Mini
@@ -168,6 +184,14 @@ UselessItems ^{
         Text=Приставки с биоиграми, которые подключаются непосредственно в мозг.
         Text=(Можно сдать на <clr>ПБ-НБ-ЦР-Доминион<clrEnd>)
     }
+    Usl_38 ^{
+        Cost=Average
+        Name=СВ-ткани
+        Owner=Fei
+        Size=5
+        Text=Уникальные ткани для создания новейшей военной формы.
+        Text=(Можно сдать на <clr>ВБ-Доминион<clrEnd>)
+    }
     Usl_39 ^{
         Cost=Big
         Name=Сервер
@@ -198,7 +222,7 @@ UselessItems ^{
         Owner=Gaal
         Size=10
         Text=Маленькие полуразумные существа. Находятся в криосне.
-        Text=(Можно сдать на <clr>ПБ-НБ-Доминион<clrEnd>)
+        Text=(Можно сдать на <clr>МЦ<clrEnd>)
     }
     Usl_42 ^{
         Cost=Small
@@ -208,6 +232,14 @@ UselessItems ^{
         Text=Одежда для малоков, созданная для защиты от низких температур. Очень большой размер.
         Text=(Можно сдать на <clr>ВБ-ПБ<clrEnd>)
     }
+    Usl_43 ^{
+        Cost=Mini
+        Name=Рецепт пиццы
+        Owner=Gaal
+        Size=1
+        Text=Рецепт пиццы в знак дружбы от гаальцев людям. С личными подписями шеф-поваров гаальской расы в подарочной рамке.
+        Text=(Можно сдать на <clr>МЦ<clrEnd>)
+    }
     Usl_45 ^{
         Cost=Big
         Name=Портал
@@ -215,6 +247,14 @@ UselessItems ^{
         Size=13
         Text=Вторая часть мегапортала "Портал 01 бета".
         Text=(Можно сдать на <clr>НБ-ЦР-Доминион<clrEnd>)
+    }
+    Usl_46 ^{
+        Cost=Mini
+        Name=Биоконтейнер
+        Owner=Peleng
+        Size=4
+        Text=В контейнере низшее пеленгское животное, Дряхлоуст.
+        Text=(Можно сдать на <clr>МЦ<clrEnd>)
     }
     Usl_47 ^{
         Cost=Big
@@ -232,6 +272,14 @@ UselessItems ^{
         Text=Устройство, позволяющее читать мысли.
         Text=(Можно сдать на <clr>НБ-Доминион<clrEnd>)
     }
+    Usl_49 ^{
+        Cost=Average
+        Name=Сферощит
+        Owner=Gaal
+        Size=10
+        Text=Защитный блок. Локализует источник повышенного радиоактивного воздействия.
+        Text=(Можно сдать на <clr>НБ<clrEnd>)
+    }
     Usl_51 ^{
         Cost=Mini
         Name="Бабабум"
@@ -239,6 +287,14 @@ UselessItems ^{
         Size=1
         Text=Древнемалокская статуэтка, изображающая малока, сжимающего в руках символ Гармонии - идеальную сферу
         Text=(Можно сдать на <clr>ЦР<clrEnd>)
+    }
+    Usl_55 ^{
+        Cost=Big
+        Name=Аннигилятор материи
+        Owner=People
+        Size=10
+        Text=Аннигилятор материи, с помощью которого человеческий консул уничтожает сверхсекретные бумаги.
+        Text=(Можно сдать на <clr>ПБ<clrEnd>)
     }
     Usl_56 ^{
         Cost=Big
@@ -336,6 +392,14 @@ UselessItems ^{
         Text=Криокапсула, внутри которой находится один из лидеров Коалиции. Оборудована детонационной защитой от взлома.
         Text=(Можно сдать на <clr>МЦ<clrEnd>)
     }
+    Usl_9 ^{
+        Cost=Small
+        Name=Инкубатор для жаб
+        Owner=Peleng
+        Size=7
+        Text=Эффективный инструмент для разведения рагобамских жаб.
+        Text=(Можно сдать на <clr>МЦ<clrEnd>)
+    }
     Usl_AnimalCase ^{
         Cost=Mini
         Name=Клетка с редким животным
@@ -351,6 +415,22 @@ UselessItems ^{
         Size=3
         Text=Контейнер, через прозрачную крышку которого виднеются горшочки с кактусами.
         Text=(Можно сдать на <clr>МЦ<clrEnd>)
+    }
+    Usl_Orcs ^{
+        Cost=Small
+        Name=Старинная книга
+        Owner=Maloc
+        Size=1
+        Text="Сказание о Филанейе и Громгаре", классическая малокская военная летопись.
+        Text=(Можно сдать на <clr>ЦР<clrEnd>)
+    }
+    Usl_Pilot ^{
+        Cost=Average
+        Name=Сертификат
+        Owner=Peleng
+        Size=1
+        Text=Юридически заверенная бумага, дающая право вождения большегрузных кораблей.
+        Text=(Можно сдать на <clr>ПБ<clrEnd>)
     }
     Usl_CapsuleStukach ^{
         Cost=Mini
@@ -392,6 +472,14 @@ UselessItems ^{
         Text=Пиратский модуль памяти.
         Text=(Можно сдать на <clr>ВБ-ПБ-НБ-Доминион<clrEnd>)
     }
+    Usl_MusicialTools ^{
+        Cost=Mini
+        Name=Инструменты
+        Owner=None
+        Size=5
+        Text=Контейнер с ударными инструментами из гипермаркета.
+        Text=(Можно сдать на <clr>Доминион<clrEnd>)
+    }
     Usl_PTQ63 ^{
         Cost=Mini
         Name=Диск с игрой
@@ -423,6 +511,14 @@ UselessItems ^{
         Size=1
         Text=Важные документы. На барахолке не толкать!
         Text=(Можно сдать на <clr>ВБ-ПБ-НБ-ЦР<clrEnd>)
+    }
+    Usl_PTQn60 ^{
+        Cost=Mini
+        Name=Диск
+        Owner=None
+        Size=1
+        Text=Диск с важной информацией
+        Text=(Можно сдать на <clr>ПБ-ЦР<clrEnd>)
     }
     Usl_RandomItem_01 ^{
         Cost=Mini
@@ -463,5 +559,13 @@ UselessItems ^{
         Size=1
         Text=Народное малокское лекарство для лечения ожогов от бластера.
         Text=(Можно сдать на <clr>ВБ-МЦ-ЦР<clrEnd>)
+    }
+    Usl_8 ^{
+        Cost=Small
+        Name=Коробка подарочная
+        Owner=Maloc
+        Size=2
+        Text=Красочная коробка с неизвестным содержимым.
+        Text=(Можно сдать на <clr>ПБ<clrEnd>)
     }
 }
