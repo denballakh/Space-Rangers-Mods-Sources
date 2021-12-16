@@ -1889,7 +1889,7 @@ MicroModuls ^{
     }
     LEOContentMod_MM_147 ^{
         Cost=70
-        Equipments=Engine,FuelTank,Droid,CargoHook,DefGenerator,Radar,Scaner,WEnergy,WSplinter,WMissile
+        Equipments=Engine,FuelTank,Droid,Hook,DefGenerator,Radar,Scaner,WEnergy,WSplinter,WMissile
         Fragility=130
         Name=Уравнитель
         Owner=Fei,Gaal,People,None,Kling
@@ -1901,7 +1901,7 @@ MicroModuls ^{
         Text=Надежность: <clr>-30%<clrEnd>
     }
     LEOContentMod_MM_148 ^{
-        Equipments=Droid,CargoHook,Scaner
+        Equipments=Droid,Hook,Scaner
         Name=Анлок
         Owner=Maloc,Peleng,People,Fei,Gaal
         Priority=32
@@ -2006,7 +2006,7 @@ MicroModuls ^{
     }
     LEOContentMod_MM_156 ^{
         Cost=10
-        Equipments=Engine,FuelTank,Droid,CargoHook,DefGenerator,Radar,Scaner,WEnergy,WSplinter,WMissile
+        Equipments=Engine,FuelTank,Droid,Hook,DefGenerator,Radar,Scaner,WEnergy,WSplinter,WMissile
         Fragility=200
         Name=Уравнитель-x2.5
         Owner=Fei,Gaal,People,None,Kling
@@ -2117,7 +2117,7 @@ MicroModuls ^{
     }
     LEOContentMod_MM_165 ^{
         Cost=5
-        Equipments=Engine,FuelTank,RepairRobot,CargoHook,DefGenerator,Radar,Scaner
+        Equipments=Engine,FuelTank,RepairRobot,Hook,DefGenerator,Radar,Scaner
         Fragility=170
         Name=Размягчитель
         Owner=Peleng,People,Fei,Gaal,PirateClan
@@ -2223,7 +2223,7 @@ MicroModuls ^{
         bonSpeed=330
     }
     LEOContentMod_MM_171 ^{
-        Equipments=Engine,FuelTank,Droid,CargoHook,DefGenerator,Radar,Scaner
+        Equipments=Engine,FuelTank,Droid,Hook,DefGenerator,Radar,Scaner
         Fragility=5
         Name=Иммортал
         Owner=Kling
@@ -2375,7 +2375,7 @@ MicroModuls ^{
         WeaponMods=NoDelta
     }
     LEOContentMod_MM_184 ^{
-        Equipments=Hull,FuelTank,Droid,DefGenerator,Engine,Scaner,Radar,CargoHook
+        Equipments=Hull,Engine,FuelTank,Radar,Scaner,Droid,Hook,DefGenerator
         Name=Акрин-Мод v0.1
         Owner=Any
         Priority=90
@@ -2386,7 +2386,7 @@ MicroModuls ^{
         bonExtraAkrinPenalty=-15
     }
     LEOContentMod_MM_185 ^{
-        Equipments=Hull,FuelTank,Droid,DefGenerator,Engine,Scaner,Radar,CargoHook
+        Equipments=Hull,Engine,FuelTank,Radar,Scaner,Droid,Hook,DefGenerator
         Name=Акрин-Мод v0.2
         Owner=Any
         Priority=60
@@ -2397,7 +2397,7 @@ MicroModuls ^{
         bonExtraAkrinPenalty=-30
     }
     LEOContentMod_MM_186 ^{
-        Equipments=Hull,FuelTank,Droid,DefGenerator,Engine,Scaner,Radar,CargoHook
+        Equipments=Hull,Engine,FuelTank,Radar,Scaner,Droid,Hook,DefGenerator
         Name=Акрин-Мод v0.3
         Owner=Any
         Priority=30
@@ -2419,7 +2419,7 @@ MicroModuls ^{
         WeaponMods=Destruct,Decelerate,Drain,Acid,Shock,Magnetic,MoreDrop,DropCargo,BlockWeapon,BlockDroid,ScanBonus,BonusToDamaged,ReduceEngine,NoDelta
     }
     LEOContentMod_MM_188 ^{
-        Equipments=Engine,FuelTank,Droid,CargoHook,DefGenerator,Radar,Scaner,WEnergy,WSplinter,WMissile
+        Equipments=Engine,FuelTank,Droid,Hook,DefGenerator,Radar,Scaner,WEnergy,WSplinter,WMissile
         Name=Микромикрон
         Owner=Kling
         Priority=20
