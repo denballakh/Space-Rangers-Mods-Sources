@@ -1,0 +1,1171 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  -85,
+  "ViewPos.y":  46,
+  "ScriptName":"Mod_colonization",
+  "ScriptFileOut":"\"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Space Rangers HD A War Apart\\Mods\\Upgrade\\DATA\\Mod_colonization.scr\"",
+  "ScriptTextOut":"C:\\Program Files (x86)\\Steam\\steamapps\\common\\Space Rangers HD A War Apart\\Mods\\Upgrade\\DATA\\Mod_colonization.txt",
+  "GraphPoint.Count":  54,
+  "GraphLink.Count":  38,
+  "GraphRectText.Count":  0,
+  "Variables.Count":  3,
+  "Stars.Count":  2,
+  "Planets.Count":  3,
+  "Ships.Count":  1,
+  "States.Count":  5,
+  "Groups.Count":  3,
+  "Places.Count":  0,
+  "Items.Count":  0,
+  "Ethers.Count":  4,
+  "Dialogs.Count":  3,
+  "DialogMessages.Count":  5,
+  "DialogAnswers.Count":  6,
+  "Operations.Count":  12,
+  "Statements.Count":  7,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":"TDialogAnswer",
+          "Name":"exit",
+          "Pos.x":          400,
+          "Pos.y":          430,
+          "Parent":          -1,
+          "#":          14,
+          "Msg":"Мне это не под силу. Поручите дело другому рейнджеру.",
+          "AMsg.Num":"0"        
+        },
+        {
+          "Type":"TDialogAnswer",
+          "Name":"",
+          "Pos.x":          430,
+          "Pos.y":          400,
+          "Parent":          -1,
+          "#":          15,
+          "Msg":"Я согласен. Что мне делать?",
+          "AMsg.Num":"1"        
+        },
+        {
+          "Type":"TDialogAnswer",
+          "Name":"hangar",
+          "Pos.x":          490,
+          "Pos.y":          400,
+          "Parent":          -1,
+          "#":          17,
+          "Msg":"Понял, уже вылетаю!",
+          "AMsg.Num":"2"        
+        },
+        {
+          "Type":"TDialogAnswer",
+          "Name":"",
+          "Pos.x":          410,
+          "Pos.y":          490,
+          "Parent":          -1,
+          "#":          27,
+          "Msg":"Все верно, это я. Когда летим?",
+          "AMsg.Num":"3"        
+        },
+        {
+          "Type":"TDialogAnswer",
+          "Name":"exit",
+          "Pos.x":          470,
+          "Pos.y":          490,
+          "Parent":          -1,
+          "#":          29,
+          "Msg":"Все понял. Отправляемся в систему <StarName(StarColon)>.",
+          "AMsg.Num":"4"        
+        },
+        {
+          "Type":"TDialogAnswer",
+          "Name":"exit",
+          "Pos.x":          710,
+          "Pos.y":          210,
+          "Parent":          -1,
+          "#":          52,
+          "Msg":"Был рад с вами работать!",
+          "AMsg.Num":"5"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          400,
+          "Pos.y":          400,
+          "Parent":          -1,
+          "#":          11,
+          "Msg":"Здравствуйте, рейнджер <Player>! Вам, как лучшему другу нашей планеты, доблестному воину-рейнджеру, представляется уникальная возможность поучаствовать в нашем очередном научном проекте по колонизации незаселенных планет. Разумеется, мы и раньше колонизировали планеты - иначе как было бы возможно создание Галактического Содружества? Но в этот раз, это принципиально новые средства колонизации и терраформинга, позволяющие создать полноценную колонию в минимальные сроки. Мы решили, что в этот раз нашу экспедицию должны возглавить рейнджеры - и мы выбрали вас в качестве лидера.\r\n\r\nНу что, согласны, рейнджер <Player>? И еще, этот проект не безвозмездный, и всем его участникам полагается награда в случае удачного завершения. Согласно нашим подсчетам, вы получите награду в размере <reward> cr.",
+          "DMsg.Num":"0"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          460,
+          "Pos.y":          400,
+          "Parent":          -1,
+          "#":          16,
+          "Msg":"Для колонизации нами выбрана планета <PlanetName(PlanetColon)> системы <StarName(StarColon)>. Через несколько минут с нашей планеты вылетит экспедиция ученых, с которыми вам необходимо связаться в космосе, обговорив детали миссии. Удачи, рейнджер!",
+          "DMsg.Num":"1"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          380,
+          "Pos.y":          490,
+          "Parent":          -1,
+          "#":          20,
+          "Msg":"Рейнджер <ShortName(Player())>, вы как раз кстати. Мы получили сообщение, что вы летите с нами для помощи в научном проекте по колонизации планеты <PlanetName(PlanetColon)>.",
+          "DMsg.Num":"2"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          440,
+          "Pos.y":          490,
+          "Parent":          -1,
+          "#":          28,
+          "Msg":"Уже сейчас. Задание уже начато, вам необходимо лететь в систему <StarName(StarColon)>, а мы за вами. Это вынужденная мера, так как на пути могут попасться пираты, которые захотят нас ограбить. Мы летим под маскировкой дипломатов для меньшего привлечения внимания пиратского клана, так как они наверняка захотели бы помешать научной деятельности Коалиции, если бы мы показали наши стандартные корабли ученых. Когда мы прибудем туда и совершим посадку на планету <PlanetName(PlanetColon)>, будет начата колонизация планеты с использованием новейших средств терраформинга.",
+          "DMsg.Num":"3"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          680,
+          "Pos.y":          210,
+          "Parent":          -1,
+          "#":          46,
+          "Msg":"Рейнджер <Player>, мы получили сообщение от исследовательской группы. Планета <PlanetName(PlanetColon)> успешно терраформирована, в ближайшее время начнется строительство первых поселений. Вы успешно выполнили свое задание на благо Межзвездной Коалиции, а потому получаете <reward> cr. в качестве награды.",
+          "DMsg.Num":"4"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":"TDialog",
+          "Name":"DialogColonQuest",
+          "Pos.x":          280,
+          "Pos.y":          400,
+          "Parent":          -1,
+          "#":          10        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"DialogColonizers",
+          "Pos.x":          250,
+          "Pos.y":          490,
+          "Parent":          -1,
+          "#":          18        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"DialogColonFinal",
+          "Pos.x":          570,
+          "Pos.y":          210,
+          "Parent":          -1,
+          "#":          45        
+        }      
+      ],
+      "Ethers":      
+      [
+        {
+          "Type":"TEther",
+          "Name":"",
+          "Pos.x":          490,
+          "Pos.y":          450,
+          "Parent":          -1,
+          "#":          21,
+          "Ether.Type":          3,
+          "Unique":"B30E315C-A1DA-41BB-9059-0F09E6C72760",
+          "Msg":"Прилететь в систему <StarName(StarColon)> вместе с группой колонизаторов.",
+          "Ship1":"",
+          "Ship2":"",
+          "Ship3":""        
+        },
+        {
+          "Type":"TEther",
+          "Name":"",
+          "Pos.x":          600,
+          "Pos.y":          490,
+          "Parent":          -1,
+          "#":          38,
+          "Ether.Type":          0,
+          "Unique":"",
+          "Msg":"Пираты! Они засекли наши коммуникации! Рейнджер <Player>, задержите их, пока мы садимся на планету <PlanetName(PlanetColon)>!",
+          "Ship1":"",
+          "Ship2":"",
+          "Ship3":""        
+        },
+        {
+          "Type":"TEther",
+          "Name":"",
+          "Pos.x":          570,
+          "Pos.y":          460,
+          "Parent":          -1,
+          "#":          40,
+          "Ether.Type":          3,
+          "Unique":"B30E315C-A1DA-41BB-9059-0F09E6C72760",
+          "Msg":"Защищать колонизаторов от пиратов, пока они садятся на планету.",
+          "Ship1":"",
+          "Ship2":"",
+          "Ship3":""        
+        },
+        {
+          "Type":"TEther",
+          "Name":"",
+          "Pos.x":          560,
+          "Pos.y":          560,
+          "Parent":          -1,
+          "#":          43,
+          "Ether.Type":          4,
+          "Unique":"B30E315C-A1DA-41BB-9059-0F09E6C72760",
+          "Msg":"Задание выполнено. Вернитесь на планету <PlanetName(PlanetNew)>.",
+          "Ship1":"",
+          "Ship2":"",
+          "Ship3":""        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":"TGroup",
+          "Name":"GroupColon",
+          "Pos.x":          270,
+          "Pos.y":          290,
+          "Parent":          -1,
+          "#":          4,
+          "Owner":          63,
+          "Group.Type":          65,
+          "CntShipMin":          2,
+          "CntShipMax":          4,
+          "SpeedMin":          100,
+          "SpeedMax":          10000,
+          "Weapon":          0,
+          "CargoHook":          0,
+          "EmptySpace":          0,
+          "AddPlayer":false,
+          "StatusTraderMin":          0,
+          "StatusTraderMax":          100,
+          "StatusWarriorMin":          0,
+          "StatusWarriorMax":          100,
+          "StatusPirateMin":          0,
+          "StatusPirateMax":          100,
+          "DistSearch":          10000,
+          "Dialog":          -1,
+          "StrengthMin":"0",
+          "StrengthMax":"0",
+          "Ruins":""        
+        },
+        {
+          "Type":"TGroup",
+          "Name":"Player",
+          "Pos.x":          200,
+          "Pos.y":          290,
+          "Parent":          -1,
+          "#":          19,
+          "Owner":          62,
+          "Group.Type":          126,
+          "CntShipMin":          1,
+          "CntShipMax":          1,
+          "SpeedMin":          100,
+          "SpeedMax":          10000,
+          "Weapon":          0,
+          "CargoHook":          0,
+          "EmptySpace":          0,
+          "AddPlayer":true,
+          "StatusTraderMin":          0,
+          "StatusTraderMax":          100,
+          "StatusWarriorMin":          0,
+          "StatusWarriorMax":          100,
+          "StatusPirateMin":          0,
+          "StatusPirateMax":          100,
+          "DistSearch":          10000,
+          "Dialog":          -1,
+          "StrengthMin":"0",
+          "StrengthMax":"0",
+          "Ruins":""        
+        },
+        {
+          "Type":"TGroup",
+          "Name":"GroupPir",
+          "Pos.x":          460,
+          "Pos.y":          250,
+          "Parent":          -1,
+          "#":          34,
+          "Owner":          63,
+          "Group.Type":          9,
+          "CntShipMin":          3,
+          "CntShipMax":          5,
+          "SpeedMin":          100,
+          "SpeedMax":          10000,
+          "Weapon":          0,
+          "CargoHook":          0,
+          "EmptySpace":          0,
+          "AddPlayer":false,
+          "StatusTraderMin":          0,
+          "StatusTraderMax":          100,
+          "StatusWarriorMin":          0,
+          "StatusWarriorMax":          100,
+          "StatusPirateMin":          0,
+          "StatusPirateMax":          100,
+          "DistSearch":          10000,
+          "Dialog":          -1,
+          "StrengthMin":"0",
+          "StrengthMax":"0",
+          "Ruins":""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          300,
+          "Pos.y":          170,
+          "Parent":          -1,
+          "#":          2,
+          "Total.Lines":          1,
+          "Code.Type":"Init",
+          "Code":          
+          [
+"GRun()"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          560,
+          "Pos.y":          350,
+          "Parent":          -1,
+          "#":          13,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"reward=ShipRank(Player())*10000+ShipWealth(Player())*10-GalaxyTechLevel()*10000;"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          490,
+          "Pos.y":          420,
+          "Parent":          -1,
+          "#":          23,
+          "Total.Lines":          5,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"state=1;",
+"for(count=0;count<GroupCount(GroupColon);count=count+1){",
+"    cur_ship=GroupShip(GroupColon,count);",
+"      ShipType(cur_ship,'Scientist');",
+"};"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          400,
+          "Pos.y":          460,
+          "Parent":          -1,
+          "#":          24,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"state=-1;"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          600,
+          "Pos.y":          400,
+          "Parent":          -1,
+          "#":          26,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"Dialog(DialogColonizers,GroupToShip(GroupColon));"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          470,
+          "Pos.y":          520,
+          "Parent":          -1,
+          "#":          30,
+          "Total.Lines":          5,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"state=2;",
+"for(count=0;count<GroupCount(GroupColon);count=count+1){",
+"    cur_ship=GroupShip(GroupColon,count);",
+"      ChangeState(StateFol,cur_ship);",
+"};"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          530,
+          "Pos.y":          350,
+          "Parent":          -1,
+          "#":          32,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"AddDialogOverride('DialogColonQuest',1);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          570,
+          "Pos.y":          490,
+          "Parent":          -1,
+          "#":          37,
+          "Total.Lines":          4,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"for(count=0;count<GroupCount(GroupColon);count=count+1){",
+"    cur_ship=GroupShip(GroupColon,count);",
+"      ChangeState(StateColonize,cur_ship);",
+"};"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          530,
+          "Pos.y":          590,
+          "Parent":          -1,
+          "#":          44,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"state=3"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          650,
+          "Pos.y":          280,
+          "Parent":          -1,
+          "#":          49,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"AddDialogOverride('DialogColonFinal',2);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          680,
+          "Pos.y":          240,
+          "Parent":          -1,
+          "#":          50,
+          "Total.Lines":          4,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"ShipMoney(Player(),ShipMoney(Player())+reward);",
+"PlanetOwner(PlanetColon,PlanetOwner(PlanetNew));",
+"PlanetRace(PlanetColon,PlanetRace(PlanetNew));",
+"Sound(Sound.Sell);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          710,
+          "Pos.y":          240,
+          "Parent":          -1,
+          "#":          53,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"state=-1"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":"TPlanet",
+          "Name":"PlanetNew",
+          "Pos.x":          270,
+          "Pos.y":          250,
+          "Parent":          -1,
+          "#":          3,
+          "Race":          63,
+          "Owner":          63,
+          "Economy":          14,
+          "Goverment":          62,
+          "RangeMin":          0,
+          "RangeMax":          100,
+          "Dialog":          -1        
+        },
+        {
+          "Type":"TPlanet",
+          "Name":"PlanetColon",
+          "Pos.x":          370,
+          "Pos.y":          250,
+          "Parent":          -1,
+          "#":          7,
+          "Race":          62,
+          "Owner":          129,
+          "Economy":          14,
+          "Goverment":          62,
+          "RangeMin":          0,
+          "RangeMax":          100,
+          "Dialog":          -1        
+        },
+        {
+          "Type":"TPlanet",
+          "Name":"PlanetPir",
+          "Pos.x":          460,
+          "Pos.y":          210,
+          "Parent":          -1,
+          "#":          33,
+          "Race":          63,
+          "Owner":          63,
+          "Economy":          14,
+          "Goverment":          62,
+          "RangeMin":          0,
+          "RangeMax":          100,
+          "Dialog":          -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":"TStarShip",
+          "Name":"",
+          "Pos.x":          270,
+          "Pos.y":          170,
+          "Parent":          -1,
+          "#":          0,
+          "Count":          1,
+          "Owner":          62,
+          "Ship.Type":          126,
+          "Player":true,
+          "SpeedMin":          0,
+          "SpeedMax":          10000,
+          "Weapon":          0,
+          "CargoHook":          0,
+          "EmptySpace":          0,
+          "StatusTraderMin":          0,
+          "StatusTraderMax":          100,
+          "StatusWarriorMin":          0,
+          "StatusWarriorMax":          100,
+          "StatusPirateMin":          0,
+          "StatusPirateMax":          100,
+          "StrengthMin":"0",
+          "StrengthMax":"0",
+          "Ruins":""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":"TStar",
+          "Name":"StarNew",
+          "Pos.x":          270,
+          "Pos.y":          210,
+          "Parent":          -1,
+          "#":          1,
+          "Constellation":          0,
+          "Priority":          0,
+          "NoKling":false,
+          "NoComeKling":false        
+        },
+        {
+          "Type":"TStar",
+          "Name":"StarColon",
+          "Pos.x":          370,
+          "Pos.y":          210,
+          "Parent":          -1,
+          "#":          6,
+          "Constellation":          0,
+          "Priority":          1,
+          "NoKling":true,
+          "NoComeKling":false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          470,
+          "Pos.y":          350,
+          "Parent":          -1,
+          "#":          8,
+          "Total.Lines":          1,
+          "Code.Type":"DialogBegin",
+          "Code":          
+          [
+"ShipInPlanet(Player(),PlanetNew)"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          500,
+          "Pos.y":          350,
+          "Parent":          -1,
+          "#":          9,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"RelationToRanger(PlanetNew,Player())==100 && GalaxyTechLevel()>=5 && state==0"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          570,
+          "Pos.y":          400,
+          "Parent":          -1,
+          "#":          25,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"Dist(GroupToShip(GroupColon),Player())<=500 && state==1"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          540,
+          "Pos.y":          490,
+          "Parent":          -1,
+          "#":          36,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"ShipInStar(Player(),StarColon) && state==2"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          530,
+          "Pos.y":          560,
+          "Parent":          -1,
+          "#":          42,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"GroupCount(GroupPir)==0 && state==2"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          590,
+          "Pos.y":          280,
+          "Parent":          -1,
+          "#":          47,
+          "Total.Lines":          1,
+          "Code.Type":"DialogBegin",
+          "Code":          
+          [
+"ShipInPlanet(Player(),PlanetNew)"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          620,
+          "Pos.y":          280,
+          "Parent":          -1,
+          "#":          48,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"state==3"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":"TState",
+          "Name":"StateFol",
+          "Pos.x":          230,
+          "Pos.y":          330,
+          "Parent":          -1,
+          "#":          5,
+          "Move":          2,
+          "MoveObj":          19,
+          "Attack.Count":          0,
+          "TakeItem":          -1,
+          "TakeAllItem":false,
+          "OnTalk":"",
+          "OnActCode":"",
+          "EType":          1,
+          "EUnique":"",
+          "EMsg":""        
+        },
+        {
+          "Type":"TState",
+          "Name":"StateDefault",
+          "Pos.x":          320,
+          "Pos.y":          330,
+          "Parent":          -1,
+          "#":          31,
+          "Move":          0,
+          "MoveObj":          -1,
+          "Attack.Count":          0,
+          "TakeItem":          -1,
+          "TakeAllItem":false,
+          "OnTalk":"",
+          "OnActCode":"",
+          "EType":          1,
+          "EUnique":"",
+          "EMsg":""        
+        },
+        {
+          "Type":"TState",
+          "Name":"StatePir",
+          "Pos.x":          460,
+          "Pos.y":          280,
+          "Parent":          -1,
+          "#":          35,
+          "Move":          0,
+          "MoveObj":          -1,
+          "Attack.Count":          2,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":              4,
+              "Target.1":              19            
+            }          
+          ],
+          "TakeItem":          -1,
+          "TakeAllItem":false,
+          "OnTalk":"",
+          "OnActCode":"",
+          "EType":          1,
+          "EUnique":"",
+          "EMsg":""        
+        },
+        {
+          "Type":"TState",
+          "Name":"StateColonize",
+          "Pos.x":          160,
+          "Pos.y":          360,
+          "Parent":          -1,
+          "#":          39,
+          "Move":          4,
+          "MoveObj":          7,
+          "Attack.Count":          0,
+          "TakeItem":          -1,
+          "TakeAllItem":false,
+          "OnTalk":"",
+          "OnActCode":"",
+          "EType":          1,
+          "EUnique":"",
+          "EMsg":""        
+        },
+        {
+          "Type":"TState",
+          "Name":"StateNew",
+          "Pos.x":          120,
+          "Pos.y":          290,
+          "Parent":          -1,
+          "#":          41,
+          "Move":          0,
+          "MoveObj":          -1,
+          "Attack.Count":          0,
+          "TakeItem":          -1,
+          "TakeAllItem":false,
+          "OnTalk":"",
+          "OnActCode":"",
+          "EType":          1,
+          "EUnique":"",
+          "EMsg":""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":"TVar",
+          "Name":"reward",
+          "Pos.x":          190,
+          "Pos.y":          170,
+          "Parent":          -1,
+          "#":          12,
+          "Var.Type":"Int",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"state",
+          "Pos.x":          190,
+          "Pos.y":          190,
+          "Parent":          -1,
+          "#":          22,
+          "Var.Type":"Int",
+          "Init":"0",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"race",
+          "Pos.x":          190,
+          "Pos.y":          210,
+          "Parent":          -1,
+          "#":          51,
+          "Var.Type":"Int",
+          "Init":"",
+          "Global":false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":"TGraphLink",
+      "Begin":      0,
+      "End":      1,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      3,
+      "End":      1,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      4,
+      "End":      3,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      7,
+      "End":      6,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      10,
+      "End":      11,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      11,
+      "End":      14,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      11,
+      "End":      15,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      15,
+      "End":      16,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      16,
+      "End":      17,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      18,
+      "End":      20,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      17,
+      "End":      23,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      23,
+      "End":      21,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      14,
+      "End":      24,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      25,
+      "End":      26,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      20,
+      "End":      27,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      27,
+      "End":      28,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      28,
+      "End":      29,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      29,
+      "End":      30,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      4,
+      "End":      31,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      33,
+      "End":      6,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      34,
+      "End":      33,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      36,
+      "End":      37,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      37,
+      "End":      38,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      37,
+      "End":      40,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      19,
+      "End":      3,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      19,
+      "End":      41,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      8,
+      "End":      9,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      9,
+      "End":      32,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      32,
+      "End":      13,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      42,
+      "End":      43,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      42,
+      "End":      44,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      45,
+      "End":      46,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      47,
+      "End":      48,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      48,
+      "End":      49,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      46,
+      "End":      50,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      46,
+      "End":      52,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      52,
+      "End":      53,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      34,
+      "End":      35,
+      "Nom":      0,
+      "Arrow":true    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  12,
+  "BlockPar.EC":  
+  [
+    {
+      "#":"0",
+      "String":"Пираты! Они засекли наши коммуникации! Рейнджер <Player>, задержите их, пока мы садимся на планету <0>!"    
+    },
+    {
+      "#":"1",
+      "String":"Защищать колонизаторов от пиратов, пока они садятся на планету."    
+    },
+    {
+      "#":"10",
+      "String":"Все верно, это я. Когда летим?"    
+    },
+    {
+      "#":"11",
+      "String":"Все понял. Отправляемся в систему <0>."    
+    },
+    {
+      "#":"2",
+      "String":"Здравствуйте, рейнджер <Player>! Вам, как лучшему другу нашей планеты, доблестному воину-рейнджеру, представляется уникальная возможность поучаствовать в нашем очередном научном проекте по колонизации незаселенных планет. Разумеется, мы и раньше колонизировали планеты - иначе как было бы возможно создание Галактического Содружества? Но в этот раз, это принципиально новые средства колонизации и терраформинга, позволяющие создать полноценную колонию в минимальные сроки. Мы решили, что в этот раз нашу экспедицию должны возглавить рейнджеры - и мы выбрали вас в качестве лидера.<br><br>Ну что, согласны, рейнджер <Player>? И еще, этот проект не безвозмездный, и всем его участникам полагается награда в случае удачного завершения. Согласно нашим подсчетам, вы получите награду в размере <0> cr."    
+    },
+    {
+      "#":"3",
+      "String":"Для колонизации нами выбрана планета <0> системы <1>. Через несколько минут с нашей планеты вылетит экспедиция ученых, с которыми вам необходимо связаться в космосе, обговорив детали миссии. Удачи, рейнджер!"    
+    },
+    {
+      "#":"4",
+      "String":"Рейнджер <Player>, вы как раз кстати. Мы получили сообщение, что вы летите с нами для помощи в научном проекте по колонизации планеты <0>."    
+    },
+    {
+      "#":"5",
+      "String":"Уже сейчас. Задание уже начато, вам необходимо лететь в систему <0>, а мы за вами. Это вынужденная мера, так как на пути могут попасться пираты, которые захотят нас ограбить. Мы летим под маскировкой дипломатов для меньшего привлечения внимания пиратского клана, так как они наверняка захотели бы помешать научной деятельности Коалиции, если бы мы показали наши стандартные корабли ученых. Когда мы прибудем туда и совершим посадку на планету <1>, будет начата колонизация планеты с использованием новейших средств терраформинга."    
+    },
+    {
+      "#":"6",
+      "String":"Мне это не под силу. Поручите дело другому рейнджеру."    
+    },
+    {
+      "#":"7",
+      "String":"Я согласен. Что мне делать?"    
+    },
+    {
+      "#":"8",
+      "String":"Понял, уже вылетаю!"    
+    },
+    {
+      "#":"9",
+      "String":"Прилететь в систему <0> вместе с группой колонизаторов."    
+    }  
+  ]
+}

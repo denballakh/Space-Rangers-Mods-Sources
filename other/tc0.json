@@ -1,0 +1,4104 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  -479,
+  "ViewPos.y":  -97,
+  "ScriptName":"mod_tc0",
+  "ScriptFileOut":"D:\\NEW\\Download\\new\\Games\\SR2HDmodpk\\SRHD\\Mods\\AnotherMods\\AMod_TC\\data\\Script\\mod_tc0.scr",
+  "ScriptTextOut":"D:\\NEW\\Download\\new\\Games\\SR2HDmodpk\\SRHD\\Mods\\AnotherMods\\AMod_TC\\CFG\\Rus\\mod_tc0.txt",
+  "GraphPoint.Count":  163,
+  "GraphLink.Count":  122,
+  "GraphRectText.Count":  10,
+  "Variables.Count":  28,
+  "Stars.Count":  1,
+  "Planets.Count":  1,
+  "Ships.Count":  1,
+  "States.Count":  2,
+  "Groups.Count":  2,
+  "Places.Count":  0,
+  "Items.Count":  0,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  19,
+  "DialogMessages.Count":  27,
+  "DialogAnswers.Count":  10,
+  "Operations.Count":  45,
+  "Statements.Count":  27,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":"TDialogAnswer",
+          "Name":"restart",
+          "Pos.x":          600,
+          "Pos.y":          260,
+          "Parent":          -1,
+          "#":          106,
+          "Msg":"Я подумаю",
+          "AMsg.Num":"0"        
+        },
+        {
+          "Type":"TDialogAnswer",
+          "Name":"restart",
+          "Pos.x":          580,
+          "Pos.y":          170,
+          "Parent":          -1,
+          "#":          107,
+          "Msg":"Я передумал",
+          "AMsg.Num":"1"        
+        },
+        {
+          "Type":"TDialogAnswer",
+          "Name":"",
+          "Pos.x":          760,
+          "Pos.y":          210,
+          "Parent":          -1,
+          "#":          112,
+          "Msg":"Согласен",
+          "AMsg.Num":"2"        
+        },
+        {
+          "Type":"TDialogAnswer",
+          "Name":"restart",
+          "Pos.x":          690,
+          "Pos.y":          180,
+          "Parent":          -1,
+          "#":          113,
+          "Msg":"Я передумал",
+          "AMsg.Num":"3"        
+        },
+        {
+          "Type":"TDialogAnswer",
+          "Name":"restart",
+          "Pos.x":          720,
+          "Pos.y":          120,
+          "Parent":          -1,
+          "#":          118,
+          "Msg":"Понятно",
+          "AMsg.Num":"4"        
+        },
+        {
+          "Type":"TDialogAnswer",
+          "Name":"exit",
+          "Pos.x":          690,
+          "Pos.y":          260,
+          "Parent":          -1,
+          "#":          120,
+          "Msg":"",
+          "AMsg.Num":"5"        
+        },
+        {
+          "Type":"TDialogAnswer",
+          "Name":"exit",
+          "Pos.x":          800,
+          "Pos.y":          210,
+          "Parent":          -1,
+          "#":          130,
+          "Msg":"",
+          "AMsg.Num":"6"        
+        },
+        {
+          "Type":"TDialogAnswer",
+          "Name":"restart",
+          "Pos.x":          800,
+          "Pos.y":          120,
+          "Parent":          -1,
+          "#":          134,
+          "Msg":"Понятно",
+          "AMsg.Num":"7"        
+        },
+        {
+          "Type":"TDialogAnswer",
+          "Name":"restart",
+          "Pos.x":          820,
+          "Pos.y":          140,
+          "Parent":          -1,
+          "#":          135,
+          "Msg":"Я передумал",
+          "AMsg.Num":"8"        
+        },
+        {
+          "Type":"TDialogAnswer",
+          "Name":"exit",
+          "Pos.x":          110,
+          "Pos.y":          80,
+          "Parent":          -1,
+          "#":          150,
+          "Msg":"",
+          "AMsg.Num":"9"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          20,
+          "Pos.y":          80,
+          "Parent":          -1,
+          "#":          19,
+          "Msg":"Спасибо, что посетили нашу станцию <ShipName(GetShipRuins(Player()))>. Удобно располагайтесь, <ShipName(Player())>, чувствуйте себя здесь как дома. Мы - лучшие специалисты Галактики в области технологического сервиса космических кораблей. В перечень наших услуг входит: улучшение оборудования, закрытие и открытие слотов, изменение восприимчивости к тому или иному типу урона и многое другое! Предлагаю вам в полной мере насладиться нашим вкусным кофе и изучить за это время прейскурант.",
+          "DMsg.Num":"0"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          150,
+          "Pos.y":          260,
+          "Parent":          -1,
+          "#":          24,
+          "Msg":"Мы не нашли у вас никаких подходящих вещей, которые можно было бы улучшить.",
+          "DMsg.Num":"1"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          210,
+          "Pos.y":          120,
+          "Parent":          -1,
+          "#":          31,
+          "Msg":"\"Прошивкой\" мы называем замену ряда модулей в оборудовании на более новые, а также соответствующее обновление программного обеспечения. Сугубо говоря это вовсе не прошивка, а апгрейд, но название прицепилось... Словом, прошивая старое оборудование, мы вполне способны добиться от него результатов на уровне его самых новых аналогов. Износостойкость оборудования <clr>снизится<clrEnd> на <10>%\r\nТак какое оборудование желаете прошить?",
+          "DMsg.Num":"2"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          210,
+          "Pos.y":          150,
+          "Parent":          -1,
+          "#":          32,
+          "Msg":"\"Откатом\" мы называем возвращение оборудованию его заводских параметров. Может показаться, что это простая процедура, но на самом деле сбросить пользовательские настройки бывает не так уж и просто. Износостойкость оборудования <clr>снизится<clrEnd> на <10>% Разумеется услуга платная.",
+          "DMsg.Num":"3"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          210,
+          "Pos.y":          180,
+          "Parent":          -1,
+          "#":          33,
+          "Msg":"Сетью наших станций была разработана уникальная методика разгона параметров оборудования. Это наше ноу-хау. Мы можем повысить один из параметров оборудования не затрагивая второй. При этом износостойкость оборудования не измениться. Разумеется это возможно лишь в том случае, если оборудование пригодно для улучшения.\r\nКакое оборудование желаете улучшить?",
+          "DMsg.Num":"4"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          210,
+          "Pos.y":          210,
+          "Parent":          -1,
+          "#":          34,
+          "Msg":"Дополнительная услуга сети наших центров. Мы можем оптимизировать работу ваших исследовательских зондов, повысив их эффективность и надежность.",
+          "DMsg.Num":"5"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          500,
+          "Pos.y":          190,
+          "Parent":          -1,
+          "#":          40,
+          "Msg":"Так так... Дополнительные детали обойдутся вам в <serviceCost> cr.\r\nКакой параметр улучшить?",
+          "DMsg.Num":"6"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          540,
+          "Pos.y":          220,
+          "Parent":          -1,
+          "#":          44,
+          "Msg":"Отлично, работа уже сделана, а ваши деньги уже на нашем счету. Вот так мы быстро работаем! Возможно, вы хотите что-то еще улучшить?",
+          "DMsg.Num":"7"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          490,
+          "Pos.y":          40,
+          "Parent":          -1,
+          "#":          48,
+          "Msg":"Так так... Дополнительные детали обойдутся вам в <serviceCost> cr.\r\nКакой параметр улучшаем?",
+          "DMsg.Num":"8"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          540,
+          "Pos.y":          100,
+          "Parent":          -1,
+          "#":          52,
+          "Msg":"Отлично, работа уже сделана, а ваши деньги уже на нашем счету. Вот так мы быстро работаем! Возможно, вы хотите что-то еще улучшить?",
+          "DMsg.Num":"9"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          290,
+          "Pos.y":          260,
+          "Parent":          -1,
+          "#":          56,
+          "Msg":"Отлично, работа уже сделана, а ваши деньги уже на нашем счету. Вот так мы быстро работаем! Возможно, вы хотите что-то еще улучшить?",
+          "DMsg.Num":"10"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          290,
+          "Pos.y":          70,
+          "Parent":          -1,
+          "#":          60,
+          "Msg":"До какого технологического типа прошить?",
+          "DMsg.Num":"11"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          320,
+          "Pos.y":          110,
+          "Parent":          -1,
+          "#":          64,
+          "Msg":"Отлично, работа уже сделана, а ваши деньги уже на нашем счету. Вот так мы быстро работаем! Возможно, вы хотите что-то еще улучшить?",
+          "DMsg.Num":"12"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          610,
+          "Pos.y":          80,
+          "Parent":          -1,
+          "#":          92,
+          "Msg":"Улучшить корпус можно следующими способами:\r\n-установка спасательной капсулы\r\n-напыление защитного слоя\r\n-изменить функционал корпуса",
+          "DMsg.Num":"13"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          640,
+          "Pos.y":          140,
+          "Parent":          -1,
+          "#":          97,
+          "Msg":"Наши техники стараются работать качественно и профессионально, но у каждого предмета есть свой предел. Сварные швы, которые образуются в результате этого улучшения будут не такими прочными на разрыв, как заводские, так что, в целом, устойчивость корпуса к повреждениям снизиться. Кроме того, улучшенные микромодулями корпуса не подлежат операции по открытию/закрытию данного слота. Так же мы не можем снять ограничения серии. И ещё, при улучшении, размер корпуса <str0>. Стоимость услуги - <serviceCost> cr.\r\nИтак, какую часть корабля нам изменить?",
+          "DMsg.Num":"14"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          600,
+          "Pos.y":          240,
+          "Parent":          -1,
+          "#":          105,
+          "Msg":"Сложно выполнять такую работу в сжатые сроки, но наши техники должны успеть вовремя. Не желаете ли заказать что-то ещё?",
+          "DMsg.Num":"15"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          720,
+          "Pos.y":          150,
+          "Parent":          -1,
+          "#":          110,
+          "Msg":"Стандартная спасательная капсула обойдётся вам в <serviceCost> cr.\r\nСистема полностью автоматизирована, никакого ручного контроля. Капсула катапультируется даже если вы потеряете сознание в пылу битвы... С вами на борту разумеется.\r\nОднако, в силу непреодолимых технических сложностей в гиперпространстве, к сожалению, система диагностики корабля отказывает.",
+          "DMsg.Num":"16"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          750,
+          "Pos.y":          90,
+          "Parent":          -1,
+          "#":          117,
+          "Msg":"На вашем корабле уже установлена спасательная капсула. Установка второй невозможна из-за технических особенностей капсулы. Да и зачем вам две, в конце концов?",
+          "DMsg.Num":"17"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          690,
+          "Pos.y":          210,
+          "Parent":          -1,
+          "#":          119,
+          "Msg":"",
+          "DMsg.Num":"18"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          820,
+          "Pos.y":          80,
+          "Parent":          -1,
+          "#":          123,
+          "Msg":"Наша сеть станций разработала уникальное напыление на основе акрина. Обработанные корпуса становятся менее восприимчивыми к повреждениям различных типов, однако обычное улучшение обшивки становится невозможным.\r\nСколько слоёв напыления вы желаете нанести?",
+          "DMsg.Num":"19"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          800,
+          "Pos.y":          140,
+          "Parent":          -1,
+          "#":          126,
+          "Msg":"Понятно. Мы можем использовать сбалансированное напыление или специализированное под определенный тип урона. Какую обработку вы хотите заказать?\r\nЕщё, за отдельную плату мы можем нанести винилы. Нет? Может быть, хотите установить хромированные закрылки или неоновую подсветку под днище? Любой каприз за ваши деньги!",
+          "DMsg.Num":"20"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          860,
+          "Pos.y":          230,
+          "Parent":          -1,
+          "#":          129,
+          "Msg":"",
+          "DMsg.Num":"21"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          800,
+          "Pos.y":          100,
+          "Parent":          -1,
+          "#":          133,
+          "Msg":"Корпус уже улучшен, дальнейшие изменения будут бесполезны.",
+          "DMsg.Num":"22"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          210,
+          "Pos.y":          240,
+          "Parent":          -1,
+          "#":          139,
+          "Msg":"Изменение технологической маркировки не повлияет на параметры оборудования. Цена услуги <100> cr.",
+          "DMsg.Num":"23"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          450,
+          "Pos.y":          160,
+          "Parent":          -1,
+          "#":          141,
+          "Msg":"Это быстрая процедура. Приготовьте <100> cr и придумайте новое название.",
+          "DMsg.Num":"24"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          440,
+          "Pos.y":          120,
+          "Parent":          -1,
+          "#":          146,
+          "Msg":"Минеральчики воооон там...",
+          "DMsg.Num":"25"        
+        },
+        {
+          "Type":"TDialogMsg",
+          "Name":"",
+          "Pos.x":          450,
+          "Pos.y":          140,
+          "Parent":          -1,
+          "#":          149,
+          "Msg":"<str0>... А у вас бурная фантазия.",
+          "DMsg.Num":"26"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":"TDialog",
+          "Name":"MainDialog",
+          "Pos.x":          20,
+          "Pos.y":          50,
+          "Parent":          -1,
+          "#":          18        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"chooseService",
+          "Pos.x":          150,
+          "Pos.y":          100,
+          "Parent":          -1,
+          "#":          21        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"Service",
+          "Pos.x":          290,
+          "Pos.y":          160,
+          "Parent":          -1,
+          "#":          36        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"uniUp",
+          "Pos.x":          420,
+          "Pos.y":          260,
+          "Parent":          -1,
+          "#":          42        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"ZondUp",
+          "Pos.x":          440,
+          "Pos.y":          70,
+          "Parent":          -1,
+          "#":          50        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"Proshivka",
+          "Pos.x":          320,
+          "Pos.y":          50,
+          "Parent":          -1,
+          "#":          62        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"hullImprove",
+          "Pos.x":          580,
+          "Pos.y":          50,
+          "Parent":          -1,
+          "#":          91        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"Slots0",
+          "Pos.x":          580,
+          "Pos.y":          110,
+          "Parent":          -1,
+          "#":          95        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"Slots1",
+          "Pos.x":          580,
+          "Pos.y":          220,
+          "Parent":          -1,
+          "#":          103        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"SaveShip",
+          "Pos.x":          690,
+          "Pos.y":          50,
+          "Parent":          -1,
+          "#":          108        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"Suspectibility0",
+          "Pos.x":          800,
+          "Pos.y":          50,
+          "Parent":          -1,
+          "#":          121        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"Suspectibilit1",
+          "Pos.x":          800,
+          "Pos.y":          180,
+          "Parent":          -1,
+          "#":          125        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"Suspectibilit2",
+          "Pos.x":          800,
+          "Pos.y":          260,
+          "Parent":          -1,
+          "#":          128        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"Rename",
+          "Pos.x":          490,
+          "Pos.y":          120,
+          "Parent":          -1,
+          "#":          143        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"Pr_0",
+          "Pos.x":          10,
+          "Pos.y":          120,
+          "Parent":          -1,
+          "#":          152        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"Dwng_0",
+          "Pos.x":          10,
+          "Pos.y":          150,
+          "Parent":          -1,
+          "#":          153        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"Upgr_0",
+          "Pos.x":          10,
+          "Pos.y":          180,
+          "Parent":          -1,
+          "#":          154        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"Zond_0",
+          "Pos.x":          10,
+          "Pos.y":          210,
+          "Parent":          -1,
+          "#":          155        
+        },
+        {
+          "Type":"TDialog",
+          "Name":"Rnm_0",
+          "Pos.x":          10,
+          "Pos.y":          240,
+          "Parent":          -1,
+          "#":          156        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":"TGroup",
+          "Name":"GroupNew",
+          "Pos.x":          -100,
+          "Pos.y":          210,
+          "Parent":          -1,
+          "#":          3,
+          "Owner":          62,
+          "Group.Type":          126,
+          "CntShipMin":          1,
+          "CntShipMax":          1,
+          "SpeedMin":          100,
+          "SpeedMax":          10000,
+          "Weapon":          0,
+          "CargoHook":          0,
+          "EmptySpace":          0,
+          "AddPlayer":true,
+          "StatusTraderMin":          0,
+          "StatusTraderMax":          100,
+          "StatusWarriorMin":          0,
+          "StatusWarriorMax":          100,
+          "StatusPirateMin":          0,
+          "StatusPirateMax":          100,
+          "DistSearch":          10000,
+          "Dialog":          -1,
+          "StrengthMin":"0",
+          "StrengthMax":"0",
+          "Ruins":""        
+        },
+        {
+          "Type":"TGroup",
+          "Name":"TC0",
+          "Pos.x":          -150,
+          "Pos.y":          180,
+          "Parent":          -1,
+          "#":          7,
+          "Owner":          62,
+          "Group.Type":          126,
+          "CntShipMin":          0,
+          "CntShipMax":          0,
+          "SpeedMin":          100,
+          "SpeedMax":          10000,
+          "Weapon":          0,
+          "CargoHook":          0,
+          "EmptySpace":          0,
+          "AddPlayer":false,
+          "StatusTraderMin":          0,
+          "StatusTraderMax":          100,
+          "StatusWarriorMin":          0,
+          "StatusWarriorMax":          100,
+          "StatusPirateMin":          0,
+          "StatusPirateMax":          100,
+          "DistSearch":          10000,
+          "Dialog":          -1,
+          "StrengthMin":"0",
+          "StrengthMax":"0",
+          "Ruins":""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          -150,
+          "Pos.y":          210,
+          "Parent":          -1,
+          "#":          5,
+          "Total.Lines":          1,
+          "Code.Type":"Global",
+          "Code":          
+          [
+"GRun()"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          -150,
+          "Pos.y":          240,
+          "Parent":          -1,
+          "#":          6,
+          "Total.Lines":          20,
+          "Code.Type":"Init",
+          "Code":          
+          [
+"array0=newarray(1);",
+"costProshivka=newarray(1);",
+"levelProshivka=newarray(1);",
+"for(i=1;i<8;i=i+1)",
+"    {",
+"    ArrayAdd(levelProshivka,0);",
+"    ArrayAdd(costProshivka,0);",
+"    }",
+"items=newarray(1);",
+"itemNames=newarray(1);",
+"//массив starCount",
+"//1 - сколько систем у коалиции",
+"//2 - сколько систем у домиков",
+"//3 - сколько систем у пиратов",
+"//4 - через сколько ходов будет проверка на постройку ТЦ",
+"starCount=newarray(5);",
+"starCount[1]=ControlledSystems(0)+1;",
+"starCount[2]=ControlledSystems(1);",
+"starCount[3]=ControlledSystems(2);",
+"starCount[4]=0;"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          -20,
+          "Pos.y":          50,
+          "Parent":          -1,
+          "#":          11,
+          "Total.Lines":          7,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"AddDialogInject('Pr_0',\"Спасибо, что посетили нашу станцию <ShipName(GetShipRuins(Player()))>. Удобно располагайтесь, <ShipName(Player())>, чувствуйте себя здесь как дома. Мы - лучшие специалисты Галактики в области технологического сервиса космических кораблей. В перечень наших услуг входит: улучшение оборудования, закрытие и открытие слотов, изменение восприимчивости к тому или иному типу урона и многое другое! Предлагаю вам в полной мере насладиться нашим вкусным кофе и изучить за это время прейскурант.\",\"Прошивка оборудования\",20,1);",
+"AddDialogInject('Dwng_0','',\"Откатить улучшение\",19);",
+"AddDialogInject('Upgr_0','',\"Произвести уникальные улучшения\",18);",
+"AddDialogInject('Zond_0','',\"Улучшить зонд\",17);",
+"if(ItemOwner(ShipItems(Player(),0))==6)AddDialogBlock(\"Улучшить корпус\",16);",
+"AddDialogInject('hullImprove','',\"Улучшить корпус\",16);",
+"AddDialogInject('Rnm_0','',\"Изменить технологическую маркировку\",15);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          -130,
+          "Pos.y":          70,
+          "Parent":          -1,
+          "#":          13,
+          "Total.Lines":          76,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"//при уничтожении базы начинается внеплановая проверка на постройку ТЦ",
+"for(i=GalaxyEvents()-1;i>=0;i=i-1)",
+"    {",
+"    if(GalaxyEventDate(i)<CurTurn())break;",
+"    if(GalaxyEventType(i)=='RuinsDestroyed')",
+"        {",
+"        starCount[1]=120;",
+"        GlobalVarTcCount=GroupCount(TC0);",
+"        }",
+"    }",
+"buildTC=0;",
+"if(starCount[4]<1)",
+"    {",
+"    //если какая-то из сторон потеряла систему",
+"    if(starCount[1]!=ControlledSystems(0) || starCount[2]!=ControlledSystems(1) || starCount[3]!=ControlledSystems(2))",
+"        {",
+"//начинаем постройку ТЦ",
+"        buildTC=1;",
+"//запоминаем сколько было систем у каждой стороны в момент проверки на постройку ТЦ",
+"        starCount[1]=ControlledSystems(0);",
+"        starCount[2]=ControlledSystems(1);",
+"        starCount[3]=ControlledSystems(2);",
+"        }",
+"//если системы не захватывались, то новая проверка через 45 ходов",
+"    else starCount[4]=45;",
+"    }",
+"else starCount[4]=starCount[4]-1;",
+"//добавляем предметы ГТУ+1 в магазины ТЦ",
+"if(CurTurn()>TCshop)",
+"    {",
+"    if(GroupCount(TC0)>0)",
+"        {",
+"        TCshop=CurTurn()+91;",
+"        for(i=0;i<GroupCount(TC0);i=i+1)",
+"            {",
+"            dwd0=GroupShip(TC0,i);",
+"            ArrayClear(items);",
+"            for(j=0;j<ShopItems(dwd0);j=j+1)",
+"                {",
+"                dwd1=ShopItems(dwd0,j);",
+"                if(ItemLevel(dwd1)>7)continue;",
+"                if(ItemLevel(dwd1)>GalaxyTechLevel())continue;",
+"                if(ItemType(dwd1)<t_FuelTanks)continue;",
+"                if(ItemType(dwd1)>t_DefGenerator)continue;",
+"                if(ItemExtraSpecials(dwd1)!=0)continue;",
+"                ArrayAdd(items,dwd1);",
+"                }",
+"            int1=rnd(100);",
+"            if(ArrayDim(items)>1 && int1<26)",
+"                {",
+"                int0=Rnd(1,ArrayDim(items)-1);",
+"                curItem=items[int0];",
+"                clonItem=CreateEquipment(ItemType(curItem),ItemSize(curItem),ItemLevel(curItem),ItemOwner(curItem));",
+"                if(EqModule(curItem)>-1)ModuleToEquipment(EqModule(curItem),clonItem);",
+"                if(EqSpecial(curItem)>-1)SpecialToEquipment(EqSpecial(curItem),clonItem);",
+"                //costPercent - на сколько процентов отличаются цены",
+"                //если не отличаются, то 100",
+"                if(abs(ItemCost(curItem)-ItemCost(clonItem))>100)",
+"                    {",
+"                    costPercent=ItemCost(curItem)*100;",
+"                    costPercent=costPercent/ItemCost(clonItem);",
+"                    }",
+"                else costPercent=100;",
+"                FreeItem(clonItem);",
+"                clonItem=CreateEquipment(ItemType(curItem),ItemSize(curItem),GalaxyTechLevel()+1,ItemOwner(curItem));",
+"                if(EqModule(curItem)>-1)ModuleToEquipment(EqModule(curItem),clonItem);",
+"                if(EqSpecial(curItem)>-1)SpecialToEquipment(EqSpecial(curItem),clonItem);",
+"                int0=ItemCost(clonItem)*costPercent;",
+"                int0=int0/100;",
+"                ItemCost(curItem,int0);",
+"                ItemLevel(curItem,GalaxyTechLevel()+1);",
+"                FreeItem(clonItem);",
+"                }",
+"            }",
+"        }",
+"    }"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          -80,
+          "Pos.y":          70,
+          "Parent":          -1,
+          "#":          15,
+          "Total.Lines":          32,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"//начинаем выбирать систему для постройки ТЦ, перебираем сектора",
+"ArrayClear(array0);",
+"for(i=0;i<GalaxySectors()-1;i=i+1)",
+"    {",
+"    dwd0=GalaxySectors(i);",
+"//смотрим сколько не доминаторских систем в секторе, где игрок, идёт ли бой, наличие ТЦ",
+"    stars=0;",
+"    ruins=0;",
+"    for(j=0;j<ConStars(dwd0);j=j+1)",
+"        {",
+"        dwd1=ConStar(dwd0,j);",
+"        if(StarOwner(dwd1)==1)continue;",
+"        if(ShipStar(Player())==dwd1)continue;",
+"        if(StarBattle(dwd1))continue;",
+"        if(StarRuins(dwd1,'TC')>0)continue;",
+"        stars=stars+1;",
+"        ruins=ruins+StarRuins(dwd1);",
+"        }",
+"//если число баз в секторе меньше 4 и достаточное число пригодных систем, добавляем системы в массив постройки",
+"    if(ruins<4 && stars==ConStars(dwd0))",
+"        {",
+"        for(j=0;j<ConStars(dwd0);j=j+1)",
+"            {",
+"            dwd1=ConStar(dwd0,j);",
+"            if(StarRuins(dwd1)==3)continue;",
+"            ArrayAdd(array0,dwd1);",
+"            }",
+"        }",
+"    }",
+"buildTC=0;",
+"//если есть системы начинаем постройку ТЦ",
+"if(ArrayDim(array0)>1)buildTC=2;"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          -20,
+          "Pos.y":          70,
+          "Parent":          -1,
+          "#":          17,
+          "Total.Lines":          48,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"//выбираем систему",
+"int0=rnd(ArrayDim(array0));",
+"while(int0==0)int0=rnd(ArrayDim(array0));",
+"dwd0=array0[int0];",
+"//создаём базу кастомного типа, делаем из неё ТЦ",
+"dwd1=BuildCustomRuins(dwd0,'TC',5);",
+"ShipJoin(TC0,dwd1);",
+"ChangeState(1,dwd1);",
+"if(BlockExist('ShipInfo.AddInfo.CustomInfos.auto_upgr_ruins'))ShipAddCustomShipInfo(dwd1,'auto_upgr_ruins','NoShow');",
+"Chameleon(dwd1,'Ruins.TC');",
+"ShipType(dwd1,'TC');",
+"ShipOwner(dwd1,0);",
+"//меняем расу оборудки и морду на малоков",
+"for(i=0;i<ShipItems(dwd1);i=i+1)",
+"    {",
+"    if(ItemOwner(ShipItems(dwd1,i))!=0)ItemOwner(ShipItems(dwd1,i),0);",
+"    }",
+"ShipPilotRace(dwd1,0);",
+"//выбираем имя для базы, ищем не повторяющиеся",
+"str0='';",
+"while(str0=='')",
+"    {",
+"    int0=CT('RuinName.TC.Name_count');",
+"    int0=rnd(int0);",
+"    str1=CT('RuinName.TC.'+int0);",
+"    int0=0;",
+"    for(i=0;i<GroupCount(TC0);i=i+1)",
+"        {",
+"        if(int0==1)break;",
+"        if(ShipName(GroupShip(TC0,i))==str1)int0=1;",
+"        }",
+"    if(int0==0)str0=str1;",
+"    }",
+"//устанавливаем имя новому ТЦ",
+"SetName(dwd1,str0);",
+"//выводим сообщение о постройке нового ТЦ, если есть карта сектора где построили ТЦ",
+"if(SectorVisible(StarToCon(dwd0))==1)",
+"    {",
+"    int0=rnd(4);",
+"    if(int0==0)str0=\"Давно мечтали проапгрейдить своё старое ржавое корыто, доставшееся в наследство от прабабушки? Спешите в систему <StarName(dwd0)>, где наши высококвалифицированные специалисты с удовольствием превратят его в настоящую ласточку! Технологический центр <str0> - лучшие расценки в секторе <Name(StarToCon(dwd0))>!\";",
+"    if(int0==1)str0=\"Внимание всем пилотам! В системе <StarName(dwd0)> сектора <Name(StarToCon(dwd0))> главный архитектор только что перерезал красную ленточку нового технологического центра <str0>! Информация на ваших галактических картах уже обновлена.\";",
+"    if(int0==2)str0=\"Сегодня открылся новый технологический центр <str0> в системе <StarName(dwd0)> сектора <Name(StarToCon(dwd0))>. Настоятельно рекомендуем всем небезразличным пилотам в кратчайшие сроки пройти техосмотр своих звездолетов.\";",
+"    if(int0==3)str0=\"Мы рады сообщить вам, что наша сеть технологических центров расширяется! Новая сервисная станция <str0> ждет пилотов в системе <StarName(dwd0)> сектора <Name(StarToCon(dwd0))>! Не пролетайте мимо! Только у нас вы найдете лучшие технологические услуги во всей Галактике!\";",
+"    NewsAdd(str0);",
+"    AddPlanetNews(str0);",
+"    }",
+"//глобалка для прочих скриптов ТЦ + 1",
+"GlobalVarTcCount=GroupCount(TC0);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          240,
+          "Pos.y":          50,
+          "Parent":          -1,
+          "#":          20,
+          "Total.Lines":          22,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"InjectAnswer('chooseService',\"Прошивка оборудования\",1);",
+"InjectAnswer('chooseService',\"Откатить улучшение\",2);",
+"InjectAnswer('chooseService',\"Произвести уникальные улучшения\",3);",
+"InjectAnswer('chooseService',\"Улучшить зонд\",4);",
+"if(ItemOwner(ShipItems(Player(),0))==6)AddDialogBlock(\"Улучшить корпус\",1);",
+"InjectAnswer('hullImprove',\"Улучшить корпус\",1);",
+"InjectAnswer('chooseService',\"Изменить технологическую маркировку\",5);",
+"if(1>2)",
+"{",
+"//временно вырезано",
+"int0=0;",
+"for(i=1;i<ShipItems(Player());i=i+1)",
+"    {",
+"    dwd0=ShipItems(Player(),i);",
+"    if(ItemType(dwd0)!=t_UselessItem && ItemType(dwd0)!=t_UselessCountableItem)continue;",
+"    if(ItemType(dwd0)==t_UselessItem)str0=substr(EquipmentImageName(dwd0),0,6);",
+"    if(ItemType(dwd0)==t_UselessCountableItem)str0=EquipmentImageName(dwd0);",
+"    if(str0=='Nugget')int0=1;",
+"    break;",
+"    }",
+"if(int0==1)InjectAnswer('samorodok',\"Сдать ценные металлы\",1);",
+"}"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          150,
+          "Pos.y":          180,
+          "Parent":          -1,
+          "#":          22,
+          "Total.Lines":          83,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"service=GAnswerData;",
+"ArrayClear(items);",
+"ArrayClear(itemNames);",
+"dwd1=GetShipRuins(Player());",
+"for(i=0;i<ShipItems(Player());i=i+1)",
+"    {",
+"    dwd0=ShipItems(Player(),i);",
+"//у переименования нету исключений по расам",
+"    if(ItemOwner(dwd0)==None && service!=5)continue;",
+"    if(ItemOwner(dwd0)==Kling && service!=5)",
+"        {",
+"//домикооборудка теперь поддерживается",
+"//кроме имховертов...",
+"        if(ItemType(dwd0)>t_Weapon12 && ItemType(dwd0)<t_Weapon16)continue;",
+"//и если ТЦ знает как чинить...",
+"        if(!ShipCanRepairEq(dwd1,dwd0))continue;",
+"        }",
+"//исключения прошивки",
+"    if(service==1)",
+"        {",
+"        if(ItemType(dwd0)<=t_Hull || ItemType(dwd0)>=t_Protoplasm)continue;",
+"        if(ItemLevel(dwd0)==8)continue;",
+"        if(ItemImprovement(dwd0))continue;",
+"        if(ItemLevel(dwd0)>=GalaxyTechLevel())continue;",
+"        if(ItemExtraSpecialsCountByType(dwd0,FindBonusByName('proshiv'))>0)continue;",
+"        }",
+"//исключения снятия улучшения",
+"    if(service==2)",
+"        {",
+"        if(ItemType(dwd0)<t_Hull || ItemType(dwd0)>=t_Protoplasm)continue;",
+"        if(!ItemImprovement(dwd0))continue;",
+"        if(EqSpecial(dwd0)>=0)",
+"            {",
+"            if(BonusPriority(EqSpecial(dwd0))<10)continue;",
+"            }",
+"        }",
+"//исключения уникального улучшения",
+"    if(service==3)",
+"        {",
+"        if(ItemType(dwd0)<t_Engine || ItemType(dwd0)>=t_Protoplasm)continue;",
+"        if(ItemType(dwd0)==t_Radar || ItemType(dwd0)==t_Scaner || ItemType(dwd0)==t_RepairRobot || ItemType(dwd0)==t_DefGenerator)continue;",
+"        if(ItemInScript(dwd0))",
+"            {",
+"            if(ItemType(dwd0)==t_CustomWeapon)",
+"                {",
+"//уникальное улучшение точности физгана",
+"                if(CustomWeaponType(dwd0)=='Fizgun')",
+"                    {",
+"                    if(ScriptItemData(dwd0,3)!=-1)continue;",
+"                    }",
+"                }",
+"            else continue;",
+"            }",
+"        else",
+"            {",
+"            if(ItemImprovement(dwd0))continue;",
+"            }",
+"        }",
+"//исключения улучшение зонда",
+"    if(service==4)",
+"        {",
+"        if(ItemType(dwd0)!=t_Satellite)continue;",
+"        if(ItemExtraSpecialsCountByType(dwd0,FindBonusByName('uniq_upgrade'))>0)continue;",
+"        }",
+"//исключения переименования",
+"    if(service==5)",
+"        {",
+"        if(ItemType(dwd0)<t_Hull || ItemType(dwd0)>=t_Protoplasm)continue;",
+"        if(ItemInScript(dwd0))continue;",
+"        }",
+"//дополнительная строка для оружия",
+"    str0='';",
+"    if(ItemLevel(dwd0)==1)str0=' A';",
+"    if(ItemLevel(dwd0)==2)str0=' B';",
+"    if(ItemLevel(dwd0)==3)str0=' C';",
+"    if(ItemLevel(dwd0)==4)str0=' D';",
+"    if(ItemLevel(dwd0)==5)str0=' E';",
+"    if(ItemLevel(dwd0)==6)str0=' F';",
+"    if(ItemLevel(dwd0)==7)str0=' G';",
+"    ArrayAdd(items,dwd0);",
+"    if(ItemType(dwd0)>t_DefGenerator)ArrayAdd(itemNames,DeleteTags(ItemFullName(dwd0)+str0));",
+"    if(ItemType(dwd0)<=t_DefGenerator)ArrayAdd(itemNames,DeleteTags(ItemFullName(dwd0)));",
+"    }"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          240,
+          "Pos.y":          260,
+          "Parent":          -1,
+          "#":          25,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"InjectAnswer('MainDialog',\"Воспользуюсь услугами других специалистов\",1);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          240,
+          "Pos.y":          180,
+          "Parent":          -1,
+          "#":          35,
+          "Total.Lines":          13,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"for(i=1;i<ArrayDim(items);i=i+1)",
+"    {",
+"    dwd0=items[i];",
+"    str0=itemNames[i];",
+"    if(service==2)",
+"        {",
+"        str0=itemNames[i]+' за '+ItemCost(dwd0)*2+' cr';",
+"        if(ShipMoney(Player())<ItemCost(dwd0)*2)AddDialogBlock(str0,1);",
+"        else str0=itemNames[i]+\" за <ItemCost(dwd0)*2> cr\";",
+"        }",
+"    InjectAnswer('Service',str0,dwd0);",
+"    }",
+"InjectAnswer('MainDialog',\"Воспользуюсь услугами других специалистов\",1);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          390,
+          "Pos.y":          160,
+          "Parent":          -1,
+          "#":          37,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"curItem=GAnswerData;"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          460,
+          "Pos.y":          190,
+          "Parent":          -1,
+          "#":          39,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"serviceCost=(ItemCost(curItem)*130)/100;"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          540,
+          "Pos.y":          190,
+          "Parent":          -1,
+          "#":          41,
+          "Total.Lines":          37,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"ArrayClear(array0);",
+"if(ItemType(curItem)==t_Engine)",
+"    {",
+"    ArrayAdd(array0,\"<clrEnd>Скорость\");",
+"    ArrayAdd(array0,\"<clrEnd>Дальность прыжка\");",
+"    }",
+"if(ItemType(curItem)==t_CargoHook)",
+"    {",
+"    ArrayAdd(array0,\"<clrEnd>Мощность захвата\");",
+"    ArrayAdd(array0,\"<clrEnd>Дальность захвата\");",
+"    }",
+"if(ItemType(curItem)>t_DefGenerator && ItemType(curItem)<=t_CustomWeapon && !ItemInScript(curItem))",
+"    {",
+"    int0=1;",
+"    if(ItemType(curItem)==t_Weapon4)int0=0;",
+"    if(ItemType(curItem)==t_Weapon15)int0=0;",
+"    if(ItemType(curItem)==t_Weapon18)int0=0;",
+"    if(ItemType(curItem)==t_CustomWeapon)",
+"        {",
+"        if(GetCustomWeaponPrimaryDamageType(CustomWeaponType(curItem))==0)int0=1;//энерго",
+"        if(GetCustomWeaponPrimaryDamageType(CustomWeaponType(curItem))==1)int0=1;//осколок",
+"        if(GetCustomWeaponPrimaryDamageType(CustomWeaponType(curItem))==2)int0=0;//ракетный тип",
+"        }",
+"    ArrayAdd(array0,\"<clrEnd>Урон\");",
+"    if(int0==1)ArrayAdd(array0,\"<clrEnd>Дальность стрельбы\");",
+"    }",
+"if(ItemType(curItem)==t_CustomWeapon && ItemInScript(curItem))",
+"    {",
+"    if(CustomWeaponType(curItem)=='Fizgun')",
+"        {",
+"        if(ScriptItemData(curItem,3)==-1)ArrayAdd(array0,\"<clrEnd>Улучшение точности Физгана\");",
+"        }",
+"    }",
+"if(ArrayDim(array0)>=2 && ShipMoney(Player())>=serviceCost)InjectAnswer('uniUp',array0[1],0);",
+"if(ArrayDim(array0)>=3 && ShipMoney(Player())>=serviceCost)InjectAnswer('uniUp',array0[2],1);",
+"InjectAnswer('chooseService',\"Выбрать другой предмет\",3);",
+"InjectAnswer('MainDialog',\"Воспользуюсь услугами других специалистов\",1);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          540,
+          "Pos.y":          260,
+          "Parent":          -1,
+          "#":          43,
+          "Total.Lines":          51,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"int0=GAnswerData;",
+"if(!ItemInScript(curItem))",
+"    {",
+"    if(ItemType(curItem)!=t_CustomWeapon)clonItem=CreateEquipment(ItemType(curItem),ItemSize(curItem),ItemLevel(curItem),ItemOwner(curItem));",
+"    if(ItemType(curItem)==t_CustomWeapon)clonItem=CreateCustomWeapon(CustomWeaponType(curItem),ItemSize(curItem),ItemLevel(curItem),ItemOwner(curItem));",
+"    if(EqModule(curItem)>-1)ModuleToEquipment(EqModule(curItem),clonItem);",
+"    if(EqSpecial(curItem)>-1)SpecialToEquipment(EqSpecial(curItem),clonItem);",
+"    ItemCost(clonItem,ItemCost(curItem));",
+"    ItemImprovement(clonItem,2,int0+1);",
+"    }",
+"if(ItemType(curItem)==t_Engine || ItemType(curItem)==t_CargoHook)",
+"    {",
+"    int1=GetEquipmentStats(clonItem,int0)-GetEquipmentStats(curItem,int0);",
+"    int1=int1+(int1*60)/100;",
+"    int1=GetEquipmentStats(curItem,int0)+int1;",
+"    SetEquipmentStats(curItem,int1,int0);",
+"    }",
+"if(ItemType(curItem)>t_DefGenerator && ItemType(curItem)<=t_CustomWeapon && !ItemInScript(curItem))",
+"    {",
+"    if(int0==1)",
+"        {",
+"        int0=2;",
+"        int1=GetEquipmentStats(clonItem,int0)-GetEquipmentStats(curItem,int0);",
+"        int1=int1*2;",
+"        int1=GetEquipmentStats(curItem,int0)+int1;",
+"        SetEquipmentStats(curItem,int1,int0);",
+"        }",
+"    if(int0==0)",
+"        {",
+"        int1=GetEquipmentStats(clonItem,int0)-GetEquipmentStats(curItem,int0);",
+"        int1=int1*2;",
+"        int1=GetEquipmentStats(curItem,int0)+int1;",
+"        SetEquipmentStats(curItem,int1,int0);",
+"        }",
+"    }",
+"if(ItemType(curItem)==t_CustomWeapon && ItemInScript(curItem))",
+"    {",
+"    if(ItemType(curItem)==t_CustomWeapon)",
+"        {",
+"//улучшение физгана на точность",
+"        if(CustomWeaponType(curItem)=='Fizgun')",
+"            {",
+"            if(ScriptItemData(curItem,3)==-1)ScriptItemData(curItem,3,0);",
+"            }",
+"        }",
+"    }",
+"ShipMoney(Player(),ShipMoney(Player())-serviceCost);",
+"//цена уникально-улучшенного предмета вычисляется ванильной формулой улучшения лучших спецов",
+"ItemCost(curItem,ItemCost(clonItem));",
+"if(clonItem)FreeItem(clonItem);",
+"Sound('Sound.Repair');"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          420,
+          "Pos.y":          220,
+          "Parent":          -1,
+          "#":          45,
+          "Total.Lines":          2,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"InjectAnswer('chooseService',\"Выбрать другой предмет\",3);",
+"InjectAnswer('MainDialog',\"Воспользуюсь услугами других специалистов\",1);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          420,
+          "Pos.y":          40,
+          "Parent":          -1,
+          "#":          47,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"serviceCost=ItemCost(curItem)+GalaxyMoney(ItemOwner(curItem),4);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          540,
+          "Pos.y":          40,
+          "Parent":          -1,
+          "#":          49,
+          "Total.Lines":          9,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"if(ShipMoney(Player())>=serviceCost)",
+"    {",
+"    InjectAnswer('ZondUp',\"Исследование водных поверхностей\",0);",
+"    InjectAnswer('ZondUp',\"Исследование равнинных поверхностей\",1);",
+"    InjectAnswer('ZondUp',\"Исследование горных поверхностей\",2);",
+"    InjectAnswer('ZondUp',\"Распределить улучшение равномерно\",3);",
+"    }",
+"InjectAnswer('chooseService',\"Выбрать другой предмет\",4);",
+"InjectAnswer('MainDialog',\"Воспользуюсь услугами других специалистов\",1);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          540,
+          "Pos.y":          70,
+          "Parent":          -1,
+          "#":          51,
+          "Total.Lines":          23,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"int0=GAnswerData;",
+"if(int0!=3)",
+"    {",
+"    int1=GetEquipmentStats(curItem,int0)+((GetEquipmentStats(curItem,int0)*60)/100)+Rnd(1,3);",
+"    SetEquipmentStats(curItem,int1,int0);",
+"    }",
+"else",
+"    {",
+"    int1=GetEquipmentStats(curItem,0)+((GetEquipmentStats(curItem,0)*30)/100)+Rnd(1,2);",
+"    SetEquipmentStats(curItem,int1,0);",
+"    int1=GetEquipmentStats(curItem,1)+((GetEquipmentStats(curItem,1)*30)/100)+Rnd(1,2);",
+"    SetEquipmentStats(curItem,int1,1);",
+"    int1=GetEquipmentStats(curItem,2)+((GetEquipmentStats(curItem,2)*30)/100)+Rnd(1,2);",
+"    SetEquipmentStats(curItem,int1,2);",
+"    }",
+"itemCost=ItemCost(curItem)+(ItemCost(curItem)*40)/100;",
+"ItemCost(curItem,itemCost);",
+"int0=ItemSize(curItem)+((ItemSize(curItem)*30)/100);",
+"ItemSize(curItem,int0);",
+"ItemExtraSpecialsAddByType(curItem,FindBonusByName('uniq_upgrade'),1);",
+"ItemExtraSpecialsAddByType(curItem,FindBonusByName('Fragility_10_plus'),1);",
+"ShipMoney(Player(),ShipMoney(Player())-serviceCost);",
+"Sound('Sound.Repair');"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          440,
+          "Pos.y":          100,
+          "Parent":          -1,
+          "#":          53,
+          "Total.Lines":          2,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"InjectAnswer('chooseService',\"Выбрать другой предмет\",4);",
+"InjectAnswer('MainDialog',\"Воспользуюсь услугами других специалистов\",1);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          290,
+          "Pos.y":          190,
+          "Parent":          -1,
+          "#":          55,
+          "Total.Lines":          53,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"serviceCost=ItemCost(curItem)*2;",
+"clonAcryn=-1;",
+"clonModule=-1;",
+"if(ItemType(curItem)!=t_CustomWeapon)clonItem=CreateEquipment(ItemType(curItem),ItemSize(curItem),ItemLevel(curItem),ItemOwner(curItem));",
+"if(ItemType(curItem)==t_CustomWeapon)clonItem=CreateCustomWeapon(CustomWeaponType(curItem),ItemSize(curItem),ItemLevel(curItem),ItemOwner(curItem));",
+"if(EqSpecial(curItem)>-1)",
+"    {",
+"    clonAcryn=EqSpecial(curItem);",
+"    SpecialToEquipment(-1,curItem);",
+"    }",
+"if(EqModule(curItem)>-1)",
+"    {",
+"    clonModule=EqModule(curItem);",
+"    ModuleToEquipment(-1,curItem);",
+"    }",
+"if(ItemType(curItem)>t_DefGenerator && ItemType(curItem)<=t_CustomWeapon)",
+"    {",
+"    SetEquipmentStats(curItem,GetEquipmentStats(clonItem,0),0);",
+"    SetEquipmentStats(curItem,GetEquipmentStats(clonItem,1),1);",
+"    SetEquipmentStats(curItem,GetEquipmentStats(clonItem,2),2);",
+"    }",
+"else",
+"    {",
+"    if(ItemType(curItem)==t_Engine || ItemType(curItem)==t_CargoHook)",
+"        {",
+"        SetEquipmentStats(curItem,GetEquipmentStats(clonItem,0),0);",
+"        SetEquipmentStats(curItem,GetEquipmentStats(clonItem,1),1);",
+"        }",
+"    else SetEquipmentStats(curItem,GetEquipmentStats(clonItem,0),0);",
+"    }",
+"if(clonAcryn>-1)SpecialToEquipment(clonAcryn,curItem);",
+"if(clonModule>-1)ModuleToEquipment(clonModule,curItem);",
+"FreeItem(clonItem);",
+"ShipMoney(Player(),ShipMoney(Player())-serviceCost);",
+"ItemExtraSpecialsAddByType(curItem,FindBonusByName('Fragility_10_minus'),1);",
+"//цена предмета после снятия улучшения меньше на 5% изначальной",
+"itemCost=ItemCost(curItem)*95;",
+"itemCost=itemCost/100;",
+"ItemCost(curItem,itemCost);",
+"if(ItemExtraSpecials(curItem)>0)",
+"    {",
+"    for(i=ItemExtraSpecials(curItem)-1;i>-1;i=i-1)",
+"        {",
+"        int0=ItemExtraSpecials(curItem,i);",
+"        str0=CT('MicroModuls.'+BonusNumInCfg(int0)+'.Name');",
+"        if(findsubstr(str0,'Modify_')==0)",
+"            {",
+"            int1=ItemExtraSpecialsCountByType(curItem,int0);",
+"            ItemExtraSpecialsDeleteByType(curItem,int0,int1);",
+"            }",
+"        }",
+"    }",
+"Sound('Sound.Repair');"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          350,
+          "Pos.y":          260,
+          "Parent":          -1,
+          "#":          57,
+          "Total.Lines":          2,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"InjectAnswer('chooseService',\"Выбрать другой предмет\",2);",
+"InjectAnswer('MainDialog',\"Воспользуюсь услугами других специалистов\",1);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          290,
+          "Pos.y":          100,
+          "Parent":          -1,
+          "#":          59,
+          "Total.Lines":          30,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"//высчитываем модифицированную цену предмета",
+"if(ItemType(curItem)!=t_CustomWeapon)clonItem=CreateEquipment(ItemType(curItem),ItemSize(curItem),ItemLevel(curItem),ItemOwner(curItem));",
+"if(ItemType(curItem)==t_CustomWeapon)clonItem=CreateCustomWeapon(CustomWeaponType(curItem),ItemSize(curItem),ItemLevel(curItem),ItemOwner(curItem));",
+"if(EqModule(curItem)>-1)ModuleToEquipment(EqModule(curItem),clonItem);",
+"if(EqSpecial(curItem)>-1)SpecialToEquipment(EqSpecial(curItem),clonItem);",
+"//costPercent - на сколько процентов отличаются цены",
+"//если не отличаются, то 100",
+"if(abs(ItemCost(curItem)-ItemCost(clonItem))>100)",
+"    {",
+"    costPercent=ItemCost(curItem)*100;",
+"    costPercent=costPercent/ItemCost(clonItem);",
+"    }",
+"else costPercent=100;",
+"FreeItem(clonItem);",
+"//цена прошитого предмета на 30% выше",
+"costPercent=costPercent+30;",
+"for(i=1;i<8;i=i+1)",
+"    {",
+"    levelProshivka[i]=0;",
+"    if(ItemType(curItem)!=t_CustomWeapon)clonItem=CreateEquipment(ItemType(curItem),ItemSize(curItem),1+i,ItemOwner(curItem));",
+"    if(ItemType(curItem)==t_CustomWeapon)clonItem=CreateCustomWeapon(CustomWeaponType(curItem),ItemSize(curItem),1+i,ItemOwner(curItem));",
+"    if(EqModule(curItem)>-1)ModuleToEquipment(EqModule(curItem),clonItem);",
+"    if(EqSpecial(curItem)>-1)SpecialToEquipment(EqSpecial(curItem),clonItem);",
+"    costProshivka[i]=ItemCost(clonItem)*costPercent;",
+"    costProshivka[i]=costProshivka[i]/100;",
+"    FreeItem(clonItem);",
+"    if(ItemType(curItem)>=t_Weapon1)int0=3;",
+"    if(ItemType(curItem)>t_Hull && ItemType(curItem)<t_Weapon1)int0=2;",
+"    if(i<=ItemLevel(curItem)-1+int0 && i!=ItemLevel(curItem)-1 && i>ItemLevel(curItem)-1 && GalaxyTechLevel()>i)levelProshivka[i]=1;",
+"    }"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          290,
+          "Pos.y":          40,
+          "Parent":          -1,
+          "#":          61,
+          "Total.Lines":          22,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"for(i=1;i<8;i=i+1)",
+"    {",
+"    if(i==1)str0='B';",
+"    if(i==2)str0='C';",
+"    if(i==3)str0='D';",
+"    if(i==4)str0='E';",
+"    if(i==5)str0='F';",
+"    if(i==6)str0='G';",
+"    if(i==7)str0='H';",
+"    if(levelProshivka[i]==1)",
+"        {",
+"        if(ShipMoney(Player())<costProshivka[i])",
+"            {",
+"            str0=str0+\"-тип, цена прошивки: \"+' '+costProshivka[i]+\" cr\";",
+"            AddDialogBlock(str0,1);",
+"            }",
+"        else str0=str0+\"-тип, цена прошивки: <costProshivka[i]> cr\";",
+"        InjectAnswer('Proshivka',str0,i);",
+"        }",
+"    }",
+"InjectAnswer('chooseService',\"Выбрать другой предмет\",1);",
+"InjectAnswer('MainDialog',\"Воспользуюсь услугами других специалистов\",1);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          320,
+          "Pos.y":          80,
+          "Parent":          -1,
+          "#":          63,
+          "Total.Lines":          7,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"int0=GAnswerData;",
+"ShipMoney(Player(),ShipMoney(Player())-costProshivka[int0]);",
+"ItemLevel(curItem,1+int0);",
+"ItemExtraSpecialsAddByType(curItem,FindBonusByName('Fragility_10_minus'),1);",
+"ItemExtraSpecialsAddByType(curItem,FindBonusByName('proshiv'),1);",
+"ItemCost(curItem,costProshivka[int0]);",
+"Sound('Sound.Repair');"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          370,
+          "Pos.y":          110,
+          "Parent":          -1,
+          "#":          65,
+          "Total.Lines":          2,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"InjectAnswer('chooseService',\"Выбрать другой предмет\",1);",
+"InjectAnswer('MainDialog',\"Воспользуюсь услугами других специалистов\",1);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          640,
+          "Pos.y":          80,
+          "Parent":          -1,
+          "#":          93,
+          "Total.Lines":          4,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"InjectAnswer('Slots0',\"Установка дополнительного оборудования\",1);",
+"InjectAnswer('Slots0',\"Демонтаж лишнего оборудования\",2);",
+"InjectAnswer('Suspectibility0',\"Меня интересует напыление защитного слоя\",1);",
+"InjectAnswer('SaveShip',\"Хочу установить спасательную капсулу\",1);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          580,
+          "Pos.y":          80,
+          "Parent":          -1,
+          "#":          94,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"curItem=ShipItems(Player(),0);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          640,
+          "Pos.y":          110,
+          "Parent":          -1,
+          "#":          96,
+          "Total.Lines":          11,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"servType=GAnswerData;",
+"if(servType==1)",
+"    {",
+"    str0=\"уменьшается\";",
+"    serviceCost=(ItemCost(curItem)*50)/100+GalaxyMoney(0);",
+"    }",
+"if(servType==2)",
+"    {",
+"    str0=\"увеличивается\";",
+"    serviceCost=(ItemCost(curItem)*10)/100+GalaxyMoney(0);",
+"    }"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          580,
+          "Pos.y":          140,
+          "Parent":          -1,
+          "#":          98,
+          "Total.Lines":          32,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"clonItem=CreateHull(HullType(curItem),ItemSize(curItem),ItemLevel(curItem),ItemOwner(curItem));",
+"HullSeries(clonItem,HullSeries(curItem));",
+"if(EqModule(curItem)>-1)ModuleToEquipment(EqModule(curItem),clonItem);",
+"if(EqSpecial(curItem)>-1)SpecialToEquipment(EqSpecial(curItem),clonItem);",
+"ItemExtraSpecialsAddByType(clonItem,FindBonusByName('all_slots_plus'),1);",
+"for(i=0;i<ItemExtraSpecials(curItem);i=i+1)",
+"    {",
+"    int0=ItemExtraSpecials(curItem,i);",
+"    int1=ItemExtraSpecialsCountByType(curItem,int0);",
+"    ItemExtraSpecialsAddByType(clonItem,int0,int1);",
+"    }",
+"for(i=1;i<9;i=i+1)",
+"    {",
+"    if(i==1)str0=\"Оружейные системы\";",
+"    if(i==2)str0=\"Системы дополнительного оборудования\";",
+"    if(i==3)str0=\"Системы радара\";",
+"    if(i==4)str0=\"Системы сканера\";",
+"    if(i==5)str0=\"Ремонтные системы\";",
+"    if(i==6)str0=\"Системы захвата\";",
+"    if(i==7)str0=\"Системы генератора защитного поля\";",
+"    if(i==8)str0=\"Системы форсажа\";",
+"    if(GetEquipmentStats(clonItem,i)==GetEquipmentStats(curItem,i))AddDialogBlock(str0,1);",
+"    }",
+"InjectAnswer('Slots1',\"Оружейные системы\",1);",
+"InjectAnswer('Slots1',\"Системы дополнительного оборудования\",2);",
+"InjectAnswer('Slots1',\"Системы радара\",3);",
+"InjectAnswer('Slots1',\"Системы сканера\",4);",
+"InjectAnswer('Slots1',\"Ремонтные системы\",5);",
+"InjectAnswer('Slots1',\"Системы захвата\",6);",
+"InjectAnswer('Slots1',\"Системы генератора защитного поля\",7);",
+"InjectAnswer('Slots1',\"Системы форсажа\",8);",
+"FreeItem(clonItem);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          580,
+          "Pos.y":          190,
+          "Parent":          -1,
+          "#":          102,
+          "Total.Lines":          32,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"clonItem=CreateHull(HullType(curItem),ItemSize(curItem),ItemLevel(curItem),ItemOwner(curItem));",
+"HullSeries(clonItem,HullSeries(curItem));",
+"if(EqModule(curItem)>-1)ModuleToEquipment(EqModule(curItem),clonItem);",
+"if(EqSpecial(curItem)>-1)SpecialToEquipment(EqSpecial(curItem),clonItem);",
+"ItemExtraSpecialsAddByType(clonItem,FindBonusByName('all_slots_minus'),1);",
+"for(i=0;i<ItemExtraSpecials(curItem);i=i+1)",
+"    {",
+"    int0=ItemExtraSpecials(curItem,i);",
+"    int1=ItemExtraSpecialsCountByType(curItem,int0);",
+"    ItemExtraSpecialsAddByType(clonItem,int0,int1);",
+"    }",
+"for(i=1;i<9;i=i+1)",
+"    {",
+"    if(i==1)str0=\"Оружейные системы\";",
+"    if(i==2)str0=\"Системы дополнительного оборудования\";",
+"    if(i==3)str0=\"Системы радара\";",
+"    if(i==4)str0=\"Системы сканера\";",
+"    if(i==5)str0=\"Ремонтные системы\";",
+"    if(i==6)str0=\"Системы захвата\";",
+"    if(i==7)str0=\"Системы генератора защитного поля\";",
+"    if(i==8)str0=\"Системы форсажа\";",
+"    if(GetEquipmentStats(clonItem,i)==GetEquipmentStats(curItem,i))AddDialogBlock(str0,1);",
+"    }",
+"InjectAnswer('Slots1',\"Оружейные системы\",1);",
+"InjectAnswer('Slots1',\"Системы дополнительного оборудования\",2);",
+"InjectAnswer('Slots1',\"Системы радара\",3);",
+"InjectAnswer('Slots1',\"Системы сканера\",4);",
+"InjectAnswer('Slots1',\"Ремонтные системы\",5);",
+"InjectAnswer('Slots1',\"Системы захвата\",6);",
+"InjectAnswer('Slots1',\"Системы генератора защитного поля\",7);",
+"InjectAnswer('Slots1',\"Системы форсажа\",8);",
+"FreeItem(clonItem);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          580,
+          "Pos.y":          260,
+          "Parent":          -1,
+          "#":          104,
+          "Total.Lines":          19,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"if(GAnswerData==1)str0='weapon';",
+"if(GAnswerData==2)str0='art';",
+"if(GAnswerData==3)str0='radar';",
+"if(GAnswerData==4)str0='scaner';",
+"if(GAnswerData==5)str0='droid';",
+"if(GAnswerData==6)str0='hook';",
+"if(GAnswerData==7)str0='def';",
+"if(GAnswerData==8)str0='forsage';",
+"if(servType==1)str0='add_slot_'+str0;",
+"if(servType==2)str0='del_slot_'+str0;",
+"int0=(ItemSize(curItem)*10)/100;",
+"if(GAnswerData==2 || GAnswerData==8)int0=(ItemSize(curItem)*5)/100;",
+"if(servType==1)ItemSize(curItem,ItemSize(curItem)-int0);",
+"if(servType==2)ItemSize(curItem,ItemSize(curItem)+int0);",
+"ItemExtraSpecialsAddByType(curItem,FindBonusByName(str0),1);",
+"ItemExtraSpecialsAddByType(curItem,FindBonusByName('del_balance_10'),1);",
+"HullHP(Player(),ItemSize(curItem));",
+"ShipMoney(Player(),ShipMoney(Player())-serviceCost);",
+"Sound('Sound.Sell');"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          690,
+          "Pos.y":          150,
+          "Parent":          -1,
+          "#":          109,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"serviceCost=(ItemCost(curItem)*20)/100+GalaxyMoney(0);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          760,
+          "Pos.y":          260,
+          "Parent":          -1,
+          "#":          114,
+          "Total.Lines":          5,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"ItemExtraSpecialsAddByType(curItem,FindBonusByCustomTag('empty_second_life'),1);",
+"ShipMoney(Player(),ShipMoney(Player())-serviceCost);",
+"Sound('Sound.Repair');",
+"int0=ShipFindCustomShipInfoByType(Player(),'S_capsula_infos');",
+"if(int0==-1)ShipAddCustomShipInfo(Player(),'S_capsula_infos','NoShow');"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          860,
+          "Pos.y":          100,
+          "Parent":          -1,
+          "#":          124,
+          "Total.Lines":          6,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"int0=GalaxyMoney(0)+(ItemCost(curItem)*10)/100;",
+"if(ShipMoney(Player())>=int0)InjectAnswer('Suspectibilit1',\"Один слой, за <int0> cr\",1);",
+"int0=GalaxyMoney(0)+(ItemCost(curItem)*25)/100;",
+"if(ShipMoney(Player())>=int0)InjectAnswer('Suspectibilit1',\"Два слоя, за <int0> cr\",2);",
+"int0=GalaxyMoney(0)+(ItemCost(curItem)*50)/100;",
+"if(ShipMoney(Player())>=int0)InjectAnswer('Suspectibilit1',\"Три слоя, за <int0> cr\",3);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          860,
+          "Pos.y":          160,
+          "Parent":          -1,
+          "#":          127,
+          "Total.Lines":          4,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"InjectAnswer('Suspectibilit2',\"Смешайте все типы равномерно\",1);",
+"InjectAnswer('Suspectibilit2',\"Антиэнергетическое напыление\",2);",
+"InjectAnswer('Suspectibilit2',\"Антиосколочное напыление\",3);",
+"InjectAnswer('Suspectibilit2',\"Антиракетное напыление\",4);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          800,
+          "Pos.y":          230,
+          "Parent":          -1,
+          "#":          131,
+          "Total.Lines":          9,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"if(GAnswerData==1)str0='balance';",
+"if(GAnswerData==2)str0='energo';",
+"if(GAnswerData==3)str0='splinter';",
+"if(GAnswerData==4)str0='rocket';",
+"str0='add_'+str0+'_'+servType;",
+"SetEquipmentStats(curItem,GetEquipmentStats(curItem,0)+servType,0);",
+"ItemExtraSpecialsAddByType(curItem,FindBonusByName(str0),1);",
+"ShipMoney(Player(),ShipMoney(Player())-serviceCost);",
+"Sound('Sound.Repair');"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          800,
+          "Pos.y":          160,
+          "Parent":          -1,
+          "#":          136,
+          "Total.Lines":          4,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"servType=GAnswerData;",
+"if(servType==1)serviceCost=GalaxyMoney(0)+(ItemCost(curItem)*10)/100;",
+"if(servType==2)serviceCost=GalaxyMoney(0)+(ItemCost(curItem)*25)/100;",
+"if(servType==3)serviceCost=GalaxyMoney(0)+(ItemCost(curItem)*50)/100;"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          500,
+          "Pos.y":          160,
+          "Parent":          -1,
+          "#":          142,
+          "Total.Lines":          4,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"if(ShipMoney(Player())>99)InjectAnswer('Rename',\"Уже придумал, меняйте на...\",1);",
+"if(ShipMoney(Player())<100)InjectAnswer('Rename',\"Это слишком дорого для меня\",2);",
+"InjectAnswer('chooseService',\"Выбрать другой предмет\",5);",
+"InjectAnswer('MainDialog',\"Воспользуюсь услугами других специалистов\",1);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          420,
+          "Pos.y":          140,
+          "Parent":          -1,
+          "#":          147,
+          "Total.Lines":          2,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"InjectAnswer('chooseService',\"Выбрать другой предмет\",5);",
+"InjectAnswer('MainDialog',\"Воспользуюсь услугами других специалистов\",1);"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          470,
+          "Pos.y":          140,
+          "Parent":          -1,
+          "#":          148,
+          "Total.Lines":          4,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"str0=TextBox(\"Новая маркировка предмета:\",ShortName(curItem));",
+"SetName(curItem,str0);",
+"ShipMoney(Player(),ShipMoney(Player())-100);",
+"Sound('Sound.Repair');"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          80,
+          "Pos.y":          120,
+          "Parent":          -1,
+          "#":          157,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"GAnswerData=1;"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          80,
+          "Pos.y":          150,
+          "Parent":          -1,
+          "#":          158,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"GAnswerData=2;"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          80,
+          "Pos.y":          180,
+          "Parent":          -1,
+          "#":          159,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"GAnswerData=3;"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          80,
+          "Pos.y":          210,
+          "Parent":          -1,
+          "#":          160,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"GAnswerData=4;"          
+          ]        
+        },
+        {
+          "Type":"Top",
+          "Name":"",
+          "Pos.x":          80,
+          "Pos.y":          240,
+          "Parent":          -1,
+          "#":          161,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"GAnswerData=5;"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":"TPlanet",
+          "Name":"PlanetNew",
+          "Pos.x":          -100,
+          "Pos.y":          180,
+          "Parent":          -1,
+          "#":          2,
+          "Race":          62,
+          "Owner":          62,
+          "Economy":          14,
+          "Goverment":          62,
+          "RangeMin":          0,
+          "RangeMax":          100,
+          "Dialog":          -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":"TStarShip",
+          "Name":"",
+          "Pos.x":          -100,
+          "Pos.y":          100,
+          "Parent":          -1,
+          "#":          0,
+          "Count":          1,
+          "Owner":          62,
+          "Ship.Type":          126,
+          "Player":true,
+          "SpeedMin":          0,
+          "SpeedMax":          10000,
+          "Weapon":          0,
+          "CargoHook":          0,
+          "EmptySpace":          0,
+          "StatusTraderMin":          0,
+          "StatusTraderMax":          100,
+          "StatusWarriorMin":          0,
+          "StatusWarriorMax":          100,
+          "StatusPirateMin":          0,
+          "StatusPirateMax":          100,
+          "StrengthMin":"0",
+          "StrengthMax":"0",
+          "Ruins":""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":"TStar",
+          "Name":"StarNew",
+          "Pos.x":          -100,
+          "Pos.y":          130,
+          "Parent":          -1,
+          "#":          1,
+          "Constellation":          0,
+          "Priority":          0,
+          "NoKling":false,
+          "NoComeKling":false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          -150,
+          "Pos.y":          50,
+          "Parent":          -1,
+          "#":          9,
+          "Total.Lines":          1,
+          "Code.Type":"DialogBegin",
+          "Code":          
+          [
+"GetShipRuins(Player())>0"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          -90,
+          "Pos.y":          50,
+          "Parent":          -1,
+          "#":          10,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"ShipType(GetShipRuins(Player()))=='TC'"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          -150,
+          "Pos.y":          70,
+          "Parent":          -1,
+          "#":          12,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"!ShipIsTakeoff(Player())"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          -100,
+          "Pos.y":          70,
+          "Parent":          -1,
+          "#":          14,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"buildTC==1"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          -50,
+          "Pos.y":          70,
+          "Parent":          -1,
+          "#":          16,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"buildTC==2"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          150,
+          "Pos.y":          210,
+          "Parent":          -1,
+          "#":          23,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"ArrayDim(items)<2"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          170,
+          "Pos.y":          180,
+          "Parent":          -1,
+          "#":          26,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"ArrayDim(items)>1"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          190,
+          "Pos.y":          120,
+          "Parent":          -1,
+          "#":          27,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"service==1"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          190,
+          "Pos.y":          150,
+          "Parent":          -1,
+          "#":          28,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"service==2"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          190,
+          "Pos.y":          180,
+          "Parent":          -1,
+          "#":          29,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"service==3"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          190,
+          "Pos.y":          210,
+          "Parent":          -1,
+          "#":          30,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"service==4"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          420,
+          "Pos.y":          190,
+          "Parent":          -1,
+          "#":          38,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"service==3"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          420,
+          "Pos.y":          100,
+          "Parent":          -1,
+          "#":          46,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"service==4"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          350,
+          "Pos.y":          190,
+          "Parent":          -1,
+          "#":          54,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"service==2"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          290,
+          "Pos.y":          130,
+          "Parent":          -1,
+          "#":          58,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"service==1"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          610,
+          "Pos.y":          140,
+          "Parent":          -1,
+          "#":          100,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"servType==1"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          640,
+          "Pos.y":          190,
+          "Parent":          -1,
+          "#":          101,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"servType==2"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          760,
+          "Pos.y":          150,
+          "Parent":          -1,
+          "#":          111,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"ShipMoney(Player())>=serviceCost"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          690,
+          "Pos.y":          110,
+          "Parent":          -1,
+          "#":          115,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"ItemExtraSpecialsCountByType(curItem,FindBonusByCustomTag('empty_second_life'))==0"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          720,
+          "Pos.y":          70,
+          "Parent":          -1,
+          "#":          116,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"ItemExtraSpecialsCountByType(curItem,FindBonusByCustomTag('empty_second_life'))!=0"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          860,
+          "Pos.y":          80,
+          "Parent":          -1,
+          "#":          122,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"!ItemImprovement(curItem)"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          800,
+          "Pos.y":          80,
+          "Parent":          -1,
+          "#":          132,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"ItemImprovement(curItem)"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          190,
+          "Pos.y":          240,
+          "Parent":          -1,
+          "#":          138,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"service==5"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          420,
+          "Pos.y":          160,
+          "Parent":          -1,
+          "#":          140,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"service==5"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          460,
+          "Pos.y":          120,
+          "Parent":          -1,
+          "#":          144,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"GAnswerData==2"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          490,
+          "Pos.y":          140,
+          "Parent":          -1,
+          "#":          145,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"GAnswerData==1"          
+          ]        
+        },
+        {
+          "Type":"Tif",
+          "Name":"",
+          "Pos.x":          110,
+          "Pos.y":          50,
+          "Parent":          -1,
+          "#":          151,
+          "Total.Lines":          1,
+          "Code.Type":"Turn",
+          "Code":          
+          [
+"1>2"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":"TState",
+          "Name":"StateNew",
+          "Pos.x":          -100,
+          "Pos.y":          260,
+          "Parent":          -1,
+          "#":          4,
+          "Move":          0,
+          "MoveObj":          -1,
+          "Attack.Count":          0,
+          "TakeItem":          -1,
+          "TakeAllItem":false,
+          "OnTalk":"",
+          "OnActCode":"",
+          "EType":          1,
+          "EUnique":"",
+          "EMsg":""        
+        },
+        {
+          "Type":"TState",
+          "Name":"Free",
+          "Pos.x":          -150,
+          "Pos.y":          100,
+          "Parent":          -1,
+          "#":          8,
+          "Move":          5,
+          "MoveObj":          -1,
+          "Attack.Count":          0,
+          "TakeItem":          -1,
+          "TakeAllItem":false,
+          "OnTalk":"",
+          "OnActCode":"",
+          "EType":          1,
+          "EUnique":"",
+          "EMsg":""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":"TVar",
+          "Name":"dwd0",
+          "Pos.x":          -340,
+          "Pos.y":          120,
+          "Parent":          -1,
+          "#":          66,
+          "Var.Type":"Dword",
+          "Init":"0",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"i",
+          "Pos.x":          -290,
+          "Pos.y":          220,
+          "Parent":          -1,
+          "#":          67,
+          "Var.Type":"Int",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"j",
+          "Pos.x":          -290,
+          "Pos.y":          240,
+          "Parent":          -1,
+          "#":          68,
+          "Var.Type":"Int",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"int0",
+          "Pos.x":          -340,
+          "Pos.y":          160,
+          "Parent":          -1,
+          "#":          69,
+          "Var.Type":"Int",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"buildTC",
+          "Pos.x":          -220,
+          "Pos.y":          260,
+          "Parent":          -1,
+          "#":          70,
+          "Var.Type":"Int",
+          "Init":"0",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"stars",
+          "Pos.x":          -340,
+          "Pos.y":          180,
+          "Parent":          -1,
+          "#":          71,
+          "Var.Type":"Int",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"ruins",
+          "Pos.x":          -340,
+          "Pos.y":          200,
+          "Parent":          -1,
+          "#":          72,
+          "Var.Type":"Int",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"dwd1",
+          "Pos.x":          -340,
+          "Pos.y":          140,
+          "Parent":          -1,
+          "#":          73,
+          "Var.Type":"Dword",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"str0",
+          "Pos.x":          -340,
+          "Pos.y":          220,
+          "Parent":          -1,
+          "#":          74,
+          "Var.Type":"Str",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"str1",
+          "Pos.x":          -340,
+          "Pos.y":          240,
+          "Parent":          -1,
+          "#":          75,
+          "Var.Type":"Str",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"service",
+          "Pos.x":          -340,
+          "Pos.y":          40,
+          "Parent":          -1,
+          "#":          76,
+          "Var.Type":"Int",
+          "Init":"0",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"array0",
+          "Pos.x":          -340,
+          "Pos.y":          60,
+          "Parent":          -1,
+          "#":          77,
+          "Var.Type":"Unknown",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"costProshivka",
+          "Pos.x":          -260,
+          "Pos.y":          40,
+          "Parent":          -1,
+          "#":          78,
+          "Var.Type":"Unknown",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"levelProshivka",
+          "Pos.x":          -260,
+          "Pos.y":          60,
+          "Parent":          -1,
+          "#":          79,
+          "Var.Type":"Unknown",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"starCount",
+          "Pos.x":          -260,
+          "Pos.y":          180,
+          "Parent":          -1,
+          "#":          80,
+          "Var.Type":"Unknown",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"items",
+          "Pos.x":          -340,
+          "Pos.y":          80,
+          "Parent":          -1,
+          "#":          81,
+          "Var.Type":"Unknown",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"itemNames",
+          "Pos.x":          -260,
+          "Pos.y":          120,
+          "Parent":          -1,
+          "#":          82,
+          "Var.Type":"Unknown",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"curItem",
+          "Pos.x":          -260,
+          "Pos.y":          220,
+          "Parent":          -1,
+          "#":          83,
+          "Var.Type":"Dword",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"clonItem",
+          "Pos.x":          -260,
+          "Pos.y":          200,
+          "Parent":          -1,
+          "#":          84,
+          "Var.Type":"Dword",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"serviceCost",
+          "Pos.x":          -260,
+          "Pos.y":          100,
+          "Parent":          -1,
+          "#":          85,
+          "Var.Type":"Int",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"itemCost",
+          "Pos.x":          -260,
+          "Pos.y":          160,
+          "Parent":          -1,
+          "#":          86,
+          "Var.Type":"Int",
+          "Init":"0",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"costPercent",
+          "Pos.x":          -260,
+          "Pos.y":          80,
+          "Parent":          -1,
+          "#":          87,
+          "Var.Type":"Int",
+          "Init":"0",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"int1",
+          "Pos.x":          -340,
+          "Pos.y":          260,
+          "Parent":          -1,
+          "#":          88,
+          "Var.Type":"Int",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"clonModule",
+          "Pos.x":          -260,
+          "Pos.y":          140,
+          "Parent":          -1,
+          "#":          89,
+          "Var.Type":"Int",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"clonAcryn",
+          "Pos.x":          -260,
+          "Pos.y":          240,
+          "Parent":          -1,
+          "#":          90,
+          "Var.Type":"Int",
+          "Init":"",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"servType",
+          "Pos.x":          -340,
+          "Pos.y":          100,
+          "Parent":          -1,
+          "#":          99,
+          "Var.Type":"Int",
+          "Init":"0",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"TCshop",
+          "Pos.x":          -290,
+          "Pos.y":          260,
+          "Parent":          -1,
+          "#":          137,
+          "Var.Type":"Int",
+          "Init":"0",
+          "Global":false        
+        },
+        {
+          "Type":"TVar",
+          "Name":"GlobalVarTcCount",
+          "Pos.x":          -340,
+          "Pos.y":          290,
+          "Parent":          -1,
+          "#":          162,
+          "Var.Type":"Int",
+          "Init":"0",
+          "Global":true        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":"TGraphLink",
+      "Begin":      3,
+      "End":      4,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      3,
+      "End":      2,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      2,
+      "End":      1,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      0,
+      "End":      1,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      7,
+      "End":      8,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      7,
+      "End":      2,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      9,
+      "End":      10,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      10,
+      "End":      11,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      12,
+      "End":      13,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      13,
+      "End":      14,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      14,
+      "End":      15,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      15,
+      "End":      16,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      16,
+      "End":      17,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      18,
+      "End":      19,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      21,
+      "End":      22,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      22,
+      "End":      23,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      23,
+      "End":      24,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      24,
+      "End":      25,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      22,
+      "End":      26,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      26,
+      "End":      27,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      26,
+      "End":      28,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      26,
+      "End":      29,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      26,
+      "End":      30,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      27,
+      "End":      31,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      28,
+      "End":      32,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      29,
+      "End":      33,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      30,
+      "End":      34,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      31,
+      "End":      35,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      32,
+      "End":      35,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      33,
+      "End":      35,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      34,
+      "End":      35,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      36,
+      "End":      37,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      37,
+      "End":      38,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      38,
+      "End":      39,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      39,
+      "End":      40,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      40,
+      "End":      41,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      42,
+      "End":      43,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      43,
+      "End":      44,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      44,
+      "End":      45,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      37,
+      "End":      46,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      46,
+      "End":      47,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      47,
+      "End":      48,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      48,
+      "End":      49,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      50,
+      "End":      51,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      51,
+      "End":      52,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      52,
+      "End":      53,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      54,
+      "End":      55,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      55,
+      "End":      56,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      56,
+      "End":      57,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      37,
+      "End":      54,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      37,
+      "End":      58,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      58,
+      "End":      59,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      59,
+      "End":      60,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      60,
+      "End":      61,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      62,
+      "End":      63,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      63,
+      "End":      64,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      64,
+      "End":      65,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      91,
+      "End":      94,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      94,
+      "End":      92,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      92,
+      "End":      93,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      95,
+      "End":      96,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      96,
+      "End":      97,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      97,
+      "End":      100,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      100,
+      "End":      98,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      97,
+      "End":      101,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      101,
+      "End":      102,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      103,
+      "End":      104,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      104,
+      "End":      105,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      105,
+      "End":      106,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      97,
+      "End":      107,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      109,
+      "End":      110,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      110,
+      "End":      111,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      111,
+      "End":      112,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      110,
+      "End":      113,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      112,
+      "End":      114,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      108,
+      "End":      115,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      115,
+      "End":      109,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      108,
+      "End":      116,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      116,
+      "End":      117,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      117,
+      "End":      118,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      112,
+      "End":      119,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      119,
+      "End":      120,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      121,
+      "End":      122,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      122,
+      "End":      123,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      123,
+      "End":      124,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      126,
+      "End":      127,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      128,
+      "End":      131,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      131,
+      "End":      129,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      129,
+      "End":      130,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      121,
+      "End":      132,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      132,
+      "End":      133,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      133,
+      "End":      134,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      123,
+      "End":      135,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      126,
+      "End":      135,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      125,
+      "End":      136,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      136,
+      "End":      126,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      26,
+      "End":      138,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      138,
+      "End":      139,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      139,
+      "End":      35,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      37,
+      "End":      140,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      140,
+      "End":      141,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      141,
+      "End":      142,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      143,
+      "End":      144,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      144,
+      "End":      146,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      146,
+      "End":      147,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      143,
+      "End":      145,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      145,
+      "End":      148,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      148,
+      "End":      149,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      149,
+      "End":      147,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      19,
+      "End":      150,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      19,
+      "End":      151,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      151,
+      "End":      20,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      152,
+      "End":      157,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      157,
+      "End":      22,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      153,
+      "End":      158,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      158,
+      "End":      22,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      154,
+      "End":      159,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      159,
+      "End":      22,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      155,
+      "End":      160,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      160,
+      "End":      22,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      156,
+      "End":      161,
+      "Nom":      0,
+      "Arrow":true    
+    },
+    {
+      "Type":"TGraphLink",
+      "Begin":      161,
+      "End":      22,
+      "Nom":      0,
+      "Arrow":true    
+    }  
+  ],
+  "Rect.Text":  
+  [
+    {
+      "Type":"TGraphRectText",
+      "Rect.Left":      -164,
+      "Rect.Top":      82,
+      "Rect.Right":      -4,
+      "Rect.Bottom":      279,
+      "FStyle":      1,
+      "FColor":      10710818,
+      "BStyle":      0,
+      "BColor":      0,
+      "BSize":      1,
+      "BCoef":"0,300000011920929",
+      "AlignX":      0,
+      "AlignY":      0,
+      "AlignRect":false,
+      "Text":"",
+      "Color":      16777215,
+      "Font":"Arial",
+      "FontSize":      10,
+      "fsBold":false,
+      "fsItalic":false,
+      "fsUnderline":false    
+    },
+    {
+      "Type":"TGraphRectText",
+      "Rect.Left":      -164,
+      "Rect.Top":      29,
+      "Rect.Right":      -4,
+      "Rect.Bottom":      84,
+      "FStyle":      1,
+      "FColor":      10710818,
+      "BStyle":      0,
+      "BColor":      0,
+      "BSize":      1,
+      "BCoef":"0,300000011920929",
+      "AlignX":      0,
+      "AlignY":      0,
+      "AlignRect":false,
+      "Text":"",
+      "Color":      16777215,
+      "Font":"Arial",
+      "FontSize":      10,
+      "fsBold":false,
+      "fsItalic":false,
+      "fsUnderline":false    
+    },
+    {
+      "Type":"TGraphRectText",
+      "Rect.Left":      -358,
+      "Rect.Top":      29,
+      "Rect.Right":      -162,
+      "Rect.Bottom":      279,
+      "FStyle":      1,
+      "FColor":      10710818,
+      "BStyle":      0,
+      "BColor":      0,
+      "BSize":      1,
+      "BCoef":"0,300000011920929",
+      "AlignX":      0,
+      "AlignY":      0,
+      "AlignRect":false,
+      "Text":"",
+      "Color":      16777215,
+      "Font":"Arial",
+      "FontSize":      10,
+      "fsBold":false,
+      "fsItalic":false,
+      "fsUnderline":false    
+    },
+    {
+      "Type":"TGraphRectText",
+      "Rect.Left":      -6,
+      "Rect.Top":      29,
+      "Rect.Right":      268,
+      "Rect.Bottom":      279,
+      "FStyle":      1,
+      "FColor":      10710818,
+      "BStyle":      0,
+      "BColor":      0,
+      "BSize":      1,
+      "BCoef":"0,300000011920929",
+      "AlignX":      0,
+      "AlignY":      0,
+      "AlignRect":false,
+      "Text":"",
+      "Color":      16777215,
+      "Font":"Arial",
+      "FontSize":      10,
+      "fsBold":false,
+      "fsItalic":false,
+      "fsUnderline":false    
+    },
+    {
+      "Type":"TGraphRectText",
+      "Rect.Left":      266,
+      "Rect.Top":      29,
+      "Rect.Right":      560,
+      "Rect.Bottom":      279,
+      "FStyle":      1,
+      "FColor":      10710818,
+      "BStyle":      0,
+      "BColor":      0,
+      "BSize":      1,
+      "BCoef":"0,300000011920929",
+      "AlignX":      0,
+      "AlignY":      0,
+      "AlignRect":false,
+      "Text":"",
+      "Color":      16777215,
+      "Font":"Arial",
+      "FontSize":      10,
+      "fsBold":false,
+      "fsItalic":false,
+      "fsUnderline":false    
+    },
+    {
+      "Type":"TGraphRectText",
+      "Rect.Left":      558,
+      "Rect.Top":      29,
+      "Rect.Right":      665,
+      "Rect.Bottom":      95,
+      "FStyle":      1,
+      "FColor":      10710818,
+      "BStyle":      0,
+      "BColor":      0,
+      "BSize":      1,
+      "BCoef":"0,300000011920929",
+      "AlignX":      0,
+      "AlignY":      0,
+      "AlignRect":false,
+      "Text":"",
+      "Color":      16777215,
+      "Font":"Arial",
+      "FontSize":      10,
+      "fsBold":false,
+      "fsItalic":false,
+      "fsUnderline":false    
+    },
+    {
+      "Type":"TGraphRectText",
+      "Rect.Left":      558,
+      "Rect.Top":      93,
+      "Rect.Right":      665,
+      "Rect.Bottom":      279,
+      "FStyle":      1,
+      "FColor":      10710818,
+      "BStyle":      0,
+      "BColor":      0,
+      "BSize":      1,
+      "BCoef":"0,300000011920929",
+      "AlignX":      0,
+      "AlignY":      0,
+      "AlignRect":false,
+      "Text":"",
+      "Color":      16777215,
+      "Font":"Arial",
+      "FontSize":      10,
+      "fsBold":false,
+      "fsItalic":false,
+      "fsUnderline":false    
+    },
+    {
+      "Type":"TGraphRectText",
+      "Rect.Left":      663,
+      "Rect.Top":      29,
+      "Rect.Right":      774,
+      "Rect.Bottom":      279,
+      "FStyle":      1,
+      "FColor":      10710818,
+      "BStyle":      0,
+      "BColor":      0,
+      "BSize":      1,
+      "BCoef":"0,300000011920929",
+      "AlignX":      0,
+      "AlignY":      0,
+      "AlignRect":false,
+      "Text":"",
+      "Color":      16777215,
+      "Font":"Arial",
+      "FontSize":      10,
+      "fsBold":false,
+      "fsItalic":false,
+      "fsUnderline":false    
+    },
+    {
+      "Type":"TGraphRectText",
+      "Rect.Left":      772,
+      "Rect.Top":      29,
+      "Rect.Right":      893,
+      "Rect.Bottom":      279,
+      "FStyle":      1,
+      "FColor":      10710818,
+      "BStyle":      0,
+      "BColor":      0,
+      "BSize":      1,
+      "BCoef":"0,300000011920929",
+      "AlignX":      0,
+      "AlignY":      0,
+      "AlignRect":false,
+      "Text":"",
+      "Color":      16777215,
+      "Font":"Arial",
+      "FontSize":      10,
+      "fsBold":false,
+      "fsItalic":false,
+      "fsUnderline":false    
+    },
+    {
+      "Type":"TGraphRectText",
+      "Rect.Left":      -358,
+      "Rect.Top":      277,
+      "Rect.Right":      -162,
+      "Rect.Bottom":      309,
+      "FStyle":      1,
+      "FColor":      10710818,
+      "BStyle":      0,
+      "BColor":      0,
+      "BSize":      1,
+      "BCoef":"0,300000011920929",
+      "AlignX":      0,
+      "AlignY":      0,
+      "AlignRect":false,
+      "Text":"",
+      "Color":      16777215,
+      "Font":"Arial",
+      "FontSize":      10,
+      "fsBold":false,
+      "fsItalic":false,
+      "fsUnderline":false    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  79,
+  "BlockPar.EC":  
+  [
+    {
+      "#":"0",
+      "String":"Мы рады сообщить вам, что наша сеть технологических центров расширяется! Новая сервисная станция <0> ждет пилотов в системе <1> сектора <2>! Не пролетайте мимо! Только у нас вы найдете лучшие технологические услуги во всей Галактике!"    
+    },
+    {
+      "#":"1",
+      "String":"Сегодня открылся новый технологический центр <0> в системе <1> сектора <2>. Настоятельно рекомендуем всем небезразличным пилотам в кратчайшие сроки пройти техосмотр своих звездолетов."    
+    },
+    {
+      "#":"11",
+      "String":"Воспользуюсь услугами других специалистов"    
+    },
+    {
+      "#":"12",
+      "String":"Мы не нашли у вас никаких подходящих вещей, которые можно было бы улучшить."    
+    },
+    {
+      "#":"13",
+      "String":" за <0> cr"    
+    },
+    {
+      "#":"14",
+      "String":"\"Прошивкой\" мы называем замену ряда модулей в оборудовании на более новые, а также соответствующее обновление программного обеспечения. Сугубо говоря это вовсе не прошивка, а апгрейд, но название прицепилось... Словом, прошивая старое оборудование, мы вполне способны добиться от него результатов на уровне его самых новых аналогов. Износостойкость оборудования <clr>снизится<clrEnd> на <0>%<br>Так какое оборудование желаете прошить?"    
+    },
+    {
+      "#":"15",
+      "String":"\"Откатом\" мы называем возвращение оборудованию его заводских параметров. Может показаться, что это простая процедура, но на самом деле сбросить пользовательские настройки бывает не так уж и просто. Износостойкость оборудования <clr>снизится<clrEnd> на <0>% Разумеется услуга платная."    
+    },
+    {
+      "#":"16",
+      "String":"Сетью наших станций была разработана уникальная методика разгона параметров оборудования. Это наше ноу-хау. Мы можем повысить один из параметров оборудования не затрагивая второй. При этом износостойкость оборудования не измениться. Разумеется это возможно лишь в том случае, если оборудование пригодно для улучшения.<br>Какое оборудование желаете улучшить?"    
+    },
+    {
+      "#":"17",
+      "String":"Дополнительная услуга сети наших центров. Мы можем оптимизировать работу ваших исследовательских зондов, повысив их эффективность и надежность."    
+    },
+    {
+      "#":"18",
+      "String":"Выбрать другой предмет"    
+    },
+    {
+      "#":"19",
+      "String":"<clrEnd>Улучшение точности Физгана"    
+    },
+    {
+      "#":"2",
+      "String":"Внимание всем пилотам! В системе <0> сектора <1> главный архитектор только что перерезал красную ленточку нового технологического центра <2>! Информация на ваших галактических картах уже обновлена."    
+    },
+    {
+      "#":"20",
+      "String":"<clrEnd>Дальность стрельбы"    
+    },
+    {
+      "#":"21",
+      "String":"<clrEnd>Урон"    
+    },
+    {
+      "#":"22",
+      "String":"<clrEnd>Дальность захвата"    
+    },
+    {
+      "#":"23",
+      "String":"<clrEnd>Мощность захвата"    
+    },
+    {
+      "#":"24",
+      "String":"<clrEnd>Дальность прыжка"    
+    },
+    {
+      "#":"25",
+      "String":"<clrEnd>Скорость"    
+    },
+    {
+      "#":"26",
+      "String":"Так так... Дополнительные детали обойдутся вам в <0> cr.<br>Какой параметр улучшить?"    
+    },
+    {
+      "#":"27",
+      "String":"Отлично, работа уже сделана, а ваши деньги уже на нашем счету. Вот так мы быстро работаем! Возможно, вы хотите что-то еще улучшить?"    
+    },
+    {
+      "#":"28",
+      "String":"Распределить улучшение равномерно"    
+    },
+    {
+      "#":"29",
+      "String":"Исследование горных поверхностей"    
+    },
+    {
+      "#":"3",
+      "String":"Давно мечтали проапгрейдить своё старое ржавое корыто, доставшееся в наследство от прабабушки? Спешите в систему <0>, где наши высококвалифицированные специалисты с удовольствием превратят его в настоящую ласточку! Технологический центр <1> - лучшие расценки в секторе <2>!"    
+    },
+    {
+      "#":"30",
+      "String":"Исследование равнинных поверхностей"    
+    },
+    {
+      "#":"31",
+      "String":"Исследование водных поверхностей"    
+    },
+    {
+      "#":"32",
+      "String":"Так так... Дополнительные детали обойдутся вам в <0> cr.<br>Какой параметр улучшаем?"    
+    },
+    {
+      "#":"33",
+      "String":"-тип, цена прошивки: <0> cr"    
+    },
+    {
+      "#":"34",
+      "String":" cr"    
+    },
+    {
+      "#":"35",
+      "String":"-тип, цена прошивки: "    
+    },
+    {
+      "#":"36",
+      "String":"До какого технологического типа прошить?"    
+    },
+    {
+      "#":"37",
+      "String":"увеличивается"    
+    },
+    {
+      "#":"38",
+      "String":"уменьшается"    
+    },
+    {
+      "#":"39",
+      "String":"Демонтаж лишнего оборудования"    
+    },
+    {
+      "#":"4",
+      "String":"Улучшить корпус"    
+    },
+    {
+      "#":"40",
+      "String":"Установка дополнительного оборудования"    
+    },
+    {
+      "#":"41",
+      "String":"Улучшить корпус можно следующими способами:<br>-установка спасательной капсулы<br>-напыление защитного слоя<br>-изменить функционал корпуса"    
+    },
+    {
+      "#":"42",
+      "String":"Системы форсажа"    
+    },
+    {
+      "#":"43",
+      "String":"Системы генератора защитного поля"    
+    },
+    {
+      "#":"44",
+      "String":"Системы захвата"    
+    },
+    {
+      "#":"45",
+      "String":"Ремонтные системы"    
+    },
+    {
+      "#":"46",
+      "String":"Системы сканера"    
+    },
+    {
+      "#":"47",
+      "String":"Системы радара"    
+    },
+    {
+      "#":"48",
+      "String":"Системы дополнительного оборудования"    
+    },
+    {
+      "#":"49",
+      "String":"Оружейные системы"    
+    },
+    {
+      "#":"5",
+      "String":"Сдать ценные металлы"    
+    },
+    {
+      "#":"52",
+      "String":"Сложно выполнять такую работу в сжатые сроки, но наши техники должны успеть вовремя. Не желаете ли заказать что-то ещё?"    
+    },
+    {
+      "#":"53",
+      "String":"Я передумал"    
+    },
+    {
+      "#":"54",
+      "String":"Наши техники стараются работать качественно и профессионально, но у каждого предмета есть свой предел. Сварные швы, которые образуются в результате этого улучшения будут не такими прочными на разрыв, как заводские, так что, в целом, устойчивость корпуса к повреждениям снизиться. Кроме того, улучшенные микромодулями корпуса не подлежат операции по открытию/закрытию данного слота. Так же мы не можем снять ограничения серии. И ещё, при улучшении, размер корпуса <0>. Стоимость услуги - <1> cr.<br>Итак, какую часть корабля нам изменить?"    
+    },
+    {
+      "#":"55",
+      "String":"Я подумаю"    
+    },
+    {
+      "#":"56",
+      "String":"Хочу установить спасательную капсулу"    
+    },
+    {
+      "#":"57",
+      "String":"Стандартная спасательная капсула обойдётся вам в <0> cr.<br>Система полностью автоматизирована, никакого ручного контроля. Капсула катапультируется даже если вы потеряете сознание в пылу битвы... С вами на борту разумеется.<br>Однако, в силу непреодолимых технических сложностей в гиперпространстве, к сожалению, система диагностики корабля отказывает."    
+    },
+    {
+      "#":"59",
+      "String":"Согласен"    
+    },
+    {
+      "#":"6",
+      "String":"Улучшить зонд"    
+    },
+    {
+      "#":"60",
+      "String":"На вашем корабле уже установлена спасательная капсула. Установка второй невозможна из-за технических особенностей капсулы. Да и зачем вам две, в конце концов?"    
+    },
+    {
+      "#":"61",
+      "String":""    
+    },
+    {
+      "#":"62",
+      "String":"Понятно"    
+    },
+    {
+      "#":"64",
+      "String":"Три слоя, за <0> cr"    
+    },
+    {
+      "#":"65",
+      "String":"Два слоя, за <0> cr"    
+    },
+    {
+      "#":"66",
+      "String":"Один слой, за <0> cr"    
+    },
+    {
+      "#":"67",
+      "String":"Наша сеть станций разработала уникальное напыление на основе акрина. Обработанные корпуса становятся менее восприимчивыми к повреждениям различных типов, однако обычное улучшение обшивки становится невозможным.<br>Сколько слоёв напыления вы желаете нанести?"    
+    },
+    {
+      "#":"68",
+      "String":"Антиракетное напыление"    
+    },
+    {
+      "#":"69",
+      "String":"Антиосколочное напыление"    
+    },
+    {
+      "#":"7",
+      "String":"Произвести уникальные улучшения"    
+    },
+    {
+      "#":"70",
+      "String":"Антиэнергетическое напыление"    
+    },
+    {
+      "#":"71",
+      "String":"Смешайте все типы равномерно"    
+    },
+    {
+      "#":"72",
+      "String":"Понятно. Мы можем использовать сбалансированное напыление или специализированное под определенный тип урона. Какую обработку вы хотите заказать?<br>Ещё, за отдельную плату мы можем нанести винилы. Нет? Может быть, хотите установить хромированные закрылки или неоновую подсветку под днище? Любой каприз за ваши деньги!"    
+    },
+    {
+      "#":"73",
+      "String":"Корпус уже улучшен, дальнейшие изменения будут бесполезны."    
+    },
+    {
+      "#":"74",
+      "String":"Меня интересует напыление защитного слоя"    
+    },
+    {
+      "#":"75",
+      "String":"Спасибо, что посетили нашу станцию <0>. Удобно располагайтесь, <1>, чувствуйте себя здесь как дома. Мы - лучшие специалисты Галактики в области технологического сервиса космических кораблей. В перечень наших услуг входит: улучшение оборудования, закрытие и открытие слотов, изменение восприимчивости к тому или иному типу урона и многое другое! Предлагаю вам в полной мере насладиться нашим вкусным кофе и изучить за это время прейскурант."    
+    },
+    {
+      "#":"76",
+      "String":"Новая маркировка предмета:"    
+    },
+    {
+      "#":"77",
+      "String":"Изменить технологическую маркировку"    
+    },
+    {
+      "#":"78",
+      "String":"Изменение технологической маркировки не повлияет на параметры оборудования. Цена услуги <0> cr."    
+    },
+    {
+      "#":"79",
+      "String":"Это слишком дорого для меня"    
+    },
+    {
+      "#":"8",
+      "String":"Откатить улучшение"    
+    },
+    {
+      "#":"80",
+      "String":"Уже придумал, меняйте на..."    
+    },
+    {
+      "#":"81",
+      "String":"Это быстрая процедура. Приготовьте <0> cr и придумайте новое название."    
+    },
+    {
+      "#":"83",
+      "String":"<0>... А у вас бурная фантазия."    
+    },
+    {
+      "#":"84",
+      "String":"Минеральчики воооон там..."    
+    },
+    {
+      "#":"9",
+      "String":"Прошивка оборудования"    
+    }  
+  ]
+}
