@@ -1,0 +1,2662 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  65,
+  "ViewPos.y":  -371,
+  "ScriptName":  "Yamato",
+  "ScriptFileOut":  "D:\\Mods\\Compiled mods\\Kotyanka\\Cat_Yamato\\DATA\\Script\\Yamato.scr",
+  "ScriptTextOut":  "D:\\Mods\\Compiled mods\\Kotyanka\\Cat_Yamato\\CFG\\Rus\\Yamato.txt",
+  "GraphPoint.Count":  131,
+  "GraphLink.Count":  96,
+  "GraphRectText.Count":  2,
+  "Variables.Count":  19,
+  "Stars.Count":  1,
+  "Planets.Count":  1,
+  "Ships.Count":  1,
+  "States.Count":  1,
+  "Groups.Count":  1,
+  "Places.Count":  0,
+  "Items.Count":  3,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  9,
+  "DialogMessages.Count":  19,
+  "DialogAnswers.Count":  24,
+  "Operations.Count":  20,
+  "Statements.Count":  32,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  740,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  31,
+          "Msg":  "Ладно-ладно, уже взлетаю...",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  33,
+          "Msg":  "Купить корпус за <cost> cr.",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  34,
+          "Msg":  "Оставить в музей.",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  760,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  36,
+          "Msg":  "Я подумаю...",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  820,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  42,
+          "Msg":  "Эх, в детстве я любил ходить в музеи и смотреть на экспонаты, такой внушительный корабль точно придаст мотивации подросткам пойти в армию или в ряды рейнджеров.",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  820,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  43,
+          "Msg":  "Отлично, пойду посмотрю на него.",
+          "AMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  740,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  50,
+          "Msg":  "Ямато. Я привозил его на <base_name> недавно.",
+          "AMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  780,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  52,
+          "Msg":  "Ок.",
+          "AMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  760,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  62,
+          "Msg":  "Мне нужно ещё подумать.",
+          "AMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  740,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  65,
+          "Msg":  "Ямато, Линкор такой...",
+          "AMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  780,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  67,
+          "Msg":  "Ладно, видимо я ошибся...",
+          "AMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  920,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  68,
+          "Msg":  "Ну, осталось только дождаться, когда вы закончите работу.",
+          "AMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  740,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  77,
+          "Msg":  "А когда сможете закончить?",
+          "AMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  780,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  79,
+          "Msg":  "Хорошо",
+          "AMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  740,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  81,
+          "Msg":  "До свидания",
+          "AMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  740,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  87,
+          "Msg":  "Как вы смеете?! Это вообще-то отреставрированный легендарный крейсер Ямато!",
+          "AMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  780,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  90,
+          "Msg":  "Я передумал.",
+          "AMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  91,
+          "Msg":  "Глобальная модернизация всех систем корабля (<upgrade_cost> cr.)",
+          "AMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  860,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  95,
+          "Msg":  "Отлично! Наконец я получил его, Линкор Ямато!",
+          "AMsg.Num":  "18"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  740,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  102,
+          "Msg":  "Слушать дальше",
+          "AMsg.Num":  "19"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  840,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  104,
+          "Msg":  "Решено! Ждать столько времени я не могу, я проспонсирую этот проект.",
+          "AMsg.Num":  "20"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  840,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  105,
+          "Msg":  "Ну нет, столько денег у меня нет, так что справляйтесь своими силами.",
+          "AMsg.Num":  "21"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  840,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  110,
+          "Msg":  "Я подумаю",
+          "AMsg.Num":  "22"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  780,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  128,
+          "Msg":  "Слушать дальше",
+          "AMsg.Num":  "23"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  720,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  14,
+          "Msg":  "А? Ты там совсем оборзел <ShipName(Player())>? Очкарики уже отказываются брать хлам, так ты его нам решил сбагрить, давай проваливай и хлам свой забери!",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  720,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  30,
+          "Msg":  "Что это вы нам привезли? Вы бы еще консервных банок насобирали! Ну сколько можно, <ShipName(Player())>? Вы, рейджеры, каждый день таскаете нам на базу сотни тонн хлама.\r\nУ нас тут не свалка между прочим, забирайте свой \"корабль\" и летите отсюда.",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  720,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  32,
+          "Msg":  "Да-да, мы вас ждали, нам удалось его восстановить, однако его ТТХ оставляет желать лучшего, как-никак его технологиям больше тысячи лет... Годится он сейчас разве что для музея, но если вы желаете его купить, мешать вам не станем. Решать вам, можете не спешить с ответом.",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  40,
+          "Msg":  "Музейное содружесво всех рас, и человеческое в особенности, благодарят вас. Корпус немедленно доставят в ближайший музей космических кораблей. В благодарность Вам переводят <cost_museum> cr.",
+          "DMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  41,
+          "Msg":  "Корпус доставлен на склад.",
+          "DMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  720,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  49,
+          "Msg":  "Каким кораблем?",
+          "DMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  51,
+          "Msg":  "Ну вот туда и летите.",
+          "DMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  720,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  60,
+          "Msg":  "Сдаём корпус в музей или вы желаете его купить?",
+          "DMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  720,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  64,
+          "Msg":  "С каким кораблем?",
+          "DMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  66,
+          "Msg":  "Ни разу о таком не слышал.",
+          "DMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  720,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  76,
+          "Msg":  "Корпус был в ужасном состоянии, а чертежи, по которым он был построен, было найти наверное столь же сложно, как и сам корабль, так что мы ещё не закончили ремонт.",
+          "DMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  78,
+          "Msg":  "Работы закончатся приблизительно <GameDateTxtByTurn(1 + research_start_date + research_time)>.",
+          "DMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  720,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  80,
+          "Msg":  "Не понимаю о чем вы",
+          "DMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  720,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  86,
+          "Msg":  "Да, это стандартная процедура. Сейчас мы оценим стоимость и... Что это за корыто, где вы его откопали?",
+          "DMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  88,
+          "Msg":  "Да?! Ну извините просто такое оборудование... Я даже не могу представить насколько давно его использовали. Ладно, можем попробовать, но ничего не обещаю и стоить это будет вам очень не дёшево.",
+          "DMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  840,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  94,
+          "Msg":  "Мы сделали всё что могли, это самые лучше механизмы и технологии доступные коалиции на данный момент.",
+          "DMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  103,
+          "Msg":  "Агрхх! Молчать рядовой, тебе слова не давали! А ты, <ShipName(Player())>, покажи-ка ещё раз свой хлам, где ты, говоришь, его нашел?\r\nСейчас сверюсь с документами... Ох, рабогамскую жабу мне в горло, а ведь и правда, ЯМАТО был подбит в том секторе!\r\nЧто же вы раньше не сказали?! Такс, <ShipName(Player())> сейчас прикину сколько на это уйдет времени... Кхм, если вы проспонсируете реконструкцию, то мы сможем начать прямо сейчас и справимся примерно за полтора года, стоить это будет <cost_sponsor> cr. Если же вы не можете нас спонсировать, то придётся ждать помощи у правительства, а это дело не быстрое. Ориентеровочно в этом случае мы сможем завершить все работы только через три-четыре года, не раньше. Ну что же, решайте, какой вариант выбираем?",
+          "DMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  900,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  109,
+          "Msg":  "Приступаем к реконструкции",
+          "DMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  127,
+          "Msg":  "Стойте капитан! Вы присмотритесь, это же похоже на корабль из человеческих сказок. Как же его, кхм.. ах, да, ЯМАТО!\r\n",
+          "DMsg.Num":  "18"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "DialogWB1",
+          "Pos.x":  640,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  6        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "WrongBase1",
+          "Pos.x":  640,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  26        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "DialogWB2",
+          "Pos.x":  640,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  27        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "WrongBase2",
+          "Pos.x":  640,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  28        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "DialogWB3",
+          "Pos.x":  640,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  29        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "WrongBase3",
+          "Pos.x":  640,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  63        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "DialogWB1.5",
+          "Pos.x":  640,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  74        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "WrongBase1.5",
+          "Pos.x":  640,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  75        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "TCUpgrade",
+          "Pos.x":  640,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  85        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "GroupNew",
+          "Pos.x":  420,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  5,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Items":      
+      [
+        {
+          "Type":  "TItem",
+          "Name":  "ShipFragment",
+          "Pos.x":  420,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  4,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        },
+        {
+          "Type":  "TItem",
+          "Name":  "hull_bad",
+          "Pos.x":  420,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  118,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        },
+        {
+          "Type":  "TItem",
+          "Name":  "hull_good",
+          "Pos.x":  420,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  119,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  490,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  0,
+          "Total.Lines":  1,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "GRun();"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  510,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  1,
+          "Total.Lines":  30,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "bad_special_name = CT('Script.Yamato.Settings.bad_special_name');",
+              "good_special_name = CT('Script.Yamato.Settings.good_special_name');",
+              "",
+              "cost = CT('Script.Yamato.Settings.cost');",
+              "upgrade_cost = CT('Script.Yamato.Settings.upgrade_cost');",
+              "cost_sponsor = CT('Script.Yamato.Settings.cost_sponsor');",
+              "cost_museum = CT('Script.Yamato.Settings.cost_museum');",
+              "hull_cost_1 = CT('Script.Yamato.Settings.hull_cost_1');",
+              "hull_cost_2 = CT('Script.Yamato.Settings.hull_cost_2');",
+              "",
+              "research_time_slow = CT('Script.Yamato.Settings.research_time_slow');",
+              "research_time_fast = CT('Script.Yamato.Settings.research_time_fast');",
+              "",
+              "item_size = CT('Script.Yamato.Settings.item_size');",
+              "hull_size_bad= CT('Script.Yamato.Settings.hull_size_bad');",
+              "hull_size_good = CT('Script.Yamato.Settings.hull_size_good');",
+              "",
+              "",
+              "dword quest_item = CreateQuestItem('Cat_Yamato_Destroyed', People);",
+              "ItemSize(quest_item, Rnd(0.5 * item_size, 1.5 * item_size));",
+              "LinkItemToScript(quest_item, ShipFragment);",
+              "",
+              "dword star = StarNearbyStars(ShipStar(Player()), Rnd(25, 35));",
+              "int i = 0;",
+              "for (i = 0; i < StarPlanets(star); i = i + 1) {",
+              "    if (PlanetOwner(StarPlanets(star, i)) == None) {",
+              "        AddItemToPlanet(StarPlanets(star, i), quest_item);",
+              "        break;",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  11,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "AddDialogInject('DialogWB1', '', \"У меня тут обломок корабля есть, нигде не берут, думаю может хоть вам он нужен...\", 1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  13,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "AddDialogInject('WrongBase1', '', \"Я тут обломок корабля на планете нашёл, возможно он вам нужен для исследований.\", 1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  880,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  16,
+          "Total.Lines":  7,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "FreeItem(GetItemFromShip(Player(), FindItemInShip(Player(), ShipFragment)));",
+              "",
+              "base_id = Id(GetShipRuins(Player()));",
+              "base_name = ShipName(GetShipRuins(Player()));",
+              "research_start_date = CurTurn();",
+              "",
+              "state = 1;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  22,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Ether(0, '', \"База <base_name> исследовала корпус, можете прилетать\");",
+              "state = 2;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  25,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "AddDialogInject('DialogWB2', '', \"Я вот тут вернулся узнать что там с тем кораблем, который я привозил?\", 1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  780,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  35,
+          "Total.Lines":  3,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player(), ShipMoney(Player()) + cost_museum);",
+              "ConChangeRelationToRanger(StarToCon(ShipStar(GetShipRuins(Player()))), Player(), 30);",
+              "state = 4;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  780,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  39,
+          "Total.Lines":  25,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player(), ShipMoney(Player()) - cost);",
+              "Sound('Sound.Buy');",
+              "state = 4;",
+              "",
+              "hull = CreateHull(",
+              "    2,",
+              "    hull_size_bad,",
+              "    GalaxyTechLevel(),",
+              "    People,",
+              "    -1,",
+              "    0",
+              ");",
+              "int bonus_num = FindBonusByName(bad_special_name);",
+              "if (bonus_num > -1) {",
+              "    SpecialToEquipment(bonus_num, hull);",
+              "} else {",
+              "    SFT('[Cat_Yamato] Акрин '+bad_special_name+' не найден. Возможны дальнейшие проблемы');",
+              "}",
+              "",
+              "ItemSize(hull, hull_size_bad);",
+              "ItemCost(hull, hull_cost_1);",
+              "HullHP(hull, ItemSize(hull));",
+              "AddItemToStorage(GetShipRuins(Player()), hull);",
+              "LinkItemToScript(hull, hull_bad);",
+              "CanSellItem(hull_bad, 1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  48,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "AddDialogInject('WrongBase2', '', \"Я вот тут вернулся узнать что там с тем кораблем, который я привозил?\", 1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  58,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "AddDialogInject('DialogWB3', '', \"Я решил, что я сделаю с кораблем!\", 1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  59,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "AddDialogInject('WrongBase3', '', \"Я решил, что я сделаю с кораблем!\", 1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  740,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  61,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "state = 3;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  72,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "AddDialogInject('DialogWB1.5', '', \"Я вот тут вернулся узнать что там с тем кораблем, который я привозил?\", 1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  73,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "AddDialogInject('WrongBase1.5', '', \"Я вот тут вернулся узнать что там с тем кораблем, который я привозил?\", 1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  83,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "AddDialogInject('TCUpgrade', '', \"На военной базе я приобрёл корпус, но его ТТХ меня не устраивают, можете мне помочь?\", 1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  820,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  92,
+          "Total.Lines":  21,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player(), ShipMoney(Player()) - upgrade_cost);",
+              "Sound('Sound.Buy');",
+              "state = 5;",
+              "",
+              "hull = ScriptItemToItem(hull_bad);",
+              "",
+              "int bonus_num = FindBonusByName(good_special_name);",
+              "if (bonus_num > -1) {",
+              "    SpecialToEquipment(bonus_num, ShipItems(Player(), 0));",
+              "} else {",
+              "    SFT('[Cat_Yamato] Акрин '+good_special_name+' не найден. Возможны дальнейшие проблемы');",
+              "}",
+              "",
+              "ItemCost(hull, hull_cost_2);",
+              "ItemSize(hull, hull_size_good);",
+              "HullHP(hull, ItemSize(hull));",
+              "Chameleon(Player());",
+              "",
+              "ReleaseItemFromScript(hull, hull_bad);",
+              "LinkItemToScript(hull, hull_good);",
+              "CanSellItem(hull_good, 1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  860,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  113,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player(), ShipMoney(Player()) - cost_sponsor);",
+              "Sound('Sound.Buy');",
+              "",
+              "research_time = Rnd(0.8 * research_time_fast, 1.2 * research_time_fast);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  860,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  114,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "research_time = Rnd(0.8 * research_time_slow, 1.2 * research_time_slow);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  124,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Ether(0, '', \"База <base_name> была уничтожена, корпус Ямато утерян навсегда...\");",
+              "state = -1;"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "PlanetNew",
+          "Pos.x":  420,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  3,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  420,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  7,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "StarNew",
+          "Pos.x":  420,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  2,
+          "Constellation":  1,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  8,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "ShipType(GetShipRuins(Player())) == 'WB'"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  9,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "ItemIn(ShipFragment, Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  540,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  10,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "GetShipRuins(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  12,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "ShipType(GetShipRuins(Player())) != 'WB'"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  19,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "CurTurn() >= research_start_date + research_time"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  21,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "state == 1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  23,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "Id(GetShipRuins(Player())) != base_id"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  24,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "Id(GetShipRuins(Player())) == base_id"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  740,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  37,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player()) >= cost"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  540,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  45,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "state == 0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  540,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  46,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "state == 1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  540,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  47,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "state == 2"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  53,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "ShipType(GetShipRuins(Player())) == 'WB'"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  540,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  54,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "state == 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  55,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "Id(GetShipRuins(Player())) == base_id"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  56,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "Id(GetShipRuins(Player())) != base_id"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  57,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "ShipType(GetShipRuins(Player())) == 'WB'"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  69,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "Id(GetShipRuins(Player())) == base_id"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  70,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "Id(GetShipRuins(Player())) != base_id"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  71,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "ShipType(GetShipRuins(Player())) == 'WB'"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  540,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  82,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "state == 4"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  84,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "ShipType(GetShipRuins(Player())) == 'TC'"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  780,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  89,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player()) >= upgrade_cost"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  100,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "ItemExist(ShipFragment)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  820,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  108,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player()) >= cost_sponsor"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  120,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "ItemExist(hull_bad)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  121,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "ItemIn(hull_bad, Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  122,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "IdToShip(base_id)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  123,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!IdToShip(base_id)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  450,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  125,
+          "Total.Lines":  1,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "GalaxyTechLevel() >= 7"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  470,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  126,
+          "Total.Lines":  1,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "ShipRank(Player()) >= 6 || GetShipPirateRank(Player()) >= 6"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  520,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  130,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "!PlayerBridge()"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "StateNew",
+          "Pos.x":  420,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  101,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "research_start_date",
+          "Pos.x":  790,
+          "Pos.y":  -180,
+          "Parent":  -1,
+          "#":  15,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "base_id",
+          "Pos.x":  790,
+          "Pos.y":  -220,
+          "Parent":  -1,
+          "#":  17,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "base_name",
+          "Pos.x":  790,
+          "Pos.y":  -200,
+          "Parent":  -1,
+          "#":  18,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "research_time",
+          "Pos.x":  790,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  20,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "cost",
+          "Pos.x":  980,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  38,
+          "Var.Type":  "Int",
+          "Init":  "10000000",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "state",
+          "Pos.x":  790,
+          "Pos.y":  -250,
+          "Parent":  -1,
+          "#":  44,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "upgrade_cost",
+          "Pos.x":  980,
+          "Pos.y":  -250,
+          "Parent":  -1,
+          "#":  93,
+          "Var.Type":  "Int",
+          "Init":  "25000000",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "bad_special_name",
+          "Pos.x":  980,
+          "Pos.y":  -300,
+          "Parent":  -1,
+          "#":  96,
+          "Var.Type":  "Str",
+          "Init":  "Космический линкор Ямато v2199",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "good_special_name",
+          "Pos.x":  1100,
+          "Pos.y":  -300,
+          "Parent":  -1,
+          "#":  97,
+          "Var.Type":  "Str",
+          "Init":  "Космический линкор Ямато",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "hull_cost_1",
+          "Pos.x":  1190,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  98,
+          "Var.Type":  "Int",
+          "Init":  "165000",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "hull_cost_2",
+          "Pos.x":  1190,
+          "Pos.y":  -250,
+          "Parent":  -1,
+          "#":  99,
+          "Var.Type":  "Int",
+          "Init":  "42000000",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "cost_sponsor",
+          "Pos.x":  1080,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  106,
+          "Var.Type":  "Int",
+          "Init":  "6500000",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "cost_museum",
+          "Pos.x":  1080,
+          "Pos.y":  -250,
+          "Parent":  -1,
+          "#":  107,
+          "Var.Type":  "Int",
+          "Init":  "1200000",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "research_time_fast",
+          "Pos.x":  980,
+          "Pos.y":  -200,
+          "Parent":  -1,
+          "#":  111,
+          "Var.Type":  "Int",
+          "Init":  "550",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "research_time_slow",
+          "Pos.x":  980,
+          "Pos.y":  -220,
+          "Parent":  -1,
+          "#":  112,
+          "Var.Type":  "Int",
+          "Init":  "1300",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "item_size",
+          "Pos.x":  980,
+          "Pos.y":  -170,
+          "Parent":  -1,
+          "#":  115,
+          "Var.Type":  "Int",
+          "Init":  "800",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "hull_size_bad",
+          "Pos.x":  980,
+          "Pos.y":  -150,
+          "Parent":  -1,
+          "#":  116,
+          "Var.Type":  "Int",
+          "Init":  "7280",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "hull_size_good",
+          "Pos.x":  980,
+          "Pos.y":  -130,
+          "Parent":  -1,
+          "#":  117,
+          "Var.Type":  "Int",
+          "Init":  "7280",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "hull",
+          "Pos.x":  790,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  129,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  3,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  8,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  11,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  12,
+      "End":  13,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  24,
+      "End":  25,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  26,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  27,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  34,
+      "End":  35,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  35,
+      "End":  40,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  43,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  45,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  46,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  24,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  23,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  28,
+      "End":  49,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  50,
+      "End":  51,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  51,
+      "End":  52,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  49,
+      "End":  50,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  23,
+      "End":  53,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  53,
+      "End":  48,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  54,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  54,
+      "End":  55,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  55,
+      "End":  58,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  54,
+      "End":  56,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
+      "End":  60,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  61,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  61,
+      "End":  36,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  60,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  60,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  60,
+      "End":  62,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  63,
+      "End":  64,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  64,
+      "End":  65,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  65,
+      "End":  66,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  66,
+      "End":  67,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  56,
+      "End":  57,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  57,
+      "End":  59,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  69,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  70,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  70,
+      "End":  71,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  73,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  69,
+      "End":  72,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  74,
+      "End":  76,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  76,
+      "End":  77,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  77,
+      "End":  78,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  78,
+      "End":  79,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  75,
+      "End":  80,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  80,
+      "End":  81,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  84,
+      "End":  83,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  85,
+      "End":  86,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  86,
+      "End":  87,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  87,
+      "End":  88,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  88,
+      "End":  89,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  88,
+      "End":  90,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  89,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  91,
+      "End":  92,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  82,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  92,
+      "End":  94,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  94,
+      "End":  95,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  21,
+      "End":  19,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  45,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  100,
+      "End":  9,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  101,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  102,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  103,
+      "End":  105,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  103,
+      "End":  108,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  108,
+      "End":  104,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  103,
+      "End":  110,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  16,
+      "End":  109,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  109,
+      "End":  68,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  104,
+      "End":  113,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  105,
+      "End":  114,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  113,
+      "End":  16,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  114,
+      "End":  16,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  82,
+      "End":  120,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  120,
+      "End":  121,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  121,
+      "End":  84,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  122,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  122,
+      "End":  22,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  123,
+      "End":  124,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  21,
+      "End":  123,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  125,
+      "End":  126,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  126,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  102,
+      "End":  127,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  127,
+      "End":  128,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  128,
+      "End":  103,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  130,
+      "End":  10,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "Rect.Text":  
+  [
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  16,
+      "Rect.Top":  -397,
+      "Rect.Right":  637,
+      "Rect.Bottom":  -91,
+      "FStyle":  1,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  16777215,
+      "BSize":  1,
+      "BCoef":  "1",
+      "AlignX":  -1,
+      "AlignY":  -1,
+      "AlignRect":  false,
+      "Text":  "state\r\n0 - init\r\n1 - обломок сдан на ТЦ\r\n2 - исследования завершены\r\n3 - выслушан рассказ про корпус\r\n4 - корпус куплен/сдан, его можно улучшить на тц\r\n5 - корпус улучшен\r\n\r\nСпрашиваешь на правильной базе:\r\nDialogWB1 - сдать обломок и приступить к исследованиям\r\nDialogWB1.5 - спрашиваешь про исследования до их завершения\r\nDialogWB2 - как прошли исследования?\r\nDialogWB3 - хочу купить/сдать в музей\r\n\r\nЭто диалоги, когда спрашиваешь не на той базе:\r\nWrongBase1 - сдаешь обломок не на ВБ\r\nWrongBase1.5 - спрашиваешь про результаты исследования не на той ВБ и до их завершения\r\nWrongBase2 - спрашиваешь про результаты исследования не на той ВБ\r\nWrongBase3 - хочешь купить корпус не на той ВБ\r\n",
+      "Color":  16777215,
+      "Font":  "Consolas",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  964,
+      "Rect.Top":  -572,
+      "Rect.Right":  1518,
+      "Rect.Bottom":  -108,
+      "FStyle":  1,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  16777215,
+      "BSize":  1,
+      "BCoef":  "1",
+      "AlignX":  -1,
+      "AlignY":  -1,
+      "AlignRect":  false,
+      "Text":  "bad_special_name - название акрина до реконструкции\r\nbad_special_name - название акрина после реконструкции\r\n\r\ncost_sponsor - стоимость ускорения исследований\r\ncost - стоимость покупки корпуса с дебаффами\r\ncost_museum - награда за сдачу в музей\r\nupgrade_cost - стоимость улучшения на ТЦ\r\n\r\nhull_cost_1 - стоимость корпуса с дебаффами (именно самого корпуса как итема)\r\nhull_cost_2 - стоимость улучшенного корпуса\r\n\r\nresearch_time_slow - скорость реконструкции без спонсирования\r\nresearch_time_fast -  скорость реконструкции со спонсированием\r\n\r\nitem_size - размер итема на незаселенке\r\nhull_size_bad - размер корпуса с дебаффами\r\nhull_size_good - размер улучшенного корпуса\r\n",
+      "Color":  16777215,
+      "Font":  "Consolas",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  49,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "112",
+      "String":  "Хорошо"    
+    },
+    {
+      "#":  "114",
+      "String":  "Не понимаю о чем вы"    
+    },
+    {
+      "#":  "118",
+      "String":  "До свидания"    
+    },
+    {
+      "#":  "122",
+      "String":  "На военной базе я приобрёл корпус, но его ТТХ меня не устраивают, можете мне помочь?"    
+    },
+    {
+      "#":  "128",
+      "String":  "Корпус доставлен на склад."    
+    },
+    {
+      "#":  "138",
+      "String":  "Приступаем к реконструкции"    
+    },
+    {
+      "#":  "141",
+      "String":  "Эх, в детстве я любил ходить в музеи и смотреть на экспонаты, такой внушительный корабль точно придаст мотивации подросткам пойти в армию или в ряды рейнджеров."    
+    },
+    {
+      "#":  "142",
+      "String":  "Отлично, пойду посмотрю на него."    
+    },
+    {
+      "#":  "143",
+      "String":  "Мне нужно ещё подумать."    
+    },
+    {
+      "#":  "144",
+      "String":  "Ямато, Линкор такой..."    
+    },
+    {
+      "#":  "145",
+      "String":  "Ладно, видимо я ошибся..."    
+    },
+    {
+      "#":  "147",
+      "String":  "А когда сможете закончить?"    
+    },
+    {
+      "#":  "148",
+      "String":  "Как вы смеете?! Это вообще-то отреставрированный легендарный крейсер Ямато!"    
+    },
+    {
+      "#":  "149",
+      "String":  "Я передумал."    
+    },
+    {
+      "#":  "150",
+      "String":  "Глобальная модернизация всех систем корабля (<0> cr.)"    
+    },
+    {
+      "#":  "151",
+      "String":  "Отлично! Наконец я получил его, Линкор Ямато!"    
+    },
+    {
+      "#":  "153",
+      "String":  "Решено! Ждать столько времени я не могу, я проспонсирую этот проект."    
+    },
+    {
+      "#":  "154",
+      "String":  "Ну нет, столько денег у меня нет, так что справляйтесь своими силами."    
+    },
+    {
+      "#":  "155",
+      "String":  "Я подумаю"    
+    },
+    {
+      "#":  "157",
+      "String":  "Корпус был в ужасном состоянии, а чертежи, по которым он был построен, было найти наверное столь же сложно, как и сам корабль, так что мы ещё не закончили ремонт."    
+    },
+    {
+      "#":  "159",
+      "String":  "База <0> была уничтожена, корпус Ямато утерян навсегда..."    
+    },
+    {
+      "#":  "161",
+      "String":  "Я тут обломок корабля на планете нашёл, возможно он вам нужен для исследований."    
+    },
+    {
+      "#":  "162",
+      "String":  "А? Ты там совсем оборзел <0>? Очкарики уже отказываются брать хлам, так ты его нам решил сбагрить, давай проваливай и хлам свой забери!"    
+    },
+    {
+      "#":  "163",
+      "String":  "Что это вы нам привезли? Вы бы еще консервных банок насобирали! Ну сколько можно, <0>? Вы, рейджеры, каждый день таскаете нам на базу сотни тонн хлама.<br>У нас тут не свалка между прочим, забирайте свой \"корабль\" и летите отсюда."    
+    },
+    {
+      "#":  "164",
+      "String":  "Да-да, мы вас ждали, нам удалось его восстановить, однако его ТТХ оставляет желать лучшего, как-никак его технологиям больше тысячи лет... Годится он сейчас разве что для музея, но если вы желаете его купить, мешать вам не станем. Решать вам, можете не спешить с ответом."    
+    },
+    {
+      "#":  "165",
+      "String":  "Музейное содружесво всех рас, и человеческое в особенности, благодарят вас. Корпус немедленно доставят в ближайший музей космических кораблей. В благодарность Вам переводят <0> cr."    
+    },
+    {
+      "#":  "166",
+      "String":  "Каким кораблем?"    
+    },
+    {
+      "#":  "167",
+      "String":  "Ну вот туда и летите."    
+    },
+    {
+      "#":  "168",
+      "String":  "Сдаём корпус в музей или вы желаете его купить?"    
+    },
+    {
+      "#":  "169",
+      "String":  "Ни разу о таком не слышал."    
+    },
+    {
+      "#":  "170",
+      "String":  "Работы закончатся приблизительно <0>."    
+    },
+    {
+      "#":  "171",
+      "String":  "Да, это стандартная процедура. Сейчас мы оценим стоимость и... Что это за корыто, где вы его откопали?"    
+    },
+    {
+      "#":  "172",
+      "String":  "Да?! Ну извините просто такое оборудование... Я даже не могу представить насколько давно его использовали. Ладно, можем попробовать, но ничего не обещаю и стоить это будет вам очень не дёшево."    
+    },
+    {
+      "#":  "173",
+      "String":  "Мы сделали всё что могли, это самые лучше механизмы и технологии доступные коалиции на данный момент."    
+    },
+    {
+      "#":  "174",
+      "String":  "Агрхх! Молчать рядовой, тебе слова не давали! А ты, <0>, покажи-ка ещё раз свой хлам, где ты, говоришь, его нашел?<br>Сейчас сверюсь с документами... Ох, рабогамскую жабу мне в горло, а ведь и правда, ЯМАТО был подбит в том секторе!<br>Что же вы раньше не сказали?! Такс, <1> сейчас прикину сколько на это уйдет времени... Кхм, если вы проспонсируете реконструкцию, то мы сможем начать прямо сейчас и справимся примерно за полтора года, стоить это будет <2> cr. Если же вы не можете нас спонсировать, то придётся ждать помощи у правительства, а это дело не быстрое. Ориентеровочно в этом случае мы сможем завершить все работы только через три-четыре года, не раньше. Ну что же, решайте, какой вариант выбираем?"    
+    },
+    {
+      "#":  "175",
+      "String":  "Ладно-ладно, уже взлетаю..."    
+    },
+    {
+      "#":  "176",
+      "String":  "Купить корпус за <0> cr."    
+    },
+    {
+      "#":  "177",
+      "String":  "Оставить в музей."    
+    },
+    {
+      "#":  "178",
+      "String":  "Ямато. Я привозил его на <0> недавно."    
+    },
+    {
+      "#":  "179",
+      "String":  "Ок."    
+    },
+    {
+      "#":  "180",
+      "String":  "Ну, осталось только дождаться, когда вы закончите работу."    
+    },
+    {
+      "#":  "182",
+      "String":  "Стойте капитан! Вы присмотритесь, это же похоже на корабль из человеческих сказок. Как же его, кхм.. ах, да, ЯМАТО!<br>"    
+    },
+    {
+      "#":  "183",
+      "String":  "Слушать дальше"    
+    },
+    {
+      "#":  "78",
+      "String":  "База <0> исследовала корпус, можете прилетать"    
+    },
+    {
+      "#":  "79",
+      "String":  "Я решил, что я сделаю с кораблем!"    
+    },
+    {
+      "#":  "80",
+      "String":  "Я вот тут вернулся узнать что там с тем кораблем, который я привозил?"    
+    },
+    {
+      "#":  "82",
+      "String":  "У меня тут обломок корабля есть, нигде не берут, думаю может хоть вам он нужен..."    
+    },
+    {
+      "#":  "92",
+      "String":  "С каким кораблем?"    
+    },
+    {
+      "#":  "98",
+      "String":  "Я подумаю..."    
+    }  
+  ]
+}

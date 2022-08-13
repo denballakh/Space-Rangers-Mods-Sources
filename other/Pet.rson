@@ -1,0 +1,2733 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  -44,
+  "ViewPos.y":  -260,
+  "ScriptName":  "Mod_Pet",
+  "ScriptFileOut":  "D:\\NEW\\Download\\new\\Games\\SR_HD\\SHD_TST\\Mods\\Catventure\\data\\Script\\Mod_Pet.scr",
+  "ScriptTextOut":  "D:\\NEW\\Download\\new\\Games\\SR_HD\\SHD_TST\\Mods\\Catventure\\CFG\\Rus\\Mod_Pet.txt",
+  "GraphPoint.Count":  119,
+  "GraphLink.Count":  107,
+  "GraphRectText.Count":  0,
+  "Variables.Count":  9,
+  "Stars.Count":  1,
+  "Planets.Count":  1,
+  "Ships.Count":  1,
+  "States.Count":  5,
+  "Groups.Count":  3,
+  "Places.Count":  0,
+  "Items.Count":  2,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  4,
+  "DialogMessages.Count":  20,
+  "DialogAnswers.Count":  25,
+  "Operations.Count":  22,
+  "Statements.Count":  26,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "planet",
+          "Pos.x":  360,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  10,
+          "Msg":  "Я берусь за это задание",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "planet",
+          "Pos.x":  390,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  11,
+          "Msg":  "Мне надо подумать",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  31,
+          "Msg":  "Пойду-ка я поговорю с ним как следует...",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  32,
+          "Msg":  "Внимательно слушаю",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  510,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  33,
+          "Msg":  "Чужих проблем только не хватало, и своих дел по горло",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  40,
+          "Msg":  "Так точно, при мне",
+          "AMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  550,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  46,
+          "Msg":  "Надеюсь, что вознаграждение покроет мои издержки. Передаю кота, как сказано в договоре",
+          "AMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  49,
+          "Msg":  "Кажется, теперь мы наконец можем поговорить по душам. Я в курсе того, что происходит на твоем корабле. Мучаешь зверей, значит? А сам сидишь и попиваешь в эфире винишко? Я здесь, чтобы положить этому конец. Передай мне своих животных по-хорошему, или нас рассудят беспристрастные бортовые орудия!",
+          "AMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  730,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  51,
+          "Msg":  "Конец связи",
+          "AMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  550,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  57,
+          "Msg":  "К сожалению, у меня нет его при себе...",
+          "AMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  590,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  63,
+          "Msg":  "Конец связи",
+          "AMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  570,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  65,
+          "Msg":  "Подавись ты своими деньгами. Отдай мне животных, которых держишь в неволе и подвергаешь пыткам, и лети хоть к клисанской бабушке",
+          "AMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "planet",
+          "Pos.x":  440,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  74,
+          "Msg":  "окай",
+          "AMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  730,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  81,
+          "Msg":  "Конец связи",
+          "AMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  510,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  83,
+          "Msg":  "Ха, вы разве не слышали об естественном отборе? Кто сильнее, или в нашем случае богаче, тот и прав. А из вас бы в его цирке наверняка получились отличные клоуны!",
+          "AMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  480,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  85,
+          "Msg":  "Конец связи",
+          "AMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  730,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  92,
+          "Msg":  "Конец связи",
+          "AMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  550,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  94,
+          "Msg":  "Конец связи",
+          "AMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  96,
+          "Msg":  "А до тебя туговато доходит, приятель. Теперь держись...",
+          "AMsg.Num":  "18"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  97,
+          "Msg":  "Вот так бы сразу! Я слишком себя уважаю, чтобы работать за копейки",
+          "AMsg.Num":  "19"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  620,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  100,
+          "Msg":  "Конец связи",
+          "AMsg.Num":  "20"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  630,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  102,
+          "Msg":  "Освободи несчастных животных, мерзавец, не то хуже будет!",
+          "AMsg.Num":  "21"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  570,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  104,
+          "Msg":  "Конец связи",
+          "AMsg.Num":  "22"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  570,
+          "Pos.y":  -90,
+          "Parent":  -1,
+          "#":  105,
+          "Msg":  "Ну вот мог же сразу предложить, а? Так нет же, надо было отнять у меня время. По рукам!",
+          "AMsg.Num":  "23"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  730,
+          "Pos.y":  10,
+          "Parent":  -1,
+          "#":  111,
+          "Msg":  "Конец связи",
+          "AMsg.Num":  "24"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  360,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  9,
+          "Msg":  "Добрый день, <Player>. Да, у нас есть для вас задание, несложное. Одна респектабельная и близкая к правительству персона на нашей планете увлекается разведением породистых котов. Не в курсе, что это такое? Нет, это не то, что едят с кетчупом. Кот - это представитель животного мира родом с колыбели человечества, планеты Земля. Знаете, они такие милые и пушистые... впрочем, не будем отвлекаться от дела. Слухи о наличии здесь не просто настоящего земного кота, а еще и потомка самого великого Мяуруса, предотвратившего разгоравшийся атланский конфликт своим неповторимым мурчанием, добрались до известного коллекционера галактических животных, Алани Калама, и они заключили сделку с его владельцем. Со своей стороны мы обязались передать ему ценного кошачьего наследника, за что коллекционер переведет солидную сумму как нашему правительству, так и хозяину кота. Не сомневайтесь, ваш труд тоже будет щедро вознагражден - по контракту курьер получает соблазнительную сумму в <tint2> cr. Найти Алани вы сможете на борту его собственного шикарного судна, <ShipName(GroupToShip(Barmaley))>, местонахождение которого в данный момент вы можете узнать в нашем информационном центре.",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  30,
+          "Msg":  "Рейнджер <Player>, нам срочно нужна ваша помощь!",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  34,
+          "Msg":  "Простите, что нагружаем вас своими проблемами, больше совершенно не к кому обратиться! Мы из Лиги Защитников Прав Галактических Животных. Наш \"крот\", сумевший втереться в доверие к Алани Каламу, отрапортовал поистине ужасные сведения! Дело в том, что богатый коллекционер собирает зверей со всей Галактики вовсе не из любви к живому, а ради удовлетворения своих извращенных страстей! Животные постоянно подвергаются жестокому обращению, а также он силой принуждает их выступать на арене подпольного цирка, находящегося прямо на его судне! В качестве зрителей выступают преступники всех мастей из этого и близлежащих секторов. С его средствами и положением он фактически неприкасаем, так что мы совершенно ничего не можем поделать с подобным вопиющим безобразием. Пожалуйста, рейнджер, все военные им куплены, вы наша последняя надежда, помогите освободить несчастных животных!",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  39,
+          "Msg":  "Мсье <Player>? Для меня большая честь встретиться на просторах космоса со знаменитым галактическим героем. Надеюсь, мое милое хвостатое сокровище при вас?",
+          "DMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  45,
+          "Msg":  "Не желаете ли пройти на борт моего судна и как следует злоупотребить моим бесконечным гостеприимством? Впрочем, не смею отвлекать вас от выполнения ваших прямых обязанностей. Передайте же мне этого пушистого прелестника и ваша награда увенчает наше успешное сотрудничество!",
+          "DMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  690,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  50,
+          "Msg":  "В таком случае, могу ли я любезно попросить вас подлететь ко мне поближе? К сожалению, мой бортовой телепорт не поддерживает столь больших расстояний.",
+          "DMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  62,
+          "Msg":  "В таком случае, мой любезный, попробуйте их у меня отобрать. Это вам не одинокого штипа расстреливать вдали от основного сражения, и не собирать оставшиеся после жаркой битвы доминаторские останки.",
+          "DMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  570,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  64,
+          "Msg":  "Что же, я вынужден признать, вы победили. Мое последнее слово: я готов вам заплатить тройную цену и мы навсегда забудем об этом досадном недоразумении... Соглашайтесь, этот кот даже близко столько не стоит.",
+          "DMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  73,
+          "Msg":  "забираем предметы",
+          "DMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  690,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  80,
+          "Msg":  "Еще раз огромное спасибо вам, <Player>! Этот кот станет жемчужиной моей коллекции!",
+          "DMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  84,
+          "Msg":  "Огромное спасибо вам, рейнджер! Пока такие как вы стоят на страже справедливости, Галактика может спать спокойно! Мы вынуждены отправиться с докладом на планету <Name(tdw)> системы <Name(tdw2)>, там вас вместе с животными будут ждать наши представители. Удачи!",
+          "DMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  690,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  89,
+          "Msg":  "Увы, мы с вами все еще находимся недостаточно близко друг к другу...",
+          "DMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  550,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  93,
+          "Msg":  "Какой симпатяжка! Спасибо, рейнджер, это достойное пополнение моей коллекции. Успехов вам в вашем нелегком ремесле!",
+          "DMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  95,
+          "Msg":  "Уважаемый, вы серьезно? Вас подослали эти коптящие космос правозащитники? Ха, между прочим, это именно благодаря мне у этих бездарей вообще есть работа. Неужели такого космического воина как вы, покорителя скоплений, туманностей и протуберанцев, могут волновать подобные глупости? Я все понял: да вы просто торгуетесь! Ну конечно, я был готов к подобному сценарию. Скажем, вас устроит, если я подниму сумму вознаграждения в два раза?",
+          "DMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  99,
+          "Msg":  "А вы, я смотрю, авантюрист. Точно как я в молодости. Ну что же, вы не оставляете мне выбора: придется тряхнуть стариной и вновь нюхнуть порох. Мой корабль оснащен по последнему слову техники, так что я вполне способен дать отпор местной шпане, пусть даже она и прикрывается благородным рейнджерским движением!",
+          "DMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  630,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  101,
+          "Msg":  "Господин <Player>, хоть я вами в крайней степени и разочарован, еще не поздно перевести наш диалог в конструктивное русло.",
+          "DMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  570,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  103,
+          "Msg":  "Да я их всю жизнь собирал! Вот вы думаете, пять часов шляться по лесным массивам Эйпентака в поисках жмюкадюка - это приятная прогулка, да?! Или ловить болотного боброхобота, когда тебя одновременно жалит сразу шестеро москитосов?! Кого нынче берут в рейнджеры - ни совести, ни сострадания. Зверье им, оказывается, дороже... Я сбрасываю груз. Надеюсь, что вы от меня отстанете и мы никогда больше в жизни не увидимся!",
+          "DMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  -40,
+          "Parent":  -1,
+          "#":  110,
+          "Msg":  "Ха, да вы определенно самый нахальный бизнес-партнер, с которым мне доводилось иметь дело. Не сказал бы, что я одобряю подобный метод ведения переговоров, но я однозначно не могу не проникнуться к вам уважением!\r\nКакой же он симпатяжка!.. Спасибо, рейнджер, это достойное пополнение моей коллекции.",
+          "DMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  10,
+          "Parent":  -1,
+          "#":  113,
+          "Msg":  "Тогда вам опять стоит подлететь ко мне поближе.",
+          "DMsg.Num":  "18"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  710,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  116,
+          "Msg":  "Увы, мы с вами все еще находимся недостаточно близко друг к другу...",
+          "DMsg.Num":  "19"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "Pet_0",
+          "Pos.x":  360,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  8        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "Pet_1",
+          "Pos.x":  480,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  29        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "Pet_2",
+          "Pos.x":  650,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  38        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "Pet_3",
+          "Pos.x":  440,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  72        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "GroupNew",
+          "Pos.x":  60,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  3,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "Barmaley",
+          "Pos.x":  -40,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  19,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "Liga",
+          "Pos.x":  -40,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  25,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Items":      
+      [
+        {
+          "Type":  "TItem",
+          "Name":  "q_item_0",
+          "Pos.x":  270,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  17,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        },
+        {
+          "Type":  "TItem",
+          "Name":  "q_item_1",
+          "Pos.x":  270,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  18,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  90,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  5,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GRun()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  7,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(PlanetOwner(GetShipPlanet(Player()))>0)AddDialogInject('Pet_0','',\"Начало задания?\",1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  120,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  12,
+          "Total.Lines":  2,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "s_array=newarray(10);",
+              "for(i=0;i<10;i=i+1)s_array[i]=0;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  310,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  15,
+          "Total.Lines":  17,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[0]=1;",
+              "s_array[1]=101;",
+              "s_array[7]=tint2;",
+              "s_array[8]=Id(ShipStar(GroupToShip(Barmaley)));",
+              "s_array[9]=Id(ShipStar(Player()));",
+              "tdw=CreateQuestItem('Pet_Item_0',PlanetRace(GetShipPlanet(Player())));",
+              "NoDropItem(tdw,1);",
+              "AddItemToShip(Player(),tdw);",
+              "LinkItemToScript(tdw,q_item_0);",
+              "NoComeKlingToStar(tdw2,1);",
+              "Ether(3,'Pet_ether_Q',\"Вы должны передать кота, ценнейшего наследника великого Мяуруса, известному коллекционеру галактических животных Алани Каламу не позже <GameDateTxtByTurn(CurTurn()+s_array[1])>.\");",
+              "tdw=CreateQuestItem('Pet_Item_1',ShipOwner(GroupToShip(Barmaley)));",
+              "NoDropItem(tdw,1);",
+              "AddItemToShip(GroupToShip(Barmaley),tdw);",
+              "LinkItemToScript(tdw,q_item_1);",
+              "NoTargetToShip(GroupToShip(Barmaley),1);",
+              "ShipDestroy(GroupToShip(Barmaley),0);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  360,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  21,
+          "Total.Lines":  39,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "for(i=5;i<50;i=i+1)",
+              "    {",
+              "    tdw2=StarNearbyStars(ShipStar(Player()),i);",
+              "    if(StarOwner(tdw2)!=0)continue;",
+              "    if(StarEnemyThreatLevel(tdw2)!=0)continue;",
+              "    if(StarBattle(tdw2)!=0)continue;",
+              "    break;",
+              "    }",
+              "if(GroupCount(Barmaley)==0)",
+              "    {",
+              "    for(i=0;i<StarPlanets(tdw2);i=i+1)",
+              "        {",
+              "        tdw=StarPlanets(tdw2,i);",
+              "        if(PlanetOwner(tdw)>4)continue;",
+              "        break;",
+              "        }",
+              "    tdw=BuyTransport(tdw,0);",
+              "    ShipJoin(Barmaley,tdw);",
+              "    ShipSpecialBonuses(tdw,bonJump,-300);",
+              "    NoTargetToShip(tdw,2);",
+              "    }",
+              "tint=0;",
+              "tint2=0;",
+              "for(i=0;i<GalaxyStars();i=i+1)",
+              "    {",
+              "    for(j=0;j<StarShips(GalaxyStar(i));j=j+1)",
+              "        {",
+              "        if(ShipType(StarShips(GalaxyStar(i),j))!='Ranger')continue;",
+              "        if(StarShips(GalaxyStar(i),j)==Player())continue;",
+              "        tint=tint+ShipMoney(StarShips(GalaxyStar(i),j));",
+              "        tint2=tint2+1;",
+              "        }",
+              "    }",
+              "tint=tint/tint2;",
+              "tint=tint/100;",
+              "tint2=round(min(tint,ShipMoney(Player())/100)/7)+1200;",
+              "tint2=round(tint2*(200-GalaxyDiffLevels(5)));",
+              "tint2=tint2+round(tint2*0.1*ShipSkill(Player(),4));",
+              "tint2=round(tint2,2);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  390,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  26,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipDestroy(GroupToShip(Barmaley),1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  170,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  27,
+          "Total.Lines":  77,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(s_array[0]==1)",
+              "    {",
+              "    if(ShipInNormalSpace(GroupToShip(Barmaley)))ChangeState(1,GroupToShip(Barmaley));",
+              "    if(s_array[1]>0 && GroupToShip(Barmaley))",
+              "        {",
+              "        s_array[1]=s_array[1]-1;",
+              "//        Ether(3,'Pet_ether_Q',\"Передать предмет кораблю <ShipName(GroupToShip(Barmaley))>. Осталось до завершения задания <s_array[1]> дней.\");",
+              "        }",
+              "    if(ShipInNormalSpace(Player()) && s_array[2]==0 && s_array[1]>3)",
+              "        {",
+              "        tdw2=ShipStar(GroupToShip(Barmaley));",
+              "        if(ShipStar(Player())==tdw2)",
+              "            {",
+              "            s_array[2]=1;",
+              "            for(i=0;i<StarPlanets(tdw2);i=i+1)",
+              "                {",
+              "                tdw=StarPlanets(tdw2,i);",
+              "                if(PlanetOwner(tdw)>4)continue;",
+              "                break;",
+              "                }",
+              "            tdw=BuyTransport(tdw,1);",
+              "            NoTargetToShip(tdw,1);",
+              "            ShipJoin(Liga,tdw);",
+              "            MakeShipEnterStar(tdw,tdw2,GalaxyStar(s_array[9]-1),0);",
+              "            }",
+              "        }",
+              "    if(s_array[1]<=0 || !GroupToShip(Barmaley))",
+              "        {",
+              "        Ether(5,'Pet_ether_Q',\"<color=255,0,0>Задание провалено.</color><br>Вы должны передать кота, ценнейшего наследника великого Мяуруса, известному коллекционеру галактических животных Алани Каламу не позже <GameDateTxtByTurn(CurTurn()+s_array[1])>.\");",
+              "        s_array[0]=-1;",
+              "        if(ScriptItemToItem(q_item_0))",
+              "            {",
+              "            NoDropItem(q_item_0,0);",
+              "            ReleaseItemFromScript(q_item_0);",
+              "            }",
+              "        if(ScriptItemToItem(q_item_1))",
+              "            {",
+              "            NoDropItem(q_item_1,0);",
+              "            ReleaseItemFromScript(q_item_1);",
+              "            }",
+              "        NoComeKlingToStar(GalaxyStar(s_array[8]-1),0);",
+              "        if(s_array[6]>0)NoComeKlingToStar(GalaxyStar(s_array[5]-1),0);",
+              "        if(GroupToShip(Barmaley))",
+              "            {",
+              "            ChangeState(1,GroupToShip(Barmaley));",
+              "            NoTargetToShip(GroupToShip(Barmaley),0);",
+              "            ShipOut(GroupToShip(Barmaley));",
+              "            }",
+              "        ShipOut(Player());",
+              "        }",
+              "    }",
+              "if(s_array[0]==2)",
+              "    {",
+              "    if(s_array[1]>0)",
+              "        {",
+              "        s_array[1]=s_array[1]-1;",
+              "        Ether(3,'Pet_ether_Q',\"Бармалей побеждён, но звирушки продержаться <s_array[1]> дней. На планете <tst> системы <tst2> о них позаботятся.\");",
+              "        }",
+              "    if(s_array[1]<=0 || !ScriptItemToItem(q_item_1))",
+              "        {",
+              "        Ether(5,'Pet_ether_Q',\"Задание провалено.\");",
+              "        s_array[0]=-1;",
+              "        if(ScriptItemToItem(q_item_0))",
+              "            {",
+              "            NoDropItem(q_item_0,0);",
+              "            ReleaseItemFromScript(q_item_0);",
+              "            }",
+              "        if(ScriptItemToItem(q_item_1))",
+              "            {",
+              "            NoDropItem(q_item_1,0);",
+              "            ReleaseItemFromScript(q_item_1);",
+              "            }",
+              "        NoComeKlingToStar(GalaxyStar(s_array[8]-1),0);",
+              "        if(s_array[6]>0)NoComeKlingToStar(GalaxyStar(s_array[5]-1),0);",
+              "        ShipOut(Player());",
+              "        }",
+              "    }"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  10,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  36,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dialog(Pet_1,Liga)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  530,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  37,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOut(GroupToShip(Liga));"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  530,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  44,
+          "Total.Lines":  6,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[4]=1;",
+              "s_array[5]=Id(tdw2);",
+              "s_array[6]=Id(tdw);",
+              "NoComeKlingToStar(tdw2,1);",
+              "tst=Name(tdw);",
+              "tst2=Name(tdw2);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  53,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[3]=1;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  550,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  54,
+          "Total.Lines":  18,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player(),ShipMoney(Player())+s_array[7]);",
+              "Sound('Sound.Sell');",
+              "RelationToRanger(GroupToShip(Barmaley),Player(),RelationToRanger(GroupToShip(Barmaley),Player())+20);",
+              "AddItemToShip(GroupToShip(Barmaley),GetItemFromShip(Player(),FindItemInShip(Player(),q_item_0)));",
+              "Ether(4,'Pet_ether_Q',\"<color=0,255,0>Задание выполнено.</color><br>Вы должны передать кота, ценнейшего наследника великого Мяуруса, известному коллекционеру галактических животных Алани Каламу не позже <GameDateTxtByTurn(CurTurn()+s_array[1])>.\");",
+              "ChangeState(1,GroupToShip(Barmaley));",
+              "s_array[0]=-1;",
+              "s_array[3]=0;",
+              "if(ScriptItemToItem(q_item_0))",
+              "    {",
+              "    NoDropItem(q_item_0,0);",
+              "    ReleaseItemFromScript(q_item_0);",
+              "    }",
+              "if(ScriptItemToItem(q_item_1))",
+              "    {",
+              "    NoDropItem(q_item_1,0);",
+              "    ReleaseItemFromScript(q_item_1);",
+              "    }"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  58,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "NoTargetToShip(GroupToShip(Barmaley),0);",
+              "ChangeState(4,GroupToShip(Barmaley));",
+              "RelationToRanger(GroupToShip(Barmaley),Player(),0);",
+              "s_array[3]=2;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  570,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  66,
+          "Total.Lines":  10,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[1]=30;",
+              "NoDropItem(q_item_1,0);",
+              "DropScriptItem(GroupToShip(Barmaley),q_item_1);",
+              "NoDropItem(q_item_1,1);",
+              "TruceBetweenShips(GroupToShip(Barmaley),Player());",
+              "RelationToRanger(GroupToShip(Barmaley),Player(),25);",
+              "NoComeKlingToStar(ShipStar(GroupToShip(Barmaley)),0);",
+              "ShipOut(GroupToShip(Barmaley));",
+              "s_array[0]=2;",
+              "Ether(3,'Pet_ether_Q',\"Бармалей побеждён, но звирушки продержаться <s_array[1]> дней. На планете <tst> системы <tst2> о них позаботятся.\");"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  69,
+          "Total.Lines":  17,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "for(i=6;i<50;i=i+1)",
+              "    {",
+              "    tdw2=StarNearbyStars(ShipStar(Player()),i);",
+              "    if(StarOwner(tdw2)!=0)continue;",
+              "    if(StarEnemyThreatLevel(tdw2)!=0)continue;",
+              "    if(StarBattle(tdw2)!=0)continue;",
+              "    tint=0;",
+              "    for(j=0;j<StarPlanets(tdw2);j=j+1)",
+              "        {",
+              "        tdw=StarPlanets(tdw2,j);",
+              "        if(PlanetOwner(tdw)>4 || PlanetOwner(tdw)<2)tint=0;",
+              "        if(PlanetOwner(tdw)>4 || PlanetOwner(tdw)<2)continue;",
+              "        tint=1;",
+              "        break;",
+              "        }",
+              "    if(tint==1)break;",
+              "    }"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  10,
+          "Parent":  -1,
+          "#":  71,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(Id(GetShipPlanet(Player()))==s_array[6] && ItemIn(q_item_0,Player()) && ItemIn(q_item_1,Player()))",
+              "    {",
+              "    AddDialogOverride('Pet_3',11);",
+              "    }"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -100,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  76,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "NoComeKlingToStar(ShipStar(GroupToShip(Barmaley)),0);",
+              "if(s_array[6]>0)NoComeKlingToStar(GalaxyStar(s_array[5]-1),0);",
+              "NoTargetToShip(GroupToShip(Barmaley),0);",
+              "ShipOut(GroupToShip(Barmaley));"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  98,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[7]=s_array[7]*2;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  -90,
+          "Parent":  -1,
+          "#":  106,
+          "Total.Lines":  6,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[3]=3;",
+              "TruceBetweenShips(GroupToShip(Barmaley),Player());",
+              "RelationToRanger(GroupToShip(Barmaley),Player(),30);",
+              "ChangeState(1,GroupToShip(Barmaley));",
+              "NoTargetToShip(GroupToShip(Barmaley),1);",
+              "s_array[7]=s_array[7]*3;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  112,
+          "Total.Lines":  18,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player(),ShipMoney(Player())+s_array[7]);",
+              "Sound('Sound.Sell');",
+              "RelationToRanger(GroupToShip(Barmaley),Player(),RelationToRanger(GroupToShip(Barmaley),Player())+20);",
+              "AddItemToShip(GroupToShip(Barmaley),GetItemFromShip(Player(),FindItemInShip(Player(),q_item_0)));",
+              "Ether(4,'Pet_ether_Q',\"<color=0,255,0>Задание выполнено.</color><br>Вы должны передать кота, ценнейшего наследника великого Мяуруса, известному коллекционеру галактических животных Алани Каламу не позже <GameDateTxtByTurn(CurTurn()+s_array[1])>.\");",
+              "ChangeState(1,GroupToShip(Barmaley));",
+              "s_array[0]=-1;",
+              "s_array[3]=0;",
+              "if(ScriptItemToItem(q_item_0))",
+              "    {",
+              "    NoDropItem(q_item_0,0);",
+              "    ReleaseItemFromScript(q_item_0);",
+              "    }",
+              "if(ScriptItemToItem(q_item_1))",
+              "    {",
+              "    NoDropItem(q_item_1,0);",
+              "    ReleaseItemFromScript(q_item_1);",
+              "    }"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  114,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[3]=4;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  380,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  118,
+          "Total.Lines":  6,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),q_item_0)));",
+              "FreeItem(GetItemFromShip(Player(),FindItemInShip(Player(),q_item_1)));",
+              "s_array[0]=-1;",
+              "InterfaceState('Ship','Cat_panel',1);",
+              "InterfaceText('Ship','Cat_name',\"Шаверма\");",
+              "InterfaceText('Ship','Cat_text',\"Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст\");"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "PlanetNew",
+          "Pos.x":  60,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  2,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  60,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  0,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "StarNew",
+          "Pos.x":  60,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  1,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  170,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  6,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "GetShipPlanet(Player())>0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -40,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  35,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipStar(Player())==ShipStar(GroupToShip(Liga)) && ShipInNormalSpace(GroupToShip(Liga))"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  41,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dist(Player(),GroupToShip(Barmaley))<=180"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  630,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  42,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dist(Player(),GroupToShip(Barmaley))>180"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  43,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[3]==0 && s_array[0]>0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  48,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[4]==1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  630,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  52,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[3]==1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  55,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ItemIn(q_item_0,Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  550,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  56,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemIn(q_item_0,Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  630,
+          "Pos.y":  10,
+          "Parent":  -1,
+          "#":  59,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[3]==2"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  610,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  60,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "HullDamage(GroupToShip(Barmaley))<80"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  630,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  61,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "HullDamage(GroupToShip(Barmaley))>=80"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  210,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  67,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[0]==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  210,
+          "Pos.y":  10,
+          "Parent":  -1,
+          "#":  70,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[0]==2"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -100,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  75,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GetShipPlanet(GroupToShip(Barmaley))>0 && s_array[0]<0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -40,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  77,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[3]==1 || s_array[3]>2"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -70,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  78,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[3]==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  670,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  79,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[0]==-1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  90,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  82,
+          "Total.Lines":  1,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "GLastTurnRun(GScriptName)==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  670,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  90,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[3]==1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  670,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  91,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[3]==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  107,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[3]>2"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  108,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dist(Player(),GroupToShip(Barmaley))<=180"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  109,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dist(Player(),GroupToShip(Barmaley))>180"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  700,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  115,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[3]==4"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  117,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "s_array[3]==3"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "StateNew",
+          "Pos.x":  60,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  4,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "I_free",
+          "Pos.x":  -100,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  20,
+          "Move":  5,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Pet_2",
+          "OnActCode":  "Pet_2",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "I_free_2",
+          "Pos.x":  -40,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  28,
+          "Move":  5,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "FLW_Pla",
+          "Pos.x":  -40,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  47,
+          "Move":  2,
+          "MoveObj":  3,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Pet_2",
+          "OnActCode":  "Pet_2",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Att_Pla",
+          "Pos.x":  -100,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  68,
+          "Move":  5,
+          "MoveObj":  -1,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  3            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Pet_2",
+          "OnActCode":  "Pet_2",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "s_array",
+          "Pos.x":  170,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  13,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "i",
+          "Pos.x":  170,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  14,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tdw",
+          "Pos.x":  170,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  16,
+          "Var.Type":  "Dword",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tst",
+          "Pos.x":  170,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  22,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tst2",
+          "Pos.x":  170,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  23,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tdw2",
+          "Pos.x":  170,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  24,
+          "Var.Type":  "Dword",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tint",
+          "Pos.x":  170,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  86,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tint2",
+          "Pos.x":  170,
+          "Pos.y":  370,
+          "Parent":  -1,
+          "#":  87,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "j",
+          "Pos.x":  210,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  88,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  4,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  2,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  0,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  11,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  10,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  15,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  21,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  21,
+      "End":  9,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  25,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  26,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  25,
+      "End":  28,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  34,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  28,
+      "End":  35,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  35,
+      "End":  36,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  43,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  40,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  44,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  45,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  48,
+      "End":  49,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  50,
+      "End":  51,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  52,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  51,
+      "End":  53,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  45,
+      "End":  55,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  55,
+      "End":  46,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  55,
+      "End":  48,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  45,
+      "End":  56,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  56,
+      "End":  57,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  59,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  60,
+      "End":  62,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  62,
+      "End":  63,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  61,
+      "End":  64,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  67,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  67,
+      "End":  7,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  69,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  69,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  70,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  70,
+      "End":  71,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  72,
+      "End":  73,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  73,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  20,
+      "End":  75,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  75,
+      "End":  76,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  77,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  20,
+      "End":  77,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  78,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  78,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  79,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  79,
+      "End":  80,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  80,
+      "End":  81,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  82,
+      "End":  5,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  34,
+      "End":  83,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  83,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  85,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  84,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  84,
+      "End":  85,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  42,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  91,
+      "End":  50,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  42,
+      "End":  90,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  90,
+      "End":  89,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  89,
+      "End":  92,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  54,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  54,
+      "End":  93,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  93,
+      "End":  94,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  95,
+      "End":  96,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  49,
+      "End":  95,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  95,
+      "End":  97,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  97,
+      "End":  98,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  98,
+      "End":  54,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  96,
+      "End":  99,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  99,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  100,
+      "End":  58,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  59,
+      "End":  101,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  101,
+      "End":  102,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  102,
+      "End":  61,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  102,
+      "End":  60,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  64,
+      "End":  65,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  65,
+      "End":  103,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  103,
+      "End":  104,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  104,
+      "End":  66,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  64,
+      "End":  105,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  107,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  107,
+      "End":  108,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  107,
+      "End":  109,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  105,
+      "End":  106,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  106,
+      "End":  107,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  108,
+      "End":  112,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  112,
+      "End":  110,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  110,
+      "End":  111,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  113,
+      "End":  111,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  114,
+      "End":  113,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  109,
+      "End":  117,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  109,
+      "End":  115,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  115,
+      "End":  116,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  117,
+      "End":  114,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  116,
+      "End":  111,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  74,
+      "End":  118,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  44,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "0",
+      "String":  "Начало задания?"    
+    },
+    {
+      "#":  "24",
+      "String":  "Бармалей побеждён, но звирушки продержаться <0> дней. На планете <1> системы <2> о них позаботятся."    
+    },
+    {
+      "#":  "25",
+      "String":  "забираем предметы"    
+    },
+    {
+      "#":  "26",
+      "String":  "Задание провалено."    
+    },
+    {
+      "#":  "28",
+      "String":  "Добрый день, <Player>. Да, у нас есть для вас задание, несложное. Одна респектабельная и близкая к правительству персона на нашей планете увлекается разведением породистых котов. Не в курсе, что это такое? Нет, это не то, что едят с кетчупом. Кот - это представитель животного мира родом с колыбели человечества, планеты Земля. Знаете, они такие милые и пушистые... впрочем, не будем отвлекаться от дела. Слухи о наличии здесь не просто настоящего земного кота, а еще и потомка самого великого Мяуруса, предотвратившего разгоравшийся атланский конфликт своим неповторимым мурчанием, добрались до известного коллекционера галактических животных, Алани Калама, и они заключили сделку с его владельцем. Со своей стороны мы обязались передать ему ценного кошачьего наследника, за что коллекционер переведет солидную сумму как нашему правительству, так и хозяину кота. Не сомневайтесь, ваш труд тоже будет щедро вознагражден - по контракту курьер получает соблазнительную сумму в <0> cr. Найти Алани вы сможете на борту его собственного шикарного судна, <1>, местонахождение которого в данный момент вы можете узнать в нашем информационном центре."    
+    },
+    {
+      "#":  "29",
+      "String":  "Рейнджер <Player>, нам срочно нужна ваша помощь!"    
+    },
+    {
+      "#":  "31",
+      "String":  "Огромное спасибо вам, рейнджер! Пока такие как вы стоят на страже справедливости, Галактика может спать спокойно! Мы вынуждены отправиться с докладом на планету <0> системы <1>, там вас вместе с животными будут ждать наши представители. Удачи!"    
+    },
+    {
+      "#":  "32",
+      "String":  "Вы должны передать кота, ценнейшего наследника великого Мяуруса, известному коллекционеру галактических животных Алани Каламу не позже <0>."    
+    },
+    {
+      "#":  "33",
+      "String":  "Пойду-ка я поговорю с ним как следует..."    
+    },
+    {
+      "#":  "34",
+      "String":  "Внимательно слушаю"    
+    },
+    {
+      "#":  "35",
+      "String":  "Чужих проблем только не хватало, и своих дел по горло"    
+    },
+    {
+      "#":  "36",
+      "String":  "Ха, вы разве не слышали об естественном отборе? Кто сильнее, или в нашем случае богаче, тот и прав. А из вас бы в его цирке наверняка получились отличные клоуны!"    
+    },
+    {
+      "#":  "37",
+      "String":  "Конец связи"    
+    },
+    {
+      "#":  "38",
+      "String":  "Я берусь за это задание"    
+    },
+    {
+      "#":  "39",
+      "String":  "Мне надо подумать"    
+    },
+    {
+      "#":  "40",
+      "String":  "Простите, что нагружаем вас своими проблемами, больше совершенно не к кому обратиться! Мы из Лиги Защитников Прав Галактических Животных. Наш \"крот\", сумевший втереться в доверие к Алани Каламу, отрапортовал поистине ужасные сведения! Дело в том, что богатый коллекционер собирает зверей со всей Галактики вовсе не из любви к живому, а ради удовлетворения своих извращенных страстей! Животные постоянно подвергаются жестокому обращению, а также он силой принуждает их выступать на арене подпольного цирка, находящегося прямо на его судне! В качестве зрителей выступают преступники всех мастей из этого и близлежащих секторов. С его средствами и положением он фактически неприкасаем, так что мы совершенно ничего не можем поделать с подобным вопиющим безобразием. Пожалуйста, рейнджер, все военные им куплены, вы наша последняя надежда, помогите освободить несчастных животных!"    
+    },
+    {
+      "#":  "41",
+      "String":  "Мсье <Player>? Для меня большая честь встретиться на просторах космоса со знаменитым галактическим героем. Надеюсь, мое милое хвостатое сокровище при вас?"    
+    },
+    {
+      "#":  "42",
+      "String":  "Не желаете ли пройти на борт моего судна и как следует злоупотребить моим бесконечным гостеприимством? Впрочем, не смею отвлекать вас от выполнения ваших прямых обязанностей. Передайте же мне этого пушистого прелестника и ваша награда увенчает наше успешное сотрудничество!"    
+    },
+    {
+      "#":  "45",
+      "String":  "Что же, я вынужден признать, вы победили. Мое последнее слово: я готов вам заплатить тройную цену и мы навсегда забудем об этом досадном недоразумении... Соглашайтесь, этот кот даже близко столько не стоит."    
+    },
+    {
+      "#":  "46",
+      "String":  "Увы, мы с вами все еще находимся недостаточно близко друг к другу..."    
+    },
+    {
+      "#":  "47",
+      "String":  "Какой симпатяжка! Спасибо, рейнджер, это достойное пополнение моей коллекции. Успехов вам в вашем нелегком ремесле!"    
+    },
+    {
+      "#":  "48",
+      "String":  "Уважаемый, вы серьезно? Вас подослали эти коптящие космос правозащитники? Ха, между прочим, это именно благодаря мне у этих бездарей вообще есть работа. Неужели такого космического воина как вы, покорителя скоплений, туманностей и протуберанцев, могут волновать подобные глупости? Я все понял: да вы просто торгуетесь! Ну конечно, я был готов к подобному сценарию. Скажем, вас устроит, если я подниму сумму вознаграждения в два раза?"    
+    },
+    {
+      "#":  "49",
+      "String":  "А вы, я смотрю, авантюрист. Точно как я в молодости. Ну что же, вы не оставляете мне выбора: придется тряхнуть стариной и вновь нюхнуть порох. Мой корабль оснащен по последнему слову техники, так что я вполне способен дать отпор местной шпане, пусть даже она и прикрывается благородным рейнджерским движением!"    
+    },
+    {
+      "#":  "50",
+      "String":  "Господин <Player>, хоть я вами в крайней степени и разочарован, еще не поздно перевести наш диалог в конструктивное русло."    
+    },
+    {
+      "#":  "53",
+      "String":  "Тогда вам опять стоит подлететь ко мне поближе."    
+    },
+    {
+      "#":  "54",
+      "String":  "Так точно, при мне"    
+    },
+    {
+      "#":  "56",
+      "String":  "Кажется, теперь мы наконец можем поговорить по душам. Я в курсе того, что происходит на твоем корабле. Мучаешь зверей, значит? А сам сидишь и попиваешь в эфире винишко? Я здесь, чтобы положить этому конец. Передай мне своих животных по-хорошему, или нас рассудят беспристрастные бортовые орудия!"    
+    },
+    {
+      "#":  "57",
+      "String":  "Подавись ты своими деньгами. Отдай мне животных, которых держишь в неволе и подвергаешь пыткам, и лети хоть к клисанской бабушке"    
+    },
+    {
+      "#":  "58",
+      "String":  "А до тебя туговато доходит, приятель. Теперь держись..."    
+    },
+    {
+      "#":  "59",
+      "String":  "Вот так бы сразу! Я слишком себя уважаю, чтобы работать за копейки"    
+    },
+    {
+      "#":  "60",
+      "String":  "Освободи несчастных животных, мерзавец, не то хуже будет!"    
+    },
+    {
+      "#":  "61",
+      "String":  "Ну вот мог же сразу предложить, а? Так нет же, надо было отнять у меня время. По рукам!"    
+    },
+    {
+      "#":  "62",
+      "String":  "<color=255,0,0>Задание провалено.</color><br>Вы должны передать кота, ценнейшего наследника великого Мяуруса, известному коллекционеру галактических животных Алани Каламу не позже <0>."    
+    },
+    {
+      "#":  "63",
+      "String":  "Надеюсь, что вознаграждение покроет мои издержки. Передаю кота, как сказано в договоре"    
+    },
+    {
+      "#":  "64",
+      "String":  "<color=0,255,0>Задание выполнено.</color><br>Вы должны передать кота, ценнейшего наследника великого Мяуруса, известному коллекционеру галактических животных Алани Каламу не позже <0>."    
+    },
+    {
+      "#":  "65",
+      "String":  "Ха, да вы определенно самый нахальный бизнес-партнер, с которым мне доводилось иметь дело. Не сказал бы, что я одобряю подобный метод ведения переговоров, но я однозначно не могу не проникнуться к вам уважением!<br>Какой же он симпатяжка!.. Спасибо, рейнджер, это достойное пополнение моей коллекции."    
+    },
+    {
+      "#":  "66",
+      "String":  "Да я их всю жизнь собирал! Вот вы думаете, пять часов шляться по лесным массивам Эйпентака в поисках жмюкадюка - это приятная прогулка, да?! Или ловить болотного боброхобота, когда тебя одновременно жалит сразу шестеро москитосов?! Кого нынче берут в рейнджеры - ни совести, ни сострадания. Зверье им, оказывается, дороже... Я сбрасываю груз. Надеюсь, что вы от меня отстанете и мы никогда больше в жизни не увидимся!"    
+    },
+    {
+      "#":  "67",
+      "String":  "В таком случае, могу ли я любезно попросить вас подлететь ко мне поближе? К сожалению, мой бортовой телепорт не поддерживает столь больших расстояний."    
+    },
+    {
+      "#":  "68",
+      "String":  "В таком случае, мой любезный, попробуйте их у меня отобрать. Это вам не одинокого штипа расстреливать вдали от основного сражения, и не собирать оставшиеся после жаркой битвы доминаторские останки."    
+    },
+    {
+      "#":  "69",
+      "String":  "Еще раз огромное спасибо вам, <Player>! Этот кот станет жемчужиной моей коллекции!"    
+    },
+    {
+      "#":  "70",
+      "String":  "К сожалению, у меня нет его при себе..."    
+    },
+    {
+      "#":  "72",
+      "String":  "Шаверма"    
+    },
+    {
+      "#":  "74",
+      "String":  "Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст"    
+    },
+    {
+      "#":  "8",
+      "String":  "окай"    
+    }  
+  ]
+}

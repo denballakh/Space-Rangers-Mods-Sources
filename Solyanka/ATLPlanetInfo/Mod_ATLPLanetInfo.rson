@@ -1,0 +1,1167 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  -69,
+  "ViewPos.y":  -90,
+  "ScriptName":  "Mod_ATLPlanetInfo",
+  "ScriptFileOut":  "H:\\Build\\Mod_ATLPlanetInfo.scr",
+  "ScriptTextOut":  "H:\\Build\\Mod_ATLPlanetInfo.txt",
+  "GraphPoint.Count":  42,
+  "GraphLink.Count":  24,
+  "GraphRectText.Count":  0,
+  "Variables.Count":  12,
+  "Stars.Count":  1,
+  "Planets.Count":  1,
+  "Ships.Count":  1,
+  "States.Count":  1,
+  "Groups.Count":  1,
+  "Places.Count":  0,
+  "Items.Count":  0,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  6,
+  "DialogMessages.Count":  2,
+  "DialogAnswers.Count":  1,
+  "Operations.Count":  10,
+  "Statements.Count":  6,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  960,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  23,
+          "Msg":  "<color=136,0,0>Выход</color>",
+          "AMsg.Num":  "0"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  900,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  22,
+          "Msg":  "Выберите способ выбора планеты для показа её ТУ и проектов.",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  870,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  30,
+          "Msg":  "Выберите планету из списка планет системы <Name(q)>.",
+          "DMsg.Num":  "1"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "aTLPlanetInfo",
+          "Pos.x":  930,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  8        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "aStarName",
+          "Pos.x":  930,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  25        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "aChooseStar",
+          "Pos.x":  870,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  26        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "aChoosePlanet",
+          "Pos.x":  930,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  32        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "aAllPlanets",
+          "Pos.x":  930,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  36        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "aSearchPlanet",
+          "Pos.x":  870,
+          "Pos.y":  370,
+          "Parent":  -1,
+          "#":  40        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "GroupNew",
+          "Pos.x":  760,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  1,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  5,
+          "Total.Lines":  1,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "GRun();"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  7,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "AddDialogInject('aTLPlanetInfo','',\"Узнать информацию о ТУ планеты\",3);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  870,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  9,
+          "Total.Lines":  24,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "find=\"\";",
+              "str1=TextBox(\"Введите название планеты:\");",
+              "if (str1!='')",
+              "{",
+              "    for(j=0;j<GalaxyStars();j=j+1) //перебирает все системы в галактике",
+              "    {",
+              "        star=GalaxyStar(j); //система, в которой сейчас воспроизводится поиск",
+              "        for (i=0;i<StarPlanets(star);i=i+1) //перебирает все планеты в системе",
+              "        {",
+              "            planet=StarPlanets(star,i);",
+              "            if (lowercase(DeleteTags('<color=,,>'+DeleteTags(PlanetName(planet))+'</color>'))==lowercase(str1)) //если название планеты соответствует тому, что написал игрок в боксе, то возвращает планету для дальнейших операций",
+              "            {",
+              "                find=1; //планета найдена",
+              "                w=planet; //возвращает планету для дальнейших операций",
+              "            }",
+              "        }",
+              "    }",
+              "    if (!find)",
+              "    {",
+              "        Sound('Sound.DelMsg');",
+              "        MessageBox('Планета <str1> не найдена. Вы уверены, что правильно ввели название?',34);",
+              "    }",
+              "    else { Sound('Sound.NewMsg'); MyFunction(); }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  930,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  24,
+          "Total.Lines":  10,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "DAdd(0);",
+              "InjectAnswer('aSearchPlanet',\"Ввести название конкретной планеты\",0);",
+              "InjectAnswer('aStarName',\"Получить список планет конкретной системы\",1);",
+              "InjectAnswer('aStarName',\"block~Список систем:\",2);",
+              "for(i=0;i<GalaxyStars();i=i+1)",
+              "{",
+              "    star=StarNearbyStars(ShipStar(Player()),i);",
+              "    if (i==0) InjectAnswer('aChooseStar',Name(star)+\" (текущая система)\",star);",
+              "    else InjectAnswer('aChooseStar',Name(star),star);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  900,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  27,
+          "Total.Lines":  20,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "find=\"\";",
+              "str1=TextBox(\"Введите название системы:\");",
+              "if (str1!='')",
+              "{",
+              "    for(i=0;i<GalaxyStars();i=i+1) //перебирает все системы в галактике",
+              "    {",
+              "        star=GalaxyStar(i); //система, в которой сейчас воспроизводится поиск",
+              "        if (lowercase(DeleteTags('<color=,,>'+DeleteTags(StarName(star))+'</color>'))==lowercase(str1)) //если название системы соответствует тому, что написал игрок в боксе, то возвращает систему для дальнейших операций",
+              "        {",
+              "            find=1; //система найдена",
+              "            q=star; //возвращает систему для дальнейших операций",
+              "        }",
+              "    }",
+              "    if (!find)",
+              "    {",
+              "        Sound('Sound.DelMsg');",
+              "        MessageBox('Система <str1> не найдена. Вы уверены, что правильно ввели название?',34);",
+              "    }",
+              "    else Sound('Sound.NewMsg');",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  840,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  31,
+          "Total.Lines":  15,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "DAdd(0);",
+              "InjectAnswer('aTLPlanetInfo',\"Назад\",0);",
+              "k=0;",
+              "for(i=0;i<StarPlanets(q);i=i+1)",
+              "{",
+              "    w=StarPlanets(q,i);",
+              "    if (PlanetOwner(w)!=6) k=k+1;",
+              "}",
+              "if (k>1) InjectAnswer('aAllPlanets',\"Выбрать все обитаемые планеты\",1);",
+              "InjectAnswer('aChoosePlanet',\"block~Обитаемые планеты:\",2);",
+              "for(i=0;i<StarPlanets(q);i=i+1)",
+              "{",
+              "    w=StarPlanets(q,i);",
+              "    if (PlanetOwner(w)!=6) InjectAnswer('aChoosePlanet',Name(w),w);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  900,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  33,
+          "Total.Lines":  3,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "w=GAnswerData;",
+              "MyFunction();",
+              "Sound('Sound.NewMsg');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  870,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  35,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "q=GAnswerData;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  900,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  38,
+          "Total.Lines":  9,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "for(h=0;h<StarPlanets(q);h=h+1)",
+              "{",
+              "    w=StarPlanets(q,h);",
+              "    if (PlanetOwner(w)!=6)",
+              "    {",
+              "        MyFunction();",
+              "    }",
+              "}",
+              "Sound('Sound.NewMsg');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  700,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  39,
+          "Total.Lines":  75,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "//этот код был записан в function, чтобы можно было использовать циклы на коде при выборе ответа \"Выбрать все обитаемые планеты\"",
+              "function MyFunction() {",
+              "    if (PlanetCurInvention(w)==0) str2=\"корпусы\";",
+              "    else if (PlanetCurInvention(w)==1) str2=\"топливные баки\";",
+              "    else if (PlanetCurInvention(w)==2) str2=\"двигатели\";",
+              "    else if (PlanetCurInvention(w)==3) str2=\"радары\";",
+              "    else if (PlanetCurInvention(w)==4) str2=\"сканеры\";",
+              "    else if (PlanetCurInvention(w)==5) str2=\"дроиды\";",
+              "    else if (PlanetCurInvention(w)==6) str2=\"захваты\";",
+              "    else if (PlanetCurInvention(w)==7) str2=\"рост ТУ планеты\";",
+              "    else if (PlanetCurInvention(w)==8) str2=\"промышленные лазеры\";",
+              "    else if (PlanetCurInvention(w)==9) str2=\"осколочные орудия\";",
+              "    else if (PlanetCurInvention(w)==10) str2=\"лезки\";",
+              "    else if (PlanetCurInvention(w)==11) str2=\"ракетомёты\";",
+              "    else if (PlanetCurInvention(w)==12) str2=\"третоны\";",
+              "    else if (PlanetCurInvention(w)==13) str2=\"волновые фазеры\";",
+              "    else if (PlanetCurInvention(w)==14) str2=\"потоковые бластеры\";",
+              "    else if (PlanetCurInvention(w)==15) str2=\"электронные резаки\";",
+              "    else if (PlanetCurInvention(w)==16) str2=\"мультирезонаторы\";",
+              "    else if (PlanetCurInvention(w)==17) str2=\"атомные визионы\";",
+              "    else if (PlanetCurInvention(w)==18) str2=\"дезинтеграторы\";",
+              "    else if (PlanetCurInvention(w)==19) str2=\"турбогравиры\";",
+              "    //Если все проекты исследованы (8 ТУ), то игра ставит текущим исследованием рандомный и изучает его вечно с 101% исследования, если округлить). Т.к. все проекты уже исследованы до макс. 8 ТУ, то ставим текущее исследование неактивным:",
+              "    if (PlanetCurInventionPoints(w)>=100) str2=\"<color=0,190,0>отсутствует</color>\";",
+              "    else str2=str2+\" (<int(PlanetCurInventionPoints(w))>%)\"; //в противном случае показывается тип текущего проекта и округлённый % исследования",
+              "",
+              "    tlinfo=\"<clr>--Технический уровень проектов--<clrEnd><br><br>Общий ТУ планеты <Name(w)> (система <Name(PlanetToStar(w))>): <PlanetInventionLevel(w,7)><br>Текущий изучаемый планетой проект: <str2><br><br>  <br><color=90,200,220>-Оборудование-</color><br>\";",
+              "    //Если исследование проекта конкретного типа оборудования достигло максимального 8 ТУ, то оно не будет отображаться на инфошке",
+              "    if (PlanetInventionLevel(w,0)<8) tlinfo=tlinfo+\"Корпуса: <PlanetInventionLevel(w,0)><br>\";",
+              "    if (PlanetInventionLevel(w,1)<8) tlinfo=tlinfo+\"Топливные баки: <PlanetInventionLevel(w,1)><br>\";",
+              "    if (PlanetInventionLevel(w,2)<8) tlinfo=tlinfo+\"Двигатели: <PlanetInventionLevel(w,2)><br>\";",
+              "    if (PlanetInventionLevel(w,3)<8) tlinfo=tlinfo+\"Радары: <PlanetInventionLevel(w,3)><br>\";",
+              "    if (PlanetInventionLevel(w,4)<8) tlinfo=tlinfo+\"Сканеры: <PlanetInventionLevel(w,4)><br>\";",
+              "    if (PlanetInventionLevel(w,5)<8) tlinfo=tlinfo+\"Дроиды: <PlanetInventionLevel(w,5)><br>\";",
+              "    if (PlanetInventionLevel(w,6)<8) tlinfo=tlinfo+\"Захваты: <PlanetInventionLevel(w,6)><br>\";",
+              "    //Проверка каждого проекта исследования оборудования на ТУ 8",
+              "    j=0;",
+              "    for (i=0;i<7;i=i+1)",
+              "    {",
+              "        if (PlanetInventionLevel(w,i)==8) j=j+1; //записывается число проектов типов оборудования с 8 ТУ",
+              "    }",
+              "    if (j==7) tlinfo=tlinfo+\"Все проекты оборудований <color=0,190,0>исследованы</color>!<br>\"; //если все проекты типов оборудования достигли 8 ТУ, то все они исследованы",
+              "    //Если исследование проекта конкретного оружия достигло максимального 8 ТУ, то оно не будет отображаться на инфошке",
+              "    tlinfo=tlinfo+\" <br><color=255,120,60>-Оружие-</color><br>\";",
+              "    if (PlanetInventionLevel(w,8)<8) tlinfo=tlinfo+\"ТУ промышленного лазера: <PlanetInventionLevel(w,8)><br>\";",
+              "    if (PlanetInventionLevel(w,9)<8) tlinfo=tlinfo+\"ТУ осколочного орудия: <PlanetInventionLevel(w,9)><br>\";",
+              "    if (PlanetInventionLevel(w,10)<8) tlinfo=tlinfo+\"ТУ лезки: <PlanetInventionLevel(w,10)><br>\";",
+              "    if (PlanetInventionLevel(w,11)<8) tlinfo=tlinfo+\"ТУ ракетомёта: <PlanetInventionLevel(w,11)><br>\";",
+              "    if (PlanetInventionLevel(w,12)<8) tlinfo=tlinfo+\"ТУ третона: <PlanetInventionLevel(w,12)><br>\";",
+              "    if (PlanetInventionLevel(w,13)<8) tlinfo=tlinfo+\"ТУ волнового фазера: <PlanetInventionLevel(w,13)><br>\";",
+              "    if (PlanetInventionLevel(w,14)<8) tlinfo=tlinfo+\"ТУ потокового бластера: <PlanetInventionLevel(w,14)><br>\";",
+              "    if (PlanetInventionLevel(w,15)<8) tlinfo=tlinfo+\"ТУ электронного резака: <PlanetInventionLevel(w,15)><br>\";",
+              "    if (PlanetInventionLevel(w,16)<8) tlinfo=tlinfo+\"ТУ мультирезонатора: <PlanetInventionLevel(w,16)><br>\";",
+              "    if (PlanetInventionLevel(w,17)<8) tlinfo=tlinfo+\"ТУ атомного визиона: <PlanetInventionLevel(w,17)><br>\";",
+              "    if (PlanetInventionLevel(w,18)<8) tlinfo=tlinfo+\"ТУ дезинтегратора: <PlanetInventionLevel(w,18)><br>\";",
+              "    if (PlanetInventionLevel(w,19)<8) tlinfo=tlinfo+\"ТУ турбогравира: <PlanetInventionLevel(w,19)><br>\";",
+              "    //Проверка каждого проекта исследования оружий на ТУ 8",
+              "    j=0;",
+              "    for (i=8;i<20;i=i+1)",
+              "    {",
+              "        if (PlanetInventionLevel(w,i)==8) j=j+1; //записывается число проектов оружий с 8 ТУ",
+              "    }",
+              "    if (j==12) tlinfo=tlinfo+\"Все проекты оружий <color=0,190,0>исследованы</color>!<br>\"; //если все проекты оружий достигли 8 ТУ, то все они исследованы",
+              "",
+              "    //возвращает текущую дату на момент вызова инфошки для того, чтобы через n кол-во ходов сравнить изменения",
+              "    tlinfo=tlinfo+\" <br>Данные от <clr>\"+GameDateTxtByTurn(CurTurn())+\"<clrEnd>\";",
+              "",
+              "    //Т.к. Ether с указателем на планету не хочет появляться, если планета не находится в системе с игроком или игрок вызвал эзер, находясь на планете/базе, то сделаем проверку:",
+              "    if (PlanetToStar(w)==ShipStar(Player()) && ShipInNormalSpace(Player())) CustomEther('Research',7,'',tlinfo,w); //если планета находится в системе с игроком и игрок находится в обычном космосе, то выводится Ether с указателем на эту планету",
+              "    else CustomEther('Research',7,'',tlinfo); //в противном случае без указателя",
+              "",
+              "    //сброс переменных на случай, если новые данные запишутся вместе со старыми",
+              "    str2=\"\";",
+              "    tlinfo=\"\";",
+              "}"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "PlanetNew",
+          "Pos.x":  760,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  3,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  0,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "StarNew",
+          "Pos.x":  760,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  4,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  6,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "PlayerBridge()==10"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  700,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  19,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "IsScriptActive('Mod_ExpPilotBridge')"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  700,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  20,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "!IsScriptActive('Mod_ExpPilotBridge')"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  21,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "GetShipRuins(Player()) || GetShipPlanet(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  900,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  28,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "str1='' || !find "          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  870,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  29,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "find==1"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "StateNew",
+          "Pos.x":  760,
+          "Pos.y":  500,
+          "Parent":  -1,
+          "#":  2,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "q",
+          "Pos.x":  690,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  10,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "star",
+          "Pos.x":  690,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  11,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "planet",
+          "Pos.x":  690,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  12,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "str1",
+          "Pos.x":  640,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  13,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "find",
+          "Pos.x":  530,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  14,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "str2",
+          "Pos.x":  640,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  15,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "j",
+          "Pos.x":  610,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  16,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "i",
+          "Pos.x":  610,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  17,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tlinfo",
+          "Pos.x":  640,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  18,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "w",
+          "Pos.x":  690,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  34,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "h",
+          "Pos.x":  580,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  37,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "k",
+          "Pos.x":  580,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  41,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  0,
+      "End":  4,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  4,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  1,
+      "End":  3,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  1,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  7,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  6,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  20,
+      "End":  21,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  21,
+      "End":  7,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  22,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  25,
+      "End":  27,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  27,
+      "End":  29,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  27,
+      "End":  28,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  26,
+      "End":  35,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  35,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  36,
+      "End":  38,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  22,
+      "End":  24,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  28,
+      "End":  22,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  9,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  28,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  61,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "0",
+      "String":  "Узнать информацию о ТУ планеты"    
+    },
+    {
+      "#":  "1",
+      "String":  "турбогравиры"    
+    },
+    {
+      "#":  "10",
+      "String":  "лезки"    
+    },
+    {
+      "#":  "104",
+      "String":  "<clr>--Технический уровень проектов--<clrEnd><br><br>Общий ТУ планеты <0> (система <1>): <2><br>Текущий изучаемый планетой проект: <3><br><br>  <br><color=90,200,220>-Оборудование-</color><br>"    
+    },
+    {
+      "#":  "105",
+      "String":  "Введите название системы:"    
+    },
+    {
+      "#":  "106",
+      "String":  "Введите название планеты:"    
+    },
+    {
+      "#":  "11",
+      "String":  "осколочные орудия"    
+    },
+    {
+      "#":  "12",
+      "String":  "промышленные лазеры"    
+    },
+    {
+      "#":  "13",
+      "String":  "захваты"    
+    },
+    {
+      "#":  "14",
+      "String":  "дроиды"    
+    },
+    {
+      "#":  "15",
+      "String":  "сканеры"    
+    },
+    {
+      "#":  "16",
+      "String":  "радары"    
+    },
+    {
+      "#":  "17",
+      "String":  "двигатели"    
+    },
+    {
+      "#":  "18",
+      "String":  "топливные баки"    
+    },
+    {
+      "#":  "19",
+      "String":  "корпусы"    
+    },
+    {
+      "#":  "2",
+      "String":  "дезинтеграторы"    
+    },
+    {
+      "#":  "21",
+      "String":  ""    
+    },
+    {
+      "#":  "24",
+      "String":  "ТУ турбогравира: <0><br>"    
+    },
+    {
+      "#":  "25",
+      "String":  "ТУ дезинтегратора: <0><br>"    
+    },
+    {
+      "#":  "26",
+      "String":  "ТУ атомного визиона: <0><br>"    
+    },
+    {
+      "#":  "27",
+      "String":  "ТУ мультирезонатора: <0><br>"    
+    },
+    {
+      "#":  "28",
+      "String":  "ТУ электронного резака: <0><br>"    
+    },
+    {
+      "#":  "29",
+      "String":  "ТУ потокового бластера: <0><br>"    
+    },
+    {
+      "#":  "3",
+      "String":  "атомные визионы"    
+    },
+    {
+      "#":  "30",
+      "String":  "ТУ волнового фазера: <0><br>"    
+    },
+    {
+      "#":  "31",
+      "String":  "ТУ третона: <0><br>"    
+    },
+    {
+      "#":  "32",
+      "String":  "ТУ ракетомёта: <0><br>"    
+    },
+    {
+      "#":  "33",
+      "String":  "ТУ лезки: <0><br>"    
+    },
+    {
+      "#":  "34",
+      "String":  "ТУ осколочного орудия: <0><br>"    
+    },
+    {
+      "#":  "35",
+      "String":  "ТУ промышленного лазера: <0><br>"    
+    },
+    {
+      "#":  "37",
+      "String":  "Захваты: <0><br>"    
+    },
+    {
+      "#":  "38",
+      "String":  "Дроиды: <0><br>"    
+    },
+    {
+      "#":  "39",
+      "String":  "Сканеры: <0><br>"    
+    },
+    {
+      "#":  "4",
+      "String":  "мультирезонаторы"    
+    },
+    {
+      "#":  "40",
+      "String":  "Радары: <0><br>"    
+    },
+    {
+      "#":  "41",
+      "String":  "Двигатели: <0><br>"    
+    },
+    {
+      "#":  "42",
+      "String":  "Топливные баки: <0><br>"    
+    },
+    {
+      "#":  "43",
+      "String":  "Корпуса: <0><br>"    
+    },
+    {
+      "#":  "45",
+      "String":  "<clrEnd>"    
+    },
+    {
+      "#":  "5",
+      "String":  "электронные резаки"    
+    },
+    {
+      "#":  "51",
+      "String":  "Все проекты оружий <color=0,190,0>исследованы</color>!<br>"    
+    },
+    {
+      "#":  "52",
+      "String":  "Все проекты оборудований <color=0,190,0>исследованы</color>!<br>"    
+    },
+    {
+      "#":  "58",
+      "String":  " <br>Данные от <clr>"    
+    },
+    {
+      "#":  "6",
+      "String":  "потоковые бластеры"    
+    },
+    {
+      "#":  "61",
+      "String":  " (<0>%)"    
+    },
+    {
+      "#":  "64",
+      "String":  "рост ТУ планеты"    
+    },
+    {
+      "#":  "68",
+      "String":  " <br><color=255,120,60>-Оружие-</color><br>"    
+    },
+    {
+      "#":  "7",
+      "String":  "волновые фазеры"    
+    },
+    {
+      "#":  "71",
+      "String":  "Выберите способ выбора планеты для показа её ТУ и проектов."    
+    },
+    {
+      "#":  "72",
+      "String":  "<color=136,0,0>Выход</color>"    
+    },
+    {
+      "#":  "73",
+      "String":  "Ввести название конкретной планеты"    
+    },
+    {
+      "#":  "77",
+      "String":  "Назад"    
+    },
+    {
+      "#":  "79",
+      "String":  "Выберите планету из списка планет системы <0>."    
+    },
+    {
+      "#":  "8",
+      "String":  "третоны"    
+    },
+    {
+      "#":  "84",
+      "String":  "block~Список систем:"    
+    },
+    {
+      "#":  "9",
+      "String":  "ракетомёты"    
+    },
+    {
+      "#":  "90",
+      "String":  "Выбрать все обитаемые планеты"    
+    },
+    {
+      "#":  "91",
+      "String":  " (текущая система)"    
+    },
+    {
+      "#":  "94",
+      "String":  "block~Обитаемые планеты:"    
+    },
+    {
+      "#":  "95",
+      "String":  "Получить список планет конкретной системы"    
+    },
+    {
+      "#":  "96",
+      "String":  "<color=0,190,0>отсутствует</color>"    
+    }  
+  ]
+}

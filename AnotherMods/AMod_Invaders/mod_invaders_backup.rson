@@ -1,0 +1,5621 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  -675,
+  "ViewPos.y":  -433,
+  "ScriptName":  "mod_invaders",
+  "ScriptFileOut":  "H:\\mod_invaders.scr",
+  "ScriptTextOut":  "H:\\mod_invaders.txt",
+  "GraphPoint.Count":  220,
+  "GraphLink.Count":  162,
+  "GraphRectText.Count":  0,
+  "Variables.Count":  34,
+  "Stars.Count":  1,
+  "Planets.Count":  1,
+  "Ships.Count":  1,
+  "States.Count":  4,
+  "Groups.Count":  4,
+  "Places.Count":  0,
+  "Items.Count":  10,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  20,
+  "DialogMessages.Count":  37,
+  "DialogAnswers.Count":  41,
+  "Operations.Count":  56,
+  "Statements.Count":  11,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  -250,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  33,
+          "Msg":  "",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  -190,
+          "Pos.y":  -200,
+          "Parent":  -1,
+          "#":  37,
+          "Msg":  "<str1>",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  -250,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  41,
+          "Msg":  "<str1>",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  120,
+          "Pos.y":  -320,
+          "Parent":  -1,
+          "#":  49,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  100,
+          "Pos.y":  -220,
+          "Parent":  -1,
+          "#":  61,
+          "Msg":  "",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  100,
+          "Pos.y":  -290,
+          "Parent":  -1,
+          "#":  67,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  100,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  68,
+          "Msg":  "<str1>",
+          "AMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  100,
+          "Pos.y":  -250,
+          "Parent":  -1,
+          "#":  69,
+          "Msg":  "<str2>",
+          "AMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  -290,
+          "Parent":  -1,
+          "#":  75,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  76,
+          "Msg":  "<str1>",
+          "AMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  -250,
+          "Parent":  -1,
+          "#":  77,
+          "Msg":  "<str2>",
+          "AMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  -290,
+          "Parent":  -1,
+          "#":  83,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  84,
+          "Msg":  "<str1>",
+          "AMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  -250,
+          "Parent":  -1,
+          "#":  85,
+          "Msg":  "<str2>",
+          "AMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  -220,
+          "Parent":  -1,
+          "#":  97,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  360,
+          "Pos.y":  -240,
+          "Parent":  -1,
+          "#":  101,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  290,
+          "Pos.y":  -190,
+          "Parent":  -1,
+          "#":  105,
+          "Msg":  "",
+          "AMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  114,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  360,
+          "Pos.y":  -180,
+          "Parent":  -1,
+          "#":  116,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "18"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  290,
+          "Pos.y":  -130,
+          "Parent":  -1,
+          "#":  122,
+          "Msg":  "",
+          "AMsg.Num":  "19"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  -100,
+          "Parent":  -1,
+          "#":  125,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "20"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  360,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  128,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "21"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  290,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  133,
+          "Msg":  "",
+          "AMsg.Num":  "22"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  -400,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  138,
+          "Msg":  "",
+          "AMsg.Num":  "23"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  -270,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  143,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "24"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  -400,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  146,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "25"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  -310,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  148,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "26"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  -190,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  151,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "27"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  -190,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  161,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "28"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  -270,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  167,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "29"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  -400,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  171,
+          "Msg":  "",
+          "AMsg.Num":  "30"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  -340,
+          "Pos.y":  -110,
+          "Parent":  -1,
+          "#":  174,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "31"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  -170,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  180,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "32"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  -150,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  183,
+          "Msg":  "<str1>",
+          "AMsg.Num":  "33"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  -150,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  184,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "34"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  -400,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  190,
+          "Msg":  "",
+          "AMsg.Num":  "35"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  -400,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  195,
+          "Msg":  "<str1>",
+          "AMsg.Num":  "36"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  100,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  207,
+          "Msg":  "<str0>",
+          "AMsg.Num":  "37"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  100,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  208,
+          "Msg":  "<str1>",
+          "AMsg.Num":  "38"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  290,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  216,
+          "Msg":  "<str1>",
+          "AMsg.Num":  "39"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  290,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  217,
+          "Msg":  "",
+          "AMsg.Num":  "40"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -190,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  34,
+          "Msg":  "<str0>",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -120,
+          "Pos.y":  -200,
+          "Parent":  -1,
+          "#":  36,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -190,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  40,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  70,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  45,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  390,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  48,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -190,
+          "Pos.y":  -140,
+          "Parent":  -1,
+          "#":  55,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  70,
+          "Pos.y":  -220,
+          "Parent":  -1,
+          "#":  60,
+          "Msg":  "<dRstrtText>",
+          "DMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  180,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  74,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  280,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  82,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  70,
+          "Pos.y":  -320,
+          "Parent":  -1,
+          "#":  91,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  -220,
+          "Parent":  -1,
+          "#":  96,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  330,
+          "Pos.y":  -220,
+          "Parent":  -1,
+          "#":  99,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  -190,
+          "Parent":  -1,
+          "#":  104,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  100,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  111,
+          "Msg":  "<dRstrtText>",
+          "DMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  113,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  330,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  115,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  -130,
+          "Parent":  -1,
+          "#":  121,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  -100,
+          "Parent":  -1,
+          "#":  124,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  330,
+          "Pos.y":  -100,
+          "Parent":  -1,
+          "#":  127,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "18"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  132,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "19"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -230,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  137,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "20"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -350,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  142,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "21"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -350,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  145,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "22"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -230,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  150,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "23"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -350,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  156,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "24"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -350,
+          "Pos.y":  -40,
+          "Parent":  -1,
+          "#":  157,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "25"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -150,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  160,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "26"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -230,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  166,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "27"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -350,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  170,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "28"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -280,
+          "Pos.y":  -110,
+          "Parent":  -1,
+          "#":  173,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "29"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -150,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  179,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "30"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -90,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  182,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "31"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -270,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  191,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "32"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -270,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  193,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "33"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  50,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  205,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "34"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  190,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  212,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "35"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  190,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  213,
+          "Msg":  "<msgTxt>",
+          "DMsg.Num":  "36"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "dRuins0",
+          "Pos.x":  -120,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  30        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "IvTC0",
+          "Pos.x":  -120,
+          "Pos.y":  -240,
+          "Parent":  -1,
+          "#":  35        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "IvTC1",
+          "Pos.x":  -120,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  39        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "CrGun0",
+          "Pos.x":  -40,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  43        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "IvTC2",
+          "Pos.x":  -120,
+          "Pos.y":  -140,
+          "Parent":  -1,
+          "#":  65        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "CrGun1",
+          "Pos.x":  -40,
+          "Pos.y":  -320,
+          "Parent":  -1,
+          "#":  90        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "TkMyIt",
+          "Pos.x":  -40,
+          "Pos.y":  -220,
+          "Parent":  -1,
+          "#":  93        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "NeedGun",
+          "Pos.x":  -40,
+          "Pos.y":  -190,
+          "Parent":  -1,
+          "#":  94        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "dUpg0",
+          "Pos.x":  150,
+          "Pos.y":  -220,
+          "Parent":  -1,
+          "#":  95        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "dUpg1",
+          "Pos.x":  150,
+          "Pos.y":  -190,
+          "Parent":  -1,
+          "#":  102        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "TkMyIt1",
+          "Pos.x":  -40,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  109        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "dUUpg1",
+          "Pos.x":  150,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  112        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "dUUpg2",
+          "Pos.x":  150,
+          "Pos.y":  -130,
+          "Parent":  -1,
+          "#":  119        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "dUUpg3",
+          "Pos.x":  150,
+          "Pos.y":  -100,
+          "Parent":  -1,
+          "#":  123        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "dUUpg4",
+          "Pos.x":  150,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  130        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "IvFlDlg",
+          "Pos.x":  -150,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  136        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "arksTalkNormal",
+          "Pos.x":  -150,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  165        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "IvTC3",
+          "Pos.x":  -120,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  172        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "NewHull",
+          "Pos.x":  -20,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  181        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "NewGun",
+          "Pos.x":  -20,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  203        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "GroupNew",
+          "Pos.x":  60,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  3,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "Invaders",
+          "Pos.x":  -20,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  11,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "Arks",
+          "Pos.x":  -20,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  15,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "director",
+          "Pos.x":  -20,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  140,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Items":      
+      [
+        {
+          "Type":  "TItem",
+          "Name":  "qItem1",
+          "Pos.x":  200,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  52,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        },
+        {
+          "Type":  "TItem",
+          "Name":  "qItem2",
+          "Pos.x":  270,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  53,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        },
+        {
+          "Type":  "TItem",
+          "Name":  "qItem3",
+          "Pos.x":  340,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  54,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        },
+        {
+          "Type":  "TItem",
+          "Name":  "DqItem1",
+          "Pos.x":  200,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  106,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        },
+        {
+          "Type":  "TItem",
+          "Name":  "DqItem2",
+          "Pos.x":  270,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  107,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        },
+        {
+          "Type":  "TItem",
+          "Name":  "DqItem3",
+          "Pos.x":  340,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  108,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        },
+        {
+          "Type":  "TItem",
+          "Name":  "NewShipHull",
+          "Pos.x":  -120,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  197,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        },
+        {
+          "Type":  "TItem",
+          "Name":  "LaserGun1",
+          "Pos.x":  -120,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  199,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        },
+        {
+          "Type":  "TItem",
+          "Name":  "LaserGun2",
+          "Pos.x":  -120,
+          "Pos.y":  10,
+          "Parent":  -1,
+          "#":  200,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        },
+        {
+          "Type":  "TItem",
+          "Name":  "LaserGun3",
+          "Pos.x":  -120,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  201,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -20,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  5,
+          "Total.Lines":  1,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "if(GalaxyTechLevel()>=5) GRun();"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  0,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  19,
+          "Total.Lines":  437,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "difCoef=GalaxyDiffLevels()/100;",
+              "arksNumb=0;",
+              "strBR=substr(CT('Cheat.Ok'),0,2);",
+              "gunName=newarray(6);",
+              "gunName[0]='ArksGun';",
+              "QState=newarray(4);",
+              "arr0=newarray(1);",
+              "arrTC=newarray(11);",
+              "research=newarray(11);",
+              "arcArray=newarray(4,4);",
+              "spwnDate=newarray(4,11);",
+              "",
+              "//Задаём цены из ланга (в обломках арксов) для покупки батлкрузера и лазерганов к нему",
+              "needForHull=CT('Items.Weapon.BattlecruiserConfig.BattlecruiserScrapCost');",
+              "needForLaserGun=CT('Items.Weapon.BattlecruiserConfig.LaserMissileScrapCost');",
+              "for(i=1;i<4;i=i+1)",
+              "    {",
+              "    QState[i]=0;",
+              "    arcArray[i,1]=0;",
+              "    arcArray[i,2]=0;",
+              "    arcArray[i,3]=0;",
+              "    for(j=0;j<11;j=j+1)",
+              "        {",
+              "        arrTC[j]=0;",
+              "        research[j]=0;",
+              "        spwnDate[i,j]=0;",
+              "        }",
+              "    }",
+              "QState[0]=3;",
+              "function SpawnArkShip(tStar,tCount,tStarAtt)",
+              "{",
+              "    for(funct_i=0;funct_i<StarPlanets(tStar);funct_i=funct_i+1)",
+              "    {",
+              "        funct_dwd2=StarPlanets(tStar,funct_i);",
+              "        if(PlanetOwner(funct_dwd2)!=6)break;",
+              "    }",
+              "    StarSeries(tStar,1);",
+              "    for(funct_i=0;funct_i<tCount;funct_i=funct_i+1)",
+              "    {",
+              "        arksNumb=arksNumb+1;",
+              "        funct_dwd0=BuyDomikExtremal(funct_dwd2);",
+              "        while(ShipSubType(funct_dwd0)==6)",
+              "        {",
+              "            OrderNone(funct_dwd0,1);",
+              "            OrderLock(funct_dwd0,1);",
+              "            ShipDestroy(funct_dwd0,1);",
+              "            funct_dwd0=BuyDomikExtremal(funct_dwd2);",
+              "        }",
+              "        ShipOwner(funct_dwd0,0);",
+              "        ShipJoin(Invaders,funct_dwd0);",
+              "        ShipCustomFaction(funct_dwd0,'AMod_Invaders');",
+              "        ShipFace(funct_dwd0,0);",
+              "        NoScanToShip(funct_dwd0,1);",
+              "    //Спавнится Рондар 1",
+              "        if(ShipSubType(funct_dwd0)==5)",
+              "        {",
+              "            funct_int0=Rnd(0,2);",
+              "            for(funct_j=0;funct_j<funct_int0;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomCountableItem('AMod_InvadersParts',Rnd(2,20),1);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                ShipAddDropItem(funct_dwd0,funct_dwd1);",
+              "            }",
+              "            ShipSkill(funct_dwd0,0,4);",
+              "            ShipSkill(funct_dwd0,1,2);",
+              "            ItemSize(ShipEqInSlot(funct_dwd0,t_Hull),Rnd(150,250));",
+              "            ShipRepairEq(funct_dwd0);",
+              "            ShipType(funct_dwd0,'AMod_Invaders0');",
+              "            SpecialToEquipment(FindBonusByCustomTag('InvadersHull1'),ShipEqInSlot(funct_dwd0,t_Hull));",
+              "            Chameleon(funct_dwd0);",
+              "            ShipAddCustomShipInfo(funct_dwd0,'AMod_Invaders0','NoShow',difCoef*100);",
+              "            SetName(funct_dwd0,'<color=255,130,0>Рондар -'+arksNumb+'-</color>');",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('pulse_gun',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(300,400),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('Dom_dual_laser',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(300,400),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('FusionQuasar',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(300,400),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('Dom_laser',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(300,400),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateEquipment(t_Weapon6,0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(300,400),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+4);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "        }",
+              "    //Спавнится Гуррит 2",
+              "        else if(ShipSubType(funct_dwd0)==4)",
+              "        {",
+              "            funct_int0=Rnd(0,2);",
+              "            for(funct_j=0;funct_j<funct_int0;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomCountableItem('AMod_InvadersParts',Rnd(5,45),1);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                ShipAddDropItem(funct_dwd0,funct_dwd1);",
+              "            }",
+              "            ShipSkill(funct_dwd0,1,4);",
+              "            ShipSkill(funct_dwd0,2,3);",
+              "            ItemSize(ShipEqInSlot(funct_dwd0,t_Hull),Rnd(350,450));",
+              "            ShipRepairEq(funct_dwd0);",
+              "            ShipType(funct_dwd0,'AMod_Invaders0');",
+              "            SpecialToEquipment(FindBonusByCustomTag('InvadersHull2'),ShipEqInSlot(funct_dwd0,t_Hull));",
+              "            Chameleon(funct_dwd0);",
+              "            ShipAddCustomShipInfo(funct_dwd0,'AMod_Invaders0.2','NoShow',difCoef*100);",
+              "            SetName(funct_dwd0,'<color=255,130,0>Гуррит -'+arksNumb+'-</color>');",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('Mauler',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(500,600),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('Atomizer',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(300,400),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('frag_gun',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(300,400),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('laser_gun',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(300,400),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateEquipment(t_Weapon9,0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(300,400),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "        }",
+              "    //Спавнится Рённак 3",
+              "        else if(ShipSubType(funct_dwd0)==3)",
+              "        {",
+              "            funct_int0=Rnd(1,2);",
+              "            for(funct_j=0;funct_j<funct_int0;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomCountableItem('AMod_InvadersParts',Rnd(10,70),1);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                ShipAddDropItem(funct_dwd0,funct_dwd1);",
+              "            }",
+              "            ShipSkill(funct_dwd0,0,3);",
+              "            ShipSkill(funct_dwd0,1,4);",
+              "            ItemSize(ShipEqInSlot(funct_dwd0,t_Hull),Rnd(500,700));",
+              "            ShipRepairEq(funct_dwd0);",
+              "            ShipType(funct_dwd0,'AMod_Invaders1');",
+              "            SpecialToEquipment(FindBonusByCustomTag('InvadersHull3'),ShipEqInSlot(funct_dwd0,t_Hull));",
+              "            Chameleon(funct_dwd0);",
+              "            ShipAddCustomShipInfo(funct_dwd0,'AMod_Invaders1','NoShow',difCoef*100);",
+              "            SetName(funct_dwd0,'<color=255,130,0>Рённак -'+arksNumb+'-</color>');",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('frag_gun',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(300,400),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('sphere_gun',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(300,400),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('Dom_light',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(300,400),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateEquipment(t_Weapon5,0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(300,400),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateEquipment(t_Weapon8,0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(300,400),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "        }",
+              "    //Спавнится Заврон 4",
+              "        else if(ShipSubType(funct_dwd0)==2)",
+              "        {",
+              "            funct_int0=Rnd(1,2);",
+              "            for(funct_j=0;funct_j<funct_int0;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomCountableItem('AMod_InvadersParts',Rnd(30,150),1);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                ShipAddDropItem(funct_dwd0,funct_dwd1);",
+              "            }",
+              "            ShipSkill(funct_dwd0,1,4);",
+              "            ShipSkill(funct_dwd0,1,4);",
+              "            ItemSize(ShipEqInSlot(funct_dwd0,t_Hull),Rnd(1000,1400));",
+              "            ShipRepairEq(funct_dwd0);",
+              "            ShipType(funct_dwd0,'AMod_Invaders1');",
+              "            SpecialToEquipment(FindBonusByCustomTag('InvadersHull4'),ShipEqInSlot(funct_dwd0,t_Hull));",
+              "            Chameleon(funct_dwd0);",
+              "            ShipAddCustomShipInfo(funct_dwd0,'AMod_Invaders1.2','NoShow',difCoef*100);",
+              "            SetName(funct_dwd0,'<color=255,130,0>Заврон -'+arksNumb+'-</color>');",
+              "            for(funct_j=0;funct_j<2;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateEquipment(t_Weapon15,0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,1200,2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('Torpedomet',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,1200,2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('Torpednik',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,1200,2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('Multiplet',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,550,2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('Dom_rocket',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,1200,2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "        }",
+              "    //Спавнится Дефенсор 5",
+              "        else if(ShipSubType(funct_dwd0)==1)",
+              "        {",
+              "            funct_int0=Rnd(1,2);",
+              "            for(funct_j=0;funct_j<funct_int0;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomCountableItem('AMod_InvadersParts',Rnd(100,600),1);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                ShipAddDropItem(funct_dwd0,funct_dwd1);",
+              "            }",
+              "            ShipSkill(funct_dwd0,0,5);",
+              "            ShipSkill(funct_dwd0,1,5);",
+              "            ItemSize(ShipEqInSlot(funct_dwd0,t_Hull),Rnd(2000,4000));",
+              "            ShipRepairEq(funct_dwd0);",
+              "            ShipType(funct_dwd0,'AMod_Invaders2');",
+              "            SpecialToEquipment(FindBonusByCustomTag('InvadersHull5'),ShipEqInSlot(funct_dwd0,t_Hull));",
+              "            Chameleon(funct_dwd0);",
+              "            ShipAddCustomShipInfo(funct_dwd0,'AMod_Invaders2','NoShow',difCoef*100);",
+              "            SetName(funct_dwd0,'<color=255,130,0>Дефенсор -'+arksNumb+'-</color>');",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateEquipment(t_Weapon14,0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(400,500),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('ExzoShocker',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(400,500),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('CryoProjector',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(400,500),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('sphere_gun',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(400,500),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "            for(funct_j=0;funct_j<1;funct_j=funct_j+1)",
+              "            {",
+              "                funct_dwd1=CreateCustomWeapon('PlasmaGun',0,GalaxyTechLevel(),5);",
+              "                EqCustomFaction(funct_dwd1,'AMod_Invaders');",
+              "                if(difCoef>=3)ItemImprovement(funct_dwd1,2,1);",
+              "                SetEquipmentStats(funct_dwd1,Rnd(400,500),2);",
+              "                AddItemToShip(funct_dwd0,funct_dwd1);",
+              "                ItemIsInUse(funct_dwd1,funct_dwd0,funct_j+1);",
+              "                NoDropItem(funct_dwd1,1);",
+              "            }",
+              "        }",
+              "        if(difCoef<1)",
+              "        {",
+              "            ShipSpecialBonuses(funct_dwd0,bonDef,-200);",
+              "            ItemLevel(ShipEqInSlot(funct_dwd0,t_Hull),1);",
+              "        }",
+              "        if(difCoef>0.99 && difCoef<2)ItemLevel(ShipEqInSlot(funct_dwd0,t_Hull),GalaxyTechLevel());",
+              "        if(difCoef>=2)ItemLevel(ShipEqInSlot(funct_dwd0,t_Hull),8);",
+              "        if(ShipEqInSlot(funct_dwd0,t_DefGenerator))ItemLevel(ShipEqInSlot(funct_dwd0,t_DefGenerator),GalaxyTechLevel());",
+              "        else",
+              "        {",
+              "            funct_dwd1=CreateEquipment(t_DefGenerator,0,GalaxyTechLevel(),5);",
+              "            if(difCoef>=2)ItemImprovement(funct_dwd1,2,1);",
+              "            AddItemToShip(funct_dwd0,funct_dwd1);",
+              "            ItemIsInUse(funct_dwd1,funct_dwd0,1);",
+              "        }",
+              "        if(ShipEqInSlot(funct_dwd0,t_RepairRobot))ItemLevel(ShipEqInSlot(funct_dwd0,t_RepairRobot),GalaxyTechLevel());",
+              "        else",
+              "        {",
+              "            funct_dwd1=CreateEquipment(t_RepairRobot,0,GalaxyTechLevel(),5);",
+              "            if(difCoef>=2)ItemImprovement(funct_dwd1,2,1);",
+              "            AddItemToShip(funct_dwd0,funct_dwd1);",
+              "            ItemIsInUse(funct_dwd1,funct_dwd0,1);",
+              "        }",
+              "        if(ShipEqInSlot(funct_dwd0,t_Engine))ItemLevel(ShipEqInSlot(funct_dwd0,t_Engine),GalaxyTechLevel());",
+              "        ArrangeItems(funct_dwd0);",
+              "        for(funct_j=ShipItems(funct_dwd0)-1;funct_j>0;funct_j=funct_j-1)",
+              "        {",
+              "            funct_dwd1=ShipItems(funct_dwd0,funct_j);",
+              "            if(!ItemIsInUse(funct_dwd1))FreeItem(GetItemFromShip(funct_dwd0,funct_j));",
+              "            //else NoDropItem(funct_dwd1,1);",
+              "        }",
+              "        if(tStarAtt!=0)MakeShipEnterStar(funct_dwd0,tStarAtt,tStar,1);",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -250,
+          "Pos.y":  -200,
+          "Parent":  -1,
+          "#":  38,
+          "Total.Lines":  11,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "for(i=ShipItems(Player())-1;i>0;i=i-1)",
+              "{",
+              "    dwd0=ShipItems(Player(),i);",
+              "    if(ItemType(dwd0)!=t_UselessCountableItem)continue;",
+              "    str0=EquipmentImageName(dwd0);",
+              "    if(str0!='AMod_InvadersParts')continue;",
+              "    dwd0=GetItemFromShip(Player(),i);",
+              "    FreeItem(dwd0);",
+              "}",
+              "dVar=1;",
+              "research[2]=30;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -250,
+          "Pos.y":  -180,
+          "Parent":  -1,
+          "#":  42,
+          "Total.Lines":  9,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "int0=0;",
+              "for(i=1;i<ShipItems(Player());i=i+1)",
+              "{",
+              "    dwd0=ShipItems(Player(),i);",
+              "    if(ItemType(dwd0)!=t_UselessCountableItem)continue;",
+              "    str0=EquipmentImageName(dwd0);",
+              "    if(str0=='AMod_InvadersParts')int0=int0+ItemSize(dwd0);",
+              "}",
+              "if(int0>=200)InjectAnswer('CrGun0',\"Куда выгружать? И сколько это займёт времени?\",0);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  40,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  44,
+          "Total.Lines":  25,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=\"</color>Отлично. В течение дня управимся. Вы, кстати, далеко не уходите. И так, приступим. Какой тип урона вы желаете для нового оружия?\";",
+              "str0=\"</color>Энергетический\";",
+              "str1=\"</color>Осколочный\";",
+              "str2=\"</color>Ракетный\";",
+              "//arrTC[0] цена улучшений и пухи",
+              "//arrTC[1] тип урона",
+              "//arrTC[2] минимальный урон",
+              "//arrTC[3] максимальный урон",
+              "//arrTC[4] дальность атаки",
+              "//arrTC[5] цена",
+              "//arrTC[6] вес",
+              "//arrTC[7] дамагсет",
+              "//arrTC[8] урон в АБ",
+              "//arrTC[9] --",
+              "//arrTC[10] --",
+              "//research[0] идут ли исследования",
+              "//research[1] тип текущих исследований(0-нечего изучать, 1-обычные, 2-обычные завершены, 3-уникальные, 4-уникальные завершены)",
+              "//research[2] прогресс исследований",
+              "//research[3] текущие обычные улучшения",
+              "//research[4] сдано скриптовых",
+              "//research[5] доступно материалов",
+              "//research[6] общее число обычных исследований",
+              "//research[7] общее число уникальный исследований",
+              "//research[9] стандартный вес",
+              "//research[10] стандартная цена"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  47,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=\"</color>Ага, записал, осталось последнее. Вы наверняка знаете, что в чёрных дырах оружие работает... не совсем обычно. Мы можем изменить и это, какой тип оружия вы предпочитаете?\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -250,
+          "Pos.y":  -140,
+          "Parent":  -1,
+          "#":  58,
+          "Total.Lines":  19,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "int0=0;",
+              "for(i=1;i<ShipItems(Player());i=i+1)",
+              "{",
+              "    dwd0=ShipItems(Player(),i);",
+              "    if(ItemType(dwd0)!=t_UselessCountableItem)continue;",
+              "    str0=EquipmentImageName(dwd0);",
+              "    if(str0=='AMod_InvadersParts')int0=int0+ItemSize(dwd0);",
+              "}",
+              "if(research[7]<4)",
+              "{",
+              "    if(ItemIn(DqItem1,Player()) || ItemIn(DqItem2,Player()) || ItemIn(DqItem3,Player()))",
+              "    {",
+              "        InjectAnswer('TkMyIt1',\"Я добыл неизвестный предмет из необычного аркса, вас это интересует?\",0);",
+              "    }",
+              "}",
+              "if(int0>0)InjectAnswer('TkMyIt',\"Сдать обломки на исследование (<int0> т.)\",0);",
+              "int1=100*arrTC[0];",
+              "int1=int1/2;",
+              "if(research[5]>int1 && ShipMoney(Player())>=research[10])InjectAnswer('NeedGun',\"Соберите прототип оружия\",int1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  30,
+          "Pos.y":  -220,
+          "Parent":  -1,
+          "#":  59,
+          "Total.Lines":  11,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "for(i=ShipItems(Player())-1;i>0;i=i-1)",
+              "{",
+              "    dwd0=ShipItems(Player(),i);",
+              "    if(ItemType(dwd0)!=t_UselessCountableItem)continue;",
+              "    str0=EquipmentImageName(dwd0);",
+              "    if(str0!='AMod_InvadersParts')continue;",
+              "    research[5]=research[5]+ItemSize(dwd0);",
+              "    dwd0=GetItemFromShip(Player(),i);",
+              "    FreeItem(dwd0);",
+              "}",
+              "dRstrtText=\"</color>Отличная работа, <ShipName(Player())>, мы забрали все обломки с вашего корабля.\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  70,
+          "Pos.y":  -190,
+          "Parent":  -1,
+          "#":  63,
+          "Total.Lines":  8,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "int0=GAnswerData;",
+              "research[5]=research[5]-int0;",
+              "ShipMoney(Player(),ShipMoney(Player())-research[10]);",
+              "dRstrtText=\"</color>Приступаем к сборке.\"+strBR+\"...\"+strBR+\"...\"+strBR+\"Готово. Экспериментальный образец оружия будет доставлен на ваш корабль, <ShipName(Player())>.\";",
+              "dwd0=CreateCustomWeapon(gunName[0],research[9],GalaxyTechLevel(),2);",
+              "EqCustomFaction(dwd0,'AMod_Invaders');",
+              "research[10]=ItemCost(dwd0);",
+              "AddItemToShip(Player(),dwd0);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  120,
+          "Pos.y":  -290,
+          "Parent":  -1,
+          "#":  70,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "arrTC[1]=1;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  120,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  71,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "arrTC[1]=2;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  120,
+          "Pos.y":  -250,
+          "Parent":  -1,
+          "#":  72,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "arrTC[1]=4;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  150,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  73,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=\"</color>Понятно, идём дальше. Мы можем увеличить урон, но пострадает дальность выстрела, а при увеличении дальности уменьшится урон. Или оставить в состоянии относительного баланса?\";",
+              "str0=\"</color>Мне надо больше урона\";",
+              "str1=\"</color>Мне надо больше дальности стрельбы\";",
+              "str2=\"</color>Пусть будет баланс\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  -290,
+          "Parent":  -1,
+          "#":  78,
+          "Total.Lines":  3,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "arrTC[2]=15;",
+              "arrTC[3]=40;",
+              "arrTC[4]=-20;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  79,
+          "Total.Lines":  3,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "arrTC[2]=5;",
+              "arrTC[3]=20;",
+              "arrTC[4]=20;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  -250,
+          "Parent":  -1,
+          "#":  80,
+          "Total.Lines":  3,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "arrTC[2]=10;",
+              "arrTC[3]=30;",
+              "arrTC[4]=0;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  250,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  81,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=\"</color>Теперь обсудим, так сказать, начинку оружия. Чем она дороже, тем легче, однако за ремонт придётся платить больше кредитов. Не беспокойтесь, обломки для ремонта не нужны.\";",
+              "str0=\"</color>Используйте дорогие детали, вес важнее\";",
+              "str1=\"</color>Используйте дешёвые детали, цена важнее\";",
+              "str2=\"</color>Используйте стандартные детали\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  -290,
+          "Parent":  -1,
+          "#":  86,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "arrTC[5]=120;",
+              "arrTC[6]=80;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  87,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "arrTC[5]=80;",
+              "arrTC[6]=120;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  -250,
+          "Parent":  -1,
+          "#":  88,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "arrTC[5]=100;",
+              "arrTC[6]=100;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  30,
+          "Pos.y":  -320,
+          "Parent":  -1,
+          "#":  89,
+          "Total.Lines":  45,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(dVar==2)",
+              "{",
+              "    for(i=ShipItems(Player())-1;i>0;i=i-1)",
+              "    {",
+              "        dwd0=ShipItems(Player(),i);",
+              "        if(ItemType(dwd0)!=t_UselessCountableItem)continue;",
+              "        str0=EquipmentImageName(dwd0);",
+              "        if(str0!='AMod_InvadersParts')continue;",
+              "        research[5]=research[5]+ItemSize(dwd0);",
+              "        dwd0=GetItemFromShip(Player(),i);",
+              "        FreeItem(dwd0);",
+              "    }",
+              "    msgTxt=\"</color>Параметры установленны, приступаем к работе.\"+strBR+\"...\"+strBR+\"...\"+strBR+\"Сборка завершена. Разрешите представляем вам нашу разработку - Индукционно-Магнитный Биполяризатор Антиматерии, сокращённо ИМБА. Однако, нам так и не удалось раскрыть истинный потенциал этого оружия. Приносите больше обломков, мы изучим их и, возможно, сможем улучшить прототип. Кроме того, мы можем собрать новый образец, но для этого нам понадобятся обломки арксов, а также кредиты на некоторые детали.\"+strBR+\"Чтобы ускорить исследования мы распределяем обломки арксов по всем технологическим центрам равномерно. Для создания новых образцов мы используем материалы с наших хранилищ, если добыли новые обломки - сразу сдавайте нам.\";",
+              "    str0=\"</color>Понятно\";",
+              "    arrTC[0]=3;",
+              "    arrTC[7]=arrTC[1]+2048;",
+              "    arrTC[8]=GAnswerData;",
+              "    dVar=3;",
+              "    research[0]=1;",
+              "    research[1]=1;",
+              "    research[2]=1;",
+              "    int0=80*arrTC[6];",
+              "    int0=int0/100;",
+              "    research[9]=int0;",
+              "    research[5]=research[5]-200;",
+              "    gunName[0]=gunName[0]+arrTC[1];",
+              "    dwd0=InventNewCustomWeapon(gunName[0],t_Weapon7);",
+              "    if(arrTC[1]==1)SetCustomWeaponSE(dwd0,'Weapon.10','Weapon.NoGraph','',0);",
+              "    if(arrTC[1]==2)SetCustomWeaponSE(dwd0,'Weapon.1','Weapon.NoGraph','',0);",
+              "    if(arrTC[1]==4)SetCustomWeaponSE(dwd0,'Weapon.14','Weapon.NoGraph','Weapon.MissileHit',0);",
+              "    SetCustomWeaponPrimaryData(dwd0,6,t_Weapon7,t_DefGenerator+arrTC[8]);",
+              "    SetCustomWeaponSizeAndCost(dwd0,arrTC[5],research[9]);",
+              "    SetCustomWeaponDamageData(dwd0,arrTC[2],arrTC[3],arrTC[7],1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00);",
+              "    if(arrTC[1]!=4)SetCustomWeaponShotData(dwd0,'Normal',90,340+arrTC[4],0,5);",
+              "    else",
+              "    {",
+              "        SetCustomWeaponShotData(dwd0,'Torpedo',90,700+arrTC[4]*2,0,5);",
+              "        SetCustomMissileWeaponStats(dwd0,1000+arrTC[4]*2,1400,850,33);",
+              "    }",
+              "    SetCustomWeaponAvailability(dwd0,'NotSold');",
+              "    dwd0=CreateCustomWeapon(gunName[0],research[9],GalaxyTechLevel(),2);",
+              "    EqCustomFaction(dwd0,'AMod_Invaders');",
+              "    research[10]=ItemCost(dwd0);",
+              "    AddItemToShip(Player(),dwd0);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  430,
+          "Pos.y":  -270,
+          "Parent":  -1,
+          "#":  92,
+          "Total.Lines":  7,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "for(i=t_Weapon1;i<t_CustomWeapon;i=i+1)",
+              "{",
+              "    if(i>t_Weapon12 && i<t_Weapon16)continue;",
+              "    int0=i-t_DefGenerator;",
+              "    str0=CT('Items.Weapon.Name.'+int0);",
+              "    InjectAnswer('CrGun1',str0,int0);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  290,
+          "Pos.y":  -220,
+          "Parent":  -1,
+          "#":  98,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=\"</color>Можно улучшить стандартные параметры:\"+strBR+\"-минимальный урон;\"+strBR+\"-максимальный урон;\"+strBR+\"-дальность стрельбы;\"+strBR+\"-уменьшить стоимость;\"+strBR+\"-уменьшить вес;\"+strBR+\"Не беспокойтесь, эти улучшения не повлияют на другие характеристики, так что вы решили?\";",
+              "str0=\"</color>Мне надо подумать\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  360,
+          "Pos.y":  -220,
+          "Parent":  -1,
+          "#":  100,
+          "Total.Lines":  7,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(arrTC[2]+10>=arrTC[3])AddDialogBlock(\"Увеличьте минимальный урон\",1);",
+              "InjectAnswer('dUpg1',\"Увеличьте минимальный урон\",2);",
+              "InjectAnswer('dUpg1',\"Увеличьте максимальный урон\",3);",
+              "InjectAnswer('dUpg1',\"Увеличьте дальность атаки\",4);",
+              "InjectAnswer('dUpg1',\"Уменьшите цену обслуживания\",5);",
+              "InjectAnswer('dUpg1',\"Уменьшите вес\",6);",
+              "InjectAnswer('dUpg1',\"Ничего улучшать не надо, оставьте как есть\",0);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  -190,
+          "Parent":  -1,
+          "#":  103,
+          "Total.Lines":  37,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "arrTC[0]=arrTC[0]+1;",
+              "research[1]=1;",
+              "research[2]=1;",
+              "research[3]=research[3]+1;",
+              "research[6]=research[6]+1;",
+              "dVar=3;",
+              "str0='';",
+              "if(research[3]==2)",
+              "{",
+              "    if(research[4]==0)",
+              "    {",
+              "        str0=\"Но на этом наши исследования останавливаются, мы изучили всё что смогли.\";",
+              "        research[1]=0;",
+              "    }",
+              "    else research[1]=3;",
+              "}",
+              "int0=GAnswerData;",
+              "if(int0!=0)dRstrtText=\"</color>Понятно. Не забудьте обновить своё вооружение, только новые образцы оружия получат улучшения.\"+strBR+str0;",
+              "else dRstrtText=\"</color>Вы в этом уверенны? Ну как хотите, наше дело предложить.\"+strBR+str0;",
+              "if(int0==2)arrTC[2]=arrTC[2]+10;",
+              "if(int0==3)arrTC[3]=arrTC[3]+10;",
+              "if(int0==4)arrTC[4]=arrTC[4]+20;",
+              "if(int0==5)arrTC[5]=arrTC[5]-10;",
+              "if(int0==6)arrTC[6]=arrTC[6]-10;",
+              "int0=80*arrTC[6];",
+              "int0=int0/100;",
+              "research[9]=int0;",
+              "dwd0=GetCustomWeaponInfo(gunName[0]);",
+              "SetCustomWeaponSizeAndCost(dwd0,arrTC[5],research[9]);",
+              "if(arrTC[1]!=4)SetCustomWeaponDamageData(dwd0,arrTC[2],arrTC[3],arrTC[7],1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00);",
+              "else SetCustomWeaponDamageData(dwd0,arrTC[2]/2,arrTC[3]/2,arrTC[7],1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00);",
+              "if(arrTC[1]!=4)SetCustomWeaponShotData(dwd0,'Normal',90,340+arrTC[4],0,5);",
+              "else",
+              "{",
+              "    SetCustomWeaponShotData(dwd0,'Torpedo',90,700+arrTC[4]*3,0,5);",
+              "    SetCustomMissileWeaponStats(dwd0,1000+arrTC[4]*3,1400,850,33);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  70,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  110,
+          "Total.Lines":  20,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dRstrtText=\"</color>Да, но на изучение этого предмета нам потребуется несколько недель.\";",
+              "research[4]=research[4]+1;",
+              "if(research[1]==0)research[2]=30;",
+              "int0=0;",
+              "if(ItemIn(DqItem1,Player()) && int0==0)",
+              "{",
+              "    int0=1;",
+              "    int1=FindItemInShip(Player(),DqItem1);",
+              "}",
+              "if(ItemIn(DqItem2,Player()) && int0==0)",
+              "{",
+              "    int0=1;",
+              "    int1=FindItemInShip(Player(),DqItem2);",
+              "}",
+              "if(ItemIn(DqItem3,Player()) && int0==0)",
+              "{",
+              "    int0=1;",
+              "    int1=FindItemInShip(Player(),DqItem3);",
+              "}",
+              "if(int0==1)FreeItem(GetItemFromShip(Player(),int1));"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  360,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  117,
+          "Total.Lines":  11,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "InjectAnswer('dUUpg2',\"Добавьте замедление\",8);",
+              "InjectAnswer('dUUpg2',\"Добавьте разрушения оборудования\",16);",
+              "InjectAnswer('dUUpg2',\"Добавьте восстановление обшивки\",32);",
+              "InjectAnswer('dUUpg2',\"Добавьте эффект ионизации\",64);",
+              "InjectAnswer('dUUpg2',\"Добавьте ослабление брони\",128);",
+              "InjectAnswer('dUUpg2',\"Добавьте эффект ЭМ-помех\",256);",
+              "InjectAnswer('dUUpg2',\"Добавьте увеличение шанса уцеления оборудования\",32768);",
+              "InjectAnswer('dUUpg2',\"Добавьте повреждение двигателя\",131072);",
+              "InjectAnswer('dUUpg2',\"Добавьте блокировку оружия\",262144);",
+              "InjectAnswer('dUUpg2',\"Добавьте блокировку дроида\",524288);",
+              "InjectAnswer('dUUpg2',\"Ничего улучшать не надо, оставьте как есть\",0);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  290,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  118,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=\"</color>Прорыв в исследованиях позволяет добавить дополнительный эффект для экспериментального оружия:\"+strBR+\"-замедление цели;\"+strBR+\"-повреждение оборудования цели;\"+strBR+\"-восстановление обшивки при нанисении урона;\"+strBR+\"-ионизация цели;\"+strBR+\"- разрушение брони цели;\"+strBR+\"-ЭМ-эффект;\"+strBR+\"-повышение вероятности что оборудование цели уцелеет при уничтожении корабля;\"+strBR+\"-небольшое повреждение двигателя цели;\"+strBR+\"-небольшой шанс блокирования оружия цели;\"+strBR+\"-небольшой шанс блокирования ремонтного дроида цели;\"+strBR+\"Как вам списочек, а? Сделайте правильный выбор, второго такого шанса не будет.\";",
+              "str0=\"</color>Мне надо подумать\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  -130,
+          "Parent":  -1,
+          "#":  120,
+          "Total.Lines":  21,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "research[2]=1;",
+              "research[4]=research[4]-1;",
+              "research[7]=research[7]+1;",
+              "if(research[6]<7)",
+              "{",
+              "    research[1]=1;",
+              "    research[3]=0;",
+              "    dVar=3;",
+              "}",
+              "int0=GAnswerData;",
+              "if(int0!=0)dRstrtText=\"</color>Понятно. Не забудьте обновить своё вооружение, только новые образцы оружия получат улучшения.\";",
+              "else dRstrtText=\"</color>Вы в этом уверенны? Ну как хотите, наше дело предложить.\";",
+              "if(int0>0)",
+              "{",
+              "    arrTC[5]=arrTC[5]+30;",
+              "    arrTC[7]=arrTC[7]+int0;",
+              "    dwd0=GetCustomWeaponInfo(gunName[0]);",
+              "    SetCustomWeaponSizeAndCost(dwd0,arrTC[5],arrTC[6]);",
+              "    if(arrTC[1]!=4)SetCustomWeaponDamageData(dwd0,arrTC[2],arrTC[3],arrTC[7],1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00);",
+              "    else SetCustomWeaponDamageData(dwd0,arrTC[2]/2,arrTC[3]/2,arrTC[7],1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  290,
+          "Pos.y":  -100,
+          "Parent":  -1,
+          "#":  126,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=\"</color>Прорыв в исследованиях позволяет добавить дополнительный эффект для экспериментального оружия:\"+strBR+\"-урон ближайшим противникам цели;\"+strBR+\"-дополнительный урон ближайшим противникам при уничтожении цели;\"+strBR+\"-урон всем противникам вокруг вас;\"+strBR+\"-урон по цели передаётся ближайшим двум противникам;\"+strBR+\"-дополнительный выстрел;\"+strBR+\"Сделайте правильный выбор, второго такого шанса не будет.\";",
+              "str0=\"</color>Мне надо подумать\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  360,
+          "Pos.y":  -100,
+          "Parent":  -1,
+          "#":  129,
+          "Total.Lines":  9,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "InjectAnswer('dUUpg4',\"Добавьте урон ближайшим противникам цели\",1);",
+              "if(arrTC[1]!=4)",
+              "{",
+              "    InjectAnswer('dUUpg4',\"Добавьте урон ближайшим противникам при уничтожении цели\",2);",
+              "    InjectAnswer('dUUpg4',\"Добавьте урон по всем противникам вокруг\",3);",
+              "    InjectAnswer('dUUpg4',\"Добавьте урон по цели передающийся ближайшим двум противникам\",4);",
+              "}",
+              "InjectAnswer('dUUpg4',\"Добавьте дополнительный выстрел\",6);",
+              "InjectAnswer('dUUpg4',\"Ничего улучшать не надо, оставьте как есть\",0);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  131,
+          "Total.Lines":  36,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "research[2]=1;",
+              "research[4]=research[4]-1;",
+              "research[7]=research[7]+1;",
+              "if(research[6]<7)",
+              "{",
+              "    research[1]=1;",
+              "    research[3]=0;",
+              "    dVar=3;",
+              "}",
+              "int0=GAnswerData;",
+              "if(int0!=0)dRstrtText=\"</color>Понятно. Не забудьте обновить своё вооружение, только новые образцы оружия получат улучшения.\";",
+              "else dRstrtText=\"</color>Вы в этом уверенны? Ну как хотите, наше дело предложить.\";",
+              "if(int0>0)",
+              "{",
+              "    arrTC[5]=arrTC[5]+30;",
+              "    dwd0=GetCustomWeaponInfo(gunName[0]);",
+              "    SetCustomWeaponSizeAndCost(dwd0,arrTC[5],arrTC[6]);",
+              "    if(arrTC[1]!=4)",
+              "    {",
+              "        if(int0==1)SetCustomWeaponShotData(dwd0,'Splash',90,340+arrTC[4],100);",
+              "        if(int0==2)SetCustomWeaponShotData(dwd0,'Exploder',90,340+arrTC[4],200);",
+              "        if(int0==3)",
+              "        {",
+              "            if(arrTC[1]==1)SetCustomWeaponSE(dwd0,'Weapon.10','Weapon.10','',0);",
+              "            if(arrTC[1]==2)SetCustomWeaponSE(dwd0,'Weapon.1','Weapon.1','',0);",
+              "            SetCustomWeaponShotData(dwd0,'AreaDamage');",
+              "        }",
+              "        if(int0==4)SetCustomWeaponShotData(dwd0,'Chain3');",
+              "        if(int0==6)SetCustomWeaponShotData(dwd0,'Normal',90,340+arrTC[4],100,5,2);",
+              "    }",
+              "    else",
+              "    {",
+              "        if(int0==1)SetCustomWeaponShotData(dwd0,'Torpedo',90,700+arrTC[4]*3,100);",
+              "        if(int0==6)SetCustomWeaponShotData(dwd0,'Torpedo',90,700+arrTC[4]*3,0,5,2);",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -150,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  135,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dialog(IvFlDlg,GroupToShip(director));"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -190,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  139,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=\"</color>Построить пять кораблей защитного типа! Перекинуть ресурсы с атакующих резервов! Игра не закончена! Я ещё не ... проиграл.\";",
+              "str0=\"</color>Игра? Какая игра? Кто это говорит?\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -310,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  144,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=\"</color>Хмм... какая-то низшая форма жизни подключилась к ретранслятору. Как это возможно?\"+strBR+'...'+strBR+\"А, теперь понятно. Они создали оружие из обломков моих кораблей, из-за этого ретранслятор считает их союзниками и передаёт текущие приказы на понятном языке. Забавно.\";",
+              "str0=\"</color>Так ты создатель арксов? Почему вы вторгаетесь в наши системы и уничтожаете нас?\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -400,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  147,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=\"</color>Арксы? Это так вы называете мои корабли? Отвратительное название.\"+strBR+\"Что же касается причины вторжения, то всё очень просто - мне стало скучно и я решил поиграть в <clr>Защити кристалл<clrEnd>.\";",
+              "str0=\"</color>Из-за твоей игры погибают живые существа!\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -270,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  149,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=\"</color>Ага, я знаю. Но искусственные формы жизни унылы и предсказуемы, мне скучно с ними играть. Кроме того, вы и без меня прекрасно справляетесь с уничтожением друг друга.\";",
+              "str0=\"</color>Твои кристаллы уничтожены, что ты теперь будешь делать?\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -150,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  152,
+          "Total.Lines":  6,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=\"</color>Как что? Конечно же, продолжу играть, но вы мне больше не интересны. Прощай альтернативная вселенная <GalaxyShipId()>, здравствуй альтернативная вселенная <GalaxyShipId()+1>.\";",
+              "str0=\"</color>Постой! Если ты проиграл, значит, я победил. Какая мне награда полагается?\";",
+              "int0=0;",
+              "if(arcArray[1,1]>=48000)int0=1;",
+              "if(arcArray[2,1]>=48000)int0=int0+1;",
+              "if(arcArray[3,1]>=48000)int0=int0+1;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -310,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  153,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=msgTxt+strBR+\"</color>Хотя есть у меня одна идейка... Я изменил этот ретранслятор, после исследований вы сможете наладить массовое производство оружия по технологиям полученных из обломков моих кораблей. Но скорее всего, новое оружие лишь ускорит ваше самоуничтожение. Надеюсь, ты будешь счастлив, когда твоя награда унесёт больше жизней, чем моя игра.\";",
+              "QState[3]=3;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -310,
+          "Pos.y":  -40,
+          "Parent":  -1,
+          "#":  158,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=msgTxt+strBR+\"</color>Чувство выполненного долга - вот твоя награда! Гордись собой, герой.\";",
+              "QState[3]=2;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -400,
+          "Pos.y":  -40,
+          "Parent":  -1,
+          "#":  159,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipDestroy(GroupToShip(director),1);",
+              "Sound('Sound.bugaga');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -230,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  162,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=\"</color>Вот поэтому я стараюсь не общаться с низшими формами жизни. Вам всегда всего мало и вы хотите, чтобы кто-то за вас всё делал.\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -190,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  168,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=\"</color>...(тишина)...\";",
+              "str0=\"</color>Эй, ты меня слышишь?\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -310,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  169,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=\"</color>...(но вам никто не ответил)...\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -250,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  177,
+          "Total.Lines":  3,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=\"</color>На этот раз ничего, дальнейшие улучшения невозможны.\"+strBR+\"После уничтожения последнего неизвестного объекта новые корабли перестали появлятся. Даже если бы мы и хотели продолжить изучения арксов, для этого понадобилось бы много обломков, которые невозможно достать без, собственно, самих арксов. По этой же причине мы закрываем проект ИМБА, надеюсь наша разработка хоть как-то вам помогла.\";",
+              "str0=\"</color>Понятно\";",
+              "dVar=-1;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -250,
+          "Pos.y":  -100,
+          "Parent":  -1,
+          "#":  178,
+          "Total.Lines":  7,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgTxt=\"</color>На этот раз ничего, дальнейшие улучшения невозможны.\"+strBR+\"Но! Мы смогли синтезировать материал из которого создано оборудование арксов. И пусть он не полностью идентичен оригиналу, это позволит нам начать массовое производство проекта ИМБА. Причём, с этим справятся без специального оборудования даже на аграрных планетах. Вы ... вы представляете что это значит? Если ещё какая-то инопланетная тварь сунется в наши системы, то получит достойный отпор, даже от транспортника! Ахахахаа!\";",
+              "str0='</color>...';",
+              "dVar=-1;",
+              "dwd0=GetCustomWeaponInfo(gunName[0]);",
+              "arrTC[7]=arrTC[7]-2048;",
+              "SetCustomWeaponDamageData(dwd0,arrTC[2],arrTC[3],arrTC[7],0.8,0.85,0.9,0.95,1.00,1.05,1.10,1.20);",
+              "SetCustomWeaponAvailability(dwd0,'Free');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -60,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  185,
+          "Total.Lines":  12,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "int0=0;",
+              "for(i=1;i<ShipItems(Player());i=i+1)",
+              "{",
+              "    dwd0=ShipItems(Player(),i);",
+              "    if(ItemType(dwd0)!=t_UselessCountableItem)continue;",
+              "    str0=EquipmentImageName(dwd0);",
+              "    if(str0=='AMod_InvadersParts')int0=int0+ItemSize(dwd0);",
+              "}",
+              "if(int0>needForHull)int0=needForHull;",
+              "msgTxt='</color>'+\"О, он вам точно понравится, в этом не сомневайтесь! Однако для завершения работ нам не хватает <needForHull> обломков. Если вы сможете нам их предоставить, то этот уникальный корпус мы передадим вам в качестве прототипа для полевых испытаний.\";",
+              "str0='</color>'+\"В другой раз\";",
+              "str1='</color>'+\"Сдать <int0> обломков на создание корпуса\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -190,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  188,
+          "Total.Lines":  24,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "for(i=ShipItems(Player())-1;i>0;i=i-1)",
+              "{",
+              "    dwd0=ShipItems(Player(),i);",
+              "    if(ItemType(dwd0)!=t_UselessCountableItem)continue;",
+              "    str0=EquipmentImageName(dwd0);",
+              "    if(str0=='AMod_InvadersParts')",
+              "    if(ItemSize(dwd0)>needForHull)",
+              "    {",
+              "        ItemSize(dwd0,ItemSize(dwd0)-needForHull);",
+              "        needForHull=0;",
+              "    }",
+              "    else",
+              "    {",
+              "        needForHull=needForHull-ItemSize(dwd0);",
+              "        FreeItem(GetItemFromShip(Player(),i));",
+              "    }",
+              "    if(needForHull<=0)break;",
+              "}",
+              "if(needForHull<=0)",
+              "{",
+              "    msgTxt='</color>'+\"Отлично, <ShipName(Player())>! Вы собрали достаточное количество обломков, а значит, мы, наконец, можем приступить к сборке корпуса.\"+CT('FormInfo.br')+'...'+CT('FormInfo.br')+\"Ну вот, всё готово. Ступайте на склад - принимайте работу!\";",
+              "    str1='</color>'+\"Огромное вам спасибо!\";",
+              "}",
+              "else msgTxt='</color>'+\"Отлично, <ShipName(Player())>! Осталось всего <needForHull> обломков, чтобы мы смогли построить для вас новый корпус!\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -310,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  194,
+          "Total.Lines":  9,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dwd0=CreateHull(0,CT('Items.Weapon.BattlecruiserConfig.HullSize'),8,6);",
+              "SpecialToEquipment(FindBonusByCustomTag(CT('Items.Weapon.BattlecruiserConfig.HullCustomTag')),dwd0);",
+              "LinkItemToScript(dwd0,NewShipHull);",
+              "str0=GenerateCodeStringFromBlock('UseCodeBlocks.BattleCruiserMainGunUse');",
+              "ItemOnUseCode(dwd0,str0);",
+              "ShipAddCustomShipInfo(Player(),'AModInvaders_YamatoGunInfo','NoShow',CT('Items.Weapon.BattlecruiserConfig.YamatoDamage'),CT('Items.Weapon.BattlecruiserConfig.YamatoRange'),CT('Items.Weapon.BattlecruiserConfig.YamatoInitialCharge'));",
+              "AddItemToStorage(GetShipRuins(Player()),dwd0);",
+              "LaserGunCount=0;",
+              "Sound('Sound.Sell');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -310,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  196,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Sound('Sound.Sell');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -20,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  204,
+          "Total.Lines":  12,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "int0=0;",
+              "for(i=1;i<ShipItems(Player());i=i+1)",
+              "{",
+              "    dwd0=ShipItems(Player(),i);",
+              "    if(ItemType(dwd0)!=t_UselessCountableItem)continue;",
+              "    str0=EquipmentImageName(dwd0);",
+              "    if(str0=='AMod_InvadersParts')int0=int0+ItemSize(dwd0);",
+              "}",
+              "if(int0>needForLaserGun)int0=needForLaserGun;",
+              "msgTxt='</color>'+\"Отлично, в таком случае вы должны предоставить нам ещё <needForLaserGun> обломков для сборки одного образца.\";",
+              "str0='</color>'+\"В другой раз\";",
+              "str1='</color>'+\"Сдать <int0> обломков на создание орудия\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  140,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  209,
+          "Total.Lines":  24,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "for(i=ShipItems(Player())-1;i>0;i=i-1)",
+              "{",
+              "    dwd0=ShipItems(Player(),i);",
+              "    if(ItemType(dwd0)!=t_UselessCountableItem)continue;",
+              "    str0=EquipmentImageName(dwd0);",
+              "    if(str0=='AMod_InvadersParts')",
+              "    if(ItemSize(dwd0)>needForLaserGun)",
+              "    {",
+              "        ItemSize(dwd0,ItemSize(dwd0)-needForLaserGun);",
+              "        needForLaserGun=0;",
+              "    }",
+              "    else",
+              "    {",
+              "        needForLaserGun=needForLaserGun-ItemSize(dwd0);",
+              "        FreeItem(GetItemFromShip(Player(),i));",
+              "    }",
+              "    if(needForLaserGun<=0)break;",
+              "}",
+              "if(needForLaserGun<=0)",
+              "{",
+              "    msgTxt='</color>'+\"Отлично, <ShipName(Player())>! Вы собрали достаточное количество обломков, а значит, мы, наконец, можем приступить к сборке орудия.\"+CT('FormInfo.br')+'...'+CT('FormInfo.br')+\"Ну вот, всё готово. Ступайте на склад - принимайте работу!\";",
+              "    str1='</color>'+\"Большое вам спасибо!\";",
+              "}",
+              "else msgTxt='</color>'+\"Отлично, <ShipName(Player())>! Осталось всего <needForLaserGun> обломков, чтобы мы смогли собрать для вас новую пушку!\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  214,
+          "Total.Lines":  11,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dwd0=CreateCustomWeapon('LaserTurret',CT('Items.Weapon.BattlecruiserConfig.LaserMissileSize'),CT('Items.Weapon.BattlecruiserConfig.LaserMissileTechLevel'),CT('Items.Weapon.BattlecruiserConfig.LaserMissileTechOwnerRace'));",
+              "SpecialToEquipment(FindBonusByCustomTag(CT('Items.Weapon.BattlecruiserConfig.LaserMissileCustomTag')),dwd0);",
+              "LaserGunCount=LaserGunCount+1;",
+              "if(LaserGunCount==1)LinkItemToScript(dwd0,LaserGun1);",
+              "else if(LaserGunCount==2)LinkItemToScript(dwd0,LaserGun2);",
+              "else if(LaserGunCount==3)LinkItemToScript(dwd0,LaserGun3);",
+              "str0=GenerateCodeStringFromBlock('ActCodeBlocks.LaserGunShot');",
+              "ItemOnActCode(dwd0,str0);",
+              "AddItemToStorage(GetShipRuins(Player()),dwd0);",
+              "needForLaserGun=CT('Items.Weapon.BattlecruiserConfig.LaserMissileScrapCost');",
+              "Sound('Sound.Sell');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  215,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Sound('Sound.Sell');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  20,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  218,
+          "Total.Lines":  119,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "if(GetShipRuins(Player()) && !PlayerBridge()) {",
+              "  if(dVar==0) {",
+              "    int0=0;",
+              "    for(i=1;i<ShipItems(Player());i=i+1) {",
+              "      dwd0=ShipItems(Player(),i);",
+              "      if(ItemType(dwd0)!=t_UselessCountableItem) continue;",
+              "      str0=EquipmentImageName(dwd0);",
+              "      if(str0=='AMod_InvadersParts') {",
+              "        int0=1;",
+              "        break;",
+              "      }",
+              "    }",
+              "    if(ShipType(GetShipRuins(Player()))=='RC' && int0==1) {",
+              "      str0=\"</color>В этом нет необходимости. Вам уже начислили очки рейнджера за уничтожение кораблей арксов, не беспокойтесь.\";",
+              "      AddDialogInject('dRuins0','',\"Сдать обломки арксов\",0);",
+              "    }",
+              "    if(ShipType(GetShipRuins(Player()))=='WB' && int0==1) {",
+              "      str0=Format(\"</color>Так, посмотрим... Что тут у нас... Отлично! <0>, из этих обломков получатся превосходные трофеи! У меня как раз есть знакомый на одной планете, который может... вас это не интересует? Как жаль.\",\"<0>\",ShipName(Player()));",
+              "      AddDialogInject('dRuins0','',\"Сдать обломки арксов\",0);",
+              "    }",
+              "    if(ShipType(GetShipRuins(Player()))=='SB' && int0==1) {",
+              "      str0=Format(\"</color>Что там у вас? Очередные обломки? <0>, ну серъёзно, сколько можно таскать на научные станции всякий мусор? Наши отделы и так уже загружены до предела. Остановитесь.\",\"<0>\",ShipName(Player()));",
+              "      AddDialogInject('dRuins0','',\"Сдать обломки арксов\",0);",
+              "    }",
+              "    if(ShipType(GetShipRuins(Player()))=='PB' && int0==1) {",
+              "      str0=Format(\"</color>Какие ещё обломки? Не интересует. Но раз уж ты тут, не желаешь ли приобрести промышленный лазер с автографом самого Рачехана всего за <0> cr? Нет? Подумай хорошенько, вещь уникальная. И кроме того, если купишь сразу три лазера, то четвёртый получишь совершенно бесплатно! Но и это ещё не всё! ... Стой <1>, ты куда? У меня есть и другой хлам... то есть уникальные предложения!\",\"<0>\",499999,\"<1>\",ShipName(Player()));",
+              "      AddDialogInject('dRuins0','',\"Сдать обломки арксов\",0);",
+              "    }",
+              "  }",
+              "  if(ShipType(GetShipRuins(Player()))=='TC') {",
+              "    if(dVar!=-1) {",
+              "      if(dVar>=3) {",
+              "        k=CT('Items.Weapon.BattlecruiserConfig.MinimumRank');",
+              "        if(ShipRank(Player())>=k || GetShipPirateRank(Player())>=k) {",
+              "          if(needForHull>0) {",
+              "            AddDialogInject('NewHull',\"А ещё, при сборе достаточного количества обломков арксов, мы могли бы соорудить для вас <color=0,50,200>уникальный суперкорпус</color>, чертежи которого нам удалось отыскать в базе данных этой необычной расы.\",\"А что это за уникальный корпус, о котором вы говорите?\",20);",
+              "          }",
+              "          else if(LaserGunCount>-1 && LaserGunCount<3) {",
+              "            AddDialogInject('NewGun',\"Также, если хотите, за дополнительное количество обломков арксов, мы могли бы собрать вам несколько новых уникальных орудий, в дополнение к вашему экспериментальному корпусу.\",\"Пожалуй, мне бы и впрямь пригодилась пара новых стволов\",20);",
+              "          }",
+              "        }",
+              "      }",
+              "      if(QState[3]==3) {",
+              "        int0=2;",
+              "        if(!ItemExist(DqItem1))int0=int0-1;",
+              "        if(!ItemExist(DqItem2))int0=int0-1;",
+              "        if(!ItemExist(DqItem3))int0=int0-1;",
+              "        int0=int0+research[7]+research[4];",
+              "        if(int0!=2) {",
+              "          QState[3]=2;",
+              "          dVar=5;",
+              "          research[1]=4;",
+              "          research[7]=2;",
+              "        }",
+              "      }",
+              "      if(dVar==0) {",
+              "        int0=0;",
+              "        for(i=1;i<ShipItems(Player());i=i+1) {",
+              "          dwd0=ShipItems(Player(),i);",
+              "          if(ItemType(dwd0)!=t_UselessCountableItem) continue;",
+              "          str0=EquipmentImageName(dwd0);",
+              "          if(str0=='AMod_InvadersParts') {",
+              "            int0=1;",
+              "            break;",
+              "          }",
+              "        }",
+              "        if(int0==1 && dVar==0) {",
+              "          msgTxt=\"</color>Чьи обломки? Акрсов? А, это та неизвестная раса которая вторглась в наш рукав галактики? Что ж, почему бы и нет, выгрузите всё вон там. Исследования займут несколько недель. Посетите любой технологический центр, если желаете узнать результаты.\";",
+              "          str1=\"</color>Понял, выгружаю\";",
+              "          AddDialogInject('IvTC0','',\"Сдать обломки арксов\",21);",
+              "        }",
+              "      }",
+              "      if(dVar==2) {",
+              "        msgTxt=Format(\"</color>Занятный материал вы раздобыли, одноврененно прочный и легко поддающийся модификации. Мы бы хотели попробовать создать из него новое оружие, но всё что вы принесли ушло на исследование. На создание экспериментального образца нам потребуется примерно <0> тонн обломков арксов.\",\"<0>\",200);",
+              "        str1=\"</color>У меня столько нету\";",
+              "        AddDialogInject('IvTC1','',\"Исследование арксов\",21);",
+              "      }",
+              "      if(dVar==3) {",
+              "        int0=research[2]/arrTC[0];",
+              "        int1=100*arrTC[0];",
+              "        int1=int1/2;",
+              "        if(research[1]>0)msgTxt=\"</color>Мы продолжаем изучение арксов.\"+strBR+Format(\"Обломки в хранилищах: <0> т.\",\"<0>\",research[5])+strBR+Format(\"Изучения завершены на: <0>%\",\"<0>\",int0)+strBR+Format(\"Cкорость изучения: <0>%\",\"<0>\",GlobalVarTcCount*100)+strBR+Format(\"За <0> тонн обломков и <1> кредитов мы можем собрать ещё один прототип экспериментального оружия ИМБА.\",\"<0>\",int1,\"<1>\",research[10]);",
+              "        if(research[1]==0)msgTxt=\"</color>На данный момент нам нечего изучать.\"+strBR+Format(\"Обломки в хранилищах: <0> т.\",\"<0>\",research[5])+strBR+Format(\"За <0> тонн обломков и <1> кредитов мы можем собрать ещё один прототип экспериментального оружия ИМБА.\",\"<0>\",int1,\"<1>\",research[10]);",
+              "        str1=\"</color>Я подумаю\";",
+              "        if(dRstrtText=='')AddDialogInject('IvTC2','',\"Исследование арксов\",21);",
+              "        else {",
+              "          AddDialogInject('IvTC2',dRstrtText,\"Исследование арксов\",21,1);",
+              "          dRstrtText='';",
+              "        }",
+              "      }",
+              "      if(dVar==4) {",
+              "        if(research[1]==2) {",
+              "          msgTxt=\"</color>Мы завершили часть исследований по технологиям арксов, выберите какие параметры хотите улучшить в следующих прототипах.\";",
+              "          str0=\"</color>Что можно улучшить?\";",
+              "          AddDialogInject('dUpg0','',\"Исследование арксов\",21);",
+              "        }",
+              "      }",
+              "      if(dVar==5) {",
+              "        if(research[1]==4) {",
+              "          if(research[7]==0) {",
+              "            msgTxt=\"</color>Мы существенно продвинулись в изучениии технологиии арксов, это открывает нам новые возможности для улучшений.\";",
+              "            str0=\"</color>Что можно улучшить?\";",
+              "            AddDialogInject('dUUpg1','',\"Исследование арксов\",21);",
+              "          }",
+              "          if(research[7]==1) {",
+              "            msgTxt=\"</color>Мы существенно продвинулись в изучениии технологиии арксов, это открывает нам новые возможности для улучшений.\";",
+              "            str0=\"</color>Что можно улучшить?\";",
+              "            AddDialogInject('dUUpg3','',\"Исследование арксов\",21);",
+              "          }",
+              "          if(research[7]==2) {",
+              "            msgTxt=\"</color>Исседование технологии арксов завершены, мы изучили всё что смогли.\";",
+              "            str0=\"</color>Что можно улучшить?\";",
+              "            AddDialogInject('IvTC3','',\"Исследование арксов\",21);",
+              "          }",
+              "        }",
+              "      }",
+              "    }",
+              "  }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  40,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  219,
+          "Total.Lines":  290,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(QState[0]==3) {",
+              "  for(i=0;i<GalaxySectors()-1;i=i+1) {",
+              "    if(int1==2)break;",
+              "    dwd0=GalaxySectors(i);",
+              "    int0=0;int1=0;",
+              "    for(j=0;j<ConStars(dwd0);j=j+1) {",
+              "      dwd1=ConStar(dwd0,j);",
+              "      if(StarCustomFaction(dwd1)!='')int0=int0+10;",
+              "      if(NoComeKlingToStar(dwd1))int0=int0+10;",
+              "      if(ShipStar(Player())==dwd1)int0=int0+10;",
+              "      if(Blazer()) {",
+              "        if(ShipStar(Blazer())==dwd1)int0=int0+10;",
+              "      }",
+              "      if(Terron()) {",
+              "        if(ShipStar(Terron())==dwd1)int0=int0+10;",
+              "      }",
+              "      if(IsScriptActive('Coalition_Heart')) {",
+              "        if(GalaxyStar(GetValueFromScript('Coalition_Heart', 'core_system') - 1) == dwd1) int0=int0+10;",
+              "      }",
+              "      int0=int0+1;",
+              "    }",
+              "    if(int0==ConStars(dwd0)) {",
+              "      int1=0;",
+              "      ArrayClear(arr0);",
+              "      ArrayAdd(arr0,i);",
+              "      for(j=0;j<GalaxySectors()-1;j=j+1) {",
+              "        if(int1==2)break;",
+              "        dwd1=GalaxySectors(j);",
+              "        if(dwd1==dwd0)continue;",
+              "        if(!ConNear(dwd0,dwd1))continue;",
+              "        int0=0;",
+              "        for(k=0;k<ConStars(dwd1);k=k+1) {",
+              "          dwd2=ConStar(dwd1,k);",
+              "          if(StarCustomFaction(dwd2)!='')int0=int0+10;",
+              "          if(NoComeKlingToStar(dwd2)!=0)int0=int0+10;",
+              "          if(ShipStar(Player())==dwd2)int0=int0+10;",
+              "          if(Blazer()) {",
+              "            if(ShipStar(Blazer())==dwd2)int0=int0+10;",
+              "          }",
+              "          if(Terron()) {",
+              "            if(ShipStar(Terron())==dwd2)int0=int0+10;",
+              "          }",
+              "          if(StarOwner(dwd2)==1)int0=int0+1;",
+              "        }",
+              "        if(int0==ConStars(dwd1)) {",
+              "          ArrayAdd(arr0,j);",
+              "          int1=int1+1;",
+              "        }",
+              "      }",
+              "    }",
+              "  }",
+              "  if(int1==2) CustomEther('Galaxy_Alert',0,'begin_inv','Внимание всем!'+strBR+'Зафиксированно появление кораблей неизвестной расы. Они атакуют всех без разбора, будь то доминатор или представитель любой разумной органической жизни. До выяснения подробностей рекомендуется воздержаться от полётов в захваченные системы.');",
+              "  if(ArrayDim(arr0)==4) {",
+              "    for(i=1;i<4;i=i+1) {",
+              "      dwd0=ConStar(GalaxySectors(arr0[i]),0);",
+              "      StarOwner(dwd0,1);",
+              "      StarSeries(dwd0,1);",
+              "      for(j=0;j<StarShips(dwd0);j=j+1) {",
+              "        dwd1=StarShips(dwd0,j);",
+              "        if(ShipInScript(dwd1))continue;",
+              "        if(dwd1==Player())continue;",
+              "        if(dwd1==Blazer())continue;",
+              "        if(dwd1==Keller())continue;",
+              "        if(dwd1==Terron())continue;",
+              "        ShipDestroy(dwd1,1);",
+              "      }",
+              "      StarCustomFaction(dwd0,'AMod_Invaders');",
+              "      for(j=0;j<StarPlanets(dwd0);j=j+1) {",
+              "        dwd2=StarPlanets(dwd0,j);",
+              "        if(PlanetOwner(dwd2)!=6) PlanetOwner(dwd2,5);",
+              "        for(k=0;k<PlanetWarriors(dwd2);k=k+1) TransferShip(PlanetWarriors(dwd2,k),dwd0);",
+              "      }",
+              "      dwd1=BuildCustomRuins(dwd0,'AMod_InvadersRuin',9);",
+              "      for(j=t_Food; j<=t_Narcotics; j=j+1) {",
+              "        int goods = GoodsAdd(dwd1, j, 0);",
+              "        GoodsAdd(dwd1, j, -goods);",
+              "      }",
+              "      for(j=ShopItems(dwd1)-1; j>=0; j=j-1) FreeItem(GetItemFromShop(dwd1, j));",
+              "      NoShopUpdate(dwd1, 1);",
+              "      ShipType(dwd1,'AMod_InvadersRuin');",
+              "      ShipOwner(dwd2,0);",
+              "      ShipJoin(Arks,dwd1);",
+              "      ItemLevel(ShipEqInSlot(dwd1,t_Hull),6);",
+              "      ShipSpecialBonuses(dwd1,bonHull,94);",
+              "      ShipSpecialBonuses(dwd1,bonDroid,-1000);",
+              "      ShipSpecialBonuses(dwd1,bonWRadius,-2000);",
+              "      ShipSpecialBonuses(dwd1,bonDef,-200);",
+              "      ShipSpecialBonuses(dwd1,bonHook,-1000);",
+              "      ShipCustomFaction(dwd1,'AMod_Invaders');",
+              "      ShipFace(dwd1,0);",
+              "      Chameleon(dwd1,'Ruins.AMod_InvadersRuin');",
+              "      ItemSize(ShipEqInSlot(dwd1,t_Hull),50000);",
+              "      HullHP(dwd1, 'To100');",
+              "      ShipRepairEq(dwd1);",
+              "      for(j=1;j<ShipItems(dwd1);j=j+1) {",
+              "        NoDropItem(ShipItems(dwd1,j),1);",
+              "      }",
+              "      if(i==1) {",
+              "        SetName(dwd1,'Альфа');",
+              "        dwd2=ShipEqInSlot(dwd1,t_Hull);",
+              "        LinkItemToScript(dwd2,qItem1);",
+              "        ItemOnActCode(dwd2,'if(ScriptItemActionType()==t_OnTakingDamage)ScriptItemActParam(0);if(ScriptItemActionType()==t_OnGettingWeaponHit){if(ScriptItemActObject1()==Player()){if(ItemType(ScriptItemActObject2())==t_CustomWeapon){if(CustomWeaponType(ScriptItemActObject2())==gunName[0])gunName0=gunName[0];}}}if(ScriptItemActionType()==t_OnTakingDamageEn){if(gunName0==gunName[0]){int0=ScriptItemActParam()*25;ScriptItemActParam(int0);arcArray[1,1]=arcArray[1,1]+int0;gunName0=0;}else ScriptItemActParam(0);}if(ScriptItemActionType()==t_OnTakingDamageSp){if(gunName0==gunName[0]){int0=ScriptItemActParam()*25;ScriptItemActParam(int0);arcArray[1,1]=arcArray[1,1]+int0;gunName0=0;}else ScriptItemActParam(0);}if(ScriptItemActionType()==t_OnTakingDamageMi){if(CustomMissileType(ScriptItemActObject1())==gunName[0]){int0=ScriptItemActParam()*13;ScriptItemActParam(int0);arcArray[1,1]=arcArray[1,1]+int0;}else ScriptItemActParam(0);}');",
+              "        dwd2=CreateQuestItem('ArksItem',6);",
+              "        EqCustomFaction(dwd2,'AMod_Invaders');",
+              "        LinkItemToScript(dwd2,DqItem1);",
+              "        AddItemToShip(dwd1,dwd2);",
+              "      }",
+              "      if(i==2) {",
+              "        SetName(dwd1,'Бетта');",
+              "        dwd2=ShipEqInSlot(dwd1,t_Hull);",
+              "        LinkItemToScript(dwd2,qItem2);",
+              "        ItemOnActCode(dwd2,'if(ScriptItemActionType()==t_OnTakingDamage)ScriptItemActParam(0);if(ScriptItemActionType()==t_OnGettingWeaponHit){if(ScriptItemActObject1()==Player()){if(ItemType(ScriptItemActObject2())==t_CustomWeapon){if(CustomWeaponType(ScriptItemActObject2())==gunName[0])gunName0=gunName[0];}}}if(ScriptItemActionType()==t_OnTakingDamageEn){if(gunName0==gunName[0]){int0=ScriptItemActParam()*25;ScriptItemActParam(int0);arcArray[2,1]=arcArray[2,1]+int0;gunName0=0;}else ScriptItemActParam(0);}if(ScriptItemActionType()==t_OnTakingDamageSp){if(gunName0==gunName[0]){int0=ScriptItemActParam()*25;ScriptItemActParam(int0);arcArray[2,1]=arcArray[2,1]+int0;gunName0=0;}else ScriptItemActParam(0);}if(ScriptItemActionType()==t_OnTakingDamageMi){if(CustomMissileType(ScriptItemActObject1())==gunName[0]){int0=ScriptItemActParam()*13;ScriptItemActParam(int0);arcArray[2,1]=arcArray[2,1]+int0;}else ScriptItemActParam(0);}');",
+              "        dwd2=CreateQuestItem('ArksItem',6);",
+              "        EqCustomFaction(dwd2,'AMod_Invaders');",
+              "        LinkItemToScript(dwd2,DqItem2);",
+              "        AddItemToShip(dwd1,dwd2);",
+              "      }",
+              "      if(i==3) {",
+              "        SetName(dwd1,'Гамма');",
+              "        dwd2=ShipEqInSlot(dwd1,t_Hull);",
+              "        LinkItemToScript(dwd2,qItem3);",
+              "        ItemOnActCode(dwd2,'if(ScriptItemActionType()==t_OnTakingDamage)ScriptItemActParam(0);if(ScriptItemActionType()==t_OnGettingWeaponHit){if(ScriptItemActObject1()==Player()){if(ItemType(ScriptItemActObject2())==t_CustomWeapon){if(CustomWeaponType(ScriptItemActObject2())==gunName[0])gunName0=gunName[0];}}}if(ScriptItemActionType()==t_OnTakingDamageEn){if(gunName0==gunName[0]){int0=ScriptItemActParam()*25;ScriptItemActParam(int0);arcArray[3,1]=arcArray[3,1]+int0;gunName0=0;}else ScriptItemActParam(0);}if(ScriptItemActionType()==t_OnTakingDamageSp){if(gunName0==gunName[0]){int0=ScriptItemActParam()*25;ScriptItemActParam(int0);arcArray[3,1]=arcArray[3,1]+int0;gunName0=0;}else ScriptItemActParam(0);}if(ScriptItemActionType()==t_OnTakingDamageMi){if(CustomMissileType(ScriptItemActObject1())==gunName[0]){int0=ScriptItemActParam()*13;ScriptItemActParam(int0);arcArray[3,1]=arcArray[3,1]+int0;}else ScriptItemActParam(0);}');",
+              "        dwd2=CreateQuestItem('ArksItem',6);",
+              "        EqCustomFaction(dwd2,'AMod_Invaders');",
+              "        LinkItemToScript(dwd2,DqItem3);",
+              "        AddItemToShip(dwd1,dwd2);",
+              "      }",
+              "      arcArray[i,1]=0;",
+              "      spwnDate[i,0]=CurTurn()+15;",
+              "      SpawnArkShip(dwd0,24,0);",
+              "    }",
+              "    QState[0]=4;",
+              "  }",
+              "}",
+              "if(QState[0]==4) {",
+              "  if(dVar==1) {",
+              "    if(research[2]>0)research[2]=research[2]-1;",
+              "    else dVar=2;",
+              "  }",
+              "  for(i=1;i<4;i=i+1) {",
+              "    dwd0=GalaxySectors(arr0[i]);",
+              "    for(j=0;j<ConStars(dwd0);j=j+1) {",
+              "      dwd1=ConStar(dwd0,j);",
+              "      if(arcArray[i,1]<50000) {",
+              "        if(CurTurn()>=spwnDate[i,j] && StarCustomFaction(dwd1)=='AMod_Invaders') {",
+              "          spwnDate[i,j]=CurTurn()+Rnd(13,20);",
+              "          if(CountIn(Invaders,dwd1)<20) {",
+              "            SpawnArkShip(dwd1,1,0);",
+              "          }",
+              "          else {",
+              "            if(arcArray[i,2]<15) arcArray[i,2]=arcArray[i,2]+1;",
+              "          }",
+              "        }",
+              "      }",
+              "      if(StarCustomFaction(dwd1)!='AMod_Invaders') {",
+              "        if(CountIn(Invaders,dwd1)+CountIn(Arks,dwd1)==StarShips(dwd1)) {",
+              "          if(CountIn(Invaders,dwd1)+CountIn(Arks,dwd1)!=0) {",
+              "            if(!CoalitionDefeated()) {",
+              "              if(StarOwner(dwd1)==0) {",
+              "                str0='</color>Внимание всем!'+strBR+Format('В секторе <0> арксами была захвачена система <1>. После этого никаких сведений оттуда не поступало.',\"<0>\",Name(StarToCon(dwd1)),\"<1>\",Name(dwd1));",
+              "                Ether(0,dwd1+1,str0);",
+              "              }",
+              "              if(StarOwner(dwd1)==2) {",
+              "                str0=Format('</color>После короткой схватки арксы захватили звездную систему <0>, находящуюся под контролем пиратов. О потерях среди мирного населения сведений не поступало.',\"<0>\",Name(dwd1));",
+              "                Ether(0,dwd1+1,str0);",
+              "              }",
+              "            }",
+              "            StarOwner(dwd1,1);",
+              "            StarCustomFaction(dwd1,'AMod_Invaders');",
+              "            for(k=0;k<StarPlanets(dwd1);k=k+1) {",
+              "              if(PlanetOwner(StarPlanets(dwd1,k))!=6) PlanetOwner(StarPlanets(dwd1,k),5);",
+              "            }",
+              "          }",
+              "        }",
+              "      }",
+              "      if(StarCustomFaction(dwd1)=='AMod_Invaders') {",
+              "        if(CountIn(Invaders,dwd1)+CountIn(Arks,dwd1)==0 && StarShips(dwd1)>0) {",
+              "          StarCustomFaction(dwd1,'');",
+              "          if(ShipStar(Player())==dwd1) {",
+              "            for(k=0;k<StarPlanets(dwd1);k=k+1) {",
+              "              dwd2=StarPlanets(dwd1,k);",
+              "              if(PlanetOwner(dwd2)==6)continue;",
+              "              RelationToRanger(dwd2,Player(),RelationToRanger(dwd2,Player())+20);",
+              "            }",
+              "          }",
+              "          if(!CoalitionDefeated()) {",
+              "            if(StarOwner(dwd1)==0)Ether(0,dwd1+2,Format('</color>Система <0> (сектор <1>) освобождена от арксов!',\"<0>\",Name(dwd1),\"<1>\",Name(StarToCon(dwd1))));",
+              "            else if(StarOwner(dwd1)==2)Ether(0,dwd1+2,Format('</color>Пираты неожиданно решили проявить свои благородные стороны и освободили от арксов звездную систему <0>. К сожалению, после этого они не передали ее Коалиции, а оставили под своим контролем.',\"<0>\",Name(dwd1)));",
+              "          }",
+              "        }",
+              "      }",
+              "    }",
+              "    if(CurTurn()>=arcArray[i,3] && arcArray[i,2]>14) {",
+              "      for(j=1;j<ConStars(dwd0);j=j+1) {",
+              "        if(arcArray[i,3]>CurTurn())break;",
+              "        dwd1=ConStar(dwd0,j);",
+              "        if(StarCustomFaction(dwd1)=='AMod_Invaders')continue;",
+              "        if(CountIn(Invaders,dwd1)<6) {",
+              "          int0=arcArray[i,2]-CountIn(Invaders,dwd1);",
+              "          if(int0>0) {",
+              "            if(int0>15)int0=15;",
+              "            arcArray[i,2]=arcArray[i,2]-int0;",
+              "            arcArray[i,3]=CurTurn()+Rnd(20,40);",
+              "            StarSeries(dwd1,1);",
+              "            SpawnArkShip(ConStar(dwd0,0),int0,dwd1);",
+              "          }",
+              "        }",
+              "      }",
+              "    }",
+              "  }",
+              "  if(QState[3]==0) {",
+              "    if(QState[1]==0) {",
+              "      if(GroupCount(Arks)==1) {",
+              "        dwd0=GroupToShip(Arks);",
+              "        dwd1=ShipStar(dwd0);",
+              "        QState[1]=Id(dwd0);",
+              "        QState[2]=Id(dwd1);",
+              "      }",
+              "    }",
+              "    if(GroupCount(Arks)==0) {",
+              "      QState[3]=2;",
+              "      for(i=GalaxyEvents()-1;i>-1;i=i-1) {",
+              "        if(GalaxyEventDate(i)<CurTurn())break;",
+              "        if(GalaxyEventType(i)=='PlayerKillsShip') {",
+              "          if(GalaxyEventData(i,2)==QState[1]) {",
+              "            dwd1=GalaxyStar(QState[2]-1);",
+              "            dwd0=BuyDomikExtremal(StarPlanets(dwd1,0));",
+              "            ShipJoin(director,dwd0);",
+              "            ChangeState(3,dwd0);",
+              "            ShipCustomFaction(dwd0,'AMod_Invaders');",
+              "            ShipType(dwd0,'AMod_Invaders0');",
+              "            SetName(dwd0,'???');",
+              "            ShipFace(dwd0,0);",
+              "            for(j=0;j<StarItems(dwd1);j=j+1) {",
+              "              dwd2=StarItems(dwd1,j);",
+              "              if(!ItemInScript(dwd2))continue;",
+              "              ShipSetCoords(dwd0,CoordX(dwd2),CoordY(dwd2));",
+              "              break;",
+              "            }",
+              "            QState[3]=1;",
+              "          }",
+              "        }",
+              "      }",
+              "      if(QState[3]==2) {",
+              "        dVar=5;",
+              "        research[1]=4;",
+              "        research[7]=2;",
+              "      }",
+              "    }",
+              "  }",
+              "  if(dVar==-1) {",
+              "    If(GroupCount(Arks)==0 && GroupCount(Invaders)==0) QState[0]=1;",
+              "  }",
+              "  if(dVar>2) {",
+              "    if(GlobalVarTcCount==0) {",
+              "      research[0]=0;",
+              "      research[5]=0;",
+              "    }",
+              "    if(GlobalVarTcCount!=0 && research[0]==0)research[0]=1;",
+              "    if(research[0]==1) {",
+              "      if(research[1]==1 || research[1]==3) {",
+              "        for(i=0;i<GlobalVarTcCount;i=i+1) {",
+              "          int0=Rnd(2,8);",
+              "          int0=Rnd(10,15);",
+              "          if(int0*3>research[5])continue;",
+              "          research[5]=research[5]-int0*3;",
+              "          research[2]=research[2]+int0;",
+              "          if(research[2]>=100*arrTC[0]) {",
+              "            research[2]=100*arrTC[0];",
+              "            if(research[1]==1) {",
+              "              research[1]=2;",
+              "              dVar=4;",
+              "            }",
+              "            if(research[1]==3) {",
+              "              research[1]=4;",
+              "              dVar=5;",
+              "            }",
+              "            break;",
+              "          }",
+              "        }",
+              "      }",
+              "      if(research[1]==0) {",
+              "        if(research[4]>0) {",
+              "          if(research[2]<=0) research[1]=3;",
+              "          else research[2]=research[2]-1;",
+              "        }",
+              "      }",
+              "    }",
+              "  }",
+              "}"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "PlanetNew",
+          "Pos.x":  60,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  2,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  60,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  0,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "StarNew",
+          "Pos.x":  60,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  1,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -120,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  134,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "QState[3]==1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -270,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  154,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "int0==3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -270,
+          "Pos.y":  -40,
+          "Parent":  -1,
+          "#":  155,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "int0!=3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -190,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  175,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "QState[3]==2"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -190,
+          "Pos.y":  -100,
+          "Parent":  -1,
+          "#":  176,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "QState[3]==3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -120,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  187,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "int0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -220,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  189,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "needForHull>0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -220,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  192,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "needForHull<=0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  80,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  206,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "int0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  170,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  210,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "needForLaserGun<=0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  170,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  211,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "needForLaserGun>0"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "StateNew",
+          "Pos.x":  60,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  4,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Freeeeee",
+          "Pos.x":  -150,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  12,
+          "Move":  5,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "arksTalkNormal",
+          "OnActCode":  "arksTalkNormal",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Stop",
+          "Pos.x":  -150,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  16,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Stop",
+          "Pos.x":  -80,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  141,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "dwd0",
+          "Pos.x":  270,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  6,
+          "Var.Type":  "Dword",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "dwd1",
+          "Pos.x":  270,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  7,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "dwd2",
+          "Pos.x":  270,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  8,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "str0",
+          "Pos.x":  530,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  9,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "int0",
+          "Pos.x":  200,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  10,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "i",
+          "Pos.x":  200,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  13,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "j",
+          "Pos.x":  200,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  14,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "QState",
+          "Pos.x":  340,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  17,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "arr0",
+          "Pos.x":  340,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  18,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "k",
+          "Pos.x":  200,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  20,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "int1",
+          "Pos.x":  200,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  21,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "funct_i",
+          "Pos.x":  430,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  22,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "funct_dwd0",
+          "Pos.x":  430,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  23,
+          "Var.Type":  "Dword",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "funct_dwd1",
+          "Pos.x":  430,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  24,
+          "Var.Type":  "Dword",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "funct_dwd2",
+          "Pos.x":  430,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  25,
+          "Var.Type":  "Dword",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "spwnDate",
+          "Pos.x":  340,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  26,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "arcArray",
+          "Pos.x":  340,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  27,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "funct_j",
+          "Pos.x":  430,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  28,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "funct_int0",
+          "Pos.x":  430,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  29,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "dVar",
+          "Pos.x":  200,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  31,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "str1",
+          "Pos.x":  530,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  32,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "arrTC",
+          "Pos.x":  340,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  46,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "gunName",
+          "Pos.x":  340,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  50,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "gunName0",
+          "Pos.x":  530,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  51,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "strBR",
+          "Pos.x":  530,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  56,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "research",
+          "Pos.x":  340,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  57,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "dRstrtText",
+          "Pos.x":  530,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  62,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "str2",
+          "Pos.x":  530,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  64,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "msgTxt",
+          "Pos.x":  530,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  66,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "difCoef",
+          "Pos.x":  200,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  163,
+          "Var.Type":  "Float",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "arksNumb",
+          "Pos.x":  200,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  164,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "needForHull",
+          "Pos.x":  200,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  186,
+          "Var.Type":  "Int",
+          "Init":  "10000",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "needForLaserGun",
+          "Pos.x":  200,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  198,
+          "Var.Type":  "Int",
+          "Init":  "1000",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "LaserGunCount",
+          "Pos.x":  200,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  202,
+          "Var.Type":  "Int",
+          "Init":  "-1",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  4,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  2,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  0,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  15,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  15,
+      "End":  16,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  34,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  36,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  35,
+      "End":  36,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  38,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  44,
+      "End":  45,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  48,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  55,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  55,
+      "End":  58,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  59,
+      "End":  60,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  60,
+      "End":  61,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  63,
+      "End":  60,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  40,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  65,
+      "End":  55,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  45,
+      "End":  67,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  45,
+      "End":  68,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  45,
+      "End":  69,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  67,
+      "End":  70,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  68,
+      "End":  71,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  69,
+      "End":  72,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  72,
+      "End":  73,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  73,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  70,
+      "End":  73,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  73,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  74,
+      "End":  75,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  74,
+      "End":  76,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  74,
+      "End":  77,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  75,
+      "End":  78,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  76,
+      "End":  79,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  77,
+      "End":  80,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  78,
+      "End":  81,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  79,
+      "End":  81,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  80,
+      "End":  81,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  81,
+      "End":  82,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  82,
+      "End":  83,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  82,
+      "End":  84,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  82,
+      "End":  85,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  83,
+      "End":  86,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  84,
+      "End":  87,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  85,
+      "End":  88,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  86,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  87,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  88,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  90,
+      "End":  89,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  89,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  91,
+      "End":  49,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  48,
+      "End":  92,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  93,
+      "End":  59,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  94,
+      "End":  63,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  95,
+      "End":  96,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  96,
+      "End":  97,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  97,
+      "End":  98,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  98,
+      "End":  99,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  99,
+      "End":  101,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  99,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  102,
+      "End":  103,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  103,
+      "End":  104,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  104,
+      "End":  105,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  109,
+      "End":  110,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  110,
+      "End":  111,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  111,
+      "End":  61,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  112,
+      "End":  113,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  113,
+      "End":  114,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  114,
+      "End":  118,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  118,
+      "End":  115,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  115,
+      "End":  116,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  115,
+      "End":  117,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  119,
+      "End":  120,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  120,
+      "End":  121,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  121,
+      "End":  122,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  123,
+      "End":  124,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  124,
+      "End":  125,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  125,
+      "End":  126,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  126,
+      "End":  127,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  127,
+      "End":  128,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  127,
+      "End":  129,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  130,
+      "End":  131,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  131,
+      "End":  132,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  132,
+      "End":  133,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  134,
+      "End":  135,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  136,
+      "End":  139,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  140,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  140,
+      "End":  141,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  141,
+      "End":  134,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  139,
+      "End":  137,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  137,
+      "End":  143,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  143,
+      "End":  144,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  144,
+      "End":  142,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  142,
+      "End":  146,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  146,
+      "End":  147,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  147,
+      "End":  145,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  145,
+      "End":  148,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  148,
+      "End":  149,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  149,
+      "End":  150,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  150,
+      "End":  151,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  151,
+      "End":  152,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  156,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  157,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  154,
+      "End":  153,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  153,
+      "End":  156,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  155,
+      "End":  158,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  158,
+      "End":  157,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  138,
+      "End":  159,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  152,
+      "End":  160,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  160,
+      "End":  161,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  161,
+      "End":  162,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  162,
+      "End":  155,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  162,
+      "End":  154,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  165,
+      "End":  168,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  168,
+      "End":  166,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  166,
+      "End":  167,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  167,
+      "End":  169,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  169,
+      "End":  170,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  170,
+      "End":  171,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  173,
+      "End":  174,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  175,
+      "End":  177,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  177,
+      "End":  173,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  176,
+      "End":  178,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  178,
+      "End":  173,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  172,
+      "End":  179,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  179,
+      "End":  180,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  180,
+      "End":  175,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  180,
+      "End":  176,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  181,
+      "End":  185,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  185,
+      "End":  182,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  182,
+      "End":  184,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  182,
+      "End":  187,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  187,
+      "End":  183,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  183,
+      "End":  188,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  188,
+      "End":  189,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  189,
+      "End":  191,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  188,
+      "End":  192,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  192,
+      "End":  193,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  193,
+      "End":  194,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  194,
+      "End":  195,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  191,
+      "End":  196,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  196,
+      "End":  190,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  203,
+      "End":  204,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  204,
+      "End":  205,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  205,
+      "End":  206,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  206,
+      "End":  208,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  205,
+      "End":  207,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  208,
+      "End":  209,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  209,
+      "End":  210,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  209,
+      "End":  211,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  210,
+      "End":  212,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  211,
+      "End":  213,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  213,
+      "End":  215,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  212,
+      "End":  214,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  214,
+      "End":  216,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  215,
+      "End":  217,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  135,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "10",
+      "String":  "Обломки в хранилищах: <0> т."    
+    },
+    {
+      "#":  "100",
+      "String":  "-ЭМ-эффект;"    
+    },
+    {
+      "#":  "101",
+      "String":  "- разрушение брони цели;"    
+    },
+    {
+      "#":  "102",
+      "String":  "-ионизация цели;"    
+    },
+    {
+      "#":  "103",
+      "String":  "-восстановление обшивки при нанисении урона;"    
+    },
+    {
+      "#":  "104",
+      "String":  "-повреждение оборудования цели;"    
+    },
+    {
+      "#":  "105",
+      "String":  "-замедление цели;"    
+    },
+    {
+      "#":  "106",
+      "String":  "</color>Прорыв в исследованиях позволяет добавить дополнительный эффект для экспериментального оружия:"    
+    },
+    {
+      "#":  "107",
+      "String":  "Сделайте правильный выбор, второго такого шанса не будет."    
+    },
+    {
+      "#":  "108",
+      "String":  "-дополнительный выстрел;"    
+    },
+    {
+      "#":  "109",
+      "String":  "-урон по цели передаётся ближайшим двум противникам;"    
+    },
+    {
+      "#":  "11",
+      "String":  "</color>На данный момент нам нечего изучать."    
+    },
+    {
+      "#":  "110",
+      "String":  "-урон всем противникам вокруг вас;"    
+    },
+    {
+      "#":  "111",
+      "String":  "-дополнительный урон ближайшим противникам при уничтожении цели;"    
+    },
+    {
+      "#":  "112",
+      "String":  "-урон ближайшим противникам цели;"    
+    },
+    {
+      "#":  "113",
+      "String":  "</color>Так ты создатель арксов? Почему вы вторгаетесь в наши системы и уничтожаете нас?"    
+    },
+    {
+      "#":  "114",
+      "String":  "А, теперь понятно. Они создали оружие из обломков моих кораблей, из-за этого ретранслятор считает их союзниками и передаёт текущие приказы на понятном языке. Забавно."    
+    },
+    {
+      "#":  "115",
+      "String":  "</color>Хмм... какая-то низшая форма жизни подключилась к ретранслятору. Как это возможно?"    
+    },
+    {
+      "#":  "116",
+      "String":  "</color>Из-за твоей игры погибают живые существа!"    
+    },
+    {
+      "#":  "117",
+      "String":  "Что же касается причины вторжения, то всё очень просто - мне стало скучно и я решил поиграть в <clr>Защити кристалл<clrEnd>."    
+    },
+    {
+      "#":  "118",
+      "String":  "</color>Арксы? Это так вы называете мои корабли? Отвратительное название."    
+    },
+    {
+      "#":  "119",
+      "String":  "</color>Твои кристаллы уничтожены, что ты теперь будешь делать?"    
+    },
+    {
+      "#":  "12",
+      "String":  "Cкорость изучения: <0>%"    
+    },
+    {
+      "#":  "120",
+      "String":  "</color>Ага, я знаю. Но искусственные формы жизни унылы и предсказуемы, мне скучно с ними играть. Кроме того, вы и без меня прекрасно справляетесь с уничтожением друг друга."    
+    },
+    {
+      "#":  "121",
+      "String":  "</color>Постой! Если ты проиграл, значит, я победил. Какая мне награда полагается?"    
+    },
+    {
+      "#":  "122",
+      "String":  "</color>Как что? Конечно же, продолжу играть, но вы мне больше не интересны. Прощай альтернативная вселенная <0>, здравствуй альтернативная вселенная <1>."    
+    },
+    {
+      "#":  "123",
+      "String":  "</color>Хотя есть у меня одна идейка... Я изменил этот ретранслятор, после исследований вы сможете наладить массовое производство оружия по технологиям полученных из обломков моих кораблей. Но скорее всего, новое оружие лишь ускорит ваше самоуничтожение. Надеюсь, ты будешь счастлив, когда твоя награда унесёт больше жизней, чем моя игра."    
+    },
+    {
+      "#":  "124",
+      "String":  "</color>Чувство выполненного долга - вот твоя награда! Гордись собой, герой."    
+    },
+    {
+      "#":  "125",
+      "String":  "</color>Вот поэтому я стараюсь не общаться с низшими формами жизни. Вам всегда всего мало и вы хотите, чтобы кто-то за вас всё делал."    
+    },
+    {
+      "#":  "126",
+      "String":  "</color>...(но вам никто не ответил)..."    
+    },
+    {
+      "#":  "127",
+      "String":  "Но! Мы смогли синтезировать материал из которого создано оборудование арксов. И пусть он не полностью идентичен оригиналу, это позволит нам начать массовое производство проекта ИМБА. Причём, с этим справятся без специального оборудования даже на аграрных планетах. Вы ... вы представляете что это значит? Если ещё какая-то инопланетная тварь сунется в наши системы, то получит достойный отпор, даже от транспортника! Ахахахаа!"    
+    },
+    {
+      "#":  "128",
+      "String":  "</color>На этот раз ничего, дальнейшие улучшения невозможны."    
+    },
+    {
+      "#":  "129",
+      "String":  "После уничтожения последнего неизвестного объекта новые корабли перестали появлятся. Даже если бы мы и хотели продолжить изучения арксов, для этого понадобилось бы много обломков, которые невозможно достать без, собственно, самих арксов. По этой же причине мы закрываем проект ИМБА, надеюсь наша разработка хоть как-то вам помогла."    
+    },
+    {
+      "#":  "13",
+      "String":  "Изучения завершены на: <0>%"    
+    },
+    {
+      "#":  "130",
+      "String":  "Отлично, <0>! Осталось всего <1> обломков, чтобы мы смогли построить для вас новый корпус!"    
+    },
+    {
+      "#":  "131",
+      "String":  "Огромное вам спасибо!"    
+    },
+    {
+      "#":  "132",
+      "String":  "Ну вот, всё готово. Ступайте на склад - принимайте работу!"    
+    },
+    {
+      "#":  "133",
+      "String":  "Отлично, <0>! Вы собрали достаточное количество обломков, а значит, мы, наконец, можем приступить к сборке корпуса."    
+    },
+    {
+      "#":  "134",
+      "String":  "Отлично, <0>! Осталось всего <1> обломков, чтобы мы смогли собрать для вас новую пушку!"    
+    },
+    {
+      "#":  "135",
+      "String":  "Большое вам спасибо!"    
+    },
+    {
+      "#":  "136",
+      "String":  "Отлично, <0>! Вы собрали достаточное количество обломков, а значит, мы, наконец, можем приступить к сборке орудия."    
+    },
+    {
+      "#":  "14",
+      "String":  "</color>Мы продолжаем изучение арксов."    
+    },
+    {
+      "#":  "15",
+      "String":  "</color>У меня столько нету"    
+    },
+    {
+      "#":  "16",
+      "String":  "</color>Занятный материал вы раздобыли, одноврененно прочный и легко поддающийся модификации. Мы бы хотели попробовать создать из него новое оружие, но всё что вы принесли ушло на исследование. На создание экспериментального образца нам потребуется примерно <0> тонн обломков арксов."    
+    },
+    {
+      "#":  "17",
+      "String":  "Сдать обломки арксов"    
+    },
+    {
+      "#":  "18",
+      "String":  "</color>Понял, выгружаю"    
+    },
+    {
+      "#":  "19",
+      "String":  "</color>Чьи обломки? Акрсов? А, это та неизвестная раса которая вторглась в наш рукав галактики? Что ж, почему бы и нет, выгрузите всё вон там. Исследования займут несколько недель. Посетите любой технологический центр, если желаете узнать результаты."    
+    },
+    {
+      "#":  "2",
+      "String":  "<0>"    
+    },
+    {
+      "#":  "20",
+      "String":  "Пожалуй, мне бы и впрямь пригодилась пара новых стволов"    
+    },
+    {
+      "#":  "21",
+      "String":  "Также, если хотите, за дополнительное количество обломков арксов, мы могли бы собрать вам несколько новых уникальных орудий, в дополнение к вашему экспериментальному корпусу."    
+    },
+    {
+      "#":  "22",
+      "String":  "А что это за уникальный корпус, о котором вы говорите?"    
+    },
+    {
+      "#":  "23",
+      "String":  "А ещё, при сборе достаточного количества обломков арксов, мы могли бы соорудить для вас <color=0,50,200>уникальный суперкорпус</color>, чертежи которого нам удалось отыскать в базе данных этой необычной расы."    
+    },
+    {
+      "#":  "24",
+      "String":  "</color>Какие ещё обломки? Не интересует. Но раз уж ты тут, не желаешь ли приобрести промышленный лазер с автографом самого Рачехана всего за <0> cr? Нет? Подумай хорошенько, вещь уникальная. И кроме того, если купишь сразу три лазера, то четвёртый получишь совершенно бесплатно! Но и это ещё не всё! ... Стой <1>, ты куда? У меня есть и другой хлам... то есть уникальные предложения!"    
+    },
+    {
+      "#":  "25",
+      "String":  "</color>Что там у вас? Очередные обломки? <0>, ну серъёзно, сколько можно таскать на научные станции всякий мусор? Наши отделы и так уже загружены до предела. Остановитесь."    
+    },
+    {
+      "#":  "26",
+      "String":  "</color>Так, посмотрим... Что тут у нас... Отлично! <0>, из этих обломков получатся превосходные трофеи! У меня как раз есть знакомый на одной планете, который может... вас это не интересует? Как жаль."    
+    },
+    {
+      "#":  "27",
+      "String":  "</color>В этом нет необходимости. Вам уже начислили очки рейнджера за уничтожение кораблей арксов, не беспокойтесь."    
+    },
+    {
+      "#":  "28",
+      "String":  "</color>Ракетный"    
+    },
+    {
+      "#":  "29",
+      "String":  "</color>Осколочный"    
+    },
+    {
+      "#":  "3",
+      "String":  "Исследование арксов"    
+    },
+    {
+      "#":  "30",
+      "String":  "</color>Энергетический"    
+    },
+    {
+      "#":  "31",
+      "String":  "</color>Отлично. В течение дня управимся. Вы, кстати, далеко не уходите. И так, приступим. Какой тип урона вы желаете для нового оружия?"    
+    },
+    {
+      "#":  "32",
+      "String":  "</color>Понятно"    
+    },
+    {
+      "#":  "33",
+      "String":  "Чтобы ускорить исследования мы распределяем обломки арксов по всем технологическим центрам равномерно. Для создания новых образцов мы используем материалы с наших хранилищ, если добыли новые обломки - сразу сдавайте нам."    
+    },
+    {
+      "#":  "34",
+      "String":  "Сборка завершена. Разрешите представляем вам нашу разработку - Индукционно-Магнитный Биполяризатор Антиматерии, сокращённо ИМБА. Однако, нам так и не удалось раскрыть истинный потенциал этого оружия. Приносите больше обломков, мы изучим их и, возможно, сможем улучшить прототип. Кроме того, мы можем собрать новый образец, но для этого нам понадобятся обломки арксов, а также кредиты на некоторые детали."    
+    },
+    {
+      "#":  "35",
+      "String":  "..."    
+    },
+    {
+      "#":  "36",
+      "String":  "</color>Параметры установленны, приступаем к работе."    
+    },
+    {
+      "#":  "37",
+      "String":  "</color>Отличная работа, <0>, мы забрали все обломки с вашего корабля."    
+    },
+    {
+      "#":  "38",
+      "String":  "Готово. Экспериментальный образец оружия будет доставлен на ваш корабль, <0>."    
+    },
+    {
+      "#":  "39",
+      "String":  "</color>Приступаем к сборке."    
+    },
+    {
+      "#":  "4",
+      "String":  "</color>Что можно улучшить?"    
+    },
+    {
+      "#":  "40",
+      "String":  "</color>Вы в этом уверенны? Ну как хотите, наше дело предложить."    
+    },
+    {
+      "#":  "41",
+      "String":  "</color>Понятно. Не забудьте обновить своё вооружение, только новые образцы оружия получат улучшения."    
+    },
+    {
+      "#":  "42",
+      "String":  "Но на этом наши исследования останавливаются, мы изучили всё что смогли."    
+    },
+    {
+      "#":  "43",
+      "String":  "</color>Да, но на изучение этого предмета нам потребуется несколько недель."    
+    },
+    {
+      "#":  "44",
+      "String":  "</color>Игра? Какая игра? Кто это говорит?"    
+    },
+    {
+      "#":  "45",
+      "String":  "</color>Построить пять кораблей защитного типа! Перекинуть ресурсы с атакующих резервов! Игра не закончена! Я ещё не ... проиграл."    
+    },
+    {
+      "#":  "46",
+      "String":  "</color>Эй, ты меня слышишь?"    
+    },
+    {
+      "#":  "47",
+      "String":  "</color>...(тишина)..."    
+    },
+    {
+      "#":  "48",
+      "String":  "Сдать <0> обломков на создание корпуса"    
+    },
+    {
+      "#":  "49",
+      "String":  "В другой раз"    
+    },
+    {
+      "#":  "5",
+      "String":  "</color>Исседование технологии арксов завершены, мы изучили всё что смогли."    
+    },
+    {
+      "#":  "50",
+      "String":  "О, он вам точно понравится, в этом не сомневайтесь! Однако для завершения работ нам не хватает <0> обломков. Если вы сможете нам их предоставить, то этот уникальный корпус мы передадим вам в качестве прототипа для полевых испытаний."    
+    },
+    {
+      "#":  "51",
+      "String":  "Сдать <0> обломков на создание орудия"    
+    },
+    {
+      "#":  "52",
+      "String":  "Отлично, в таком случае вы должны предоставить нам ещё <0> обломков для сборки одного образца."    
+    },
+    {
+      "#":  "53",
+      "String":  "Куда выгружать? И сколько это займёт времени?"    
+    },
+    {
+      "#":  "54",
+      "String":  "Соберите прототип оружия"    
+    },
+    {
+      "#":  "55",
+      "String":  "Сдать обломки на исследование (<0> т.)"    
+    },
+    {
+      "#":  "56",
+      "String":  "Я добыл неизвестный предмет из необычного аркса, вас это интересует?"    
+    },
+    {
+      "#":  "57",
+      "String":  "Ничего улучшать не надо, оставьте как есть"    
+    },
+    {
+      "#":  "58",
+      "String":  "Уменьшите вес"    
+    },
+    {
+      "#":  "59",
+      "String":  "Уменьшите цену обслуживания"    
+    },
+    {
+      "#":  "6",
+      "String":  "</color>Мы существенно продвинулись в изучениии технологиии арксов, это открывает нам новые возможности для улучшений."    
+    },
+    {
+      "#":  "60",
+      "String":  "Увеличьте дальность атаки"    
+    },
+    {
+      "#":  "61",
+      "String":  "Увеличьте максимальный урон"    
+    },
+    {
+      "#":  "62",
+      "String":  "Увеличьте минимальный урон"    
+    },
+    {
+      "#":  "63",
+      "String":  "Добавьте блокировку дроида"    
+    },
+    {
+      "#":  "64",
+      "String":  "Добавьте блокировку оружия"    
+    },
+    {
+      "#":  "65",
+      "String":  "Добавьте повреждение двигателя"    
+    },
+    {
+      "#":  "66",
+      "String":  "Добавьте увеличение шанса уцеления оборудования"    
+    },
+    {
+      "#":  "67",
+      "String":  "Добавьте эффект ЭМ-помех"    
+    },
+    {
+      "#":  "68",
+      "String":  "Добавьте ослабление брони"    
+    },
+    {
+      "#":  "69",
+      "String":  "Добавьте эффект ионизации"    
+    },
+    {
+      "#":  "7",
+      "String":  "</color>Мы завершили часть исследований по технологиям арксов, выберите какие параметры хотите улучшить в следующих прототипах."    
+    },
+    {
+      "#":  "70",
+      "String":  "Добавьте восстановление обшивки"    
+    },
+    {
+      "#":  "71",
+      "String":  "Добавьте разрушения оборудования"    
+    },
+    {
+      "#":  "72",
+      "String":  "Добавьте замедление"    
+    },
+    {
+      "#":  "73",
+      "String":  "Добавьте дополнительный выстрел"    
+    },
+    {
+      "#":  "74",
+      "String":  "Добавьте урон по цели передающийся ближайшим двум противникам"    
+    },
+    {
+      "#":  "75",
+      "String":  "Добавьте урон по всем противникам вокруг"    
+    },
+    {
+      "#":  "76",
+      "String":  "Добавьте урон ближайшим противникам при уничтожении цели"    
+    },
+    {
+      "#":  "77",
+      "String":  "Добавьте урон ближайшим противникам цели"    
+    },
+    {
+      "#":  "78",
+      "String":  "</color>Пусть будет баланс"    
+    },
+    {
+      "#":  "79",
+      "String":  "</color>Мне надо больше дальности стрельбы"    
+    },
+    {
+      "#":  "8",
+      "String":  "</color>Я подумаю"    
+    },
+    {
+      "#":  "80",
+      "String":  "</color>Мне надо больше урона"    
+    },
+    {
+      "#":  "81",
+      "String":  "</color>Понятно, идём дальше. Мы можем увеличить урон, но пострадает дальность выстрела, а при увеличении дальности уменьшится урон. Или оставить в состоянии относительного баланса?"    
+    },
+    {
+      "#":  "82",
+      "String":  "</color>Используйте стандартные детали"    
+    },
+    {
+      "#":  "83",
+      "String":  "</color>Используйте дешёвые детали, цена важнее"    
+    },
+    {
+      "#":  "84",
+      "String":  "</color>Используйте дорогие детали, вес важнее"    
+    },
+    {
+      "#":  "85",
+      "String":  "</color>Теперь обсудим, так сказать, начинку оружия. Чем она дороже, тем легче, однако за ремонт придётся платить больше кредитов. Не беспокойтесь, обломки для ремонта не нужны."    
+    },
+    {
+      "#":  "86",
+      "String":  "</color>Ага, записал, осталось последнее. Вы наверняка знаете, что в чёрных дырах оружие работает... не совсем обычно. Мы можем изменить и это, какой тип оружия вы предпочитаете?"    
+    },
+    {
+      "#":  "87",
+      "String":  "</color>Мне надо подумать"    
+    },
+    {
+      "#":  "88",
+      "String":  "Не беспокойтесь, эти улучшения не повлияют на другие характеристики, так что вы решили?"    
+    },
+    {
+      "#":  "89",
+      "String":  "-уменьшить вес;"    
+    },
+    {
+      "#":  "9",
+      "String":  "За <0> тонн обломков и <1> кредитов мы можем собрать ещё один прототип экспериментального оружия ИМБА."    
+    },
+    {
+      "#":  "90",
+      "String":  "-уменьшить стоимость;"    
+    },
+    {
+      "#":  "91",
+      "String":  "-дальность стрельбы;"    
+    },
+    {
+      "#":  "92",
+      "String":  "-максимальный урон;"    
+    },
+    {
+      "#":  "93",
+      "String":  "-минимальный урон;"    
+    },
+    {
+      "#":  "94",
+      "String":  "</color>Можно улучшить стандартные параметры:"    
+    },
+    {
+      "#":  "95",
+      "String":  "Как вам списочек, а? Сделайте правильный выбор, второго такого шанса не будет."    
+    },
+    {
+      "#":  "96",
+      "String":  "-небольшой шанс блокирования ремонтного дроида цели;"    
+    },
+    {
+      "#":  "97",
+      "String":  "-небольшой шанс блокирования оружия цели;"    
+    },
+    {
+      "#":  "98",
+      "String":  "-небольшое повреждение двигателя цели;"    
+    },
+    {
+      "#":  "99",
+      "String":  "-повышение вероятности что оборудование цели уцелеет при уничтожении корабля;"    
+    }  
+  ]
+}

@@ -1,0 +1,1283 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  -213,
+  "ViewPos.y":  -274,
+  "ScriptName":  "mod_merchant",
+  "ScriptFileOut":  "D:\\Mods\\Compiled mods\\AnotherMods\\AMod_Merchant\\Data\\Script\\mod_merchant.scr",
+  "ScriptTextOut":  "D:\\Mods\\Compiled mods\\AnotherMods\\AMod_Merchant\\CFG\\Rus\\mod_merchant.txt",
+  "GraphPoint.Count":  57,
+  "GraphLink.Count":  30,
+  "GraphRectText.Count":  1,
+  "Variables.Count":  21,
+  "Stars.Count":  1,
+  "Planets.Count":  1,
+  "Ships.Count":  1,
+  "States.Count":  2,
+  "Groups.Count":  2,
+  "Places.Count":  0,
+  "Items.Count":  0,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  2,
+  "DialogMessages.Count":  5,
+  "DialogAnswers.Count":  6,
+  "Operations.Count":  7,
+  "Statements.Count":  9,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  150,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  19,
+          "Msg":  "Я точно в этом уверен",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  370,
+          "Pos.y":  -100,
+          "Parent":  -1,
+          "#":  25,
+          "Msg":  "",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  210,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  44,
+          "Msg":  "",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  250,
+          "Pos.y":  -100,
+          "Parent":  -1,
+          "#":  47,
+          "Msg":  "Думаю, я справлюсь",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  250,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  49,
+          "Msg":  "Я передумал",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "block",
+          "Pos.x":  250,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  53,
+          "Msg":  "Думаю, я справлюсь",
+          "AMsg.Num":  "5"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  120,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  18,
+          "Msg":  "Вы уверены? Управление компанией дело не простое, необходимо анализировать ситуацию в галактике, а также требуется вложить довольно много кредитов, прежде чем вы сможете получать прибыль.",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  330,
+          "Pos.y":  -100,
+          "Parent":  -1,
+          "#":  24,
+          "Msg":  "Отлично! Мы успешно перечислили кредиты с вашего счета.\r\nА, ну и ваша торговая компания \"<mod_merchantArr0[0,0]>\" зарегистрирована. Прямо сейчас вы не сможете кого-то нанять, потребуется некоторое время, чтобы о вас узнали.",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  180,
+          "Pos.y":  -40,
+          "Parent":  -1,
+          "#":  43,
+          "Msg":  "День, когда я увижу в космосе обломки твоего корабля, <Name(Player())>, я буду отмечать как свой второй день рождения. Так что не откажи в любезности и умри.",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  180,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  45,
+          "Msg":  "О, шеф, не ожидал вас тут встретить. Хотите повысить мне зарплату или выдать премию?",
+          "DMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  210,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  46,
+          "Msg":  "Что ж, тогда позвольте объяснить вам основы. \r\nНа первый взгляд, управление компанией дело не сложное, от вас требуется только оплачивать новые корабли и заработную плату работникам. Но на этом погорело очень много начинающих предпринимателей. \r\nЗакупили много новых кораблей на весь бюджет, а платить заработную плату нечем - все работники разбегутся, никто не станет работать на вас бесплатно. \r\nВсё шло хорошо, но корабли ваших работников уничтожили пираты - начинайте всё с начала, компенсации не будет. \r\nНе стоит забывать и о отношении подчинённых к вам - торговцы ненавидят пиратов и прочих аморальных типов. \r\nДля успешного процветания вашей компании потребуется обширная территория. Чем больше союзных систем - тем больше простора для торговли. \r\nНу и последнее, зарегистрировать новую компанию будет стоить <int0> cr. Кроме этого, вам необходимо придумать название для своей компании. Настоятельно рекомендую придумать <clr>уникальное<clrEnd> название.",
+          "DMsg.Num":  "4"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "TdBK0",
+          "Pos.x":  60,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  17        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "mFleet",
+          "Pos.x":  60,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  40        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "GroupNew",
+          "Pos.x":  60,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  3,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "MerchantFleet",
+          "Pos.x":  -70,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  35,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  90,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  5,
+          "Total.Lines":  1,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "GRun();"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  120,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  6,
+          "Total.Lines":  41,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "scrArr0 = newarray(1);",
+              "scrArr1 = newarray(1);",
+              "months = newarray(13, 2);",
+              "months[1, 0] = 'Январь';",
+              "months[2, 0] = 'Февраль';",
+              "months[3, 0] = 'Март';",
+              "months[4, 0] = 'Апрель';",
+              "months[5, 0] = 'Май';",
+              "months[6, 0] = 'Июнь';",
+              "months[7, 0] = 'Июль';",
+              "months[8, 0] = 'Август';",
+              "months[9, 0] = 'Сентябрь';",
+              "months[10, 0] = 'Октябрь';",
+              "months[11, 0] = 'Ноябрь';",
+              "months[12, 0] = 'Декабрь';",
+              "months[1, 1] = 'января';",
+              "months[2, 1] = 'февраля';",
+              "months[3, 1] = 'марта';",
+              "months[4, 1] = 'апреля';",
+              "months[5, 1] = 'мая';",
+              "months[6, 1] = 'июня';",
+              "months[7, 1] = 'июля';",
+              "months[8, 1] = 'августа';",
+              "months[9, 1] = 'сентября';",
+              "months[10, 1] = 'октября';",
+              "months[11, 1] = 'ноября';",
+              "months[12, 1] = 'декабря';",
+              "",
+              "turnCodeArray = newarray(13);",
+              "mod_merchantArr0 = newarray(12, 13);",
+              "mod_merchantArr0[0, 1] = 0;",
+              "mod_merchantArr0[0, 2] = 0;",
+              "mod_merchantArr0[0, 3] = 0;",
+              "mod_merchantArr0[0, 4] = 0;",
+              "mod_merchantArr0[0, 5] = 0;",
+              "for (i = 2; i < 12; i = i + 1) {",
+              "    for (j = 0; j < 13; j = j + 1) {",
+              "        mod_merchantArr0[i, j] = 0;",
+              "        turnCodeArray[j] = 0;",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  210,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  9,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "AddDialogInject('TdBK0','',\"Я бы хотел создать свою торговую компанию\",0);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  290,
+          "Pos.y":  -100,
+          "Parent":  -1,
+          "#":  23,
+          "Total.Lines":  26,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player(), ShipMoney(Player()) - int0);",
+              "str0 = TextBox(\"Название вашей компании:\", \"Хандел\", 15);",
+              "mod_merchantArr0[0, 0] = str0;",
+              "mod_merchant_scrState = 1;",
+              "turnCodeArray[0] = CurTurn() + Rnd(5, 12);",
+              "int0 = CurTurn() - 300;",
+              "int0 = int0 / 365;",
+              "int0 = 3300 + int0 - 2;",
+              "str0 = GameDateTxtByTurn(CurTurn());",
+              "for (i = 0; i < 5; i = i + 1) {",
+              "    if (findsubstr(str0, int0) != -1) break;",
+              "    int0 = int0 + 1;",
+              "}",
+              "turnCodeArray[12] = int0;",
+              "for (i = 1; i < 13; i = i + 1) {",
+              "    if (findsubstr(str0, months[i, 1]) != -1) break;",
+              "}",
+              "int0 = 12;",
+              "months[0, 0] = i;",
+              "while (int0 > 0) {",
+              "    i = i - 1;",
+              "    if (i == 0) i = 12;",
+              "    mod_merchantArr0[1, int0] = months[i, 0];",
+              "    int0 = int0 - 1;",
+              "}",
+              "Sound('Sound.Sell');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  210,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  33,
+          "Total.Lines":  120,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if (CurTurn() >= turnCodeArray[0]) {",
+              "    turnCodeArray[0] = CurTurn() + Rnd(5, 17);",
+              "    int0 = 0;",
+              "    ArrayClear(scrArr0);",
+              "    ArrayClear(scrArr1);",
+              "    for (i = 0; i < GalaxyStars(); i = i + 1) {",
+              "        dwd0 = GalaxyStar(i);",
+              "        if (!SectorVisible(StarToCon(dwd0))) continue;",
+              "        if (StarOwner(dwd0) == 1) continue;",
+              "        if (StarCustomFaction(dwd0) != '') continue;",
+              "        if (!CoalitionDefeated() && StarOwner(dwd0) == 2) continue;",
+              "        for (j = 0; j < StarPlanets(dwd0); j = j + 1) {",
+              "            dwd1 = StarPlanets(dwd0, j);",
+              "            if (PlanetOwner(dwd1) == 6) continue;",
+              "            int1 = Rnd(0, 100);",
+              "            int0 = int0 + 1;",
+              "            int2 = RelationToRanger(dwd1, Player());",
+              "            if (int2 < 30) continue;",
+              "            if (int2 > 29 && int2 < 60 && int1 > 32) continue;",
+              "            if (int2 > 59 && int2 < 80 && int1 > 65) continue;",
+              "            ArrayAdd(scrArr0, i);",
+              "            ArrayAdd(scrArr1, j);",
+              "        }",
+              "    }",
+              "    mod_merchantArr0[7, 0] = int0 / 3;",
+              "    int1 = GalaxyTechLevel() * 20000;",
+              "    for (i = 1; i < 11; i = i + 1) {",
+              "        mod_merchantArr0[7, i] = 0;",
+              "        if (ArrayDim(scrArr0) <= 1) continue;",
+              "        int2 = Rnd(1, ArrayDim(scrArr0) - 1);",
+              "        dwd0 = StarPlanets(GalaxyStar(scrArr0[int2]), scrArr1[int2]);",
+              "        if (PlanetRace(dwd0) == 0) mod_merchantArr0[6, i] = int1 - (int1 * 30) / 100;",
+              "        if (PlanetRace(dwd0) == 1) mod_merchantArr0[6, i] = int1 - (int1 * 15) / 100;",
+              "        if (PlanetRace(dwd0) == 2) mod_merchantArr0[6, i] = int1;",
+              "        if (PlanetRace(dwd0) == 3) mod_merchantArr0[6, i] = int1 + (int1 * 15) / 100;",
+              "        if (PlanetRace(dwd0) == 4) mod_merchantArr0[6, i] = int1 + (int1 * 30) / 100;",
+              "        mod_merchantArr0[7, i] = 1;",
+              "        mod_merchantArr0[8, i] = 0;",
+              "        int0 = Rnd(50 * GalaxyTechLevel(), 200 * GalaxyTechLevel());",
+              "        int0 = int0 * 10;",
+              "        mod_merchantArr0[9, i] = int0;",
+              "        mod_merchantArr0[10, i] = scrArr0[int2];",
+              "        mod_merchantArr0[11, i] = scrArr1[int2];",
+              "        ArrayDelete(scrArr0, int2);",
+              "        ArrayDelete(scrArr1, int2);",
+              "    }",
+              "}",
+              "if (mod_merchantArr0[0, 2] == 1) {",
+              "    mod_merchantArr0[0, 2] = 0;",
+              "    mod_merchantArr0[8, 0] = 0;",
+              "    for (i = 1; i < 11; i = i + 1) {",
+              "        if (mod_merchantArr0[8, i] != 2) continue;",
+              "        mod_merchantArr0[8, i] = 0;",
+              "        shipNumb = shipNumb + 1;",
+              "        dwd1 = GalaxyStar(mod_merchantArr0[10, i]);",
+              "        dwd0 = StarPlanets(dwd1, mod_merchantArr0[11, i]);",
+              "        dwd1 = BuyTransport(dwd0, 0);",
+              "        SetName(dwd1, mod_merchantArr0[0, 0] + ' -' + shipNumb + '-');",
+              "        ShipJoin(MerchantFleet, dwd1);",
+              "        ShipAddCustomShipInfo(dwd1, 'AMod_Merchant0', 'NoShow', mod_merchantArr0[9, i], GalaxyTechLevel());",
+              "        if (mod_merchantArr0[0, 3] > 0) NoTargetToShip(dwd1, 3);",
+              "    }",
+              "}",
+              "if (mod_merchantArr0[9, 0] != GroupCount(MerchantFleet)) {",
+              "    mod_merchantArr0[9, 0] = GroupCount(MerchantFleet);",
+              "}",
+              "str0 = GameDateTxtByTurn(CurTurn() + 1);",
+              "if (findsubstr(str0, months[months[0, 0], 1]) == -1) {",
+              "    if (mod_merchantArr0[0, 5] > 0) {",
+              "        if (mod_merchantArr0[0, 1] > 0) mod_merchantArr0[0, 5] = 0;",
+              "        else mod_merchantArr0[0, 5] = 2;",
+              "    }",
+              "    months[0, 0] = months[0, 0] + 1;",
+              "    if (months[0, 0] > 12) {",
+              "        months[0, 0] = 1;",
+              "        turnCodeArray[12] = turnCodeArray[12] + 1;",
+              "    }",
+              "    int0 = months[0, 0];",
+              "    int1 = turnCodeArray[12];",
+              "    for (i = 12; i > 0; i = i - 1) {",
+              "        int0 = int0 - 1;",
+              "        if (int0 == 0) {",
+              "            int0 = 12;",
+              "            int1 = int1 - 1;",
+              "        }",
+              "        mod_merchantArr0[1, i] = months[int0, 0] + ' ' + int1;",
+              "    }",
+              "    for (i = 0; i < GroupCount(MerchantFleet); i = i + 1) {",
+              "        dwd0 = GroupShip(MerchantFleet, i);",
+              "        int0 = ShipFindCustomShipInfoByType(dwd0, 'AMod_Merchant0');",
+              "        int1 = ShipCustomShipInfoData(dwd0, int0, 1);",
+              "        int2 = ShipCustomShipInfoData(dwd0, int0, 2);",
+              "        if (GalaxyTechLevel() > int2) {",
+              "            int1 = int1 + Rnd(50, 150) * 10;",
+              "            ShipCustomShipInfoData(dwd0, int0, 1, int1);",
+              "            ShipCustomShipInfoData(dwd0, int0, 2, GalaxyTechLevel());",
+              "        }",
+              "        if (mod_merchantArr0[0, 1] > 0) {",
+              "            ShipMoney(dwd0, ShipMoney(dwd0) + int1);",
+              "            mod_merchantArr0[4, 0] = mod_merchantArr0[4, 0] + int1;",
+              "        } else {",
+              "            if (mod_merchantArr0[0, 5] == 0) mod_merchantArr0[0, 5] = 1;",
+              "        }",
+              "    }",
+              "    for (i = 1; i < 12; i = i + 1) {",
+              "        mod_merchantArr0[2, i] = mod_merchantArr0[2, i + 1];",
+              "        mod_merchantArr0[4, i] = mod_merchantArr0[4, i + 1];",
+              "        mod_merchantArr0[5, i] = mod_merchantArr0[5, i + 1];",
+              "    }",
+              "    mod_merchantArr0[2, 12] = mod_merchantArr0[2, 0];",
+              "    mod_merchantArr0[4, 12] = mod_merchantArr0[4, 0];",
+              "    mod_merchantArr0[5, 12] = mod_merchantArr0[5, 0];",
+              "    mod_merchantArr0[0, 1] = mod_merchantArr0[0, 1] + mod_merchantArr0[2, 0] - mod_merchantArr0[4, 0] - mod_merchantArr0[5, 0];",
+              "    mod_merchantArr0[2, 0] = 0;",
+              "    mod_merchantArr0[4, 0] = 0;",
+              "    mod_merchantArr0[5, 0] = 0;",
+              "}",
+              "if (mod_merchantArr0[0, 4] == 1) {",
+              "    if (GroupCount(MerchantFleet) == 0) mod_merchant_scrState = 2;",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -120,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  39,
+          "Total.Lines":  16,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if (mod_merchantArr0[0, 4] == 0) {",
+              "    if (Hit(CurShip, 0)) {",
+              "        CustomEther('Galaxy_Alert', 0, 'player_shot_merchantfleet', \"Работник вашей компании сообщил, что к нему применяются грубые методы физического давления, направленные с вашей стороны или ваших союзников. Не беспокойтесь, об этом уже узнала вся законопослушная часть галактики, новых работников вы вряд ли найдете. Кроме того, ваша лицензия предпринимателя аннулирована.<br>С презрением, профсоюз торговцев.\");",
+              "        mod_merchantArr0[0, 4] = 1;",
+              "        mod_merchant_scrState = 2;",
+              "    }",
+              "}",
+              "if (mod_merchantArr0[0, 4] == 1) RelationToRanger(CurShip, Player(), 0);",
+              "if (RelationToRanger(CurShip, Player()) < 30 || mod_merchantArr0[0, 5] == 2) {",
+              "    if (GetShipPlanet(CurShip)) {",
+              "        ShipOut(CurShip);",
+              "        OrderNone(CurShip, 1);",
+              "        OrderLock(CurShip, 1);",
+              "        ShipDestroy(CurShip, 1);",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  180,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  51,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "int0 = GalaxyMoney(4, 4) + GalaxyMoney(4, 3) + GalaxyMoney(4, 2) + GalaxyMoney(4, 1) + GalaxyMoney(4, 0);"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "PlanetNew",
+          "Pos.x":  60,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  2,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  60,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  0,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "StarNew",
+          "Pos.x":  60,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  1,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  60,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  7,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "GetShipRuins(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  120,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  8,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "ShipType(GetShipRuins(Player())) == 'BK'"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  60,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  31,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ShipIsTakeoff(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  140,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  32,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "mod_merchant_scrState==1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  110,
+          "Pos.y":  -40,
+          "Parent":  -1,
+          "#":  41,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "RelationToRanger(GetTalkShip(),Player()) <= 29"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  110,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  42,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "RelationToRanger(GetTalkShip(),Player()) >= 30"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  210,
+          "Pos.y":  -100,
+          "Parent":  -1,
+          "#":  48,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player()) >= int0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  210,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  52,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player()) < int0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  160,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  56,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "mod_merchant_scrState == 0"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "StateNew",
+          "Pos.x":  60,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  4,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Free",
+          "Pos.x":  -70,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  36,
+          "Move":  5,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "mFleet",
+          "OnActCode":  "mFleet",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "i",
+          "Pos.x":  160,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  10,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "j",
+          "Pos.x":  190,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  11,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "dwd0",
+          "Pos.x":  160,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  12,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "dwd1",
+          "Pos.x":  160,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  13,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "int0",
+          "Pos.x":  160,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  14,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "int1",
+          "Pos.x":  210,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  15,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "mod_merchantArr0",
+          "Pos.x":  270,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  16,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  true        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "answ0",
+          "Pos.x":  160,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  20,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "msg0",
+          "Pos.x":  160,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  21,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "mod_merchant_scrState",
+          "Pos.x":  270,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  22,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  true        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "str0",
+          "Pos.x":  160,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  26,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "months",
+          "Pos.x":  270,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  27,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "scrArr0",
+          "Pos.x":  270,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  28,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "scrArr1",
+          "Pos.x":  270,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  29,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "turnCodeArray",
+          "Pos.x":  270,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  30,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "str1",
+          "Pos.x":  160,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  34,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "shipNumb",
+          "Pos.x":  160,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  37,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "int2",
+          "Pos.x":  160,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  38,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "answ1",
+          "Pos.x":  160,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  50,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "cStar",
+          "Pos.x":  160,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  54,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "cPlanet",
+          "Pos.x":  160,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  55,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  4,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  2,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  0,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  8,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  18,
+      "End":  19,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  23,
+      "End":  24,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  24,
+      "End":  25,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  35,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  35,
+      "End":  36,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  36,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  45,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  48,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  48,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  23,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  49,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  51,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  51,
+      "End":  46,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  52,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  53,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  17,
+      "End":  18,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  43,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  42,
+      "End":  45,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  56,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  56,
+      "End":  9,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "Rect.Text":  
+  [
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  435,
+      "Rect.Top":  -127,
+      "Rect.Right":  1197,
+      "Rect.Bottom":  314,
+      "FStyle":  1,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  16777215,
+      "BSize":  1,
+      "BCoef":  "1",
+      "AlignX":  -1,
+      "AlignY":  -1,
+      "AlignRect":  false,
+      "Text":  "turnCodeArray[0] - ход выбора новых сотрудников\r\nturnCodeArray[12] - текущий год\r\n\r\n\r\nmod_merchantArr0[0.0]...[0.12] - text/data\r\nmod_merchantArr0[0.0] - название компании\r\nmod_merchantArr0[0.1] - баланс компании\r\nmod_merchantArr0[0.2] - 0: ничего, 1: сотрудники ждут корабли\r\nmod_merchantArr0[0.3] - 0: ничего, 1: есть крыша пиратов\r\nmod_merchantArr0[0.4] - 0: ничего, 1: все корабли покидают игрока\r\nmod_merchantArr0[0.5] - 0: ничего, 1: есть задолжность по зарплате\r\nmod_merchantArr0[1.1]...[1.12] - месяца для отчета(12-ый прошлый)\r\nmod_merchantArr0[2.0] - текущий доход от продаж\r\nmod_merchantArr0[2.1]...[2.12] - доходы от продаж\r\nmod_merchantArr0[3.1]...[3.12] - ???\r\nmod_merchantArr0[4.0] - текущие расходы на зарплату\r\nmod_merchantArr0[4.1]...[4.12] - з.п\r\nmod_merchantArr0[5.0] - текущие расходы на закупку\r\nmod_merchantArr0[5.1]...[5.12] - расходы на закупку товара\r\nmod_merchantArr0[6.1]...[6.10] - цена постройки корабля нового сотрудника\r\nmod_merchantArr0[6.0] - общая цена постройки кораблей\r\nmod_merchantArr0[7.1]...[7.10] - 0: некого нанимать, 1: можно нанять\r\nmod_merchantArr0[7.0] - максимальное число сотрудников\r\nmod_merchantArr0[8.1]...[8.10] - 0: сотрудник не нанят, 1: сотрудник нанят, но не оформлен, 2: ждёт корабль\r\nmod_merchantArr0[8.0] - число оформленных сотрудников\r\nmod_merchantArr0[9.1]...[9.10] - требует зарплату\r\nmod_merchantArr0[9.0] - текущее число работников\r\nmod_merchantArr0[10.1]...[10.10] - ид звезды нового сотрудника\r\nmod_merchantArr0[11.1]...[11.10] - номер планеты нового сотрудника",
+      "Color":  16777215,
+      "Font":  "Consolas",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  12,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "1",
+      "String":  "Я бы хотел создать свою торговую компанию"    
+    },
+    {
+      "#":  "10",
+      "String":  "Хандел"    
+    },
+    {
+      "#":  "11",
+      "String":  "Название вашей компании:"    
+    },
+    {
+      "#":  "12",
+      "String":  "Я передумал"    
+    },
+    {
+      "#":  "2",
+      "String":  "Работник вашей компании сообщил, что к нему применяются грубые методы физического давления, направленные с вашей стороны или ваших союзников. Не беспокойтесь, об этом уже узнала вся законопослушная часть галактики, новых работников вы вряд ли найдете. Кроме того, ваша лицензия предпринимателя аннулирована.<br>С презрением, профсоюз торговцев."    
+    },
+    {
+      "#":  "3",
+      "String":  "Вы уверены? Управление компанией дело не простое, необходимо анализировать ситуацию в галактике, а также требуется вложить довольно много кредитов, прежде чем вы сможете получать прибыль."    
+    },
+    {
+      "#":  "4",
+      "String":  "Отлично! Мы успешно перечислили кредиты с вашего счета.<br>А, ну и ваша торговая компания \"<0>\" зарегистрирована. Прямо сейчас вы не сможете кого-то нанять, потребуется некоторое время, чтобы о вас узнали."    
+    },
+    {
+      "#":  "5",
+      "String":  "День, когда я увижу в космосе обломки твоего корабля, <PlayerFull>, я буду отмечать как свой второй день рождения. Так что не откажи в любезности и умри."    
+    },
+    {
+      "#":  "6",
+      "String":  "О, шеф, не ожидал вас тут встретить. Хотите повысить мне зарплату или выдать премию?"    
+    },
+    {
+      "#":  "7",
+      "String":  "Что ж, тогда позвольте объяснить вам основы. <br>На первый взгляд, управление компанией дело не сложное, от вас требуется только оплачивать новые корабли и заработную плату работникам. Но на этом погорело очень много начинающих предпринимателей. <br>Закупили много новых кораблей на весь бюджет, а платить заработную плату нечем - все работники разбегутся, никто не станет работать на вас бесплатно. <br>Всё шло хорошо, но корабли ваших работников уничтожили пираты - начинайте всё с начала, компенсации не будет. <br>Не стоит забывать и о отношении подчинённых к вам - торговцы ненавидят пиратов и прочих аморальных типов. <br>Для успешного процветания вашей компании потребуется обширная территория. Чем больше союзных систем - тем больше простора для торговли. <br>Ну и последнее, зарегистрировать новую компанию будет стоить <0> cr. Кроме этого, вам необходимо придумать название для своей компании. Настоятельно рекомендую придумать <clr>уникальное<clrEnd> название."    
+    },
+    {
+      "#":  "8",
+      "String":  "Я точно в этом уверен"    
+    },
+    {
+      "#":  "9",
+      "String":  "Думаю, я справлюсь"    
+    }  
+  ]
+}

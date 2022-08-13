@@ -1,0 +1,3529 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  -442,
+  "ViewPos.y":  -199,
+  "ScriptName":  "AdvancedArts",
+  "ScriptFileOut":  "D:\\Space Rangers HD A War Apart\\Mods\\Advanced\\AdvancedArts\\Data\\Script\\AdvancedArts.scr",
+  "ScriptTextOut":  "D:\\Space Rangers HD A War Apart\\Mods\\Advanced\\AdvancedArts\\CFG\\Rus\\AdvancedArts.txt",
+  "GraphPoint.Count":  142,
+  "GraphLink.Count":  167,
+  "GraphRectText.Count":  0,
+  "Variables.Count":  8,
+  "Stars.Count":  1,
+  "Planets.Count":  1,
+  "Ships.Count":  1,
+  "States.Count":  1,
+  "Groups.Count":  1,
+  "Places.Count":  0,
+  "Items.Count":  0,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  1,
+  "DialogMessages.Count":  3,
+  "DialogAnswers.Count":  41,
+  "Operations.Count":  43,
+  "Statements.Count":  41,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  360,
+          "Pos.y":  10,
+          "Parent":  -1,
+          "#":  11,
+          "Msg":  "Отказываюсь",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  13,
+          "Msg":  "Хочу посмотреть ещё артефакты",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  870,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  15,
+          "Msg":  "Пойду проверять, спасибо",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  780,
+          "Pos.y":  510,
+          "Parent":  -1,
+          "#":  22,
+          "Msg":  "Да",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  23,
+          "Msg":  "Отказываюсь",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  30,
+          "Msg":  "Пролонгер v2",
+          "AMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  31,
+          "Msg":  "Сканерный кэш v2",
+          "AMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  32,
+          "Msg":  "Дроид младший v2",
+          "AMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  38,
+          "Msg":  "Пси-ускоритель материи v2",
+          "AMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  40,
+          "Msg":  "Железные жупи v2",
+          "AMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  57,
+          "Msg":  "Эриметр v2",
+          "AMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  58,
+          "Msg":  "Поляризатор v2",
+          "AMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  59,
+          "Msg":  "Вероятностный анализатор v2",
+          "AMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  60,
+          "Msg":  "Антигравитатор v2",
+          "AMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  61,
+          "Msg":  "Пропорционар v2",
+          "AMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  62,
+          "Msg":  "Пятерик v2",
+          "AMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  63,
+          "Msg":  "Проглот v2",
+          "AMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  64,
+          "Msg":  "Навинт v2",
+          "AMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  65,
+          "Msg":  "Вжик v2",
+          "AMsg.Num":  "18"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  66,
+          "Msg":  "Ракетанг v2",
+          "AMsg.Num":  "19"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  67,
+          "Msg":  "Сопланатор v2",
+          "AMsg.Num":  "20"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  68,
+          "Msg":  "Гипергенератор v2",
+          "AMsg.Num":  "21"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  82,
+          "Msg":  "Ралс v2",
+          "AMsg.Num":  "22"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  80,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  102,
+          "Msg":  "Железные жупи v3",
+          "AMsg.Num":  "23"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  100,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  103,
+          "Msg":  "Пси-ускоритель материи v3",
+          "AMsg.Num":  "24"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  120,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  104,
+          "Msg":  "Пролонгер v3",
+          "AMsg.Num":  "25"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  140,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  105,
+          "Msg":  "Сканерный кэш v3",
+          "AMsg.Num":  "26"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  160,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  106,
+          "Msg":  "Дроид младший v3",
+          "AMsg.Num":  "27"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  180,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  107,
+          "Msg":  "Эриметр v3",
+          "AMsg.Num":  "28"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  108,
+          "Msg":  "Поляризатор v3",
+          "AMsg.Num":  "29"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  109,
+          "Msg":  "Вероятностный анализатор v3",
+          "AMsg.Num":  "30"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  110,
+          "Msg":  "Антигравитатор v3",
+          "AMsg.Num":  "31"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  111,
+          "Msg":  "Пропорционар v3",
+          "AMsg.Num":  "32"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  280,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  112,
+          "Msg":  "Пятерик v3",
+          "AMsg.Num":  "33"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  113,
+          "Msg":  "Проглот v3",
+          "AMsg.Num":  "34"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  114,
+          "Msg":  "Навинт v3",
+          "AMsg.Num":  "35"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  340,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  115,
+          "Msg":  "Вжик v3",
+          "AMsg.Num":  "36"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  360,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  116,
+          "Msg":  "Ракетанг v3",
+          "AMsg.Num":  "37"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  380,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  117,
+          "Msg":  "Сопланатор v3",
+          "AMsg.Num":  "38"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  400,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  118,
+          "Msg":  "Гипергенератор v3",
+          "AMsg.Num":  "39"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  420,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  119,
+          "Msg":  "Ралс v3",
+          "AMsg.Num":  "40"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  9,
+          "Msg":  "Мы можем собрать улучшенный артефакт из трёх обычных артефактов. Улучшенные артефакты имеют усиленный основной эффект либо дополнительный бонус.\r\nТри обычных артефакта дают улучшенный артефакт второй версии (v2), а отдав нам три артефакта второй версии, сможете получить артефакт третьей версии (v3), у которого улучшение максимально.\r\n\r\nНа текущий момент улучшенные версии имеются у следующих артефактов:\r\n-Железные жупи\r\n-Пси-ускоритель материи\r\n-Пролонгер\r\n-Сканерный кэш\r\n-Дроид младший\r\n-Эриметр\r\n-Поляризатор\r\n-Вероятностный анализатор\r\n-Антигравитатор\r\n-Пропорционар\r\n-Пятерик\r\n-Проглот\r\n-Навинт\r\n-Вжик\r\n-Ракетанг\r\n-Сопланатор\r\n-Гипергенератор\r\n-Ралс\r\n\r\nЕсли у вас есть три одинаковых артефакта в трюме, мы за небольшую плату соберём из них один улучшенный. Вы готовы получить улучшенный артефакт?",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  780,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  14,
+          "Msg":  "Новый артефакт у тебя на борту, принимай! ",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  21,
+          "Msg":  "Мы готовы забрать у вас 3 артефакта <stats[artnumber,0]>:\r\nвес <top3arts[0,2]>, стоимость <top3arts[0,4]> cr.\r\nвес <top3arts[1,2]>, стоимость <top3arts[1,4]> cr.\r\nвес <top3arts[2,2]>, стоимость <top3arts[2,4]> cr.\r\nСтоимость услуг: <top3arts_total_sum> cr.\r\nСогласны?",
+          "DMsg.Num":  "2"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "ask_for_arts",
+          "Pos.x":  120,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  8        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "GroupNew",
+          "Pos.x":  60,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  3,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  90,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  5,
+          "Total.Lines":  1,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "GRun()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  210,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  7,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "AddDialogInject('ask_for_arts','',\"Хочу получить улучшенные артефакты\",1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  780,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  12,
+          "Total.Lines":  10,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "// Артефакты неизвестной расы считаются как челевеческие",
+              "if (top3arts[0,3] == 6) {top3arts[0,3] = 2;}",
+              "if (top3arts[1,3] == 6) {top3arts[1,3] = 2;}",
+              "if (top3arts[2,3] == 6) {top3arts[2,3] = 2;}",
+              "",
+              "// Дообавление нового арта",
+              "dword temp_dword=0;",
+              "temp_dword=CreateCustomArt(adv_art_name, min(top3arts[0,2],top3arts[1,2],top3arts[2,2]), ((top3arts[0,5]+top3arts[1,5]+top3arts[2,5])/3)*2, max(top3arts[0,3], top3arts[1,3], top3arts[2,3]));",
+              "SpecialToEquipment(FindBonusByCustomTag(adv_art_acryn_name),temp_dword);",
+              "AddItemToShip(Player(),temp_dword);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  19,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[2,0]= 'Пси-ускоритель материи';",
+              "artnumber = 2;",
+              "adv_art_name = 'ArtSpeedv2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonSpeed2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  20,
+          "Total.Lines":  19,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "int artcounter = 0; // число одинаковых артов",
+              "//unknown top3arts; // 3 арта, которые извлекаются",
+              "top3arts = newarray(3,7);",
+              "int i;",
+              "// получение 3-х артов и их характеристик в отдельном списке",
+              "for (i=0;i<player_items_count;i=i+1) {",
+              "    if (player_arts[i,4] == stats[artnumber,0] && artcounter <=2)",
+              "    {",
+              "        top3arts[artcounter,0] = player_arts[i,0]; // item",
+              "        top3arts[artcounter,1] = player_arts[i,1]; // тип, возможно, не нужен, ибо есть всякие кастомные арты",
+              "        top3arts[artcounter,2] = player_arts[i,2]; // вес",
+              "        top3arts[artcounter,3] = player_arts[i,3]; // производитель",
+              "        top3arts[artcounter,4] = player_arts[i,4]; // название артефакта",
+              "        top3arts[artcounter,5] = player_arts[i,5]; // стоимость",
+              "        top3arts[artcounter,6] = player_arts[i,6]; // номер на корабле",
+              "        artcounter = artcounter + 1;",
+              "    }",
+              "}",
+              "top3arts_total_sum  = top3arts[0,5]+top3arts[1,5]+top3arts[2,5]; // Сумма, которая будет снята"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  780,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  24,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "// Удаление 3-х артов",
+              "FreeItem(GetArtFromShip(Player(),top3arts[2,6]));",
+              "FreeItem(GetArtFromShip(Player(),top3arts[1,6]));",
+              "FreeItem(GetArtFromShip(Player(),top3arts[0,6]));"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  33,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[4,0]= 'Пролонгер';",
+              "artnumber = 4;",
+              "adv_art_name = 'ArtRadarv2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonRadar2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  34,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[5,0]= 'Сканерный кэш';",
+              "artnumber = 5;",
+              "adv_art_name = 'ArtScanerv2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonScan2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  35,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[6,0]= 'Дроид младший';",
+              "artnumber = 6;",
+              "adv_art_name = 'ArtDroidv2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonDroid2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  37,
+          "Total.Lines":  161,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//unknown player_arts; // массив для сохранения списка артефактов на корабле и их характеристик",
+              "player_arts = newarray(1500,8);",
+              "//int player_items_count; // количество артефактов на корабле",
+              "player_items_count = ShipArts(Player());",
+              "int i;",
+              "if (player_items_count>0) {",
+              "    for (i=0;i<player_items_count;i=i+1) {",
+              "    player_arts[i,0] = ShipArts(Player(),i); // item",
+              "    player_arts[i,1] = ItemType(ShipArts(Player(),i)); //тип, возможно, не нужен, ибо есть всякие кастомные арты",
+              "    player_arts[i,2] = ItemSize(ShipArts(Player(),i)); // вес",
+              "    player_arts[i,3] = ItemOwner(ShipArts(Player(),i)); // производитель",
+              "    player_arts[i,4] = Name(ShipArts(Player(),i)); // название артефакта",
+              "    player_arts[i,5] = ItemCost(ShipArts(Player(),i)); // стоимость",
+              "    player_arts[i,6] = i; // номер на корабле",
+              "    player_arts[i,7] = EquipmentImageName(ShipArts(Player(),i)); // системное имя арта (работает только для кастомных артов?)",
+              "    }",
+              "}",
+              "// Количество артефактов [тип артефакта, количество на корабле]",
+              "//unknown stats; // массив для сохранения количества артефактов по типам",
+              "stats = newarray(100, 2);",
+              "stats[0,0]= 'Железные жупи';",
+              "stats[1,0]= 'Чёрная жижа';",
+              "stats[2,0]= 'Пси-ускоритель материи';",
+              "stats[3,0]= 'Отморозки';",
+              "stats[4,0]= 'Пролонгер';",
+              "stats[5,0]= 'Сканерный кэш';",
+              "stats[6,0]= 'Дроид младший';",
+              "stats[7,0]= 'Нанитоиды';",
+              "stats[8,0]= 'Эриметр';",
+              "stats[9,0]= 'Поляризатор';",
+              "stats[10,0]= 'Вероятностный анализатор';",
+              "stats[11,0]= 'Локализатор взрывной волны';",
+              "stats[12,0]= 'Антигравитатор';",
+              "stats[13,0]= 'Трансфакторный маяк';",
+              "stats[14,0]= 'Кварковая бомба';",
+              "stats[15,0]= 'Транклюкатор';",
+              "stats[16,0]= 'Пропорционар';",
+              "stats[17,0]= 'Пятерик';",
+              "stats[18,0]= 'Проглот';",
+              "stats[19,0]= 'Навинт';",
+              "stats[20,0]= 'Вжик';",
+              "stats[21,0]= 'Ракетанг';",
+              "stats[22,0]= 'Обливионный коннектор';",
+              "stats[23,0]= 'Сопланатор';",
+              "stats[24,0]= 'Гипергенератор';",
+              "stats[25,0]= 'Субпортал';",
+              "stats[26,0]= 'Протон';",
+              "stats[27,0]= 'Армс';",
+              "stats[28,0]= 'Артефактор';",
+              "stats[29,0]= 'Биомир';",
+              "stats[30,0]= 'Эгис'; // аЭгис. Возможно, сюда будут попадать Аэгисы v2.",
+              "stats[31,0]= 'Ралс';",
+              "// Артефакты v2",
+              "stats[32,0]= 'Железные жупи v2';",
+              "stats[33,0]= 'Чёрная жижа v2';",
+              "stats[34,0]= 'Пси-ускоритель материи v2';",
+              "stats[35,0]= 'Отморозки v2';",
+              "stats[36,0]= 'Пролонгер v2';",
+              "stats[37,0]= 'Сканерный кэш v2';",
+              "stats[38,0]= 'Дроид младший v2';",
+              "stats[39,0]= 'Нанитоиды v2';",
+              "stats[40,0]= 'Эриметр v2';",
+              "stats[41,0]= 'Поляризатор v2';",
+              "stats[42,0]= 'Вероятностный анализатор v2';",
+              "stats[43,0]= 'Локализатор взрывной волны v2';",
+              "stats[44,0]= 'Антигравитатор v2';",
+              "stats[45,0]= 'Трансфакторный маяк v2';",
+              "stats[46,0]= 'Кварковая бомба v2';",
+              "stats[47,0]= 'Транклюкатор v2';",
+              "stats[48,0]= 'Пропорционар v2';",
+              "stats[49,0]= 'Пятерик v2';",
+              "stats[50,0]= 'Проглот v2';",
+              "stats[51,0]= 'Навинт v2';",
+              "stats[52,0]= 'Вжик v2';",
+              "stats[53,0]= 'Ракетанг v2';",
+              "stats[54,0]= 'Обливионный коннектор v2';",
+              "stats[55,0]= 'Сопланатор v2';",
+              "stats[56,0]= 'Гипергенератор v2';",
+              "stats[57,0]= 'Субпортал v2';",
+              "stats[58,0]= 'Протон v2';",
+              "stats[59,0]= 'Армс v2';",
+              "stats[60,0]= 'Артефактор v2';",
+              "stats[61,0]= 'Биомир v2';",
+              "stats[62,0]= 'Эгис v2'; // аЭгис",
+              "stats[63,0]= 'Ралс v2';",
+              "//количество всех артов до подсчёта равно 0",
+              "for (i=0;i<64;i=i+1)",
+              "{",
+              "    stats[i,1] = 0;",
+              "}",
+              "//подсчёт количества артов по массиву артефактов. Для обычных артов по числовому типу, для кастомных по системному имени",
+              "if (player_items_count>0) {",
+              "for (i=0;i<player_items_count;i=i+1)",
+              "    {",
+              "    if (player_arts[i,4] == stats[0,0]) {stats[0,1]=stats[0,1]+1;}",
+              "    if (player_arts[i,4] == stats[1,0]) {stats[1,1]=stats[1,1]+1;}",
+              "    if (player_arts[i,4] == stats[2,0]) {stats[2,1]=stats[2,1]+1;}",
+              "    if (player_arts[i,4] == stats[3,0]) {stats[3,1]=stats[3,1]+1;}",
+              "    if (player_arts[i,4] == stats[4,0]) {stats[4,1]=stats[4,1]+1;}",
+              "    if (player_arts[i,4] == stats[5,0]) {stats[5,1]=stats[5,1]+1;}",
+              "    if (player_arts[i,4] == stats[6,0]) {stats[6,1]=stats[6,1]+1;}",
+              "    if (player_arts[i,4] == stats[7,0]) {stats[7,1]=stats[7,1]+1;}",
+              "    if (player_arts[i,4] == stats[8,0]) {stats[8,1]=stats[8,1]+1;}",
+              "    if (player_arts[i,4] == stats[9,0]) {stats[9,1]=stats[9,1]+1;}",
+              "    if (player_arts[i,4] == stats[10,0]) {stats[10,1]=stats[10,1]+1;}",
+              "    if (player_arts[i,4] == stats[11,0]) {stats[11,1]=stats[11,1]+1;}",
+              "    if (player_arts[i,4] == stats[12,0]) {stats[12,1]=stats[12,1]+1;}",
+              "    if (player_arts[i,4] == stats[13,0]) {stats[13,1]=stats[13,1]+1;}",
+              "    if (player_arts[i,4] == stats[14,0]) {stats[14,1]=stats[14,1]+1;}",
+              "    if (player_arts[i,4] == stats[15,0]) {stats[15,1]=stats[15,1]+1;}",
+              "    if (player_arts[i,4] == stats[16,0]) {stats[16,1]=stats[16,1]+1;}",
+              "    if (player_arts[i,4] == stats[17,0]) {stats[17,1]=stats[17,1]+1;}",
+              "    if (player_arts[i,4] == stats[18,0]) {stats[18,1]=stats[18,1]+1;}",
+              "    if (player_arts[i,4] == stats[19,0]) {stats[19,1]=stats[19,1]+1;}",
+              "    if (player_arts[i,4] == stats[20,0]) {stats[20,1]=stats[20,1]+1;}",
+              "    if (player_arts[i,4] == stats[21,0]) {stats[21,1]=stats[21,1]+1;}",
+              "    if (player_arts[i,4] == stats[22,0]) {stats[22,1]=stats[22,1]+1;}",
+              "    if (player_arts[i,4] == stats[23,0]) {stats[23,1]=stats[23,1]+1;}",
+              "    if (player_arts[i,4] == stats[24,0]) {stats[24,1]=stats[24,1]+1;}",
+              "    if (player_arts[i,4] == stats[25,0]) {stats[25,1]=stats[25,1]+1;}",
+              "    if (player_arts[i,4] == stats[26,0]) {stats[26,1]=stats[26,1]+1;}",
+              "    if (player_arts[i,4] == stats[27,0]) {stats[27,1]=stats[27,1]+1;}",
+              "    if (player_arts[i,4] == stats[28,0]) {stats[28,1]=stats[28,1]+1;}",
+              "    if (player_arts[i,4] == stats[29,0]) {stats[29,1]=stats[29,1]+1;}",
+              "    // Для аэгиса не понял, как сделать экранирование, поэтому сравниваются с 3 по 6 символы",
+              "    if (substr(player_arts[i,4],2,4) == stats[30,1]) {stats[30,1]=stats[30,1]+1;}",
+              "    if (player_arts[i,4] == stats[31,0]) {stats[31,1]=stats[31,1]+1;}",
+              "    if (player_arts[i,7] == 'ArtHullv2') {stats[32,1]=stats[32,1]+1;}//'Железные жупи';",
+              "            //if(player_arts[i,7] == '') {stats[33,1]=stats[33,1]+1;}//'Чёрная жижа';",
+              "    if (player_arts[i,7] == 'ArtSpeedv2') {stats[34,1]=stats[34,1]+1;}//'Пси-ускоритель материи';",
+              "            //if(player_arts[i,7] == '') {stats[35,1]=stats[35,1]+1;}//'Отморозки';",
+              "    if (player_arts[i,7] == 'ArtRadarv2') {stats[36,1]=stats[36,1]+1;}//'Пролонгер';",
+              "    if (player_arts[i,7] == 'ArtScanerv2') {stats[37,1]=stats[37,1]+1;}//'Сканерный кэш';",
+              "    if (player_arts[i,7] == 'ArtDroidv2') {stats[38,1]=stats[38,1]+1;}//'Дроид младший';",
+              "            //if(player_arts[i,7] == '') {stats[39,1]=stats[39,1]+1;}//'Нанитоиды';",
+              "    if (player_arts[i,7] == 'ArtHookv2') {stats[40,1]=stats[40,1]+1;}//'Эриметр';",
+              "    if (player_arts[i,7] == 'ArtDefv2') {stats[41,1]=stats[41,1]+1;}//'Поляризатор';",
+              "    if (player_arts[i,7] == 'ArtAnalyzerv2') {stats[42,1]=stats[42,1]+1;}//'Вероятностный анализатор v2';",
+              "            //if(player_arts[i,7] == '') {stats[43,1]=stats[43,1]+1;}//'Локализатор взрывной волны v2';",
+              "    if (player_arts[i,7] == 'ArtAntigravv2') {stats[44,1]=stats[44,1]+1;}//'Антигравитатор v2';",
+              "            //if(player_arts[i,7] == '') {stats[45,1]=stats[45,1]+1;}//'Трансфакторный маяк v2';",
+              "            //if(player_arts[i,7] == '') {stats[46,1]=stats[46,1]+1;}//'Кварковая бомба v2';",
+              "            //if(player_arts[i,7] == '') {stats[47,1]=stats[47,1]+1;}//'Транклюкатор v2';",
+              "    if (player_arts[i,7] == 'ArtDefToEnergyv2') {stats[48,1]=stats[48,1]+1;}//'Пропорционар v2';",
+              "    if (player_arts[i,7] == 'ArtEnergyPulsev2') {stats[49,1]=stats[49,1]+1;}//'Пятерик v2';",
+              "    if (player_arts[i,7] == 'ArtEnergyDefv2') {stats[50,1]=stats[50,1]+1;}//'Проглот v2';",
+              "    if (player_arts[i,7] == 'ArtSplinterv2') {stats[51,1]=stats[51,1]+1;}//'Навинт v2';",
+              "    if (player_arts[i,7] == 'ArtDeceleratev2') {stats[52,1]=stats[52,1]+1;}//'Вжик v2';",
+              "    if (player_arts[i,7] == 'ArtMissileDefv2') {stats[53,1]=stats[53,1]+1;}//'Ракетанг v2';",
+              "            //if(player_arts[i,7] == '') {stats[54,1]=stats[54,1]+1;}//'Обливионный коннектор v2';",
+              "    if (player_arts[i,7] == 'ArtWeaponToSpeedv2') {stats[55,1]=stats[55,1]+1;}//'Сопланатор v2';",
+              "    if (player_arts[i,7] == 'ArtGiperJumpv2') {stats[56,1]=stats[56,1]+1;}//'Гипергенератор v2';",
+              "            //if(player_arts[i,7] == '') {stats[57,1]=stats[57,1]+1;}//'Субпортал v2';",
+              "            //if(player_arts[i,7] == '') {stats[58,1]=stats[58,1]+1;}//'Протон v2';",
+              "            //if(player_arts[i,7] == '') {stats[59,1]=stats[59,1]+1;}//'Армс v2';",
+              "            //if(player_arts[i,7] == '') {stats[60,1]=stats[60,1]+1;}//'Артефактор v2';",
+              "            //if(player_arts[i,7] == '') {stats[61,1]=stats[61,1]+1;}//'Биомир v2';",
+              "            //if(player_arts[i,7] == '') {stats[62,1]=stats[62,1]+1;}//'Эгис v2'; // аЭгис",
+              "    if (player_arts[i,7] == 'ArtFastRacksv2') {stats[63,1]=stats[63,1]+1;}//'Ралс v2';",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  41,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[0,0]= 'Железные жупи';",
+              "artnumber = 0;",
+              "adv_art_name = 'ArtHullv2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonHull2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  69,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[8,0]= 'Эриметр';",
+              "artnumber = 8;",
+              "adv_art_name = 'ArtHookv2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonHook2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  70,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[9,0]= 'Поляризатор';",
+              "artnumber = 9;",
+              "adv_art_name = 'ArtDefv2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonDef2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  71,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[10,0]= 'Вероятностный анализатор';",
+              "artnumber = 10;",
+              "adv_art_name = 'ArtAnalyzerv2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonScanAnalyzer2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  72,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[12,0]= 'Антигравитатор';",
+              "artnumber = 12;",
+              "adv_art_name = 'ArtAntigravv2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonMass2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  73,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[16,0]= 'Пропорционар';",
+              "artnumber = 16;",
+              "adv_art_name = 'ArtDefToEnergyv2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonWEnergy2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  74,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[17,0]= 'Пятерик';",
+              "artnumber = 17;",
+              "adv_art_name = 'ArtEnergyPulsev2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonWEnergy2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  75,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[18,0]= 'Проглот';",
+              "artnumber = 18;",
+              "adv_art_name = 'ArtEnergyDefv2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonDefEnergyDef2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  76,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[19,0]= 'Навинт';",
+              "artnumber = 19;",
+              "adv_art_name = 'ArtSplinterv2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonWSplinter2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  77,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[20,0]= 'Вжик';",
+              "artnumber = 20;",
+              "adv_art_name = 'ArtDeceleratev2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonWSplinter2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  78,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[21,0]= 'Ракетанг';",
+              "artnumber = 21;",
+              "adv_art_name = 'ArtMissileDefv2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonDefEnergyDef2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  79,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[23,0]= 'Сопланатор';",
+              "artnumber = 23;",
+              "adv_art_name = 'ArtWeaponToSpeedv2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonSpeed2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  80,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[24,0]= 'Гипергенератор';",
+              "artnumber = 24;",
+              "adv_art_name = 'ArtGiperJumpv2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonJump2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  83,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[31,0]= 'Ралс';",
+              "artnumber = 31;",
+              "adv_art_name = 'ArtFastRacksv2';",
+              "adv_art_acryn_name = 'AdvancedArts_bonMissileSpeed2';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  80,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  120,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[32,0]= 'Железные жупи';",
+              "artnumber = 32;",
+              "adv_art_name = 'ArtHullv3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonHull3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  100,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  121,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[34,0]= 'Пси-ускоритель материи';",
+              "artnumber = 34;",
+              "adv_art_name = 'ArtSpeedv3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonSpeed3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  120,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  122,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[36,0]= 'Пролонгер';",
+              "artnumber = 36;",
+              "adv_art_name = 'ArtRadarv3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonRadar3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  140,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  123,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[37,0]= 'Сканерный кэш';",
+              "artnumber = 37;",
+              "adv_art_name = 'ArtScanerv3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonScan3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  160,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  124,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[38,0]= 'Дроид младший';",
+              "artnumber = 38;",
+              "adv_art_name = 'ArtDroidv3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonDroid3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  180,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  125,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[40,0]= 'Эриметр';",
+              "artnumber = 40;",
+              "adv_art_name = 'ArtHookv3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonHook3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  126,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[41,0]= 'Поляризатор';",
+              "artnumber = 41;",
+              "adv_art_name = 'ArtDefv3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonDef3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  127,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[42,0]= 'Вероятностный анализатор';",
+              "artnumber = 42;",
+              "adv_art_name = 'ArtAnalyzerv3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonScanAnalyzer3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  128,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[44,0]= 'Антигравитатор';",
+              "artnumber = 44;",
+              "adv_art_name = 'ArtAntigravv3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonMass3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  129,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[48,0]= 'Пропорционар';",
+              "artnumber = 48;",
+              "adv_art_name = 'ArtDefToEnergyv3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonWEnergy3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  280,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  130,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[49,0]= 'Пятерик';",
+              "artnumber = 49;",
+              "adv_art_name = 'ArtEnergyPulsev3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonWEnergy3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  131,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[50,0]= 'Проглот';",
+              "artnumber = 50;",
+              "adv_art_name = 'ArtEnergyDefv3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonDefEnergyDef3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  132,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[51,0]= 'Навинт';",
+              "artnumber = 51;",
+              "adv_art_name = 'ArtSplinterv3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonWSplinter3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  340,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  133,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[52,0]= 'Вжик';",
+              "artnumber = 52;",
+              "adv_art_name = 'ArtDeceleratev3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonWSplinter3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  360,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  134,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[53,0]= 'Ракетанг';",
+              "artnumber = 53;",
+              "adv_art_name = 'ArtMissileDefv3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonDefEnergyDef3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  380,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  135,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[55,0]= 'Сопланатор';",
+              "artnumber = 55;",
+              "adv_art_name = 'ArtWeaponToSpeedv3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonSpeed3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  400,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  136,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[56,0]= 'Гипергенератор';",
+              "artnumber = 56;",
+              "adv_art_name = 'ArtGiperJumpv3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonJump3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  420,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  137,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//stats[63,0]= 'Ралс';",
+              "artnumber = 63;",
+              "adv_art_name = 'ArtFastRacksv3';",
+              "adv_art_acryn_name = 'AdvancedArts_bonMissileSpeed3';"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  780,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  140,
+          "Total.Lines":  3,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "// снятие средств с игрока",
+              "ShipMoney(Player(),ShipMoney(Player())-top3arts_total_sum);",
+              "Sound('Sound.Sell');"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "PlanetNew",
+          "Pos.x":  60,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  2,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  60,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  0,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "StarNew",
+          "Pos.x":  60,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  1,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  150,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  6,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "GetShipRuins(Player())>0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  180,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  10,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipType(GetShipRuins(Player()))=='SB' || ShipType(GetShipRuins(Player()))=='CB'"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  16,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1==1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  17,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[2,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  27,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[4,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  28,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[5,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  29,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[6,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  39,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[0,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  45,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[8,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  46,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[9,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  47,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[10,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  48,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[12,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  49,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[16,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  50,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[17,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  51,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[18,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  52,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[19,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  53,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[20,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  54,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[21,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  55,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[23,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  56,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[24,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  81,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[31,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  120,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  84,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[36,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  140,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  85,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[37,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  160,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  86,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[38,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  180,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  87,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[40,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  88,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[41,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  89,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[42,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  90,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[44,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  91,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[48,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  280,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  92,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[49,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  93,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[50,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  94,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[51,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  340,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  95,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[52,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  100,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  96,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[34,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  80,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  97,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[32,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  360,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  98,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[53,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  380,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  99,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[55,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  400,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  100,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[56,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  420,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  101,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "stats[63,1] >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  700,
+          "Parent":  -1,
+          "#":  138,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1==1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  780,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  141,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "top3arts_total_sum <= ShipMoney(Player())"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "StateNew",
+          "Pos.x":  60,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  4,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "artnumber",
+          "Pos.x":  920,
+          "Pos.y":  -150,
+          "Parent":  -1,
+          "#":  18,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "adv_art_name",
+          "Pos.x":  920,
+          "Pos.y":  -130,
+          "Parent":  -1,
+          "#":  25,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "adv_art_acryn_name",
+          "Pos.x":  920,
+          "Pos.y":  -110,
+          "Parent":  -1,
+          "#":  26,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "player_items_count",
+          "Pos.x":  630,
+          "Pos.y":  -130,
+          "Parent":  -1,
+          "#":  36,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "player_arts",
+          "Pos.x":  630,
+          "Pos.y":  -150,
+          "Parent":  -1,
+          "#":  42,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "stats",
+          "Pos.x":  630,
+          "Pos.y":  -110,
+          "Parent":  -1,
+          "#":  43,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "top3arts",
+          "Pos.x":  920,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  44,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "top3arts_total_sum",
+          "Pos.x":  920,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  139,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  4,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  2,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  0,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  10,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  7,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  12,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  15,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  13,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  13,
+      "End":  9,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  16,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  16,
+      "End":  11,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  9,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  20,
+      "End":  21,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  23,
+      "End":  9,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  21,
+      "End":  23,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  22,
+      "End":  24,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  27,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  28,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  35,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  34,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  35,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  17,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  27,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  28,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  29,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  17,
+      "End":  38,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  19,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  40,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  45,
+      "End":  57,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  57,
+      "End":  69,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  58,
+      "End":  70,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  59,
+      "End":  71,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  60,
+      "End":  72,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  61,
+      "End":  73,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  62,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  63,
+      "End":  75,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  64,
+      "End":  76,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  65,
+      "End":  77,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  66,
+      "End":  78,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  67,
+      "End":  79,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  68,
+      "End":  80,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  58,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  59,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  48,
+      "End":  60,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  49,
+      "End":  61,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  50,
+      "End":  62,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  51,
+      "End":  63,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  64,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  53,
+      "End":  65,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  54,
+      "End":  66,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  55,
+      "End":  67,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  56,
+      "End":  68,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  45,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  46,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  48,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  49,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  50,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  51,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  52,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  53,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  54,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  55,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  56,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  69,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  70,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  72,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  73,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  74,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  75,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  76,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  77,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  78,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  79,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  80,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  81,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  81,
+      "End":  82,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  82,
+      "End":  83,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  83,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  97,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  96,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  84,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  85,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  86,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  87,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  88,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  89,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  90,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  92,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  93,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  94,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  95,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  98,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  99,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  101,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  97,
+      "End":  102,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  96,
+      "End":  103,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  84,
+      "End":  104,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  85,
+      "End":  105,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  86,
+      "End":  106,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  87,
+      "End":  107,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  88,
+      "End":  108,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  89,
+      "End":  109,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  90,
+      "End":  110,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  91,
+      "End":  111,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  92,
+      "End":  112,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  93,
+      "End":  113,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  94,
+      "End":  114,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  95,
+      "End":  115,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  98,
+      "End":  116,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  99,
+      "End":  117,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  100,
+      "End":  118,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  101,
+      "End":  119,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  102,
+      "End":  120,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  103,
+      "End":  121,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  104,
+      "End":  122,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  105,
+      "End":  123,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  106,
+      "End":  124,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  107,
+      "End":  125,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  108,
+      "End":  126,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  109,
+      "End":  127,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  110,
+      "End":  128,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  111,
+      "End":  129,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  112,
+      "End":  130,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  113,
+      "End":  131,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  114,
+      "End":  132,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  115,
+      "End":  133,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  116,
+      "End":  134,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  117,
+      "End":  135,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  118,
+      "End":  136,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  119,
+      "End":  137,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  120,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  121,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  122,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  123,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  124,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  125,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  126,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  127,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  128,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  129,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  130,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  131,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  132,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  133,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  134,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  135,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  136,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  137,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  138,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  24,
+      "End":  140,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  140,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  21,
+      "End":  141,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  141,
+      "End":  22,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  44,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "0",
+      "String":  "Хочу получить улучшенные артефакты"    
+    },
+    {
+      "#":  "12",
+      "String":  "Да"    
+    },
+    {
+      "#":  "16",
+      "String":  "Пролонгер v2"    
+    },
+    {
+      "#":  "17",
+      "String":  "Сканерный кэш v2"    
+    },
+    {
+      "#":  "18",
+      "String":  "Дроид младший v2"    
+    },
+    {
+      "#":  "2",
+      "String":  "Новый артефакт у тебя на борту, принимай! "    
+    },
+    {
+      "#":  "23",
+      "String":  "Пси-ускоритель материи v2"    
+    },
+    {
+      "#":  "24",
+      "String":  "Железные жупи v2"    
+    },
+    {
+      "#":  "25",
+      "String":  "Эриметр v2"    
+    },
+    {
+      "#":  "26",
+      "String":  "Поляризатор v2"    
+    },
+    {
+      "#":  "27",
+      "String":  "Вероятностный анализатор v2"    
+    },
+    {
+      "#":  "28",
+      "String":  "Антигравитатор v2"    
+    },
+    {
+      "#":  "30",
+      "String":  "Пропорционар v2"    
+    },
+    {
+      "#":  "31",
+      "String":  "Пятерик v2"    
+    },
+    {
+      "#":  "32",
+      "String":  "Проглот v2"    
+    },
+    {
+      "#":  "33",
+      "String":  "Навинт v2"    
+    },
+    {
+      "#":  "34",
+      "String":  "Вжик v2"    
+    },
+    {
+      "#":  "35",
+      "String":  "Ракетанг v2"    
+    },
+    {
+      "#":  "36",
+      "String":  "Сопланатор v2"    
+    },
+    {
+      "#":  "37",
+      "String":  "Гипергенератор v2"    
+    },
+    {
+      "#":  "38",
+      "String":  "Ралс v2"    
+    },
+    {
+      "#":  "39",
+      "String":  "Железные жупи v3"    
+    },
+    {
+      "#":  "4",
+      "String":  "Отказываюсь"    
+    },
+    {
+      "#":  "40",
+      "String":  "Пси-ускоритель материи v3"    
+    },
+    {
+      "#":  "41",
+      "String":  "Пролонгер v3"    
+    },
+    {
+      "#":  "42",
+      "String":  "Сканерный кэш v3"    
+    },
+    {
+      "#":  "43",
+      "String":  "Дроид младший v3"    
+    },
+    {
+      "#":  "44",
+      "String":  "Эриметр v3"    
+    },
+    {
+      "#":  "45",
+      "String":  "Поляризатор v3"    
+    },
+    {
+      "#":  "46",
+      "String":  "Вероятностный анализатор v3"    
+    },
+    {
+      "#":  "47",
+      "String":  "Антигравитатор v3"    
+    },
+    {
+      "#":  "48",
+      "String":  "Пропорционар v3"    
+    },
+    {
+      "#":  "49",
+      "String":  "Пятерик v3"    
+    },
+    {
+      "#":  "50",
+      "String":  "Проглот v3"    
+    },
+    {
+      "#":  "51",
+      "String":  "Навинт v3"    
+    },
+    {
+      "#":  "52",
+      "String":  "Вжик v3"    
+    },
+    {
+      "#":  "53",
+      "String":  "Ракетанг v3"    
+    },
+    {
+      "#":  "54",
+      "String":  "Сопланатор v3"    
+    },
+    {
+      "#":  "55",
+      "String":  "Гипергенератор v3"    
+    },
+    {
+      "#":  "56",
+      "String":  "Ралс v3"    
+    },
+    {
+      "#":  "58",
+      "String":  "Мы готовы забрать у вас 3 артефакта <0>:<br>вес <1>, стоимость <2> cr.<br>вес <3>, стоимость <4> cr.<br>вес <5>, стоимость <6> cr.<br>Стоимость услуг: <7> cr.<br>Согласны?"    
+    },
+    {
+      "#":  "6",
+      "String":  "Хочу посмотреть ещё артефакты"    
+    },
+    {
+      "#":  "60",
+      "String":  "Мы можем собрать улучшенный артефакт из трёх обычных артефактов. Улучшенные артефакты имеют усиленный основной эффект либо дополнительный бонус.<br>Три обычных артефакта дают улучшенный артефакт второй версии (v2), а отдав нам три артефакта второй версии, сможете получить артефакт третьей версии (v3), у которого улучшение максимально.<br><br>На текущий момент улучшенные версии имеются у следующих артефактов:<br>-Железные жупи<br>-Пси-ускоритель материи<br>-Пролонгер<br>-Сканерный кэш<br>-Дроид младший<br>-Эриметр<br>-Поляризатор<br>-Вероятностный анализатор<br>-Антигравитатор<br>-Пропорционар<br>-Пятерик<br>-Проглот<br>-Навинт<br>-Вжик<br>-Ракетанг<br>-Сопланатор<br>-Гипергенератор<br>-Ралс<br><br>Если у вас есть три одинаковых артефакта в трюме, мы за небольшую плату соберём из них один улучшенный. Вы готовы получить улучшенный артефакт?"    
+    },
+    {
+      "#":  "7",
+      "String":  "Пойду проверять, спасибо"    
+    }  
+  ]
+}

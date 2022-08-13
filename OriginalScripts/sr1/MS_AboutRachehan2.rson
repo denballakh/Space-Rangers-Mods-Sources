@@ -1,0 +1,843 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  103,
+  "ViewPos.y":  -26,
+  "ScriptName":  "MS_AboutRachehan2",
+  "ScriptFileOut":  "C:\\dab\\Prog\\Delphi\\Rangers\\DATA\\Script\\MS_AboutRachehan2.scr",
+  "ScriptTextOut":  "C:\\dab\\Prog\\Delphi\\Rangers\\CFG\\Rus\\Script\\MS_AboutRachehan2.txt",
+  "GraphPoint.Count":  36,
+  "GraphLink.Count":  31,
+  "GraphRectText.Count":  1,
+  "Variables.Count":  2,
+  "Stars.Count":  2,
+  "Planets.Count":  2,
+  "Ships.Count":  1,
+  "States.Count":  2,
+  "Groups.Count":  1,
+  "Places.Count":  0,
+  "Items.Count":  0,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  1,
+  "DialogMessages.Count":  4,
+  "DialogAnswers.Count":  4,
+  "Operations.Count":  5,
+  "Statements.Count":  12,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  940,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  11,
+          "Msg":  "Я очень сожалею, сам порой от них страдаю. Может, нужна моя помощь?",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  940,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  13,
+          "Msg":  "Пусть говорит. Надеюсь, его информация, будет полезной.",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  940,
+          "Pos.y":  500,
+          "Parent":  -1,
+          "#":  15,
+          "Msg":  "Так что конкретно произошло?",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  940,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  17,
+          "Msg":  "Ага! Теперь понятно, откуда пришли клисаны. Спасибо вам за информацию, и постарайтесь дотянуть до ближайшего космопорта!",
+          "AMsg.Num":  "3"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  860,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  10,
+          "Msg":  "Приветствуем, тебя <Name(Player())>. Мы только что вышли из подпространства, где имели встречу с космическими пиратами. Наш корабль сильно поврежден и мы обречены.",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  860,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  12,
+          "Msg":  "Мы не просим помощи. У нас на борту перебежчик от подпространственных пиратов с важной информацией. Он хочет сделать заявление!",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  860,
+          "Pos.y":  500,
+          "Parent":  -1,
+          "#":  14,
+          "Msg":  "Слушай, <Name(Player())>! Граждане Галактики! Я знаю, откуда взялась Мапхелла! Это Рачехан притащил ее сюда! Когда нас раздолбали в том бою, любой на его месте лег бы на дно, тем паче что награбили уже более чем достаточно. Но только не Рачехан! Ему все было мало! Он снова засел за эти гаальские архивы и вычитал там про первую войну с клисанами. Там были в основном технические данные, а про войну очень мало. Он не понял, чем там все кончилось, понял только, что гаальцам как-то удалось победить, и решил, что ему это тоже по силам! Он думал, что это беспроигрышный план - либо он захватит Мапхеллу и получит ее супероружие, либо, в худшем случае, заманит ее в наш космос, и тогда у военных флотов появится дело поважнее, чем гоняться за нами...",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  860,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  16,
+          "Msg":  "Мы ушли в соседний рукав и искали Мапхеллу несколько лет. А когда нашли, еле унесли ноги! Уже в нашем рукаве мы несколько раз прыгали в гиперпространство и обратно и только так оторвались. Но клисаны пришли в наш мир, и теперь могут погибнуть все! А Рачехан говорит \"Что сделано, то сделано, попробуем же извлечь из этого выгоду!\" Я хочу всем рассказать о его планах, пусть все узнают, кто виновник этой войны!",
+          "DMsg.Num":  "3"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "DialogShip",
+          "Pos.x":  770,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  9        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "GroupShip",
+          "Pos.x":  560,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  5,
+          "Owner":  62,
+          "Group.Type":  17,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  660,
+          "Parent":  -1,
+          "#":  19,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipDestroy(CurShip)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  610,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  21,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vEnd=CurTurn()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  990,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  26,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "MS_AboutRachehan2_Ok=1"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  790,
+          "Pos.y":  620,
+          "Parent":  -1,
+          "#":  28,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dialog(DialogShip,GroupShip)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  630,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  32,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GRun()"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "PlanetCur",
+          "Pos.x":  400,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  2,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  50,
+          "Dialog":  -1        
+        },
+        {
+          "Type":  "TPlanet",
+          "Name":  "PlanetOther",
+          "Pos.x":  560,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  4,
+          "Race":  63,
+          "Owner":  63,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  30,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  3,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "StarCur",
+          "Pos.x":  400,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  0,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        },
+        {
+          "Type":  "TStar",
+          "Name":  "StarOther",
+          "Pos.x":  560,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  1,
+          "Constellation":  0,
+          "Priority":  1,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  8,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EndState"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  520,
+          "Pos.y":  620,
+          "Parent":  -1,
+          "#":  18,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "(vEnd+3)<=CurTurn()"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  670,
+          "Pos.y":  620,
+          "Parent":  -1,
+          "#":  22,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInStar(Player(),StarCur)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  700,
+          "Pos.y":  620,
+          "Parent":  -1,
+          "#":  23,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInNormalSpace(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  620,
+          "Parent":  -1,
+          "#":  24,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!MS_AboutRachehan2_Ok"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  620,
+          "Parent":  -1,
+          "#":  27,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dist(CurShip,Player())<3000"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  620,
+          "Parent":  -1,
+          "#":  29,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "(vEnd+2)==CurTurn()"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  430,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  30,
+          "Total.Lines":  1,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "GRunFrom==1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  31,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!MS_AboutRachehan2_Ok"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  820,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  33,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!MS_AboutRachehan2_Ok"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  34,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipStatistic(Player(),3)>0/*5*/"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  530,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  35,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "MS_AboutRachehan_Ok"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "ShipJump",
+          "Pos.x":  560,
+          "Pos.y":  480,
+          "Parent":  -1,
+          "#":  6,
+          "Move":  3,
+          "MoveObj":  0,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "ShipLanding",
+          "Pos.x":  560,
+          "Pos.y":  580,
+          "Parent":  -1,
+          "#":  7,
+          "Move":  4,
+          "MoveObj":  2,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "DialogShip",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "vEnd",
+          "Pos.x":  430,
+          "Pos.y":  510,
+          "Parent":  -1,
+          "#":  20,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "MS_AboutRachehan2_Ok",
+          "Pos.x":  490,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  25,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  true        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TStarLink",
+      "Begin":  1,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  false,
+      "DistMin":  0,
+      "DistMax":  20,
+      "Hole":  false    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  2,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  4,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  4,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  6,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  8,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  7,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  11,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  12,
+      "End":  13,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  13,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  15,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  15,
+      "End":  16,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  16,
+      "End":  17,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  18,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  18,
+      "End":  19,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  21,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  22,
+      "End":  23,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  23,
+      "End":  24,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  26,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  24,
+      "End":  27,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  27,
+      "End":  28,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  29,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
+      "End":  22,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  10,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  34,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  35,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  35,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "Rect.Text":  
+  [
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  312,
+      "Rect.Top":  125,
+      "Rect.Right":  954,
+      "Rect.Bottom":  157,
+      "FStyle":  0,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  0,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "",
+      "Color":  16777215,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  8,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "0",
+      "String":  "Приветствуем, тебя <PlayerFull>. Мы только что вышли из подпространства, где имели встречу с космическими пиратами. Наш корабль сильно поврежден и мы обречены."    
+    },
+    {
+      "#":  "1",
+      "String":  "Мы не просим помощи. У нас на борту перебежчик от подпространственных пиратов с важной информацией. Он хочет сделать заявление!"    
+    },
+    {
+      "#":  "2",
+      "String":  "Слушай, <PlayerFull>! Граждане Галактики! Я знаю, откуда взялась Мапхелла! Это Рачехан притащил ее сюда! Когда нас раздолбали в том бою, любой на его месте лег бы на дно, тем паче что награбили уже более чем достаточно. Но только не Рачехан! Ему все было мало! Он снова засел за эти гаальские архивы и вычитал там про первую войну с клисанами. Там были в основном технические данные, а про войну очень мало. Он не понял, чем там все кончилось, понял только, что гаальцам как-то удалось победить, и решил, что ему это тоже по силам! Он думал, что это беспроигрышный план - либо он захватит Мапхеллу и получит ее супероружие, либо, в худшем случае, заманит ее в наш космос, и тогда у военных флотов появится дело поважнее, чем гоняться за нами..."    
+    },
+    {
+      "#":  "3",
+      "String":  "Мы ушли в соседний рукав и искали Мапхеллу несколько лет. А когда нашли, еле унесли ноги! Уже в нашем рукаве мы несколько раз прыгали в гиперпространство и обратно и только так оторвались. Но клисаны пришли в наш мир, и теперь могут погибнуть все! А Рачехан говорит \"Что сделано, то сделано, попробуем же извлечь из этого выгоду!\" Я хочу всем рассказать о его планах, пусть все узнают, кто виновник этой войны!"    
+    },
+    {
+      "#":  "4",
+      "String":  "Я очень сожалею, сам порой от них страдаю. Может, нужна моя помощь?"    
+    },
+    {
+      "#":  "5",
+      "String":  "Пусть говорит. Надеюсь, его информация, будет полезной."    
+    },
+    {
+      "#":  "6",
+      "String":  "Так что конкретно произошло?"    
+    },
+    {
+      "#":  "7",
+      "String":  "Ага! Теперь понятно, откуда пришли клисаны. Спасибо вам за информацию, и постарайтесь дотянуть до ближайшего космопорта!"    
+    }  
+  ]
+}

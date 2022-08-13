@@ -1,0 +1,918 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  -118,
+  "ViewPos.y":  30,
+  "ScriptName":  "Script03_2",
+  "ScriptFileOut":  "C:\\dab\\Prog\\Delphi\\Rangers\\DATA\\Script\\Script03_2.scr",
+  "ScriptTextOut":  "C:\\dab\\Prog\\Delphi\\Rangers\\CFG\\Rus\\Script\\Script03_2.txt",
+  "GraphPoint.Count":  35,
+  "GraphLink.Count":  34,
+  "GraphRectText.Count":  3,
+  "Variables.Count":  1,
+  "Stars.Count":  1,
+  "Planets.Count":  1,
+  "Ships.Count":  1,
+  "States.Count":  2,
+  "Groups.Count":  2,
+  "Places.Count":  0,
+  "Items.Count":  0,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  1,
+  "DialogMessages.Count":  5,
+  "DialogAnswers.Count":  6,
+  "Operations.Count":  6,
+  "Statements.Count":  9,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  860,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  14,
+          "Msg":  "",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  " ",
+          "Pos.x":  660,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  15,
+          "Msg":  "Не понял… В чем собственно проблема?",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  520,
+          "Parent":  -1,
+          "#":  16,
+          "Msg":  "Я уже наслышан о тебе, мерзавец. Сейчас я избавлю от тебя эту галактику.",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  520,
+          "Parent":  -1,
+          "#":  18,
+          "Msg":  "Прошу, пощади, от меня никто никогда не узнает ни о каких Киттонах, ни о Красном Черепе.",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  690,
+          "Pos.y":  520,
+          "Parent":  -1,
+          "#":  19,
+          "Msg":  "А может, это ты последуешь за ними?",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  650,
+          "Pos.y":  610,
+          "Parent":  -1,
+          "#":  23,
+          "Msg":  "",
+          "AMsg.Num":  "5"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  700,
+          "Pos.y":  390,
+          "Parent":  -1,
+          "#":  9,
+          "Msg":  "Я Красный Череп!!! Готовься к смерти, слабак!",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  860,
+          "Pos.y":  390,
+          "Parent":  -1,
+          "#":  13,
+          "Msg":  "Ты знаешь слишком много, <Name(Player())>, и должен умереть. Я, Красный Череп, всегда убираю за собой.",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  660,
+          "Pos.y":  480,
+          "Parent":  -1,
+          "#":  17,
+          "Msg":  "Когда-то я имел удовольствие расправиться с семьей Киттонов, которые задолжали мне крупные бабки. Сам Киттон почти достал меня; хорошо, я избавился от него пару дней назад. То же я сделал и с ищейкой, которую он нанял, чтобы найти меня. Киттон всегда был идиотом. Сейчас ты последуешь за ними, и все из-за своих длинных ушей.",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  20,
+          "Msg":  "Наивный, наивный <Name(Player())>! Я успокоюсь, но только когда твоя черепушка будет плавать в открытом космосе.\r\n",
+          "DMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  690,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  21,
+          "Msg":  "Вот-так на, малыш <Name(Player())> вздумал показать зубки! Сейчас мы проверим, кто кого.",
+          "DMsg.Num":  "4"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "dRedSkullTalk",
+          "Pos.x":  790,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  7        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "PlayerGroup",
+          "Pos.x":  240,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  3,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "RedSkull",
+          "Pos.x":  400,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  5,
+          "Owner":  9,
+          "Group.Type":  9,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  1,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "1.89999997615814",
+          "StrengthMax":  "2.20000004768372",
+          "Ruins":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  400,
+          "Pos.y":  540,
+          "Parent":  -1,
+          "#":  8,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOut(CurShip)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  22,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vRedSkullTalkNum=2"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  40,
+          "Pos.y":  450,
+          "Parent":  -1,
+          "#":  25,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOut(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -220,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  27,
+          "Total.Lines":  1,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "SetName(GroupToShip(RedSkull),\"Красный череп\")"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  30,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GRun()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  510,
+          "Pos.y":  430,
+          "Parent":  -1,
+          "#":  33,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ChangeGlobalRelationsShips(Player(),CurShip,0,0,0,0)"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "Planet1",
+          "Pos.x":  320,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  1,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  2,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "Star1",
+          "Pos.x":  300,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  0,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  true,
+          "NoComeKling":  true        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  700,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  11,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vRedSkullTalkNum==1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  860,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  12,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vRedSkullTalkNum==2"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  40,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  24,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!CountIn(RedSkull)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  400,
+          "Pos.y":  510,
+          "Parent":  -1,
+          "#":  26,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ShipInStar(Player(),Star1)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  380,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  28,
+          "Total.Lines":  1,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "GRunFrom==3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  430,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  29,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "RedSkull_Star==Id(GRunStar)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  31,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "RedSkull_PlayerIs==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  530,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  32,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!GCntRun(GScriptName)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  460,
+          "Pos.y":  430,
+          "Parent":  -1,
+          "#":  34,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "PlayerState",
+          "Pos.x":  240,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  4,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "StateNew",
+          "Pos.x":  400,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  6,
+          "Move":  2,
+          "MoveObj":  3,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  3            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "dRedSkullTalk",
+          "OnActCode":  "dRedSkullTalk",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "vRedSkullTalkNum",
+          "Pos.x":  -220,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  10,
+          "Var.Type":  "Int",
+          "Init":  "1",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  1,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  2,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  4,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  6,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  11,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  9,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  12,
+      "End":  13,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  13,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  15,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  16,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  15,
+      "End":  17,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  17,
+      "End":  18,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  17,
+      "End":  19,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  18,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  21,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  18,
+      "End":  22,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  22,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  16,
+      "End":  22,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  16,
+      "End":  21,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  21,
+      "End":  23,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  20,
+      "End":  23,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  24,
+      "End":  25,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGroupLink",
+      "Begin":  5,
+      "End":  3,
+      "Nom":  0,
+      "Arrow":  true,
+      "Rel1":  0,
+      "Rel2":  2,
+      "WarWeightMin":  "0",
+      "WarWeightMax":  "1000"    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  26,
+      "End":  8,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  26,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  28,
+      "End":  29,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  34,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "Rect.Text":  
+  [
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  -236,
+      "Rect.Top":  204,
+      "Rect.Right":  21,
+      "Rect.Bottom":  296,
+      "FStyle":  0,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  0,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "Номер разговора с красным черепом",
+      "Color":  16777215,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  241,
+      "Rect.Top":  70,
+      "Rect.Right":  885,
+      "Rect.Bottom":  147,
+      "FStyle":  0,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  0,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "Скрипт выполняется в той же системе, что и Sript03, так как является одним из\r\nвариантов развития этого скрипта.\r\nСоздается скрипт при повторном влете в систему",
+      "Color":  16777215,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  -237,
+      "Rect.Top":  79,
+      "Rect.Right":  22,
+      "Rect.Bottom":  147,
+      "FStyle":  0,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  0,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "Операторы инциализации",
+      "Color":  16777215,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  10,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "0",
+      "String":  "Красный череп"    
+    },
+    {
+      "#":  "1",
+      "String":  "Я Красный Череп!!! Готовься к смерти, слабак!"    
+    },
+    {
+      "#":  "2",
+      "String":  "Ты знаешь слишком много, <PlayerFull>, и должен умереть. Я, Красный Череп, всегда убираю за собой."    
+    },
+    {
+      "#":  "3",
+      "String":  "Когда-то я имел удовольствие расправиться с семьей Киттонов, которые задолжали мне крупные бабки. Сам Киттон почти достал меня; хорошо, я избавился от него пару дней назад. То же я сделал и с ищейкой, которую он нанял, чтобы найти меня. Киттон всегда был идиотом. Сейчас ты последуешь за ними, и все из-за своих длинных ушей."    
+    },
+    {
+      "#":  "4",
+      "String":  "Наивный, наивный <PlayerFull>! Я успокоюсь, но только когда твоя черепушка будет плавать в открытом космосе.<br>"    
+    },
+    {
+      "#":  "5",
+      "String":  "Вот-так на, малыш <PlayerFull> вздумал показать зубки! Сейчас мы проверим, кто кого."    
+    },
+    {
+      "#":  "6",
+      "String":  "Не понял… В чем собственно проблема?"    
+    },
+    {
+      "#":  "7",
+      "String":  "Я уже наслышан о тебе, мерзавец. Сейчас я избавлю от тебя эту галактику."    
+    },
+    {
+      "#":  "8",
+      "String":  "Прошу, пощади, от меня никто никогда не узнает ни о каких Киттонах, ни о Красном Черепе."    
+    },
+    {
+      "#":  "9",
+      "String":  "А может, это ты последуешь за ними?"    
+    }  
+  ]
+}

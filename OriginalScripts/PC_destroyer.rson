@@ -1,0 +1,1988 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  -102,
+  "ViewPos.y":  -57,
+  "ScriptName":  "PC_destroyer",
+  "ScriptFileOut":  "D:\\Mods\\Compiled mods\\OtherMods\\OrigReplace\\DATA\\Script\\PC_destroyer.scr",
+  "ScriptTextOut":  "D:\\Mods\\Compiled mods\\OtherMods\\OrigReplace\\CFG\\Rus\\PC_destroyer.txt",
+  "GraphPoint.Count":  98,
+  "GraphLink.Count":  66,
+  "GraphRectText.Count":  0,
+  "Variables.Count":  23,
+  "Stars.Count":  1,
+  "Planets.Count":  1,
+  "Ships.Count":  1,
+  "States.Count":  1,
+  "Groups.Count":  1,
+  "Places.Count":  0,
+  "Items.Count":  1,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  3,
+  "DialogMessages.Count":  10,
+  "DialogAnswers.Count":  12,
+  "Operations.Count":  18,
+  "Statements.Count":  26,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  28,
+          "Msg":  "Что мне с ним делать?",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  710,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  30,
+          "Msg":  "Да, у меня есть достаточное количество нодов",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  770,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  32,
+          "Msg":  "Жду не дождусь!",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  730,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  34,
+          "Msg":  "Хорошо, я подумаю.",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  690,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  36,
+          "Msg":  "Нет, сейчас у меня нет такого количества нодов",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  700,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  41,
+          "Msg":  "Нет, спасибо, обойдусь",
+          "AMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  710,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  42,
+          "Msg":  "Спасибо, очень жаль...",
+          "AMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  710,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  53,
+          "Msg":  "Спасибо за информацию, запомню.",
+          "AMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  660,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  54,
+          "Msg":  "Да, покажите результаты!",
+          "AMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  55,
+          "Msg":  "Нет, я не заинтересован в покупке",
+          "AMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  740,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  57,
+          "Msg":  "Хорошо, запомню",
+          "AMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  860,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  62,
+          "Msg":  "Спасибо",
+          "AMsg.Num":  "11"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  630,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  27,
+          "Msg":  "Так, <PlayerFull>, что у вас там? Говорите, нашли кристалл на незаселенной планете? Действительно, лет ему столько, что мы даже не можем назвать точное число, все методы анализа дают какие-то зашкаливающие значения.",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  670,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  29,
+          "Msg":  "Мы примерно представляем себе структуру криптоконтейнера, однако, других способов подбора ключа, кроме как методом прямого перебора, реализовать не получится. Лучше всего для реализации подобного метода подходят вычислители, создаваемые на базе доминаторских <clr>нодов<clrEnd>. Поэтому, для расшифровки нам необходимо <nodes_needed> единиц нодов. Вы готовы их предоставить?",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  31,
+          "Msg":  "Отлично, <PlayerFull>, сейчас мы уже формируем вычислительный кластер. Мы оповестим вас о результатах работы в ближайшее время.",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  690,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  33,
+          "Msg":  "Что, <ShipName(Player())>, говорите? Чья тень? Ах, вот оно что, вы про старинный корпус... Знаете, боюсь, у меня для вас плохие новости. Судя по нашей базе данных, всю работу проводили наши коллеги с научной базы <base_name>, а эта станция была уничтожена. К сожалению, они не успели выгрузить разработки в сеть, поэтому данная технология снова утеряна.",
+          "DMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  710,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  35,
+          "Msg":  "В таком случае, мы ждем, пока вы не пополните свой нод-счет на нужную сумму.",
+          "DMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  700,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  43,
+          "Msg":  "<msgStr>",
+          "DMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  44,
+          "Msg":  "Похвальное желание, <ShipName(Player())>. Можем сказать, что вам удалось сделать одно из самых сенсационных научных открытий всех времен. Как оказалось, задолго до существования любой из известных нам форм жизни, в космосе уже вовсю летали корабли! А ваш кристалл содержал подробные чертежи и инструкции по изготовлению одной из этих древностей. Оригинальное его название не имеет точного аналога в современном языке, поэтому мы окрестили его \"Тень империи\". Судя по подписям к чертежам, его конструктора причисляли себя к какому-то сообществу, называвшему себя Галактической Империей. По проекту это огромный корабль, рассчитанный на ведение боя с аналогичными гигантами противника. Один только экипаж по нормативу составляет более 2 000 человек! Однако, наши последние разработки в области автоматизации и миниатюризации позволили нам переработать проект для использования всего-навсего одним рейнджером. Разумеется, в изготовлении подобный эксклюзив будет недешев, но зато он в состоянии предложить вам несколько по-настоящему уникальных возможностей. Хотите посмотреть?",
+          "DMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  690,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  45,
+          "Msg":  "Что, <ShipName(Player())>, говорите? Чья тень? Ах, вот оно что, вы про старинный корпус... Знаете, мы этим не занимались, ничем помочь не можем. Судя по нашей базе данных, всю работу проводили наши коллеги с научной базы <base_name> в системе <Name(ShipStar(IdToShip(base_id)))>. Вам следует обратиться к ним.",
+          "DMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  720,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  58,
+          "Msg":  "Ну что же, <ShipName(Player())>, дело ваше. Мы сохраним наработки, поэтому, если возникнет необходимость, вы всегда сможете обратиться к нам позже.",
+          "DMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  840,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  61,
+          "Msg":  "Купленный вами корпус уже доставлен на склад. Приятных полетов!",
+          "DMsg.Num":  "9"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "DialogSB1",
+          "Pos.x":  550,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  23        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "DialogSB2",
+          "Pos.x":  550,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  24        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "ChosingVariant",
+          "Pos.x":  800,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  68        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "GroupNew",
+          "Pos.x":  420,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  22,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Items":      
+      [
+        {
+          "Type":  "TItem",
+          "Name":  "AncientCrystal",
+          "Pos.x":  420,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  21,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  450,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  0,
+          "Total.Lines":  1,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "GRun();"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  470,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  1,
+          "Total.Lines":  34,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "br = \"<br>\";",
+              "",
+              "// Количество вариантов размеров ТИ",
+              "variants_cnt = 3;",
+              "",
+              "// Список посещенных планет",
+              "list_visited = newarray(1);",
+              "list_visited[0] = 0;",
+              "",
+              "// Доступные варианты размеров ТИ",
+              "hull_variants = newarray(variants_cnt + 1);",
+              "hull_variants[1] = 1;",
+              "hull_variants[2] = 2;",
+              "hull_variants[3] = 3;",
+              "",
+              "// Размеры корпусов",
+              "hull_sizes = newarray(variants_cnt + 1);",
+              "hull_sizes[1] = 700;",
+              "hull_sizes[2] = 1100;",
+              "hull_sizes[3] = 1500;",
+              "",
+              "// Модификаторы цены (в %)",
+              "hull_costs = newarray(variants_cnt + 1);",
+              "hull_costs[1] = 150;",
+              "hull_costs[2] = 200;",
+              "hull_costs[3] = 250;",
+              "",
+              "nodes_needed = 500;",
+              "num_planets_needed = 30;",
+              "research_time = 20;",
+              "",
+              "function BaseCost() {",
+              "    result = 1000000 * GalaxyTechLevel()/8 / 100;",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  670,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  37,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "hull_available = 0;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  38,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "base_cost = BaseCost();"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  750,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  39,
+          "Total.Lines":  14,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "FreeItem(GetItemFromShip(Player(), FindItemInShip(Player(), AncientCrystal)));",
+              "nodes_get = 0;",
+              "if (RangerBaseNodes(Player()) >= nodes_needed) {",
+              "    RangerBaseNodes(Player(), RangerBaseNodes(Player()) - nodes_needed);",
+              "    nodes_get = nodes_needed;",
+              "}",
+              "if (nodes_get < nodes_needed) {",
+              "    nodes_get = RangerBaseNodes(Player());",
+              "    RangerBaseNodes(Player(), 0);",
+              "}",
+              "GetNodesFromShip(Player(), nodes_needed - nodes_get);",
+              "base_id = Id(GetShipRuins(Player()));",
+              "base_name = ShipName(GetShipRuins(Player()));",
+              "research_start_date = CurTurn();"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  56,
+          "Total.Lines":  3,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "message_research_complete = 0;",
+              "hull_available = variants_cnt;",
+              "research_start_date = 0;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  59,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "variant_chosen = GAnswerData;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  820,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  60,
+          "Total.Lines":  12,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "hull_available = hull_available - 1;",
+              "ShipMoney(Player(), ShipMoney(Player()) - base_cost * hull_costs[hull_variants[variant_chosen]]);",
+              "Sound('Sound.Buy');",
+              "quest_item = CreateHull(2, hull_sizes[hull_variants[variant_chosen]], GalaxyTechLevel(), ShipOwner(GetShipRuins(Player())));",
+              "ItemCost(quest_item, base_cost * hull_costs[hull_variants[variant_chosen]]);",
+              "bonus_num = FindBonusByName(\"Тень Империи\");",
+              "if (bonus_num > -1)",
+              "    SpecialToEquipment(bonus_num, quest_item);",
+              "AddItemToStorage(GetShipRuins(Player()), quest_item);",
+              "CapitalShipStats(quest_item, 1, 1000);",
+              "GetAchievementHULL();",
+              "ArrayDelete(hull_variants, variant_chosen);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  63,
+          "Total.Lines":  5,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "msgStr = '</color>' + \"Перед вами \\\"Тень империи\\\" - настоящая гроза бескрайних просторов космоса, пришедшая к нам с незапамятных времен. Его уникальное оборудование, построенное на использовании особой энергии, вырабатываемой бортовой системой, позволяет открывать черные дыры для прыжка в любую систему по выбору, а также атаковать врагов с помощью беспилотных истребителей. Обладание подобным монстром, конечно, поднимет ваши навыки - <clr>маневренность<clrEnd>, <clr>точность<clrEnd> и <clr>лидерство<clrEnd> вырастут на <clr>2<clrEnd> единицы за счет эффективности прицельного компьютера и просто психологического эффекта от внешнего вида. Кроме того, <clr>броня корпуса<clrEnd> дополнительно укреплена на <clr>4<clrEnd> единицы сверх базового значения. Естественно, бесплатных радостей не бывает, поэтому, использование корабля снизит ваше <clr>обаяние<clrEnd> - на <clr>2<clrEnd> пункта. Правители не любят, когда на орбитах их планет появляется рейнджер, способный, при большом желании, выжечь несколько крупных городов дотла. Корабль доступен в трех вариантах вместимости - выбирайте, какой вам больше подойдет.\";",
+              "sepStr = '-----------------------------------------------';",
+              "for (i = 1; i <= variants_cnt; i = i + 1)",
+              "    if (i <= hull_available)",
+              "        msgStr = msgStr + br + sepStr + br + \"Вместимость <hull_sizes[hull_variants[i]]> единиц за <base_cost * hull_costs[hull_variants[i]]> cr.\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  780,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  67,
+          "Total.Lines":  5,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "InjectAnswer(",
+              "    'ChosingVariant'",
+              "    , \"Купить корпус \\\"Тень империи\\\" вместимостью <hull_sizes[hull_variants[i]]> единиц за <base_cost * hull_costs[hull_variants[i]]> cr.\"",
+              "    , i",
+              ");"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  76,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "AddDialogInject('DialogSB1', '', \"Исследовать старинный голокристалл\", 1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  77,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "AddDialogInject('DialogSB2', '', \"Я хочу приобрести \\\"Тень империи\\\"\", 1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  78,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "AddDialogInject('DialogSB2', '', \"Так что же там было в кристалле? Не терпится узнать!\", 1);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  87,
+          "Total.Lines":  17,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "// Для теста",
+              "research_time = 20;",
+              "num_planets_needed = 2;",
+              "",
+              "SFT('---------------------------------------------------------------');",
+              "SFT('--- Date: ' + GameDateTxtByTurn(CurTurn()));",
+              "SFT('--- CurTurn: ' + CurTurn());",
+              "SFT('--- planets visited: ' + (ArrayDim(list_visited)-1));",
+              "SFT('--- crystal_created: ' + crystal_created);",
+              "if(research_start_date) SFT('--- research_start_date: ' + research_start_date);",
+              "SFT('--- message_research_complete: ' + message_research_complete);",
+              "if(!crystal_created) SFT('--- num_planets_needed: ' + num_planets_needed);",
+              "SFT('--- crystal in player ship: ' + ItemIn(AncientCrystal, Player()));",
+              "SFT('--- hull_variants: ' + (ArrayDim(hull_variants)-1));",
+              "SFT('--- hull_available: ' + hull_available);",
+              "SFT('--- br: (' + br + ')');",
+              "//SFT('--- : ' + 0);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  88,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ArrayAdd(list_visited, Id(GetShipPlanet(Player())));"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  89,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "quest_item = CreateQuestItem('Usl_AncientCrystal');",
+              "AddItemToPlanet(GetShipPlanet(Player()), quest_item);",
+              "LinkItemToScript(quest_item, AncientCrystal);",
+              "crystal_created = 1;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  90,
+          "Total.Lines":  6,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "research_start_date = 0;",
+              "RangerBaseNodes(Player(), RangerBaseNodes(Player()) + nodes_needed / 2);",
+              "Ether(",
+              "    0, '',",
+              "    \"<ShipName(Player())>, к сожалению, научная база <base_name> была уничтожена в ходе исследований голографического кристалла. Теперь никто не сможет узнать, какие загадки он таил в себе. В качестве компенсации ассоциация рейнджеров начисляет вам <nodes_needed / 2> нодов для частичного возмещения затрат на исследования.\"",
+              ");"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  91,
+          "Total.Lines":  5,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "message_research_complete = 1;",
+              "Ether(",
+              "    0, '',",
+              "    \"<ShipName(Player())>, ученые с научной базы <base_name> закончили расшифровку голографического кристалла и готовы рассказать вам о своем открытии! Ждем вас на базе <base_name> в ближайшее время!\"",
+              ");"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "PlanetNew",
+          "Pos.x":  420,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  20,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  420,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  25,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "StarNew",
+          "Pos.x":  420,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  19,
+          "Constellation":  1,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  690,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  40,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GetNodesFromShip(Player()) + RangerBaseNodes(Player()) >= nodes_needed"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  46,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!IdToShip(base_id)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  47,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "IdToShip(base_id)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  48,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Id(GetShipRuins(Player())) == base_id"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  630,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  49,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Id(GetShipRuins(Player())) != base_id"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  50,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "message_research_complete"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  740,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  51,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ArrayDim(hull_variants) > i"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  52,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player()) >= base_cost * hull_costs[hull_variants[i]]"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  660,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  69,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "hull_available"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  570,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  71,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "ShipType(GetShipRuins(Player())) == 'SB'"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  72,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "ItemIn(AncientCrystal, Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  550,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  73,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "GetShipRuins(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  74,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "message_research_complete && (Id(GetShipRuins(Player())) == base_id)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  75,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "hull_available"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  420,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  79,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  520,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  80,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GetShipPlanet(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  540,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  81,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!crystal_created"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  82,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "PlanetOwner(GetShipPlanet(Player())) == None"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  83,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ArrayFind(list_visited, Id(GetShipPlanet(Player()))) == -1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  84,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ArrayDim(list_visited) > num_planets_needed"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  85,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "(Rnd(1, 1000) + (1000 / num_planets_needed) * ArrayDim(list_visited)) > 2000"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  670,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  86,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "research_start_date"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  690,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  92,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "CurTurn() > research_start_date + research_time"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  710,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  93,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!message_research_complete"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  690,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  94,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "IdToShip(base_id) == 0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  720,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  97,
+          "Total.Lines":  1,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "0){}for(i = 1; i <= variants_cnt; i = i + 1"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "StateNew",
+          "Pos.x":  420,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  26,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "base_name",
+          "Pos.x":  110,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  2,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "list_visited",
+          "Pos.x":  110,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  3,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "crystal_created",
+          "Pos.x":  220,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  4,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "quest_item",
+          "Pos.x":  110,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  5,
+          "Var.Type":  "Dword",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "nodes_needed",
+          "Pos.x":  220,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  6,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "nodes_get",
+          "Pos.x":  110,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  7,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "research_start_date",
+          "Pos.x":  220,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  8,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "base_id",
+          "Pos.x":  110,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  9,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "message_research_complete",
+          "Pos.x":  220,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  10,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "hull_available",
+          "Pos.x":  220,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  11,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "hull_sizes",
+          "Pos.x":  220,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  12,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "hull_costs",
+          "Pos.x":  220,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  13,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "hull_variants",
+          "Pos.x":  220,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  14,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "base_cost",
+          "Pos.x":  110,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  15,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "variant_chosen",
+          "Pos.x":  110,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  16,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "bonus_num",
+          "Pos.x":  110,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  17,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "num_planets_needed",
+          "Pos.x":  220,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  18,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "msgStr",
+          "Pos.x":  110,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  64,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "sepStr",
+          "Pos.x":  110,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  65,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "i",
+          "Pos.x":  110,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  66,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "research_time",
+          "Pos.x":  220,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  70,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "variants_cnt",
+          "Pos.x":  220,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  95,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "br",
+          "Pos.x":  110,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  96,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  20,
+      "End":  19,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  25,
+      "End":  19,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  22,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  22,
+      "End":  26,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  23,
+      "End":  27,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  27,
+      "End":  28,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  28,
+      "End":  29,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
+      "End":  40,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
+      "End":  36,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  36,
+      "End":  35,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  35,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  24,
+      "End":  49,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  49,
+      "End":  46,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  49,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  45,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  24,
+      "End":  48,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  48,
+      "End":  38,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  50,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  45,
+      "End":  53,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  44,
+      "End":  54,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  44,
+      "End":  55,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  58,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  58,
+      "End":  57,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  59,
+      "End":  60,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  60,
+      "End":  61,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  61,
+      "End":  62,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  63,
+      "End":  43,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  67,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  68,
+      "End":  59,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  69,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  69,
+      "End":  63,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  50,
+      "End":  56,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  56,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  54,
+      "End":  63,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  73,
+      "End":  71,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  72,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  75,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  72,
+      "End":  76,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  74,
+      "End":  78,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  75,
+      "End":  77,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  79,
+      "End":  87,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  80,
+      "End":  81,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  81,
+      "End":  82,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  82,
+      "End":  83,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  83,
+      "End":  88,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  83,
+      "End":  84,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  84,
+      "End":  85,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  85,
+      "End":  89,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  86,
+      "End":  92,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  92,
+      "End":  93,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  93,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  86,
+      "End":  94,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  94,
+      "End":  90,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  51,
+      "End":  52,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  97,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  97,
+      "End":  51,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  55,
+      "End":  58,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  32,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "39",
+      "String":  "Так, <PlayerFull>, что у вас там? Говорите, нашли кристалл на незаселенной планете? Действительно, лет ему столько, что мы даже не можем назвать точное число, все методы анализа дают какие-то зашкаливающие значения."    
+    },
+    {
+      "#":  "40",
+      "String":  "Мы примерно представляем себе структуру криптоконтейнера, однако, других способов подбора ключа, кроме как методом прямого перебора, реализовать не получится. Лучше всего для реализации подобного метода подходят вычислители, создаваемые на базе доминаторских <clr>нодов<clrEnd>. Поэтому, для расшифровки нам необходимо <0> единиц нодов. Вы готовы их предоставить?"    
+    },
+    {
+      "#":  "41",
+      "String":  "Отлично, <PlayerFull>, сейчас мы уже формируем вычислительный кластер. Мы оповестим вас о результатах работы в ближайшее время."    
+    },
+    {
+      "#":  "42",
+      "String":  "Что, <0>, говорите? Чья тень? Ах, вот оно что, вы про старинный корпус... Знаете, боюсь, у меня для вас плохие новости. Судя по нашей базе данных, всю работу проводили наши коллеги с научной базы <1>, а эта станция была уничтожена. К сожалению, они не успели выгрузить разработки в сеть, поэтому данная технология снова утеряна."    
+    },
+    {
+      "#":  "43",
+      "String":  "В таком случае, мы ждем, пока вы не пополните свой нод-счет на нужную сумму."    
+    },
+    {
+      "#":  "44",
+      "String":  "Купить корпус \"Тень империи\" вместимостью <0> единиц за <1> cr."    
+    },
+    {
+      "#":  "45",
+      "String":  "Похвальное желание, <0>. Можем сказать, что вам удалось сделать одно из самых сенсационных научных открытий всех времен. Как оказалось, задолго до существования любой из известных нам форм жизни, в космосе уже вовсю летали корабли! А ваш кристалл содержал подробные чертежи и инструкции по изготовлению одной из этих древностей. Оригинальное его название не имеет точного аналога в современном языке, поэтому мы окрестили его \"Тень империи\". Судя по подписям к чертежам, его конструктора причисляли себя к какому-то сообществу, называвшему себя Галактической Империей. По проекту это огромный корабль, рассчитанный на ведение боя с аналогичными гигантами противника. Один только экипаж по нормативу составляет более 2 000 человек! Однако, наши последние разработки в области автоматизации и миниатюризации позволили нам переработать проект для использования всего-навсего одним рейнджером. Разумеется, в изготовлении подобный эксклюзив будет недешев, но зато он в состоянии предложить вам несколько по-настоящему уникальных возможностей. Хотите посмотреть?"    
+    },
+    {
+      "#":  "46",
+      "String":  "Что, <0>, говорите? Чья тень? Ах, вот оно что, вы про старинный корпус... Знаете, мы этим не занимались, ничем помочь не можем. Судя по нашей базе данных, всю работу проводили наши коллеги с научной базы <1> в системе <2>. Вам следует обратиться к ним."    
+    },
+    {
+      "#":  "47",
+      "String":  "Ну что же, <0>, дело ваше. Мы сохраним наработки, поэтому, если возникнет необходимость, вы всегда сможете обратиться к нам позже."    
+    },
+    {
+      "#":  "48",
+      "String":  "Купленный вами корпус уже доставлен на склад. Приятных полетов!"    
+    },
+    {
+      "#":  "49",
+      "String":  "Что мне с ним делать?"    
+    },
+    {
+      "#":  "50",
+      "String":  "Да, у меня есть достаточное количество нодов"    
+    },
+    {
+      "#":  "51",
+      "String":  "Жду не дождусь!"    
+    },
+    {
+      "#":  "52",
+      "String":  "Хорошо, я подумаю."    
+    },
+    {
+      "#":  "53",
+      "String":  "Нет, сейчас у меня нет такого количества нодов"    
+    },
+    {
+      "#":  "54",
+      "String":  "Нет, спасибо, обойдусь"    
+    },
+    {
+      "#":  "55",
+      "String":  "Спасибо, очень жаль..."    
+    },
+    {
+      "#":  "56",
+      "String":  "Спасибо за информацию, запомню."    
+    },
+    {
+      "#":  "57",
+      "String":  "Да, покажите результаты!"    
+    },
+    {
+      "#":  "58",
+      "String":  "Нет, я не заинтересован в покупке"    
+    },
+    {
+      "#":  "59",
+      "String":  "Хорошо, запомню"    
+    },
+    {
+      "#":  "60",
+      "String":  "Спасибо"    
+    },
+    {
+      "#":  "62",
+      "String":  "Я хочу приобрести \"Тень империи\""    
+    },
+    {
+      "#":  "63",
+      "String":  "Так что же там было в кристалле? Не терпится узнать!"    
+    },
+    {
+      "#":  "64",
+      "String":  "Исследовать старинный голокристалл"    
+    },
+    {
+      "#":  "65",
+      "String":  "Перед вами \"Тень империи\" - настоящая гроза бескрайних просторов космоса, пришедшая к нам с незапамятных времен. Его уникальное оборудование, построенное на использовании особой энергии, вырабатываемой бортовой системой, позволяет открывать черные дыры для прыжка в любую систему по выбору, а также атаковать врагов с помощью беспилотных истребителей. Обладание подобным монстром, конечно, поднимет ваши навыки - <clr>маневренность<clrEnd>, <clr>точность<clrEnd> и <clr>лидерство<clrEnd> вырастут на <clr>2<clrEnd> единицы за счет эффективности прицельного компьютера и просто психологического эффекта от внешнего вида. Кроме того, <clr>броня корпуса<clrEnd> дополнительно укреплена на <clr>4<clrEnd> единицы сверх базового значения. Естественно, бесплатных радостей не бывает, поэтому, использование корабля снизит ваше <clr>обаяние<clrEnd> - на <clr>2<clrEnd> пункта. Правители не любят, когда на орбитах их планет появляется рейнджер, способный, при большом желании, выжечь несколько крупных городов дотла. Корабль доступен в трех вариантах вместимости - выбирайте, какой вам больше подойдет."    
+    },
+    {
+      "#":  "66",
+      "String":  "Тень Империи"    
+    },
+    {
+      "#":  "71",
+      "String":  "<0>"    
+    },
+    {
+      "#":  "76",
+      "String":  "Вместимость <0> единиц за <1> cr."    
+    },
+    {
+      "#":  "77",
+      "String":  "<br>"    
+    },
+    {
+      "#":  "78",
+      "String":  "<0>, к сожалению, научная база <1> была уничтожена в ходе исследований голографического кристалла. Теперь никто не сможет узнать, какие загадки он таил в себе. В качестве компенсации ассоциация рейнджеров начисляет вам <2> нодов для частичного возмещения затрат на исследования."    
+    },
+    {
+      "#":  "79",
+      "String":  "<0>, ученые с научной базы <1> закончили расшифровку голографического кристалла и готовы рассказать вам о своем открытии! Ждем вас на базе <2> в ближайшее время!"    
+    }  
+  ]
+}

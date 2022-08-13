@@ -1,0 +1,2657 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  162,
+  "ViewPos.y":  331,
+  "ScriptName":  "ill",
+  "ScriptFileOut":  "C:\\dab\\Prog\\Delphi\\Rangers\\DATA\\Script\\ILL.SCR",
+  "ScriptTextOut":  "C:\\dab\\Prog\\Delphi\\Rangers\\CFG\\Rus\\Script\\ill.txt",
+  "GraphPoint.Count":  120,
+  "GraphLink.Count":  121,
+  "GraphRectText.Count":  2,
+  "Variables.Count":  5,
+  "Stars.Count":  2,
+  "Planets.Count":  2,
+  "Ships.Count":  1,
+  "States.Count":  3,
+  "Groups.Count":  1,
+  "Places.Count":  2,
+  "Items.Count":  1,
+  "Ethers.Count":  5,
+  "Dialogs.Count":  2,
+  "DialogMessages.Count":  15,
+  "DialogAnswers.Count":  14,
+  "Operations.Count":  26,
+  "Statements.Count":  41,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  960,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  13,
+          "Msg":  "Да, в чем дело ?",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "cancel",
+          "Pos.x":  990,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  14,
+          "Msg":  "Обратитесь к кому-нибудь другому, у меня своих дел полно.",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1200,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  17,
+          "Msg":  "",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "ok",
+          "Pos.x":  1160,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  19,
+          "Msg":  "Хорошо, я сделаю, что смогу.",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  980,
+          "Pos.y":  810,
+          "Parent":  -1,
+          "#":  32,
+          "Msg":  "",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "yes",
+          "Pos.x":  1140,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  42,
+          "Msg":  "Да, конечно. Держите!",
+          "AMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "yes, no",
+          "Pos.x":  1140,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  45,
+          "Msg":  "У меня есть лекарства, только не с этой планеты. Они вам подойдут?",
+          "AMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "no",
+          "Pos.x":  1130,
+          "Pos.y":  680,
+          "Parent":  -1,
+          "#":  47,
+          "Msg":  "К сожалению, я ничем не могу вам помочь. Честно говоря, я был очень занят.",
+          "AMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1340,
+          "Pos.y":  680,
+          "Parent":  -1,
+          "#":  49,
+          "Msg":  "",
+          "AMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1370,
+          "Pos.y":  570,
+          "Parent":  -1,
+          "#":  53,
+          "Msg":  "",
+          "AMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  960,
+          "Pos.y":  980,
+          "Parent":  -1,
+          "#":  69,
+          "Msg":  "",
+          "AMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1060,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  87,
+          "Msg":  "Продолжайте",
+          "AMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  670,
+          "Pos.y":  800,
+          "Parent":  -1,
+          "#":  94,
+          "Msg":  "",
+          "AMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  530,
+          "Pos.y":  800,
+          "Parent":  -1,
+          "#":  104,
+          "Msg":  "",
+          "AMsg.Num":  "13"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "FirstDialog",
+          "Pos.x":  870,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  12,
+          "Msg":  "Мы обращаемся к вам с просьбой о помощи!",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1070,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  16,
+          "Msg":  "Очень жаль, видно, нам суждено погибнуть в этом чертовом космосе...",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1010,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  18,
+          "Msg":  "Спасибо вам, возможно, у нас еще есть надежда, если такой гуманист, как вы, придете нам на помощь. На нашем борту разразилась ужасная эпидемия, и никто не знает, что это за болезнь... все пассажиры и экипаж заражены, и несколько уже скончались! Эта болезнь неизвестна нашей науке, и планета нашей приписки <Name(Planet1)> отказала нам в посадке. Мы были бы обречены, но один из наших пассажиров, гаалец и врач по профессии, сообщил, что симптомы этой болезни ему знакомы, и на одной из гаальских планет есть лекарство от нее.",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1240,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  20,
+          "Msg":  "Только поторопитесь, мы протянем не больше <vMaxDay> дней!",
+          "DMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "Wait",
+          "Pos.x":  860,
+          "Pos.y":  760,
+          "Parent":  -1,
+          "#":  31,
+          "Msg":  "Быстрей лети за медикаментами, мы будем ждать",
+          "DMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  970,
+          "Pos.y":  730,
+          "Parent":  -1,
+          "#":  38,
+          "Msg":  "Привез? Подлети поближе.",
+          "DMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "ok ?",
+          "Pos.x":  970,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  40,
+          "Msg":  "Наконец-то! Скончались еще несколько пассажиров и второй пилот. Похоже, у нас совсем не осталось времени! Вы привезли медикаменты с планеты <Name(Planet2)> ?\r\n",
+          "DMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1240,
+          "Pos.y":  680,
+          "Parent":  -1,
+          "#":  48,
+          "Msg":  "Понятно. Вы просто не хотели помочь умирающим, вы хотите сказать? А-а, никакой надежды уже нет, нам остается только задействовать механизм самоуничтожения. Передавайте привет нашим родным...",
+          "DMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1240,
+          "Pos.y":  520,
+          "Parent":  -1,
+          "#":  52,
+          "Msg":  "Щас попробуем",
+          "DMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1250,
+          "Pos.y":  620,
+          "Parent":  -1,
+          "#":  54,
+          "Msg":  "Черт, скорее всего, это абсолютно бесполезно. Ну, давайте, мы хотя бы попробуем.",
+          "DMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  870,
+          "Pos.y":  930,
+          "Parent":  -1,
+          "#":  65,
+          "Msg":  "Необычайное лекарство! Кажется, эпидемия остановилась, и симптомы пошли на спад. Самое главное - нам дают разрешение на посадку! <Name(Player())>, пассажиры нашего скромного лайнера в знак благодарности сложились и переводят на ваш счет сумму в <GalaxyMoney(2)> cr. Огромная вам благодарность! Космосу нужно больше таких героев, как вы.",
+          "DMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  870,
+          "Pos.y":  1040,
+          "Parent":  -1,
+          "#":  70,
+          "Msg":  "Нет, это не помогает. Где вы купили это? Здесь такая редкая эпидемия, что нужны специальные лекарства! А-а, никакой надежды уже нет, нам остается только задействовать механизм самоуничтожения. Передавайте привет нашим родным...",
+          "DMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1110,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  88,
+          "Msg":  "Это планета <Name(Planet2)> в системе <Name(Star2)>. Если бы у нас было достаточно топлива, мы могли бы слетать туда и сами, но наше топливо было рассчитано точно до этой планеты. Теперь если никто не поможет нам, мы погибнем! <Name(Player())>, слетайте туда и привезите нам хотя бы одну единицу лекарства, небольшое вознаграждение и благодарность всех пассажиров вам обеспечены.",
+          "DMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  670,
+          "Pos.y":  720,
+          "Parent":  -1,
+          "#":  92,
+          "Msg":  "Мы обречены",
+          "DMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "DialogMsgNew",
+          "Pos.x":  530,
+          "Pos.y":  720,
+          "Parent":  -1,
+          "#":  103,
+          "Msg":  "Убирайся подальше, мы сейчас взорвемся!",
+          "DMsg.Num":  "14"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "dTalk",
+          "Pos.x":  670,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  10        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "dEnd",
+          "Pos.x":  660,
+          "Pos.y":  980,
+          "Parent":  -1,
+          "#":  63        
+        }      
+      ],
+      "Ethers":      
+      [
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  400,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  9,
+          "Ether.Type":  1,
+          "Unique":  "",
+          "Msg":  "<Name(CurShip)><br>\r\nSOS, SOS",
+          "Ship1":  "CurShip",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  380,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  26,
+          "Ether.Type":  1,
+          "Unique":  "C4318BA0-921D-4A7C-9553-1C87F622D32F",
+          "Msg":  "<Name(CurShip)>\r\nМы взрываем свой корабль, чтоб других не заразить. Виновником нашей смерти просим считать рейнджера <ShortName(Player())>, который отказал нам в помощи!",
+          "Ship1":  "CurShip",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  1280,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  113,
+          "Ether.Type":  3,
+          "Unique":  "E3394CE0-4B64-4300-AC59-484317DF4BD4",
+          "Msg":  "Надо привезти медикаменты, купленные на планете <Name(Planet2)> в системе <Name(Star2)> и отдать <Name(GroupToShip(ill))> в системе <Name(Star1)> до <GameDateTxtByTurn(vBegin+vMaxDay)>",
+          "Ship1":  "GroupToShip(ill)",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  1160,
+          "Parent":  -1,
+          "#":  115,
+          "Ether.Type":  5,
+          "Unique":  "E3394CE0-4B64-4300-AC59-484317DF4BD4",
+          "Msg":  "Надо привезти медикаменты, купленные на планете <Name(Planet2)> в системе <Name(Star2)> и отдать <Name(GroupToShip(ill))> в системе <Name(Star1)> до <GameDateTxtByTurn(vBegin+vMaxDay)>",
+          "Ship1":  "GroupToShip(ill)",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  980,
+          "Pos.y":  880,
+          "Parent":  -1,
+          "#":  117,
+          "Ether.Type":  4,
+          "Unique":  "E3394CE0-4B64-4300-AC59-484317DF4BD4",
+          "Msg":  "Надо привезти медикаменты, купленные на планете <Name(Planet2)> в системе <Name(Star2)> и отдать <Name(GroupToShip(ill))> в системе <Name(Star1)> до <GameDateTxtByTurn(vBegin+vMaxDay)>",
+          "Ship1":  "GroupToShip(ill)",
+          "Ship2":  "",
+          "Ship3":  ""        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "ill",
+          "Pos.x":  200,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  4,
+          "Owner":  63,
+          "Group.Type":  113,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  1,
+          "EmptySpace":  50,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  0,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Items":      
+      [
+        {
+          "Type":  "TItem",
+          "Name":  "iGoods",
+          "Pos.x":  300,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  86,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1060,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  15,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vState=1"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1240,
+          "Pos.y":  480,
+          "Parent":  -1,
+          "#":  23,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vState=2"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1240,
+          "Pos.y":  450,
+          "Parent":  -1,
+          "#":  24,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vMaxDay=round(1.3*CountTurn(Player(),Planet2)*2)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1080,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  28,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vBegin=CurTurn()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1240,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  29,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vBegin=CurTurn()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -180,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  37,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vMedOk=1"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1180,
+          "Pos.y":  750,
+          "Parent":  -1,
+          "#":  50,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipDestroy(CurShip)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1020,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  51,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vMaxDay=7"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1220,
+          "Pos.y":  570,
+          "Parent":  -1,
+          "#":  55,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GoodsDrop(Player(),1,1,iGoods)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1260,
+          "Pos.y":  570,
+          "Parent":  -1,
+          "#":  56,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vState=3"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  1070,
+          "Parent":  -1,
+          "#":  68,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOut()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  100,
+          "Pos.y":  920,
+          "Parent":  -1,
+          "#":  72,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipDestroy(CurShip)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  100,
+          "Pos.y":  870,
+          "Parent":  -1,
+          "#":  74,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dialog(dEnd,ill)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  380,
+          "Pos.y":  600,
+          "Parent":  -1,
+          "#":  77,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipDestroy(CurShip)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  420,
+          "Pos.y":  520,
+          "Parent":  -1,
+          "#":  81,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dialog(dTalk,ill)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -100,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  82,
+          "Total.Lines":  1,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "vBegin=CurTurn()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  380,
+          "Pos.y":  370,
+          "Parent":  -1,
+          "#":  84,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipDestroy(CurShip)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1300,
+          "Pos.y":  570,
+          "Parent":  -1,
+          "#":  95,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vBegin=CurTurn()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  660,
+          "Parent":  -1,
+          "#":  97,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipDestroy(CurShip)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  380,
+          "Pos.y":  970,
+          "Parent":  -1,
+          "#":  98,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vBegin=Dialog(dEnd,ill)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  800,
+          "Parent":  -1,
+          "#":  99,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vBegin=0"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  810,
+          "Pos.y":  880,
+          "Parent":  -1,
+          "#":  101,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player(),ShipMoney(Player())+GalaxyMoney(2))"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1100,
+          "Pos.y":  770,
+          "Parent":  -1,
+          "#":  102,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vState=4"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  210,
+          "Pos.y":  -170,
+          "Parent":  -1,
+          "#":  107,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GRun()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  960,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  111,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ill_Run=ill_Run+1"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1000,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  112,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipDestroy(GroupToShip(ill),0)"          
+          ]        
+        }      
+      ],
+      "Places":      
+      [
+        {
+          "Type":  "TPlace",
+          "Name":  "plPlanet",
+          "Pos.x":  300,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  6,
+          "Place.Type":  1,
+          "Angle":  "0",
+          "Dist":  "0.5",
+          "Radius":  400,
+          "Obj1":  3,
+          "Obj2":  -1        
+        },
+        {
+          "Type":  "TPlace",
+          "Name":  "plItem",
+          "Pos.x":  300,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  58,
+          "Place.Type":  4,
+          "Angle":  "0",
+          "Dist":  "0.5",
+          "Radius":  50,
+          "Obj1":  86,
+          "Obj2":  -1        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "Planet2",
+          "Pos.x":  420,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  2,
+          "Race":  33,
+          "Owner":  33,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        },
+        {
+          "Type":  "TPlanet",
+          "Name":  "Planet1",
+          "Pos.x":  200,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  3,
+          "Race":  62,
+          "Owner":  63,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  120,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  22,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "Star1",
+          "Pos.x":  200,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  0,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  true,
+          "NoComeKling":  true        
+        },
+        {
+          "Type":  "TStar",
+          "Name":  "Star2",
+          "Pos.x":  380,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  1,
+          "Constellation":  0,
+          "Priority":  1,
+          "NoKling":  true,
+          "NoComeKling":  true        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  8,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vState==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  11,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vState==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  25,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vState==1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  660,
+          "Parent":  -1,
+          "#":  30,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vState==2"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -300,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  33,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vState==2"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -240,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  34,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInPlanet(Player(),Planet2)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -360,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  36,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vMedOk==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  860,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  39,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vMedOk"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  860,
+          "Pos.y":  640,
+          "Parent":  -1,
+          "#":  41,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "(CurTurn()-vBegin)>=vMaxDay/2"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1060,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  43,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vMedOk"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1060,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  44,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!vMedOk"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1100,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  46,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GoodsCount(Player(),1)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  140,
+          "Pos.y":  700,
+          "Parent":  -1,
+          "#":  59,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GoodsCount(CurShip,1)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  100,
+          "Pos.y":  760,
+          "Parent":  -1,
+          "#":  60,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!vMedOk"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  180,
+          "Pos.y":  760,
+          "Parent":  -1,
+          "#":  61,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vMedOk"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  330,
+          "Pos.y":  970,
+          "Parent":  -1,
+          "#":  62,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInNormalSpace(Player()) && ShipInStar(Player(),Star1)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  920,
+          "Parent":  -1,
+          "#":  64,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vMedOk"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  1020,
+          "Parent":  -1,
+          "#":  67,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EndState"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  780,
+          "Pos.y":  1040,
+          "Parent":  -1,
+          "#":  71,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!vMedOk"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  100,
+          "Pos.y":  820,
+          "Parent":  -1,
+          "#":  73,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInNormalSpace(Player()) && ShipInStar(Player(),Star1)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  600,
+          "Parent":  -1,
+          "#":  75,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vState==1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  340,
+          "Pos.y":  600,
+          "Parent":  -1,
+          "#":  76,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "(CurTurn()-vBegin)>=vMaxDay"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  78,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vState==2"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  310,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  79,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dist(CurShip,Player())<500"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  280,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  80,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInStar(Player(),Star1)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  370,
+          "Parent":  -1,
+          "#":  83,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "(CurTurn()-vBegin)>vMaxDay"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  910,
+          "Pos.y":  600,
+          "Parent":  -1,
+          "#":  85,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dist(CurShip,Player())<500"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  390,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  89,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vMedOk"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  510,
+          "Parent":  -1,
+          "#":  90,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vState==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  230,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  91,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInNormalSpace(CurShip)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  670,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  93,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vState==1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  680,
+          "Parent":  -1,
+          "#":  96,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "(CurTurn()-vBegin)>4"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  270,
+          "Pos.y":  970,
+          "Parent":  -1,
+          "#":  100,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vBegin==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  105,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vState==4"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  160,
+          "Pos.y":  -170,
+          "Parent":  -1,
+          "#":  106,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ill_Run<1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  40,
+          "Pos.y":  -170,
+          "Parent":  -1,
+          "#":  108,
+          "Total.Lines":  1,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "GRunFrom==3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  100,
+          "Pos.y":  -170,
+          "Parent":  -1,
+          "#":  109,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!GAllCntRun(1)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1240,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  114,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1220,
+          "Pos.y":  720,
+          "Parent":  -1,
+          "#":  116,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  380,
+          "Pos.y":  710,
+          "Parent":  -1,
+          "#":  118,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vState==2"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  119,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "CountTurn(Player(),GroupToShip(ill))<5"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "wait",
+          "Pos.x":  140,
+          "Pos.y":  580,
+          "Parent":  -1,
+          "#":  5,
+          "Move":  1,
+          "MoveObj":  6,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "dTalk",
+          "OnActCode":  "dTalk",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "take",
+          "Pos.x":  140,
+          "Pos.y":  650,
+          "Parent":  -1,
+          "#":  57,
+          "Move":  1,
+          "MoveObj":  58,
+          "Attack.Count":  0,
+          "TakeItem":  86,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Landing",
+          "Pos.x":  180,
+          "Pos.y":  940,
+          "Parent":  -1,
+          "#":  66,
+          "Move":  4,
+          "MoveObj":  3,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "vState",
+          "Pos.x":  -240,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  7,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "vMaxDay",
+          "Pos.x":  -240,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  21,
+          "Var.Type":  "Int",
+          "Init":  "9",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "vBegin",
+          "Pos.x":  -240,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  27,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "vMedOk",
+          "Pos.x":  -180,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  35,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "ill_Run",
+          "Pos.x":  40,
+          "Pos.y":  -220,
+          "Parent":  -1,
+          "#":  110,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  true        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  2,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TStarLink",
+      "Begin":  0,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  false,
+      "DistMin":  0,
+      "DistMax":  16,
+      "Hole":  false    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  4,
+      "End":  3,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  4,
+      "End":  5,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  8,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  11,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  12,
+      "End":  13,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  12,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  15,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  16,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  16,
+      "End":  17,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  13,
+      "End":  18,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  18,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  20,
+      "End":  17,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  22,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  23,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  24,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  25,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  25,
+      "End":  26,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  28,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  29,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  36,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  34,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  43,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  44,
+      "End":  46,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  45,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  48,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  48,
+      "End":  49,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  50,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  51,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  42,
+      "End":  52,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  53,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  45,
+      "End":  54,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  54,
+      "End":  53,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  42,
+      "End":  55,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  45,
+      "End":  55,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  55,
+      "End":  56,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TStateLink",
+      "Begin":  5,
+      "End":  57,
+      "Nom":  0,
+      "Arrow":  true,
+      "Expr":  "vState==3",
+      "Priority":  0    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  58,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  57,
+      "End":  59,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  59,
+      "End":  60,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  59,
+      "End":  61,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  63,
+      "End":  64,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  64,
+      "End":  65,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  66,
+      "End":  67,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  67,
+      "End":  68,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  65,
+      "End":  69,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  63,
+      "End":  71,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  70,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  70,
+      "End":  69,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  60,
+      "End":  73,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  73,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  74,
+      "End":  72,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  75,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  75,
+      "End":  76,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  76,
+      "End":  77,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  80,
+      "End":  79,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  83,
+      "End":  84,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  83,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  85,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  85,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  85,
+      "End":  40,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  38,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  38,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  18,
+      "End":  87,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  87,
+      "End":  88,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  88,
+      "End":  19,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  88,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  89,
+      "End":  81,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  79,
+      "End":  78,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  78,
+      "End":  89,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  79,
+      "End":  90,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  90,
+      "End":  81,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  91,
+      "End":  80,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  93,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  93,
+      "End":  92,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  92,
+      "End":  94,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  56,
+      "End":  95,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  57,
+      "End":  96,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  96,
+      "End":  97,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  61,
+      "End":  66,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  62,
+      "End":  98,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  61,
+      "End":  99,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  66,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  100,
+      "End":  62,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  64,
+      "End":  101,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  102,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  103,
+      "End":  104,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  105,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  105,
+      "End":  103,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  106,
+      "End":  107,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  108,
+      "End":  109,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  109,
+      "End":  106,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  13,
+      "End":  111,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  13,
+      "End":  112,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  114,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  114,
+      "End":  113,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  116,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  116,
+      "End":  115,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  115,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  64,
+      "End":  117,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  118,
+      "End":  115,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  83,
+      "End":  118,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  96,
+      "End":  115,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  119,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  119,
+      "End":  9,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "Rect.Text":  
+  [
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  -390,
+      "Rect.Top":  233,
+      "Rect.Right":  -32,
+      "Rect.Bottom":  345,
+      "FStyle":  0,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  0,
+      "AlignY":  0,
+      "AlignRect":  true,
+      "Text":  "vState :\r\n0-Игрок еще не разговаривал\r\n1-Игрок отказался\r\n2-Игрок согласился\r\n3-Подбор груза\r\n4-Игрок привез медикаменты, но не дал бедствующим",
+      "Color":  16777215,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  74,
+      "Rect.Top":  -67,
+      "Rect.Right":  465,
+      "Rect.Bottom":  -25,
+      "FStyle":  0,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  0,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "Скрипт надо создавать когда игрок будет входить в систему.",
+      "Color":  16777215,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  25,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "0",
+      "String":  "<0><br>Мы взрываем свой корабль, чтоб других не заразить. Виновником нашей смерти просим считать рейнджера <Player>, который отказал нам в помощи!"    
+    },
+    {
+      "#":  "1",
+      "String":  "<0><br><br>SOS, SOS"    
+    },
+    {
+      "#":  "10",
+      "String":  "Понятно. Вы просто не хотели помочь умирающим, вы хотите сказать? А-а, никакой надежды уже нет, нам остается только задействовать механизм самоуничтожения. Передавайте привет нашим родным..."    
+    },
+    {
+      "#":  "11",
+      "String":  "Щас попробуем"    
+    },
+    {
+      "#":  "12",
+      "String":  "Черт, скорее всего, это абсолютно бесполезно. Ну, давайте, мы хотя бы попробуем."    
+    },
+    {
+      "#":  "13",
+      "String":  "Необычайное лекарство! Кажется, эпидемия остановилась, и симптомы пошли на спад. Самое главное - нам дают разрешение на посадку! <PlayerFull>, пассажиры нашего скромного лайнера в знак благодарности сложились и переводят на ваш счет сумму в <0> cr. Огромная вам благодарность! Космосу нужно больше таких героев, как вы."    
+    },
+    {
+      "#":  "14",
+      "String":  "Нет, это не помогает. Где вы купили это? Здесь такая редкая эпидемия, что нужны специальные лекарства! А-а, никакой надежды уже нет, нам остается только задействовать механизм самоуничтожения. Передавайте привет нашим родным..."    
+    },
+    {
+      "#":  "15",
+      "String":  "Это планета <0> в системе <1>. Если бы у нас было достаточно топлива, мы могли бы слетать туда и сами, но наше топливо было рассчитано точно до этой планеты. Теперь если никто не поможет нам, мы погибнем! <PlayerFull>, слетайте туда и привезите нам хотя бы одну единицу лекарства, небольшое вознаграждение и благодарность всех пассажиров вам обеспечены."    
+    },
+    {
+      "#":  "16",
+      "String":  "Мы обречены"    
+    },
+    {
+      "#":  "17",
+      "String":  "Убирайся подальше, мы сейчас взорвемся!"    
+    },
+    {
+      "#":  "18",
+      "String":  "Да, в чем дело ?"    
+    },
+    {
+      "#":  "19",
+      "String":  "Обратитесь к кому-нибудь другому, у меня своих дел полно."    
+    },
+    {
+      "#":  "2",
+      "String":  "Надо привезти медикаменты, купленные на планете <0> в системе <1> и отдать <2> в системе <3> до <4>"    
+    },
+    {
+      "#":  "20",
+      "String":  "Хорошо, я сделаю, что смогу."    
+    },
+    {
+      "#":  "21",
+      "String":  "Да, конечно. Держите!"    
+    },
+    {
+      "#":  "22",
+      "String":  "У меня есть лекарства, только не с этой планеты. Они вам подойдут?"    
+    },
+    {
+      "#":  "23",
+      "String":  "К сожалению, я ничем не могу вам помочь. Честно говоря, я был очень занят."    
+    },
+    {
+      "#":  "24",
+      "String":  "Продолжайте"    
+    },
+    {
+      "#":  "3",
+      "String":  "Мы обращаемся к вам с просьбой о помощи!"    
+    },
+    {
+      "#":  "4",
+      "String":  "Очень жаль, видно, нам суждено погибнуть в этом чертовом космосе..."    
+    },
+    {
+      "#":  "5",
+      "String":  "Спасибо вам, возможно, у нас еще есть надежда, если такой гуманист, как вы, придете нам на помощь. На нашем борту разразилась ужасная эпидемия, и никто не знает, что это за болезнь... все пассажиры и экипаж заражены, и несколько уже скончались! Эта болезнь неизвестна нашей науке, и планета нашей приписки <0> отказала нам в посадке. Мы были бы обречены, но один из наших пассажиров, гаалец и врач по профессии, сообщил, что симптомы этой болезни ему знакомы, и на одной из гаальских планет есть лекарство от нее."    
+    },
+    {
+      "#":  "6",
+      "String":  "Только поторопитесь, мы протянем не больше <0> дней!"    
+    },
+    {
+      "#":  "7",
+      "String":  "Быстрей лети за медикаментами, мы будем ждать"    
+    },
+    {
+      "#":  "8",
+      "String":  "Привез? Подлети поближе."    
+    },
+    {
+      "#":  "9",
+      "String":  "Наконец-то! Скончались еще несколько пассажиров и второй пилот. Похоже, у нас совсем не осталось времени! Вы привезли медикаменты с планеты <0> ?<br>"    
+    }  
+  ]
+}

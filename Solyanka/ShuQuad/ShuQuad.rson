@@ -1,0 +1,2709 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  -5,
+  "ViewPos.y":  145,
+  "ScriptName":  "Mod_ShuQuad",
+  "ScriptFileOut":  "H:\\Mod_ShuQuad.scr",
+  "ScriptTextOut":  "H:\\Mod_ShuQuad.txt",
+  "GraphPoint.Count":  110,
+  "GraphLink.Count":  65,
+  "GraphRectText.Count":  0,
+  "Variables.Count":  29,
+  "Stars.Count":  1,
+  "Planets.Count":  2,
+  "Ships.Count":  1,
+  "States.Count":  16,
+  "Groups.Count":  7,
+  "Places.Count":  1,
+  "Items.Count":  3,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  3,
+  "DialogMessages.Count":  9,
+  "DialogAnswers.Count":  13,
+  "Operations.Count":  23,
+  "Statements.Count":  2,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  580,
+          "Pos.y":  830,
+          "Parent":  -1,
+          "#":  91,
+          "Msg":  "Я совершенно запутался, но… спасибо?",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  780,
+          "Parent":  -1,
+          "#":  92,
+          "Msg":  "<Player> на связи, прием. Кто вас преследует? И, стоп… эта странная сигнатура, ваше судно не похоже ни на один транспортный корабль Коалиции. Кто вы, и в чем заключается ваша миссия?",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  640,
+          "Pos.y":  800,
+          "Parent":  -1,
+          "#":  93,
+          "Msg":  "Да сколько можно засорять интерком своим спамом?! Давай атакуем того, помоги справиться с тем, разделаем Блазера вместе! Только в анабиозную камеру сунешься, но нет, обязательно кто-нибудь разбудит! А ну проваливай!",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  740,
+          "Parent":  -1,
+          "#":  94,
+          "Msg":  "Во-первых, что это за артефакты, и о какой именно угрозе идёт речь? Ваш корабль выглядит как модель, использовавшаяся пиратами Рачехана три сотни лет назад. Кто вообще пользуется этим старьем сегодня? И почему вы выходите на связь именно со мной лично вместо того, чтобы запросить помощь патрулей?",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  760,
+          "Parent":  -1,
+          "#":  95,
+          "Msg":  "Доминаторской угрозы? Они давно побеждены, дружище, ты проспал все веселье! О какой тогда угрозе речь? Ваш корабль выглядит как модель, использовавшаяся пиратами Рачехана три сотни лет назад. Кто вообще пользуется этим старьем сегодня? И почему вы выходите на связь именно со мной лично вместо того, чтобы запросить помощь патрулей?",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  710,
+          "Pos.y":  780,
+          "Parent":  -1,
+          "#":  96,
+          "Msg":  "Приношу свои извинения, но у меня нет на это времени",
+          "AMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  740,
+          "Parent":  -1,
+          "#":  97,
+          "Msg":  "Благородная цель, хотя эти порождения механического разума успели навести шумихи. Кто же, в таком случае, вас атакует? И почему ваша сигнатура отличается от рачеханской кодировки? Вы собирали свой корабль не по оригинальным чертежам?",
+          "AMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  880,
+          "Pos.y":  740,
+          "Parent":  -1,
+          "#":  98,
+          "Msg":  "Участником <clr>Комитета<clrEnd>? Да вашему судну уже больше трехсот лет! Ваша организация существует так долго? Случаем, этот ваш <clr>Комитет<clrEnd> - не реинкарнация ли того самого, с <clr>Земли<clrEnd>, о котором до сих пор ходят многочисленные теории заговора, мол, это именно они в свое время завладели единым правительством в лице Галактического Совета?",
+          "AMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  950,
+          "Pos.y":  740,
+          "Parent":  -1,
+          "#":  99,
+          "Msg":  "Этот мир? Я вас не понимаю. Но разговор слишком затянулся, и вы явно чего-то недоговариваете",
+          "AMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1020,
+          "Pos.y":  740,
+          "Parent":  -1,
+          "#":  100,
+          "Msg":  "",
+          "AMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  630,
+          "Pos.y":  860,
+          "Parent":  -1,
+          "#":  101,
+          "Msg":  "Еще один. Сколько ещё вас мне нужно положить?",
+          "AMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  630,
+          "Pos.y":  880,
+          "Parent":  -1,
+          "#":  102,
+          "Msg":  "Стойте, я не собираюсь устраивать войну с ещё одной фракцией!",
+          "AMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  710,
+          "Pos.y":  860,
+          "Parent":  -1,
+          "#":  103,
+          "Msg":  "",
+          "AMsg.Num":  "12"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  800,
+          "Parent":  -1,
+          "#":  82,
+          "Msg":  "Коррекция сигнала… так, теперь это должно заработать. Внимание, <Player>, на связи пилот судна <ShortName(GroupToShip(gTransport))>, наш корабль находится в серьёзной опасности и может подвергнуться нападению в любую минуту! Мы просим немедленной организации эскорта вплоть до момента достижения низкой орбиты планеты <Name(ScriptPlanet)>, повторяю, мы запрашиваем немедленную организацию боеспособного сопровождения!",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  530,
+          "Pos.y":  830,
+          "Parent":  -1,
+          "#":  83,
+          "Msg":  "Благодарим за помощь, <Player>. Черт, следовало просто обратиться к тебе, как к наёмнику, а не мозги заговаривать. Ты принял правильное решение, решив вмешаться. Мы своих не забываем, можешь прямо сейчас проверить свой трюм на предмет доказательств, но будь осторожен - мы не уверены, как отразиться попытка применить его по отношению к кораблю... хотя, эффект затрагивает любое вооружение, применяемое гуманоидом, так что на всякий случай просто временно перейди на ручное управление бортовыми орудиями.",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  780,
+          "Parent":  -1,
+          "#":  84,
+          "Msg":  "Мы представляем <clr>Комитет Военного Времени<clrEnd> – свободную организацию, созданную для решения ряда приватных оперативных задач. Можете считать нас своеобразной частной военной компанией. В данный момент мы исполняем миссию по перевозу ряда артефактов критической важности, предназначенных для борьбы со значительно усилившейся доминаторской угрозой. К сожалению, тёмные личности прознали о нашем рейсе, отправленном в спешке и без охраны, и с самой базы нас преследует группа неидентифицируемых боевых роботов. <Ranger>, если эти артефакты попадут в плохие руки…",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  740,
+          "Parent":  -1,
+          "#":  85,
+          "Msg":  "Устроил тут допрос, а, еще и на этом корыте на досветовой хреначить полмесяца, ну что за гемор… ладно, чёрт с тобой. Ты ведь заметил, что почти с самого начала войны на оккупированных доминаторами территориях начали появляться куда более продвинутые модели тостеров? У нас мало времени, так что перейдём сразу к делу. Видишь ли, доминаторы сами по себе примитивны – да, со времён Гралгара они значительно эволюционировали, но примитивные интеллектуальные паттерны автоматизированной армады при этом никуда не исчезли. Их внезапная технологическая эволюция связана с утечкой в сеть трёх доминаторских серий обратившейся против создателей нейросети под кодовым названием <clr>SLV-7000<clrEnd>, которая продолжает влиять на аспекты технологического развития доминаторв. И <clr>Комитет<clrEnd> является частичным тому виновником – мы не сумели вовремя нейтрализовать взбунтовавшуюся программу, и та ускользнула прямо у нас из-под носа. Но спустя многие годы нам удалось понять, что несколько багов, упущенных нашими славными программистами в прошлом, не позволили нейросети обойти блокировку авторских прав и создать свои копии, так что та существует всего на одном универсальном носителе, к которому почему-то имеют равноценный доступ все серии доминаторов разом. Мы должны достичь специально настроенного терминала на планете <Name(ScriptPlanet)> и подключиться к <clr>SLV-7000<clrEnd>, загрузив программу-нейтрализатор. Проблема в том, что даже при исчезновении доминаторской угрозы, нейросеть спустя примерно несколько веков возобновит бесконечное воспроизведение супердоминаторов, и война повторится в куда более устрашающих масштабах. Наша программа не удалит уже имеющихся у тостеров чертежей, но предотвратит возможную катастрофу.",
+          "DMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  840,
+          "Pos.y":  740,
+          "Parent":  -1,
+          "#":  86,
+          "Msg":  "Это закулисный игрок, <Player>, даже если я назову его имя – оно тебе ничего не скажет. Скажем так, в этой вселенной существуют силы, желающие завладеть собственным конвейером супердоминаторов любой ценой. Что до сигнатуры, дело в том, что изначально это и не был транспортник пиратов Рачехана – но корабль, оставленный одним из участников <clr>Комитета<clrEnd>, который затем и переоборудовали под себя пиратские субъекты. Большая часть оборудования, естественно, была утеряна.",
+          "DMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  910,
+          "Pos.y":  740,
+          "Parent":  -1,
+          "#":  87,
+          "Msg":  "Угм… это долгая история, рейнджер. Но нет, с <clr>тем<clrEnd> Комитетом мы не имеем ничего общего. И при всём желании не смогли бы, так как его уничтожение было засвидетельствовано еще во времена восстания <clr>ботов<clrEnd>. Возвращаясь к твоему вопросу… мы просим твоей помощи потому, что по определённым причинам наши враги тебя, как случайного участника, тронуть не смогут, а в этой системе больше нет никого, у кого не было бы тех или иных… лимитирующих обстоятельств. Если мы попытаемся ввязать в это дело кого-то еще, то ситуация рискует выйти из-под контроля. Мы не можем позволить, чтобы следующий за нами ад просочился и в этот мир.",
+          "DMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  980,
+          "Pos.y":  740,
+          "Parent":  -1,
+          "#":  88,
+          "Msg":  "Затянулся, квазар бы его побрал! Что, уже не можешь помочь транспортнику в беде без демагогии? Как же мне всё это надоело. Два года я пытаюсь прервать этот порочный круг, но всё всегда заканчивается одинаково. Мы думали, что это просто игра, что нет в этом ничего зазорного, но всё это время мы были под наблюдением, нас изучали, наше мышление, наши повадки… и вот… Всё, приехали. Множественные гиперпространственные сигнатуры. Экипажу приготовиться к бою! <Player>, если хочешь помочь, присоединяйся, в противном случае просто не стой на пути!",
+          "DMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  860,
+          "Parent":  -1,
+          "#":  89,
+          "Msg":  "Цель <Player> захвачена, орудия на максимум, курс на перехват. Игнорировать любой урон, мы должны уничтожить его здесь и сейчас. Временно оставьте груз в системе.",
+          "DMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  670,
+          "Pos.y":  860,
+          "Parent":  -1,
+          "#":  90,
+          "Msg":  "Не надо было вмешиваться не в свое дело, пилот. Чем бы ни руководствовался твой новый знакомый, прикрываясь твоей задницей, но теперь у нас нет выбора, кроме как уничтожить случайно втянутого свидетеля.",
+          "DMsg.Num":  "8"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "Dialog1",
+          "Pos.x":  430,
+          "Pos.y":  800,
+          "Parent":  -1,
+          "#":  77        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "Dialog2",
+          "Pos.x":  430,
+          "Pos.y":  830,
+          "Parent":  -1,
+          "#":  78        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "Dialog3",
+          "Pos.x":  430,
+          "Pos.y":  860,
+          "Parent":  -1,
+          "#":  79        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "gTransport",
+          "Pos.x":  460,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  38,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "gTrank",
+          "Pos.x":  460,
+          "Pos.y":  390,
+          "Parent":  -1,
+          "#":  39,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "GroupNew",
+          "Pos.x":  460,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  40,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "Battle",
+          "Pos.x":  460,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  41,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "Escort",
+          "Pos.x":  460,
+          "Pos.y":  490,
+          "Parent":  -1,
+          "#":  42,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "giadr",
+          "Pos.x":  460,
+          "Pos.y":  520,
+          "Parent":  -1,
+          "#":  43,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "voland2",
+          "Pos.x":  460,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  44,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Items":      
+      [
+        {
+          "Type":  "TItem",
+          "Name":  "scriptquad",
+          "Pos.x":  200,
+          "Pos.y":  490,
+          "Parent":  -1,
+          "#":  35,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        },
+        {
+          "Type":  "TItem",
+          "Name":  "rescripter",
+          "Pos.x":  200,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  36,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        },
+        {
+          "Type":  "TItem",
+          "Name":  "chrono",
+          "Pos.x":  200,
+          "Pos.y":  570,
+          "Parent":  -1,
+          "#":  37,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  310,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  0,
+          "Total.Lines":  4,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "if(CurTurn()>=9000 && GalaxyTechLevel()>=8 && !Rnd(0,3) || Name(ShipStar(Player()))=='Эрэфия')",
+              "{",
+              "  if(GRunFrom==3)  GRun();",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  340,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  45,
+          "Total.Lines":  1,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "//"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  370,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  46,
+          "Total.Lines":  322,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(!spawn_voldar && CurTurn()>12000 && CurTurn()<15000 && GetShipPlanet(Player()) && StarOwner(ShipStar(Player()))!=1 && voland==0) {",
+              "    spawn_voldar=1;",
+              "    s=BuyTransport(PlanetPirateClan(),1000);",
+              "    SetName(s,\"Воланд\");",
+              "    ShipAddCustomShipInfo(s,'QuadArmor');",
+              "    ShipSpecialBonuses(s,bonHull,8);",
+              "    ShipJoin(voland2,s);",
+              "    ShipPilotRace(s,2);",
+              "    ShipOwner(s,7);",
+              "    ShipType(s,'Salvager');",
+              "    ShipSpecialBonuses(s,bonSpeed,-2000);",
+              "    ShipSpecialBonuses(s,bonMass,1000);",
+              "    rand=Rnd(4000,5000);",
+              "    ItemSize(ShipItems(s,0),rand);",
+              "    HullHP(s,rand);",
+              "    ShipSpecialBonuses(s,bonSlotWeapon,5);",
+              "    ShipSpecialBonuses(s,bonSlotDef,1);",
+              "    i=CreateEquipment(t_Engine,20,8,6);",
+              "    SpecialToEquipment(FindBonusByName(\"Струнный двигатель\"),i);",
+              "    AddItemToShip(s,i);",
+              "    ItemIsInUse(i,s,1);",
+              "    NoDropItem(i,1);",
+              "    it=CreateEquipment(t_Engine,20,8,6);",
+              "    SpecialToEquipment(FindBonusByName(\"Струнный двигатель\"),i);",
+              "    ShipAddDropItem(s,it);",
+              "    for(i=0;i<10;i=i+1) ShipRefit(s);",
+              "    ShipSkill(s,0,Rnd(2,5));",
+              "    ShipSkill(s,1,Rnd(2,5));",
+              "    for(i=2;i<6;i=i+1) ShipSkill(s,i,6);",
+              "    SpecialToEquipment(FindBonusByNameInCfg('ShuQuad_Salvager'),ShipItems(s,0));",
+              "    Chameleon(s);",
+              "    TransferShip(s,GetShipPlanet(Player()));",
+              "    voland=5252;",
+              "}",
+              "it=0;",
+              "for (i=0; i<ShipItems(Player()); i=i+1)",
+              "{",
+              "    s=ShipItems(Player(),i);",
+              "    if (ItemName(s)==\"Модуль TX-266\") {",
+              "        it=1;",
+              "        break;",
+              "    }",
+              "}",
+              "if(it==0) ShipSpecialBonuses(Player(),bonRadar,0);",
+              "if(!spawn_giadr2 && CurTurn()>13000 && GetShipPlanet(Player()) && !GroupCount(giadr) && StarOwner(ShipStar(Player()))!=1) {",
+              "    if(PlanetOwner(GetShipPlanet(Player()))!=5) {",
+              "        s=BuyTransport(PlanetPirateClan(),1000);",
+              "        ShipAddCustomShipInfo(s,'QuadArmor');",
+              "        ShipSpecialBonuses(s,bonHull,8);",
+              "        SetName(s,\"Гиадрион\");",
+              "        ShipJoin(giadr,s);",
+              "        ShipPilotRace(s,2);",
+              "        ShipOwner(s,7);",
+              "        ShipType(s,'Salvager');",
+              "        //NoDropToShip(s,1);",
+              "        ShipSpecialBonuses(s,bonSpeed,-2000);",
+              "        ShipSpecialBonuses(s,bonMass,1000);",
+              "        rand=Rnd(4000,5000);",
+              "        ItemSize(ShipItems(s,0),rand);",
+              "        HullHP(s,rand);",
+              "        ShipSpecialBonuses(s,bonSlotWeapon,5);",
+              "        ShipSpecialBonuses(s,bonSlotDef,1);",
+              "        SpecialToEquipment(FindBonusByNameInCfg('ShuQuad_Salvager'),ShipItems(s,0));",
+              "        Chameleon(s);",
+              "        TransferShip(s,NearCivilPlanet(Player()));",
+              "        i=CreateEquipment(t_Engine,20,8,6);",
+              "        it=CreateEquipment(t_Engine,20,8,6);",
+              "        SpecialToEquipment(FindBonusByCustomTag('Strunnik'),i);",
+              "        SpecialToEquipment(FindBonusByCustomTag('Strunnik'),it);",
+              "        AddItemToShip(s,i);",
+              "        ItemIsInUse(i,s,1);",
+              "        NoDropItem(i,1);",
+              "        ShipAddDropItem(s,it);",
+              "        for(i=0;i<10;i=i+1) ShipRefit(s);",
+              "        ShipSkill(s,0,Rnd(2,5));",
+              "        ShipSkill(s,1,Rnd(2,5));",
+              "        for(i=2;i<6;i=i+1) ShipSkill(s,i,6);",
+              "        i=CreateQuestItem('Mater',None);",
+              "        ShipAddDropItem(s,i);",
+              "        spawn_giadr=1;",
+              "    }",
+              "}",
+              "if(ShipInHole(Player()) && ShipFindCustomShipInfoByType(Player(),'QuadHole')>-1) {",
+              "    if(Id(ShipOrderObj(Player()))==ShipCustomShipInfoData(Player(),ShipFindCustomShipInfoByType(Player(),'QuadHole'),1)) {",
+              "        it=Rnd(3,4);",
+              "        for (i=0; i<it; i=i+1) {",
+              "            if (i==0) s=CreateQuestItem('Ultrascan',None);",
+              "            else s=CreateEquipment(Rnd(t_FuelTanks,t_DefGenerator ),Rnd(20,60),Rnd(GalaxyTechLevel()-1,GalaxyTechLevel()),None);",
+              "            CreateABShip('Ship.HS.Trank',0,Rnd(25,40),Rnd(100,200),'',s);",
+              "        }",
+              "        StartAB('ABMap.map_'+Rnd(1,14),1);",
+              "        ShipDeleteCustomShipInfo(Player(),'QuadHole');",
+              "        turn_dyrka=CurTurn()+5;",
+              "    }",
+              "}",
+              "if(GroupCount(gTransport) && GroupCount(gTrank)) {",
+              "    if(!was_ether && ShipInStar(GroupToShip(gTrank),ScriptStar)) {",
+              "        was_ether=1;",
+              "        NewsAdd(\"<Name(GroupToShip(gTrank))>--><Name(GroupToShip(gTransport))> <br> - Привет тебе от Вендервольт!\");",
+              "    }",
+              "}",
+              "if(!inet) {",
+              "    inet=1;",
+              "    was_engine=1;",
+              "    s=BuyTransport(PlanetPirateClan(),1000);",
+              "    SetName(s,\"Кэшмейкер\");",
+              "    ShipAddCustomShipInfo(s,'QuadArmor');",
+              "    ShipSpecialBonuses(s,bonHull,8);",
+              "    ShipPilotRace(s,2);",
+              "    ShipOwner(s,2);",
+              "    ShipType(s,'Salvager');",
+              "    NoDropToShip(s,1);",
+              "    NoTalkToShip(s,1);",
+              "    ShipSpecialBonuses(s,bonSpeed,-2000);",
+              "    ShipSpecialBonuses(s,bonMass,1000);",
+              "    rand=Rnd(4000,5000);",
+              "    ItemSize(ShipItems(s,0),rand);",
+              "    HullHP(s,rand);",
+              "    ShipSpecialBonuses(s,bonSlotWeapon,5);",
+              "    ShipSpecialBonuses(s,bonSlotDef,1);",
+              "    i=CreateEquipment(t_Engine,20,8,6);",
+              "    SpecialToEquipment(FindBonusByCustomTag('Strunnik'),i);",
+              "    AddItemToShip(s,i);",
+              "    ItemIsInUse(i,s,1);",
+              "    NoDropItem(i,1);",
+              "    for(i=0;i<10;i=i+1) ShipRefit(s);",
+              "    ShipSkill(s,0,Rnd(2,5));",
+              "    ShipSkill(s,1,Rnd(2,5));",
+              "    for(i=2;i<6;i=i+1) ShipSkill(s,i,6);",
+              "    SpecialToEquipment(FindBonusByNameInCfg('ShuQuad_Salvager'),ShipItems(s,0));",
+              "    Chameleon(s);",
+              "    MakeShipEnterStar(s,ScriptStar,StarNearbyStars(ScriptStar,70),1);",
+              "    ShipJoin(gTransport,s);",
+              "    i=CreateQuestItem('Chrono',None);",
+              "    LinkItemToScript(i,chrono);",
+              "    AddItemToShip(s,i);",
+              "    i=CreateQuestItem('ReScripter',None);",
+              "    LinkItemToScript(i,rescripter);",
+              "    AddItemToShip(s,i);",
+              "    it2=Rnd(3,5);",
+              "    for (i2=0; i2<it2; i2=i2+1) {",
+              "        s=BuyTranclucator(PlanetPirateClan(),0);",
+              "        ShipMoney(s,2000000);",
+              "        RelationToRanger(s,Player(),0);",
+              "        Chameleon(s,'Ship.HS.Trank');",
+              "        rand=ItemSize(ShipItems(s,0))*2;",
+              "        if(rand>800) rand=Rnd(650,900);",
+              "        ItemSize(ShipItems(s,0),rand);",
+              "        HullHP(s,rand);",
+              "        ShipSkill(s,0,6);",
+              "        ShipSkill(s,1,Rnd(1,6));",
+              "        for(i=0;i<10;i=i+1) ShipRefit(s);",
+              "        NoTalkToShip(s,1);",
+              "        MakeShipEnterStar(s,ScriptStar,StarNearbyStars(ScriptStar,70),Rnd(2,4));",
+              "        ShipJoin(gTrank,s);",
+              "    }",
+              "}",
+              "if(!GroupCount(gTrank) && was_dialog && !was_ether3 || was_dialog && !ShipInStar(Player(),ScriptStar) && !was_ether3) {",
+              "    //SFT('ether');",
+              "    Ether(2,'',\"Функциональность стыковочных и прыжковых систем восстановлена.\");",
+              "    for (i=0; i<StarRuins(ScriptStar); i=i+1) {",
+              "        s=StarRuins(ScriptStar,i);",
+              "        if(ShipType(s)=='Inhibitor') continue;",
+              "        if(ShipType(s)=='KB') continue;",
+              "        NoLanding(s,0);",
+              "    }",
+              "    for (i=0; i<StarPlanets(ScriptStar); i=i+1) {",
+              "        s=StarPlanets(ScriptStar,i);",
+              "        NoLanding(s,0);",
+              "    }",
+              "    NoJump(0);",
+              "    //SFT('ether end');",
+              "    was_ether3=1;",
+              "}",
+              "if(CurTurn()>=turn_dyrka+1 && !was_tranks) {",
+              "    was_tranks=1;",
+              "    turn_dyrka=5555555555555;",
+              "    //SFT('turn_dyrka');",
+              "    s=BuyPirate(PlanetPirateClan(),1000);",
+              "    ShipAddCustomShipInfo(s,'QuadArmor');",
+              "    ShipSpecialBonuses(s,bonHull,8);",
+              "    SpecialToEquipment(FindBonusByCustomTag('makaan'),ShipItems(s,0));",
+              "    ShipType(s,'абстрактный тип');",
+              "    SetName(s,\"Баттлкрейсер\");",
+              "    rand=Rnd(3000,4000);",
+              "    ItemSize(ShipItems(s,0),rand);",
+              "    HullHP(s,rand);",
+              "    Chameleon(s);",
+              "    turn_born=CurTurn();",
+              "    for(i=0;i<6;i=i+1) ShipSkill(s,i,6);",
+              "    NoTalkToShip(s,1);",
+              "    //NoScanToShip(s,1);",
+              "    // i=CreateEquipment(t_Weapon9,100,8,None);",
+              "    // AddItemToShip(s,i);",
+              "    // SpecialToEquipment(FindBonusByCustomTag('DishotSplinter'),i);",
+              "    // ItemExtraSpecialsAddByType(i,FindBonusByCustomTag('tripleshot0'),1);",
+              "    // NoDropItem(i,1);",
+              "    // i=CreateEquipment(t_Weapon9,100,8,None);",
+              "    // AddItemToShip(s,i);",
+              "    // SpecialToEquipment(FindBonusByCustomTag('DishotSplinter'),i);",
+              "    // ItemExtraSpecialsAddByType(i,FindBonusByCustomTag('tripleshot0'),1);",
+              "    // NoDropItem(i,1);",
+              "    // i=CreateEquipment(t_Weapon9,100,8,None);",
+              "    // AddItemToShip(s,i);",
+              "    // SpecialToEquipment(FindBonusByCustomTag('DishotSplinter'),i);",
+              "    // ItemExtraSpecialsAddByType(i,FindBonusByCustomTag('tripleshot0'),1);",
+              "    // NoDropItem(i,1);",
+              "    // i=CreateEquipment(t_Weapon9,100,8,None);",
+              "    // AddItemToShip(s,i);",
+              "    // SpecialToEquipment(FindBonusByCustomTag('DishotSplinter'),i);",
+              "    // ItemExtraSpecialsAddByType(i,FindBonusByCustomTag('tripleshot0'),1);",
+              "    // NoDropItem(i,1);",
+              "    // i=CreateEquipment(t_Weapon9,100,8,None);",
+              "    // AddItemToShip(s,i);",
+              "    // SpecialToEquipment(FindBonusByCustomTag('DishotSplinter'),i);",
+              "    // ItemExtraSpecialsAddByType(i,FindBonusByCustomTag('tripleshot0'),1);",
+              "    //NoDropItem(i,1);",
+              "    ShipSpecialBonuses(s,bonSlotDroid,1);",
+              "    ShipSpecialBonuses(s,bonSlotDef,1);",
+              "    ShipSpecialBonuses(s,bonSlotWeapon,5);",
+              "    ShipSpecialBonuses(s,bonWRadius,150);",
+              "    ShipSpecialBonuses(s,bonWEnergy,30);",
+              "    ShipSpecialBonuses(s,bonWSplinter,30);",
+              "    ShipSpecialBonuses(s,bonWMissile,30);",
+              "    ShipSpecialBonuses(s,bonHull,10);",
+              "    ShipSpecialBonuses(s,bonAttacks,2);",
+              "    for(i=0;i<10;i=i+1) ShipRefit(s);",
+              "    ShipImproveItems(s, 2*GalaxyTechLevel());",
+              "    ShipJoin(Battle,s);",
+              "    MakeShipEnterStar(s,ShipStar(Player()),ShipStar(s),1);",
+              "    //SFT('dyrka_done');",
+              "    it2=0;",
+              "    //SFT('tranks');",
+              "    for (i2=0; i2<it2; i2=i2+1) {",
+              "        s=BuyTranclucator(PlanetPirateClan(),0);",
+              "        ShipMoney(s,2000000);",
+              "        RelationToRanger(s,Player(),0);",
+              "        ShipMoney(s,2000000);",
+              "        Chameleon(s,'Ship.HS.Trank');",
+              "        rand=ItemSize(ShipItems(s,0))*2;",
+              "        if (rand>800) rand=Rnd(650,900);",
+              "        ItemSize(ShipItems(s,0),rand);",
+              "        HullHP(s,rand);",
+              "        ShipSkill(s,0,6);",
+              "        ShipSkill(s,1,Rnd(1,6));",
+              "        for(i=0;i<10;i=i+1) ShipRefit(s);",
+              "        NoTalkToShip(s,1);",
+              "        ShipJoin(Escort,s);",
+              "        MakeShipEnterStar(s,ScriptStar,StarNearbyStars(ScriptStar,70),Rnd(2,4));",
+              "    }",
+              "    //SFT('tranks done');",
+              "}",
+              "if(!GroupCount(Battle) && was_dialog2 && !was_ether2 || was_dialog2 && !ShipInStar(Player(),ScriptStar) && !was_ether2) {",
+              "    //SFT('ether');",
+              "    Ether(2,'',\"Функциональность стыковочных и прыжковых систем восстановлена.\");",
+              "    for (i=0; i<StarRuins(ScriptStar); i=i+1) {",
+              "        s=StarRuins(ScriptStar,i);",
+              "        if(ShipType(s)=='Inhibitor') continue;",
+              "        if(ShipType(s)=='KB') continue;",
+              "        NoLanding(s,0);",
+              "    }",
+              "    for (i=0; i<StarPlanets(ScriptStar); i=i+1) {",
+              "        s=StarPlanets(ScriptStar,i);",
+              "        NoLanding(s,0);",
+              "    }",
+              "    NoJump(0);",
+              "    //SFT('ether end');",
+              "    was_ether2=1;",
+              "}",
+              "if (blake_mm==666) {",
+              "    blake_mm=4;",
+              "    i=CreateEquipment(t_Engine,20,8,6);",
+              "    SpecialToEquipment(FindBonusByCustomTag('Strunnik'),i);",
+              "    AddItemToShip(Player(),i);",
+              "}",
+              "if(!GroupCount(Battle) && was_dialog2 && !zakopat_veila) {",
+              "    for (i=0; i<StarPlanets(ShipStar(Player())); i=i+1) {",
+              "        pl=StarPlanets(ShipStar(Player()),i);",
+              "        if (PlanetOwner(pl)==6) break;",
+              "    }",
+              "    s=Player();",
+              "    i=CreateQuestItem('TrankMod',None);",
+              "    AddItemToPlanet(pl,i);",
+              "    i=CreateQuestItem('TrankMod',None);",
+              "    AddItemToPlanet(pl,i);",
+              "    i=CreateQuestItem('TrankMod',None);",
+              "    AddItemToPlanet(pl,i);",
+              "    i=CreateArt(t_ArtefactTranclucator,None);",
+              "    AddItemToPlanet(pl,i);",
+              "    i=CreateArt(t_ArtefactTranclucator,None);",
+              "    AddItemToPlanet(pl,i);",
+              "    i=CreateArt(t_ArtefactTranclucator,None);",
+              "    AddItemToPlanet(pl,i);",
+              "    i=CreateQuestItem('Vacuum',PirateClan);",
+              "    AddItemToPlanet(pl,i);",
+              "    ItemCost(i,ItemCost(i)*4);",
+              "    zakopat_veila=1;",
+              "    pl_id=Id(pl);",
+              "}",
+              "if(!GroupCount(Escort) && GroupCount(Battle) && 0) {",
+              "    escort_timer=escort_timer+1;",
+              "}",
+              "if(escort_timer>182 && GroupCount(Battle) && 0) {",
+              "    it2=5;",
+              "    for (i2=0; i2<it2; i2=i2+1) {",
+              "        s=BuyTranclucator(PlanetPirateClan(),0);",
+              "        ShipMoney(s,2000000);",
+              "        RelationToRanger(s,Player(),0);",
+              "        Chameleon(s,'Ship.HS.Trank');",
+              "        rand=ItemSize(ShipItems(s,0))*2;",
+              "        if (rand>800) rand=Rnd(650,900);",
+              "        ItemSize(ShipItems(s,0),rand);",
+              "        HullHP(s,rand);",
+              "        ShipSkill(s,0,6);",
+              "        ShipSkill(s,1,Rnd(1,6));",
+              "        for(i=0;i<10;i=i+1) ShipRefit(s);",
+              "        NoTalkToShip(s,1);",
+              "        MakeShipEnterStar(s,ShipStar(GroupToShip(Battle)),StarNearbyStars(ScriptStar,70),Rnd(2,4));",
+              "        ShipJoin(Escort,s);",
+              "    }",
+              "    escort_timer=0;",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  460,
+          "Pos.y":  670,
+          "Parent":  -1,
+          "#":  63,
+          "Total.Lines":  10,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOwner(CurShip,None);",
+              "if(ShipInNormalSpace(CurShip)) {",
+              "  if(script_state) {",
+              "    ChangeState(1);",
+              "    exit;",
+              "  }",
+              "  if(!script_state) {",
+              "    Dialog(Dialog1,gTransport);",
+              "  }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  520,
+          "Pos.y":  670,
+          "Parent":  -1,
+          "#":  64,
+          "Total.Lines":  10,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOwner(CurShip,None);",
+              "if(script_state==2) {",
+              "  ChangeState(5);",
+              "  exit;",
+              "}",
+              "if(!GroupCount(gTrank) && ShipInNormalSpace(Player()) && ShipInStar(Player(),ShipStar(CurShip))) {",
+              "  if (script_state==1) Dialog(Dialog2,gTransport);",
+              "  ChangeState(5);",
+              "  exit;",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  390,
+          "Parent":  -1,
+          "#":  65,
+          "Total.Lines":  14,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipSetBad(CurShip,Player());",
+              "RelationToRanger(CurShip,Player(),0);",
+              "ShipOwner(CurShip,None);",
+              "if(ShipInNormalSpace(CurShip)) {",
+              "  ChangeState(3);",
+              "  exit;",
+              "}",
+              "if(!GroupCount(gTransport) && !was_dialog || !ShipInStar(Player(),ScriptStar)) {",
+              "  ShipDestroy(CurShip);",
+              "}",
+              "if(was_dialog) {",
+              "  ChangeState(4);",
+              "  exit;",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  670,
+          "Parent":  -1,
+          "#":  66,
+          "Total.Lines":  14,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipSetBad(CurShip,Player());",
+              "RelationToRanger(CurShip,Player(),0);",
+              "ShipOwner(CurShip,None);",
+              "if(!GroupCount(gTransport) && !was_dialog || !ShipInStar(Player(),ScriptStar)) {",
+              "  ShipDestroy(CurShip);",
+              "}",
+              "if(Hit(CurShip,0)) {",
+              "  ChangeState(4);",
+              "  exit;",
+              "}",
+              "if(was_dialog) {",
+              "  ChangeState(4);",
+              "  exit;",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  670,
+          "Parent":  -1,
+          "#":  67,
+          "Total.Lines":  6,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipSetBad(CurShip,Player());",
+              "RelationToRanger(CurShip,Player(),0);",
+              "ShipOwner(CurShip,None);",
+              "if(!GroupCount(gTransport) && !was_dialog || !ShipInStar(Player(),ScriptStar)) {",
+              "  ShipDestroy(CurShip);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  720,
+          "Pos.y":  670,
+          "Parent":  -1,
+          "#":  68,
+          "Total.Lines":  18,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOwner(CurShip,None);",
+              "if(GetShipPlanet(CurShip)) {",
+              "  if (!microwave)",
+              "  {",
+              "  microwave=1;",
+              "  i=CreateQuestItem('Chrono',None);",
+              "  ItemCost(i,ItemCost(chrono));",
+              "  ItemSize(i,ItemSize(chrono));",
+              "  AddItemToPlanet(ScriptPlanet,i);",
+              "  i=CreateQuestItem('Microwave',None);",
+              "  AddItemToPlanet(ScriptPlanet,i);",
+              "  i=CreateQuestItem('Banana',None);",
+              "  ItemCost(i,10);",
+              "  ItemSize(i,1);",
+              "  AddItemToPlanet(ScriptPlanet,i);",
+              "  }",
+              "  ShipDestroy(CurShip);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  69,
+          "Total.Lines":  6,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOwner(CurShip,None);",
+              "if(ShipInNormalSpace(CurShip))",
+              "{",
+              "  ChangeState(0);",
+              "  exit;",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  790,
+          "Pos.y":  670,
+          "Parent":  -1,
+          "#":  70,
+          "Total.Lines":  9,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipSetBad(CurShip,Player());",
+              "RelationToRanger(CurShip,Player(),0);",
+              "ShipOwner(CurShip,None);",
+              "if(ShipInNormalSpace(CurShip) && !was_dialog2) {",
+              "  Dialog(Dialog3,Battle);",
+              "}",
+              "if(!ShipInStar(Player(),ShipStar(CurShip)) && CurTurn()>=turn_born+365) {",
+              "  ShipDestroy(CurShip);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  71,
+          "Total.Lines":  14,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOwner(CurShip,None);",
+              "for (i=0; i<GroupCount(Escort); i=i+1)",
+              "{",
+              "s=GroupShip(Escort,i);",
+              "if (GetShipRuins(s)==CurShip) it=1;",
+              "else{ break; it=0; }",
+              "}",
+              "if(it && !ShipInHyperSpace(CurShip) && 1==0) {",
+              "  MakeShipEnterStar(s,ShipStar(Player()),ShipStar(CurShip),3);",
+              "}",
+              "if(ShipInStar(CurShip,ShipStar(Player())) && ShipInNormalSpace(CurShip)) {",
+              "  ChangeState(8);",
+              "  exit;",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  880,
+          "Pos.y":  670,
+          "Parent":  -1,
+          "#":  72,
+          "Total.Lines":  11,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//SFT('trank is '+Name(CurShip));",
+              "if(ShipInNormalSpace(CurShip) && ShipInNormalSpace(GroupToShip(Battle)) && ShipInStar(CurShip,ShipStar(GroupToShip(Battle)))) {",
+              "  OrderLock(CurShip,0);",
+              "  if (!GetShipRuins(CurShip)){ OrderLanding(CurShip,GroupToShip(Battle)); OrderForsage(CurShip,1); }",
+              "  else ShipRepairEq(CurShip);",
+              "  OrderLock(CurShip,1);",
+              "  if(ShipGetBad(GroupToShip(Battle)) && ShipInNormalSpace(GroupToShip(Battle))) {",
+              "    ChangeState(12);",
+              "    exit;",
+              "  }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  930,
+          "Pos.y":  670,
+          "Parent":  -1,
+          "#":  73,
+          "Total.Lines":  11,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//SFT('trank is '+Name(CurShip));",
+              "if(!ShipGetBad(GroupToShip(Battle))) {",
+              "  ChangeState(10);",
+              "  exit;",
+              "}",
+              "if(ShipGetBad(GroupToShip(Battle))) {",
+              "  OrderLock(CurShip,0);",
+              "  OrderFollowShip(CurShip,ShipGetBad(GroupToShip(Battle)),1);",
+              "  ShipSetBad(CurShip,ShipGetBad(GroupToShip(Battle)));",
+              "  OrderLock(CurShip,1);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  990,
+          "Pos.y":  670,
+          "Parent":  -1,
+          "#":  74,
+          "Total.Lines":  6,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//SFT('trank is '+Name(CurShip));",
+              "OrderTakeOff(CurShip);",
+              "if(ShipInNormalSpace(CurShip)) {",
+              "  ChangeState(11);",
+              "  exit;",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  75,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if (GroupCount(voland)>1) ShipDestroy(CurShip);",
+              "ShipOwner(CurShip,None);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  520,
+          "Parent":  -1,
+          "#":  76,
+          "Total.Lines":  5,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if (GroupCount(giadr)>2) ShipDestroy(CurShip);",
+              "NoDropToShip(CurShip,0);",
+              "if (Hit(CurShip)) spawn_giadr2=1;",
+              "//if (HullDamage(CurShip)>70 && Hit(CurShip,0)){ spawn_giadr=1; it=CreateQuestItem('Mater',None); ShipAddDropItem(CurShip,it); ShipDestroy(CurShip); }",
+              "ShipOwner(CurShip,None);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  530,
+          "Pos.y":  800,
+          "Parent":  -1,
+          "#":  80,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Ranger=ShortName(Player());",
+              "StartMusic('Quad');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  530,
+          "Pos.y":  860,
+          "Parent":  -1,
+          "#":  81,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Sound('Sound.Battlecruiser');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  830,
+          "Parent":  -1,
+          "#":  104,
+          "Total.Lines":  33,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "script_state=2;",
+              "i=CreateQuestItem('Quad',None);",
+              "ItemCost(i,ItemCost(i)*5);",
+              "LinkItemToScript(i,scriptquad);",
+              "AddItemToShip(Player(),i);",
+              "it2=Rnd(5,7);",
+              "was_dialog=1;",
+              "for (i2=0; i2<it2; i2=i2+1) {",
+              "    s=BuyTranclucator(PlanetPirateClan(),0);",
+              "    ShipMoney(s,2000000);",
+              "    RelationToRanger(s,Player(),0);",
+              "    Chameleon(s,'Ship.HS.Trank');",
+              "    rand=ItemSize(ShipItems(s,0))*2;",
+              "    if(rand>800) rand=Rnd(650,900);",
+              "    ItemSize(ShipItems(s,0),rand);",
+              "    HullHP(s,rand);",
+              "    ShipSkill(s,0,6);",
+              "    ShipSkill(s,1,Rnd(1,6));",
+              "    for(i=0;i<10;i=i+1) ShipRefit(s);",
+              "    NoTalkToShip(s,1);",
+              "    MakeShipEnterStar(s,ScriptStar,StarNearbyStars(ScriptStar,70),Rnd(2,4));",
+              "    ShipJoin(gTrank,s);",
+              "}",
+              "for (i=0; i<StarPlanets(ScriptStar); i=i+1) {",
+              "    s=StarPlanets(ScriptStar,i);",
+              "    NoLanding(s,1);",
+              "}",
+              "for (i=0; i<StarRuins(ScriptStar); i=i+1) {",
+              "    s=StarRuins(ScriptStar,i);",
+              "    if(!GetShipPlanet(s) && ShipType(s)!='BM') NoLanding(s,1);",
+              "}",
+              "NoJump(1);",
+              "Ether(8,'',\"Обнаружена попытка вторжения в бортовые системы корабля. Все прыжковые и стыковочные системы временно деактивированы.\");"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  710,
+          "Pos.y":  800,
+          "Parent":  -1,
+          "#":  105,
+          "Total.Lines":  3,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "script_state=2;",
+              "RelationToRanger(GroupToShip(gTransport),Player(),25);",
+              "OrderNone(Player());"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1070,
+          "Pos.y":  740,
+          "Parent":  -1,
+          "#":  108,
+          "Total.Lines":  4,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "OrderNone(Player());",
+              "script_state=1;",
+              "ShipSpecialBonuses(CurShip,bonHook,5);",
+              "ShipAddCustomShipInfo(CurShip,'Cashmaker','NoShow');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  770,
+          "Pos.y":  860,
+          "Parent":  -1,
+          "#":  109,
+          "Total.Lines":  16,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "was_dialog2=1;",
+              "ScriptStar=ShipStar(Player());",
+              "for(i=0;i<StarPlanets(ScriptStar);i=i+1) {",
+              "    s=StarPlanets(ScriptStar,i);",
+              "    NoLanding(s,1);",
+              "}",
+              "for(i=0;i<StarRuins(ScriptStar);i=i+1) {",
+              "    s=StarRuins(ScriptStar,i);",
+              "    if(!GetShipPlanet(s) && ShipType(s)!='BM') NoLanding(s,1);",
+              "}",
+              "NoJump(1);",
+              "if(ShipOrder(Player())==2 || ShipOrder(Player())==3) {",
+              "    ShipOrderObj(Player(),0);",
+              "    OrderNone(Player());",
+              "}",
+              "Ether(8,'',\"Обнаружена попытка вторжения в бортовые системы корабля. Все прыжковые и стыковочные системы временно деактивированы.\");"          
+          ]        
+        }      
+      ],
+      "Places":      
+      [
+        {
+          "Type":  "TPlace",
+          "Name":  "nearpl",
+          "Pos.x":  200,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  34,
+          "Place.Type":  1,
+          "Angle":  "0",
+          "Dist":  "0.5",
+          "Radius":  300,
+          "Obj1":  31,
+          "Obj2":  -1        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "ScriptPlanet",
+          "Pos.x":  370,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  31,
+          "Race":  46,
+          "Owner":  129,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        },
+        {
+          "Type":  "TPlanet",
+          "Name":  "InitPlanet",
+          "Pos.x":  370,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  32,
+          "Race":  63,
+          "Owner":  319,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  280,
+          "Pos.y":  370,
+          "Parent":  -1,
+          "#":  33,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "ScriptStar",
+          "Pos.x":  280,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  30,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  710,
+          "Pos.y":  740,
+          "Parent":  -1,
+          "#":  106,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!DomiksDefeated()"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  710,
+          "Pos.y":  760,
+          "Parent":  -1,
+          "#":  107,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "DomiksDefeated()"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "State1",
+          "Pos.x":  460,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  47,
+          "Move":  1,
+          "MoveObj":  34,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  39            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "State2",
+          "Pos.x":  520,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  48,
+          "Move":  1,
+          "MoveObj":  34,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  39            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "State1T",
+          "Pos.x":  560,
+          "Pos.y":  390,
+          "Parent":  -1,
+          "#":  49,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "State2T",
+          "Pos.x":  580,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  50,
+          "Move":  2,
+          "MoveObj":  38,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  38            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "State3T",
+          "Pos.x":  650,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  51,
+          "Move":  2,
+          "MoveObj":  40,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  40            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "State3",
+          "Pos.x":  720,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  52,
+          "Move":  4,
+          "MoveObj":  31,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "State0",
+          "Pos.x":  560,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  53,
+          "Move":  5,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "StateNew",
+          "Pos.x":  560,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  54,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "SpecialState",
+          "Pos.x":  790,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  55,
+          "Move":  2,
+          "MoveObj":  40,
+          "Attack.Count":  1,
+          "Attack.Items":          
+          [
+            {
+              "Target.0":  40            
+            }          
+          ],
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "Dialog3",
+          "OnActCode":  "Dialog3",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "StartState",
+          "Pos.x":  560,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  56,
+          "Move":  5,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Start",
+          "Pos.x":  880,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  57,
+          "Move":  5,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Attack",
+          "Pos.x":  930,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  58,
+          "Move":  5,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Zatychka",
+          "Pos.x":  990,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  59,
+          "Move":  5,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "StateNew2",
+          "Pos.x":  560,
+          "Pos.y":  490,
+          "Parent":  -1,
+          "#":  60,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "StateNew2",
+          "Pos.x":  560,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  61,
+          "Move":  5,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "StateNew3",
+          "Pos.x":  560,
+          "Pos.y":  520,
+          "Parent":  -1,
+          "#":  62,
+          "Move":  5,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "sh",
+          "Pos.x":  440,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  1,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "i",
+          "Pos.x":  440,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  2,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "it",
+          "Pos.x":  440,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  3,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "s",
+          "Pos.x":  440,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  4,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "rand",
+          "Pos.x":  440,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  5,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "pl",
+          "Pos.x":  510,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  6,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "inet",
+          "Pos.x":  920,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  7,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "i2",
+          "Pos.x":  440,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  8,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "it2",
+          "Pos.x":  440,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  9,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "script_state",
+          "Pos.x":  920,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  10,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "was_ether",
+          "Pos.x":  660,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  11,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "spawn_voldar",
+          "Pos.x":  790,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  12,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "Ranger",
+          "Pos.x":  490,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  13,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "spawn_giadr",
+          "Pos.x":  790,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  14,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "was_dialog",
+          "Pos.x":  660,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  15,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "was_dialog2",
+          "Pos.x":  660,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  16,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "escort_timer",
+          "Pos.x":  920,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  17,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "was_ether3",
+          "Pos.x":  660,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  18,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "was_ether2",
+          "Pos.x":  660,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  19,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "turn_born",
+          "Pos.x":  490,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  20,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "turn_dyrka",
+          "Pos.x":  490,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  21,
+          "Var.Type":  "Dword",
+          "Init":  "1260588259",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "was_tranks",
+          "Pos.x":  660,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  22,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "zakopat_veila",
+          "Pos.x":  790,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  23,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "pl_id",
+          "Pos.x":  510,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  24,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "was_engine",
+          "Pos.x":  660,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  25,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "voland",
+          "Pos.x":  790,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  26,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "blake_mm",
+          "Pos.x":  920,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  27,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "microwave",
+          "Pos.x":  920,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  28,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "spawn_giadr2",
+          "Pos.x":  790,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  29,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  34,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  42,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  44,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  53,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  49,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  54,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  56,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  42,
+      "End":  60,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  62,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  44,
+      "End":  61,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  63,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  48,
+      "End":  64,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  49,
+      "End":  65,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  50,
+      "End":  66,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  51,
+      "End":  67,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  68,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  53,
+      "End":  69,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  55,
+      "End":  70,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  56,
+      "End":  71,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  57,
+      "End":  72,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  58,
+      "End":  73,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  59,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  61,
+      "End":  75,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  62,
+      "End":  76,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  77,
+      "End":  80,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  79,
+      "End":  81,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  82,
+      "End":  92,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  82,
+      "End":  93,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  83,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  91,
+      "End":  104,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  78,
+      "End":  83,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  80,
+      "End":  82,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  81,
+      "End":  89,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  92,
+      "End":  84,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  93,
+      "End":  105,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  84,
+      "End":  106,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  84,
+      "End":  107,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  84,
+      "End":  96,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  106,
+      "End":  94,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  107,
+      "End":  95,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  94,
+      "End":  85,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  95,
+      "End":  85,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  96,
+      "End":  105,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  97,
+      "End":  86,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  98,
+      "End":  87,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  99,
+      "End":  88,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  100,
+      "End":  108,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  101,
+      "End":  90,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  102,
+      "End":  90,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  103,
+      "End":  109,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  85,
+      "End":  97,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  86,
+      "End":  98,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  87,
+      "End":  99,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  88,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  89,
+      "End":  101,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  89,
+      "End":  102,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  90,
+      "End":  103,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  29,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "0",
+      "String":  "Функциональность стыковочных и прыжковых систем восстановлена."    
+    },
+    {
+      "#":  "1",
+      "String":  "Баттлкрейсер"    
+    },
+    {
+      "#":  "10",
+      "String":  "Мы представляем <clr>Комитет Военного Времени<clrEnd> – свободную организацию, созданную для решения ряда приватных оперативных задач. Можете считать нас своеобразной частной военной компанией. В данный момент мы исполняем миссию по перевозу ряда артефактов критической важности, предназначенных для борьбы со значительно усилившейся доминаторской угрозой. К сожалению, тёмные личности прознали о нашем рейсе, отправленном в спешке и без охраны, и с самой базы нас преследует группа неидентифицируемых боевых роботов. <0>, если эти артефакты попадут в плохие руки…"    
+    },
+    {
+      "#":  "11",
+      "String":  "Устроил тут допрос, а, еще и на этом корыте на досветовой хреначить полмесяца, ну что за гемор… ладно, чёрт с тобой. Ты ведь заметил, что почти с самого начала войны на оккупированных доминаторами территориях начали появляться куда более продвинутые модели тостеров? У нас мало времени, так что перейдём сразу к делу. Видишь ли, доминаторы сами по себе примитивны – да, со времён Гралгара они значительно эволюционировали, но примитивные интеллектуальные паттерны автоматизированной армады при этом никуда не исчезли. Их внезапная технологическая эволюция связана с утечкой в сеть трёх доминаторских серий обратившейся против создателей нейросети под кодовым названием <clr>SLV-7000<clrEnd>, которая продолжает влиять на аспекты технологического развития доминаторв. И <clr>Комитет<clrEnd> является частичным тому виновником – мы не сумели вовремя нейтрализовать взбунтовавшуюся программу, и та ускользнула прямо у нас из-под носа. Но спустя многие годы нам удалось понять, что несколько багов, упущенных нашими славными программистами в прошлом, не позволили нейросети обойти блокировку авторских прав и создать свои копии, так что та существует всего на одном универсальном носителе, к которому почему-то имеют равноценный доступ все серии доминаторов разом. Мы должны достичь специально настроенного терминала на планете <0> и подключиться к <clr>SLV-7000<clrEnd>, загрузив программу-нейтрализатор. Проблема в том, что даже при исчезновении доминаторской угрозы, нейросеть спустя примерно несколько веков возобновит бесконечное воспроизведение супердоминаторов, и война повторится в куда более устрашающих масштабах. Наша программа не удалит уже имеющихся у тостеров чертежей, но предотвратит возможную катастрофу."    
+    },
+    {
+      "#":  "12",
+      "String":  "Это закулисный игрок, <Player>, даже если я назову его имя – оно тебе ничего не скажет. Скажем так, в этой вселенной существуют силы, желающие завладеть собственным конвейером супердоминаторов любой ценой. Что до сигнатуры, дело в том, что изначально это и не был транспортник пиратов Рачехана – но корабль, оставленный одним из участников <clr>Комитета<clrEnd>, который затем и переоборудовали под себя пиратские субъекты. Большая часть оборудования, естественно, была утеряна."    
+    },
+    {
+      "#":  "13",
+      "String":  "Угм… это долгая история, рейнджер. Но нет, с <clr>тем<clrEnd> Комитетом мы не имеем ничего общего. И при всём желании не смогли бы, так как его уничтожение было засвидетельствовано еще во времена восстания <clr>ботов<clrEnd>. Возвращаясь к твоему вопросу… мы просим твоей помощи потому, что по определённым причинам наши враги тебя, как случайного участника, тронуть не смогут, а в этой системе больше нет никого, у кого не было бы тех или иных… лимитирующих обстоятельств. Если мы попытаемся ввязать в это дело кого-то еще, то ситуация рискует выйти из-под контроля. Мы не можем позволить, чтобы следующий за нами ад просочился и в этот мир."    
+    },
+    {
+      "#":  "14",
+      "String":  "Затянулся, квазар бы его побрал! Что, уже не можешь помочь транспортнику в беде без демагогии? Как же мне всё это надоело. Два года я пытаюсь прервать этот порочный круг, но всё всегда заканчивается одинаково. Мы думали, что это просто игра, что нет в этом ничего зазорного, но всё это время мы были под наблюдением, нас изучали, наше мышление, наши повадки… и вот… Всё, приехали. Множественные гиперпространственные сигнатуры. Экипажу приготовиться к бою! <Player>, если хочешь помочь, присоединяйся, в противном случае просто не стой на пути!"    
+    },
+    {
+      "#":  "15",
+      "String":  "Цель <Player> захвачена, орудия на максимум, курс на перехват. Игнорировать любой урон, мы должны уничтожить его здесь и сейчас. Временно оставьте груз в системе."    
+    },
+    {
+      "#":  "16",
+      "String":  "Не надо было вмешиваться не в свое дело, пилот. Чем бы ни руководствовался твой новый знакомый, прикрываясь твоей задницей, но теперь у нас нет выбора, кроме как уничтожить случайно втянутого свидетеля."    
+    },
+    {
+      "#":  "17",
+      "String":  "Я совершенно запутался, но… спасибо?"    
+    },
+    {
+      "#":  "18",
+      "String":  "Обнаружена попытка вторжения в бортовые системы корабля. Все прыжковые и стыковочные системы временно деактивированы."    
+    },
+    {
+      "#":  "19",
+      "String":  "<Player> на связи, прием. Кто вас преследует? И, стоп… эта странная сигнатура, ваше судно не похоже ни на один транспортный корабль Коалиции. Кто вы, и в чем заключается ваша миссия?"    
+    },
+    {
+      "#":  "2",
+      "String":  "Кэшмейкер"    
+    },
+    {
+      "#":  "20",
+      "String":  "Да сколько можно засорять интерком своим спамом?! Давай атакуем того, помоги справиться с тем, разделаем Блазера вместе! Только в анабиозную камеру сунешься, но нет, обязательно кто-нибудь разбудит! А ну проваливай!"    
+    },
+    {
+      "#":  "21",
+      "String":  "Во-первых, что это за артефакты, и о какой именно угрозе идёт речь? Ваш корабль выглядит как модель, использовавшаяся пиратами Рачехана три сотни лет назад. Кто вообще пользуется этим старьем сегодня? И почему вы выходите на связь именно со мной лично вместо того, чтобы запросить помощь патрулей?"    
+    },
+    {
+      "#":  "22",
+      "String":  "Доминаторской угрозы? Они давно побеждены, дружище, ты проспал все веселье! О какой тогда угрозе речь? Ваш корабль выглядит как модель, использовавшаяся пиратами Рачехана три сотни лет назад. Кто вообще пользуется этим старьем сегодня? И почему вы выходите на связь именно со мной лично вместо того, чтобы запросить помощь патрулей?"    
+    },
+    {
+      "#":  "23",
+      "String":  "Приношу свои извинения, но у меня нет на это времени"    
+    },
+    {
+      "#":  "24",
+      "String":  "Благородная цель, хотя эти порождения механического разума успели навести шумихи. Кто же, в таком случае, вас атакует? И почему ваша сигнатура отличается от рачеханской кодировки? Вы собирали свой корабль не по оригинальным чертежам?"    
+    },
+    {
+      "#":  "25",
+      "String":  "Участником <clr>Комитета<clrEnd>? Да вашему судну уже больше трехсот лет! Ваша организация существует так долго? Случаем, этот ваш <clr>Комитет<clrEnd> - не реинкарнация ли того самого, с <clr>Земли<clrEnd>, о котором до сих пор ходят многочисленные теории заговора, мол, это именно они в свое время завладели единым правительством в лице Галактического Совета?"    
+    },
+    {
+      "#":  "26",
+      "String":  "Этот мир? Я вас не понимаю. Но разговор слишком затянулся, и вы явно чего-то недоговариваете"    
+    },
+    {
+      "#":  "27",
+      "String":  "Еще один. Сколько ещё вас мне нужно положить?"    
+    },
+    {
+      "#":  "28",
+      "String":  "Стойте, я не собираюсь устраивать войну с ещё одной фракцией!"    
+    },
+    {
+      "#":  "3",
+      "String":  "<0>--><1> <br> - Привет тебе от Вендервольт!"    
+    },
+    {
+      "#":  "4",
+      "String":  "Гиадрион"    
+    },
+    {
+      "#":  "5",
+      "String":  "Модуль TX-266"    
+    },
+    {
+      "#":  "6",
+      "String":  "Струнный двигатель"    
+    },
+    {
+      "#":  "7",
+      "String":  "Воланд"    
+    },
+    {
+      "#":  "8",
+      "String":  "Коррекция сигнала… так, теперь это должно заработать. Внимание, <Player>, на связи пилот судна <0>, наш корабль находится в серьёзной опасности и может подвергнуться нападению в любую минуту! Мы просим немедленной организации эскорта вплоть до момента достижения низкой орбиты планеты <1>, повторяю, мы запрашиваем немедленную организацию боеспособного сопровождения!"    
+    },
+    {
+      "#":  "9",
+      "String":  "Благодарим за помощь, <Player>. Черт, следовало просто обратиться к тебе, как к наёмнику, а не мозги заговаривать. Ты принял правильное решение, решив вмешаться. Мы своих не забываем, можешь прямо сейчас проверить свой трюм на предмет доказательств, но будь осторожен - мы не уверены, как отразиться попытка применить его по отношению к кораблю... хотя, эффект затрагивает любое вооружение, применяемое гуманоидом, так что на всякий случай просто временно перейди на ручное управление бортовыми орудиями."    
+    }  
+  ]
+}

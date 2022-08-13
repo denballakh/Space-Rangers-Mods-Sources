@@ -1,0 +1,4788 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  -415,
+  "ViewPos.y":  -306,
+  "ScriptName":  "mod_defstation",
+  "ScriptFileOut":  "H:\\mod_defstation.scr",
+  "ScriptTextOut":  "H:\\mod_defstation.txt",
+  "GraphPoint.Count":  202,
+  "GraphLink.Count":  174,
+  "GraphRectText.Count":  0,
+  "Variables.Count":  27,
+  "Stars.Count":  1,
+  "Planets.Count":  1,
+  "Ships.Count":  1,
+  "States.Count":  6,
+  "Groups.Count":  6,
+  "Places.Count":  0,
+  "Items.Count":  0,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  14,
+  "DialogMessages.Count":  33,
+  "DialogAnswers.Count":  24,
+  "Operations.Count":  40,
+  "Statements.Count":  49,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  13,
+          "Msg":  "Оплатить постройку",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "planet",
+          "Pos.x":  430,
+          "Pos.y":  -40,
+          "Parent":  -1,
+          "#":  32,
+          "Msg":  "Понятно",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "block",
+          "Pos.x":  430,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  67,
+          "Msg":  "Оплатить постройку",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "planet",
+          "Pos.x":  430,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  69,
+          "Msg":  "Понятно",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  430,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  76,
+          "Msg":  "",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "planet",
+          "Pos.x":  430,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  77,
+          "Msg":  "Я передумал",
+          "AMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  430,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  82,
+          "Msg":  "",
+          "AMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  540,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  91,
+          "Msg":  "Станция должна сменить дислокацию, возьмите курс на текущие координаты моего корабля",
+          "AMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  740,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  92,
+          "Msg":  "Станция должна совершить прыжок в другую систему",
+          "AMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  490,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  95,
+          "Msg":  "Конец связи",
+          "AMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  560,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  96,
+          "Msg":  "Конец связи",
+          "AMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  740,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  99,
+          "Msg":  "Конец связи",
+          "AMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  770,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  102,
+          "Msg":  "Выбор системы",
+          "AMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  770,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  104,
+          "Msg":  "Назад",
+          "AMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  490,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  108,
+          "Msg":  "Что ж, очень жаль. Конец связи.",
+          "AMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  920,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  114,
+          "Msg":  "Конец связи",
+          "AMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  860,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  116,
+          "Msg":  "Приказываю разобрать станцию.",
+          "AMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1020,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  132,
+          "Msg":  "",
+          "AMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  890,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  140,
+          "Msg":  "Планы изменились, отменить разборку",
+          "AMsg.Num":  "18"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  950,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  142,
+          "Msg":  "",
+          "AMsg.Num":  "19"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "block",
+          "Pos.x":  620,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  149,
+          "Msg":  "Станция должна совершить прыжок в другую систему\r\n",
+          "AMsg.Num":  "20"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  710,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  151,
+          "Msg":  "Отменить прыжок",
+          "AMsg.Num":  "21"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1000,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  195,
+          "Msg":  "",
+          "AMsg.Num":  "22"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  980,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  197,
+          "Msg":  "Никуда приземляться не надо. Отмена приказа.",
+          "AMsg.Num":  "23"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  390,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  12,
+          "Msg":  "Мы можем начать строительство станции с такими параметрами:\r\nКорпус: <bArray[0,1]> (прочность: <bArray[0,3]> )\r\nТопливный бак: <bArray[1,1]>\r\nДвигатель: <bArray[2,1]>\r\nРадар: <bArray[3,1]>\r\nСканер: <bArray[4,1]>\r\nДроид: <bArray[5,1]>\r\nЗахват: <bArray[6,1]>\r\nГенератор защиты: <bArray[7,1]>\r\nОружие 1 слота: <bArray[8,1]>\r\nОружие 2 слота: <bArray[9,1]>\r\nОружие 3 слота: <bArray[10,1]>\r\nОружие 4 слота: <bArray[11,1]>\r\nОружие 5 слота: <bArray[12,1]>\r\nАртефакт 1 слота: <bArray[13,1]>\r\nАртефакт 2 слота: <bArray[14,1]>\r\nАртефакт 3 слота: <bArray[15,1]>\r\nАртефакт 4 слота: <bArray[16,1]>\r\nМодификация корпуса: <bArray[17,1]>\r\n\r\nИтоговая цена постройки: <int1> cr.\r\nВы можете изменить некоторые параметры будущей станции.",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  360,
+          "Pos.y":  -40,
+          "Parent":  -1,
+          "#":  31,
+          "Msg":  "У нас недостаточно ресурсов для содержания защитной станции.",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  360,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  43,
+          "Msg":  "Текущие параметры станции:\r\nКорпус: <bArray[0,1]> (прочность: <bArray[0,3]> )\r\nТопливный бак: <bArray[1,1]>\r\nДвигатель: <bArray[2,1]>\r\nРадар: <bArray[3,1]>\r\nСканер: <bArray[4,1]>\r\nДроид: <bArray[5,1]>\r\nЗахват: <bArray[6,1]>\r\nГенератор защиты: <bArray[7,1]>\r\nОружие 1 слота: <bArray[8,1]>\r\nОружие 2 слота: <bArray[9,1]>\r\nОружие 3 слота: <bArray[10,1]>\r\nОружие 4 слота: <bArray[11,1]>\r\nОружие 5 слота: <bArray[12,1]>\r\nАртфакт 1 слота: <bArray[13,1]>\r\nАртфакт 2 слота: <bArray[14,1]>\r\nАртфакт 3 слота: <bArray[15,1]>\r\nАртфакт 4 слота: <bArray[16,1]>\r\nМодификация корпуса: <bArray[17,1]>\r\n\r\nМы можем изменить прочность будущей станции или заменить наше стандартное оборудование, на ваше оборудование со склада планеты.\r\nЧто бы вы хотели изменить?",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  380,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  48,
+          "Msg":  "На что заменить?",
+          "DMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  360,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  68,
+          "Msg":  "Отлично! Наши рабочие уже приступили к постройке.",
+          "DMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  360,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  72,
+          "Msg":  "У нас недостаточно ресурсов для постройки защитной станции.",
+          "DMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  75,
+          "Msg":  "Я занят строительством защитной станции, не мешай.",
+          "DMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  -90,
+          "Parent":  -1,
+          "#":  79,
+          "Msg":  "Рейнджер! Наши отношения немного напряжены, вам не кажется?<br>Возможно, вам стоит подумать над тем, какой деятельностью вы занимаетесь, и сделать соответствующие выводы.",
+          "DMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  81,
+          "Msg":  "На нашу систему напали враги! Пока вы здесь прохлаждаетесь, другие корабли на орбите погибают. Вы должны срочно вступить в бой!",
+          "DMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  -150,
+          "Parent":  -1,
+          "#":  84,
+          "Msg":  "<Player>, у вас проблемы со слухом? Систему атакуют со всех сторон - пока вы здесь сидите и попиваете кофе, наши братья-пираты гибнут. Не время прохлаждаться - пора вступать в бой!",
+          "DMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  90,
+          "Msg":  "<Name(GetTalkShip())> на связи, чем мы можем вам помочь, <Player>?",
+          "DMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  94,
+          "Msg":  "Вас поняли, <Player>, станция начинает передислокацию по заданным координатам.",
+          "DMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  770,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  97,
+          "Msg":  "Извините, <Player>, но мощности портального генератора недостаточно для прыжка в систему <Name(tSystem)>.",
+          "DMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  740,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  103,
+          "Msg":  "Вас поняли, <Player>, станция начинает прыжок в систему <Name(tSystem)>.",
+          "DMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  490,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  107,
+          "Msg":  "Извините, но вашего текущего звания недостаточно для отдачи такого приказа. Возвращайтесь позже.",
+          "DMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  920,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  113,
+          "Msg":  "Вашей мерзкой роже не место на нашем экране! Немедленно покиньте эту частоту и приготовьтесь к смерти!",
+          "DMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  710,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  115,
+          "Msg":  "Извините, <Player>, но портальный генератор станции в настоящий момент заряжается. Совершить прыжок можно будет не раньше, чем через <ShipCustomShipInfoData(GetTalkShip(),int1,3)-CurTurn()> дн.",
+          "DMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  920,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  119,
+          "Msg":  "Где это видано, чтобы пират такие приказы раздавал? Проваливай по-хорошему.",
+          "DMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  950,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  120,
+          "Msg":  "Извините, но согласно уставу КВСМК, для отдачи подобных приказов нужно иметь звание не ниже <clr>Командора<clrEnd>.",
+          "DMsg.Num":  "18"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  950,
+          "Pos.y":  -90,
+          "Parent":  -1,
+          "#":  123,
+          "Msg":  "Извини, <Player>, но согласно шкале Рачехана, для отдачи подобных приказов тебе нужно быть как минимум<clr>Ханом<clrEnd>.",
+          "DMsg.Num":  "19"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  920,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  131,
+          "Msg":  "Да ты даже в пиратском братстве не состоишь! Лети отсюда пока цел, а то раскомандовался тут.",
+          "DMsg.Num":  "20"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  920,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  139,
+          "Msg":  "Следую на планету <Name(tPlanet)> для последующей разборки.",
+          "DMsg.Num":  "21"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  150,
+          "Msg":  "В секторе <Name(tCon)> уже находится максимум станций. В прыжке отказано.",
+          "DMsg.Num":  "22"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  161,
+          "Msg":  "Извините, но согласно уставу КВСМК, для отдачи подобных приказов нужно иметь звание не ниже <clr>Командора<clrEnd>.",
+          "DMsg.Num":  "23"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  162,
+          "Msg":  "Извини, <Player>, но согласно шкале Рачехана, для отдачи подобных приказов тебе нужно быть как минимум<clr>Ханом<clrEnd>.\r\n",
+          "DMsg.Num":  "24"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  830,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  163,
+          "Msg":  "А вдруг ты хочешь заманить нас в ловушку? Мы не доверяем тем, кто не состоит в пиратском клане.",
+          "DMsg.Num":  "25"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  164,
+          "Msg":  "<Player>, вы лишены воинского звания за переход на сторону пиратов, об этом не может быть и речи.",
+          "DMsg.Num":  "26"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  770,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  172,
+          "Msg":  "Станция может совершить прыжок в соседнюю систему в радиусе <clr>30<clrEnd> пк. при помощи портального генератора. Также следует отметить, что нахождение в одном секторе более <maxStation> станций невозможно, по причине крайне затратного обслуживания.",
+          "DMsg.Num":  "27"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  540,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  182,
+          "Msg":  "Перемещение так далеко от основной системы не имеет смысла. В выполнении приказа отказано.",
+          "DMsg.Num":  "28"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  184,
+          "Msg":  "В данный момент вы находитесь слишком близко к звезде, <Player>. Наша станция <clr>не обладает<clrEnd> никакой защитой от ее теплового излучения. В выполнении приказа отказано.",
+          "DMsg.Num":  "29"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  188,
+          "Msg":  "В данный момент, на защитной станции <tStr> Вы можете принять следующие изменения:",
+          "DMsg.Num":  "30"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1000,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  194,
+          "Msg":  "Приказ принят. Следую на планету <Name(tPlanet)> для последующего демонтажа.\r\n",
+          "DMsg.Num":  "31"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  920,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  198,
+          "Msg":  "На какую планету совершить посадку?",
+          "DMsg.Num":  "32"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "defStation",
+          "Pos.x":  200,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  11        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "choseEq",
+          "Pos.x":  200,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  41        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "choseEq1",
+          "Pos.x":  200,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  46        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "choseEq0",
+          "Pos.x":  200,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  50        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "builderTalk",
+          "Pos.x":  200,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  74        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "badRelation",
+          "Pos.x":  200,
+          "Pos.y":  -90,
+          "Parent":  -1,
+          "#":  78        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "battleCoal",
+          "Pos.x":  200,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  80        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "battleClan",
+          "Pos.x":  200,
+          "Pos.y":  -150,
+          "Parent":  -1,
+          "#":  83        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "DefStationDialog",
+          "Pos.x":  620,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  85        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "DefStationNone",
+          "Pos.x":  920,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  112        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "DPDialog",
+          "Pos.x":  920,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  141        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "addImp",
+          "Pos.x":  200,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  186        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "addImp0",
+          "Pos.x":  200,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  192        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "DPLanding",
+          "Pos.x":  1000,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  193        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "GroupNew",
+          "Pos.x":  60,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  3,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "CoalDefPla",
+          "Pos.x":  -40,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  6,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "Builders",
+          "Pos.x":  -40,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  15,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "NewPlatform",
+          "Pos.x":  -40,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  17,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "ClanDefPla",
+          "Pos.x":  -40,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  57,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "DisassembledPlatform",
+          "Pos.x":  -30,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  122,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  0,
+          "CntShipMax":  0,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  90,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  5,
+          "Total.Lines":  1,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "GRun();"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  430,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  10,
+          "Total.Lines":  23,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "cStar=ShipStar(Player());",
+              "cPlanet=GetShipPlanet(Player());",
+              "if(cPlanet!=PlanetPirateClan())",
+              "{",
+              "    if(StarBattle(cStar))",
+              "    {",
+              "        if(PlanetOwner(cPlanet)==7)AddDialogInject('battleClan','',\"Хочу заказать строительство защитной станции\",2);",
+              "        if(PlanetOwner(cPlanet)<5)AddDialogInject('battleCoal','',\"Хочу заказать строительство защитной станции\",2);",
+              "    }",
+              "    else",
+              "    {",
+              "        if(PlanetOwner(cPlanet)==7)",
+              "        {",
+              "            if(RelationToRanger(PlanetPirateClan(),Player())<30)AddDialogInject('badRelation','',\"Хочу заказать строительство защитной станции\",2);",
+              "            else AddDialogInject('defStation','',\"Хочу заказать строительство защитной станции\",2);",
+              "        }",
+              "        else",
+              "        {",
+              "            if(RelationToRanger(cPlanet,Player())<30)AddDialogInject('badRelation','',\"Хочу заказать строительство защитной станции\",2);",
+              "            else AddDialogInject('defStation','',\"Хочу заказать строительство защитной станции\",2);",
+              "        }",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  20,
+          "Total.Lines":  129,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player(),ShipMoney(Player())-int1);",
+              "cPlanet=GetShipPlanet(Player());",
+              "cStar=ShipStar(Player());",
+              "dwd0=BuyWarrior(cPlanet);",
+              "TransferShip(dwd0,cStar);",
+              "int0=1;",
+              "while(int0==1) {",
+              "    int0=0;",
+              "    if(Rnd(0,1)==1)spawnX=Rnd(600,1200);",
+              "    else spawnX=Rnd(-600,-1200);",
+              "    if(Rnd(0,1)==1)spawnY=Rnd(600,1200);",
+              "    else spawnY=Rnd(-600,-1200);",
+              "    ShipSetCoords(dwd0,spawnX,spawnY);",
+              "    for(i=0;i<StarRuins(cStar);i=i+1) {",
+              "        dwd1=StarRuins(cStar,i);",
+              "        if(Dist(dwd0,dwd1)>300)continue;",
+              "        int0=1;",
+              "        break;",
+              "    }",
+              "    if(CountIn(CoalDefPla,cStar)!=0) {",
+              "        for(i=0;i<GroupCount(CoalDefPla);i=i+1) {",
+              "            dwd1=GroupShip(CoalDefPla,i);",
+              "            if(ShipStar(dwd1)!=cStar)continue;",
+              "            if(Dist(dwd0,dwd1)>300)continue;",
+              "            int0=1;",
+              "            break;",
+              "        }",
+              "    }",
+              "    if(CountIn(ClanDefPla,cStar)!=0) {",
+              "        for(i=0;i<GroupCount(ClanDefPla);i=i+1) {",
+              "            dwd1=GroupShip(ClanDefPla,i);",
+              "            if(ShipStar(dwd1)!=cStar)continue;",
+              "            if(Dist(dwd0,dwd1)>300)continue;",
+              "            int0=1;",
+              "            break;",
+              "        }",
+              "    }",
+              "}",
+              "Chameleon(dwd0,'Ruins.AMod_PE_DefPlatformBld');",
+              "NoTalkToShip(dwd0,1);",
+              "ShipJoin(NewPlatform,dwd0);",
+              "//Ether(0,'123','<spawnX>_<spawnY>');",
+              "int0=0;",
+              "for(i=0;i<ConStars(StarToCon(cStar));i=i+1) {",
+              "    dwd1=ConStar(StarToCon(cStar),i);",
+              "    if(CountIn(CoalDefPla,dwd1)!=0)int0=int0+CountIn(CoalDefPla,dwd1);",
+              "}",
+              "int0=int0+1;",
+              "str0=Name(StarToCon(cStar))+' -'+int0+'-';",
+              "SetName(dwd0,str0);",
+              "ShipSkill(dwd0,0,6);",
+              "ShipSkill(dwd0,1,6);",
+              "ShipType(dwd0,'DefPlatform');",
+              "NoDropToShip(dwd0,1);",
+              "NoTargetToShip(dwd0,1);",
+              "ShipSpecialBonuses(dwd0,bonWRadius,150);",
+              "//Дополнительные залпы при подключеннном EvoArmada",
+              "if(BlockExist('Script.Mod_EvoArmada')) {",
+              "    if(bArray[17,3]==1) ShipSpecialBonuses(dwd0,bonAttacks,2);",
+              "    else ShipSpecialBonuses(dwd0,bonAttacks,1);",
+              "}",
+              "ShipTechLevelKnowledge(dwd0,GalaxyTechLevel());",
+              "HullType(ShipEqInSlot(dwd0,t_Hull),8);",
+              "HullSeries(ShipEqInSlot(dwd0,t_Hull),-1);",
+              "ItemSize(ShipEqInSlot(dwd0,t_Hull),bArray[0,3]);",
+              "ItemCost(ShipEqInSlot(dwd0,t_Hull),bArray[0,2]);",
+              "ItemLevel(ShipEqInSlot(dwd0,t_Hull),GalaxyTechLevel());",
+              "//1 - таймер до перезарядки ракетных орудий",
+              "//2 - таймер до следующего обновления",
+              "//3 - таймер до отката телепорта или -1",
+              "//Text 1 - маркер и текущих передвижениях станции: 'Teleport' или 'Move'",
+              "//Text 2 - система назначения прыжка или X-координата при простом полёте к точке",
+              "//Text 3 - Y-координата при простом полёте к точке",
+              "ShipAddCustomShipInfo(dwd0,'DefStationInfo','NoShow',30,182,CurTurn()+160);",
+              "if(bArray[17,3]) ShipCustomShipInfoData(dwd0,'DefStationInfo',3,-1); //флаг отсутствия портального генератора",
+              "for(i=ShipItems(dwd0)-1;i>0;i=i-1) {",
+              "    FreeItem(GetItemFromShip(dwd0,i));",
+              "}",
+              "for(i=0;i<5;i=i+1) {",
+              "    dwd0=BuyTransport(cPlanet,2);",
+              "    ShipOwner(dwd0,PlanetOwner(cPlanet));",
+              "    Chameleon(dwd0,'Ship.Tranclucator');",
+              "    TransferShip(dwd0,cStar);",
+              "    ShipSetCoords(dwd0,spawnX+Rnd(-300,300),spawnY+Rnd(-300,300));",
+              "    ShipJoin(Builders,dwd0);",
+              "    HullType(ShipEqInSlot(dwd0,t_Hull),8);",
+              "    HullSeries(ShipEqInSlot(dwd0,t_Hull),-1);",
+              "    ShipSkill(dwd0,2,6);",
+              "    ShipType(dwd0,'Builder');",
+              "    NoTargetToShip(dwd0,1);",
+              "}",
+              "bldState=1;",
+              "vaultItem=0;",
+              "for(i=t_FuelTanks;i<t_Weapon1;i=i+1) {",
+              "    int0=i-t_Hull;",
+              "    if(bArray[int0,3]==-1) {",
+              "        tempItem=CreateEquipment(i,50,GalaxyTechLevel(),PlanetOwner(cPlanet));",
+              "        vaultItem=vaultItem+1;",
+              "        PutItemInVault('AMod_PE_'+vaultItem,tempItem);",
+              "    }",
+              "}",
+              "if (GalaxyTechLevel() == 1) int0 = t_Weapon1; // Промышленный лазер",
+              "else if (GalaxyTechLevel() == 2) int0 = t_Weapon3; // Лезка",
+              "else if (GalaxyTechLevel() == 3) int0 = t_Weapon3; // Лезка",
+              "else if (GalaxyTechLevel() == 4) int0 = t_Weapon6; // Волновой фазер",
+              "else if (GalaxyTechLevel() == 5) int0 = t_Weapon6; // Волновой фазер",
+              "else if (GalaxyTechLevel() == 6) int0 = t_Weapon9; // Мультирезонатор",
+              "else if (GalaxyTechLevel() == 7) int0 = t_Weapon10; // Атомный визион",
+              "else int0 = t_Weapon12; // Турбогравир",
+              "for(i=8;i<13;i=i+1) {",
+              "    if(bArray[i,3]==-1) {",
+              "        tempItem=CreateEquipment(int0,100,GalaxyTechLevel(),PlanetOwner(cPlanet));",
+              "        vaultItem=vaultItem+1;",
+              "        PutItemInVault('AMod_PE_'+vaultItem,tempItem);",
+              "    }",
+              "}",
+              "for(i=StorageItems()-1;i>-1;i=i-1) {",
+              "    if(StorageItemLocation(i)!=cPlanet)continue;",
+              "    int0=0;",
+              "    for(j=1;j<17;j=j+1) {",
+              "        if(bArray[j,3]!=i)continue;",
+              "        int0=1;",
+              "        break;",
+              "    }",
+              "    if(int0==0)continue;",
+              "    tempItem=GetItemFromStorage(i);",
+              "    vaultItem=vaultItem+1;",
+              "    PutItemInVault('AMod_PE_'+vaultItem,tempItem);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  360,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  25,
+          "Total.Lines":  58,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "cPlanet=GetShipPlanet(Player());",
+              "if(buildId[1]!=Id(cPlanet) && buildId[2]!=CurTurn()) {",
+              "    buildId[1]=Id(cPlanet);",
+              "    buildId[2]=CurTurn();",
+              "    tempItem=CreateHull(8,1000,GalaxyTechLevel(),PlanetOwner(cPlanet),-1);",
+              "    bArray[0,1]=Name(tempItem);",
+              "    bArray[0,2]=0.8*ItemCost(tempItem);",
+              "    bArray[0,3]=1000;",
+              "    FreeItem(tempItem);",
+              "    for(i=t_FuelTanks;i<t_Weapon1;i=i+1) {",
+              "        tempItem=CreateEquipment(i,100,GalaxyTechLevel(),PlanetOwner(cPlanet));",
+              "        int0=i-t_Hull;",
+              "        bArray[int0,0]=Name(tempItem);",
+              "        bArray[int0,1]=Name(tempItem);",
+              "        bArray[int0,2]=ItemCost(tempItem);",
+              "        bArray[int0,3]=-1;",
+              "        FreeItem(tempItem);",
+              "    }",
+              "    if(GalaxyTechLevel()==1) int0=t_Weapon1; // Промышленный лазер",
+              "    else if(GalaxyTechLevel()==2) int0=t_Weapon3; // Лезка",
+              "    else if(GalaxyTechLevel()==3) int0=t_Weapon3; // Лезка",
+              "    else if(GalaxyTechLevel()==4) int0=t_Weapon6; // Волновой фазер",
+              "    else if(GalaxyTechLevel()==5) int0=t_Weapon6; // Волновой фазер",
+              "    else if(GalaxyTechLevel()==6) int0=t_Weapon9; // Мультирезонатор",
+              "    else if(GalaxyTechLevel()==7) int0=t_Weapon10; // Атомный визион",
+              "    else if(GalaxyTechLevel()==8) int0=t_Weapon12; // Турбогравир",
+              "    for(i=8;i<13;i=i+1) {",
+              "        tempItem=CreateEquipment(int0,60,GalaxyTechLevel(),PlanetOwner(cPlanet));",
+              "        bArray[i,0]=Name(tempItem);",
+              "        bArray[i,1]=Name(tempItem);",
+              "        bArray[i,2]=ItemCost(tempItem);",
+              "        bArray[i,3]=-1;",
+              "        FreeItem(tempItem);",
+              "    }",
+              "    for(i=13;i<18;i=i+1) {",
+              "        bArray[i,0]=\"отсутствует\";",
+              "        bArray[i,1]=\"отсутствует\";",
+              "        bArray[i,2]=0;",
+              "        bArray[i,3]=-1;",
+              "    }",
+              "    bArray[17,2]=75; //отдельно выставляем коэффициент для пустого слота модификации",
+              "}",
+              "int1=bArray[0,2]; //начальная стоимость корпуса",
+              "int1=bArray[17,2]*int1/100; //коэффициент для модификации корпуса",
+              "for(i=1;i<17;i=i+1) { //перебираем все предметы в массиве",
+              "    if(bArray[i,3]!=-1) { //если игрок менял стандартное оборудование",
+              "        dwd0=StorageItems(bArray[i,3]); //проверяем, совпадает ли Id предмета на складе с Id в массиве",
+              "        if(dwd0) {",
+              "            if(Id(dwd0)!=bArray[i,4]) bArray[i,3]=-1;",
+              "        } else bArray[i,3]=-1; //если не совпадает/предмета нет на складе - удаляем номер из массива",
+              "        if(bArray[i,3]==-1) bArray[i,1]=bArray[i,0]; //и возвращаем стандартный текст",
+              "    }",
+              "    if(i<13) { //стоимость артефактов не учитывается",
+              "        if(bArray[i,3]==-1) int1=int1+(bArray[i,2]+(bArray[i,2]*20/100)); //цена стандартного оборудования",
+              "    }",
+              "}",
+              "GAnswerData=0;",
+              "changeEq=0;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  120,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  34,
+          "Total.Lines":  90,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "if(GalaxyDiffLevels()<150)maxStation=1;",
+              "if(GalaxyDiffLevels()>149 && GalaxyDiffLevels()<200)maxStation=2;",
+              "if(GalaxyDiffLevels()>199 && GalaxyDiffLevels()<350)maxStation=3;",
+              "if(GalaxyDiffLevels()>349)maxStation=4;",
+              "strBR=substr(CT('Cheat.Ok'),0,2);",
+              "buildId=newarray(3);",
+              "buildId[1]=0;",
+              "buildId[2]=0;",
+              "bArray=newarray(19,5);",
+              "//bArray 0 корпус",
+              "//bArray 1 бак",
+              "//bArray 2 двигатель",
+              "//bArray 3 радар",
+              "//bArray 4 сканер",
+              "//bArray 5 дроид",
+              "//bArray 6 захват",
+              "//bArray 7 гзп",
+              "//bArray 8 пуха 1",
+              "//bArray 9 пуха 2",
+              "//bArray 10 пуха 3",
+              "//bArray 11 пуха 4",
+              "//bArray 12 пуха 5",
+              "//bArray 13 арт 1",
+              "//bArray 14 арт 2",
+              "//bArray 15 арт 3",
+              "//bArray 16 арт 4",
+              "//bArray 17 слот портального генератора",
+              "//bArray [i,0] название предмета(запоминаем)",
+              "//bArray [i,1] название предмета(текст)",
+              "//bArray [i,2] цена предмета",
+              "//bArray [i,3] номер предмета на складе или -1(для корпуса прочность)",
+              "//bArray [i,4] Id предмета на складе",
+              "//bArray[17,3]==-1 - ничего, ==0 - портальный генератор, ==1 - доп. залп в EvoArmada",
+              "for(i=0;i<19;i=i+1) {",
+              "    for(j=2;j<5;j=j+1)bArray[i,j]=0;",
+              "}",
+              "//Функция снятия улучшения и изъятия ММ из предмета",
+              "function Deupgrade(dword item) {",
+              "    dword cloneItem;",
+              "    int cloneAcryn=-1;",
+              "    int cloneModule=-1;",
+              "    int spNum;",
+              "    int status=0;",
+              "    str spName;",
+              "    //Создается предмет-копия",
+              "    if(ItemType(item)!=t_CustomWeapon) cloneItem=CreateEquipment(ItemType(item),ItemSize(item),ItemLevel(item),ItemOwner(item));",
+              "    else cloneItem=CreateCustomWeapon(CustomWeaponType(item),ItemSize(item),ItemLevel(item),ItemOwner(item));",
+              "    if(EqSpecial(item)!=-1) { //если на оригинале есть акрин, запоминаем его номер",
+              "        cloneAcryn=EqSpecial(item);",
+              "        EqSpecial(item,-1);",
+              "    }",
+              "    if(ItemExtraSpecials(item)) { //ищем спецакрин, указывающий на то, что предмет уже был с улучшением/ММ",
+              "        for(int i=ItemExtraSpecials(item)-1;i>-1;i=i-1) {",
+              "            spNum=ItemExtraSpecials(item,i);",
+              "            spName=BonusNumInCfg(spNum);",
+              "            if(spName=='AMod_DefStation_WasModule') {",
+              "                status=status+2; //запоминаем, что в предмете был ММ",
+              "                ItemExtraSpecialsDeleteByType(item,spNum); //удаляем спецакрин",
+              "            }",
+              "            if(spName=='AMod_DefStation_WasImprovement') {",
+              "                status=status+4; //запоминаем, что предмет был улучшен",
+              "                ItemExtraSpecialsDeleteByType(item,spNum); //удаляем спецакрин",
+              "            }",
+              "        }",
+              "    }",
+              "    if(status & 2) cloneModule=EqModule(item); //если в предмете был ММ, запоминаем номер бонуса",
+              "    ModuleToEquipment(-1,item); //изымаем ММ для корректного расчета статов",
+              "    if(!(status & 4)) { //если на предмете изначально не было улучшения - снимаем улучшение",
+              "        if(ItemType(item)>=t_Weapon1 && ItemType(item)<=t_CustomWeapon) {",
+              "            SetEquipmentStats(item,GetEquipmentStats(cloneItem,0),0);",
+              "            SetEquipmentStats(item,GetEquipmentStats(cloneItem,1),1);",
+              "            SetEquipmentStats(item,GetEquipmentStats(cloneItem,2),2);",
+              "        }",
+              "        else if(ItemType(item)==t_Engine || ItemType(item)==t_CargoHook) {",
+              "            SetEquipmentStats(item,GetEquipmentStats(cloneItem,0),0);",
+              "            SetEquipmentStats(item,GetEquipmentStats(cloneItem,1),1);",
+              "        }",
+              "        else SetEquipmentStats(item,GetEquipmentStats(cloneItem,0),0);",
+              "    }",
+              "    if(cloneAcryn>=0) { //копируем акрин",
+              "        EqSpecial(item,cloneAcryn);",
+              "        EqSpecial(cloneItem,cloneAcryn);",
+              "    }",
+              "    if(cloneModule>=0) { //копируем ММ, если он был изначально",
+              "        ModuleToEquipment(cloneModule,item);",
+              "        ModuleToEquipment(cloneModule,cloneItem);",
+              "    }",
+              "    ItemCost(item,ItemCost(cloneItem)); //расчет стоимости",
+              "    FreeItem(cloneItem); //копия нам больше не нужна",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  430,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  40,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "InjectAnswer('choseEq',\"Изменить параметры станции\",0);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  42,
+          "Total.Lines":  8,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(changeEq!=0) { //если менялось оборудование",
+              "    if(GAnswerData!=100000) {//берем со склада предмет",
+              "        bArray[changeEq,3]=GAnswerData;",
+              "        bArray[changeEq,1]=Name(StorageItems(GAnswerData));",
+              "        bArray[changeEq,4]=Id(StorageItems(GAnswerData));",
+              "    }",
+              "    changeEq=0;",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  430,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  44,
+          "Total.Lines":  36,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "InjectAnswer('defStation',\"Принять текущие параметры\",0);",
+              "if(bArray[0,3]<9000) InjectAnswer('choseEq0',\"Увеличьте прочность\",bArray[0,3]+1000);",
+              "if(bArray[0,3]>1000 && bArray[0,3]<9001) InjectAnswer('choseEq0',\"Уменьшите прочность\",bArray[0,3]-1000);",
+              "if(bArray[1,3]==-1) InjectAnswer('choseEq1',\"Заменить стандартный бак\",1);",
+              "else InjectAnswer('choseEq0',\"Вернуть стандартный бак\",1);",
+              "if(bArray[2,3]==-1) InjectAnswer('choseEq1',\"Заменить стандартный двигатель\",2);",
+              "else InjectAnswer('choseEq0',\"Вернуть стандартный двигатель\",2);",
+              "if(bArray[3,3]==-1) InjectAnswer('choseEq1',\"Заменить стандартный радар\",3);",
+              "else InjectAnswer('choseEq0',\"Вернуть стандартный радар\",3);",
+              "if(bArray[4,3]==-1) InjectAnswer('choseEq1',\"Заменить стандартный сканер\",4);",
+              "else InjectAnswer('choseEq0',\"Вернуть стандартный сканер\",4);",
+              "if(bArray[5,3]==-1) InjectAnswer('choseEq1',\"Заменить стандартного дроида\",5);",
+              "else InjectAnswer('choseEq0',\"Вернуть стандартного дроида\",5);",
+              "if(bArray[6,3]==-1) InjectAnswer('choseEq1',\"Заменить стандартный захват\",6);",
+              "else InjectAnswer('choseEq0',\"Вернуть стандартный захват\",6);",
+              "if(bArray[7,3]==-1) InjectAnswer('choseEq1',\"Заменить стандартный ГЗП\",7);",
+              "else InjectAnswer('choseEq0',\"Вернуть стандартный ГЗП\",7);",
+              "if(bArray[8,3]==-1) InjectAnswer('choseEq1',\"Заменить оружие 1 слота\",8);",
+              "else InjectAnswer('choseEq0',\"Вернуть стандартное оружие в 1 слот\",8);",
+              "if(bArray[9,3]==-1) InjectAnswer('choseEq1',\"Заменить оружие 2 слота\",9);",
+              "else InjectAnswer('choseEq0',\"Вернуть стандартное оружие в 2 слот\",9);",
+              "if(bArray[10,3]==-1) InjectAnswer('choseEq1',\"Заменить оружие 3 слота\",10);",
+              "else InjectAnswer('choseEq0',\"Вернуть стандартное оружие в 3 слот\",10);",
+              "if(bArray[11,3]==-1) InjectAnswer('choseEq1',\"Заменить оружие 4 слота\",11);",
+              "else InjectAnswer('choseEq0',\"Вернуть стандартное оружие в 4 слот\",11);",
+              "if(bArray[12,3]==-1) InjectAnswer('choseEq1',\"Заменить оружие 5 слота\",12);",
+              "else InjectAnswer('choseEq0',\"Вернуть стандартное оружие в 5 слот\",12);",
+              "if(bArray[13,3]==-1) InjectAnswer('choseEq1',\"Добавить артефакт в 1 слот\",13);",
+              "else InjectAnswer('choseEq0',\"Удалить артефакт из 1 слота\",13);",
+              "if(bArray[14,3]==-1) InjectAnswer('choseEq1',\"Добавить артефакт в 2 слот\",14);",
+              "else InjectAnswer('choseEq0',\"Удалить артефакт из 2 слота\",14);",
+              "if(bArray[15,3]==-1) InjectAnswer('choseEq1',\"Добавить артефакт в 3 слот\",15);",
+              "else InjectAnswer('choseEq0',\"Удалить артефакт из 3 слота\",15);",
+              "if(bArray[16,3]==-1) InjectAnswer('choseEq1',\"Добавить артефакт в 4 слот\",16);",
+              "else InjectAnswer('choseEq0',\"Удалить артефакт из 4 слота\",16);",
+              "InjectAnswer('addImp', \"Модификация корпуса\", 17);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  47,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "changeEq=GAnswerData;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  430,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  49,
+          "Total.Lines":  37,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "for(i=0;i<StorageItems();i=i+1) { //Перебираем все предметы на складе",
+              "    if(StorageItemLocation(i)!=cPlanet)continue;",
+              "    int0=0;",
+              "    for(j=1;j<17;j=j+1) {",
+              "        if(bArray[j,3]!=i)continue;",
+              "        int0=1;",
+              "        break;",
+              "    }",
+              "    if(int0==1)continue;",
+              "    dwd0=StorageItems(i);",
+              "    if(changeEq>0 && changeEq<8) { //слоты оборудования",
+              "        if(ItemType(dwd0)!=t_Hull+changeEq)continue;",
+              "    }",
+              "    if(changeEq>7 && changeEq<13) { //оружейные слоты",
+              "        if(ItemType(dwd0)<t_Weapon1 || ItemType(dwd0)>t_CustomWeapon)continue;",
+              "    }",
+              "    if(changeEq>12) { //слоты артефактов",
+              "        if(ItemType(dwd0)<t_Artefact || ItemType(dwd0)>=t_Hull)continue;",
+              "        if(ItemType(dwd0)==t_ArtefactTransmitter)continue;",
+              "        if(ItemType(dwd0)==t_ArtefactBomb)continue;",
+              "        if(ItemType(dwd0)==t_ArtefactTranclucator)continue;",
+              "        if(ItemType(dwd0)==t_ArtBlackHole)continue;",
+              "        if(ItemType(dwd0)==t_ArtDefToArms1)continue;",
+              "        if(ItemType(dwd0)==t_ArtDefToArms2)continue;",
+              "        int0=0;",
+              "        for(j=13;j<17;j=j+1) {",
+              "            if(bArray[j,3]==-1)continue;",
+              "            dwd1=StorageItems(bArray[j,3]);",
+              "            if(ItemType(dwd0)!=ItemType(dwd1))continue;",
+              "            int0=1;",
+              "            break;",
+              "        }",
+              "        if(int0==1)continue;",
+              "    }",
+              "    InjectAnswer('choseEq',Name(dwd0)+\" <ItemSize(dwd0)> т.\",i);",
+              "}",
+              "InjectAnswer('choseEq',\"Назад\",100000);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  51,
+          "Total.Lines":  10,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(GAnswerData>999) { //изменение ХП защитки",
+              "    bArray[0,3]=GAnswerData;",
+              "    tempItem=CreateHull(8,1000,GalaxyTechLevel(),PlanetOwner(cPlanet),-1);",
+              "    bArray[0,2]=0.8*ItemCost(tempItem)+(((bArray[0,3]-1000)/1000)*75000);",
+              "    FreeItem(tempItem);",
+              "}",
+              "else { //удаление предмета из слота",
+              "    bArray[GAnswerData,3]=-1;",
+              "    bArray[GAnswerData,1]=bArray[GAnswerData,0];",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -250,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  52,
+          "Total.Lines":  22,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(HullHP(CurShip)<bArray[0,3])HullHP(CurShip,HullHP(CurShip)+Rnd(10,20));",
+              "if(HullHP(CurShip)>=bArray[0,3]) {",
+              "    Chameleon(CurShip,'Ruins.AMod_PE_DefPlatform');",
+              "    NoTalkToShip(CurShip,0);",
+              "    bldState=0;",
+              "    for(i=0;i<GroupCount(Builders);i=i+1) {",
+              "        dwd0=GroupShip(Builders,i);",
+              "        OrderLanding(dwd0,GetShipHomePlanet(dwd0),1);",
+              "        OrderLock(dwd0,1);",
+              "    }",
+              "    HullHP(CurShip,bArray[0,3]);",
+              "    ShipOut(CurShip);",
+              "    if(ShipOwner(CurShip)!=7) ShipJoin(CoalDefPla,CurShip);",
+              "    else ShipJoin(ClanDefPla,CurShip);",
+              "    for(i=1;i<=vaultItem;i=i+1) {",
+              "        tempItem=GetItemFromVault('AMod_PE_'+i);",
+              "        AddItemToShip(CurShip,tempItem);",
+              "        if(ItemImprovement(tempItem)) ItemExtraSpecialsAddByType(tempItem,FindBonusByNameInCfg('AMod_DefStation_WasImprovement'),1);",
+              "        if(~EqModule(tempItem)) ItemExtraSpecialsAddByType(tempItem,FindBonusByNameInCfg('AMod_DefStation_WasModule'),1);",
+              "    }",
+              "    ArrangeItems(CurShip);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -250,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  54,
+          "Total.Lines":  12,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(!OrderLock(CurShip))",
+              "{",
+              "    OrderLanding(CurShip,GetShipHomePlanet(CurShip),1);",
+              "    OrderLock(CurShip,1);",
+              "}",
+              "if(GetShipPlanet(CurShip)>0)",
+              "{",
+              "    OrderLock(CurShip,0);",
+              "    OrderNone(CurShip,1);",
+              "    OrderLock(CurShip,1);",
+              "    ShipDestroy(CurShip,1);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -250,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  56,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "HullHP(GroupToShip(NewPlatform),HullHP(GroupToShip(NewPlatform))+Rnd(10,20));"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  150,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  62,
+          "Total.Lines":  5,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "bldState=0;",
+              "for(i=1;i<=vaultItem;i=i+1) {",
+              "    dwd0=GetItemFromVault('AMod_PE_'+i);",
+              "    if(dwd0)FreeItem(dwd0);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -190,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  64,
+          "Total.Lines":  14,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "for(i=ShipItems(CurShip)-1;i>0;i=i-1) {",
+              "    dwd0=ShipItems(CurShip,i);",
+              "    if(!ItemIsInUse(dwd0)) FreeItem(GetItemFromShip(CurShip,i));",
+              "    else {",
+              "        if(ItemDurability(dwd0)<31) ItemDurability(dwd0,100);",
+              "    }",
+              "}",
+              "for(i=ShipArts(CurShip)-1;i>-1;i=i-1) {",
+              "    dwd0=ShipArts(CurShip,i);",
+              "    if(!ItemIsInUse(dwd0)) FreeItem(GetArtFromShip(CurShip,i));",
+              "    else {",
+              "        if(ItemDurability(dwd0)<31) ItemDurability(dwd0,100);",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  280,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  73,
+          "Total.Lines":  8,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "int0=0;",
+              "cStar=ShipStar(Player());",
+              "cPlanet=GetShipPlanet(Player());",
+              "for(i=0;i<ConStars(StarToCon(cStar));i=i+1) {",
+              "    dwd0=ConStar(StarToCon(cStar),i);",
+              "    if(CountIn(CoalDefPla,dwd0)!=0)int0=int0+CountIn(CoalDefPla,dwd0);",
+              "    if(CountIn(ClanDefPla,dwd0)!=0)int0=int0+CountIn(ClanDefPla,dwd0);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  88,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "AddDialogOverride('DefStationDialog',9000);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  89,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "SkipGreeting();",
+              "int1=ShipFindCustomShipInfoByType(GetTalkShip(),'DefStationInfo');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  93,
+          "Total.Lines":  5,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "OrderMove(GetTalkShip(),CoordX(Player()),CoordY(Player()));",
+              "OrderLock(GetTalkShip(),1);",
+              "ShipCustomShipInfoTextData(GetTalkShip(),int1,1,'Move');",
+              "ShipCustomShipInfoTextData(GetTalkShip(),int1,2,CoordX(Player()));",
+              "ShipCustomShipInfoTextData(GetTalkShip(),int1,3,CoordY(Player()));"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  740,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  98,
+          "Total.Lines":  5,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipCustomShipInfoTextData(GetTalkShip(),int1,1,'Teleport');",
+              "ShipCustomShipInfoTextData(GetTalkShip(),int1,2,Id(tSystem)-1);",
+              "OrderTeleport(GetTalkShip(),tSystem,CoordX(GetTalkShip()),CoordY(GetTalkShip()));",
+              "ShipOrderData1(GetTalkShip(),5);",
+              "ShipCustomShipInfoData(GetTalkShip(),int1,3,CurTurn()+160);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  111,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "AddDialogOverride('DefStationNone',9000);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  950,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  135,
+          "Total.Lines":  6,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "tSystem=ShipStar(GetTalkShip());",
+              "for(i=0;i<StarPlanets(tSystem);i=i+1) {",
+              "    tPlanet=StarPlanets(tSystem,i);",
+              "    if(PlanetOwner(tPlanet)==None) continue;",
+              "    InjectAnswer('DPLanding',\"Совершайте посадку на планету <color=0,50,200><Name(StarPlanets(tSystem,i))></color>\",i);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1020,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  137,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1020,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  138,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  920,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  143,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "tPlanet=ShipOrderObj(GetTalkShip());"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  890,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  144,
+          "Total.Lines":  5,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(OrderLock(CurShip)) OrderLock(CurShip,0);",
+              "SetData(0, 0, CurShip);",
+              "ShipOut(CurShip);",
+              "if(ShipOwner(CurShip)!=PirateClan) ShipJoin(CoalDefPla,CurShip);",
+              "else ShipJoin(ClanDefPla,CurShip);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  165,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  830,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  166,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  740,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  170,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  770,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  173,
+          "Total.Lines":  30,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "RunChildForm('Galaxy');",
+              "if(ShipOrder(Player())==7) {",
+              "    tSystem=ShipOrderObj(Player());",
+              "    OrderNone(Player());",
+              "}",
+              "int0=0;",
+              "tCon=StarToCon(tSystem);",
+              "//Если прыжок совершается в другой сектор, считаем станции",
+              "if(tCon!=StarToCon(ShipStar(GetTalkShip()))) {",
+              "    for(i=0;i<ConStars(tCon);i=i+1) {",
+              "        temp_dwordX=ConStar(tCon,i);",
+              "        for(j=0;j<StarShips(temp_dwordX);j=j+1) {",
+              "            tShip=StarShips(temp_dwordX,j);",
+              "            if(ShipType(tShip)=='DefPlatform') int0=int0+1;",
+              "        }",
+              "    }",
+              "    //Учитываем все телепортирующиеся станции",
+              "    for(i=GroupCount(CoalDefPla)-1;i>=0;i=i-1) {",
+              "        tShip=GroupShip(CoalDefPla,i);",
+              "        if(ShipOrder(tShip)==7) {",
+              "            if(StarToCon(ShipOrderObj(tShip))==tCon) int0=int0+1;",
+              "        }",
+              "    }",
+              "    for(i=GroupCount(ClanDefPla)-1;i>=0;i=i-1) {",
+              "        tShip=GroupShip(ClanDefPla,i);",
+              "        if(ShipOrder(tShip)==7) {",
+              "            if(StarToCon(ShipOrderObj(tShip))==tCon) int0=int0+1;",
+              "        }",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  177,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  830,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  178,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  181,
+          "Total.Lines":  9,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "//Сравниваем расстояние от солнца до самой дальней планеты в системе, не летим слишком далеко за ее пределы",
+              "tPlanet=FindPlanet(ShipStar(GetTalkShip()),'',100,100);",
+              "temp_dwordX=Dist(ShipStar(GetTalkShip()),tPlanet);",
+              "//Ищем в списке артов защитки рефлектор",
+              "reflectorCheck=0;",
+              "for(i=ShipArts(GetTalkShip())-1;i>-1;i=i-1) {",
+              "    dwd0=ShipArts(GetTalkShip(),i);",
+              "    if(EquipmentImageName(dwd0)=='RNDart_02') reflectorCheck=1;",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  187,
+          "Total.Lines":  7,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(BlockExist('Script.Mod_EvoArmada')) {",
+              "    if(bArray[17,3]!=1) InjectAnswer('addImp0',\"Установить орудийную платформу\",1);",
+              "    else InjectAnswer('addImp0',\"Убрать орудийную платформу\",-1);",
+              "}",
+              "if(bArray[17,3]!=0) InjectAnswer('addImp0',\"Установить портальный генератор\",0);",
+              "else InjectAnswer('addImp0',\"Убрать портальный генератор\",-1);",
+              "InjectAnswer('addImp0',\"Назад\",100000);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  280,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  189,
+          "Total.Lines":  3,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(bArray[17,3]==-1) tStr=\"не будет</color> дополнительных улучшений.\";",
+              "else if(bArray[17,3]==0) tStr=\"</color>будет установлен '+'<color=20,40,180>портальный генератор</color>.\";",
+              "else if(bArray[17,3]==1) tStr=\"</color>будет установлена '+'<color=20,40,180>дополнительная орудийная платформа</color>.\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  191,
+          "Total.Lines":  18,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(GAnswerData!=100000) {",
+              "    if(GAnswerData==-1) {",
+              "        bArray[17,0]=\"отсутствует\";",
+              "        bArray[17,1]=\"отсутствует\";",
+              "        bArray[17,2]=75;",
+              "    }",
+              "    else if(GAnswerData==0) {",
+              "        bArray[17,0]=\"портальный генератор\";",
+              "        bArray[17,1]=\"портальный генератор\";",
+              "        bArray[17,2]=120;",
+              "    }",
+              "    else if(GAnswerData==1) {",
+              "        bArray[17,0]=\"дополнительная орудийная платформа\";",
+              "        bArray[17,1]=\"дополнительная орудийная платформа\";",
+              "        bArray[17,2]=120;",
+              "    }",
+              "    bArray[17,3]=GAnswerData;",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1000,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  196,
+          "Total.Lines":  5,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "tSystem=ShipStar(GetTalkShip());",
+              "tPlanet=StarPlanets(tSystem,GAnswerData);",
+              "ShipOut(GetTalkShip());",
+              "ShipJoin(DisassembledPlatform,GetTalkShip());",
+              "SetData(Id(tPlanet), 0, GetTalkShip());"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -250,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  200,
+          "Total.Lines":  19,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "tStr='';",
+              "for(i=ShipItems(CurShip)-1;i>0;i=i-1) {",
+              "    tempItem=ShipItems(CurShip,i);",
+              "    Deupgrade(tempItem);",
+              "    GetItemFromShip(CurShip,tempItem);",
+              "    AddItemToStorage(GetShipPlanet(CurShip),tempItem);",
+              "    tStr=tStr+'</color>- <color=255,240,100>'+Name(tempItem)+'</color>'+\" (<ItemSize(tempItem)> т.)\"+\"<br>\";",
+              "}",
+              "if(ShipArts(CurShip)) {",
+              "    for(i=ShipArts(CurShip)-1;i>-1;i=i-1) {",
+              "        tempItem=ShipArts(CurShip,i);",
+              "        GetArtFromShip(CurShip,tempItem);",
+              "        SFT(Name(tempItem));",
+              "        AddItemToStorage(GetShipPlanet(CurShip),tempItem);",
+              "        tStr=tStr+'</color>- <color=255,240,100>'+Name(tempItem)+'</color>'+\" (<ItemSize(tempItem)> т.)\"+\"<br>\";",
+              "    }",
+              "}",
+              "Ether(7,'',\"<Name(CurShip)> разобрана на планете <Name(GetShipPlanet(CurShip))>.<br>На ваш склад досталвлено следующее оборудование:<br><tStr>\");",
+              "ShipDestroy(CurShip);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -170,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  201,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "OrderLock(CurShip,1);",
+              "OrderLanding(CurShip,IdToPlanet(GetData(0, CurShip)));"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "PlanetNew",
+          "Pos.x":  60,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  2,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  60,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  0,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "StarNew",
+          "Pos.x":  60,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  1,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  8,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "GetShipPlanet(Player())>0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  9,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "PlanetOwner(GetShipPlanet(Player()))!=6"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  -40,
+          "Parent":  -1,
+          "#":  29,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "int0>=maxStation && !GroupToShip(NewPlatform)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  30,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "int0<maxStation && !GroupToShip(NewPlatform)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -190,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  53,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!GroupToShip(NewPlatform)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -190,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  55,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GroupToShip(NewPlatform)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  150,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  60,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "bldState==1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  150,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  61,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!GroupToShip(NewPlatform)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  360,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  65,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player())>=int1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  66,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player())<int1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  71,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GroupToShip(NewPlatform) || GroupToShip(Builders)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  86,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "GetTalkShip()"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  230,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  87,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "ShipFindCustomShipInfoByType(GetTalkShip(),'DefStationInfo')>-1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  105,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipRank(Player())>=3 || GetShipPirateRank(Player())>=3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  490,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  106,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipRank(Player())<3 && GetShipPirateRank(Player())<3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  290,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  109,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "ShipGetBad(GetTalkShip())!=Player() && RelationToRanger(GetTalkShip(),Player())>9"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  290,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  110,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "ShipGetBad(GetTalkShip())==Player() || RelationToRanger(GetTalkShip(),Player())<10"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  920,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  117,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipRank(Player())<6"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  920,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  118,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipRank(Player())>=6"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  890,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  124,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ShipOnSidePirateClan(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  920,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  125,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GetShipPirateRank(Player())>=6"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  890,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  126,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOnSidePirateClan(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  920,
+          "Pos.y":  -90,
+          "Parent":  -1,
+          "#":  127,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GetShipPirateRank(Player())<6"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  860,
+          "Pos.y":  -90,
+          "Parent":  -1,
+          "#":  129,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOnSidePirateClan(GetTalkShip())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  860,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  130,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ShipOnSidePirateClan(GetTalkShip())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  890,
+          "Pos.y":  -120,
+          "Parent":  -1,
+          "#":  133,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ShipOnSidePirateClan(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  890,
+          "Pos.y":  -90,
+          "Parent":  -1,
+          "#":  134,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOnSidePirateClan(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  830,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  136,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!StarBattle(ShipStar(GetTalkShip()))"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  147,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipCustomShipInfoData(GetTalkShip(),int1,3)==-1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  740,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  148,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "~ShipCustomShipInfoData(GetTalkShip(),int1,3)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  153,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOnSidePirateClan(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  154,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOnSidePirateClan(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  155,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOnSidePirateClan(GetTalkShip())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  156,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ShipOnSidePirateClan(GetTalkShip())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  830,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  157,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ShipOnSidePirateClan(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  158,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ShipOnSidePirateClan(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  159,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipRank(Player())<6"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  160,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GetShipPirateRank(Player())<6"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  710,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  167,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipRank(Player())>=6"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  770,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  168,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GetShipPirateRank(Player())>=6"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  710,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  169,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipCustomShipInfoData(GetTalkShip(),int1,3)>CurTurn()"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  770,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  171,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipCustomShipInfoData(GetTalkShip(),int1,3)<=CurTurn()"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  740,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  174,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dist2Star(tSystem,ShipStar(GetTalkShip()))<=930 && int0<maxStation"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  770,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  175,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dist2Star(tSystem,ShipStar(GetTalkShip()))>930"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  176,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "int0>=maxStation"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  540,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  179,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dist(Player(),ShipStar(GetTalkShip()))>round(1.25*temp_dwordX)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  180,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dist(Player(),ShipStar(GetTalkShip()))<=round(1.25*temp_dwordX)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  183,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dist(Player(),ShipStar(Player()))<600 && !reflectorCheck"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -210,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  199,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GetShipPlanet(CurShip)"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "StateNew",
+          "Pos.x":  60,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  4,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "FreeCoal",
+          "Pos.x":  -140,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  7,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "FollowPlatform",
+          "Pos.x":  -140,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  16,
+          "Move":  2,
+          "MoveObj":  17,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "builderTalk",
+          "OnActCode":  "builderTalk",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Building",
+          "Pos.x":  -140,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  18,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "FreeClan",
+          "Pos.x":  -140,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  58,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Landing",
+          "Pos.x":  -140,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  121,
+          "Move":  5,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "DPDialog",
+          "OnActCode":  "DPDialog",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "str0",
+          "Pos.x":  180,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  14,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "dwd0",
+          "Pos.x":  180,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  19,
+          "Var.Type":  "Dword",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "spawnX",
+          "Pos.x":  260,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  21,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "spawnY",
+          "Pos.x":  260,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  22,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "i",
+          "Pos.x":  260,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  23,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "dwd1",
+          "Pos.x":  180,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  24,
+          "Var.Type":  "Dword",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "cStar",
+          "Pos.x":  180,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  26,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "cPlanet",
+          "Pos.x":  180,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  27,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "int0",
+          "Pos.x":  260,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  28,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "bArray",
+          "Pos.x":  350,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  33,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "j",
+          "Pos.x":  290,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  35,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "buildId",
+          "Pos.x":  350,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  36,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tempItem",
+          "Pos.x":  260,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  37,
+          "Var.Type":  "Dword",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "strBR",
+          "Pos.x":  350,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  38,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "int1",
+          "Pos.x":  260,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  39,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "changeEq",
+          "Pos.x":  260,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  45,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "bldState",
+          "Pos.x":  350,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  59,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "vaultItem",
+          "Pos.x":  350,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  63,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "maxStation",
+          "Pos.x":  350,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  70,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "temp_dwordX",
+          "Pos.x":  350,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  100,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tempInt3",
+          "Pos.x":  260,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  101,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tPlanet",
+          "Pos.x":  180,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  128,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tShip",
+          "Pos.x":  180,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  145,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tSystem",
+          "Pos.x":  180,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  146,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tCon",
+          "Pos.x":  180,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  152,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "reflectorCheck",
+          "Pos.x":  260,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  185,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tStr",
+          "Pos.x":  350,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  190,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  4,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  2,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  0,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  7,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  9,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  10,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  17,
+      "End":  18,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  17,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  15,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  13,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  25,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  25,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  12,
+      "End":  40,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  42,
+      "End":  43,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  48,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  48,
+      "End":  49,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  50,
+      "End":  51,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  51,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  18,
+      "End":  52,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  15,
+      "End":  16,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  55,
+      "End":  56,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  53,
+      "End":  54,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  16,
+      "End":  53,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  16,
+      "End":  55,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  57,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  57,
+      "End":  58,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  60,
+      "End":  61,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  61,
+      "End":  62,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  12,
+      "End":  66,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  66,
+      "End":  67,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  65,
+      "End":  13,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  12,
+      "End":  65,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  20,
+      "End":  68,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  68,
+      "End":  69,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  72,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  72,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  73,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  73,
+      "End":  29,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  73,
+      "End":  71,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  73,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  74,
+      "End":  75,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  75,
+      "End":  76,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  12,
+      "End":  77,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  78,
+      "End":  79,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  80,
+      "End":  81,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  81,
+      "End":  82,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  83,
+      "End":  84,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  79,
+      "End":  82,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  84,
+      "End":  82,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  86,
+      "End":  87,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  85,
+      "End":  89,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  89,
+      "End":  90,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  90,
+      "End":  95,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  93,
+      "End":  94,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  94,
+      "End":  96,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  106,
+      "End":  107,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  107,
+      "End":  108,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  58,
+      "End":  64,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  64,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  87,
+      "End":  109,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  109,
+      "End":  88,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  87,
+      "End":  110,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  110,
+      "End":  111,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  112,
+      "End":  113,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  113,
+      "End":  114,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  91,
+      "End":  106,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  91,
+      "End":  105,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  122,
+      "End":  121,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  130,
+      "End":  126,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  130,
+      "End":  124,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  124,
+      "End":  118,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  124,
+      "End":  117,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  126,
+      "End":  119,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  117,
+      "End":  120,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  129,
+      "End":  133,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  129,
+      "End":  134,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  133,
+      "End":  131,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  134,
+      "End":  125,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  134,
+      "End":  127,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  127,
+      "End":  123,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  90,
+      "End":  136,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  136,
+      "End":  116,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  116,
+      "End":  130,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  116,
+      "End":  129,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  122,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  119,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  120,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  123,
+      "End":  137,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  131,
+      "End":  137,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  138,
+      "End":  132,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  137,
+      "End":  132,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  141,
+      "End":  143,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  143,
+      "End":  139,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  139,
+      "End":  140,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  139,
+      "End":  142,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  140,
+      "End":  144,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  90,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  147,
+      "End":  149,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  90,
+      "End":  147,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  90,
+      "End":  148,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  148,
+      "End":  92,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  98,
+      "End":  99,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  92,
+      "End":  156,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  92,
+      "End":  155,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  155,
+      "End":  157,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  155,
+      "End":  154,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  156,
+      "End":  153,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  156,
+      "End":  158,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  158,
+      "End":  159,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  154,
+      "End":  160,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  159,
+      "End":  161,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  160,
+      "End":  162,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  153,
+      "End":  164,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  157,
+      "End":  163,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  163,
+      "End":  166,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  161,
+      "End":  165,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  164,
+      "End":  165,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  162,
+      "End":  166,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  158,
+      "End":  167,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  154,
+      "End":  168,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  168,
+      "End":  170,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  167,
+      "End":  170,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  170,
+      "End":  169,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  170,
+      "End":  171,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  171,
+      "End":  172,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  173,
+      "End":  174,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  173,
+      "End":  175,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  173,
+      "End":  176,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  169,
+      "End":  115,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  115,
+      "End":  165,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  174,
+      "End":  103,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  175,
+      "End":  97,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  172,
+      "End":  102,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  102,
+      "End":  173,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  97,
+      "End":  104,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  150,
+      "End":  104,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  176,
+      "End":  150,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  103,
+      "End":  98,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  172,
+      "End":  151,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  166,
+      "End":  178,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  165,
+      "End":  177,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  177,
+      "End":  99,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  178,
+      "End":  99,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  181,
+      "End":  179,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  181,
+      "End":  180,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  105,
+      "End":  181,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  180,
+      "End":  93,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  179,
+      "End":  182,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  181,
+      "End":  183,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  183,
+      "End":  184,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  186,
+      "End":  189,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  189,
+      "End":  188,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  188,
+      "End":  187,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  191,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  192,
+      "End":  191,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  182,
+      "End":  96,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  184,
+      "End":  96,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  193,
+      "End":  196,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  196,
+      "End":  194,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  194,
+      "End":  195,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  125,
+      "End":  198,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  118,
+      "End":  198,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  198,
+      "End":  135,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  135,
+      "End":  197,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  199,
+      "End":  200,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  121,
+      "End":  201,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  201,
+      "End":  199,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  99,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "10",
+      "String":  "Добавить артефакт в 4 слот"    
+    },
+    {
+      "#":  "100",
+      "String":  "Модификация корпуса"    
+    },
+    {
+      "#":  "101",
+      "String":  "Текущие параметры станции:<br>Корпус: <0> (прочность: <1> )<br>Топливный бак: <2><br>Двигатель: <3><br>Радар: <4><br>Сканер: <5><br>Дроид: <6><br>Захват: <7><br>Генератор защиты: <8><br>Оружие 1 слота: <9><br>Оружие 2 слота: <10><br>Оружие 3 слота: <11><br>Оружие 4 слота: <12><br>Оружие 5 слота: <13><br>Артфакт 1 слота: <14><br>Артфакт 2 слота: <15><br>Артфакт 3 слота: <16><br>Артфакт 4 слота: <17><br>Модификация корпуса: <18><br><br>Мы можем изменить прочность будущей станции или заменить наше стандартное оборудование, на ваше оборудование со склада планеты.<br>Что бы вы хотели изменить?"    
+    },
+    {
+      "#":  "103",
+      "String":  "Приказ принят. Следую на планету <0> для последующего демонтажа.<br>"    
+    },
+    {
+      "#":  "104",
+      "String":  "Совершайте посадку на планету <color=0,50,200><0></color>"    
+    },
+    {
+      "#":  "105",
+      "String":  "На какую планету совершить посадку?"    
+    },
+    {
+      "#":  "106",
+      "String":  "Никуда приземляться не надо. Отмена приказа."    
+    },
+    {
+      "#":  "108",
+      "String":  "<br>"    
+    },
+    {
+      "#":  "109",
+      "String":  " (<0> т.)"    
+    },
+    {
+      "#":  "11",
+      "String":  "Удалить артефакт из 3 слота"    
+    },
+    {
+      "#":  "111",
+      "String":  "<0> разобрана на планете <1>.<br>На ваш склад досталвлено следующее оборудование:<br><2>"    
+    },
+    {
+      "#":  "112",
+      "String":  "В данный момент, на защитной станции <0> Вы можете принять следующие изменения:"    
+    },
+    {
+      "#":  "113",
+      "String":  "отсутствует"    
+    },
+    {
+      "#":  "114",
+      "String":  "</color>будет установлена "    
+    },
+    {
+      "#":  "115",
+      "String":  "</color>будет установлен "    
+    },
+    {
+      "#":  "116",
+      "String":  "не будет</color> дополнительных улучшений."    
+    },
+    {
+      "#":  "117",
+      "String":  "дополнительная орудийная платформа"    
+    },
+    {
+      "#":  "118",
+      "String":  "портальный генератор"    
+    },
+    {
+      "#":  "119",
+      "String":  " <0> т."    
+    },
+    {
+      "#":  "12",
+      "String":  "Добавить артефакт в 3 слот"    
+    },
+    {
+      "#":  "120",
+      "String":  "Убрать портальный генератор"    
+    },
+    {
+      "#":  "121",
+      "String":  "Установить портальный генератор"    
+    },
+    {
+      "#":  "122",
+      "String":  "Убрать орудийную платформу"    
+    },
+    {
+      "#":  "123",
+      "String":  "Установить орудийную платформу"    
+    },
+    {
+      "#":  "13",
+      "String":  "Удалить артефакт из 2 слота"    
+    },
+    {
+      "#":  "14",
+      "String":  "Добавить артефакт в 2 слот"    
+    },
+    {
+      "#":  "15",
+      "String":  "Удалить артефакт из 1 слота"    
+    },
+    {
+      "#":  "16",
+      "String":  "Добавить артефакт в 1 слот"    
+    },
+    {
+      "#":  "17",
+      "String":  "Вернуть стандартное оружие в 5 слот"    
+    },
+    {
+      "#":  "18",
+      "String":  "Заменить оружие 5 слота"    
+    },
+    {
+      "#":  "19",
+      "String":  "Вернуть стандартное оружие в 4 слот"    
+    },
+    {
+      "#":  "20",
+      "String":  "Заменить оружие 4 слота"    
+    },
+    {
+      "#":  "21",
+      "String":  "Вернуть стандартное оружие в 3 слот"    
+    },
+    {
+      "#":  "22",
+      "String":  "Заменить оружие 3 слота"    
+    },
+    {
+      "#":  "23",
+      "String":  "Вернуть стандартное оружие в 2 слот"    
+    },
+    {
+      "#":  "24",
+      "String":  "Заменить оружие 2 слота"    
+    },
+    {
+      "#":  "25",
+      "String":  "Вернуть стандартное оружие в 1 слот"    
+    },
+    {
+      "#":  "26",
+      "String":  "Заменить оружие 1 слота"    
+    },
+    {
+      "#":  "27",
+      "String":  "Вернуть стандартный ГЗП"    
+    },
+    {
+      "#":  "28",
+      "String":  "Заменить стандартный ГЗП"    
+    },
+    {
+      "#":  "29",
+      "String":  "Вернуть стандартный захват"    
+    },
+    {
+      "#":  "30",
+      "String":  "Заменить стандартный захват"    
+    },
+    {
+      "#":  "31",
+      "String":  "Вернуть стандартного дроида"    
+    },
+    {
+      "#":  "32",
+      "String":  "Заменить стандартного дроида"    
+    },
+    {
+      "#":  "33",
+      "String":  "Вернуть стандартный сканер"    
+    },
+    {
+      "#":  "34",
+      "String":  "Заменить стандартный сканер"    
+    },
+    {
+      "#":  "35",
+      "String":  "Вернуть стандартный радар"    
+    },
+    {
+      "#":  "36",
+      "String":  "Заменить стандартный радар"    
+    },
+    {
+      "#":  "37",
+      "String":  "Вернуть стандартный двигатель"    
+    },
+    {
+      "#":  "38",
+      "String":  "Заменить стандартный двигатель"    
+    },
+    {
+      "#":  "39",
+      "String":  "Вернуть стандартный бак"    
+    },
+    {
+      "#":  "40",
+      "String":  "Заменить стандартный бак"    
+    },
+    {
+      "#":  "41",
+      "String":  "Уменьшите прочность"    
+    },
+    {
+      "#":  "42",
+      "String":  "Увеличьте прочность"    
+    },
+    {
+      "#":  "43",
+      "String":  "Принять текущие параметры"    
+    },
+    {
+      "#":  "45",
+      "String":  "На что заменить?"    
+    },
+    {
+      "#":  "46",
+      "String":  "Понятно"    
+    },
+    {
+      "#":  "48",
+      "String":  "У нас недостаточно ресурсов для содержания защитной станции."    
+    },
+    {
+      "#":  "49",
+      "String":  "У нас недостаточно ресурсов для постройки защитной станции."    
+    },
+    {
+      "#":  "5",
+      "String":  "Отлично! Наши рабочие уже приступили к постройке."    
+    },
+    {
+      "#":  "51",
+      "String":  "Я занят строительством защитной станции, не мешай."    
+    },
+    {
+      "#":  "52",
+      "String":  "Я передумал"    
+    },
+    {
+      "#":  "53",
+      "String":  "Рейнджер! Наши отношения немного напряжены, вам не кажется?<br>Возможно, вам стоит подумать над тем, какой деятельностью вы занимаетесь, и сделать соответствующие выводы."    
+    },
+    {
+      "#":  "54",
+      "String":  "На нашу систему напали враги! Пока вы здесь прохлаждаетесь, другие корабли на орбите погибают. Вы должны срочно вступить в бой!"    
+    },
+    {
+      "#":  "55",
+      "String":  "<Player>, у вас проблемы со слухом? Систему атакуют со всех сторон - пока вы здесь сидите и попиваете кофе, наши братья-пираты гибнут. Не время прохлаждаться - пора вступать в бой!"    
+    },
+    {
+      "#":  "56",
+      "String":  "Хочу заказать строительство защитной станции"    
+    },
+    {
+      "#":  "57",
+      "String":  "<0> на связи, чем мы можем вам помочь, <Player>?"    
+    },
+    {
+      "#":  "58",
+      "String":  "Вас поняли, <Player>, станция начинает передислокацию по заданным координатам."    
+    },
+    {
+      "#":  "6",
+      "String":  "Оплатить постройку"    
+    },
+    {
+      "#":  "62",
+      "String":  "Станция должна сменить дислокацию, возьмите курс на текущие координаты моего корабля"    
+    },
+    {
+      "#":  "63",
+      "String":  "Станция должна совершить прыжок в другую систему"    
+    },
+    {
+      "#":  "64",
+      "String":  "Конец связи"    
+    },
+    {
+      "#":  "66",
+      "String":  "Извините, но вашего текущего звания недостаточно для отдачи такого приказа. Возвращайтесь позже."    
+    },
+    {
+      "#":  "67",
+      "String":  "Что ж, очень жаль. Конец связи."    
+    },
+    {
+      "#":  "68",
+      "String":  "Вашей мерзкой роже не место на нашем экране! Немедленно покиньте эту частоту и приготовьтесь к смерти!"    
+    },
+    {
+      "#":  "7",
+      "String":  "Изменить параметры станции"    
+    },
+    {
+      "#":  "70",
+      "String":  "Извините, <Player>, но портальный генератор станции в настоящий момент заряжается. Совершить прыжок можно будет не раньше, чем через <0> дн."    
+    },
+    {
+      "#":  "72",
+      "String":  "Извините, но согласно уставу КВСМК, для отдачи подобных приказов нужно иметь звание не ниже <clr>Командора<clrEnd>."    
+    },
+    {
+      "#":  "73",
+      "String":  "Извини, <Player>, но согласно шкале Рачехана, для отдачи подобных приказов тебе нужно быть как минимум<clr>Ханом<clrEnd>."    
+    },
+    {
+      "#":  "76",
+      "String":  "Приказываю разобрать станцию."    
+    },
+    {
+      "#":  "78",
+      "String":  "Следую на планету <0> для последующей разборки."    
+    },
+    {
+      "#":  "80",
+      "String":  "Станция может совершить прыжок в соседнюю систему в радиусе <clr>30<clrEnd> пк. при помощи портального генератора. Также следует отметить, что нахождение в одном секторе более <0> станций невозможно, по причине крайне затратного обслуживания."    
+    },
+    {
+      "#":  "81",
+      "String":  "Где это видано, чтобы пират такие приказы раздавал? Проваливай по-хорошему."    
+    },
+    {
+      "#":  "82",
+      "String":  "Да ты даже в пиратском братстве не состоишь! Лети отсюда пока цел, а то раскомандовался тут."    
+    },
+    {
+      "#":  "83",
+      "String":  "Извините, <Player>, но мощности портального генератора недостаточно для прыжка в систему <0>."    
+    },
+    {
+      "#":  "84",
+      "String":  "В секторе <0> уже находится максимум станций. В прыжке отказано."    
+    },
+    {
+      "#":  "86",
+      "String":  "Планы изменились, отменить разборку"    
+    },
+    {
+      "#":  "87",
+      "String":  "Станция должна совершить прыжок в другую систему<br>"    
+    },
+    {
+      "#":  "88",
+      "String":  "Выбор системы"    
+    },
+    {
+      "#":  "89",
+      "String":  "Назад"    
+    },
+    {
+      "#":  "9",
+      "String":  "Удалить артефакт из 4 слота"    
+    },
+    {
+      "#":  "90",
+      "String":  "Отменить прыжок"    
+    },
+    {
+      "#":  "91",
+      "String":  "Вас поняли, <Player>, станция начинает прыжок в систему <0>."    
+    },
+    {
+      "#":  "92",
+      "String":  "Извини, <Player>, но согласно шкале Рачехана, для отдачи подобных приказов тебе нужно быть как минимум<clr>Ханом<clrEnd>.<br>"    
+    },
+    {
+      "#":  "94",
+      "String":  "А вдруг ты хочешь заманить нас в ловушку? Мы не доверяем тем, кто не состоит в пиратском клане."    
+    },
+    {
+      "#":  "95",
+      "String":  "<Player>, вы лишены воинского звания за переход на сторону пиратов, об этом не может быть и речи."    
+    },
+    {
+      "#":  "96",
+      "String":  "Перемещение так далеко от основной системы не имеет смысла. В выполнении приказа отказано."    
+    },
+    {
+      "#":  "98",
+      "String":  "В данный момент вы находитесь слишком близко к звезде, <Player>. Наша станция <clr>не обладает<clrEnd> никакой защитой от ее теплового излучения. В выполнении приказа отказано."    
+    },
+    {
+      "#":  "99",
+      "String":  "Мы можем начать строительство станции с такими параметрами:<br>Корпус: <0> (прочность: <1> )<br>Топливный бак: <2><br>Двигатель: <3><br>Радар: <4><br>Сканер: <5><br>Дроид: <6><br>Захват: <7><br>Генератор защиты: <8><br>Оружие 1 слота: <9><br>Оружие 2 слота: <10><br>Оружие 3 слота: <11><br>Оружие 4 слота: <12><br>Оружие 5 слота: <13><br>Артефакт 1 слота: <14><br>Артефакт 2 слота: <15><br>Артефакт 3 слота: <16><br>Артефакт 4 слота: <17><br>Модификация корпуса: <18><br><br>Итоговая цена постройки: <19> cr.<br>Вы можете изменить некоторые параметры будущей станции."    
+    }  
+  ]
+}

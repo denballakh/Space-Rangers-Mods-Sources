@@ -1,0 +1,1243 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  -133,
+  "ViewPos.y":  -162,
+  "ScriptName":  "my_script",
+  "ScriptFileOut":  "C:\\sr2\\Mods\\IntBarter\\Data\\Script\\my_script.scr",
+  "ScriptTextOut":  "C:\\sr2\\Mods\\IntBarter\\CFG\\Rus\\my_script.txt",
+  "GraphPoint.Count":  45,
+  "GraphLink.Count":  45,
+  "GraphRectText.Count":  0,
+  "Variables.Count":  2,
+  "Stars.Count":  1,
+  "Planets.Count":  1,
+  "Ships.Count":  1,
+  "States.Count":  1,
+  "Groups.Count":  1,
+  "Places.Count":  0,
+  "Items.Count":  0,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  3,
+  "DialogMessages.Count":  10,
+  "DialogAnswers.Count":  8,
+  "Operations.Count":  11,
+  "Statements.Count":  6,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  550,
+          "Pos.y":  720,
+          "Parent":  -1,
+          "#":  12,
+          "Msg":  "Я передумал",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  760,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  23,
+          "Msg":  "С тобой приятно иметь дело! Конец связи.",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  220,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  28,
+          "Msg":  "Конец связи",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  32,
+          "Msg":  "Я хочу безвозмездно отдать некоторое оборудование",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  35,
+          "Msg":  "Обычное оборудование",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  36,
+          "Msg":  "Артефакты",
+          "AMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  37,
+          "Msg":  "Вооружение",
+          "AMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  340,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  44,
+          "Msg":  "Я хочу приобрести твое оборудование",
+          "AMsg.Num":  "7"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  380,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  8,
+          "Msg":  "Хм... Рейнджер подался в секонд-хенд. Не ужели все так плохо в галактике...\r\n\r\nВпрочем, у меня действительно есть пара залежавшихся агрегатов, которые я бы поменял на что-то новенькое, за доплату, конечно.\r\n\r\nВыбирай, что хочешь приобрести.",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  11,
+          "Msg":  "Хорошо, я могу это продать, но <FormatItemName(GAnswerData)> служил мне верой и правдой не один год, поэтому я попрошу за него определенную сумму.\r\n\r\n\r\nА так как я не смогу бороздить просторы космоса без <GetEqTypeGenitiveCase(GAnswerData)>, мне также потребуется \"донор\" - какое-то оборудование взамен.",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  16,
+          "Msg":  "Действительно, <FormatItemName(GAnswerData)> мне пригодится!",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  20,
+          "Msg":  "Тебе нужно подлететь поближе, иначе мы не сможем произвести обмен",
+          "DMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  570,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  22,
+          "Msg":  "Увы, мне придется отказаться:\r\n<GetRejectSaleReason(GetTalkShip(), itemToBuy, GAnswerData)>",
+          "DMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  180,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  27,
+          "Msg":  "Не нравишься ты мне, не буду я с тобой торговать.",
+          "DMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  31,
+          "Msg":  "Меня потрепало немного, пока не до торговли",
+          "DMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  33,
+          "Msg":  "Безвозмездно я люблю! Какого рода оборудование ты готов отдать? ",
+          "DMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  42,
+          "Msg":  "Хорошо, а что именно?",
+          "DMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  43,
+          "Msg":  "Что-то приглянулось из моего оборудования?",
+          "DMsg.Num":  "9"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "my_dialog",
+          "Pos.x":  190,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  7        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "ChooseItemDialogue",
+          "Pos.x":  440,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  10        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "ChooseBarterItem",
+          "Pos.x":  620,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  15        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "GroupNew",
+          "Pos.x":  60,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  3,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  70,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  5,
+          "Total.Lines":  1,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "GRun()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  6,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "InjectDialog();"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  380,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  9,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ListShipItems(GetTalkShip(), 1, 'ChooseItemDialogue');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  110,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  13,
+          "Total.Lines":  215,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "function LevelLetter(level) {",
+              "    result = substr('ABCDEFGH', level - 1, 1);",
+              "}",
+              "",
+              "function IsWeapon(item) {",
+              "    if (ItemType(item) >= t_Weapon1 && ItemType(item) <= t_Weapon18) {",
+              "        result = 1;",
+              "    } else {",
+              "        result = 0;",
+              "    }",
+              "}",
+              "",
+              "function GetItemPrice(item) {",
+              "    result = ItemCost(item) * 3;",
+              "}",
+              "",
+              "function FormatItemName(item) {",
+              "    if (IsWeapon(item) == 1) {",
+              "        result = ItemFullName(item) + ' ' + LevelLetter(ItemLevel(item));",
+              "    } else {",
+              "        result = ItemFullName(item);",
+              "    }",
+              "}",
+              "",
+              "function FormatItemNameWithPrice(item) {",
+              "    result = FormatItemName(item) + ' за ' + GetItemPrice(item) + 'cr.';",
+              "}",
+              "",
+              "function GetEqTypeGenitiveCase(item) {",
+              "    if (ItemType(item) == t_FuelTanks) {",
+              "        result = 'топливного бака';",
+              "    } else if (ItemType(item) == t_Engine) {",
+              "        result = 'двигателя';",
+              "    } else if (ItemType(item) == t_Radar) {",
+              "        result = 'радара';",
+              "    } else if (ItemType(item) == t_Scaner) {",
+              "        result = 'сканера';",
+              "    } else if (ItemType(item) == t_RepairRobot) {",
+              "        result = 'дроида';",
+              "    } else if (ItemType(item) == t_CargoHook) {",
+              "        result = 'захвата';",
+              "    } else if (ItemType(item) == t_DefGenerator) {",
+              "        result = 'генератора защитного поля';",
+              "    } else {",
+              "        result = 'оружия';",
+              "    }",
+              "}",
+              "",
+              "function CanItemBeBought(item) {",
+              "    if (IsWeapon(item) == 1",
+              "        || ItemType(item) == t_FuelTanks",
+              "        || ItemType(item) == t_Engine",
+              "        || ItemType(item) == t_Radar",
+              "        || ItemType(item) == t_Scaner",
+              "        || ItemType(item) == t_RepairRobot",
+              "        || ItemType(item) == t_CargoHook",
+              "        || ItemType(item) == t_DefGenerator",
+              "    ) {",
+              "        result = 1;",
+              "    } else {",
+              "        result = 0;",
+              "    }",
+              "}",
+              "",
+              "function ListShipItems(ship, isSellerShip, dialogue) {",
+              "    for (int i = 0; i < ShipItems(ship); i = i + 1) {",
+              "        if (CanItemBeBought(ShipItems(ship, i)) == 1) {",
+              "            InjectAnswer(dialogue, DeleteTags('<FormatItemName(ShipItems(ship, i))>'), ShipItems(ship, i));",
+              "        }",
+              "    }",
+              "}",
+              "",
+              "function ListGiftItems(dialogue, category) {",
+              "    int i = 0;",
+              "    if (category == 2) {",
+              "        for (i = 0; i < ShipArts(Player()); i = i + 1) {",
+              "            InjectAnswer(dialogue, DeleteTags('<FormatItemName(ShipArts(Player(), i))>'), ShipArts(Player(), i));",
+              "        }",
+              "    } else {",
+              "        for (i = 0; i < ShipItems(Player()); i = i + 1) {",
+              "            if (CanItemBeBought(ShipItems(Player(), i)) == 1) {",
+              "                if (category == 1 && IsWeapon(ShipItems(Player(), i)) == 1) {",
+              "                    InjectAnswer(dialogue, DeleteTags('<FormatItemName(ShipItems(Player(), i))>'), ShipItems(Player(), i));",
+              "                } else if (category == 0 && IsWeapon(ShipItems(Player(), i)) == 0) {",
+              "                    InjectAnswer(dialogue, DeleteTags('<FormatItemName(ShipItems(Player(), i))>'), ShipItems(Player(), i));",
+              "                }",
+              "            }",
+              "        }",
+              "    }",
+              "}",
+              "",
+              "function RoundToThousands(number) {",
+              "    result = round(number / 1000 + 1) * 1000;",
+              "}",
+              "",
+              "function GetBarterPrice(itemToBuy, itemToSell) {",
+              "    if (itemToBuy == 0) {",
+              "        result = 0;",
+              "    } else {",
+              "        result = RoundToThousands(max(ItemCost(itemToBuy) - ItemCost(itemToSell), 0) * 3 + ItemCost(itemToBuy) / 2);",
+              "    }",
+              "}",
+              "",
+              "function GetBarterString(itemToBuy, itemToSell) {",
+              "    result = 'Обменять на ' + DeleteTags(FormatItemName(itemToSell)) + ' и доплатить ' + GetBarterPrice(itemToBuy, itemToSell) + ' cr.';",
+              "}",
+              "",
+              "function IsEqCompatible(item1, item2) {",
+              "    if (IsWeapon(item1) == 1 && IsWeapon(item2) == 1) {",
+              "        result = 1;",
+              "    } else if (ItemType(item1) == ItemType(item2)) {",
+              "        result = 1;",
+              "    } else {",
+              "        result = 0;",
+              "    }",
+              "}",
+              "",
+              "function GetItemTooBigMesssage(ship, itemToBuy, itemToSell) {",
+              "    int itemToBuySize = 0;",
+              "    if (itemToBuy != 0) {",
+              "        itemToBuySize = ItemSize(itemToBuy);",
+              "    }",
+              "    if (ShipFreeSpace(ship) < ItemSize(itemToSell) - itemToBuySize) {",
+              "        result = '- такая махина как ' + FormatItemName(itemToSell) + ' просто не поместится на мой корабль\\n';",
+              "    } else {",
+              "        result = '';",
+              "    }",
+              "}",
+              "",
+              "function GetItemTooBrokenMesssage(ship, item) {",
+              "    if (ItemDurability(item) < 75) {",
+              "        result = '- похоже, что ' + FormatItemName(item) + ' не в лучшем состоянии, мои приборы говорят, что осталось ' + ItemDurability(item) + '% до ремонта\\n' ;",
+              "    } else {",
+              "        result = '';",
+              "    }",
+              "}",
+              "",
+              "function GetRejectSaleReason(ship, itemToBuy, itemToSell) {",
+              "    result = GetItemTooBigMesssage(ship, itemToBuy, itemToSell) + GetItemTooBrokenMesssage(ship, itemToSell);",
+              "}",
+              "",
+              "function ListBarterOptions(itemToBuy, dialogue) {",
+              "    for (int i = 0; i < ShipItems(Player()); i = i + 1) {",
+              "        if (IsEqCompatible(itemToBuy, ShipItems(Player(), i)) == 0) {",
+              "            continue;",
+              "        }",
+              "        InjectAnswer(dialogue, GetBarterString(itemToBuy, ShipItems(Player(), i)), ShipItems(Player(), i));",
+              "    }",
+              "}",
+              "",
+              "function Debug(msg) {",
+              "    Ether(0, '--debug--', msg);",
+              "}",
+              "",
+              "function IsBarterAllowedForShip(ship) {",
+              "    str shipType = ShipType(ship);",
+              "    if (",
+              "        shipType == 'Ranger'",
+              "        || shipType == 'Pirate'",
+              "        || shipType == 'Transport'",
+              "        || shipType == 'Freelancer'",
+              "    ) {",
+              "        result = 1;",
+              "    } else {",
+              "        result = 0;",
+              "    }",
+              "}",
+              "",
+              "function CheckRelationToPlayer() {",
+              "    if (RelationToRanger(GetTalkShip(), Player()) > 0) {",
+              "        result = 1;",
+              "    } else {",
+              "        result = 0;",
+              "    }",
+              "}",
+              "",
+              "function InjectDialog() {",
+              "    dword ship = GetTalkShip();",
+              "    if (ship != 0) {",
+              "        if (IsBarterAllowedForShip(ship) == 1) {",
+              "            AddDialogInject('my_dialog', '', \"Я хочу предложить бартер\", 1);",
+              "        }",
+              "    }",
+              "}",
+              "",
+              "function GetAnyItemFromShip(ship, item, category) {",
+              "    Debug(category);",
+              "    if (category == 2) {",
+              "        GetArtFromShip(ship, FindItemInShip(ship, item));",
+              "    } else {",
+              "        GetItemFromShip(ship, FindItemInShip(ship, item));",
+              "    }",
+              "}",
+              "",
+              "function Barter(ship, itemToBuy, itemToSell, category) {",
+              "    if (itemToBuy != 0) {",
+              "        ShipMoney(Player(), ShipMoney(Player()) - GetBarterPrice(itemToBuy, itemToSell));",
+              "        GetAnyItemFromShip(ship, itemToBuy, category);",
+              "        AddItemToShip(Player(), itemToBuy);",
+              "    }",
+              "    GetAnyItemFromShip(Player(), itemToSell, category);",
+              "    AddItemToShip(ship, itemToSell);",
+              "}",
+              "",
+              "function CanStartBarter() {",
+              "    if (",
+              "        CheckRelationToPlayer() == 1",
+              "        && Dist(GetTalkShip(), Player()) <= 200",
+              "        && HullDamage(GetTalkShip()) <= 10",
+              "    ) {",
+              "        result = 1;",
+              "    } else {",
+              "        result = 0;",
+              "    }",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  14,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "itemToBuy = GAnswerData;",
+              "ListBarterOptions(GAnswerData, 'ChooseBarterItem');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  510,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  25,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Sound('Sound.NoMoney');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  820,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  26,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Barter(GetTalkShip(), itemToBuy, GAnswerData, giftCategory);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  34,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "itemToBuy = 0;",
+              "ListGiftItems('ChooseBarterItem', giftCategory);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  39,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "giftCategory = 0;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  40,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "giftCategory = 1;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  200,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  41,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "giftCategory = 2;"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "PlanetNew",
+          "Pos.x":  60,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  2,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  60,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  0,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "StarNew",
+          "Pos.x":  60,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  1,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  18,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "CanStartBarter() == 1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  19,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "CheckRelationToPlayer() == 1 && Dist(GetTalkShip(), Player()) > 200"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  570,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  21,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GetRejectSaleReason(GetTalkShip(), itemToBuy, GAnswerData) != ''"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  510,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  24,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player()) < GetBarterPrice(itemToBuy, GAnswerData)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  180,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  29,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "CheckRelationToPlayer() == 0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  30,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "CheckRelationToPlayer() == 1 && HullDamage(GetTalkShip()) > 10"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "StateNew",
+          "Pos.x":  60,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  4,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "itemToBuy",
+          "Pos.x":  380,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  17,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "giftCategory",
+          "Pos.x":  430,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  38,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  4,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  2,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  0,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  9,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  15,
+      "End":  16,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  11,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  15,
+      "End":  21,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  21,
+      "End":  22,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  22,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  16,
+      "End":  23,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  15,
+      "End":  24,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  24,
+      "End":  11,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  24,
+      "End":  25,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  16,
+      "End":  26,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
+      "End":  27,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  27,
+      "End":  28,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  29,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  20,
+      "End":  28,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  28,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  19,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  18,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  35,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  36,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  35,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  40,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  36,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  42,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  42,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  18,
+      "End":  43,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  44,
+      "End":  8,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  19,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "27",
+      "String":  "Я передумал"    
+    },
+    {
+      "#":  "29",
+      "String":  "Хм... Рейнджер подался в секонд-хенд. Не ужели все так плохо в галактике...<br><br>Впрочем, у меня действительно есть пара залежавшихся агрегатов, которые я бы поменял на что-то новенькое, за доплату, конечно.<br><br>Выбирай, что хочешь приобрести."    
+    },
+    {
+      "#":  "30",
+      "String":  "Хорошо, я могу это продать, но <0> служил мне верой и правдой не один год, поэтому я попрошу за него определенную сумму.<br><br><br>А так как я не смогу бороздить просторы космоса без <1>, мне также потребуется \"донор\" - какое-то оборудование взамен."    
+    },
+    {
+      "#":  "32",
+      "String":  "Тебе нужно подлететь поближе, иначе мы не сможем произвести обмен"    
+    },
+    {
+      "#":  "33",
+      "String":  "Увы, мне придется отказаться:<br><0>"    
+    },
+    {
+      "#":  "34",
+      "String":  "Конец связи"    
+    },
+    {
+      "#":  "35",
+      "String":  "С тобой приятно иметь дело! Конец связи."    
+    },
+    {
+      "#":  "36",
+      "String":  "Не нравишься ты мне, не буду я с тобой торговать."    
+    },
+    {
+      "#":  "37",
+      "String":  "Меня потрепало немного, пока не до торговли"    
+    },
+    {
+      "#":  "38",
+      "String":  "Я хочу предложить бартер"    
+    },
+    {
+      "#":  "43",
+      "String":  "Действительно, <0> мне пригодится!"    
+    },
+    {
+      "#":  "44",
+      "String":  "Безвозмездно я люблю! Какого рода оборудование ты готов отдать? "    
+    },
+    {
+      "#":  "45",
+      "String":  "Я хочу безвозмездно отдать некоторое оборудование"    
+    },
+    {
+      "#":  "46",
+      "String":  "Обычное оборудование"    
+    },
+    {
+      "#":  "47",
+      "String":  "Артефакты"    
+    },
+    {
+      "#":  "48",
+      "String":  "Вооружение"    
+    },
+    {
+      "#":  "49",
+      "String":  "Хорошо, а что именно?"    
+    },
+    {
+      "#":  "50",
+      "String":  "Что-то приглянулось из моего оборудования?"    
+    },
+    {
+      "#":  "51",
+      "String":  "Я хочу приобрести твое оборудование"    
+    }  
+  ]
+}

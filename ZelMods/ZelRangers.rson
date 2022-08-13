@@ -1,0 +1,4137 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  45,
+  "ViewPos.y":  -549,
+  "ScriptName":  "Mod_ZelRangers",
+  "ScriptFileOut":  "H:\\Mod_ZelRangers.scr",
+  "ScriptTextOut":  "H:\\Lang.txt",
+  "GraphPoint.Count":  154,
+  "GraphLink.Count":  119,
+  "GraphRectText.Count":  8,
+  "Variables.Count":  46,
+  "Stars.Count":  1,
+  "Planets.Count":  1,
+  "Ships.Count":  1,
+  "States.Count":  1,
+  "Groups.Count":  1,
+  "Places.Count":  0,
+  "Items.Count":  0,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  2,
+  "DialogMessages.Count":  19,
+  "DialogAnswers.Count":  30,
+  "Operations.Count":  30,
+  "Statements.Count":  22,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1010,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  28,
+          "Msg":  "Какой ужас... \r\nНо позвольте! Военные ведь абсолютно бесполезны против доминаторов! Я видел собственными глазами, как один клиг уничтожил отряд из 3 флагманов и 14 военных!",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1010,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  30,
+          "Msg":  "Чего? Надо будет научить их хорошим манерам. Думаю, пара кварковых бомб внутри правительственных зданий быстро образумит их.\r\nЧто же касается рейнджеров... Возможно я могу как-то помочь?",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1010,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  32,
+          "Msg":  "Хорошо, я согласен! Сколько вам нужно?",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1040,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  33,
+          "Msg":  "Ага, еще чего? Я свои кровно заработанные денюжки никому не отдам.",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1100,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  35,
+          "Msg":  "",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1190,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  41,
+          "Msg":  "Расскажите о параметрах первого рейнджера",
+          "AMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1190,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  47,
+          "Msg":  "Расскажите о параметрах второго рейнджера",
+          "AMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1190,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  48,
+          "Msg":  "Расскажите о параметрах третьего рейнджера",
+          "AMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1190,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  49,
+          "Msg":  "Расскажите о параметрах четвертого рейнджера",
+          "AMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1190,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  50,
+          "Msg":  "Расскажите о параметрах пятого рейнджера",
+          "AMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1120,
+          "Pos.y":  -40,
+          "Parent":  -1,
+          "#":  51,
+          "Msg":  "Расскажите об общих параметрах",
+          "AMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1280,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  53,
+          "Msg":  "Меня интересует количество новых рейнджеров",
+          "AMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1280,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  54,
+          "Msg":  "Меня интересует частота появления новых рейнджеров",
+          "AMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1280,
+          "Pos.y":  -40,
+          "Parent":  -1,
+          "#":  55,
+          "Msg":  "Меня интересует количество выдаваемого оборудования новым рейнджерам",
+          "AMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1280,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  56,
+          "Msg":  "Меня интересует программа обучения новых рейнджеров",
+          "AMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1280,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  57,
+          "Msg":  "Меня интересует улучшение оборудования рейнджеров",
+          "AMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1280,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  80,
+          "Msg":  "Меня интересует размер корпуса рейнджера",
+          "AMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1280,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  81,
+          "Msg":  "Меня интересует акрин корпуса рейнджера",
+          "AMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1280,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  82,
+          "Msg":  "Меня интересует уровень экипировки рейнджера",
+          "AMsg.Num":  "18"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1470,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  97,
+          "Msg":  "Да",
+          "AMsg.Num":  "19"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1430,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  99,
+          "Msg":  "Нет",
+          "AMsg.Num":  "20"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1340,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  100,
+          "Msg":  "Я хочу улучшить эту отрасль",
+          "AMsg.Num":  "21"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1430,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  103,
+          "Msg":  "Хорошо",
+          "AMsg.Num":  "22"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1310,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  104,
+          "Msg":  "Обратно к параметрам текущего рейнджера",
+          "AMsg.Num":  "23"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  1120,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  107,
+          "Msg":  "Пока",
+          "AMsg.Num":  "24"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1310,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  108,
+          "Msg":  "Обратно к общим параметрам",
+          "AMsg.Num":  "25"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1530,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  110,
+          "Msg":  "Хочу улучшить эту отрасль еще раз",
+          "AMsg.Num":  "26"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1510,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  111,
+          "Msg":  "Ага",
+          "AMsg.Num":  "27"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1250,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  136,
+          "Msg":  "Обратно к выбору параметров",
+          "AMsg.Num":  "28"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1160,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  140,
+          "Msg":  "Обратно к выбору параметров",
+          "AMsg.Num":  "29"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1010,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  27,
+          "Msg":  "Да, вы абсолютно правы. В последнее время центрам рейнджеров сильно урезали бюджет в связи с тяжелым положением на фронтах. Доминаторы захватывают систему за системой и все доступные средства Коалиции уходят на постройку и содержание большого военного флота. Тех крох, которые перепадают нам, едва хватает на обучение и экипировку новых рейджеров. У нас банально не хватает денег на совершенствование оборудования для наших бравых добровольцев.\r\nЯ, к примеру, сегодня завтракал в элитном ресторане, но из-за урезания бюджета вместо изысканных деликатесов должен был есть просто хорошую еду!",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1010,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  29,
+          "Msg":  "И я о том же! Но совет пяти рас и слушать об этом не хочет. Говорят мол \"Военный - Бог, а Рейнджер лох\".",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1010,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  31,
+          "Msg":  "Конечно. Если вы будете оказывать нам материальную помощь, мы сможем улучшить нашу работу по многим направлениям.",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1070,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  34,
+          "Msg":  "Эх... Придется и дальше бедствовать... Пойду икру от горя поем...",
+          "DMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1010,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  36,
+          "Msg":  "Не торопитесь. Столько денег у вас наверняка нету. Тем более вам еще за мою виллу платить... Ой, то есть я хотел сказать, что развитие разных направлений требует разного количества вложений. Нашего бюджета хватает на то, чтобы снаряжать и обучать новых рейнджеров, но на улучшение инфраструктуры у нас денег нету. Давайте я вам расскажу о текущем положении дел.",
+          "DMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1120,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  38,
+          "Msg":  "Что именно вас интересует?",
+          "DMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1240,
+          "Pos.y":  -40,
+          "Parent":  -1,
+          "#":  52,
+          "Msg":  "В общие параметры входит:\r\n1. Количество новых рейджеров\r\n2. Частота появления новых рейнджеров\r\n3. Количество выдаваемого оборудования рейнджерам\r\n4. Программа обучения новых рейнджеров\r\n5. Улучшение оборудования рейнджеров\r\n",
+          "DMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1310,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  66,
+          "Msg":  "В данный момент мы за один раз способны подготовить <StrNRangers[NRangers-1]>.",
+          "DMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1310,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  70,
+          "Msg":  "Мы постоянно работаем над привлечением новых гуманоидов в рейнджерское движение. Прямо сейчас мы <StrLvlFreq[LvlFreq-1]>.",
+          "DMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1310,
+          "Pos.y":  -40,
+          "Parent":  -1,
+          "#":  71,
+          "Msg":  "Следующим рейнджерам мы будем выдавать <StrNItems[NItems-1]>.",
+          "DMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1310,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  72,
+          "Msg":  "Сейчас мы <StrLvlSkills[LvlSkills-1]>.",
+          "DMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1310,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  73,
+          "Msg":  "Нашим специалистом по улучшению оборудования является <StrLvlUpgrade[LvlUpgrade-1]>.",
+          "DMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1250,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  74,
+          "Msg":  "В параметры конкретного рейнджера входит:\r\n1. Размер корпуса\r\n2. Акрин корпуса\r\n3. Уровень экипировки",
+          "DMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1310,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  83,
+          "Msg":  "Этому рейнджеру мы предоставляем <StrLvlHullSize[LvlHullSize[current_ranger]-1]>.",
+          "DMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1310,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  84,
+          "Msg":  "Акринацию корпуса этого рейнджера производят <StrLvlHullAcrin[LvlHullAcrin[current_ranger]-1]>.",
+          "DMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1310,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  85,
+          "Msg":  "Оборудование для этого рейнджера мы <StrLvlEq[LvlEq[current_ranger]-1]>.",
+          "DMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1430,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  95,
+          "Msg":  "На данный момент улучшение этой отрасли будет составлять <cost> cr. Желаете проспонсировать этот проект?",
+          "DMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1510,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  98,
+          "Msg":  "Спасибо. Ваши деньги мне очень пригодятся. Ой, то есть нам.",
+          "DMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1410,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  102,
+          "Msg":  "Мы улучшили эту отрасль до максимального уровня.",
+          "DMsg.Num":  "18"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "Begin",
+          "Pos.x":  1010,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  26        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "Verbovka",
+          "Pos.x":  1040,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  40        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "Group",
+          "Pos.x":  370,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  4,
+          "Owner":  62,
+          "Group.Type":  33554558,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  370,
+          "Pos.y":  -200,
+          "Parent":  -1,
+          "#":  2,
+          "Total.Lines":  1,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "GRun();"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  700,
+          "Pos.y":  -200,
+          "Parent":  -1,
+          "#":  8,
+          "Total.Lines":  9,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if (CurTurn() >= buy_date + BuildingTime()) {",
+              "    // Обновляем дату постройки",
+              "    buy_date = CurTurn();",
+              "    // Покупаем NRangers рейнджеров на каждом ЦР",
+              "    for (j = 0; j < GalaxyStars(); j = j + 1)",
+              "        if (StarRuins(GalaxyStar(j), 'RC'))",
+              "            for (k = 0; k < NRangers; k = k + 1)",
+              "                BuyNewRanger(StarRuins(GalaxyStar(j), 'RC'), k);",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  500,
+          "Pos.y":  -190,
+          "Parent":  -1,
+          "#":  9,
+          "Total.Lines":  240,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "function RandomWeapon(race, bonus) {",
+              "    // ВНИМАНИЕ ВНИМАНИЕ Я убрал проверку на принадлежность пушки какой-либо стороне. Рангеры могут заспавниться с пиратскими и домиковскими пушками!",
+              "    // Подходящий тип: 1) ТУ появления < ГТУ + bonus; 2) ТУ появления > ГТУ + bonus - 3; 3) доступен для продажи и коалами, и пиратами",
+              "    cnt = Rnd(t_Weapon1, t_Weapon18);",
+              "    // Правильная, но почему-то не работающая версия",
+              "//    while (!(",
+              "//            (GetCustomWeaponData(cnt, 'TechLevel') <= GalaxyTechLevel() + bonus)",
+              "//            && (GetCustomWeaponData(cnt, 'TechLevel') >= GalaxyTechLevel() - 3)",
+              "//            && (",
+              "//                (GetCustomWeaponData(cnt, 'Availability') == 'Free')",
+              "//                || ((GetCustomWeaponData(cnt, 'Availability') == 'CoalitionOnly') && (race <= Gaal))",
+              "//                || ((GetCustomWeaponData(cnt, 'Availability') == 'PirateOnly') && (race == PirateClan))",
+              "//            )",
+              "//        ))",
+              "    ",
+              "    while (!(",
+              "            (GetCustomWeaponData(cnt, 'TechLevel') <= max(1, GalaxyTechLevel() + bonus))",
+              "            && (GetCustomWeaponData(cnt, 'TechLevel') >= GalaxyTechLevel() - 3)",
+              "            && (",
+              "                (cnt == t_Weapon1)",
+              "                || (cnt == t_Weapon2)",
+              "                || (cnt == t_Weapon3)",
+              "                || (cnt == t_Weapon4)",
+              "                || (cnt == t_Weapon5)",
+              "                || (cnt == t_Weapon6)",
+              "                || (cnt == t_Weapon7)",
+              "                || (cnt == t_Weapon8)",
+              "                || (cnt == t_Weapon9)",
+              "                || (cnt == t_Weapon10)",
+              "                || (cnt == t_Weapon11)",
+              "                || (cnt == t_Weapon12)",
+              "                //|| (cnt == t_Weapon13)",
+              "                //|| (cnt == t_Weapon14)",
+              "                //|| (cnt == t_Weapon15)",
+              "                //|| (cnt == t_Weapon16)",
+              "                //|| (cnt == t_Weapon17)",
+              "                //|| (cnt == t_Weapon18)",
+              "            )",
+              "        ))",
+              "        cnt = Rnd(t_Weapon1, t_Weapon18);",
+              "",
+              "    size = round(0.01 * Rnd(67, 133) * GetCustomWeaponData(cnt, 'AverageSize')); // +-33% размера",
+              "    power = GetCustomWeaponData(cnt, 'TechLevel');",
+              "    power = 8.0 / (9.0 - power) * (GalaxyTechLevel() + bonus + 1 - power); // Рассчитываем ТУ пушки по ГТУ и ТУ ее появления",
+              "    power = toDiap(round(power), 1, 8);",
+              "    result = CreateEquipment(cnt, size, power, race);",
+              "",
+              "    if(!result){// Этого не должно происходить, но если произошло, то даем малокский промлазер 1ТУ весом 10",
+              "        if (debug) SFT('[ZelRangers.RandomWeapon] Пушка не выдалась');",
+              "        result = CreateEquipment(t_Weapon1, 10, 1, 0);",
+              "    }",
+              "}",
+              "",
+              "function RandomEqQuality(lvl) {",
+              "    result = -1;",
+              "",
+              "    if (lvl == 1) {",
+              "        result = choice3(",
+              "            0.90, -1,",
+              "            0.10, 0,",
+              "            0.00, 1",
+              "        );",
+              "    } else if (lvl == 2) {",
+              "        result = choice3(",
+              "            0.65, -1,",
+              "            0.25, 0,",
+              "            0.10, 1",
+              "        );",
+              "    } else if (lvl == 3) {",
+              "        result = choice3(",
+              "            0.40, -1,",
+              "            0.40, 0,",
+              "            0.20, 1",
+              "        );",
+              "    } else if (lvl == 4) {",
+              "        result = choice3(",
+              "            0.10, -1,",
+              "            0.60, 0,",
+              "            0.30, 1",
+              "        );",
+              "    } else if (lvl == 5) {",
+              "        result = choice3(",
+              "            0.00, -1,",
+              "            0.50, 0,",
+              "            0.50, 1",
+              "        );",
+              "    }",
+              "",
+              "    if(result == -1 && debug){SFT('[ZelRangers.RandomEqQuality] result==-1');}; // Это произойдет, если был получем lvl не из множества {1,2,3,4,5}",
+              "}",
+              "",
+              "function GiveEq(ship, type, size, lvl) {",
+              "    //SFT('[GiveEq] ship id: ' + Id(ship) + ' type: ' + type + ' size: ' + size + ' lvl:' + lvl);",
+              "    if (type == t_Weapon1) {",
+              "        item = RandomWeapon(ShipOwner(ship), RandomEqQuality(lvl));",
+              "    } else {",
+              "        item = CreateEquipment(type, round(0.01 * Rnd(80, 120) * size), toDiap(GalaxyTechLevel() + RandomEqQuality(lvl), 1, 8), ShipOwner(ship));",
+              "    }",
+              "    AddItemToShip(ship, item);",
+              "}",
+              "",
+              "",
+              "function GiveAllEq(ship, lvl, itemsCnt) {",
+              "    // Задолбаюсь тут все комментировать, и так по коду понятно)",
+              "",
+              "    GiveEq(ship, t_Engine, Rnd(20, 50), lvl);",
+              "    GiveEq(ship, t_FuelTanks, Rnd(20, 50), lvl);",
+              "    GiveEq(ship, t_CargoHook, Rnd(20, 50), lvl);",
+              "    GiveEq(ship, t_Weapon1, 1, lvl);",
+              "",
+              "    if (itemsCnt == 1) { //все и так уже выдано",
+              "    } else if (itemsCnt == 2) {",
+              "        if (prob(0.50))",
+              "            GiveEq(ship, t_Radar, Rnd(15, 40), lvl);",
+              "        else",
+              "            GiveEq(ship, t_Weapon1, 1, lvl);",
+              "    } else if (itemsCnt == 3) {",
+              "        GiveEq(ship, t_Weapon1, 1, lvl);",
+              "        GiveEq(ship, t_Radar, Rnd(15, 40), lvl);",
+              "        if (prob(0.50)) {",
+              "            random = choice4(",
+              "                0.25, 0,",
+              "                0.25, 1,",
+              "                0.25, 2,",
+              "                0.25, 3",
+              "            );",
+              "            if (random == 0) GiveEq(ship, t_Weapon1, 1, lvl); else",
+              "            if (random == 1) GiveEq(ship, t_Scaner, Rnd(15, 40), lvl); else",
+              "            if (random == 2) GiveEq(ship, t_DefGenerator, Rnd(20, 50), lvl); else",
+              "            if (random == 3) GiveEq(ship, t_RepairRobot, Rnd(20, 50), lvl);",
+              "        }",
+              "    } else if (itemsCnt == 4) {",
+              "        GiveEq(ship, t_Weapon1, 1, lvl);",
+              "        GiveEq(ship, t_Radar, Rnd(15, 40), lvl);",
+              "        if (prob(0.5)) {",
+              "            random = Rnd(0, 3);",
+              "            if (random == 0) GiveEq(ship, t_Weapon1, 1, lvl); else",
+              "            if (random == 1) GiveEq(ship, t_Scaner, Rnd(15, 40), lvl); else",
+              "            if (random == 2) GiveEq(ship, t_DefGenerator, Rnd(20, 50), lvl); else",
+              "            if (random == 3) GiveEq(ship, t_RepairRobot, Rnd(20, 50), lvl);",
+              "        } else {",
+              "            random = Rnd(0, 3);",
+              "            if (random == 0) {",
+              "                GiveEq(ship, t_Weapon1, 1, lvl);",
+              "                GiveEq(ship, t_Scaner, Rnd(15, 40), lvl);",
+              "            } else if (random == 1) {",
+              "                GiveEq(ship, t_Scaner, Rnd(15, 40), lvl);",
+              "                GiveEq(ship, t_DefGenerator, Rnd(20, 50), lvl);",
+              "            } else if (random == 2) {",
+              "                GiveEq(ship, t_DefGenerator, Rnd(20, 50), lvl);",
+              "                GiveEq(ship, t_RepairRobot, Rnd(20, 50), lvl);",
+              "            } else if (random == 3/*кто-то это читает?*/) {",
+              "                GiveEq(ship, t_RepairRobot, Rnd(20, 50), lvl);",
+              "                GiveEq(ship, t_Weapon1, 1, lvl);",
+              "            }",
+              "        }",
+              "    } else if (itemsCnt == 5){",
+              "        GiveEq(ship, t_Weapon1, 1, lvl);",
+              "        GiveEq(ship, t_Weapon1, 1, lvl);",
+              "        GiveEq(ship, t_Radar, Rnd(15, 40), lvl);",
+              "",
+              "        if (prob(0.50)) {",
+              "            random = Rnd(0, 3);",
+              "            if (random == 0) {",
+              "                GiveEq(ship, t_Weapon1, 1, lvl);",
+              "                GiveEq(ship, t_Scaner, Rnd(15, 40), lvl);",
+              "            } else if (random == 1) {",
+              "                GiveEq(ship, t_Scaner, Rnd(15, 40), lvl);",
+              "                GiveEq(ship, t_DefGenerator, Rnd(20, 50), lvl);",
+              "            } else if (random == 2) {",
+              "                GiveEq(ship, t_DefGenerator, Rnd(20, 50), lvl);",
+              "                GiveEq(ship, t_RepairRobot, Rnd(20, 50), lvl);",
+              "            } else if (random == 3) {",
+              "                GiveEq(ship, t_RepairRobot, Rnd(20, 50), lvl);",
+              "                GiveEq(ship, t_Weapon1, 1, lvl);",
+              "            }",
+              "        } else {",
+              "            GiveEq(ship, t_Weapon1, 1, lvl);",
+              "            GiveEq(ship, t_Scaner, Rnd(15, 40), lvl);",
+              "            GiveEq(ship, t_DefGenerator, Rnd(20, 50), lvl);",
+              "            GiveEq(ship, t_RepairRobot, Rnd(20, 50), lvl);",
+              "        }",
+              "    }",
+              "}",
+              "",
+              "// Тренирует рейнджера",
+              "function TrainShip(ship, lvl) {",
+              "    result = 0;",
+              "",
+              "    if (lvl == 1) {",
+              "        result = choice2(",
+              "            0.67, 0,",
+              "            0.33, 1",
+              "        );",
+              "    } else if (lvl == 2) {",
+              "        result = choice3(",
+              "            0.25, 0,",
+              "            0.25, 1,",
+              "            0.50, 2",
+              "        );",
+              "    } else if (lvl == 3) {",
+              "        result = choice3(",
+              "            0.57, 1,",
+              "            0.28, 2,",
+              "            0.14, 3",
+              "        );",
+              "    } else if (lvl == 4) {",
+              "        result = choice4(",
+              "            0.17, 1,",
+              "            0.33, 2,",
+              "            0.33, 3,",
+              "            0.17, 4",
+              "        );",
+              "    } else if (lvl == 5) {",
+              "        result = choice3(",
+              "            0.55, 3,",
+              "            0.22, 4,",
+              "            0.22, 5",
+              "        );",
+              "    }",
+              "    for (i = 0; i <= 5; i = i + 1)",
+              "        ShipSkill(ship, i, toDiap(result + Rnd(-1, 1), 1, 6)); //Добавил рандомизацию +-1 уровень навыка",
+              "}",
+              "",
+              "// Улучшает оборудку на корабле несколько раз",
+              "function UpgradeShip(ship, lvl) {",
+              "    if (lvl == 1) ShipImproveItems(ship, Rnd(1, 1)); else",
+              "    if (lvl == 2) ShipImproveItems(ship, Rnd(2, 3)); else",
+              "    if (lvl == 3) ShipImproveItems(ship, Rnd(3, 5)); else",
+              "    if (lvl == 4) ShipImproveItems(ship, Rnd(5, 8)); else",
+              "    if (lvl == 5) ShipImproveItems(ship, Rnd(8,12));",
+              "}",
+              "",
+              "// RandomWeapon()",
+              "// GiveEq(ship, eq_type, eq_size, eq_lvl)",
+              "// GiveAllEq(ship, lvl, eq_cnt)",
+              "// Trainship(ship, lvl)",
+              "// Upgradeship(ship, lvl)",
+              "",
+              "// Улучшение характеристик корабля"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  660,
+          "Pos.y":  -140,
+          "Parent":  -1,
+          "#":  18,
+          "Total.Lines":  20,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "buy_date = CurTurn(); // дата последней постройки кораблей",
+              "//cost_multiplier = 1.0; // множитель стоимости улучшений, увеличивается при каждом улучшении",
+              "//accepted = 0; // принял ли игрок предложение спонсировать постройку",
+              "",
+              "//NRangers = 1; // количество кораблей",
+              "//LvlFreq = 1; // частота постройки",
+              "//NItems = 1; // количество оборудки",
+              "//LvlSkills = 1; // повышение навыков",
+              "//LvlUpgrade = 1; // улучшение оборудки",
+              "",
+              "money = newarray(5); // начальный капитал рейнджеров, увеличивается при каждом улучшении",
+              "LvlHullSize = newarray(5); // размер корпуса",
+              "LvlHullAcrin = newarray(5); // качество акрина",
+              "LvlEq = newarray(5); // качество оборудки",
+              "for (i = 0; i < 5; i = i + 1) {",
+              "    money[i] = 10.0;",
+              "    LvlHullSize[i] = 1;",
+              "    LvlHullAcrin[i] = 1;",
+              "    LvlEq[i] = 1;",
+              "}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  -200,
+          "Parent":  -1,
+          "#":  19,
+          "Total.Lines":  79,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "// rc - ЦР, на котором появится рейнджер",
+              "// n - его номер (n=0,1,2,3,4)",
+              "function BuyNewRanger(rc, n) {",
+              "    ship = BuyRanger(StarPlanets(ShipStar(rc), Rnd(0, StarPlanets(ShipStar(rc)) - 1)), money[n]);",
+              "",
+              "    if (prob(0.25)) {",
+              "        random = Rnd(Maloc, Gaal);",
+              "        ShipPilotRace(ship, random);",
+              "        ShipOwner(ship, random);",
+              "        ItemOwner(ShipItems(ship, 0), random);",
+              "        Chameleon(ship);",
+              "    }",
+              "",
+              "    // Если игрок - пират, то и рейнджер - пират",
+              "    //if (playerRace() == 7)",
+              "    //    ShipOwner(ship, 7);",
+              "",
+              "    // Обработка корпуса Таухито ()",
+              "    if (Chameleon(ship, 'GraphName') == 'Ship.People.RangerOldFag') {",
+              "        //ItemOwner(ShipItems(ship, 0), None);",
+              "        //ShipPilotRace(ship, Maloc); //choice5(1,Maloc,1,Peleng,0,People,1,Fei,1,Gaal));",
+              "        //SFT('!' + Chameleon(ship, 'GraphName'));",
+              "        //Chameleon(ship, 'Ship.Maloc.Ranger');",
+              "        //HullSeries(ShipItems(ship, 0), 80);",
+              "        //SFT('!! ' + Chameleon(ship, 'GraphName'));",
+              "        //SFT('!! ' + HullSeries(ShipItems(ship, 0)));",
+              "    }",
+              "",
+              "    // Даем корпус с нужными параметрами",
+              "    ItemSize(ShipItems(ship, 0), Rnd(0.75 * HullSize(n), 1.25 * HullSize(n)));",
+              "    power = RandomAcrynPower(LvlHullAcrin[n]); //сила акрина от 0 (нет акрина) до 4 (уникальный акрин)",
+              "    //if (test) power = 4;",
+              "    if (power != 0) {",
+              "        acryn = RandomAcryn(power, ship, ShipOwner(ship));",
+              "",
+              "        //if (power == 1) {}",
+              "        //if (power == 2) {}",
+              "        //if (power == 3) {}",
+              "        if (power == 4) {",
+              "            admirals_cnt = admirals_cnt + 1;",
+              "            ShipMoney(ship, round(6.0 * ShipMoney(ship))); // Повышаем капитал в 6.0 раз",
+              "            while (ShipRank(ship) < 7) { // Повышаем звание до Адмирала",
+              "                ShipRankPoints(ship, ShipNextRankPoints(ship));",
+              "                ShipRaiseRank(ship);",
+              "            }",
+              "            ItemSize(ShipItems(ship, 0), round(1.3 * ItemSize(ShipItems(ship, 0)))); // Увеличиваем корпус на 20%",
+              "        }",
+              "",
+              "        // Навешиваем акрин на корпус",
+              "        if (acryn != -1 && acryn != 0) {",
+              "            SpecialToEquipment(acryn, ShipItems(ship, 0));",
+              "        }",
+              "    }",
+              "    HullHP(ship, ItemSize(ShipItems(ship, 0)));",
+              "    Chameleon(ship);",
+              "",
+              "    // Удаляем всю оборудку",
+              "    for (i = ShipItems(ship) - 1; i > 0; i = i - 1)",
+              "        FreeItem(GetItemFromShip(ship, i));",
+              "",
+              "    // Даем новую оборудку",
+              "    GiveAllEq(ship, LvlEq[n], toDiap(NItems + (power == 4), 1, 5));",
+              "    ArrangeItems(ship);",
+              "",
+              "    // Улучшаем и тренируем рейнджера в соответствии с общими улучшениями отраслей",
+              "    UpgradeShip(ship, toDiap(LvlUpgrade + (power == 4), 1, 5));",
+              "    TrainShip(ship, toDiap(LvlSkills + (power == 4), 1, 5));",
+              "",
+              "    ShipRefit(ship);ShipRefit(ship); //рефитаем после выдачи и улучшения оборудки",
+              "",
+              "    // Перемещаем рейнджера в ЦР",
+              "    TransferShip(ship, rc);",
+              "}",
+              "",
+              "",
+              "",
+              "// BuyNewRanger(RC, n)",
+              "",
+              "// Функция создания рейнджера и изменения его характеристик"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1010,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  25,
+          "Total.Lines":  4,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "if (accepted)",
+              "    AddDialogInject('Verbovka', '', \"Вербовка новых рейнджеров\", 0);",
+              "else",
+              "    AddDialogInject('Begin', '', \"Что-то давно я не видел новых рейджеров...\", 0);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1010,
+          "Pos.y":  500,
+          "Parent":  -1,
+          "#":  37,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "InjectAnswer('Verbovka', \"Далее\", 0);",
+              "accepted = 1;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1490,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  69,
+          "Total.Lines":  20,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player(), ShipMoney(Player()) - cost);",
+              "",
+              "if ((branch >= 0) && (branch <= 4))",
+              "    for (i = 0; i <= 4; i = i + 1)",
+              "        money[i] = money[i] + branch_money_bonus[branch];",
+              "else",
+              "    money[current_ranger] = money[current_ranger] + branch_money_bonus[branch];",
+              "",
+              "cost_multiplier = cost_multiplier + branch_cost_multiplier_inc[branch] * branch_level;",
+              "",
+              "     if (branch == 0) NRangers = NRangers + 1;",
+              "else if (branch == 1) LvlFreq = LvlFreq + 1;",
+              "else if (branch == 2) NItems = NItems + 1;",
+              "else if (branch == 3) LvlSkills = LvlSkills + 1;",
+              "else if (branch == 4) LvlUpgrade = LvlUpgrade + 1;",
+              "else if (branch == 5) LvlHullSize[current_ranger] = LvlHullSize[current_ranger] + 1;",
+              "else if (branch == 6) LvlHullAcrin[current_ranger] = LvlHullAcrin[current_ranger] + 1;",
+              "else if (branch == 7) LvlEq[current_ranger] = LvlEq[current_ranger] + 1;",
+              "",
+              "Sound('Sound.Buy');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1340,
+          "Pos.y":  -80,
+          "Parent":  -1,
+          "#":  75,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "branch_level = NRangers;",
+              "branch = 0;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1340,
+          "Pos.y":  -60,
+          "Parent":  -1,
+          "#":  76,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "branch_level = LvlFreq;",
+              "branch = 1;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1340,
+          "Pos.y":  -40,
+          "Parent":  -1,
+          "#":  77,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "branch_level = NItems;",
+              "branch = 2;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1340,
+          "Pos.y":  -20,
+          "Parent":  -1,
+          "#":  78,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "branch_level = LvlSkills;",
+              "branch = 3;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1340,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  79,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "branch_level = LvlUpgrade;",
+              "branch = 4;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1220,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  86,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "current_ranger = 0;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1220,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  87,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "current_ranger = 1;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1220,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  88,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "current_ranger = 2;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1220,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  89,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "current_ranger = 3;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1220,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  90,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "current_ranger = 4;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1340,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  91,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "branch_level = LvlHullSize[current_ranger];",
+              "branch = 5;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1340,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  92,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "branch_level = LvlHullAcrin[current_ranger];",
+              "branch = 6;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1340,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  93,
+          "Total.Lines":  2,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "branch_level = LvlEq[current_ranger];",
+              "branch = 7;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1410,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  105,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "cost = cost_multiplier * GalaxyMoney(branch_level - 1) * branch_cost[branch];"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1550,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  106,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "branch_level = branch_level + 1;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1470,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  109,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "//В начало диалога"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  530,
+          "Pos.y":  -200,
+          "Parent":  -1,
+          "#":  112,
+          "Total.Lines":  16,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "function HullSize(rangerN) {",
+              "    result = ((1800.0 - GalaxyDiffLevels()) * (100.0 + GalaxyTechLevel() * 5.0) * (10.0 + 18.0 * LvlHullSize[rangerN])) / 20000.0;",
+              "}",
+              "",
+              "function BuildingTime() {",
+              "    result = ((12.0 + ShipPilotRace(Player())) * ((1000.0 + GalaxyDiffLevels()) * (30.0 - 5.0 * LvlFreq) * (GalaxyRangers() * 100.0 / (12.0 + 4.0 * LvlFreq)) + 1000000.0 - 100000.0 * LvlFreq) / 100000.0) / 10.0;",
+              "    result = round(result);",
+              "//    if (LvlFreq == 5) // Просьба Кота",
+              "//        result = 0;",
+              "}",
+              "",
+              "",
+              "// HullSize(n)",
+              "// BuildingTime()",
+              "",
+              "// Основные формулы"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  770,
+          "Pos.y":  -140,
+          "Parent":  -1,
+          "#":  116,
+          "Total.Lines":  56,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "",
+              "StrLvlFreq = newarray(5);",
+              "StrLvlFreq[0] = \"пробиваем двоечку каждому встречному не рейнджеру\";",
+              "StrLvlFreq[1] = \"кричим на улицах \\\"Не рейнджерствовал - не мужик\\\"\";",
+              "StrLvlFreq[2] = \"устраиваем рейнджер-парады\";",
+              "StrLvlFreq[3] = \"рассказываем о том, что все рейнджеры - это посланники Бога\";",
+              "StrLvlFreq[4] = \"устраиваем массовую пропаганду рейджерского движения\";",
+              "",
+              "StrNRangers = newarray(5);",
+              "StrNRangers[0] = \"только одного рейнджера\";",
+              "StrNRangers[1] = \"двух рейнджеров\";",
+              "StrNRangers[2] = \"компанию из трех рейнджеров\";",
+              "StrNRangers[3] = \"аж четырех рейнджеров\";",
+              "StrNRangers[4] = \"полноценный отряд из пяти рейнджеров\";",
+              "",
+              "StrNItems = newarray(5);",
+              "StrNItems[0] = \"минимальное количество оборудования\";",
+              "StrNItems[1] = \"малое количество оборудования\";",
+              "StrNItems[2] = \"среднее количество оборудования\";",
+              "StrNItems[3] = \"большое количество оборудования\";",
+              "StrNItems[4] = \"огромное количество оборудования\";",
+              "",
+              "StrLvlSkills = newarray(5);",
+              "StrLvlSkills[0] = \"берем в рейнджеров первых попавшихся бомжей\";",
+              "StrLvlSkills[1] = \"берем в рейнджеров исключительно профессиональных таксистов и поваров\";",
+              "StrLvlSkills[2] = \"берем в рейнджеров всех желающих и проводим для них специальную программу обучения\";",
+              "StrLvlSkills[3] = \"берем в рейнджеров исключительно лучших кандидатов и проводим с ними углубленные тренировки\";",
+              "StrLvlSkills[4] = \"берем в рейнджеров исключительно профессиональных пилотов и обучаем их всевозможным навыкам\";",
+              "",
+              "StrLvlUpgrade = newarray(5);",
+              "StrLvlUpgrade[0] = \"малок дошкольного возраста\";",
+              "StrLvlUpgrade[1] = \"работяга пеленг, только что пришедший с завода\";",
+              "StrLvlUpgrade[2] = \"человеческий студент\";",
+              "StrLvlUpgrade[3] = \"ученый фэянской расы\";",
+              "StrLvlUpgrade[4] = \"лучший специалист из всех гаальцев\";",
+              "",
+              "StrLvlHullSize = newarray(5);",
+              "StrLvlHullSize[0] = \"корпус размером до одного кубического нанометра\";",
+              "StrLvlHullSize[1] = \"корпус маленького размера\";",
+              "StrLvlHullSize[2] = \"корпус среднего размера\";",
+              "StrLvlHullSize[3] = \"корпус большого размера\";",
+              "StrLvlHullSize[4] = \"корпус огромного размера\";",
+              "",
+              "StrLvlHullAcrin = newarray(5);",
+              "StrLvlHullAcrin[0] = \"в туалете\";",
+              "StrLvlHullAcrin[1] = \"в подвале без света\";",
+              "StrLvlHullAcrin[2] = \"везде, где только можно\";",
+              "StrLvlHullAcrin[3] = \"у нас на базе\";",
+              "StrLvlHullAcrin[4] = \"в специальном заводе по акринации корпусов\";",
+              "",
+              "StrLvlEq = newarray(5);",
+              "StrLvlEq[0] = \"ищем на свалках\";",
+              "StrLvlEq[1] = \"скупаем у бывших пилотов\";",
+              "StrLvlEq[2] = \"создаем сами\";",
+              "StrLvlEq[3] = \"скупаем на планетах\";",
+              "StrLvlEq[4] = \"производим на заводах под заказ\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  510,
+          "Pos.y":  -140,
+          "Parent":  -1,
+          "#":  125,
+          "Total.Lines":  32,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "// множитель стоимости каждого улучшения",
+              "branch_cost = newarray(8);",
+              "branch_cost[0] = 40;",
+              "branch_cost[1] = 60;",
+              "branch_cost[2] = 30;",
+              "branch_cost[3] = 50;",
+              "branch_cost[4] = 20;",
+              "branch_cost[5] = 6;",
+              "branch_cost[6] = 10;",
+              "branch_cost[7] = 8;",
+              "",
+              "// бонус к капиталу от каждого улучшения",
+              "branch_money_bonus = newarray(8);",
+              "branch_money_bonus[0] = 4;",
+              "branch_money_bonus[1] = 6;",
+              "branch_money_bonus[2] = 3;",
+              "branch_money_bonus[3] = 5;",
+              "branch_money_bonus[4] = 2;",
+              "branch_money_bonus[5] = 3;",
+              "branch_money_bonus[6] = 5;",
+              "branch_money_bonus[7] = 4;",
+              "",
+              "// приращение cost_multiplier при каждом улучшении",
+              "branch_cost_multiplier_inc = newarray(8);",
+              "branch_cost_multiplier_inc[0] = 0.4;",
+              "branch_cost_multiplier_inc[1] = 0.6;",
+              "branch_cost_multiplier_inc[2] = 0.3;",
+              "branch_cost_multiplier_inc[3] = 0.5;",
+              "branch_cost_multiplier_inc[4] = 0.2;",
+              "branch_cost_multiplier_inc[5] = 0.06;",
+              "branch_cost_multiplier_inc[6] = 0.10;",
+              "branch_cost_multiplier_inc[7] = 0.08;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  440,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  148,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "SFT('CurTurn: ' + CurTurn() + ' Building time: ' + BuildingTime() + ' Build date: ' + buy_date + BuildingTime() + ' Last build: ' + buy_date);"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  550,
+          "Pos.y":  -200,
+          "Parent":  -1,
+          "#":  149,
+          "Total.Lines":  78,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "// Случайное действительно число от 0.0 до 1.0 с шагом 1e-9",
+              "function random_real() {",
+              "    result = 1.0 * Rnd(0, 1000000000) / 1000000000.0;",
+              "}",
+              "",
+              "// Функции для взвешенного случайного выбора из нескольких значений (надеюсь я нигде не опечатался)",
+              "// w1 - вес, a - значение",
+              "// Сумма весов не обязательно равна 1",
+              "function choice2(w1, a, w2, b) {",
+              "    if (w1 + w2 == 0) {",
+              "        result = choice2(1.0, a, 1.0, b);",
+              "    } else {",
+              "        if (random_real() < 1.0 * w1 / (0.0 + w1 + w2)) {",
+              "            result = a;",
+              "        } else {",
+              "            result = b;",
+              "        }",
+              "    }",
+              "}",
+              "",
+              "function choice4(w1, a, w2, b, w3, c, w4, d) {",
+              "    result = choice2(",
+              "        w1 + w2, choice2(w1, a, w2, b),",
+              "        w3 + w4, choice2(w3, c, w4, d)",
+              "    );",
+              "}",
+              "",
+              "function choice8(w1, a, w2, b, w3, c, w4, d, w5, e, w6, f, w7, g, w8, h) {",
+              "    result = choice2(",
+              "        w1 + w2 + w3 + w4, choice4(w1, a, w2, b, w3, c, w4, d),",
+              "        w5 + w6 + w7 + w8, choice4(w5, e, w6, f, w7, g, w8, h)",
+              "    );",
+              "}",
+              "",
+              "//function choice16(w1, a, w2, b, w3, c, w4, d, w5, e, w6, f, w7, g, w8, h, w9, i, w10, j, w11, k, w12, l, w13, m, w14, n, w15, p, w16, p) {",
+              "//    result = choice2(",
+              "//        w1 + w2 + w3 + w4 + w5 + w6 + w7 + w8, choice8(w1, a, w2, b, w3, c, w4, d, w5, e, w6, f, w7, g, w8, h),",
+              "//        w9 + w10 + w11 + w12 + w13 + w14 + w15 + w16, choice8(w9, i, w10, j, w11, k, w12, l, w13, m, w14, n, w15, p, w16, p)",
+              "//    );",
+              "//}",
+              "",
+              "function choice3(w1, a, w2, b, w3, c) {",
+              "    result = choice4(w1, a, w2, b, w3, c, 0, 0);",
+              "}",
+              "",
+              "function choice5(w1, a, w2, b, w3, c, w4, d, w5, e) {",
+              "    result = choice8(w1, a, w2, b, w3, c, w4, d, w5, e, 0, 0, 0, 0, 0, 0);",
+              "}",
+              "",
+              "function choice6(w1, a, w2, b, w3, c, w4, d, w5, e, w6) {",
+              "    result = choice8(w1, a, w2, b, w3, c, w4, d, w5, e, w6, f, 0, 0, 0, 0);",
+              "}",
+              "",
+              "function choice7(w1, a, w2, b, w3, c, w4, d, w5, e, w6, f, w7) {",
+              "    result = choice8(w1, a, w2, b, w3, c, w4, d, w5, e, w6, f, w7, g, 0, 0);",
+              "}",
+              "",
+              "// Приводит значение val к диапазону (mn,mx)",
+              "function toDiap(val, mn, mx) {",
+              "    result = min(max(val, mn), mx);",
+              "    //result = choice3(",
+              "    //    val < mn, mn,",
+              "    //    val > mx, mx,",
+              "    //    val >= mn && val <= mx, val",
+              "    //);",
+              "}",
+              "",
+              "// Возвращает истину (1) с вероятностью p, иначе - ложь (0)",
+              "function prob(p) {",
+              "    result = choice2(1.0 - p, 0, 0.0 + p, 1);",
+              "}",
+              "",
+              "// random_real()",
+              "// choiceN(weight_i, val_i, ...)",
+              "// toDiap(val, min, max)",
+              "// prob(p)",
+              "",
+              "// Функции для рандомизации"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  500,
+          "Pos.y":  -210,
+          "Parent":  -1,
+          "#":  150,
+          "Total.Lines":  249,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "// Возвращает силу акрина в зависимости от уровня улучшения акрина рейнджера",
+              "function RandomAcrynPower(lvl) {",
+              "    if (lvl == 1) {",
+              "        result = choice5(",
+              "            0.800, 0,",
+              "            0.170, 1,",
+              "            0.027, 2,",
+              "            0.003, 3,",
+              "            0.000 * exp(-0.7 * admirals_cnt), 4",
+              "        );",
+              "    }",
+              "    if (lvl == 2) {",
+              "        result = choice5(",
+              "            0.400, 0,",
+              "            0.500, 1,",
+              "            0.090, 2,",
+              "            0.010, 3,",
+              "            0.001 * exp(-0.7 * admirals_cnt), 4",
+              "        );",
+              "    }",
+              "    if (lvl == 3) {",
+              "        result = choice5(",
+              "            0.050, 0,",
+              "            0.650, 1,",
+              "            0.250, 2,",
+              "            0.050, 3,",
+              "            0.003 * exp(-0.7 * admirals_cnt), 4",
+              "        );",
+              "    }",
+              "    if (lvl == 4) {",
+              "    result = choice5(",
+              "            0.010, 0,",
+              "            0.400, 1,",
+              "            0.400, 2,",
+              "            0.200, 3,",
+              "            0.006 * exp(-0.7 * admirals_cnt), 4",
+              "        );",
+              "    }",
+              "    if (lvl == 5) {",
+              "        result = choice5(",
+              "            0.001, 0,",
+              "            0.050, 1,",
+              "            0.500, 2,",
+              "            0.400, 3,",
+              "            0.009 * exp(-0.7 * admirals_cnt), 4",
+              "        );",
+              "    }",
+              "}",
+              "",
+              "// Возвращает случайный акрин по силе и расе",
+              "function RandomAcryn(power, ship, race) {",
+              "    result = -1;",
+              "    cnt = 0; // Количество бросков номера. При cnt > 100 цикл завершается",
+              "",
+              "    // Есть 4 категории акринов:",
+              "    //    1 - слабые",
+              "    //    2 - средние",
+              "    //    3 - сильные",
+              "    //    4 - уникальные (вероятность порядка 1%) (получают доп. бонусы)",
+              "",
+              "    // if ((random == <rndid>) && prob(0.20) && (race == Maloc || race == Gaal) && (race != People)) result = FindBonusByName(<str>);",
+              "    //     prob(0.20) - верно с вероятностью 20%",
+              "    //     (race == Maloc || race == Gaal) && (race != People) - условия на расы",
+              "    //     FindBonusByName(<str>); - поиск по имени",
+              "    //     FindBonusByCustomTag(<str>); - поиск по тегу",
+              "    //     FindBonusByNameInCfg(<str>); - поиск по имени раздела в ланге",
+              "    //     если использовать тот же <rndid>, то бонус перезапишется (если вероятность не снижена)",
+              "    while (result == -1 || result == 0) {",
+              "        cnt = cnt + 1;",
+              "        if (cnt > 100) break;",
+              "",
+              "        if (power == 1) {",
+              "            random = Rnd(1, 38);",
+              "            if ((random == 1)) result = FindBonusByNameInCfg('353'); //Быстрый корпус I",
+              "            if ((random == 2)) result = FindBonusByNameInCfg('357'); //Неуязвимый корпус I",
+              "            if ((random == 3)) result = FindBonusByNameInCfg('361'); //Ремонтный корпус I",
+              "            if ((random == 4)) result = FindBonusByNameInCfg('365'); //Миоплазменный корпус I",
+              "            if ((random == 5)) result = FindBonusByNameInCfg('369'); //Пигамарный корпус I",
+              "            if ((random == 6)) result = FindBonusByNameInCfg('472'); //Корпус \"Молния\" I",
+              "            if ((random == 7)) result = FindBonusByNameInCfg('476'); //Корпус \"Броненосец\" I",
+              "            if ((random == 8) && (race == Gaal)) result = FindBonusByNameInCfg('468'); //Корпус \"Честный ренегал\" I",
+              "            if ((random == 9) && (race == Peleng)) result = FindBonusByNameInCfg('460'); //Корпус \"Добрый лякуша\" I",
+              "            if ((random == 10) && (race == People)) result = FindBonusByNameInCfg('464'); //Корпус \"Мирный корсар\" I",
+              "            if ((random == 11) && (race == People)) result = FindBonusByNameInCfg('480'); //Корпус \"Ушастик\" I",
+              "            if ((random == 12)) result = FindBonusByNameInCfg('352'); // Болид",
+              "",
+              "            //if ((random == 13)) result = FindBonusByCustomTag('ExpScienceRanks_TickSpeedMode'); // Клещ #Скоростной",
+              "            if ((random == 14) && prob(0.33)) result = FindBonusByCustomTag('LEOContentMod_Giperion_1_Hull'); // Гиперион I",
+              "            if ((random == 15)) result = FindBonusByCustomTag('?');",
+              "            if ((random == 16)) result = FindBonusByCustomTag('LEOLastHulls_G2_Hull'); // Черный призрак",
+              "            if ((random == 17)) result = FindBonusByCustomTag('LEOLastHulls_G5_Hull'); // Цербер",
+              "",
+              "            if ((random == 18) && (race == Peleng)) result = FindBonusByName(\"Ара\" + ' I');",
+              "            if ((random == 19) && (race == People || race == Maloc)) result = FindBonusByName(\"Бамберга\" + ' I');",
+              "            if ((random == 20) && (race == Maloc)) result = FindBonusByName(\"Кабан\" + ' I');",
+              "            if ((random == 21) && (race == Fei)) result = FindBonusByName(\"Ястреб\" + ' I');",
+              "            if ((random == 22) && (race == Gaal)) result = FindBonusByName(\"Пантера\" + ' I');",
+              "            if ((random == 23) && (race == People || race == Peleng)) result = FindBonusByName(\"Акулёнок\" + ' I');",
+              "            if ((random == 24) && (race == Maloc)) result = FindBonusByNameInCfg('EvoGkvan_GkvanHull');",
+              "            if ((random == 25) && (race == Maloc)) result = FindBonusByNameInCfg('Cat_Ships_Bigrabyrba');",
+              "            if ((random == 26) && (race == Fei)) result = FindBonusByNameInCfg('Cat_Ships_Shegramer');",
+              "            if ((random == 27) && (race == People)) result = FindBonusByNameInCfg('Cat_Ships_Vyhr');",
+              "            if ((random == 28) && (race == Peleng)) result = FindBonusByNameInCfg('Cat_Ships_Beshraflac');",
+              "            if ((random == 29) && (race == Fei)) result = FindBonusByNameInCfg('Cat_Ships_Ellentanda');",
+              "            if ((random == 30)) result = FindBonusByNameInCfg('Cat_Ships_Bongrabar');",
+              "            if ((random == 31)) result = FindBonusByNameInCfg('Cat_Ships_Hramgerb');",
+              "            if ((random == 32) && (race == Peleng)) result = FindBonusByNameInCfg('Cat_Ships_Casholdsha');",
+              "            if ((random == 33) && (race == Peleng)) result = FindBonusByNameInCfg('Cat_Ships_Chipshush');",
+              "            if ((random == 34)) result = FindBonusByNameInCfg('Cat_Ships_Cvahonda');",
+              "            if ((random == 35)) result = FindBonusByNameInCfg('Cat_Ships_Sharcun');",
+              "            if ((random == 36) && (race == People)) result = FindBonusByNameInCfg('Cat_Ships_Horizont');",
+              "            if ((random == 37) && (race == People)) result = FindBonusByNameInCfg('Cat_Ships_Trackvagn');",
+              "            if ((random == 38)) result = FindBonusByNameInCfg('Cat_Ships_Zvedavar');",
+              "        }",
+              "",
+              "        if (power == 2) {",
+              "            random = Rnd(1, 37);",
+              "            if ((random == 1)) result = FindBonusByNameInCfg('354'); //Быстрый корпус II",
+              "            if ((random == 2)) result = FindBonusByNameInCfg('358'); //Неуязвимый корпус II",
+              "            if ((random == 3)) result = FindBonusByNameInCfg('362'); //Ремонтный корпус II",
+              "            if ((random == 4)) result = FindBonusByNameInCfg('366'); //Миоплазменный корпус II",
+              "            if ((random == 5)) result = FindBonusByNameInCfg('370'); //Пигамарный корпус II",
+              "            if ((random == 6)) result = FindBonusByNameInCfg('473'); //Корпус \"Молния\" II",
+              "            if ((random == 7)) result = FindBonusByNameInCfg('477'); //Корпус \"Броненосец\" II",
+              "            if ((random == 8) && (race == Gaal)) result = FindBonusByNameInCfg('469'); //Корпус \"Честный ренегал\" II",
+              "            if ((random == 9) && (race == Peleng)) result = FindBonusByNameInCfg('461'); //Корпус \"Добрый лякуша\" II",
+              "            if ((random == 10) && (race == People)) result = FindBonusByNameInCfg('465'); //Корпус \"Мирный корсар\" II",
+              "            if ((random == 11) && (race == People)) result = FindBonusByNameInCfg('481'); //Корпус \"Ушастик\" II",
+              "            if ((random == 12)) result = FindBonusByNameInCfg('351'); // Скала",
+              "",
+              "            //if ((random == 13)) result = FindBonusByCustomTag('ExpScienceRanks_TickDefenseMode'); // Клещ #Защитный",
+              "            if ((random == 14) && prob(0.33)) result = FindBonusByCustomTag('LEOContentMod_Giperion_2_Hull'); // Гиперион II",
+              "            if ((random == 15) && prob(0.33)) result = FindBonusByCustomTag('LEOContentMod_Giperion_3_Hull'); // Гиперион III",
+              "            if ((random == 16)) result = FindBonusByCustomTag('LEOLastHulls_G1_Hull'); // Горизонт",
+              "",
+              "            if ((random == 17) && (race == Peleng)) result = FindBonusByName(\"Ара\" + ' II');",
+              "            if ((random == 18) && (race == People || race == Maloc)) result = FindBonusByName(\"Бамберга\" + ' II');",
+              "            if ((random == 19) && (race == Maloc)) result = FindBonusByName(\"Кабан\" + ' II');",
+              "            if ((random == 20) && (race == Fei)) result = FindBonusByName(\"Ястреб\" + ' II');",
+              "            if ((random == 21) && (race == Gaal)) result = FindBonusByName(\"Пантера\" + ' II');",
+              "            if ((random == 22) && (race == People || race == Peleng)) result = FindBonusByName(\"Акулёнок\" + ' II');",
+              "            if ((random == 23) && (race == Fei)) result = FindBonusByName(\"Шеграмер\");",
+              "            if ((random == 24) && (race == People)) result = FindBonusByName(\"Вихрь\");",
+              "            if ((random == 25) && (race == Peleng)) result = FindBonusByName(\"Бешрафляц\");",
+              "            if ((random == 26) && (race == Maloc)) result = FindBonusByNameInCfg('Cat_Ships_Bigrabyrba');",
+              "            if ((random == 27) && (race == Fei)) result = FindBonusByNameInCfg('Cat_Ships_Ellentanda');",
+              "            if ((random == 28)) result = FindBonusByNameInCfg('Cat_Ships_Bongrabar');",
+              "            if ((random == 29) && (race == Maloc)) result = FindBonusByNameInCfg('Cat_Ships_Gromodryn');",
+              "            if ((random == 30)) result = FindBonusByNameInCfg('Cat_Ships_Hramgerb');",
+              "            if ((random == 31) && (race == Peleng)) result = FindBonusByNameInCfg('Cat_Ships_Casholdsha');",
+              "            if ((random == 32) && (race == Peleng)) result = FindBonusByNameInCfg('Cat_Ships_Chipshush');",
+              "            if ((random == 33)) result = FindBonusByNameInCfg('Cat_Ships_Cvahonda');",
+              "            if ((random == 34)) result = FindBonusByNameInCfg('Cat_Ships_Zvedavar');",
+              "            if ((random == 35)) result = FindBonusByNameInCfg('Cat_Ships_Hellcat');",
+              "            if ((random == 36)) result = FindBonusByNameInCfg('Cat_Ships_Starfury');",
+              "            if ((random == 37)) result = FindBonusByNameInCfg('Cat_Ships_Piranha');",
+              "        }",
+              "",
+              "        if (power == 3) {",
+              "            random = Rnd(1, 46);",
+              "            if ((random == 1)) result = FindBonusByNameInCfg('355'); //Быстрый корпус III",
+              "            if ((random == 2)) result = FindBonusByNameInCfg('359'); //Неуязвимый корпус III",
+              "            if ((random == 3)) result = FindBonusByNameInCfg('363'); //Ремонтный корпус III",
+              "            if ((random == 4)) result = FindBonusByNameInCfg('367'); //Миоплазменный корпус III",
+              "            if ((random == 5)) result = FindBonusByNameInCfg('371'); //Пигамарный корпус III",
+              "            if ((random == 6)) result = FindBonusByNameInCfg('474'); //Корпус \"Молния\" III",
+              "            if ((random == 7)) result = FindBonusByNameInCfg('478'); //Корпус \"Броненосец\" III",
+              "            if ((random == 8) && (race == Gaal)) result = FindBonusByNameInCfg('470'); //Корпус \"Честный ренегал\" III",
+              "            if ((random == 9) && (race == Peleng)) result = FindBonusByNameInCfg('462'); //Корпус \"Добрый лякуша\" III",
+              "            if ((random == 10) && (race == People)) result = FindBonusByNameInCfg('466'); //Корпус \"Мирный корсар\" III",
+              "            if ((random == 11) && prob(0.33)) result = FindBonusByNameInCfg('356'); //Быстрый корпус IV",
+              "            if ((random == 12) && prob(0.33)) result = FindBonusByNameInCfg('360'); //Неуязвимый корпус IV",
+              "            if ((random == 13) && prob(0.33)) result = FindBonusByNameInCfg('364'); //Ремонтный корпус IV",
+              "            if ((random == 14) && prob(0.33)) result = FindBonusByNameInCfg('368'); //Миоплазменный корпус IV",
+              "            if ((random == 15) && prob(0.33)) result = FindBonusByNameInCfg('372'); //Пигамарный корпус IV",
+              "            if ((random == 16) && prob(0.33)) result = FindBonusByNameInCfg('475'); //Корпус \"Молния\" IV",
+              "            if ((random == 17) && prob(0.33)) result = FindBonusByNameInCfg('479'); //Корпус \"Броненосец\" IV",
+              "            if ((random == 18) && prob(0.33) && (race == Gaal)) result = FindBonusByNameInCfg('471'); //Корпус \"Честный ренегал\" IV",
+              "            if ((random == 19) && prob(0.33) && (race == Peleng)) result = FindBonusByNameInCfg('463'); //Корпус \"Добрый лякуша\" IV",
+              "            if ((random == 20) && prob(0.33) && (race == People)) result = FindBonusByNameInCfg('467'); //Корпус \"Мирный корсар\" IV",
+              "            if ((random == 21) && (race == People)) result = FindBonusByNameInCfg('482'); //Корпус \"Ушастик\" III\"",
+              "            if ((random == 22) && prob(0.33) && (race == People)) result = FindBonusByNameInCfg('483'); //Корпус \"Ушастик\" IV\"",
+              "            if ((random == 23)) result = FindBonusByNameInCfg('350'); // Убийца",
+              "",
+              "            //if ((random == 24)) result = FindBonusByCustomTag('ExpScienceRanks_TickAttackMode'); // Клещ #Атакующий",
+              "            if ((random == 25) && prob(0.33)) result = FindBonusByCustomTag('LEOContentMod_Giperion_4_Hull'); // Гиперион IV",
+              "            if ((random == 26)) result = FindBonusByCustomTag('LEOContentMod_Wraith_Hull'); // Мираж",
+              "            if ((random == 27)) result = FindBonusByCustomTag('LEOContentMod_WraithJunker_Hull'); // Мираж (модифицированный)",
+              "            if ((random == 28)) result = FindBonusByCustomTag('LEOLastHulls_G3_Hull'); // Приговор",
+              "            if ((random == 29)) result = FindBonusByCustomTag('LEOLastHulls_G4_Hull'); // Колокол",
+              "            if ((random == 30)) result = FindBonusByCustomTag('LEOContentMod_Viking_Hull'); // Викинг",
+              "",
+              "            if ((random == 31) && (race == Peleng)) result = FindBonusByName(\"Ара\" + ' III');",
+              "            if ((random == 32) && (race == People || race == Maloc)) result = FindBonusByName(\"Бамберга\" + ' III');",
+              "            if ((random == 33) && (race == Maloc)) result = FindBonusByName(\"Кабан\" + ' III');",
+              "            if ((random == 34) && (race == Fei)) result = FindBonusByName(\"Ястреб\" + ' III');",
+              "            if ((random == 35) && (race == Gaal)) result = FindBonusByName(\"Пантера\" + ' III');",
+              "            if ((random == 36) && (race == People || race == Peleng)) result = FindBonusByName(\"Акулёнок\" + ' III');",
+              "            if ((random == 37) && (race == Fei || race == Maloc)) result = FindBonusByName(\"Биграбурба\");",
+              "            if ((random == 38) && (race == People)) result = FindBonusByNameInCfg('Cat_Ships_Vyhr');",
+              "            if ((random == 39) && (race == Peleng)) result = FindBonusByNameInCfg('Cat_Ships_Beshraflac');",
+              "            if ((random == 40)) result = FindBonusByNameInCfg('Cat_Ships_BlackCrow');",
+              "            if ((random == 41)) result = FindBonusByNameInCfg('Cat_Ships_BlackRipper');",
+              "            if ((random == 42)) result = FindBonusByNameInCfg('Cat_Ships_Cvahonda');",
+              "            if ((random == 43)) result = FindBonusByNameInCfg('Cat_Ships_Hellcat');",
+              "            if ((random == 44)) result = FindBonusByNameInCfg('Cat_Ships_Starfury');",
+              "            if ((random == 45) && (race == People)) result = FindBonusByNameInCfg('Cat_Ships_Starhammer');",
+              "            if ((random == 46)) result = FindBonusByNameInCfg('Cat_Ships_Piranha');",
+              "        }",
+              "",
+              "        if (power == 4) {",
+              "            random = Rnd(1, 19);",
+              "            if ((random == 1)) result = FindBonusByNameInCfg('487'); // Корпус \"Молния\" V",
+              "            if ((random == 2)) result = FindBonusByNameInCfg('488'); // Корпус \"Броненосец\" V",
+              "            if ((random == 3) && (race == Gaal)) result = FindBonusByNameInCfg('486'); // Корпус \"Честнейший ренегал\"",
+              "            if ((random == 4) && (race == Peleng)) result = FindBonusByNameInCfg('484'); // Корпус \"Добрейший лякуша\"",
+              "            if ((random == 5) && (race == People)) result = FindBonusByNameInCfg('485'); // Корпус \"Безобиднейший корсар\"",
+              "            if ((random == 6)) result = FindBonusByNameInCfg('489'); // Корпус \"Ушастик\" V",
+              "            //if ((random == 7)) result = FindBonusByNameInCfg('490'); // Тень Империи",
+              "",
+              "            if ((random == 8) && (race == Fei)) result = FindBonusByCustomTag('LEOContentMod_HullFei_PC5_Hull'); // Крутейший фантом",
+              "            if ((random == 9) && (race == Maloc)) result = FindBonusByCustomTag('LEOContentMod_HullMaloc_PC5_Hull'); // Злейший бамбай",
+              "            if ((random == 10)) result = FindBonusByCustomTag('UnionNovaX3'); // Нова",
+              "            if ((random == 11) && (race == Peleng)) result = FindBonusByCustomTag('UnionRachehan'); // Рачехан",
+              "            if ((random == 12)) result = FindBonusByCustomTag('NormandyRM'); // Нормандия #1",
+              "            if ((random == 13)) result = FindBonusByCustomTag('NormandyBM'); // Нормандия #2",
+              "",
+              "            if ((random == 14) && (race == People)) result = FindBonusByNameInCfg('Cat_Yamato_Upgraded');",
+              "            if ((random == 15) && (race == People)) result = FindBonusByNameInCfg('Cat_Ships_StarShip');",
+              "            if ((random == 16) && (race == People)) result = FindBonusByNameInCfg('Cat_Ships_Slave');",
+              "            if ((random == 17) && (race == People || race == Fei)) result = FindBonusByNameInCfg('Cat_Ships_Lucrehulk');",
+              "            if ((random == 18) && (race == People)) result = FindBonusByNameInCfg('Cat_Ships_Ares');",
+              "            if ((random == 19) && (race == Peleng || race == Gaal)) result = FindBonusByName(\"Дамиников\");",
+              "",
+              "        }",
+              "    }",
+              "",
+              "    if (cnt > 100 && debug) {",
+              "        SFT('[ZelRangers.RandomAcryn] В какой-то из категорий мало акринов (или вам не повезло).');",
+              "    };",
+              "    if ((result == -1 || result == 0) && debug) {",
+              "        SFT('[ZelRangers.RandomAcryn] Произошло что-то странное и акрин не выдался.');",
+              "    };",
+              "}",
+              "",
+              "// RandomAcrynPower(lvl)",
+              "// RandomAcryn(lvl)",
+              "",
+              "// Рандомизация акрина"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "Planet",
+          "Pos.x":  370,
+          "Pos.y":  -100,
+          "Parent":  -1,
+          "#":  3,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  370,
+          "Pos.y":  -160,
+          "Parent":  -1,
+          "#":  1,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "Star",
+          "Pos.x":  370,
+          "Pos.y":  -130,
+          "Parent":  -1,
+          "#":  0,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  980,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  24,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "ShipType(GetShipRuins(Player())) == 'RC'"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  950,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  39,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "GetShipRuins(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1160,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  42,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "NRangers >= 3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1160,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  43,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "NRangers >= 2"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1160,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  44,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "NRangers >= 1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1160,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  45,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "NRangers >= 4"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1160,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  46,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "NRangers >= 5"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1390,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  94,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "branch_level < 5"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1450,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  96,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player()) >= cost"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1390,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  101,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "branch_level == 5"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1250,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  117,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "(branch >= 5) && (branch <= 7)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1470,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  118,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1360,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  119,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1360,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  120,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1550,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  121,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1600,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  137,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1600,
+          "Pos.y":  -140,
+          "Parent":  -1,
+          "#":  138,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1240,
+          "Pos.y":  -140,
+          "Parent":  -1,
+          "#":  139,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "(branch >= 0) && (branch <= 4)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1270,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  141,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1160,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  142,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1240,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  143,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  400,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  153,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "debug"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "State",
+          "Pos.x":  370,
+          "Pos.y":  -40,
+          "Parent":  -1,
+          "#":  5,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "NRangers",
+          "Pos.x":  660,
+          "Pos.y":  -110,
+          "Parent":  -1,
+          "#":  6,
+          "Var.Type":  "Int",
+          "Init":  "1",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "ship",
+          "Pos.x":  820,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  7,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "LvlFreq",
+          "Pos.x":  660,
+          "Pos.y":  -90,
+          "Parent":  -1,
+          "#":  10,
+          "Var.Type":  "Int",
+          "Init":  "1",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "LvlHullSize",
+          "Pos.x":  660,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  11,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "LvlHullAcrin",
+          "Pos.x":  660,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  12,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "str_tmp",
+          "Pos.x":  610,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  13,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "random",
+          "Pos.x":  800,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  14,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "money",
+          "Pos.x":  660,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  15,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "i",
+          "Pos.x":  750,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  16,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "branch_level",
+          "Pos.x":  1030,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  17,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "LvlEq",
+          "Pos.x":  660,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  20,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "NItems",
+          "Pos.x":  660,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  21,
+          "Var.Type":  "Int",
+          "Init":  "1",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "LvlSkills",
+          "Pos.x":  660,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  22,
+          "Var.Type":  "Int",
+          "Init":  "1",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "LvlUpgrade",
+          "Pos.x":  660,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  23,
+          "Var.Type":  "Int",
+          "Init":  "1",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "StrLvlFreq",
+          "Pos.x":  770,
+          "Pos.y":  -90,
+          "Parent":  -1,
+          "#":  58,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "StrNRangers",
+          "Pos.x":  770,
+          "Pos.y":  -110,
+          "Parent":  -1,
+          "#":  59,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "StrNItems",
+          "Pos.x":  770,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  60,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "StrLvlSkills",
+          "Pos.x":  770,
+          "Pos.y":  -50,
+          "Parent":  -1,
+          "#":  61,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "StrLvlUpgrade",
+          "Pos.x":  770,
+          "Pos.y":  -30,
+          "Parent":  -1,
+          "#":  62,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "StrLvlHullSize",
+          "Pos.x":  770,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  63,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "StrLvlHullAcrin",
+          "Pos.x":  770,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  64,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "StrLvlEq",
+          "Pos.x":  770,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  65,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "cost",
+          "Pos.x":  1030,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  67,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "cost_multiplier",
+          "Pos.x":  660,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  68,
+          "Var.Type":  "Float",
+          "Init":  "1.0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "buy_date",
+          "Pos.x":  660,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  113,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "accepted",
+          "Pos.x":  660,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  114,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "branch",
+          "Pos.x":  1030,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  115,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "branch_cost",
+          "Pos.x":  510,
+          "Pos.y":  -90,
+          "Parent":  -1,
+          "#":  122,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "branch_money_bonus",
+          "Pos.x":  510,
+          "Pos.y":  -110,
+          "Parent":  -1,
+          "#":  123,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "branch_cost_multiplier_inc",
+          "Pos.x":  510,
+          "Pos.y":  -70,
+          "Parent":  -1,
+          "#":  124,
+          "Var.Type":  "Unknown",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "j",
+          "Pos.x":  750,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  126,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "current_ranger",
+          "Pos.x":  1030,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  127,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "k",
+          "Pos.x":  750,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  128,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "power",
+          "Pos.x":  750,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  129,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "quality",
+          "Pos.x":  610,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  130,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "size_multiplier",
+          "Pos.x":  610,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  131,
+          "Var.Type":  "Float",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "TL_inc",
+          "Pos.x":  610,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  132,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "item",
+          "Pos.x":  820,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  133,
+          "Var.Type":  "Dword",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "cnt",
+          "Pos.x":  800,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  134,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "size",
+          "Pos.x":  750,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  135,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "f",
+          "Pos.x":  580,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  144,
+          "Var.Type":  "Float",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "acryn",
+          "Pos.x":  820,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  145,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "admirals_cnt",
+          "Pos.x":  660,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  146,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "float_tmp",
+          "Pos.x":  610,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  147,
+          "Var.Type":  "Float",
+          "Init":  "0.0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "debug",
+          "Pos.x":  400,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  151,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "test",
+          "Pos.x":  610,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  152,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  1,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  4,
+      "End":  3,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  4,
+      "End":  5,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  27,
+      "End":  28,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  28,
+      "End":  29,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  34,
+      "End":  35,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  36,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  36,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  24,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  38,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  44,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  50,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  45,
+      "End":  49,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  42,
+      "End":  48,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  51,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  51,
+      "End":  52,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  53,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  54,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  55,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  56,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  57,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  80,
+      "End":  83,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  81,
+      "End":  84,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  82,
+      "End":  85,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  26,
+      "End":  27,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  53,
+      "End":  66,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  54,
+      "End":  70,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  55,
+      "End":  71,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  56,
+      "End":  72,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  57,
+      "End":  73,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  66,
+      "End":  75,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  70,
+      "End":  76,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  77,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  72,
+      "End":  78,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  73,
+      "End":  79,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  83,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  85,
+      "End":  93,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  84,
+      "End":  92,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  95,
+      "End":  96,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  96,
+      "End":  97,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  97,
+      "End":  69,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  69,
+      "End":  98,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  95,
+      "End":  99,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  75,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  76,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  77,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  78,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  79,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  91,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  92,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  93,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  101,
+      "End":  102,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  102,
+      "End":  103,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  85,
+      "End":  104,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  84,
+      "End":  104,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  83,
+      "End":  104,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  24,
+      "End":  25,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  94,
+      "End":  105,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  105,
+      "End":  95,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  107,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  66,
+      "End":  108,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  70,
+      "End":  108,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  108,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  72,
+      "End":  108,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  73,
+      "End":  108,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  103,
+      "End":  109,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  99,
+      "End":  109,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  98,
+      "End":  110,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  111,
+      "End":  109,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  110,
+      "End":  106,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  98,
+      "End":  111,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  106,
+      "End":  121,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  121,
+      "End":  119,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  119,
+      "End":  120,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  120,
+      "End":  94,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  120,
+      "End":  101,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  100,
+      "End":  120,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  109,
+      "End":  118,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  118,
+      "End":  117,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  86,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  87,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  88,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  89,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  90,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  86,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  87,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  48,
+      "End":  88,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  49,
+      "End":  89,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  50,
+      "End":  90,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  118,
+      "End":  137,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  137,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  138,
+      "End":  139,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  139,
+      "End":  52,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  140,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  117,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  74,
+      "End":  80,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  74,
+      "End":  81,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  74,
+      "End":  82,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  74,
+      "End":  136,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  142,
+      "End":  38,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  136,
+      "End":  142,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  104,
+      "End":  141,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  141,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  43,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  45,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  46,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  108,
+      "End":  143,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  143,
+      "End":  52,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  140,
+      "End":  142,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  153,
+      "End":  148,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "Rect.Text":  
+  [
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  588,
+      "Rect.Top":  -220,
+      "Rect.Right":  718,
+      "Rect.Bottom":  -183,
+      "FStyle":  1,
+      "FColor":  0,
+      "BStyle":  0,
+      "BColor":  16777215,
+      "BSize":  1,
+      "BCoef":  "0.25",
+      "AlignX":  -1,
+      "AlignY":  0,
+      "AlignRect":  true,
+      "Text":  "Покупка новых \r\nрейнджеров",
+      "Color":  16777215,
+      "Font":  "Consolas",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  416,
+      "Rect.Top":  -224,
+      "Rect.Right":  570,
+      "Rect.Bottom":  -176,
+      "FStyle":  1,
+      "FColor":  0,
+      "BStyle":  0,
+      "BColor":  16777215,
+      "BSize":  1,
+      "BCoef":  "0.25",
+      "AlignX":  -1,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "Функции",
+      "Color":  16777215,
+      "Font":  "Consolas",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  417,
+      "Rect.Top":  -160,
+      "Rect.Right":  529,
+      "Rect.Bottom":  -121,
+      "FStyle":  1,
+      "FColor":  0,
+      "BStyle":  0,
+      "BColor":  16777215,
+      "BSize":  1,
+      "BCoef":  "0.25",
+      "AlignX":  -1,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "Константы\r\nбаланса",
+      "Color":  16777215,
+      "Font":  "Consolas",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  573,
+      "Rect.Top":  -159,
+      "Rect.Right":  680,
+      "Rect.Bottom":  -120,
+      "FStyle":  1,
+      "FColor":  0,
+      "BStyle":  0,
+      "BColor":  16777215,
+      "BSize":  1,
+      "BCoef":  "0.25",
+      "AlignX":  -1,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "Состояние \r\nскрипта",
+      "Color":  16777215,
+      "Font":  "Consolas",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  696,
+      "Rect.Top":  -159,
+      "Rect.Right":  790,
+      "Rect.Bottom":  -120,
+      "FStyle":  1,
+      "FColor":  0,
+      "BStyle":  0,
+      "BColor":  16777215,
+      "BSize":  1,
+      "BCoef":  "0.25",
+      "AlignX":  -1,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "Строки \r\nдиалогов",
+      "Color":  16777215,
+      "Font":  "Consolas",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  854,
+      "Rect.Top":  -116,
+      "Rect.Right":  1070,
+      "Rect.Bottom":  -95,
+      "FStyle":  0,
+      "FColor":  3749944,
+      "BStyle":  0,
+      "BColor":  16711680,
+      "BSize":  1,
+      "BCoef":  "1",
+      "AlignX":  -1,
+      "AlignY":  -1,
+      "AlignRect":  false,
+      "Text":  "Описание некоторых переменных:\r\nbranch - номер ветки улучшения (вне диалога не имеет смысла)\r\nОбщие улучшения:\r\n    0 - количество кораблей\r\n    1 - частота постройки\r\n    2 - количество оборудки\r\n    3 - качество обучения\r\n    4 - качество оборудки\r\nУлучшение конкретного рейнджера\r\n    5 - размер корпуса\r\n    6 - качество акрина\r\n    7 - качество оборудки\r\n\r\nПеременные состояния скрипта:\r\n    Общие улучшения:\r\n        -0- NRangers\r\n        -1- LvlFreq\r\n        -2- NItem\r\n        -3- LvlSkills\r\n        -4- LvlUpgrade\r\n    \r\n    Массивы улучшений для 5 рейнджеров:\r\n        -5- LvlHullSize[5]\r\n        -6- LvlHullAcrin[5]\r\n        -7- LvlEq[5]\r\n    \r\n    money[5] - начальный капитал рейнджеров, увеличивается при каждом улучшении\r\n    cost_multiplier - множитель стоимости улучшений, увеличивается при каждом улучшении\r\n    accepted - принял ли игрок предложение\r\n        0 - нет (показывается диалог предложения)\r\n        1 - да (показывается диалог улучшения)\r\n    buy_date - дата следующей постройки кораблей\r\n\r\n\r\nПеременные для диалогового блока (вне диалога не имеют смысла):\r\n    branch\r\n    current_ranger\r\n    branch_level - уровень улучшения текущей ветви \r\n\r\nКонстанты:\r\n    branch_money_bonus[8] - бонус к капиталу от каждого улучшения\r\n    branch_cost[8] - множитель стоимости каждого улучшения\r\n    branch_cost_multiplier_inc[8] - приращение cost_multiplier при каждом улучшении\r\n\r\n\r\n",
+      "Color":  16777215,
+      "Font":  "Consolas",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  444,
+      "Rect.Top":  235,
+      "Rect.Right":  623,
+      "Rect.Bottom":  366,
+      "FStyle":  7,
+      "FColor":  255,
+      "BStyle":  0,
+      "BColor":  16777215,
+      "BSize":  1,
+      "BCoef":  "1",
+      "AlignX":  -1,
+      "AlignY":  -1,
+      "AlignRect":  false,
+      "Text":  "К удалению \r\n\r\nНе удалил, чтобы \r\nсейвы не сломались\r\n\r\nПотом, конечно \r\nже, нужно удалить",
+      "Color":  16777215,
+      "Font":  "Consolas",
+      "FontSize":  8,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  382,
+      "Rect.Top":  106,
+      "Rect.Right":  466,
+      "Rect.Bottom":  168,
+      "FStyle":  1,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "1",
+      "AlignX":  0,
+      "AlignY":  -1,
+      "AlignRect":  false,
+      "Text":  "D E B U G",
+      "Color":  16777215,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  101,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "0",
+      "String":  "Вербовка новых рейнджеров"    
+    },
+    {
+      "#":  "1",
+      "String":  "Что-то давно я не видел новых рейджеров..."    
+    },
+    {
+      "#":  "100",
+      "String":  "кричим на улицах \"Не рейнджерствовал - не мужик\""    
+    },
+    {
+      "#":  "101",
+      "String":  "пробиваем двоечку каждому встречному не рейнджеру"    
+    },
+    {
+      "#":  "11",
+      "String":  "Хорошо, я согласен! Сколько вам нужно?"    
+    },
+    {
+      "#":  "12",
+      "String":  "Ага, еще чего? Я свои кровно заработанные денюжки никому не отдам."    
+    },
+    {
+      "#":  "13",
+      "String":  "Что именно вас интересует?"    
+    },
+    {
+      "#":  "130",
+      "String":  "везде, где только можно"    
+    },
+    {
+      "#":  "133",
+      "String":  "Обратно к общим параметрам"    
+    },
+    {
+      "#":  "134",
+      "String":  "Обратно к выбору параметров"    
+    },
+    {
+      "#":  "135",
+      "String":  "Обратно к параметрам текущего рейнджера"    
+    },
+    {
+      "#":  "136",
+      "String":  "Акулёнок"    
+    },
+    {
+      "#":  "137",
+      "String":  "Пантера"    
+    },
+    {
+      "#":  "138",
+      "String":  "Ястреб"    
+    },
+    {
+      "#":  "139",
+      "String":  "Кабан"    
+    },
+    {
+      "#":  "140",
+      "String":  "Бамберга"    
+    },
+    {
+      "#":  "141",
+      "String":  "Ара"    
+    },
+    {
+      "#":  "143",
+      "String":  "Биграбурба"    
+    },
+    {
+      "#":  "144",
+      "String":  "Дамиников"    
+    },
+    {
+      "#":  "145",
+      "String":  "Бешрафляц"    
+    },
+    {
+      "#":  "146",
+      "String":  "Вихрь"    
+    },
+    {
+      "#":  "147",
+      "String":  "Шеграмер"    
+    },
+    {
+      "#":  "148",
+      "String":  "ученый фэянской расы"    
+    },
+    {
+      "#":  "149",
+      "String":  "работяга пеленг, только что пришедший с завода"    
+    },
+    {
+      "#":  "15",
+      "String":  "Расскажите о параметрах первого рейнджера"    
+    },
+    {
+      "#":  "150",
+      "String":  "рассказываем о том, что все рейнджеры - это посланники Бога"    
+    },
+    {
+      "#":  "151",
+      "String":  "Конечно. Если вы будете оказывать нам материальную помощь, мы сможем улучшить нашу работу по многим направлениям."    
+    },
+    {
+      "#":  "152",
+      "String":  "Какой ужас... <br>Но позвольте! Военные ведь абсолютно бесполезны против доминаторов! Я видел собственными глазами, как один клиг уничтожил отряд из 3 флагманов и 14 военных!"    
+    },
+    {
+      "#":  "153",
+      "String":  "Чего? Надо будет научить их хорошим манерам. Думаю, пара кварковых бомб внутри правительственных зданий быстро образумит их.<br>Что же касается рейнджеров... Возможно я могу как-то помочь?"    
+    },
+    {
+      "#":  "16",
+      "String":  "Расскажите о параметрах второго рейнджера"    
+    },
+    {
+      "#":  "17",
+      "String":  "Расскажите о параметрах третьего рейнджера"    
+    },
+    {
+      "#":  "18",
+      "String":  "Расскажите о параметрах четвертого рейнджера"    
+    },
+    {
+      "#":  "19",
+      "String":  "Расскажите о параметрах пятого рейнджера"    
+    },
+    {
+      "#":  "20",
+      "String":  "Расскажите об общих параметрах"    
+    },
+    {
+      "#":  "21",
+      "String":  "Меня интересует количество новых рейнджеров"    
+    },
+    {
+      "#":  "22",
+      "String":  "Меня интересует частота появления новых рейнджеров"    
+    },
+    {
+      "#":  "23",
+      "String":  "Меня интересует количество выдаваемого оборудования новым рейнджерам"    
+    },
+    {
+      "#":  "26",
+      "String":  "В данный момент мы за один раз способны подготовить <0>."    
+    },
+    {
+      "#":  "27",
+      "String":  "Мы постоянно работаем над привлечением новых гуманоидов в рейнджерское движение. Прямо сейчас мы <0>."    
+    },
+    {
+      "#":  "28",
+      "String":  "Следующим рейнджерам мы будем выдавать <0>."    
+    },
+    {
+      "#":  "29",
+      "String":  "Сейчас мы <0>."    
+    },
+    {
+      "#":  "3",
+      "String":  "И я о том же! Но совет пяти рас и слушать об этом не хочет. Говорят мол \"Военный - Бог, а Рейнджер лох\"."    
+    },
+    {
+      "#":  "30",
+      "String":  "Нашим специалистом по улучшению оборудования является <0>."    
+    },
+    {
+      "#":  "31",
+      "String":  "В параметры конкретного рейнджера входит:<br>1. Размер корпуса<br>2. Акрин корпуса<br>3. Уровень экипировки"    
+    },
+    {
+      "#":  "32",
+      "String":  "Этому рейнджеру мы предоставляем <0>."    
+    },
+    {
+      "#":  "33",
+      "String":  "Акринацию корпуса этого рейнджера производят <0>."    
+    },
+    {
+      "#":  "34",
+      "String":  "Оборудование для этого рейнджера мы <0>."    
+    },
+    {
+      "#":  "35",
+      "String":  "Меня интересует программа обучения новых рейнджеров"    
+    },
+    {
+      "#":  "36",
+      "String":  "Меня интересует улучшение оборудования рейнджеров"    
+    },
+    {
+      "#":  "38",
+      "String":  "Меня интересует размер корпуса рейнджера"    
+    },
+    {
+      "#":  "39",
+      "String":  "Меня интересует акрин корпуса рейнджера"    
+    },
+    {
+      "#":  "40",
+      "String":  "Меня интересует уровень экипировки рейнджера"    
+    },
+    {
+      "#":  "43",
+      "String":  "Да, вы абсолютно правы. В последнее время центрам рейнджеров сильно урезали бюджет в связи с тяжелым положением на фронтах. Доминаторы захватывают систему за системой и все доступные средства Коалиции уходят на постройку и содержание большого военного флота. Тех крох, которые перепадают нам, едва хватает на обучение и экипировку новых рейджеров. У нас банально не хватает денег на совершенствование оборудования для наших бравых добровольцев.<br>Я, к примеру, сегодня завтракал в элитном ресторане, но из-за урезания бюджета вместо изысканных деликатесов должен был есть просто хорошую еду!"    
+    },
+    {
+      "#":  "46",
+      "String":  "Спасибо. Ваши деньги мне очень пригодятся. Ой, то есть нам."    
+    },
+    {
+      "#":  "47",
+      "String":  "Мы улучшили эту отрасль до максимального уровня."    
+    },
+    {
+      "#":  "48",
+      "String":  "Да"    
+    },
+    {
+      "#":  "49",
+      "String":  "Нет"    
+    },
+    {
+      "#":  "5",
+      "String":  "Эх... Придется и дальше бедствовать... Пойду икру от горя поем..."    
+    },
+    {
+      "#":  "50",
+      "String":  "Я хочу улучшить эту отрасль"    
+    },
+    {
+      "#":  "51",
+      "String":  "Хорошо"    
+    },
+    {
+      "#":  "53",
+      "String":  "Пока"    
+    },
+    {
+      "#":  "58",
+      "String":  "Хочу улучшить эту отрасль еще раз"    
+    },
+    {
+      "#":  "59",
+      "String":  "Ага"    
+    },
+    {
+      "#":  "6",
+      "String":  "Далее"    
+    },
+    {
+      "#":  "60",
+      "String":  "В общие параметры входит:<br>1. Количество новых рейджеров<br>2. Частота появления новых рейнджеров<br>3. Количество выдаваемого оборудования рейнджерам<br>4. Программа обучения новых рейнджеров<br>5. Улучшение оборудования рейнджеров<br>"    
+    },
+    {
+      "#":  "61",
+      "String":  "На данный момент улучшение этой отрасли будет составлять <0> cr. Желаете проспонсировать этот проект?"    
+    },
+    {
+      "#":  "62",
+      "String":  "производим на заводах под заказ"    
+    },
+    {
+      "#":  "63",
+      "String":  "скупаем на планетах"    
+    },
+    {
+      "#":  "64",
+      "String":  "создаем сами"    
+    },
+    {
+      "#":  "65",
+      "String":  "скупаем у бывших пилотов"    
+    },
+    {
+      "#":  "66",
+      "String":  "ищем на свалках"    
+    },
+    {
+      "#":  "67",
+      "String":  "в специальном заводе по акринации корпусов"    
+    },
+    {
+      "#":  "68",
+      "String":  "у нас на базе"    
+    },
+    {
+      "#":  "7",
+      "String":  "Не торопитесь. Столько денег у вас наверняка нету. Тем более вам еще за мою виллу платить... Ой, то есть я хотел сказать, что развитие разных направлений требует разного количества вложений. Нашего бюджета хватает на то, чтобы снаряжать и обучать новых рейнджеров, но на улучшение инфраструктуры у нас денег нету. Давайте я вам расскажу о текущем положении дел."    
+    },
+    {
+      "#":  "70",
+      "String":  "в подвале без света"    
+    },
+    {
+      "#":  "71",
+      "String":  "в туалете"    
+    },
+    {
+      "#":  "72",
+      "String":  "корпус огромного размера"    
+    },
+    {
+      "#":  "73",
+      "String":  "корпус большого размера"    
+    },
+    {
+      "#":  "74",
+      "String":  "корпус среднего размера"    
+    },
+    {
+      "#":  "75",
+      "String":  "корпус маленького размера"    
+    },
+    {
+      "#":  "76",
+      "String":  "корпус размером до одного кубического нанометра"    
+    },
+    {
+      "#":  "77",
+      "String":  "лучший специалист из всех гаальцев"    
+    },
+    {
+      "#":  "79",
+      "String":  "человеческий студент"    
+    },
+    {
+      "#":  "81",
+      "String":  "малок дошкольного возраста"    
+    },
+    {
+      "#":  "82",
+      "String":  "берем в рейнджеров исключительно профессиональных пилотов и обучаем их всевозможным навыкам"    
+    },
+    {
+      "#":  "83",
+      "String":  "берем в рейнджеров исключительно лучших кандидатов и проводим с ними углубленные тренировки"    
+    },
+    {
+      "#":  "84",
+      "String":  "берем в рейнджеров всех желающих и проводим для них специальную программу обучения"    
+    },
+    {
+      "#":  "85",
+      "String":  "берем в рейнджеров исключительно профессиональных таксистов и поваров"    
+    },
+    {
+      "#":  "86",
+      "String":  "берем в рейнджеров первых попавшихся бомжей"    
+    },
+    {
+      "#":  "87",
+      "String":  "огромное количество оборудования"    
+    },
+    {
+      "#":  "88",
+      "String":  "большое количество оборудования"    
+    },
+    {
+      "#":  "89",
+      "String":  "среднее количество оборудования"    
+    },
+    {
+      "#":  "90",
+      "String":  "малое количество оборудования"    
+    },
+    {
+      "#":  "91",
+      "String":  "минимальное количество оборудования"    
+    },
+    {
+      "#":  "92",
+      "String":  "полноценный отряд из пяти рейнджеров"    
+    },
+    {
+      "#":  "93",
+      "String":  "аж четырех рейнджеров"    
+    },
+    {
+      "#":  "94",
+      "String":  "компанию из трех рейнджеров"    
+    },
+    {
+      "#":  "95",
+      "String":  "двух рейнджеров"    
+    },
+    {
+      "#":  "96",
+      "String":  "только одного рейнджера"    
+    },
+    {
+      "#":  "97",
+      "String":  "устраиваем массовую пропаганду рейджерского движения"    
+    },
+    {
+      "#":  "99",
+      "String":  "устраиваем рейнджер-парады"    
+    }  
+  ]
+}

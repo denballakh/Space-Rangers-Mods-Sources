@@ -1,0 +1,1795 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  -311,
+  "ViewPos.y":  -121,
+  "ScriptName":  "Mod_GTLRewards",
+  "ScriptFileOut":  "C:\\Mod_GTLRewards.scr",
+  "ScriptTextOut":  "C:\\Mod_GTLRewards.txt",
+  "GraphPoint.Count":  73,
+  "GraphLink.Count":  63,
+  "GraphRectText.Count":  3,
+  "Variables.Count":  18,
+  "Stars.Count":  1,
+  "Planets.Count":  1,
+  "Ships.Count":  1,
+  "States.Count":  1,
+  "Groups.Count":  1,
+  "Places.Count":  0,
+  "Items.Count":  0,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  1,
+  "DialogMessages.Count":  4,
+  "DialogAnswers.Count":  14,
+  "Operations.Count":  15,
+  "Statements.Count":  16,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  11,
+          "Msg":  "Само собой, забираю.",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "restart",
+          "Pos.x":  540,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  13,
+          "Msg":  "Нет, спасибо, как-нибудь в другой раз",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  660,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  16,
+          "Msg":  "Спасибо!",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  26,
+          "Msg":  "Получить награду за звание Кадет",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  33,
+          "Msg":  "Получить награду за звание Пилот",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  34,
+          "Msg":  "Получить награду за звание Капитан",
+          "AMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  35,
+          "Msg":  "Получить награду за звание Истребитель",
+          "AMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  36,
+          "Msg":  "Получить награду за звание Ас",
+          "AMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  37,
+          "Msg":  "Получить награду за звание Командор",
+          "AMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  480,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  38,
+          "Msg":  "Получить награду за звание Адмирал",
+          "AMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  520,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  53,
+          "Msg":  "Выбираю двигатель",
+          "AMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  540,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  54,
+          "Msg":  "Выбираю топливный бак",
+          "AMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  570,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  55,
+          "Msg":  "Выбираю сканер",
+          "AMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  56,
+          "Msg":  "Выбираю радар",
+          "AMsg.Num":  "13"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  420,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  10,
+          "Msg":  "Рейнджер <ShortName(Player())>, ваши заслуги в уничтожении пиратов и доминаторов заслуживают особой похвалы. Решением Галактического совета вам было выдано разрешение на допуск к отделу экспериментального оборудования Коалиции. \r\nСогласно табелю званий, вы можете получить оборудование со следующими бонусами:\r\n--------------------------------------------\r\n<clr>Кадет<clrEnd>: +50 скорости двигателя, +5 к дальности прыжка, +7 к ремонту дроида, +2 к навыку техники, +30 к мощности и дальности захвата\r\n\r\n<clr>Пилот<clrEnd>: +5 мощности ГЗП, +5 мощности сканера, +500 к дальности радара, +1 к навыку точности, +1 к навыку маневренности\r\n\r\n<clr>Капитан<clrEnd>: +7 урона энергетического оружия, +12 урона ракетного оружия, +17 урона осколочного оружия, +20 к дальности стрельбы\r\n\r\n<clr>Истребитель<clrEnd>: +20 к ремонту дроида, +8 мощности ГЗП, +1000 к дальности радара, +10 к дальности прыжка\r\n\r\n<clr>Ас<clrEnd>: +150 к скорости двигателя, +15 урона ко всем видам вооружения\r\n\r\n<clr>Командор<clrEnd>: +30 к ремонту дроида, +10 мощности ГЗП, +1500 к дальности радара, +10 к мощности сканера\r\n\r\n<clr>Адмирал<clrEnd>: +20 урона ко всем видам вооружения, +40 к дальности выстрела, +100 мощности захвата, +60 к дальности захвата, скорость захвата на ближней/дальней дистанции +3/+3\r\n--------------------------------------------\r\nВ <station> вы можете получить только <equip> с бонусами, соответствующими званию. Также, данные <equip> лишёны возможности установки микромодулей в связи с особенностями их конструкции.\r\nЖелаете ли вы забрать вашу награду за достижение военного звания?",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  15,
+          "Msg":  "Вы станете одним из первых, кто опробует данное оборудование в действии. Надеемся, что он принесёт вам достаточно пользы.\r\nТакже, вы получаете уникальный микромодуль \"<module_name>\". \r\nЖелаете ли вы ещё что-нибудь?",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  540,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  39,
+          "Msg":  "За достижение звания \"<rank>\" наша сеть станций может единожды предоставить вам оборудование из категории \"<equip>\" в подарок. Готовы ли вы забрать его?",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  660,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  71,
+          "Msg":  "Вы станете одним из первых, кто опробует данное оборудование в действии. Надеемся, что он принесёт вам достаточно пользы.\r\nТакже, вы получаете уникальный микромодуль \"<module_name>\".\r\nНо и это ещё не всё. За достижения звания <clr>\"Адмирал\"<clrEnd> мы награждаем вас уникальной наградой от нашей сети станций. В сетях <station> это <reward>\r\nЖелаете ли вы ещё что-нибудь?",
+          "DMsg.Num":  "3"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "DialogRewards",
+          "Pos.x":  310,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  9        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "GroupNew",
+          "Pos.x":  -20,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  3,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  20,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  0,
+          "Total.Lines":  1,
+          "Code.Type":  "Global",
+          "Code":          
+          [
+              "GRun()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  410,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  8,
+          "Total.Lines":  15,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if (ShipRank(Player())==0) return;",
+              "else if (ShipRank(Player())==1 && R1==1) return;",
+              "else if (ShipRank(Player())==2 && R1==1 && R2==1) return;",
+              "else if (ShipRank(Player())==3 && R1==1 && R2==1 && R3==1) return;",
+              "else if (ShipRank(Player())==4 && R1==1 && R2==1 && R3==1 && R4==1) return;",
+              "else if (ShipRank(Player())==5 && R1==1 && R2==1 && R3==1 && R4==1 && R5==1) return;",
+              "else if (ShipRank(Player())==6 && R1==1 && R2==1 && R3==1 && R4==1 && R5==1 && R6==1) return;",
+              "else if (ShipRank(Player())==7 && R1==1 && R2==1 && R3==1 && R4==1 && R5==1 && R6==1 && R7==1) return;",
+              "else AddDialogInject('DialogRewards',\"Ваши заслуги, рейнджер, несомненно достойны похвалы. Вы получили доступ к эксклюзивной награде за ваше военные звание\",\"Получить награду за звание\",1);",
+              "",
+              "if (ShipType(GetShipRuins(Player()))=='RC'){equip=\"Генераторы защитного поля\"; station=\"Центрах Рейнджеров\";}",
+              "else if(ShipType(GetShipRuins(Player()))=='MC'){equip=\"Дроиды\"; station=\"Медицинских Центрах\";}",
+              "else if(ShipType(GetShipRuins(Player()))=='TC'){equip=\"Двигатели и Топливные баки\"; station=\"Технических Центрах\";}",
+              "else if(ShipType(GetShipRuins(Player()))=='SB'){equip=\"Сканеры и Радары\"; station=\"Научных Базах\";}",
+              "else if(ShipType(GetShipRuins(Player()))=='BK'){equip=\"Захваты\"; station=\"Бизнес Центрах\";}"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  630,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  14,
+          "Total.Lines":  47,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if (equip==\"Генераторы защитного поля\") reward_item_type=t_DefGenerator;",
+              "else if (equip==\"Дроиды\") reward_item_type=t_RepairRobot;",
+              "else if (equip==\"Захваты\") reward_item_type=t_CargoHook;",
+              "else if (equipS==\"двигатель\") reward_item_type=t_Engine;",
+              "else if (equipS==\"топливный бак\") reward_item_type=t_FuelTanks;",
+              "else if (equipS==\"сканер\") reward_item_type=t_Scaner;",
+              "else if (equipS==\"радар\") reward_item_type=t_Radar;",
+              "",
+              "if(reward_item_type==t_FuelTanks) {size=25; type=\"топливный бак\";}",
+              "if(reward_item_type==t_Engine) {size=20; type=\"двигатель\";}",
+              "if(reward_item_type==t_Radar) {size=15; type=\"радар\";}",
+              "if(reward_item_type==t_Scaner) {size=15; type=\"сканер\";}",
+              "if(reward_item_type==t_RepairRobot) {size=20; type=\"дроид\";}",
+              "if(reward_item_type==t_CargoHook) {size=20; type=\"захват\";}",
+              "if(reward_item_type==t_DefGenerator) {size=20; type=\"генератор защитного поля\";}",
+              "",
+              "reward_item=CreateEquipment(reward_item_type,size,GalaxyTechLevel(),GetOwner(GetShipRuins(Player())));",
+              "",
+              "if(rank==\"Кадет\"){AddItemToShip(Player(),CreateMM(FindBonusByName('Торпедон'))); level=\"I\"; module_name=BonusName(FindBonusByName('Торпедон'));}",
+              "else if(rank==\"Пилот\"){AddItemToShip(Player(),CreateMM(FindBonusByName('Технобот'))); level=\"II\"; module_name=BonusName(FindBonusByName('Технобот'));}",
+              "else if(rank==\"Капитан\"){AddItemToShip(Player(),CreateMM(FindBonusByName('Сокрушитель'))); level=\"III\"; module_name=BonusName(FindBonusByName('Сокрушитель'));}",
+              "else if(rank==\"Истребитель\"){AddItemToShip(Player(),CreateMM(FindBonusByName('Концентратор'))); level=\"IV\"; module_name=BonusName(FindBonusByName('Концентратор'));}",
+              "else if(rank==\"Ас\"){AddItemToShip(Player(),CreateMM(FindBonusByName('Велокейд'))); level=\"V\"; module_name=BonusName(FindBonusByName('Велокейд'));}",
+              "else if(rank==\"Командор\"){AddItemToShip(Player(),CreateMM(FindBonusByName('Эгида'))); level=\"VI\"; module_name=BonusName(FindBonusByName('Эгида'));}",
+              "else if(rank==\"Адмирал\"){",
+              "    AddItemToShip(Player(),CreateMM(FindBonusByName('Патч 0.999 Омега')));",
+              "    level=\"VII\";",
+              "    module_name=BonusName(FindBonusByName('Патч 0.999 Омега'));",
+              "    if (station==\"Центрах Рейнджеров\") {RangerBaseNodes(Player(),RangerBaseNodes(Player())+10000); reward=\"10 тысяч единиц нодов.\";}",
+              "    else if(station==\"Медицинских Центрах\") {ShipHealthFactor(Player(),18,7300); reward=\"уникальный штамм Кровяного Джогара сроком на 20 лет без побочных эффектов.\";}",
+              "    else if(station==\"Технических Центрах\") {AddItemToShip(Player(),CreateQuestItem('Lockpick')); reward=\"уникальный набор улучшения корпуса корабля, названный нашими техниками Отмычка.\";}",
+              "    else if(station==\"Научных Базах\") {",
+              "        SetProgramm(6,GetProgramm(6)+10);",
+              "        SetProgramm(7,GetProgramm(7)+10);",
+              "        SetProgramm(8,GetProgramm(8)+10);",
+              "        SetProgramm(9,GetProgramm(9)+10);",
+              "        SetProgramm(10,GetProgramm(10)+10);",
+              "        SetProgramm(11,GetProgramm(11)+10);",
+              "        reward=\"по 10 единиц всех боевых программ против доминаторов.\";",
+              "        }",
+              "    else if(station=\"Бизнес Центрах\") {ShipMoney(Player(),ShipMoney(Player())+10000000); reward=\"10 миллионов cr. прямо здесь и сейчас.\";}",
+              "    }",
+              "",
+              "SpecialToEquipment(FindBonusByName('Милитариумный ' +type+' '+level),reward_item);",
+              "AddItemToShip(Player(),reward_item);",
+              "",
+              "Sound('Sound.Buy');"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  660,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  18,
+          "Total.Lines":  7,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "if(rank==\"Кадет\")R1=1;",
+              "else if(rank==\"Пилот\")R2=1;",
+              "else if(rank==\"Капитан\")R3=1;",
+              "else if(rank==\"Истребитель\")R4=1;",
+              "else if(rank==\"Ас\")R5=1;",
+              "else if(rank==\"Командор\")R6=1;",
+              "else R7=1;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  500,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  41,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "rank=\"Кадет\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  500,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  42,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "rank=\"Пилот\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  500,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  43,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "rank=\"Капитан\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  500,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  44,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "rank=\"Истребитель\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  500,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  45,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "rank=\"Ас\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  500,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  46,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "rank=\"Командор\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  500,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  47,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "rank=\"Адмирал\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  520,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  58,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "equipS=\"двигатель\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  59,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "equipS=\"топливный бак\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  60,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "equipS=\"радар\";"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  570,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  61,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "equipS=\"сканер\";"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "PlanetNew",
+          "Pos.x":  -20,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  2,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  -20,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  5,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "StarNew",
+          "Pos.x":  -20,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  1,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  330,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  6,
+          "Total.Lines":  1,
+          "Code.Type":  "DialogBegin",
+          "Code":          
+          [
+              "GetShipRuins(Player())>0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  370,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  7,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipType(GetShipRuins(Player()))=='RC' || ShipType(GetShipRuins(Player()))=='MC' || ShipType(GetShipRuins(Player()))=='TC' || ShipType(GetShipRuins(Player()))=='SB' || ShipType(GetShipRuins(Player()))=='BK'"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  460,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  12,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipRank(Player())>=1 && R1==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  390,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  19,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "R1==0 || R2==0 || R3==0 || R4==0 || R5==0 || R6==0 || R7==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  350,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  20,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!PlayerBridge()"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  460,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  27,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipRank(Player())>=2 && R2==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  460,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  28,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipRank(Player())>=3 && R3==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  460,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  29,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipRank(Player())>=4 && R4==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  460,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  30,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipRank(Player())>=5 && R5==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  460,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  31,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipRank(Player())>=6 && R6==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  460,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  32,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipRank(Player())==7 && R7==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  540,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  51,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "station==\"Технических Центрах\""          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  570,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  52,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "station==\"Центрах Рейнджеров\" || station==\"Медицинских Центрах\" || station==\"Бизнес Центрах\""          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  570,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  57,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "station==\"Научных Базах\""          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  69,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "rank!=\"Адмирал\""          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  660,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  70,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "rank==\"Адмирал\""          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "StateNew",
+          "Pos.x":  -20,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  4,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "R1",
+          "Pos.x":  -30,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  17,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "R2",
+          "Pos.x":  -30,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  21,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "R3",
+          "Pos.x":  -30,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  22,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "R4",
+          "Pos.x":  -30,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  23,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "R5",
+          "Pos.x":  -30,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  24,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "R6",
+          "Pos.x":  -30,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  25,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "rank",
+          "Pos.x":  50,
+          "Pos.y":  490,
+          "Parent":  -1,
+          "#":  40,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "R7",
+          "Pos.x":  -30,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  48,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "station",
+          "Pos.x":  110,
+          "Pos.y":  490,
+          "Parent":  -1,
+          "#":  49,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "equip",
+          "Pos.x":  -30,
+          "Pos.y":  490,
+          "Parent":  -1,
+          "#":  50,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "equipS",
+          "Pos.x":  -30,
+          "Pos.y":  510,
+          "Parent":  -1,
+          "#":  62,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "reward_item_type",
+          "Pos.x":  110,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  63,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "reward_item",
+          "Pos.x":  110,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  64,
+          "Var.Type":  "Dword",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "size",
+          "Pos.x":  110,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  65,
+          "Var.Type":  "Int",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "type",
+          "Pos.x":  110,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  66,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "level",
+          "Pos.x":  110,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  67,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "module_name",
+          "Pos.x":  110,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  68,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "reward",
+          "Pos.x":  110,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  72,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  2,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  2,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  4,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  10,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  13,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  15,
+      "End":  16,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  16,
+      "End":  18,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  12,
+      "End":  26,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  27,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  27,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  28,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  28,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  29,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
+      "End":  35,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  36,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  38,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  20,
+      "End":  7,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  8,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  19,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  13,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  26,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  34,
+      "End":  43,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  35,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  36,
+      "End":  45,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  46,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  45,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  44,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  42,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  51,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  52,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  11,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  57,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  51,
+      "End":  53,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  51,
+      "End":  54,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  57,
+      "End":  55,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  57,
+      "End":  56,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  55,
+      "End":  61,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  56,
+      "End":  60,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  54,
+      "End":  59,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  53,
+      "End":  58,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  60,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  61,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  59,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  58,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  69,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  69,
+      "End":  15,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  70,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  70,
+      "End":  71,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  16,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "Rect.Text":  
+  [
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  280,
+      "Rect.Top":  105,
+      "Rect.Right":  697,
+      "Rect.Bottom":  353,
+      "FStyle":  1,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  0,
+      "AlignY":  -1,
+      "AlignRect":  false,
+      "Text":  "Награды",
+      "Color":  0,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  -51,
+      "Rect.Top":  78,
+      "Rect.Right":  79,
+      "Rect.Bottom":  309,
+      "FStyle":  0,
+      "FColor":  65280,
+      "BStyle":  0,
+      "BColor":  14474452,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  0,
+      "AlignY":  -1,
+      "AlignRect":  false,
+      "Text":  "Запуск",
+      "Color":  0,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  -52,
+      "Rect.Top":  315,
+      "Rect.Right":  221,
+      "Rect.Bottom":  532,
+      "FStyle":  0,
+      "FColor":  16745984,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  0,
+      "AlignY":  1,
+      "AlignRect":  false,
+      "Text":  "Переменные",
+      "Color":  0,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  56,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "100",
+      "String":  "уникальный штамм Кровяного Джогара сроком на 20 лет без побочных эффектов."    
+    },
+    {
+      "#":  "101",
+      "String":  "10 тысяч единиц нодов."    
+    },
+    {
+      "#":  "102",
+      "String":  "Вы станете одним из первых, кто опробует данное оборудование в действии. Надеемся, что он принесёт вам достаточно пользы.<br>Также, вы получаете уникальный микромодуль \"<0>\".<br>Но и это ещё не всё. За достижения звания <clr>\"Адмирал\"<clrEnd> мы награждаем вас уникальной наградой от нашей сети станций. В сетях <1> это <2><br>Желаете ли вы ещё что-нибудь?"    
+    },
+    {
+      "#":  "15",
+      "String":  "Нет, спасибо, как-нибудь в другой раз"    
+    },
+    {
+      "#":  "28",
+      "String":  "Получить награду за звание Кадет"    
+    },
+    {
+      "#":  "29",
+      "String":  "Получить награду за звание Пилот"    
+    },
+    {
+      "#":  "30",
+      "String":  "Получить награду за звание Капитан"    
+    },
+    {
+      "#":  "31",
+      "String":  "Получить награду за звание Истребитель"    
+    },
+    {
+      "#":  "32",
+      "String":  "Получить награду за звание Ас"    
+    },
+    {
+      "#":  "33",
+      "String":  "Получить награду за звание Командор"    
+    },
+    {
+      "#":  "34",
+      "String":  "Получить награду за звание Адмирал"    
+    },
+    {
+      "#":  "38",
+      "String":  "Спасибо!"    
+    },
+    {
+      "#":  "40",
+      "String":  "Кадет"    
+    },
+    {
+      "#":  "42",
+      "String":  "Пилот"    
+    },
+    {
+      "#":  "43",
+      "String":  "Капитан"    
+    },
+    {
+      "#":  "44",
+      "String":  "Истребитель"    
+    },
+    {
+      "#":  "45",
+      "String":  "Ас"    
+    },
+    {
+      "#":  "46",
+      "String":  "Командор"    
+    },
+    {
+      "#":  "47",
+      "String":  "Адмирал"    
+    },
+    {
+      "#":  "48",
+      "String":  "Получить награду за звание"    
+    },
+    {
+      "#":  "50",
+      "String":  "Само собой, забираю."    
+    },
+    {
+      "#":  "51",
+      "String":  "Ваши заслуги, рейнджер, несомненно достойны похвалы. Вы получили доступ к эксклюзивной награде за ваше военные звание"    
+    },
+    {
+      "#":  "52",
+      "String":  "Бизнес Центрах"    
+    },
+    {
+      "#":  "53",
+      "String":  "Захваты"    
+    },
+    {
+      "#":  "54",
+      "String":  "Научных Базах"    
+    },
+    {
+      "#":  "55",
+      "String":  "Сканеры и Радары"    
+    },
+    {
+      "#":  "56",
+      "String":  "Технических Центрах"    
+    },
+    {
+      "#":  "57",
+      "String":  "Двигатели и Топливные баки"    
+    },
+    {
+      "#":  "58",
+      "String":  "Медицинских Центрах"    
+    },
+    {
+      "#":  "59",
+      "String":  "Дроиды"    
+    },
+    {
+      "#":  "60",
+      "String":  "Центрах Рейнджеров"    
+    },
+    {
+      "#":  "61",
+      "String":  "Генераторы защитного поля"    
+    },
+    {
+      "#":  "64",
+      "String":  "За достижение звания \"<0>\" наша сеть станций может единожды предоставить вам оборудование из категории \"<1>\" в подарок. Готовы ли вы забрать его?"    
+    },
+    {
+      "#":  "65",
+      "String":  "радар"    
+    },
+    {
+      "#":  "66",
+      "String":  "сканер"    
+    },
+    {
+      "#":  "67",
+      "String":  "топливный бак"    
+    },
+    {
+      "#":  "68",
+      "String":  "двигатель"    
+    },
+    {
+      "#":  "69",
+      "String":  "Выбираю двигатель"    
+    },
+    {
+      "#":  "70",
+      "String":  "Выбираю топливный бак"    
+    },
+    {
+      "#":  "71",
+      "String":  "Выбираю сканер"    
+    },
+    {
+      "#":  "72",
+      "String":  "Выбираю радар"    
+    },
+    {
+      "#":  "74",
+      "String":  "VII"    
+    },
+    {
+      "#":  "75",
+      "String":  "VI"    
+    },
+    {
+      "#":  "76",
+      "String":  "V"    
+    },
+    {
+      "#":  "77",
+      "String":  "IV"    
+    },
+    {
+      "#":  "78",
+      "String":  "III"    
+    },
+    {
+      "#":  "79",
+      "String":  "II"    
+    },
+    {
+      "#":  "80",
+      "String":  "I"    
+    },
+    {
+      "#":  "90",
+      "String":  "генератор защитного поля"    
+    },
+    {
+      "#":  "91",
+      "String":  "захват"    
+    },
+    {
+      "#":  "92",
+      "String":  "дроид"    
+    },
+    {
+      "#":  "94",
+      "String":  "Вы станете одним из первых, кто опробует данное оборудование в действии. Надеемся, что он принесёт вам достаточно пользы.<br>Также, вы получаете уникальный микромодуль \"<0>\". <br>Желаете ли вы ещё что-нибудь?"    
+    },
+    {
+      "#":  "95",
+      "String":  "Рейнджер <Player>, ваши заслуги в уничтожении пиратов и доминаторов заслуживают особой похвалы. Решением Галактического совета вам было выдано разрешение на допуск к отделу экспериментального оборудования Коалиции. <br>Согласно табелю званий, вы можете получить оборудование со следующими бонусами:<br>--------------------------------------------<br><clr>Кадет<clrEnd>: +50 скорости двигателя, +5 к дальности прыжкы, +7 к ремонту дроида, +2 к навыку техники, +30 к мощности и дальности захвата<br><br><clr>Пилот<clrEnd>: +5 мощности ГЗП, +5 мощности сканера, +500 к дальности радара, +1 к навыку точности, +1 к навыку маневренности<br><br><clr>Капитан<clrEnd>: +7 урона энергетического оружия, +12 урона ракетного оружия, +17 урона осколочного оружия, +20 к дальности стрельбы<br><br><clr>Истребитель<clrEnd>: +20 к ремонту дроида, +8 мощности ГЗП, +1000 к дальности радара, +10 к дальности прыжка<br><br><clr>Ас<clrEnd>: +150 к скорости двигателя, +15 урона ко всем видам вооружения<br><br><clr>Командор<clrEnd>: +30 к ремонту дроида, +10 мощности ГЗП, +1500 к дальности радара, +10 к мощности сканера<br><br><clr>Адмирал<clrEnd>: +20 урона ко всем видам вооружения, +40 к дальности выстрела, +100 мощности захвата, +60 к дальности захвата, скорость захвата на ближней/дальней дистанции +3/+3<br>--------------------------------------------<br>В <0> вы можете получить только <1> с бонусами, соответствующими званию. Также, данные <2> лишёны возможности установки микромодулей в связи с особенностями их конструкции.<br>Желаете ли вы забрать вашу награду за достижение военного звания?"    
+    },
+    {
+      "#":  "97",
+      "String":  "10 миллионов cr. прямо здесь и сейчас."    
+    },
+    {
+      "#":  "98",
+      "String":  "по 10 единиц всех боевых программ против доминаторов."    
+    },
+    {
+      "#":  "99",
+      "String":  "уникальный набор улучшения корпуса корабля, названный нашими техниками Отмычка."    
+    }  
+  ]
+}

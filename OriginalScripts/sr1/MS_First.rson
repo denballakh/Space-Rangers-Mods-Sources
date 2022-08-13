@@ -1,0 +1,3772 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  -703,
+  "ViewPos.y":  -60,
+  "ScriptName":  "MS_First",
+  "ScriptFileOut":  "c:\\dab\\Prog\\Delphi\\Rangers\\DATA\\Script\\MS_First.scr",
+  "ScriptTextOut":  "c:\\dab\\Prog\\Delphi\\Rangers\\CFG\\Rus\\Script\\MS_First.txt",
+  "GraphPoint.Count":  170,
+  "GraphLink.Count":  171,
+  "GraphRectText.Count":  2,
+  "Variables.Count":  5,
+  "Stars.Count":  2,
+  "Planets.Count":  3,
+  "Ships.Count":  1,
+  "States.Count":  4,
+  "Groups.Count":  3,
+  "Places.Count":  3,
+  "Items.Count":  1,
+  "Ethers.Count":  15,
+  "Dialogs.Count":  2,
+  "DialogMessages.Count":  16,
+  "DialogAnswers.Count":  18,
+  "Operations.Count":  41,
+  "Statements.Count":  56,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  710,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  7,
+          "Msg":  "Спасибо конечно, но деньжат могли бы побольше подкинуть",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  720,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  9,
+          "Msg":  "Это было бы очень кстати. Я готов пройти полный курс обучения.",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "planet",
+          "Pos.x":  710,
+          "Pos.y":  390,
+          "Parent":  -1,
+          "#":  11,
+          "Msg":  "Это легко. Немедленно вылетаю.",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "planet",
+          "Pos.x":  700,
+          "Pos.y":  450,
+          "Parent":  -1,
+          "#":  28,
+          "Msg":  "Да, конечно. Немедленно вылетаю.",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "goods",
+          "Pos.x":  700,
+          "Pos.y":  500,
+          "Parent":  -1,
+          "#":  32,
+          "Msg":  "Хорошо, будем делать бизнес.",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "planet",
+          "Pos.x":  700,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  40,
+          "Msg":  "Пока",
+          "AMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "planet",
+          "Pos.x":  700,
+          "Pos.y":  610,
+          "Parent":  -1,
+          "#":  52,
+          "Msg":  "Не волнуйтесь. Я исследую эту черную дыру и прилечу с докладом.",
+          "AMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "planet",
+          "Pos.x":  700,
+          "Pos.y":  670,
+          "Parent":  -1,
+          "#":  59,
+          "Msg":  "Пока",
+          "AMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  -380,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  72,
+          "Msg":  "А как ты смотришь на то, чтобы служить под моим началом? Я многому могу тебя научить. Ведь я опытный исследователь черных дыр! К тому же, заплачу <ShipMoney(Player())/2> cr за один год службы.",
+          "AMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  -500,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  74,
+          "Msg":  "Первым делом нам нужно срочно вернуться в систему <Name(Star1)>. Меня ждут с докладом на планете <Name(Planet1)>.",
+          "AMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  -360,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  75,
+          "Msg":  "Ну лети, докладывай. А я полечу в систему <Name(Star1)>. Меня срочно ждут на планете <Name(Planet1)>. Пока.",
+          "AMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  700,
+          "Pos.y":  730,
+          "Parent":  -1,
+          "#":  100,
+          "Msg":  "Надеюсь. Еще будут инструкции?",
+          "AMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "planet",
+          "Pos.x":  700,
+          "Pos.y":  780,
+          "Parent":  -1,
+          "#":  103,
+          "Msg":  "Спасибо, можете на меня положиться. Я немедленно отправлюсь в центр рейнджеров <vRCName> и сделаю все возможное ради нашей свободы.",
+          "AMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "planet",
+          "Pos.x":  700,
+          "Pos.y":  820,
+          "Parent":  -1,
+          "#":  116,
+          "Msg":  "Спасибо. Эта школа не прошла для меня даром.",
+          "AMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  -270,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  141,
+          "Msg":  "Ага, значит эта дыра вела из нашей системы <Name(Star1)> в систему <Name(Star2)>. Я успешно выполнил задание.",
+          "AMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  -600,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  144,
+          "Msg":  "Пока",
+          "AMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  790,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  150,
+          "Msg":  "Нет, спасибо. Я опытный пилот.",
+          "AMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "planet",
+          "Pos.x":  890,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  152,
+          "Msg":  "Спасибо, первым делом я посещу центр рейнджеров <vRCName>.",
+          "AMsg.Num":  "17"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  670,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  6,
+          "Msg":  "Приветствуем, тебя Рейнджер <ShortName(Player())>! Мы рады, что ты добровольно записался в рейнджеры. Такие герои сейчас особенно нужны галактике. Чтобы поощрить твои патриотические усилия мы заносим тебя в список рейнджеров и даем тебе небольшую сумму подъемных в размере <FirstGiveMoney()> cr.",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  720,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  8,
+          "Msg":  "Мы даем тебе лицензию на осуществление торговой деятельности. Это позволит тебе в свободное время заниматься делами далекими от прямых рейнджерских обязанностей. Ты сможешь заработать столько денег, сколько посчитаешь нужным. Беспрепятственно торгуй и покупай себе новое оборудование. \r\n\r\nДело в том, что нам выгодней давать финансовую свободу рейнджерам, нежели их прямо финансировать. С нас хватает орбитальных военных кораблей, которые мы содержим.\r\n\r\nНе желаешь пройти курс обучения основам торговли, пилотирования и боя?",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  660,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  10,
+          "Msg":  "Хорошо кадет. Для начала ты должен будешь вылететь в открытый космос, сбить учебные астероиды на орбите нашей планеты, собрать выпавшие минералы и вернуться назад.",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  660,
+          "Pos.y":  450,
+          "Parent":  -1,
+          "#":  27,
+          "Msg":  "Кадет! Ты должен сбить учебные астероиды и вернуться с минералами на борту.",
+          "DMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  660,
+          "Pos.y":  500,
+          "Parent":  -1,
+          "#":  31,
+          "Msg":  "Молодец <ShortName(Player())>. Как видишь, ты можешь в любой момент настрелять астероидов и собрать минералы. Конечно обычные астероиды не стоят на месте, и их сбить потруднее, но ты сможешь. \r\n\r\nТеперь перейдем к торговле. \r\n\r\nВо-первых, ты можешь продать собранные минералы в нашем торговом центре по <GoodsSellPrice(Planet1,4)> cr за единицу.\r\nВо-вторых, у нас цены на медикаменты сравнительно невысокие, а у соседей на планете <Name(Planet2)> цены повыше будут. Твоя задача купить в нашем торговом центре немного медикаментов, отвезти на <Name(Planet2)> и продать. Вся выручка твоя. Как продашь им наши медикаменты, возвращайся назад с докладом.",
+          "DMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  660,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  38,
+          "Msg":  "Ты, <ShortName(Player())>, еще не продал наши медикаменты на планете <Name(Planet2)>.",
+          "DMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  660,
+          "Pos.y":  610,
+          "Parent":  -1,
+          "#":  51,
+          "Msg":  "Продал им наши медикаменты? Молодец <ShortName(Player())>! \r\n\r\nГлавное не забывай, что все расы разные. Малоки аскеты, у них роскошь запрещена, но очень дешева, а пеленги напротив любят роскошь. Люди и фэяне употребляют много алкоголя, а гаальская нация скупает минералы и за копейки продает технические товары. Также на цены товара влияет экономический тип планеты, а на его количество размер планеты и численность населения. \r\n\r\nТеперь настало время серьезных дел. Рядом с нашей планетой открылась черная дыра и ее надо исследовать. Твоя задача влететь туда и посмотреть, что внутри и куда она ведет. Это очень опасно. Советуем перед вылетом посетить наш магазин оборудования и купить там дополнительную пушку.",
+          "DMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  670,
+          "Parent":  -1,
+          "#":  58,
+          "Msg":  "Ты еще не исследовал черную дыру. У тебя все получится, <ShortName(Player())>, не бойся!",
+          "DMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -240,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  71,
+          "Msg":  "Рейнджер <ShortName(Player())>? Добро пожаловать в систему <Name(Star2)>!\r\n\r\nТвой корабль выскочил прямо из черной дыры, которую я охранял. И как только ты из нее вылетел, она закрылась. Дыры больше нет!!!",
+          "DMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -450,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  73,
+          "Msg":  "Я согласен, хотя сумма смешная. Для меня честь служить под началом такого опытного инструктора. Буду всюду следовать за вами сэр!",
+          "DMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  730,
+          "Parent":  -1,
+          "#":  99,
+          "Msg":  "Ну что вернулся живым, <ShortName(Player())>? Молодец! Ты с честью прошел самое трудное испытание. \r\n\r\nСчитаем, что на этом обучение можно завершить. Теперь ты умеешь зарабатывать деньги, торговать и сражаться. А со временем станешь самым богатым и сильным.",
+          "DMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  780,
+          "Parent":  -1,
+          "#":  101,
+          "Msg":  "Сейчас посети центр рейнджеров <vRCName>. Это космическая станция в нашей системе. Там получишь дальнейшие инструкции и секретную информацию о наших врагах, доступную только рейнджерам.\r\n\r\nТолько про нас не забывай кадет. Не допусти, чтобы клисаны забрали твою родную планету <Name(Planet1)>. Мы гордимся тобой, <ShortName(Player())>. Удачи!",
+          "DMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  820,
+          "Parent":  -1,
+          "#":  115,
+          "Msg":  "Ты теперь свободен, делай что хочешь.\r\n\r\nТолько про нас не забывай кадет. Не допусти, чтобы клисаны забрали твою родную планету <Name(Planet1)>. Мы гордимся тобой, <ShortName(Player())>. Удачи!",
+          "DMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -300,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  142,
+          "Msg":  "Я тоже, мне теперь нечего охранять. Полечу на <Name(Planet3)> с докладом, что дыры больше не существует.",
+          "DMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  -550,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  143,
+          "Msg":  "Да, сэр! Так точно сэр! Курс на систему <Name(Star1)>!",
+          "DMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  840,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  151,
+          "Msg":  "Отлично. Нам как раз нужны опытные пилоты. Мы будем следить за твоими успехами.\r\n\r\nТем не менее, обязательно посети центр рейнджеров <vRCName>, где тебя поставят на учет и расскажут все о наших врагах. Это совсем рядом, в нашей системе <Name(Star1)>.\r\n",
+          "DMsg.Num":  "15"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "dPlanet",
+          "Pos.x":  530,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  5        
+        },
+        {
+          "Type":  "TDialog",
+          "Name":  "dRanger",
+          "Pos.x":  -180,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  70        
+        }      
+      ],
+      "Ethers":      
+      [
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  810,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  17,
+          "Ether.Type":  3,
+          "Unique":  "D96A6A38-7EB3-4767-AFF6-D55CCD6A2630",
+          "Msg":  "Взлетите и уничтожьте учебные астероиды. Соберите часть минералов и возвратитесь назад на планету <Name(Planet1)>. Вас ждут с минералами в здании правительства.",
+          "Ship1":  "",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  720,
+          "Pos.y":  480,
+          "Parent":  -1,
+          "#":  35,
+          "Ether.Type":  4,
+          "Unique":  "D96A6A38-7EB3-4767-AFF6-D55CCD6A2630",
+          "Msg":  "Взлетите и уничтожьте учебные астероиды. Соберите часть минералов и возвратитесь назад на планету <Name(Planet1)>. Вас ждут с минералами в здании правительства.",
+          "Ship1":  "",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  810,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  41,
+          "Ether.Type":  3,
+          "Unique":  "13838540-D46E-49B6-8B20-A58215F63D67",
+          "Msg":  "Купите медикаменты, затем летите на соседнюю планету <Name(Planet2)>. Там продайте товар и возвращайтесь. Вас ждут в здании правительства на планете <Name(Planet1)> с докладом.",
+          "Ship1":  "",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  53,
+          "Ether.Type":  4,
+          "Unique":  "13838540-D46E-49B6-8B20-A58215F63D67",
+          "Msg":  "Купите медикаменты, затем летите на соседнюю планету <Name(Planet2)>. Там продайте товар и возвращайтесь. Вас ждут в здании правительства на планете <Name(Planet1)> с докладом.",
+          "Ship1":  "",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  810,
+          "Pos.y":  640,
+          "Parent":  -1,
+          "#":  55,
+          "Ether.Type":  3,
+          "Unique":  "67DA7770-831C-42A9-9488-84BB5404A8C8",
+          "Msg":  "Исследуйте черную дыру в системе <Name(Star1)> и возвращайтесь на планету <Name(Planet1)> c докладом.",
+          "Ship1":  "",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  700,
+          "Parent":  -1,
+          "#":  105,
+          "Ether.Type":  4,
+          "Unique":  "67DA7770-831C-42A9-9488-84BB5404A8C8",
+          "Msg":  "Исследуйте черную дыру в системе <Name(Star1)> и возвращайтесь на планету <Name(Planet1)> c докладом.",
+          "Ship1":  "",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  780,
+          "Pos.y":  740,
+          "Parent":  -1,
+          "#":  106,
+          "Ether.Type":  3,
+          "Unique":  "A2E2CCAE-3B74-44C0-937B-B32E5B5311CB",
+          "Msg":  "Посетите центр рейнджеров <vRCName> в системе <Name(Star1)> и пройдите там дальнейший инструктаж.",
+          "Ship1":  "",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  320,
+          "Pos.y":  490,
+          "Parent":  -1,
+          "#":  112,
+          "Ether.Type":  4,
+          "Unique":  "A2E2CCAE-3B74-44C0-937B-B32E5B5311CB",
+          "Msg":  "Посетите центр рейнджеров <vRCName> в системе <Name(Star1)> и пройдите там дальнейший инструктаж.",
+          "Ship1":  "",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  330,
+          "Pos.y":  710,
+          "Parent":  -1,
+          "#":  134,
+          "Ether.Type":  5,
+          "Unique":  "D96A6A38-7EB3-4767-AFF6-D55CCD6A2630",
+          "Msg":  "Взлетите и уничтожьте учебные астероиды. Соберите часть минералов и возвратитесь назад на планету <Name(Planet1)>. Вас ждут с минералами в здании правительства.",
+          "Ship1":  "",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  340,
+          "Pos.y":  740,
+          "Parent":  -1,
+          "#":  136,
+          "Ether.Type":  5,
+          "Unique":  "13838540-D46E-49B6-8B20-A58215F63D67",
+          "Msg":  "Купите медикаменты, затем летите на соседнюю планету <Name(Planet2)>. Там продайте товар и возвращайтесь. Вас ждут в здании правительства на планете <Name(Planet1)> с докладом.",
+          "Ship1":  "",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  340,
+          "Pos.y":  770,
+          "Parent":  -1,
+          "#":  138,
+          "Ether.Type":  5,
+          "Unique":  "67DA7770-831C-42A9-9488-84BB5404A8C8",
+          "Msg":  "Исследуйте черную дыру в системе <Name(Star1)> и возвращайтесь на планету <Name(Planet1)> c докладом.",
+          "Ship1":  "",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  340,
+          "Pos.y":  800,
+          "Parent":  -1,
+          "#":  140,
+          "Ether.Type":  5,
+          "Unique":  "A2E2CCAE-3B74-44C0-937B-B32E5B5311CB",
+          "Msg":  "Посетите центр рейнджеров <vRCName> в системе <Name(Star1)> и пройдите там дальнейший инструктаж.",
+          "Ship1":  "",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  880,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  153,
+          "Ether.Type":  3,
+          "Unique":  "3B14D680-4C28-42CB-9A2B-26FF9DBEA249",
+          "Msg":  "Посетите центр рейнджеров <vRCName> в системе <Name(Star1)>.",
+          "Ship1":  "",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  330,
+          "Pos.y":  830,
+          "Parent":  -1,
+          "#":  156,
+          "Ether.Type":  5,
+          "Unique":  "3B14D680-4C28-42CB-9A2B-26FF9DBEA249",
+          "Msg":  "Посетите центр рейнджеров <vRCName> в системе <Name(Star1)>.",
+          "Ship1":  "",
+          "Ship2":  "",
+          "Ship3":  ""        
+        },
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  310,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  157,
+          "Ether.Type":  4,
+          "Unique":  "3B14D680-4C28-42CB-9A2B-26FF9DBEA249",
+          "Msg":  "Посетите центр рейнджеров <vRCName> в системе <Name(Star1)>.",
+          "Ship1":  "",
+          "Ship2":  "",
+          "Ship3":  ""        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "Group1",
+          "Pos.x":  330,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  3,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "Group2",
+          "Pos.x":  -50,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  68,
+          "Owner":  62,
+          "Group.Type":  3,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  0,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "GroupRC",
+          "Pos.x":  410,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  102,
+          "Owner":  62,
+          "Group.Type":  1,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  "RC"        
+        }      
+      ],
+      "Items":      
+      [
+        {
+          "Type":  "TItem",
+          "Name":  "ItemEA",
+          "Pos.x":  470,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  23,
+          "Class":  5,
+          "Item.Type":  0,
+          "Size":  10,
+          "Level":  1,
+          "Radius":  150,
+          "Owner":  6,
+          "Useless":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  15,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "SkipGreeting()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  16,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Sound('Sound.Sell')"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  780,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  19,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player(),ShipMoney(Player())+FirstGiveMoney())"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  820,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  20,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState=1"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  24,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState=2"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  33,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "SkipGreeting()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  36,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState=3"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  610,
+          "Pos.y":  580,
+          "Parent":  -1,
+          "#":  39,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "SkipGreeting()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  45,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState=4"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  290,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  49,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState=5"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  650,
+          "Parent":  -1,
+          "#":  56,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState=6"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  840,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  60,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "UselessItemCreate('ExampleAsteroid',ItemEA,PlaceEA)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  700,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  61,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "DecayGoods(Planet2,1)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  710,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  62,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "UpsurgeGoods(Planet1,1)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  790,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  67,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "HoleCreate(PH1,PH2)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -210,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  79,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dialog(dRanger,Group2)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -410,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  81,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dRangerOk=1"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -750,
+          "Pos.y":  500,
+          "Parent":  -1,
+          "#":  84,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOut(GroupToShip(Group2))"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -740,
+          "Pos.y":  390,
+          "Parent":  -1,
+          "#":  91,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipSetPartner(GroupToShip(Group2),Player(),356)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -500,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  93,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player(),ShipMoney(Player())-ShipMoney(Player())/2)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -480,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  94,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Sound('Sound.Buy')"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  480,
+          "Parent":  -1,
+          "#":  97,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState=7"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  790,
+          "Pos.y":  780,
+          "Parent":  -1,
+          "#":  104,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState=8"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  260,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  109,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOut(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  650,
+          "Parent":  -1,
+          "#":  110,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOut(GroupToShip(Group2))"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  700,
+          "Parent":  -1,
+          "#":  117,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "SkipGreeting()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  540,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  118,
+          "Total.Lines":  1,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "vRCName=ShortName(GroupToShip(GroupRC))"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  119,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOut(GroupToShip(GroupRC))"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  570,
+          "Parent":  -1,
+          "#":  121,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState=9"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  720,
+          "Pos.y":  150,
+          "Parent":  -1,
+          "#":  122,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "PlanetSetGoods(Planet1,1,30)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  123,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Tips(1)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -790,
+          "Pos.y":  500,
+          "Parent":  -1,
+          "#":  124,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Tips(9)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  100,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  126,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Tips(10)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  140,
+          "Pos.y":  790,
+          "Parent":  -1,
+          "#":  128,
+          "Total.Lines":  1,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "tStart=CurTurn()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -510,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  145,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(GroupToShip(Group2),ShipMoney(GroupToShip(Group2))+ShipMoney(Player())/2)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -410,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  148,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "OrderLanding(GroupToShip(Group2),Planet3,1)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  160,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState=8"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  740,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  163,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vOkFirst=1"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  720,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  166,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GoodsAdd(Planet1,1,10)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  -10,
+          "Pos.y":  570,
+          "Parent":  -1,
+          "#":  168,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Tips(11)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  810,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  169,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOut(GroupToShip(Group2))"          
+          ]        
+        }      
+      ],
+      "Places":      
+      [
+        {
+          "Type":  "TPlace",
+          "Name":  "PlaceEA",
+          "Pos.x":  430,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  22,
+          "Place.Type":  1,
+          "Angle":  "0",
+          "Dist":  "0.5",
+          "Radius":  400,
+          "Obj1":  0,
+          "Obj2":  -1        
+        },
+        {
+          "Type":  "TPlace",
+          "Name":  "PH1",
+          "Pos.x":  400,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  65,
+          "Place.Type":  1,
+          "Angle":  "0",
+          "Dist":  "0.5",
+          "Radius":  600,
+          "Obj1":  0,
+          "Obj2":  -1        
+        },
+        {
+          "Type":  "TPlace",
+          "Name":  "PH2",
+          "Pos.x":  140,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  66,
+          "Place.Type":  3,
+          "Angle":  "0",
+          "Dist":  "0.899999976158142",
+          "Radius":  100,
+          "Obj1":  1,
+          "Obj2":  -1        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "Planet1",
+          "Pos.x":  330,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  0,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  5        
+        },
+        {
+          "Type":  "TPlanet",
+          "Name":  "Planet2",
+          "Pos.x":  430,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  34,
+          "Race":  63,
+          "Owner":  63,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        },
+        {
+          "Type":  "TPlanet",
+          "Name":  "Planet3",
+          "Pos.x":  20,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  64,
+          "Race":  63,
+          "Owner":  63,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  250,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  2,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "Star1",
+          "Pos.x":  330,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  1,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  true        
+        },
+        {
+          "Type":  "TStar",
+          "Name":  "Star2",
+          "Pos.x":  60,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  63,
+          "Constellation":  0,
+          "Priority":  1,
+          "NoKling":  false,
+          "NoComeKling":  true        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  190,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  12,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInNormalSpace(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  170,
+          "Parent":  -1,
+          "#":  14,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  750,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  18,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  21,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState==1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  130,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  25,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState==1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  26,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState==2"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  610,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  29,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ItemExist(ItemEA)/* || !GoodsCount(Player(),4)*/"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  610,
+          "Pos.y":  480,
+          "Parent":  -1,
+          "#":  30,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!(ItemExist(ItemEA)/* || !GoodsCount(Player(),4)*/)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  37,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState==3 || dState==4"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  500,
+          "Parent":  -1,
+          "#":  42,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  130,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  43,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState==3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  190,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  44,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GoodsCount(Player(),1)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  130,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  46,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState==4"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  190,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  47,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInPlanet(Player(),Planet2)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  48,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!GoodsCount(Player(),1)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  570,
+          "Pos.y":  620,
+          "Parent":  -1,
+          "#":  50,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState==5"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  620,
+          "Parent":  -1,
+          "#":  54,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  670,
+          "Parent":  -1,
+          "#":  57,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState==6"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -120,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  76,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInNormalSpace(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -150,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  77,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInStar(Player(),Star2)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -180,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  78,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dist(Player(),GroupToShip(Group2))<600"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -90,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  82,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!dRangerOk"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -210,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  83,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!dRangerOk"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  50,
+          "Pos.y":  300,
+          "Parent":  -1,
+          "#":  85,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInStar(Player(),Star1) || (ShipInStar(Player(),Star2) && dState>=7)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -70,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  87,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInNormalSpace(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -70,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  89,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInStar(Player(),Star2)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  10,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  90,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ShipInStar(Player(),Star1) && !ShipInStar(Player(),Star2)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -340,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  92,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipMoney(Player())/2>0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  130,
+          "Pos.y":  480,
+          "Parent":  -1,
+          "#":  95,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState==6"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  190,
+          "Pos.y":  480,
+          "Parent":  -1,
+          "#":  96,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInHole(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  550,
+          "Pos.y":  730,
+          "Parent":  -1,
+          "#":  98,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState==7"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  740,
+          "Pos.y":  750,
+          "Parent":  -1,
+          "#":  107,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  190,
+          "Pos.y":  520,
+          "Parent":  -1,
+          "#":  108,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "MS_AboutGaal_Ok"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  130,
+          "Pos.y":  520,
+          "Parent":  -1,
+          "#":  111,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState==8"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  760,
+          "Parent":  -1,
+          "#":  113,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!MS_AboutGaal_Ok"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  580,
+          "Pos.y":  770,
+          "Parent":  -1,
+          "#":  114,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "MS_AboutGaal_Ok"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  120,
+          "Pos.y":  580,
+          "Parent":  -1,
+          "#":  125,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipIsTakeoff(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  240,
+          "Pos.y":  770,
+          "Parent":  -1,
+          "#":  129,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "(CurTurn()-tStart)>365"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -20,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  130,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState<7"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -60,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  131,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "dState==7"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  0,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  132,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInStar(Player(),Star2)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  280,
+          "Pos.y":  730,
+          "Parent":  -1,
+          "#":  133,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EtherState('D96A6A38-7EB3-4767-AFF6-D55CCD6A2630')==3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  290,
+          "Pos.y":  750,
+          "Parent":  -1,
+          "#":  135,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EtherState('13838540-D46E-49B6-8B20-A58215F63D67')==3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  770,
+          "Parent":  -1,
+          "#":  137,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EtherState('67DA7770-831C-42A9-9488-84BB5404A8C8')==3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  300,
+          "Pos.y":  790,
+          "Parent":  -1,
+          "#":  139,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EtherState('A2E2CCAE-3B74-44C0-937B-B32E5B5311CB')==3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -610,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  146,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "OrderJump(Player(),Star1,1)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -580,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  147,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "OrderJump(GroupToShip(Group2),Star1,1)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -710,
+          "Pos.y":  490,
+          "Parent":  -1,
+          "#":  149,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  840,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  154,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  290,
+          "Pos.y":  820,
+          "Parent":  -1,
+          "#":  155,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EtherState('3B14D680-4C28-42CB-9A2B-26FF9DBEA249')==3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  250,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  158,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EtherState('3B14D680-4C28-42CB-9A2B-26FF9DBEA249')==3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  270,
+          "Pos.y":  500,
+          "Parent":  -1,
+          "#":  159,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "EtherState('3B14D680-4C28-42CB-9A2B-26FF9DBEA249')!=3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  800,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  161,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ItemExist(ItemEA)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  164,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "vOkFirst"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  165,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!vOkFirst"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  60,
+          "Pos.y":  520,
+          "Parent":  -1,
+          "#":  167,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipIsTakeoff(Player())"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "StateNew",
+          "Pos.x":  330,
+          "Pos.y":  390,
+          "Parent":  -1,
+          "#":  4,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Move",
+          "Pos.x":  -20,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  69,
+          "Move":  1,
+          "MoveObj":  66,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "Wait",
+          "Pos.x":  40,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  86,
+          "Move":  4,
+          "MoveObj":  64,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "ToPlayer",
+          "Pos.x":  -60,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  88,
+          "Move":  2,
+          "MoveObj":  3,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "dState",
+          "Pos.x":  540,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  13,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "dRangerOk",
+          "Pos.x":  -210,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  80,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "vRCName",
+          "Pos.x":  540,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  120,
+          "Var.Type":  "Str",
+          "Init":  "",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "tStart",
+          "Pos.x":  170,
+          "Pos.y":  790,
+          "Parent":  -1,
+          "#":  127,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "vOkFirst",
+          "Pos.x":  650,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  162,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  0,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  2,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  4,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  7,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  9,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  10,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  11,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  6,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  15,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  16,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  18,
+      "End":  17,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  19,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  21,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  21,
+      "End":  15,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  18,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  22,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  26,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  27,
+      "End":  28,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  26,
+      "End":  29,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
+      "End":  27,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  26,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  34,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  35,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  36,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  38,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  40,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  42,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  44,
+      "End":  45,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  48,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  48,
+      "End":  49,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  50,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  50,
+      "End":  51,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  51,
+      "End":  52,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  50,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  50,
+      "End":  53,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  54,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  54,
+      "End":  55,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  56,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  57,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  57,
+      "End":  58,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  58,
+      "End":  59,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  25,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  12,
+      "End":  24,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  61,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  62,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TStarLink",
+      "Begin":  1,
+      "End":  63,
+      "Nom":  0,
+      "Arrow":  false,
+      "DistMin":  0,
+      "DistMax":  21,
+      "Hole":  false    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  64,
+      "End":  63,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  65,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  66,
+      "End":  63,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  68,
+      "End":  64,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGroupLink",
+      "Begin":  68,
+      "End":  3,
+      "Nom":  0,
+      "Arrow":  true,
+      "Rel1":  4,
+      "Rel2":  4,
+      "WarWeightMin":  "0",
+      "WarWeightMax":  "1000"    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  67,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  72,
+      "End":  73,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  73,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  76,
+      "End":  77,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  77,
+      "End":  78,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  78,
+      "End":  79,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  72,
+      "End":  81,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  75,
+      "End":  81,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  82,
+      "End":  76,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  70,
+      "End":  83,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  83,
+      "End":  71,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  68,
+      "End":  69,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  85,
+      "End":  69,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  87,
+      "End":  89,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  89,
+      "End":  88,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  88,
+      "End":  82,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  69,
+      "End":  90,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  90,
+      "End":  86,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  92,
+      "End":  72,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  72,
+      "End":  93,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  72,
+      "End":  94,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  95,
+      "End":  96,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  96,
+      "End":  97,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  98,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  98,
+      "End":  99,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  99,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  102,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  102,
+      "End":  4,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  101,
+      "End":  103,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  103,
+      "End":  104,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  98,
+      "End":  105,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  103,
+      "End":  107,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  107,
+      "End":  106,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  108,
+      "End":  109,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  108,
+      "End":  110,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  111,
+      "End":  108,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  100,
+      "End":  113,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  113,
+      "End":  101,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  100,
+      "End":  114,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  114,
+      "End":  115,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  115,
+      "End":  116,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  114,
+      "End":  110,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  114,
+      "End":  109,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  57,
+      "End":  117,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  98,
+      "End":  117,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  118,
+      "End":  119,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  114,
+      "End":  121,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  108,
+      "End":  121,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  122,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  18,
+      "End":  123,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  84,
+      "End":  124,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  111,
+      "End":  125,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  125,
+      "End":  126,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  129,
+      "End":  109,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  129,
+      "End":  110,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  69,
+      "End":  130,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  69,
+      "End":  131,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  131,
+      "End":  87,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  130,
+      "End":  132,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  132,
+      "End":  86,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  86,
+      "End":  85,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  129,
+      "End":  133,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  133,
+      "End":  134,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  129,
+      "End":  135,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  135,
+      "End":  136,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  129,
+      "End":  137,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  137,
+      "End":  138,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  129,
+      "End":  139,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  139,
+      "End":  140,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  141,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  141,
+      "End":  142,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  142,
+      "End":  92,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  142,
+      "End":  75,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  74,
+      "End":  143,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  143,
+      "End":  144,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  144,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  72,
+      "End":  145,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  144,
+      "End":  146,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  144,
+      "End":  147,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  75,
+      "End":  148,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  75,
+      "End":  146,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  144,
+      "End":  149,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  75,
+      "End":  149,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  149,
+      "End":  84,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  8,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  150,
+      "End":  151,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  151,
+      "End":  152,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  154,
+      "End":  153,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  129,
+      "End":  155,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  155,
+      "End":  156,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  108,
+      "End":  158,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  158,
+      "End":  157,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  108,
+      "End":  159,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  159,
+      "End":  112,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  150,
+      "End":  160,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  18,
+      "End":  161,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  161,
+      "End":  60,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  150,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  163,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  21,
+      "End":  164,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  164,
+      "End":  10,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  21,
+      "End":  165,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  165,
+      "End":  8,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  150,
+      "End":  154,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  166,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  95,
+      "End":  167,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  167,
+      "End":  168,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  160,
+      "End":  169,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "Rect.Text":  
+  [
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  -859,
+      "Rect.Top":  436,
+      "Rect.Right":  -711,
+      "Rect.Bottom":  444,
+      "FStyle":  0,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  0,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "",
+      "Color":  16777215,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    },
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  -538,
+      "Rect.Top":  344,
+      "Rect.Right":  -479,
+      "Rect.Bottom":  351,
+      "FStyle":  0,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  0,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "",
+      "Color":  16777215,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  37,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "0",
+      "String":  "Посетите центр рейнджеров <0> в системе <1>."    
+    },
+    {
+      "#":  "1",
+      "String":  "Посетите центр рейнджеров <0> в системе <1> и пройдите там дальнейший инструктаж."    
+    },
+    {
+      "#":  "10",
+      "String":  "Ты, <Player>, еще не продал наши медикаменты на планете <0>."    
+    },
+    {
+      "#":  "11",
+      "String":  "Продал им наши медикаменты? Молодец <Player>! <br><br>Главное не забывай, что все расы разные. Малоки аскеты, у них роскошь запрещена, но очень дешева, а пеленги напротив любят роскошь. Люди и фэяне употребляют много алкоголя, а гаальская нация скупает минералы и за копейки продает технические товары. Также на цены товара влияет экономический тип планеты, а на его количество размер планеты и численность населения. <br><br>Теперь настало время серьезных дел. Рядом с нашей планетой открылась черная дыра и ее надо исследовать. Твоя задача влететь туда и посмотреть, что внутри и куда она ведет. Это очень опасно. Советуем перед вылетом посетить наш магазин оборудования и купить там дополнительную пушку."    
+    },
+    {
+      "#":  "12",
+      "String":  "Ты еще не исследовал черную дыру. У тебя все получится, <Player>, не бойся!"    
+    },
+    {
+      "#":  "13",
+      "String":  "Рейнджер <Player>? Добро пожаловать в систему <0>!<br><br>Твой корабль выскочил прямо из черной дыры, которую я охранял. И как только ты из нее вылетел, она закрылась. Дыры больше нет!!!"    
+    },
+    {
+      "#":  "14",
+      "String":  "Я согласен, хотя сумма смешная. Для меня честь служить под началом такого опытного инструктора. Буду всюду следовать за вами сэр!"    
+    },
+    {
+      "#":  "15",
+      "String":  "Ну что вернулся живым, <Player>? Молодец! Ты с честью прошел самое трудное испытание. <br><br>Считаем, что на этом обучение можно завершить. Теперь ты умеешь зарабатывать деньги, торговать и сражаться. А со временем станешь самым богатым и сильным."    
+    },
+    {
+      "#":  "16",
+      "String":  "Сейчас посети центр рейнджеров <0>. Это космическая станция в нашей системе. Там получишь дальнейшие инструкции и секретную информацию о наших врагах, доступную только рейнджерам.<br><br>Только про нас не забывай кадет. Не допусти, чтобы клисаны забрали твою родную планету <1>. Мы гордимся тобой, <Player>. Удачи!"    
+    },
+    {
+      "#":  "17",
+      "String":  "Ты теперь свободен, делай что хочешь.<br><br>Только про нас не забывай кадет. Не допусти, чтобы клисаны забрали твою родную планету <0>. Мы гордимся тобой, <Player>. Удачи!"    
+    },
+    {
+      "#":  "18",
+      "String":  "Я тоже, мне теперь нечего охранять. Полечу на <0> с докладом, что дыры больше не существует."    
+    },
+    {
+      "#":  "19",
+      "String":  "Да, сэр! Так точно сэр! Курс на систему <0>!"    
+    },
+    {
+      "#":  "2",
+      "String":  "Исследуйте черную дыру в системе <0> и возвращайтесь на планету <1> c докладом."    
+    },
+    {
+      "#":  "20",
+      "String":  "Отлично. Нам как раз нужны опытные пилоты. Мы будем следить за твоими успехами.<br><br>Тем не менее, обязательно посети центр рейнджеров <0>, где тебя поставят на учет и расскажут все о наших врагах. Это совсем рядом, в нашей системе <1>.<br>"    
+    },
+    {
+      "#":  "21",
+      "String":  "Спасибо конечно, но деньжат могли бы побольше подкинуть"    
+    },
+    {
+      "#":  "22",
+      "String":  "Это было бы очень кстати. Я готов пройти полный курс обучения."    
+    },
+    {
+      "#":  "23",
+      "String":  "Это легко. Немедленно вылетаю."    
+    },
+    {
+      "#":  "24",
+      "String":  "Да, конечно. Немедленно вылетаю."    
+    },
+    {
+      "#":  "25",
+      "String":  "Хорошо, будем делать бизнес."    
+    },
+    {
+      "#":  "26",
+      "String":  "Пока"    
+    },
+    {
+      "#":  "27",
+      "String":  "Не волнуйтесь. Я исследую эту черную дыру и прилечу с докладом."    
+    },
+    {
+      "#":  "28",
+      "String":  "А как ты смотришь на то, чтобы служить под моим началом? Я многому могу тебя научить. Ведь я опытный исследователь черных дыр! К тому же, заплачу <0> cr за один год службы."    
+    },
+    {
+      "#":  "29",
+      "String":  "Первым делом нам нужно срочно вернуться в систему <0>. Меня ждут с докладом на планете <1>."    
+    },
+    {
+      "#":  "3",
+      "String":  "Купите медикаменты, затем летите на соседнюю планету <0>. Там продайте товар и возвращайтесь. Вас ждут в здании правительства на планете <1> с докладом."    
+    },
+    {
+      "#":  "30",
+      "String":  "Ну лети, докладывай. А я полечу в систему <0>. Меня срочно ждут на планете <1>. Пока."    
+    },
+    {
+      "#":  "31",
+      "String":  "Надеюсь. Еще будут инструкции?"    
+    },
+    {
+      "#":  "32",
+      "String":  "Спасибо, можете на меня положиться. Я немедленно отправлюсь в центр рейнджеров <0> и сделаю все возможное ради нашей свободы."    
+    },
+    {
+      "#":  "33",
+      "String":  "Спасибо. Эта школа не прошла для меня даром."    
+    },
+    {
+      "#":  "34",
+      "String":  "Ага, значит эта дыра вела из нашей системы <0> в систему <1>. Я успешно выполнил задание."    
+    },
+    {
+      "#":  "35",
+      "String":  "Нет, спасибо. Я опытный пилот."    
+    },
+    {
+      "#":  "36",
+      "String":  "Спасибо, первым делом я посещу центр рейнджеров <0>."    
+    },
+    {
+      "#":  "4",
+      "String":  "Взлетите и уничтожьте учебные астероиды. Соберите часть минералов и возвратитесь назад на планету <0>. Вас ждут с минералами в здании правительства."    
+    },
+    {
+      "#":  "5",
+      "String":  "Приветствуем, тебя Рейнджер <Player>! Мы рады, что ты добровольно записался в рейнджеры. Такие герои сейчас особенно нужны галактике. Чтобы поощрить твои патриотические усилия мы заносим тебя в список рейнджеров и даем тебе небольшую сумму подъемных в размере <0> cr."    
+    },
+    {
+      "#":  "6",
+      "String":  "Мы даем тебе лицензию на осуществление торговой деятельности. Это позволит тебе в свободное время заниматься делами далекими от прямых рейнджерских обязанностей. Ты сможешь заработать столько денег, сколько посчитаешь нужным. Беспрепятственно торгуй и покупай себе новое оборудование. <br><br>Дело в том, что нам выгодней давать финансовую свободу рейнджерам, нежели их прямо финансировать. С нас хватает орбитальных военных кораблей, которые мы содержим.<br><br>Не желаешь пройти курс обучения основам торговли, пилотирования и боя?"    
+    },
+    {
+      "#":  "7",
+      "String":  "Хорошо кадет. Для начала ты должен будешь вылететь в открытый космос, сбить учебные астероиды на орбите нашей планеты, собрать выпавшие минералы и вернуться назад."    
+    },
+    {
+      "#":  "8",
+      "String":  "Кадет! Ты должен сбить учебные астероиды и вернуться с минералами на борту."    
+    },
+    {
+      "#":  "9",
+      "String":  "Молодец <Player>. Как видишь, ты можешь в любой момент настрелять астероидов и собрать минералы. Конечно обычные астероиды не стоят на месте, и их сбить потруднее, но ты сможешь. <br><br>Теперь перейдем к торговле. <br><br>Во-первых, ты можешь продать собранные минералы в нашем торговом центре по <0> cr за единицу.<br>Во-вторых, у нас цены на медикаменты сравнительно невысокие, а у соседей на планете <1> цены повыше будут. Твоя задача купить в нашем торговом центре немного медикаментов, отвезти на <2> и продать. Вся выручка твоя. Как продашь им наши медикаменты, возвращайся назад с докладом."    
+    }  
+  ]
+}

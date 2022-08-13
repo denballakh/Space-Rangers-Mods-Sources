@@ -1,0 +1,2357 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  98,
+  "ViewPos.y":  -147,
+  "ScriptName":  "MS_Machpella",
+  "ScriptFileOut":  "C:\\dab\\Prog\\Delphi\\Rangers\\DATA\\Script\\MS_Machpella.scr",
+  "ScriptTextOut":  "C:\\dab\\Prog\\Delphi\\Rangers\\CFG\\Rus\\Script\\MS_Machpella.txt",
+  "GraphPoint.Count":  105,
+  "GraphLink.Count":  106,
+  "GraphRectText.Count":  1,
+  "Variables.Count":  1,
+  "Stars.Count":  1,
+  "Planets.Count":  1,
+  "Ships.Count":  2,
+  "States.Count":  2,
+  "Groups.Count":  2,
+  "Places.Count":  0,
+  "Items.Count":  0,
+  "Ethers.Count":  1,
+  "Dialogs.Count":  1,
+  "DialogMessages.Count":  31,
+  "DialogAnswers.Count":  34,
+  "Operations.Count":  10,
+  "Statements.Count":  19,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  9,
+          "Msg":  "Я пришел с миром и прошу меня выслушать! Ты понимаешь меня?",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  28,
+          "Msg":  "Ээ... в смысле, как я себя чувствую? Спасибо, неплохо. Ты согласна на переговоры?",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  30,
+          "Msg":  "Ну, до поражения нам, положим, далеко, ты не слишком-то переоценивай свои силы...",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  32,
+          "Msg":  "Положим, твоим клисанам тоже неплохо досталось!",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  34,
+          "Msg":  "Хм... да, органы, если они у тебя летают снаружи.",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  920,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  35,
+          "Msg":  "Конечно заслуживает! \r\nА ты можешь помочь мне найти и уничтожить его?",
+          "AMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1050,
+          "Pos.y":  570,
+          "Parent":  -1,
+          "#":  37,
+          "Msg":  "Тогда в путь. Ищем в гипер пространстве базу Рачехана, уничтожаем пиратов и затем решаем, что дальше делать.",
+          "AMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  790,
+          "Pos.y":  580,
+          "Parent":  -1,
+          "#":  38,
+          "Msg":  "Может они и заслуживают наказания, но ты еще более его заслуживаешь. Нам придется убить тебя и весь твой мерзкий вид.",
+          "AMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  910,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  40,
+          "Msg":  "Я понимаю, что произошла ошибка и хочу прекратить эту бессмысленную войну. Возвращайся в свой рукав Галактики.",
+          "AMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1070,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  42,
+          "Msg":  "До встречи, счастливого пути. Я доложу нашим, что война закончилась!",
+          "AMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  700,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  46,
+          "Msg":  "Йо-хо-хо! Люблю хороший фейерверк! Пока, Рачеханчик!",
+          "AMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  48,
+          "Msg":  "Еще бы он существовал при таком взрыве! Не обращай внимания, это я так выражаю радость победы.",
+          "AMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  110,
+          "Parent":  -1,
+          "#":  50,
+          "Msg":  "Спасибо, ты умеешь говорить комплименты!",
+          "AMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  850,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  52,
+          "Msg":  "Твои жертвы не должны остаться не отомщенными! Я отомщу за каждого убитого тобой гуманоида! Умри гадина!",
+          "AMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  850,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  54,
+          "Msg":  "Я понимаю, что произошла ошибка и хочу прекратить эту бессмысленную войну. Возвращайся в свой рукав Галактики.",
+          "AMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  960,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  56,
+          "Msg":  "До встречи, счастливого пути. Я доложу нашим, что война закончилась!",
+          "AMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  770,
+          "Pos.y":  700,
+          "Parent":  -1,
+          "#":  62,
+          "Msg":  "А я тебя слушать более не намерен. Рейнджеры достанут тебя, куда бы ты ни направилась. Защищайся гадина.",
+          "AMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  970,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  63,
+          "Msg":  "Я тебя слушать более не намерен и сотру тебя в порошок!",
+          "AMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  67,
+          "Msg":  "У нас нет никакой эпидемии!",
+          "AMsg.Num":  "18"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  69,
+          "Msg":  "Кто бы говорил про ментальные процессы! С одного раза не понимаешь? Я не болен! Я недавно проходил медкомиссию!",
+          "AMsg.Num":  "19"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  71,
+          "Msg":  "Дезинфицировать?! Так ты полностью выжгла всю жизнь на нескольких планетах только потому, что боролась с какими-то бактериями?! Тем более что мы сами давно победили опасных для жизни бактерий!",
+          "AMsg.Num":  "20"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  73,
+          "Msg":  "Да? Ну хорошо, сейчас высморкаюсь... Так лучше?",
+          "AMsg.Num":  "21"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  75,
+          "Msg":  "Нет! Не надо ничего уничтожать. Мы можем мирно решить проблему?",
+          "AMsg.Num":  "22"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  78,
+          "Msg":  "Погоди, погоди! У нас с вами не может быть общих болезней! Вы же даже не органиче... Стоп! С кем, по-твоему, ты разговариваешь?",
+          "AMsg.Num":  "23"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  79,
+          "Msg":  "Черт! Я, кажется, понял! Ты принимаешь мой корабль за меня!",
+          "AMsg.Num":  "24"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  81,
+          "Msg":  "То, что ты считаешь \"комками слизи\" - это и есть мы. А корабли нам нужны, чтобы летать по космосу. Сами они не разумны. Это машины, позволяющие нам, органическим созданиям, путешествовать по космосу.",
+          "AMsg.Num":  "25"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  83,
+          "Msg":  "Да, именно так. Мы можем жить без машин только на планетах с благоприятной для органической жизни атмосферой. А вы?",
+          "AMsg.Num":  "26"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  85,
+          "Msg":  "А вы всегда летаете в одиночку?",
+          "AMsg.Num":  "27"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  87,
+          "Msg":  "Много столетий назад одна из ваших столкнулась с колонистами из нашего рукава. Она тоже не звала на помощь?",
+          "AMsg.Num":  "28"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  89,
+          "Msg":  "Да, она почти справилась... Колонистам пришлось устроить взрыв Сверхновой. Они погибли, но не пустили ее в наш рукав.",
+          "AMsg.Num":  "29"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  680,
+          "Pos.y":  520,
+          "Parent":  -1,
+          "#":  91,
+          "Msg":  "Да, это страшная ошибка. Хотя мы сами спровоцировали этот конфликт...",
+          "AMsg.Num":  "30"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  770,
+          "Pos.y":  490,
+          "Parent":  -1,
+          "#":  93,
+          "Msg":  "Дело в пиратах Рачехана. Они специально привлекли тебя в наш рукав и стали виновниками этой войны. Ты стала лишь орудием убийства.",
+          "AMsg.Num":  "31"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  620,
+          "Parent":  -1,
+          "#":  98,
+          "Msg":  "Благое дело? По-твоему произошла ошибка?!! Это ты, грязная тварь, по ошибке угробила миллионы моих соотечественников. Нет тебе оправдания и нет тебе пощады.",
+          "AMsg.Num":  "32"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  610,
+          "Pos.y":  710,
+          "Parent":  -1,
+          "#":  100,
+          "Msg":  "Пока твой вид шляется по космосу, мы никогда не будем в безопасности.\r\nЗа свои ошибки надо рано или поздно платить. Тебе хана, гадина! Я немедленно приступаю к твоей ликвидации.",
+          "AMsg.Num":  "33"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  8,
+          "Msg":  "Контакт...",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  27,
+          "Msg":  "Контакт установленным является. Событие как позитивное плюс оценивается. Адаптация языковая требует контакта продолжения. Способность вызывающего состояние свое оценить какова?",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  29,
+          "Msg":  "Вызывающий является первым из своих сородичей, способным к коммуникации. Позитивно весьма. Известна ли вызывающему степень поражения его расы?",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  31,
+          "Msg":  "Подтверждаю - я, вероятно, переоценила свои силы. Ты неадекватен относительно поражения. Нанесенный вам ущерб слишком велик.",
+          "DMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  33,
+          "Msg":  "Термин \"клисаны\" не идентифицирован. Ты имеешь в виду мои дистанционные органы?",
+          "DMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  970,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  36,
+          "Msg":  "Да, конечно помогу. Для меня это не проблема сделать. Хоть как-то оправдаюсь перед вашим видом.",
+          "DMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  39,
+          "Msg":  "Я признаю свою вину, но не признаю справедливости твоих слов. Платить сознательной агрессией за невольную ошибку недостойно разумного существа. Я буду защищаться вплоть до уничтожения всей органики в этой части космоса.",
+          "DMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  980,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  41,
+          "Msg":  "Мудрые слова, органическое существо. Я вернусь домой и расскажу сородичам всю правду, чтобы ужасная ошибка не повторилась впредь. Гарантирую, что больше не покажусь в вашей галактике, а если мы когда-нибудь еще встретимся, то будем говорить уже на равных.",
+          "DMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  700,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  45,
+          "Msg":  "Вот кажется и все. Мы победили.",
+          "DMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  47,
+          "Msg":  "Ты напрасно обращаешься к нему. Он более не существует.",
+          "DMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  760,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  49,
+          "Msg":  "Понятно. Я только теперь поняла, какие вы смелые, органические существа. Ввязываться в космический бой, имея столь жалкое тело, столь несовершенные реакции, столь уязвимый мозг, столь...",
+          "DMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  790,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  51,
+          "Msg":  "Не за что, я говорю правду. Итак, я выполнила твою просьбу. Можем ли мы считать наш конфликт улаженным!",
+          "DMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  900,
+          "Pos.y":  20,
+          "Parent":  -1,
+          "#":  53,
+          "Msg":  "Я признаю свою вину, но не признаю справедливости твоих требований. Платить сознательной агрессией за невольную ошибку недостойно разумного существа. Я буду защищаться.",
+          "DMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  900,
+          "Pos.y":  130,
+          "Parent":  -1,
+          "#":  55,
+          "Msg":  "Мудрые слова, органическое существо. Я вернусь домой и расскажу сородичам всю правду, чтобы ужасная ошибка не повторилась впредь. Гарантирую, что больше не покажусь в вашей галактике, а если мы когда-нибудь еще встретимся, то будем говорить уже на равных. ",
+          "DMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  66,
+          "Msg":  "Да, часть из них разрушена, но, по крайней мере, они и я не стали жертвами вашей эпидемии.",
+          "DMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  68,
+          "Msg":  "Твои ментальные процессы неадекватны. Ты пока еще способен к коммуникации, но ты тоже болен. Может быть, в твоем случае еще не поздно, и лечение будет успешным.",
+          "DMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  70,
+          "Msg":  "Вероятно, на вашем уровне развития еще не умеют вовремя диагностировать эту болезнь. Она вызывается не воздействием высоких энергий, а примитивной органической слизью, которая разрастается и разрушает мозг и тело. Эту слизь можно подцепить на планетах. В вашем рукаве Галактики много таких планет. Часть я уже успела дезинфицировать, но, похоже, эпидемия приняла слишком крупные масштабы. За все время я не встретила ни одного здорового представителя вашей расы.",
+          "DMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  72,
+          "Msg":  "Термин \"бактерии\" не идентифицирован. Информация о победе неверна. Эта слизь уже свела с ума и погубила множество твоих сородичей, а в данный момент ее комок находится в твоей носовой части.",
+          "DMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  74,
+          "Msg":  "Никаких изменений не вижу. Ты болен. Мне придется тебя ликвидировать как источник заразы.",
+          "DMsg.Num":  "18"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  76,
+          "Msg":  "Ты не понимаешь. Если я не вмешаюсь, у тебя нет шансов. В давние времена, когда мы были не более развиты, чем вы, от такой болезни погибли многие из нас...",
+          "DMsg.Num":  "19"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  77,
+          "Msg":  "С моим собратом, пусть и не столь развитым, но способным самостоятельно принимать решения.",
+          "DMsg.Num":  "20"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  80,
+          "Msg":  "Термин \"корабль\" не идентифицирован. Он отделим от твоего сознания?",
+          "DMsg.Num":  "21"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  82,
+          "Msg":  "Следовательно, ваши корабли это неразумные машины. А мерзкая слизь внутри не что иное, как разумное существо сидящее внутри.",
+          "DMsg.Num":  "22"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  84,
+          "Msg":  "Мы зародились в газопылевой туманности, питаемся энергией звезд, строим себя и своих... клисан из рассеянного в космосе вещества. Нас всегда интересовал простор, нам не приходилось ютиться на маленьком каменном шаре... Ведь это у вас, должно быть, от недостатка места эта странная привычка летать кучами?",
+          "DMsg.Num":  "23"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  640,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  86,
+          "Msg":  "Да, мы почти не встречаемся друг с другом, только периодически обмениваемся информацией. Мы летаем от звезды к звезде, исследуем космические процессы... Для наблюдений и экспериментов мы создаем и запускаем клисан - этого вполне достаточно, чтобы не нуждаться в помощи себе подобных.",
+          "DMsg.Num":  "24"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  88,
+          "Msg":  "Как видно, она решила, что справится сама.",
+          "DMsg.Num":  "25"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  90,
+          "Msg":  "Мне очень жаль, что наша раса принесла вам столько бед. Но ведь мы думали, что делаем благое дело...",
+          "DMsg.Num":  "26"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  500,
+          "Parent":  -1,
+          "#":  92,
+          "Msg":  "Каким образом?",
+          "DMsg.Num":  "27"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  850,
+          "Pos.y":  500,
+          "Parent":  -1,
+          "#":  94,
+          "Msg":  "Вот это действительно мерзко. Как можно пойти против своего вида??? Этот Рачехан заслуживают жестокого наказания.",
+          "DMsg.Num":  "28"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  660,
+          "Parent":  -1,
+          "#":  99,
+          "Msg":  "Я признаю свою вину, но не признаю справедливости твоих слов. Платить сознательной агрессией за невольную ошибку недостойно разумного существа. Я буду защищаться вплоть до уничтожения всей органики в этой части космоса.",
+          "DMsg.Num":  "29"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  690,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  102,
+          "Msg":  "Ты меня сильно огорчил, <Player> придется тебя убить. Подлети поближе, чтобы я могла прицелиться.",
+          "DMsg.Num":  "30"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "dMama",
+          "Pos.x":  560,
+          "Pos.y":  120,
+          "Parent":  -1,
+          "#":  7        
+        }      
+      ],
+      "Ethers":      
+      [
+        {
+          "Type":  "TEther",
+          "Name":  "",
+          "Pos.x":  910,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  58,
+          "Ether.Type":  3,
+          "Unique":  "",
+          "Msg":  "Вам следует прибыть в ближайший центр рейнджеров с докладом об окончании войны.",
+          "Ship1":  "",
+          "Ship2":  "",
+          "Ship3":  ""        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "gPlayer",
+          "Pos.x":  -110,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  4,
+          "Owner":  62,
+          "Group.Type":  126,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  true,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TGroup",
+          "Name":  "gMama",
+          "Pos.x":  60,
+          "Pos.y":  220,
+          "Parent":  -1,
+          "#":  5,
+          "Owner":  62,
+          "Group.Type":  129,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  100,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  370,
+          "Pos.y":  370,
+          "Parent":  -1,
+          "#":  14,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dialog(dMama,gMama)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  180,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  16,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOut()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  220,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  17,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipOut(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  10,
+          "Pos.y":  -210,
+          "Parent":  -1,
+          "#":  20,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "GRun()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  880,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  25,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ScenarioState(1)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  950,
+          "Pos.y":  600,
+          "Parent":  -1,
+          "#":  26,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "HoleMamaCreate()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  820,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  57,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ScenarioState(3)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  670,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  60,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "MS_Machpella_DialogOk=1"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  900,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  64,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ScenarioState(4)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  810,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  95,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "HoleMamaCreate()"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "PlanetMama",
+          "Pos.x":  10,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  3,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  -70,
+          "Pos.y":  -10,
+          "Parent":  -1,
+          "#":  1,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        },
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  -70,
+          "Pos.y":  30,
+          "Parent":  -1,
+          "#":  2,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  129,
+          "Player":  false,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "StarMama",
+          "Pos.x":  10,
+          "Pos.y":  0,
+          "Parent":  -1,
+          "#":  0,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  130,
+          "Pos.y":  370,
+          "Parent":  -1,
+          "#":  10,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInNormalSpace(CurShip)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  170,
+          "Pos.y":  370,
+          "Parent":  -1,
+          "#":  11,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInNormalSpace(Player())"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  210,
+          "Pos.y":  370,
+          "Parent":  -1,
+          "#":  12,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInStar(Player(),StarMama)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  250,
+          "Pos.y":  370,
+          "Parent":  -1,
+          "#":  13,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "Dist(CurShip,Player())<500"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  140,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  15,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ShipInStar(Player(),StarMama)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -120,
+          "Pos.y":  -210,
+          "Parent":  -1,
+          "#":  19,
+          "Total.Lines":  1,
+          "Code.Type":  "Init",
+          "Code":          
+          [
+              "GRunFrom==3"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  140,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  22,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "0/*MS_Machpella_DialogOk*/"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  -50,
+          "Pos.y":  -210,
+          "Parent":  -1,
+          "#":  23,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "HaveCommunicator()"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  290,
+          "Pos.y":  370,
+          "Parent":  -1,
+          "#":  24,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "HaveCommunicator()"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  43,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ScenarioState()==0"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  80,
+          "Parent":  -1,
+          "#":  44,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ScenarioState()==1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  850,
+          "Pos.y":  290,
+          "Parent":  -1,
+          "#":  59,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  100,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  61,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ScenarioState()!=1"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  330,
+          "Pos.y":  370,
+          "Parent":  -1,
+          "#":  65,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!MS_Machpella_DialogOk"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  650,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  96,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "MS_AboutRachehan2_Ok"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  600,
+          "Pos.y":  580,
+          "Parent":  -1,
+          "#":  97,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!MS_AboutRachehan2_Ok"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  620,
+          "Pos.y":  10,
+          "Parent":  -1,
+          "#":  101,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "MS_Machpella_DialogOk"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  560,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  103,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!MS_Machpella_DialogOk"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  590,
+          "Pos.y":  40,
+          "Parent":  -1,
+          "#":  104,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ScenarioState()!=1"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "stMama",
+          "Pos.x":  60,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  6,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "dMama",
+          "OnActCode":  "dMama",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        },
+        {
+          "Type":  "TState",
+          "Name":  "stPlayer",
+          "Pos.x":  -110,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  21,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "",
+          "OnActCode":  "",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "MS_Machpella_DialogOk",
+          "Pos.x":  -120,
+          "Pos.y":  -260,
+          "Parent":  -1,
+          "#":  18,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  true        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  1,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  2,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  4,
+      "End":  3,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  3,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  5,
+      "End":  6,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  9,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  10,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  11,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  12,
+      "End":  13,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  15,
+      "End":  16,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  16,
+      "End":  17,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  4,
+      "End":  21,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  22,
+      "End":  16,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  23,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  13,
+      "End":  24,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  27,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  27,
+      "End":  28,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  28,
+      "End":  29,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  35,
+      "End":  36,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  36,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  35,
+      "End":  25,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  35,
+      "End":  26,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  8,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  44,
+      "End":  45,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  45,
+      "End":  46,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  48,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  48,
+      "End":  49,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  49,
+      "End":  50,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  50,
+      "End":  51,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  51,
+      "End":  52,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  53,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  51,
+      "End":  54,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  54,
+      "End":  55,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  55,
+      "End":  56,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  57,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  54,
+      "End":  59,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  59,
+      "End":  58,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  59,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  60,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  60,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  61,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  61,
+      "End":  15,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  61,
+      "End":  22,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  62,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  53,
+      "End":  63,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  54,
+      "End":  64,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  24,
+      "End":  65,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  65,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  34,
+      "End":  66,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  66,
+      "End":  67,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  67,
+      "End":  68,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  68,
+      "End":  69,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  69,
+      "End":  70,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  70,
+      "End":  71,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  71,
+      "End":  72,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  72,
+      "End":  73,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  73,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  74,
+      "End":  75,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  75,
+      "End":  76,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  76,
+      "End":  78,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  78,
+      "End":  77,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  77,
+      "End":  79,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  79,
+      "End":  80,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  80,
+      "End":  81,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  81,
+      "End":  82,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  82,
+      "End":  83,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  83,
+      "End":  84,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  84,
+      "End":  85,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  85,
+      "End":  86,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  86,
+      "End":  87,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  87,
+      "End":  88,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  88,
+      "End":  89,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  89,
+      "End":  90,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  91,
+      "End":  92,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  92,
+      "End":  93,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  93,
+      "End":  94,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  94,
+      "End":  35,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  94,
+      "End":  38,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  94,
+      "End":  40,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  95,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  90,
+      "End":  96,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  96,
+      "End":  91,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  90,
+      "End":  97,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  97,
+      "End":  98,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  98,
+      "End":  99,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  99,
+      "End":  100,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  97,
+      "End":  40,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  101,
+      "End":  102,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  102,
+      "End":  63,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  103,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  103,
+      "End":  43,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  23,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  104,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  104,
+      "End":  101,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "Rect.Text":  
+  [
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  -295,
+      "Rect.Top":  -177,
+      "Rect.Right":  1031,
+      "Rect.Bottom":  -165,
+      "FStyle":  0,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  0,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "",
+      "Color":  16777215,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  63,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "0",
+      "String":  "Контакт..."    
+    },
+    {
+      "#":  "1",
+      "String":  "Контакт установленным является. Событие как позитивное плюс оценивается. Адаптация языковая требует контакта продолжения. Способность вызывающего состояние свое оценить какова?"    
+    },
+    {
+      "#":  "10",
+      "String":  "Понятно. Я только теперь поняла, какие вы смелые, органические существа. Ввязываться в космический бой, имея столь жалкое тело, столь несовершенные реакции, столь уязвимый мозг, столь..."    
+    },
+    {
+      "#":  "11",
+      "String":  "Не за что, я говорю правду. Итак, я выполнила твою просьбу. Можем ли мы считать наш конфликт улаженным!"    
+    },
+    {
+      "#":  "12",
+      "String":  "Я признаю свою вину, но не признаю справедливости твоих требований. Платить сознательной агрессией за невольную ошибку недостойно разумного существа. Я буду защищаться."    
+    },
+    {
+      "#":  "13",
+      "String":  "Мудрые слова, органическое существо. Я вернусь домой и расскажу сородичам всю правду, чтобы ужасная ошибка не повторилась впредь. Гарантирую, что больше не покажусь в вашей галактике, а если мы когда-нибудь еще встретимся, то будем говорить уже на равных. "    
+    },
+    {
+      "#":  "14",
+      "String":  "Да, часть из них разрушена, но, по крайней мере, они и я не стали жертвами вашей эпидемии."    
+    },
+    {
+      "#":  "15",
+      "String":  "Твои ментальные процессы неадекватны. Ты пока еще способен к коммуникации, но ты тоже болен. Может быть, в твоем случае еще не поздно, и лечение будет успешным."    
+    },
+    {
+      "#":  "16",
+      "String":  "Вероятно, на вашем уровне развития еще не умеют вовремя диагностировать эту болезнь. Она вызывается не воздействием высоких энергий, а примитивной органической слизью, которая разрастается и разрушает мозг и тело. Эту слизь можно подцепить на планетах. В вашем рукаве Галактики много таких планет. Часть я уже успела дезинфицировать, но, похоже, эпидемия приняла слишком крупные масштабы. За все время я не встретила ни одного здорового представителя вашей расы."    
+    },
+    {
+      "#":  "17",
+      "String":  "Термин \"бактерии\" не идентифицирован. Информация о победе неверна. Эта слизь уже свела с ума и погубила множество твоих сородичей, а в данный момент ее комок находится в твоей носовой части."    
+    },
+    {
+      "#":  "18",
+      "String":  "Никаких изменений не вижу. Ты болен. Мне придется тебя ликвидировать как источник заразы."    
+    },
+    {
+      "#":  "19",
+      "String":  "Ты не понимаешь. Если я не вмешаюсь, у тебя нет шансов. В давние времена, когда мы были не более развиты, чем вы, от такой болезни погибли многие из нас..."    
+    },
+    {
+      "#":  "2",
+      "String":  "Вызывающий является первым из своих сородичей, способным к коммуникации. Позитивно весьма. Известна ли вызывающему степень поражения его расы?"    
+    },
+    {
+      "#":  "20",
+      "String":  "С моим собратом, пусть и не столь развитым, но способным самостоятельно принимать решения."    
+    },
+    {
+      "#":  "21",
+      "String":  "Термин \"корабль\" не идентифицирован. Он отделим от твоего сознания?"    
+    },
+    {
+      "#":  "22",
+      "String":  "Следовательно, ваши корабли это неразумные машины. А мерзкая слизь внутри не что иное, как разумное существо сидящее внутри."    
+    },
+    {
+      "#":  "23",
+      "String":  "Мы зародились в газопылевой туманности, питаемся энергией звезд, строим себя и своих... клисан из рассеянного в космосе вещества. Нас всегда интересовал простор, нам не приходилось ютиться на маленьком каменном шаре... Ведь это у вас, должно быть, от недостатка места эта странная привычка летать кучами?"    
+    },
+    {
+      "#":  "24",
+      "String":  "Да, мы почти не встречаемся друг с другом, только периодически обмениваемся информацией. Мы летаем от звезды к звезде, исследуем космические процессы... Для наблюдений и экспериментов мы создаем и запускаем клисан - этого вполне достаточно, чтобы не нуждаться в помощи себе подобных."    
+    },
+    {
+      "#":  "25",
+      "String":  "Как видно, она решила, что справится сама."    
+    },
+    {
+      "#":  "26",
+      "String":  "Мне очень жаль, что наша раса принесла вам столько бед. Но ведь мы думали, что делаем благое дело..."    
+    },
+    {
+      "#":  "27",
+      "String":  "Каким образом?"    
+    },
+    {
+      "#":  "28",
+      "String":  "Вот это действительно мерзко. Как можно пойти против своего вида??? Этот Рачехан заслуживают жестокого наказания."    
+    },
+    {
+      "#":  "29",
+      "String":  "Я пришел с миром и прошу меня выслушать! Ты понимаешь меня?"    
+    },
+    {
+      "#":  "3",
+      "String":  "Подтверждаю - я, вероятно, переоценила свои силы. Ты неадекватен относительно поражения. Нанесенный вам ущерб слишком велик."    
+    },
+    {
+      "#":  "30",
+      "String":  "Ээ... в смысле, как я себя чувствую? Спасибо, неплохо. Ты согласна на переговоры?"    
+    },
+    {
+      "#":  "31",
+      "String":  "Ну, до поражения нам, положим, далеко, ты не слишком-то переоценивай свои силы..."    
+    },
+    {
+      "#":  "32",
+      "String":  "Положим, твоим клисанам тоже неплохо досталось!"    
+    },
+    {
+      "#":  "33",
+      "String":  "Хм... да, органы, если они у тебя летают снаружи."    
+    },
+    {
+      "#":  "34",
+      "String":  "Конечно заслуживает! <br>А ты можешь помочь мне найти и уничтожить его?"    
+    },
+    {
+      "#":  "35",
+      "String":  "Тогда в путь. Ищем в гипер пространстве базу Рачехана, уничтожаем пиратов и затем решаем, что дальше делать."    
+    },
+    {
+      "#":  "36",
+      "String":  "Может они и заслуживают наказания, но ты еще более его заслуживаешь. Нам придется убить тебя и весь твой мерзкий вид."    
+    },
+    {
+      "#":  "37",
+      "String":  "Я понимаю, что произошла ошибка и хочу прекратить эту бессмысленную войну. Возвращайся в свой рукав Галактики."    
+    },
+    {
+      "#":  "38",
+      "String":  "Вам следует прибыть в ближайший центр рейнджеров с докладом об окончании войны."    
+    },
+    {
+      "#":  "39",
+      "String":  "До встречи, счастливого пути. Я доложу нашим, что война закончилась!"    
+    },
+    {
+      "#":  "4",
+      "String":  "Термин \"клисаны\" не идентифицирован. Ты имеешь в виду мои дистанционные органы?"    
+    },
+    {
+      "#":  "40",
+      "String":  "Йо-хо-хо! Люблю хороший фейерверк! Пока, Рачеханчик!"    
+    },
+    {
+      "#":  "41",
+      "String":  "Еще бы он существовал при таком взрыве! Не обращай внимания, это я так выражаю радость победы."    
+    },
+    {
+      "#":  "42",
+      "String":  "Спасибо, ты умеешь говорить комплименты!"    
+    },
+    {
+      "#":  "43",
+      "String":  "Твои жертвы не должны остаться не отомщенными! Я отомщу за каждого убитого тобой гуманоида! Умри гадина!"    
+    },
+    {
+      "#":  "44",
+      "String":  "А я тебя слушать более не намерен. Рейнджеры достанут тебя, куда бы ты ни направилась. Защищайся гадина."    
+    },
+    {
+      "#":  "45",
+      "String":  "Я тебя слушать более не намерен и сотру тебя в порошок!"    
+    },
+    {
+      "#":  "46",
+      "String":  "У нас нет никакой эпидемии!"    
+    },
+    {
+      "#":  "47",
+      "String":  "Кто бы говорил про ментальные процессы! С одного раза не понимаешь? Я не болен! Я недавно проходил медкомиссию!"    
+    },
+    {
+      "#":  "48",
+      "String":  "Дезинфицировать?! Так ты полностью выжгла всю жизнь на нескольких планетах только потому, что боролась с какими-то бактериями?! Тем более что мы сами давно победили опасных для жизни бактерий!"    
+    },
+    {
+      "#":  "49",
+      "String":  "Да? Ну хорошо, сейчас высморкаюсь... Так лучше?"    
+    },
+    {
+      "#":  "5",
+      "String":  "Да, конечно помогу. Для меня это не проблема сделать. Хоть как-то оправдаюсь перед вашим видом."    
+    },
+    {
+      "#":  "50",
+      "String":  "Нет! Не надо ничего уничтожать. Мы можем мирно решить проблему?"    
+    },
+    {
+      "#":  "51",
+      "String":  "Погоди, погоди! У нас с вами не может быть общих болезней! Вы же даже не органиче... Стоп! С кем, по-твоему, ты разговариваешь?"    
+    },
+    {
+      "#":  "52",
+      "String":  "Черт! Я, кажется, понял! Ты принимаешь мой корабль за меня!"    
+    },
+    {
+      "#":  "53",
+      "String":  "То, что ты считаешь \"комками слизи\" - это и есть мы. А корабли нам нужны, чтобы летать по космосу. Сами они не разумны. Это машины, позволяющие нам, органическим созданиям, путешествовать по космосу."    
+    },
+    {
+      "#":  "54",
+      "String":  "Да, именно так. Мы можем жить без машин только на планетах с благоприятной для органической жизни атмосферой. А вы?"    
+    },
+    {
+      "#":  "55",
+      "String":  "А вы всегда летаете в одиночку?"    
+    },
+    {
+      "#":  "56",
+      "String":  "Много столетий назад одна из ваших столкнулась с колонистами из нашего рукава. Она тоже не звала на помощь?"    
+    },
+    {
+      "#":  "57",
+      "String":  "Да, она почти справилась... Колонистам пришлось устроить взрыв Сверхновой. Они погибли, но не пустили ее в наш рукав."    
+    },
+    {
+      "#":  "58",
+      "String":  "Да, это страшная ошибка. Хотя мы сами спровоцировали этот конфликт..."    
+    },
+    {
+      "#":  "59",
+      "String":  "Дело в пиратах Рачехана. Они специально привлекли тебя в наш рукав и стали виновниками этой войны. Ты стала лишь орудием убийства."    
+    },
+    {
+      "#":  "6",
+      "String":  "Я признаю свою вину, но не признаю справедливости твоих слов. Платить сознательной агрессией за невольную ошибку недостойно разумного существа. Я буду защищаться вплоть до уничтожения всей органики в этой части космоса."    
+    },
+    {
+      "#":  "60",
+      "String":  "Благое дело? По-твоему произошла ошибка?!! Это ты, грязная тварь, по ошибке угробила миллионы моих соотечественников. Нет тебе оправдания и нет тебе пощады."    
+    },
+    {
+      "#":  "61",
+      "String":  "Пока твой вид шляется по космосу, мы никогда не будем в безопасности.<br>За свои ошибки надо рано или поздно платить. Тебе хана, гадина! Я немедленно приступаю к твоей ликвидации."    
+    },
+    {
+      "#":  "62",
+      "String":  "Ты меня сильно огорчил, <Player> придется тебя убить. Подлети поближе, чтобы я могла прицелиться."    
+    },
+    {
+      "#":  "7",
+      "String":  "Мудрые слова, органическое существо. Я вернусь домой и расскажу сородичам всю правду, чтобы ужасная ошибка не повторилась впредь. Гарантирую, что больше не покажусь в вашей галактике, а если мы когда-нибудь еще встретимся, то будем говорить уже на равных."    
+    },
+    {
+      "#":  "8",
+      "String":  "Вот кажется и все. Мы победили."    
+    },
+    {
+      "#":  "9",
+      "String":  "Ты напрасно обращаешься к нему. Он более не существует."    
+    }  
+  ]
+}

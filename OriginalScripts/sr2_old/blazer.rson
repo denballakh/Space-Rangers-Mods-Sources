@@ -1,0 +1,1667 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  210,
+  "ViewPos.y":  176,
+  "ScriptName":  "MS_Blazer",
+  "ScriptFileOut":  "C:\\EG\\Delphi\\Rangers\\DATA\\Script\\MS_Blazer.scr",
+  "ScriptTextOut":  "C:\\EG\\Delphi\\Rangers\\CFG\\Rus\\Script\\MS_Blazer.txt",
+  "GraphPoint.Count":  75,
+  "GraphLink.Count":  73,
+  "GraphRectText.Count":  1,
+  "Variables.Count":  3,
+  "Stars.Count":  2,
+  "Planets.Count":  1,
+  "Ships.Count":  1,
+  "States.Count":  1,
+  "Groups.Count":  1,
+  "Places.Count":  0,
+  "Items.Count":  0,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  1,
+  "DialogMessages.Count":  22,
+  "DialogAnswers.Count":  26,
+  "Operations.Count":  8,
+  "Statements.Count":  9,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1200,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  8,
+          "Msg":  "Эй, не так быстро. Обычно предлагают выбрать одно или другое.",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1300,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  10,
+          "Msg":  "Стоп, стоп, стоп. Мы можем просто поговорить?",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1200,
+          "Pos.y":  510,
+          "Parent":  -1,
+          "#":  12,
+          "Msg":  "Откуда ты знаешь? На самом деле, я хочу сообщить тебе нечто, что поможет достичь Великой Цели. Кстати, в чем она заключается?",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1300,
+          "Pos.y":  510,
+          "Parent":  -1,
+          "#":  14,
+          "Msg":  "Ты имеешь в виду Коалицию?",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1200,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  16,
+          "Msg":  "Кто тебе сказал такую глупость?",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1300,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  18,
+          "Msg":  "Так ты собрался уничтожить все формы разума во Вселенной?",
+          "AMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1200,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  20,
+          "Msg":  "Ты знаешь, что Вселенная бесконечна?",
+          "AMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1120,
+          "Pos.y":  690,
+          "Parent":  -1,
+          "#":  22,
+          "Msg":  "Хм... у меня есть для тебя новая боевая программа. Она позволит тебе быстрей добиться эффективной победы. Позволь я слетаю за ней.",
+          "AMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1040,
+          "Pos.y":  680,
+          "Parent":  -1,
+          "#":  24,
+          "Msg":  "Умри сам, тупая железяка!",
+          "AMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1050,
+          "Pos.y":  760,
+          "Parent":  -1,
+          "#":  25,
+          "Msg":  "Стой! Если ты меня сейчас убьешь, я уже точно тебе ничего не привезу. А если отпустишь, то есть вероятность, что все-таки привезу, верно?",
+          "AMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  960,
+          "Pos.y":  820,
+          "Parent":  -1,
+          "#":  27,
+          "Msg":  "Тогда ты доберешься до меня позже, раз уж собираешься убить всех во Вселенной.",
+          "AMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  850,
+          "Pos.y":  880,
+          "Parent":  -1,
+          "#":  29,
+          "Msg":  "Отличная у тебя логика, железяка. Пока.",
+          "AMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1440,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  37,
+          "Msg":  "У меня есть новая боевая программа, которая позволит тебе быстрей добиться эффективной победы! Приготовься к загрузке, Блазер.",
+          "AMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1250,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  42,
+          "Msg":  "Ничего не понимаю. У меня нет Интеркома.",
+          "AMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1610,
+          "Pos.y":  450,
+          "Parent":  -1,
+          "#":  43,
+          "Msg":  "Ничего. Это подарок из уважения к великому воину - непобедимому Блазеру!",
+          "AMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1780,
+          "Pos.y":  450,
+          "Parent":  -1,
+          "#":  45,
+          "Msg":  "Умри сам, тупая железяка!",
+          "AMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1560,
+          "Pos.y":  520,
+          "Parent":  -1,
+          "#":  46,
+          "Msg":  "Гарантируй, что не убьешь меня ни сейчас, ни потом.",
+          "AMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1650,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  48,
+          "Msg":  "Но если я тебе помогаю, значит, я уже не враг?",
+          "AMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1650,
+          "Pos.y":  600,
+          "Parent":  -1,
+          "#":  50,
+          "Msg":  "Запуск программы \"Логическое отрицание\"",
+          "AMsg.Num":  "18"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1730,
+          "Pos.y":  640,
+          "Parent":  -1,
+          "#":  53,
+          "Msg":  "Вот и отлично. Прощай, Блазер. Мне будет не хватать тебя \"дружище\".",
+          "AMsg.Num":  "19"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1600,
+          "Pos.y":  680,
+          "Parent":  -1,
+          "#":  54,
+          "Msg":  "Остановись, это логическая ошибка! Ты неверно загрузил программу.",
+          "AMsg.Num":  "20"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1600,
+          "Pos.y":  760,
+          "Parent":  -1,
+          "#":  56,
+          "Msg":  "Теперь ты защитник системы <Name(ShipStar(GroupToShip(GroupBlazer)))>. Для получения инструкций следуй на ближайшую планету.",
+          "AMsg.Num":  "21"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1600,
+          "Pos.y":  840,
+          "Parent":  -1,
+          "#":  58,
+          "Msg":  "Удачной посадки, мы еще встретимся!",
+          "AMsg.Num":  "22"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1250,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  62,
+          "Msg":  "Пока нет, но...",
+          "AMsg.Num":  "23"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1350,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  64,
+          "Msg":  "Сам умри!",
+          "AMsg.Num":  "24"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1310,
+          "Pos.y":  370,
+          "Parent":  -1,
+          "#":  69,
+          "Msg":  "Удачной посадки, мы еще встретимся!",
+          "AMsg.Num":  "25"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1090,
+          "Pos.y":  430,
+          "Parent":  -1,
+          "#":  7,
+          "Msg":  "Объект идентифицирован как враг. Сдавайся и умри <Player>!",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1250,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  9,
+          "Msg":  "Это не способствует Великой Цели. Сдавайся и умри!",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1150,
+          "Pos.y":  510,
+          "Parent":  -1,
+          "#":  11,
+          "Msg":  "Это не способствует Великой Цели. Не отнимай мое время, мне нужно уничтожать и других врагов. Сдавайся и...",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1250,
+          "Pos.y":  510,
+          "Parent":  -1,
+          "#":  13,
+          "Msg":  "Великая Цель - есть Абсолютная Победа. Ее достижение состоит в полном уничтожении всех врагов.",
+          "DMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1150,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  15,
+          "Msg":  "Всякий, кто не принадлежит к моей серии, есть враг.",
+          "DMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1250,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  17,
+          "Msg":  "Это аксиома.",
+          "DMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1150,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  19,
+          "Msg":  "Только так может быть гарантирована Абсолютная Победа.",
+          "DMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1250,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  21,
+          "Msg":  "Поэтому цель и является Великой. А ты отвлекаешь меня от нее. Сообщи свою информацию.",
+          "DMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1090,
+          "Pos.y":  730,
+          "Parent":  -1,
+          "#":  23,
+          "Msg":  "Ты хочешь меня обмануть. Умри <Player>",
+          "DMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1010,
+          "Pos.y":  790,
+          "Parent":  -1,
+          "#":  26,
+          "Msg":  "А если не привезешь?",
+          "DMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  910,
+          "Pos.y":  850,
+          "Parent":  -1,
+          "#":  28,
+          "Msg":  "Я не доверяю врагам, но не вижу изъяна в твоей логике. Поэтому лети и возвращайся скорей, но при этом ты будешь уничтожен <Player>.",
+          "DMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1520,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  36,
+          "Msg":  "Загружай... стоп! А что ты хочешь взамен?",
+          "DMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1170,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  39,
+          "Msg":  "k32824242j 42k3jl2k34j scnsjnzb hweflwioefj ww134hkwh3 24uh42 23h429u42 2h34u234h2 ikjds6s0 sd2d55f 6dfg5d 3df1df8 6d65fgd2f2 7d8d7f5g 2j4nnk2j 2k4k2n5 n1n85k7b 934b6 5k6n4n35 34j5k2k0n45n 3800n4 352nk2 k423n4 4k6294 k23j45 3451295kj67j8 23kj2 5nk436 23k5j 5n4645 j35n3j45 456j345n 72k3j4n",
+          "DMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1700,
+          "Pos.y":  450,
+          "Parent":  -1,
+          "#":  44,
+          "Msg":  "Я понял, враг - ты хочешь подстроить мне ловушку. Умри.",
+          "DMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1600,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  47,
+          "Msg":  "Это невозможно. Ты враг.",
+          "DMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1600,
+          "Pos.y":  600,
+          "Parent":  -1,
+          "#":  49,
+          "Msg":  "Это звучит логично. Загружай свою программу.",
+          "DMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1600,
+          "Pos.y":  640,
+          "Parent":  -1,
+          "#":  52,
+          "Msg":  "НАДЕН НОВЫЙ ВРАГ. ДОМИНАТОР. ОСНОВАТЕЛЬ БЛАЗЕР. УНИЧТОЖИТЬ.\r\nРЕЙНДЖЕР <Player>. ДРУГ. ПРОЩАЙ.\r\n...\r\nВКЛЮЧЕНА СИСТЕМА САМОУНИЧТОЖЕНИЯ.",
+          "DMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1600,
+          "Pos.y":  720,
+          "Parent":  -1,
+          "#":  55,
+          "Msg":  "Логическая ошибка в программе. Система заблокирована. Рейнджер <Player>, мне нужны инструкции.",
+          "DMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1600,
+          "Pos.y":  800,
+          "Parent":  -1,
+          "#":  57,
+          "Msg":  "Задача ясна. Совершаю посадку на планету <Name(IdToPlanet(MS_Blazer_Landing))>.",
+          "DMsg.Num":  "18"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1200,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  61,
+          "Msg":  "Ты привез, что обещал?",
+          "DMsg.Num":  "19"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1300,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  63,
+          "Msg":  "Ты отнимаешь мое время, враг. Умри.",
+          "DMsg.Num":  "20"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1210,
+          "Pos.y":  370,
+          "Parent":  -1,
+          "#":  68,
+          "Msg":  "Совершаю посадку на <Name(IdToPlanet(MS_Blazer_Landing))> для получения инструкций.",
+          "DMsg.Num":  "21"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "dBlazer",
+          "Pos.x":  1000,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  6        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "GroupBlazer",
+          "Pos.x":  640,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  4,
+          "Owner":  62,
+          "Group.Type":  129,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  920,
+          "Pos.y":  770,
+          "Parent":  -1,
+          "#":  33,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "MS_Blazer_Promise=1"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1230,
+          "Pos.y":  440,
+          "Parent":  -1,
+          "#":  51,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "MS_Blazer_DialogOk=1"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1660,
+          "Pos.y":  760,
+          "Parent":  -1,
+          "#":  59,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "OrderLanding(GroupToShip(GroupBlazer),NearCivilPlanet(GroupToShip(GroupBlazer)),1)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1540,
+          "Pos.y":  760,
+          "Parent":  -1,
+          "#":  70,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "MS_Blazer_Landing=Id(NearCivilPlanet(GroupToShip(GroupBlazer)))"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1490,
+          "Pos.y":  760,
+          "Parent":  -1,
+          "#":  71,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "BlazerLanding(MS_Blazer_Landing)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1760,
+          "Pos.y":  750,
+          "Parent":  -1,
+          "#":  72,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipDestroyType(1)"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1700,
+          "Pos.y":  690,
+          "Parent":  -1,
+          "#":  73,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipDestroy(GroupToShip(GroupBlazer))"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1810,
+          "Pos.y":  660,
+          "Parent":  -1,
+          "#":  74,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "BlazerSelfDestruction()"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "PlanetBlazer",
+          "Pos.x":  600,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  3,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  380,
+          "Pos.y":  350,
+          "Parent":  -1,
+          "#":  2,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "StarPlayer",
+          "Pos.x":  430,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  0,
+          "Constellation":  0,
+          "Priority":  1,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        },
+        {
+          "Type":  "TStar",
+          "Name":  "StarBlazer",
+          "Pos.x":  600,
+          "Pos.y":  370,
+          "Parent":  -1,
+          "#":  1,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1140,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  30,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!MS_Blazer_DialogOk"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1130,
+          "Pos.y":  650,
+          "Parent":  -1,
+          "#":  34,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!HaveProgramm(progLogicalNegation)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1300,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  35,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "HaveProgramm(progLogicalNegation)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1250,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  38,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "MS_Blazer_DialogOk && HaveProgramm(progLogicalNegation)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1100,
+          "Pos.y":  250,
+          "Parent":  -1,
+          "#":  40,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!HaveProgramm(progIntercom)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1030,
+          "Pos.y":  400,
+          "Parent":  -1,
+          "#":  41,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "HaveProgramm(progIntercom) && !(MS_Blazer_DialogOk && MS_Blazer_Promise && !HaveProgramm(progLogicalNegation))"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1130,
+          "Pos.y":  320,
+          "Parent":  -1,
+          "#":  60,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "HaveProgramm(progIntercom) && MS_Blazer_DialogOk && MS_Blazer_Promise && !HaveProgramm(progLogicalNegation)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1090,
+          "Pos.y":  530,
+          "Parent":  -1,
+          "#":  65,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "MS_Blazer_DialogOk && !HaveProgramm(progLogicalNegation)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1130,
+          "Pos.y":  370,
+          "Parent":  -1,
+          "#":  67,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "HaveProgramm(progIntercom) && MS_Blazer_Landing"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "stBlazer",
+          "Pos.x":  640,
+          "Pos.y":  640,
+          "Parent":  -1,
+          "#":  5,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "dBlazer",
+          "OnActCode":  "dBlazer",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "MS_Blazer_DialogOk",
+          "Pos.x":  500,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  31,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  true        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "MS_Blazer_Promise",
+          "Pos.x":  650,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  32,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  true        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "MS_Blazer_Landing",
+          "Pos.x":  800,
+          "Pos.y":  200,
+          "Parent":  -1,
+          "#":  66,
+          "Var.Type":  "Dword",
+          "Init":  "0",
+          "Global":  true        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TStarLink",
+      "Begin":  0,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  false,
+      "DistMin":  0,
+      "DistMax":  1000,
+      "Hole":  false    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  2,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  4,
+      "End":  3,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  4,
+      "End":  5,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  9,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  9,
+      "End":  10,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  11,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  12,
+      "End":  13,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  13,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  15,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  15,
+      "End":  16,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  16,
+      "End":  17,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  17,
+      "End":  18,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  18,
+      "End":  19,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  20,
+      "End":  21,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  22,
+      "End":  23,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  23,
+      "End":  24,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  23,
+      "End":  25,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  25,
+      "End":  26,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  26,
+      "End":  27,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  27,
+      "End":  28,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  28,
+      "End":  29,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  8,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  27,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  21,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  34,
+      "End":  22,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  21,
+      "End":  35,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  35,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  36,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  38,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  7,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  40,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  36,
+      "End":  43,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  44,
+      "End":  45,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  36,
+      "End":  46,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  48,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  48,
+      "End":  49,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  51,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  49,
+      "End":  50,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  50,
+      "End":  52,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  53,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  52,
+      "End":  54,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  54,
+      "End":  55,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  55,
+      "End":  56,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  56,
+      "End":  57,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  57,
+      "End":  58,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  56,
+      "End":  59,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  60,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  60,
+      "End":  61,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  61,
+      "End":  62,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  62,
+      "End":  63,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  63,
+      "End":  64,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  65,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  65,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  67,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  67,
+      "End":  68,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  68,
+      "End":  69,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  56,
+      "End":  70,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  70,
+      "End":  71,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  53,
+      "End":  72,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  53,
+      "End":  73,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  58,
+      "End":  72,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  53,
+      "End":  74,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "Rect.Text":  
+  [
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  271,
+      "Rect.Top":  239,
+      "Rect.Right":  852,
+      "Rect.Bottom":  248,
+      "FStyle":  0,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  0,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "",
+      "Color":  16777215,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  46,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "0",
+      "String":  "Объект идентифицирован как враг. Сдавайся и умри <Player>!"    
+    },
+    {
+      "#":  "1",
+      "String":  "Это не способствует Великой Цели. Сдавайся и умри!"    
+    },
+    {
+      "#":  "10",
+      "String":  "Я не доверяю врагам, но не вижу изъяна в твоей логике. Поэтому лети и возвращайся скорей, но при этом ты будешь уничтожен <Player>."    
+    },
+    {
+      "#":  "11",
+      "String":  "Загружай... стоп! А что ты хочешь взамен?"    
+    },
+    {
+      "#":  "12",
+      "String":  "k32824242j 42k3jl2k34j scnsjnzb hweflwioefj ww134hkwh3 24uh42 23h429u42 2h34u234h2 ikjds6s0 sd2d55f 6dfg5d 3df1df8 6d65fgd2f2 7d8d7f5g 2j4nnk2j 2k4k2n5 n1n85k7b 934b6 5k6n4n35 34j5k2k0n45n 3800n4 352nk2 k423n4 4k6294 k23j45 3451295kj67j8 23kj2 5nk436 23k5j 5n4645 j35n3j45 456j345n 72k3j4n"    
+    },
+    {
+      "#":  "13",
+      "String":  "Я понял, враг - ты хочешь подстроить мне ловушку. Умри."    
+    },
+    {
+      "#":  "14",
+      "String":  "Это невозможно. Ты враг."    
+    },
+    {
+      "#":  "15",
+      "String":  "Это звучит логично. Загружай свою программу."    
+    },
+    {
+      "#":  "17",
+      "String":  "Логическая ошибка в программе. Система заблокирована. Рейнджер <Player>, мне нужны инструкции."    
+    },
+    {
+      "#":  "18",
+      "String":  "Задача ясна. Совершаю посадку на планету <0>."    
+    },
+    {
+      "#":  "19",
+      "String":  "Ты привез, что обещал?"    
+    },
+    {
+      "#":  "2",
+      "String":  "Это не способствует Великой Цели. Не отнимай мое время, мне нужно уничтожать и других врагов. Сдавайся и..."    
+    },
+    {
+      "#":  "20",
+      "String":  "Ты отнимаешь мое время, враг. Умри."    
+    },
+    {
+      "#":  "21",
+      "String":  "Эй, не так быстро. Обычно предлагают выбрать одно или другое."    
+    },
+    {
+      "#":  "22",
+      "String":  "Стоп, стоп, стоп. Мы можем просто поговорить?"    
+    },
+    {
+      "#":  "23",
+      "String":  "Откуда ты знаешь? На самом деле, я хочу сообщить тебе нечто, что поможет достичь Великой Цели. Кстати, в чем она заключается?"    
+    },
+    {
+      "#":  "24",
+      "String":  "Ты имеешь в виду Коалицию?"    
+    },
+    {
+      "#":  "25",
+      "String":  "Кто тебе сказал такую глупость?"    
+    },
+    {
+      "#":  "26",
+      "String":  "Так ты собрался уничтожить все формы разума во Вселенной?"    
+    },
+    {
+      "#":  "27",
+      "String":  "Ты знаешь, что Вселенная бесконечна?"    
+    },
+    {
+      "#":  "28",
+      "String":  "Хм... у меня есть для тебя новая боевая программа. Она позволит тебе быстрей добиться эффективной победы. Позволь я слетаю за ней."    
+    },
+    {
+      "#":  "29",
+      "String":  "Умри сам, тупая железяка!"    
+    },
+    {
+      "#":  "3",
+      "String":  "Великая Цель - есть Абсолютная Победа. Ее достижение состоит в полном уничтожении всех врагов."    
+    },
+    {
+      "#":  "30",
+      "String":  "Стой! Если ты меня сейчас убьешь, я уже точно тебе ничего не привезу. А если отпустишь, то есть вероятность, что все-таки привезу, верно?"    
+    },
+    {
+      "#":  "31",
+      "String":  "Тогда ты доберешься до меня позже, раз уж собираешься убить всех во Вселенной."    
+    },
+    {
+      "#":  "32",
+      "String":  "Отличная у тебя логика, железяка. Пока."    
+    },
+    {
+      "#":  "33",
+      "String":  "У меня есть новая боевая программа, которая позволит тебе быстрей добиться эффективной победы! Приготовься к загрузке, Блазер."    
+    },
+    {
+      "#":  "34",
+      "String":  "Ничего не понимаю. У меня нет Интеркома."    
+    },
+    {
+      "#":  "35",
+      "String":  "Ничего. Это подарок из уважения к великому воину - непобедимому Блазеру!"    
+    },
+    {
+      "#":  "36",
+      "String":  "Гарантируй, что не убьешь меня ни сейчас, ни потом."    
+    },
+    {
+      "#":  "37",
+      "String":  "Но если я тебе помогаю, значит, я уже не враг?"    
+    },
+    {
+      "#":  "38",
+      "String":  "Запуск программы \"Логическое отрицание\""    
+    },
+    {
+      "#":  "39",
+      "String":  "Вот и отлично. Прощай, Блазер. Мне будет не хватать тебя \"дружище\"."    
+    },
+    {
+      "#":  "4",
+      "String":  "Всякий, кто не принадлежит к моей серии, есть враг."    
+    },
+    {
+      "#":  "40",
+      "String":  "Остановись, это логическая ошибка! Ты неверно загрузил программу."    
+    },
+    {
+      "#":  "41",
+      "String":  "Теперь ты защитник системы <0>. Для получения инструкций следуй на ближайшую планету."    
+    },
+    {
+      "#":  "42",
+      "String":  "Удачной посадки, мы еще встретимся!"    
+    },
+    {
+      "#":  "43",
+      "String":  "Пока нет, но..."    
+    },
+    {
+      "#":  "44",
+      "String":  "Сам умри!"    
+    },
+    {
+      "#":  "46",
+      "String":  "НАДЕН НОВЫЙ ВРАГ. ДОМИНАТОР. ОСНОВАТЕЛЬ БЛАЗЕР. УНИЧТОЖИТЬ.<br>РЕЙНДЖЕР <Player>. ДРУГ. ПРОЩАЙ.<br>...<br>ВКЛЮЧЕНА СИСТЕМА САМОУНИЧТОЖЕНИЯ."    
+    },
+    {
+      "#":  "47",
+      "String":  "Совершаю посадку на <0> для получения инструкций."    
+    },
+    {
+      "#":  "5",
+      "String":  "Это аксиома."    
+    },
+    {
+      "#":  "6",
+      "String":  "Только так может быть гарантирована Абсолютная Победа."    
+    },
+    {
+      "#":  "7",
+      "String":  "Поэтому цель и является Великой. А ты отвлекаешь меня от нее. Сообщи свою информацию."    
+    },
+    {
+      "#":  "8",
+      "String":  "Ты хочешь меня обмануть. Умри <Player>"    
+    },
+    {
+      "#":  "9",
+      "String":  "А если не привезешь?"    
+    }  
+  ]
+}

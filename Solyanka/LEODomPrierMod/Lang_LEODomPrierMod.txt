@@ -401,8 +401,7 @@ ShipInfo ^{
                     01=dword ship=ScriptItemActShip();
                     02=if(ScriptItemActionType(t_OnStep,3))
                     03 ^{
-                        01=if(ShipStar(ship)==ShipStar(Player()))
-                        02=ShowStaticEffect('AuraPraierBOSSEffect',CoordX(ship),CoordY(ship));
+                        01=if(ShipStar(ship)==ShipStar(Player())) ShowStaticEffect('AuraPraierBOSSEffect',CoordX(ship),CoordY(ship));
                     }
                 }
                 OnActCodeTypes=t_OnEnteringForm,t_OnStep
@@ -416,8 +415,7 @@ ShipInfo ^{
                     01=dword ship=ScriptItemActShip();
                     02=if(ScriptItemActionType(t_OnStep,3))
                     03 ^{
-                        01=if(ShipStar(ship)==ShipStar(Player()))
-                        02=ShowStaticEffect('AuraPraierHEADEffect',CoordX(ship),CoordY(ship));
+                        01=if(ShipStar(ship)==ShipStar(Player())) ShowStaticEffect('AuraPraierHEADEffect',CoordX(ship),CoordY(ship));
                     }
                 }
                 OnActCodeTypes=t_OnEnteringForm,t_OnStep
@@ -431,8 +429,7 @@ ShipInfo ^{
                     01=dword ship=ScriptItemActShip();
                     02=if(ScriptItemActionType(t_OnStep,3))
                     03 ^{
-                        01=if(ShipStar(ship)==ShipStar(Player()))
-                        02=ShowStaticEffect('AuraPraierMAINEffect',CoordX(ship),CoordY(ship));
+                        01=if(ShipStar(ship)==ShipStar(Player())) ShowStaticEffect('AuraPraierMAINEffect',CoordX(ship),CoordY(ship));
                     }
                 }
                 OnActCodeTypes=t_OnEnteringForm,t_OnStep

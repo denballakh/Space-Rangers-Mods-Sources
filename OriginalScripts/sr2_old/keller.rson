@@ -1,0 +1,1590 @@
+{
+  "FileID":  573785173,
+  "FileVersion":  8,
+  "ViewPos.x":  364,
+  "ViewPos.y":  -20,
+  "ScriptName":  "MS_Keller",
+  "ScriptFileOut":  "C:\\EG\\Delphi\\Rangers\\DATA\\Script\\MS_Keller.scr",
+  "ScriptTextOut":  "C:\\EG\\Delphi\\Rangers\\CFG\\Rus\\Script\\MS_Keller.txt",
+  "GraphPoint.Count":  71,
+  "GraphLink.Count":  69,
+  "GraphRectText.Count":  1,
+  "Variables.Count":  2,
+  "Stars.Count":  2,
+  "Planets.Count":  1,
+  "Ships.Count":  1,
+  "States.Count":  1,
+  "Groups.Count":  1,
+  "Places.Count":  0,
+  "Items.Count":  0,
+  "Ethers.Count":  0,
+  "Dialogs.Count":  1,
+  "DialogMessages.Count":  23,
+  "DialogAnswers.Count":  27,
+  "Operations.Count":  4,
+  "Statements.Count":  8,
+  "Loops.Count":  0,
+  "Visual.Objects":  
+  [
+    {
+      "DialogAnswers":      
+      [
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1090,
+          "Pos.y":  60,
+          "Parent":  -1,
+          "#":  9,
+          "Msg":  "Ничего не понимаю",
+          "AMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1030,
+          "Pos.y":  10,
+          "Parent":  -1,
+          "#":  13,
+          "Msg":  "Ничего не понимаю. У меня нет Интеркома.",
+          "AMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1170,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  14,
+          "Msg":  "Келлер, контроль связи.",
+          "AMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1290,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  16,
+          "Msg":  "Я <Player>.",
+          "AMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1170,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  18,
+          "Msg":  "Какие игры? Мы воюем, вообще-то! И я, кстати, как раз хотел спросить, из-за чего.",
+          "AMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1290,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  20,
+          "Msg":  "А какая, в таком случае, цель у тебя?",
+          "AMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1170,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  22,
+          "Msg":  "Это, конечно, замечательно, но зачем тогда твои роботы атакуют наши корабли и планеты?",
+          "AMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1290,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  24,
+          "Msg":  "И что?",
+          "AMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1170,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  26,
+          "Msg":  "То есть вы просто уничтожаете других, чтобы посмотреть, как они устроены?!",
+          "AMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1290,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  28,
+          "Msg":  "А если бы тебя разложили на структурные единицы?!",
+          "AMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1170,
+          "Pos.y":  510,
+          "Parent":  -1,
+          "#":  31,
+          "Msg":  "Но мы не умеем этого делать!!!",
+          "AMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1290,
+          "Pos.y":  510,
+          "Parent":  -1,
+          "#":  32,
+          "Msg":  "Твои мысли далеки от реальности. Мы не можем \"отойти в сторону\". Нам нужно где-то жить чтобы познавать мир.",
+          "AMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1380,
+          "Pos.y":  660,
+          "Parent":  -1,
+          "#":  34,
+          "Msg":  "В бой!",
+          "AMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1260,
+          "Pos.y":  600,
+          "Parent":  -1,
+          "#":  36,
+          "Msg":  "Твой вид сейчас перестанет существовать. Я убью тебя или говоря твоими терминами \"изучу\".",
+          "AMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1120,
+          "Pos.y":  570,
+          "Parent":  -1,
+          "#":  38,
+          "Msg":  "Возможно это так, возможно за 300 лет ты обогнал нас в развитии... Но ведь именно мой вид создал тебя Келлер! Без нас, органических существ, тебя бы не было. Ты знаешь причину своего появления?",
+          "AMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1080,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  40,
+          "Msg":  "Рад это слышать. Это хорошее начало для конструктивного диалога. А что ты можешь сказать про клисан?",
+          "AMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1190,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  42,
+          "Msg":  "Ничего удивительного, ведь разрушительная война между коалицией и доминаторами никак не способствует исследованиям. Если ты навремя остановишь свои исследования, то материала станет гораздо больше. Понимаешь?",
+          "AMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1080,
+          "Pos.y":  670,
+          "Parent":  -1,
+          "#":  44,
+          "Msg":  "Неужели ты улетишь?!!!",
+          "AMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1190,
+          "Pos.y":  670,
+          "Parent":  -1,
+          "#":  46,
+          "Msg":  "Таким образом твои корабли останутся в нашем рукаве и война не закончится?",
+          "AMsg.Num":  "18"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  1080,
+          "Pos.y":  710,
+          "Parent":  -1,
+          "#":  48,
+          "Msg":  "А когда пересекутся? К чему мы будем готовы?",
+          "AMsg.Num":  "19"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1190,
+          "Pos.y":  710,
+          "Parent":  -1,
+          "#":  50,
+          "Msg":  "Конец связи",
+          "AMsg.Num":  "20"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1200,
+          "Pos.y":  160,
+          "Parent":  -1,
+          "#":  56,
+          "Msg":  "Сейчас я покажу тебе свою готовность.<br>Компьютер. Немедленно активировать программу \"Дематериализатор\"!",
+          "AMsg.Num":  "21"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  1390,
+          "Pos.y":  570,
+          "Parent":  -1,
+          "#":  60,
+          "Msg":  "Компьютер. Немедленно активировать программу \"Дематериализатор\"!",
+          "AMsg.Num":  "22"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  810,
+          "Pos.y":  490,
+          "Parent":  -1,
+          "#":  63,
+          "Msg":  "Я тут буду ровно столько, сколько потребуется для твоего уничтожения.",
+          "AMsg.Num":  "23"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  660,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  65,
+          "Msg":  "Конец связи",
+          "AMsg.Num":  "24"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "",
+          "Pos.x":  840,
+          "Pos.y":  550,
+          "Parent":  -1,
+          "#":  66,
+          "Msg":  "Я пришел просить мира.",
+          "AMsg.Num":  "25"        
+        },
+        {
+          "Type":  "TDialogAnswer",
+          "Name":  "exit",
+          "Pos.x":  700,
+          "Pos.y":  640,
+          "Parent":  -1,
+          "#":  68,
+          "Msg":  "Я тебе не объект для изучения!",
+          "AMsg.Num":  "26"        
+        }      
+      ],
+      "DialogMessages":      
+      [
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1020,
+          "Pos.y":  90,
+          "Parent":  -1,
+          "#":  8,
+          "Msg":  "Система не стабильна. Для коммунникации требуется гиперпространственнная волна.",
+          "DMsg.Num":  "0"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  970,
+          "Pos.y":  50,
+          "Parent":  -1,
+          "#":  12,
+          "Msg":  "k32824242j 42k3jl2k34j scnsjnzb hweflwioefj ww134hkwh3 24uh42 23h429u42 2h34u234h2 ikjds6s0 sd2d55f 6dfg5d 3df1df8 6d65fgd2f2 7d8d7f5g 2j4nnk2j 2k4k2n5 n1n85k7b 934b6 5k6n4n35 34j5k2k0n45n 3800n4 352nk2 k423n4 4k6294 k23j45 3451295kj67j8 23kj2 5nk436 23k5j 5n4645 j35n3j45 456j345n 72k3j4n",
+          "DMsg.Num":  "1"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1230,
+          "Pos.y":  310,
+          "Parent":  -1,
+          "#":  15,
+          "Msg":  "Связь удовлетворительная. Идентификатор \"Келлер\" не аутентичен, но может быть акцептирован в интересах коммуникации. Назови свой идентификатор, органическая особь.",
+          "DMsg.Num":  "2"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1110,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  17,
+          "Msg":  "Идентификатор акцептирован. Если ты, <Player>, явился для игры, прошу тебя подождать, пока я закончу анализ предыдущего экземпляра.",
+          "DMsg.Num":  "3"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1230,
+          "Pos.y":  360,
+          "Parent":  -1,
+          "#":  19,
+          "Msg":  "Вопрос некорректен. Я ни с кем не воюю. Этим занимается тупиковая ветвь киберэволюции, классифицируемая вами как \"блазер\". Они иррационально считают войну своей целью.",
+          "DMsg.Num":  "4"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1110,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  21,
+          "Msg":  "Как и у всякого разумного существа, моя базовая функция - познание, а моя цель  реализация базовой функции.",
+          "DMsg.Num":  "5"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1230,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  23,
+          "Msg":  "Термин \"атакуют\" некорректен. Важнейшей составляющей познания является анализ.",
+          "DMsg.Num":  "6"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1110,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  25,
+          "Msg":  "Твой образовательный уровень недостаточен, органическая особь <Player>. Термин \"анализ\" означает разложение на составляющие.",
+          "DMsg.Num":  "7"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1230,
+          "Pos.y":  460,
+          "Parent":  -1,
+          "#":  27,
+          "Msg":  "Термин \"уничтожение\" некорректен. До уровня атомов мы разлагаем лишь отдельные фрагменты. В основном исследуемые системы анализируются до уровня структурных единиц - в частности, органов и клеток, если говорить об особях твоего класса.",
+          "DMsg.Num":  "8"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1110,
+          "Pos.y":  510,
+          "Parent":  -1,
+          "#":  29,
+          "Msg":  "Я бы синтезировался из них снова. Твой класс органики тоже может быть синтезирован. Согласно второму параграфу о жизнедеятельности, воссоединение собственных модулей есть необходимая составляющая для исследований.",
+          "DMsg.Num":  "9"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1230,
+          "Pos.y":  510,
+          "Parent":  -1,
+          "#":  30,
+          "Msg":  "Путь к истине есть дорога в один конец. Но она широка. Если ты считаешь, что тебя \"атакуют\", отойди в сторону.",
+          "DMsg.Num":  "10"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1200,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  33,
+          "Msg":  "Познание мира вашем видом сильно затянулось. Тысячелетия вы ищите то, чего нельзя найти. Менее чем 33 гс мой вид обогнал ваш по всем параметрам развития. Ваш вид бесполезно развивать. Только ресурсы переводить.",
+          "DMsg.Num":  "11"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1320,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  37,
+          "Msg":  "Отличная новость. Поддержание гиперпространственной волны требует энергии. Разговор окончен.",
+          "DMsg.Num":  "12"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1020,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  39,
+          "Msg":  "Да, конечно знаю. Ведь основа познания заключается в познании самого себя и своей жизненной цели. Я даже благодарен вам органические существа за дорованную жизнь.",
+          "DMsg.Num":  "13"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1140,
+          "Pos.y":  630,
+          "Parent":  -1,
+          "#":  41,
+          "Msg":  "Они еще не изучены. По плану до их изучения осталось около 50 гс. Здесь еще много интересного, хотя надо признать в последнее время материала для изучения стало катастрофически мало. Масса различных факторов мешает работе и окружающее пространство стало однородным.",
+          "DMsg.Num":  "14"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1020,
+          "Pos.y":  670,
+          "Parent":  -1,
+          "#":  43,
+          "Msg":  "Это интересная идея. Данный рукав действительно истощился. Изучение клисан даст мне намного больше ценного материала.",
+          "DMsg.Num":  "15"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1140,
+          "Pos.y":  670,
+          "Parent":  -1,
+          "#":  45,
+          "Msg":  "Пожалуй да. Исследования по перемещению между рукавами давно мною закончены. Я покину данный рукав немедленно, но оставлю сдесь свои модули для сбора информации.",
+          "DMsg.Num":  "16"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1020,
+          "Pos.y":  710,
+          "Parent":  -1,
+          "#":  47,
+          "Msg":  "Ты алогичен, <Player>. Твой вид действительно тупой. Если у твоего вида нет сил даже на то, чтобы отстоять свои способы размножения, то зачем тебе существовать? Собственно разговор окончен. Когда наши дороги пересекутся вновь, вы будите готовы.",
+          "DMsg.Num":  "17"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1140,
+          "Pos.y":  710,
+          "Parent":  -1,
+          "#":  49,
+          "Msg":  "Прощай, биологическая особь, <Player>. Тебе пока не понять даже простых истин. Удались на безопасное расстояние, я приступаю к открытию гиперпортала в мир клисан. Согласно моей информации он крайне опасен для органических особей.",
+          "DMsg.Num":  "18"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  1090,
+          "Pos.y":  230,
+          "Parent":  -1,
+          "#":  55,
+          "Msg":  "Начат этап реструктуризации материальной формы.<br>Объект активного изучения #<GalaxyShipId()> готов к связи?",
+          "DMsg.Num":  "19"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  920,
+          "Pos.y":  470,
+          "Parent":  -1,
+          "#":  62,
+          "Msg":  "Вновь начат этап реструктуризации материальной формы.<br>Рейнджер <Player>, вы являетесь объектом пригодным к разложению. Никуда не улетайте, ожидайте на месте своей очереди.",
+          "DMsg.Num":  "20"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  730,
+          "Pos.y":  520,
+          "Parent":  -1,
+          "#":  64,
+          "Msg":  "Это интересная теория. По моим подсчетам для истощения энергетических ресурсов потребуется около восьми триллионов циклов синтеза.<br>Диалог окончен. Не будем растрачивать энергию на поддержание гиперпространственной волны.",
+          "DMsg.Num":  "21"        
+        },
+        {
+          "Type":  "TDialogMsg",
+          "Name":  "",
+          "Pos.x":  780,
+          "Pos.y":  590,
+          "Parent":  -1,
+          "#":  67,
+          "Msg":  "Просьба отклоняется. Вам присвоен приоритет <CntTalk> степени. Вы теперь особый объект для изучения.",
+          "DMsg.Num":  "22"        
+        }      
+      ],
+      "Dialogs":      
+      [
+        {
+          "Type":  "TDialog",
+          "Name":  "dKeller",
+          "Pos.x":  900,
+          "Pos.y":  280,
+          "Parent":  -1,
+          "#":  6        
+        }      
+      ],
+      "Groups":      
+      [
+        {
+          "Type":  "TGroup",
+          "Name":  "GroupKeller",
+          "Pos.x":  360,
+          "Pos.y":  420,
+          "Parent":  -1,
+          "#":  4,
+          "Owner":  62,
+          "Group.Type":  8193,
+          "CntShipMin":  1,
+          "CntShipMax":  1,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "AddPlayer":  false,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "DistSearch":  10000,
+          "Dialog":  -1,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Operations":      
+      [
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1220,
+          "Pos.y":  790,
+          "Parent":  -1,
+          "#":  35,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "KellerLeave()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1200,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  52,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "MS_Keller_DialogOk=1"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  1490,
+          "Pos.y":  370,
+          "Parent":  -1,
+          "#":  61,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "KellerKill()"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  940,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  70,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "CntTalk=CntTalk+1"          
+          ]        
+        }      
+      ],
+      "Planets":      
+      [
+        {
+          "Type":  "TPlanet",
+          "Name":  "PlanetKeller",
+          "Pos.x":  360,
+          "Pos.y":  340,
+          "Parent":  -1,
+          "#":  3,
+          "Race":  62,
+          "Owner":  62,
+          "Economy":  14,
+          "Goverment":  62,
+          "RangeMin":  0,
+          "RangeMax":  100,
+          "Dialog":  -1        
+        }      
+      ],
+      "Ships":      
+      [
+        {
+          "Type":  "TStarShip",
+          "Name":  "",
+          "Pos.x":  140,
+          "Pos.y":  240,
+          "Parent":  -1,
+          "#":  2,
+          "Count":  1,
+          "Owner":  62,
+          "Ship.Type":  126,
+          "Player":  true,
+          "SpeedMin":  0,
+          "SpeedMax":  10000,
+          "Weapon":  0,
+          "CargoHook":  0,
+          "EmptySpace":  0,
+          "StatusTraderMin":  0,
+          "StatusTraderMax":  100,
+          "StatusWarriorMin":  0,
+          "StatusWarriorMax":  100,
+          "StatusPirateMin":  0,
+          "StatusPirateMax":  100,
+          "StrengthMin":  "0",
+          "StrengthMax":  "0",
+          "Ruins":  ""        
+        }      
+      ],
+      "Stars":      
+      [
+        {
+          "Type":  "TStar",
+          "Name":  "StarPlayer",
+          "Pos.x":  200,
+          "Pos.y":  210,
+          "Parent":  -1,
+          "#":  0,
+          "Constellation":  0,
+          "Priority":  1,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        },
+        {
+          "Type":  "TStar",
+          "Name":  "StarKeller",
+          "Pos.x":  360,
+          "Pos.y":  260,
+          "Parent":  -1,
+          "#":  1,
+          "Constellation":  0,
+          "Priority":  0,
+          "NoKling":  false,
+          "NoComeKling":  false        
+        }      
+      ],
+      "Statements":      
+      [
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  970,
+          "Pos.y":  140,
+          "Parent":  -1,
+          "#":  7,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "HaveProgramm(progIntercom)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  990,
+          "Pos.y":  330,
+          "Parent":  -1,
+          "#":  10,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!ShipInNormalSpace(GroupToShip(GroupKeller)) "          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  920,
+          "Pos.y":  100,
+          "Parent":  -1,
+          "#":  11,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!HaveProgramm(progIntercom)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  920,
+          "Pos.y":  410,
+          "Parent":  -1,
+          "#":  53,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "MS_Keller_DialogOk"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1050,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  54,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "!MS_Keller_DialogOk"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  930,
+          "Pos.y":  180,
+          "Parent":  -1,
+          "#":  57,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "ShipInNormalSpace(GroupToShip(GroupKeller))"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1140,
+          "Pos.y":  190,
+          "Parent":  -1,
+          "#":  58,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "HaveProgramm(progDematerial)"          
+          ]        
+        },
+        {
+          "Type":  "Tif",
+          "Name":  "",
+          "Pos.x":  1320,
+          "Pos.y":  560,
+          "Parent":  -1,
+          "#":  59,
+          "Total.Lines":  1,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "HaveProgramm(progDematerial)"          
+          ]        
+        }      
+      ],
+      "States":      
+      [
+        {
+          "Type":  "TState",
+          "Name":  "stKeller",
+          "Pos.x":  360,
+          "Pos.y":  490,
+          "Parent":  -1,
+          "#":  5,
+          "Move":  0,
+          "MoveObj":  -1,
+          "Attack.Count":  0,
+          "TakeItem":  -1,
+          "TakeAllItem":  false,
+          "OnTalk":  "dKeller",
+          "OnActCode":  "dKeller",
+          "EType":  1,
+          "EUnique":  "",
+          "EMsg":  ""        
+        }      
+      ],
+      "Variables":      
+      [
+        {
+          "Type":  "TVar",
+          "Name":  "MS_Keller_DialogOk",
+          "Pos.x":  420,
+          "Pos.y":  70,
+          "Parent":  -1,
+          "#":  51,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  true        
+        },
+        {
+          "Type":  "TVar",
+          "Name":  "CntTalk",
+          "Pos.x":  780,
+          "Pos.y":  380,
+          "Parent":  -1,
+          "#":  69,
+          "Var.Type":  "Int",
+          "Init":  "0",
+          "Global":  false        
+        }      
+      ]    
+    }  
+  ],
+  "Visual.Links":  
+  [
+    {
+      "Type":  "TGraphLink",
+      "Begin":  2,
+      "End":  0,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TStarLink",
+      "Begin":  0,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  false,
+      "DistMin":  0,
+      "DistMax":  150,
+      "Hole":  false    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  3,
+      "End":  1,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  4,
+      "End":  3,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  4,
+      "End":  5,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  7,
+      "End":  8,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  8,
+      "End":  9,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  10,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  11,
+      "End":  12,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  12,
+      "End":  13,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  15,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  15,
+      "End":  16,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  16,
+      "End":  17,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  17,
+      "End":  18,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  18,
+      "End":  19,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  19,
+      "End":  20,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  20,
+      "End":  21,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  21,
+      "End":  22,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  22,
+      "End":  23,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  23,
+      "End":  24,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  24,
+      "End":  25,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  25,
+      "End":  26,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  26,
+      "End":  27,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  27,
+      "End":  28,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  28,
+      "End":  29,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
+      "End":  31,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  31,
+      "End":  30,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  30,
+      "End":  32,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  32,
+      "End":  33,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  36,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  36,
+      "End":  37,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  37,
+      "End":  34,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  38,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  38,
+      "End":  39,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  39,
+      "End":  40,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  40,
+      "End":  41,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  41,
+      "End":  42,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  42,
+      "End":  43,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  43,
+      "End":  44,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  44,
+      "End":  45,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  45,
+      "End":  46,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  46,
+      "End":  47,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  47,
+      "End":  48,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  48,
+      "End":  49,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  49,
+      "End":  50,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  50,
+      "End":  35,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  14,
+      "End":  52,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  53,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  54,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  55,
+      "End":  14,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  54,
+      "End":  55,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  6,
+      "End":  57,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  57,
+      "End":  7,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  57,
+      "End":  11,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  55,
+      "End":  58,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  58,
+      "End":  56,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  33,
+      "End":  59,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  59,
+      "End":  60,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  60,
+      "End":  61,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  56,
+      "End":  61,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  53,
+      "End":  62,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  62,
+      "End":  58,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  62,
+      "End":  63,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  63,
+      "End":  64,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  64,
+      "End":  65,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  62,
+      "End":  66,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  66,
+      "End":  67,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  67,
+      "End":  68,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  10,
+      "End":  70,
+      "Nom":  0,
+      "Arrow":  true    
+    }  
+  ],
+  "Rect.Text":  
+  [
+    {
+      "Type":  "TGraphRectText",
+      "Rect.Left":  -100,
+      "Rect.Top":  119,
+      "Rect.Right":  678,
+      "Rect.Bottom":  127,
+      "FStyle":  0,
+      "FColor":  10710818,
+      "BStyle":  0,
+      "BColor":  14474460,
+      "BSize":  1,
+      "BCoef":  "0.300000011920929",
+      "AlignX":  0,
+      "AlignY":  0,
+      "AlignRect":  false,
+      "Text":  "",
+      "Color":  16777215,
+      "Font":  "Arial",
+      "FontSize":  10,
+      "fsBold":  false,
+      "fsItalic":  false,
+      "fsUnderline":  false    
+    }  
+  ],
+  "BlockPar.EC.Total.Strings":  49,
+  "BlockPar.EC":  
+  [
+    {
+      "#":  "0",
+      "String":  "Система не стабильна. Для коммунникации требуется гиперпространственнная волна."    
+    },
+    {
+      "#":  "14",
+      "String":  "Ничего не понимаю"    
+    },
+    {
+      "#":  "15",
+      "String":  "Ничего не понимаю. У меня нет Интеркома."    
+    },
+    {
+      "#":  "16",
+      "String":  "Келлер, контроль связи."    
+    },
+    {
+      "#":  "17",
+      "String":  "Я <Player>."    
+    },
+    {
+      "#":  "18",
+      "String":  "Какие игры? Мы воюем, вообще-то! И я, кстати, как раз хотел спросить, из-за чего."    
+    },
+    {
+      "#":  "19",
+      "String":  "А какая, в таком случае, цель у тебя?"    
+    },
+    {
+      "#":  "20",
+      "String":  "Это, конечно, замечательно, но зачем тогда твои роботы атакуют наши корабли и планеты?"    
+    },
+    {
+      "#":  "21",
+      "String":  "И что?"    
+    },
+    {
+      "#":  "22",
+      "String":  "То есть вы просто уничтожаете других, чтобы посмотреть, как они устроены?!"    
+    },
+    {
+      "#":  "23",
+      "String":  "А если бы тебя разложили на структурные единицы?!"    
+    },
+    {
+      "#":  "29",
+      "String":  "k32824242j 42k3jl2k34j scnsjnzb hweflwioefj ww134hkwh3 24uh42 23h429u42 2h34u234h2 ikjds6s0 sd2d55f 6dfg5d 3df1df8 6d65fgd2f2 7d8d7f5g 2j4nnk2j 2k4k2n5 n1n85k7b 934b6 5k6n4n35 34j5k2k0n45n 3800n4 352nk2 k423n4 4k6294 k23j45 3451295kj67j8 23kj2 5nk436 23k5j 5n4645 j35n3j45 456j345n 72k3j4n"    
+    },
+    {
+      "#":  "3",
+      "String":  "Связь удовлетворительная. Идентификатор \"Келлер\" не аутентичен, но может быть акцептирован в интересах коммуникации. Назови свой идентификатор, органическая особь."    
+    },
+    {
+      "#":  "30",
+      "String":  "Я бы синтезировался из них снова. Твой класс органики тоже может быть синтезирован. Согласно второму параграфу о жизнедеятельности, воссоединение собственных модулей есть необходимая составляющая для исследований."    
+    },
+    {
+      "#":  "31",
+      "String":  "Путь к истине есть дорога в один конец. Но она широка. Если ты считаешь, что тебя \"атакуют\", отойди в сторону."    
+    },
+    {
+      "#":  "32",
+      "String":  "Познание мира вашем видом сильно затянулось. Тысячелетия вы ищите то, чего нельзя найти. Менее чем 33 гс мой вид обогнал ваш по всем параметрам развития. Ваш вид бесполезно развивать. Только ресурсы переводить."    
+    },
+    {
+      "#":  "33",
+      "String":  "Отличная новость. Поддержание гиперпространственной волны требует энергии. Разговор окончен."    
+    },
+    {
+      "#":  "34",
+      "String":  "Да, конечно знаю. Ведь основа познания заключается в познании самого себя и своей жизненной цели. Я даже благодарен вам органические существа за дорованную жизнь."    
+    },
+    {
+      "#":  "35",
+      "String":  "Они еще не изучены. По плану до их изучения осталось около 50 гс. Здесь еще много интересного, хотя надо признать в последнее время материала для изучения стало катастрофически мало. Масса различных факторов мешает работе и окружающее пространство стало однородным."    
+    },
+    {
+      "#":  "36",
+      "String":  "Это интересная идея. Данный рукав действительно истощился. Изучение клисан даст мне намного больше ценного материала."    
+    },
+    {
+      "#":  "37",
+      "String":  "Пожалуй да. Исследования по перемещению между рукавами давно мною закончены. Я покину данный рукав немедленно, но оставлю сдесь свои модули для сбора информации."    
+    },
+    {
+      "#":  "38",
+      "String":  "Ты алогичен, <Player>. Твой вид действительно тупой. Если у твоего вида нет сил даже на то, чтобы отстоять свои способы размножения, то зачем тебе существовать? Собственно разговор окончен. Когда наши дороги пересекутся вновь, вы будите готовы."    
+    },
+    {
+      "#":  "39",
+      "String":  "Прощай, биологическая особь, <Player>. Тебе пока не понять даже простых истин. Удались на безопасное расстояние, я приступаю к открытию гиперпортала в мир клисан. Согласно моей информации он крайне опасен для органических особей."    
+    },
+    {
+      "#":  "4",
+      "String":  "Идентификатор акцептирован. Если ты, <Player>, явился для игры, прошу тебя подождать, пока я закончу анализ предыдущего экземпляра."    
+    },
+    {
+      "#":  "40",
+      "String":  "Но мы не умеем этого делать!!!"    
+    },
+    {
+      "#":  "41",
+      "String":  "Твои мысли далеки от реальности. Мы не можем \"отойти в сторону\". Нам нужно где-то жить чтобы познавать мир."    
+    },
+    {
+      "#":  "42",
+      "String":  "В бой!"    
+    },
+    {
+      "#":  "43",
+      "String":  "Твой вид сейчас перестанет существовать. Я убью тебя или говоря твоими терминами \"изучу\"."    
+    },
+    {
+      "#":  "44",
+      "String":  "Возможно это так, возможно за 300 лет ты обогнал нас в развитии... Но ведь именно мой вид создал тебя Келлер! Без нас, органических существ, тебя бы не было. Ты знаешь причину своего появления?"    
+    },
+    {
+      "#":  "45",
+      "String":  "Рад это слышать. Это хорошее начало для конструктивного диалога. А что ты можешь сказать про клисан?"    
+    },
+    {
+      "#":  "46",
+      "String":  "Ничего удивительного, ведь разрушительная война между коалицией и доминаторами никак не способствует исследованиям. Если ты навремя остановишь свои исследования, то материала станет гораздо больше. Понимаешь?"    
+    },
+    {
+      "#":  "47",
+      "String":  "Неужели ты улетишь?!!!"    
+    },
+    {
+      "#":  "48",
+      "String":  "Таким образом твои корабли останутся в нашем рукаве и война не закончится?"    
+    },
+    {
+      "#":  "49",
+      "String":  "А когда пересекутся? К чему мы будем готовы?"    
+    },
+    {
+      "#":  "5",
+      "String":  "Вопрос некорректен. Я ни с кем не воюю. Этим занимается тупиковая ветвь киберэволюции, классифицируемая вами как \"блазер\". Они иррационально считают войну своей целью."    
+    },
+    {
+      "#":  "50",
+      "String":  "Конец связи"    
+    },
+    {
+      "#":  "51",
+      "String":  "Начат этап реструктуризации материальной формы.<br>Объект активного изучения #<0> готов к связи?"    
+    },
+    {
+      "#":  "52",
+      "String":  "Сейчас я покажу тебе свою готовность.<br>Компьютер. Немедленно активировать программу \"Дематериализатор\"!"    
+    },
+    {
+      "#":  "53",
+      "String":  "Компьютер. Немедленно активировать программу \"Дематериализатор\"!"    
+    },
+    {
+      "#":  "54",
+      "String":  "Вновь начат этап реструктуризации материальной формы.<br>Рейнджер <Player>, вы являетесь объектом пригодным к разложению. Никуда не улетайте, ожидайте на месте своей очереди."    
+    },
+    {
+      "#":  "55",
+      "String":  "Это интересная теория. По моим подсчетам для истощения энергетических ресурсов потребуется около восьми триллионов циклов синтеза.<br>Диалог окончен. Не будем растрачивать энергию на поддержание гиперпространственной волны."    
+    },
+    {
+      "#":  "56",
+      "String":  "Просьба отклоняется. Вам присвоен приоритет <0> степени. Вы теперь особый объект для изучения."    
+    },
+    {
+      "#":  "57",
+      "String":  "Я тут буду ровно столько, сколько потребуется для твоего уничтожения."    
+    },
+    {
+      "#":  "58",
+      "String":  "Я пришел просить мира."    
+    },
+    {
+      "#":  "59",
+      "String":  "Я тебе не объект для изучения!"    
+    },
+    {
+      "#":  "6",
+      "String":  "Как и у всякого разумного существа, моя базовая функция - познание, а моя цель  реализация базовой функции."    
+    },
+    {
+      "#":  "7",
+      "String":  "Термин \"атакуют\" некорректен. Важнейшей составляющей познания является анализ."    
+    },
+    {
+      "#":  "8",
+      "String":  "Твой образовательный уровень недостаточен, органическая особь <Player>. Термин \"анализ\" означает разложение на составляющие."    
+    },
+    {
+      "#":  "9",
+      "String":  "Термин \"уничтожение\" некорректен. До уровня атомов мы разлагаем лишь отдельные фрагменты. В основном исследуемые системы анализируются до уровня структурных единиц - в частности, органов и клеток, если говорить об особях твоего класса."    
+    }  
+  ]
+}

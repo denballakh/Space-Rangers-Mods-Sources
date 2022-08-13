@@ -1929,23 +1929,23 @@ MicroModuls ^{
     }
     LEOContentMod_MM_150 ^{
         Equipments=Hull
-        Fragility=85
+        Fragility=115
         Name=Парагейд
         Owner=Maloc,Peleng,Fei,Gaal,PirateClan,Kling,None
         Priority=20
         Text=Микромодуль первого уровня. Открывает в <clr>корпусе<clrEnd> два слота под оружие и один слот под артефакт, ценой уменьшения стойкости корпуса к любому урону. Несовместим с корпусами <clr>людей<clrEnd>.
-        Text=Восприимчивость к урону: <clr>-15%<clrEnd>
+        Text=Восприимчивость к урону: <clr>+15%<clrEnd>
         bonSlotArt=1
         bonSlotWeapon=2
     }
     LEOContentMod_MM_151 ^{
         Equipments=Hull
-        Fragility=85
+        Fragility=115
         Name=Искатель
         Owner=Maloc,People,Fei,Gaal,PirateClan,Kling,None
         Priority=20
         Text=Микромодуль первого уровня. Открывает в <clr>корпусе<clrEnd> два слота под артефакты и один слот под оружие, ценой уменьшения стойкости корпуса к любому урону. Несовместим с корпусами <clr>пеленгов<clrEnd>.
-        Text=Восприимчивость к урону: <clr>-15%<clrEnd>
+        Text=Восприимчивость к урону: <clr>+15%<clrEnd>
         bonSlotArt=2
         bonSlotWeapon=1
     }
