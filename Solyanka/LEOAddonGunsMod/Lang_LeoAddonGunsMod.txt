@@ -52,12 +52,16 @@ MicroModuls ^{
         bonAttacks=1
     }
     ExpTC_MagnetronEnergy ^{
+        KindGraph=Mag
+        LockedAcryn=3
         NonSearchable=1
         Priority=0
         LockedAcryn=3
         Special=1
     }
     ExpTC_MagnetronSplinter ^{
+        KindGraph=Mag
+        LockedAcryn=3
         NonSearchable=1
         Priority=0
         LockedAcryn=3
@@ -473,7 +477,7 @@ MicroModuls ^{
         Cost=400
         Equipments=Mabokit
         Fragility=300
-        KindGraph=Mis
+        KindGraph=Mis2
         Name="Мислерант-СЛИП"
         OnPlanets=1
         Owner=PirateClan
@@ -492,7 +496,7 @@ MicroModuls ^{
         Cost=800
         Equipments=Mabokit
         Fragility=75
-        KindGraph=Mis
+        KindGraph=Mis3
         Name="Мислерант-ПЭЙДЖ"
         OnPlanets=1
         Owner=Fei
@@ -778,7 +782,7 @@ MicroModuls ^{
         Cost=400
         Equipments=W04
         Fragility=300
-        KindGraph=Mis
+        KindGraph=Mis2
         Name="Мислерант-СЛИП"
         OnPlanets=1
         Owner=PirateClan
@@ -796,7 +800,7 @@ MicroModuls ^{
         Cost=800
         Equipments=W04
         Fragility=100
-        KindGraph=Mis
+        KindGraph=Mis3
         Name="Мислерант-ГЕОЛ"
         OnPlanets=1
         Owner=Gaal
