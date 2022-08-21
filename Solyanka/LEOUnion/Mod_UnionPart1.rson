@@ -4,8 +4,8 @@
   "ViewPos.x":  -213,
   "ViewPos.y":  -164,
   "ScriptName":  "Mod_UnionPart1",
-  "ScriptFileOut":  "C:\\Mod_UnionPart1.scr",
-  "ScriptTextOut":  "C:\\Mod_UnionPart1.txt",
+  "ScriptFileOut":  "H:\\Mod_UnionPart1.scr",
+  "ScriptTextOut":  "H:\\Mod_UnionPart1.txt",
   "GraphPoint.Count":  29,
   "GraphLink.Count":  20,
   "GraphRectText.Count":  0,
@@ -38,7 +38,7 @@
           "#":  22,
           "Ether.Type":  2,
           "Unique":  "",
-          "Msg":  "Пришло время веселиться! Задайте им жару коммандер. Переключаю корабль в <bonus_text[0]> режим.",
+          "Msg":  "Пришло время веселиться! Задайте им жару, коммандер. Переключаю корабль в <bonus_text[0]> режим.",
           "Ship1":  "",
           "Ship2":  "",
           "Ship3":  ""        
@@ -638,7 +638,7 @@
     },
     {
       "#":  "1",
-      "String":  "Пришло время веселиться! Задайте им жару коммандер. Переключаю корабль в <0> режим."    
+      "String":  "Пришло время веселиться! Задайте им жару, коммандер. Переключаю корабль в <0> режим."    
     }  
   ]
 }
