@@ -1,0 +1,698 @@
+oint("TOPLEFT",bar,"TOPLEFT", 0,0)
+            self.text:SetPoint("BOTTOMRIGHT",bar,"BOTTOMRIGHT", -10,0)
+            self.text:SetFont([[Interface\AddOns\NugComboBar\tex\Emblem.ttf]],15)
+        end
+        self:SetParent(UIParent)
+        -- I don't want to rewrite everything
+        -- just to make them siblings
+        self:SetScale(NugComboBar:GetScale())
+        NugComboBar.SetScale = function(self, scale)
+            self.bar:SetScale(scale)
+            normalSetScale(NugComboBar, scale)
+        end
+        self:SetAlpha(NugComboBar:GetAlpha())
+        NugComboBar.SetAlpha = function(self, alpha)
+            self.bar:SetAlpha(alpha)
+            normalSetAlpha(NugComboBar, alpha)
+        end
+
+        NugComboBar.Hide = function(self)
+            self.bar:Hide()
+        end
+        NugComboBar.Show = function(self)
+            self.bar:Show()
+        end
+        normalHide(NugComboBar)
+
+        self:ClearAllPoints()
+        if IsVertical() then
+            self:SetPoint("BOTTOMLEFT", NugComboBar, "BOTTOMLEFT", 3, 5)
+        else
+            self:SetPoint("TOPLEFT", NugComboBar, "TOPLEFT", 5, -3)
+        end
+        self.text:Show()
+    end
+    end --endif intiial
+
+
+    -- local tb = bar:CreateTexture(nil, "BACKGROUND", nil, 1)
+    -- tb:SetWidth(ts.width); tb:SetHeight(ts.height)
+    -- tb:SetTexture(ts.texture)
+    -- tb:SetTexCoord(unpack(ts.coords))
+    -- tb:SetPoint("TOPLEFT", bar, "TOPLEFT", -5, 4)
+
+    bar:Small()
+    bar:SetColor(0.6,0,0)
+    -- bar.t = tb
+    self.bar = bar
+    bar:Hide()
+
+    
+    return self
+end
+
+
+
+-- NugComboBar.themes = {}
+-- NugComboBar.themes["WARLOCK"] = {
+--     [1] = {
+--         preset = "glowPurple",
+--         colors = {
+--             ["normal"] = {0.77,0.26,0.29},
+--             ["big"] = {0.77,0.26,0.29},
+--             ["bar1"] = { 0.9,0.1,0.1 },
+--             ["bar2"] = { .9,0.1,0.4 },
+--             ["layer2"] = { 0.80, 0.23, 0.79 },
+--         },
+--     },
+-- } A@545 ?>72>;O5B B515 70:070BL :>@?CA <0>:<br><1><br>-----------------------------------------------<br>"K <>65HL 2K1@0BL B@8 20@80=B0 @07<5@0 2 7028A8<>AB8 >B A2>8E =C64. !59G0A <K <>65< 873>B>28BL :>@?CA0:<br>@07<5@>< <2> 8 AB>8<>ABLN <3> cr.<br>@07<5@>< <4> 8 AB>8<>ABLN <5> cr.<br>@07<5@>< <6> 8 AB>8<>ABLN <7> cr.<br>-----------------------------------------------<br>C B0: GB>, 1@0B0=, :0:>9 2K18@05HL?22 5H5=85 B2>Q, <PlayerFull>!<br>AQ C65 3>B>2> 2 ;CGH5< 2845. "2>9 =>2K9 :>@?CA C65 ?K;8BAO =0 A:;045, B>;L:> B51O 8 4>68405BAO.<br>0409 B0< 60@C MB8< <54=K< ;10<, 1>O:0<. %5-E5!!29@8 B5:CI5< C@>2=5 @0728B8O B5E=>;>389 2 30;0:B8:5 <K <>65< 873>B>28BL 4;O 20A :>@?CA <0>:<br><1><br>-----------------------------------------------<br>"K <>65HL 2K1@0BL B@8 20@80=B0 @07<5@0 2 7028A8<>AB8 >B A2>8E =C64. !59G0A <K <>65< 873>B>28BL :>@?CA0:<br>@07<5@>< <2>, AB>8<>ABLN <3> =>4>2 8 <4> cr.<br>@07<5@>< <5>, AB>8<>ABLN <6> =>4>2 8 <7> cr.<br>@07<5@>< <8>, AB>8<>ABLN <9> =>4>2 8 <10> cr.<br>-------------------------[[-----------------------------------------------------------------------------
+Heading Widget
+-------------------------------------------------------------------------------]]
+local Type, Version = "Heading", 20
+local AceGUI = LibStub and LibStub("AceGUI-3.0", true)
+if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
+
+-- Lua APIs
+local pairs = pairs
+
+-- WoW APIs
+local CreateFrame, UIParent = CreateFrame, UIParent
+
+--[[-----------------------------------------------------------------------------
+Methods
+-------------------------------------------------------------------------------]]
+local methods = {
+	["OnAcquire"] = function(self)
+		self:SetText()
+		self:SetFullWidth()
+		self:SetHeight(18)
+	end,
+
+	-- ["OnRelease"] = nil,
+
+	["SetText"] = function(self, text)
+		self.label:SetText(text or "")
+		if text and text ~= "" then
+			self.left:SetPoint("RIGHT", self.label, "LEFT", -5, 0)
+			self.right:Show()
+		else
+			self.left:SetPoint("RIGHT", -3, 0)
+			self.right:Hide()
+		end
+	end
+}
+
+--[[-----------------------------------------------------------------------------
+Constructor
+-------------------------------------------------------------------------------]]
+local function Constructor()
+	local frame = CreateFrame("Frame", nil, UIParent)
+	frame:Hide()
+
+	local label = frame:CreateFontString(nil, "BACKGROUND", "GameFontNormal")
+	label:SetPoint("TOP")
+	label:SetPoint("BOTTOM")
+	label:SetJustifyH("CENTER")
+
+	local left = frame:CreateTexture(nil, "BACKGROUND")
+	left:SetHeight(8)
+	left:SetPoint("LEFT", 3, 0)
+	left:SetPoint("RIGHT", label, "LEFT", -5, 0)
+	left:SetTexture("Interface\\Tooltips\\UI-Tooltip-Border")
+	left:SetTexCoord(0.81, 0.94, 0.5, 1)
+
+	local right = frame:CreateTexture(nil, "BACKGROUND")
+	right:SetHeight(8)
+	right:SetPoint("RIGHT", -3, 0)
+	right:SetPoint("LEFT", label, "RIGHT", 5, 0)
+	right:SetTexture("Interface\\Tooltips\\UI-Tooltip-Border")
+	right:SetTexCoord(0.81, 0.94, 0.5, 1)
+
+	local widget = {
+		label = label,
+		left  = left,
+		right = right,
+		frame = frame,
+		type  = Type
+	}
+	for method, func in pairs(methods) do
+		widget[method] = func
+	end
+
+	return AceGUI:RegisterAsWidget(widget)
+end
+
+AceGUI:RegisterWidgetType(Type, Constructor, Version)
+4. !59G0A <K <>65< 873>B>28BL :>@?CA0:
+
+@07<5@>< <size_variation[0]> 8 AB>8<>ABLN <cost_variation[0]> cr.
+
+@07<5@>< <size_variation[1]> 8 AB>8<>ABLN <cost_variation[1]> cr.
+
+@07<5@>< <size_variation[2]> 8 AB>8<>ABLN <cost_variation[2]> cr.
+
+-----------------------------------------------
+
+C B0: GB>, <Name(Player())>, :0:>9 2K18@05HL?TDialogAnswer8ìÿÿÿrestartÿÿÿÿ!;C6C 30;0:B8:5!Tifb
+ÿÿÿÿShipType(GetShipRuins(Player()))=='WB'Tifž
+ÿÿÿÿShipRank(Player())>2TifØÿÿÿÿÿÿÿShipRank(Player())==4Top\ìÿÿÿÿÿÿÿcount=0;
+
+while(count<3){
+
+
+
+temp_hull=CreateHull(2,100+(100+20*count)*GalaxyTechLevel(),GalaxyTechLevel(),2);
+
+basic_size_variation[count]=ItemSize(temp_hull);
+
+if (bonus_type>-1){SpecialToEquipment(bonus_type,temp_hull);}
+
+ItemCost(temp_hull,ItemCost(temp_INDX(	‹26(¸èK-pZJ-ÓF0ûË‚=hùèÆaò´¶f~ÏÓF0ûË`UZ  Drawing1.dwgL-p^J-í4F0ûËHIò¬ŸÈaò´¶f~Ïí4F0ûËpid  Drawing155.bakM-p^J-®÷F0ûË®³(1­ŸÈaò´¶f~Ï®÷F0ûËp¦g  Drawing155.dwgN-p^J-YF0ûË-ððúÇaò´¶f~ÏYF0ûËpùn  Drawing.bakO-p^J-YF0ûË-ððúÇaò´¶f~ÏYF0ûËp´o  Drawing.dwgP-p^J-oºF0ûË-ððúÇaò´¶f~ÏoºF0ûË€u  Drawing.bakQ-p^J-oºF0ûË-ððúÇÂS·¶f~ÏoºF0ûË€Ïw  Drawing.dwgL-pZJ-í4F0ûËHIò¬ŸÈaò´¶f~Ïí4F0ûËpid  DRAWIN~1.BAKM-pZJ-®÷F0ûË®³(1­ŸÈaò´¶f~Ï®÷F0ûËp¦g  DRAWIN~1.DWGN-pZJ-YF0ûË-ððúÇaò´¶f~ÏYF0ûËpùn  DRAWIN~2.BAKO-pZJ-YF0ûË-ððúÇaò´¶f~ÏYF0ûËp´o  DRAWIN~2.DWGP-pZJ-oºF0ûË-ððúÇaò´¶f~ÏoºF0ûË€u  DRAWIN~3.BAKQ-pZJ-oºF0ûË-ððúÇÂS·¶f~ÏoºF0ûË€Ïw  DRAWIN~3.DWGR-p^J-ÏF0ûËýžª!ÇÂS·¶f~ÏÏF0ûË€¢v  jhcjklhbjb.bakS-p^J-ÏF0ûËýžª!ÇÂS·¶f~ÏÏF0ûË€Vw  jhcjklhbjb.dwgR-pZJ-ÏF0ûËýžª!ÇÂS·¶f~ÏÏF0ûË€¢v  JHCJKL~1.BAKS-pZJ-ÏF0ûËýžª!ÇÂS·¶f~ÏÏF0ûË€Vw  JHCJKL~1.DWGT-hTJ-/}F0ûËýžª!ÇÂS·¶f~Ï/}F0ûË€x  	OPORA.dwgU-hTJ-ÞF0ûËÄJÕðÆÂS·¶f~ÏÞF0ûËðËé  	Prism.bakV-hTJ-ð?F0ûË±åGžñÆÂS·¶f~Ïð?F0ûËðcé  	Prism.dwgW-hTJ-° F0ûËƒþÒÇ"µ¹¶f~Ï° F0ûË°l¢  	Ramka.dwgX-hXJ-d"F0ûËŒé
+Ç"µ¹¶f~Ïd"F0ûË0ø)  SBORKA1.bakY-hXJ-d"F0ûËŒé
+Ç"µ¹¶f~Ïd"F0ûËð>ê  SBORKA1.dwgZ-hXJ-qÅ$F0ûËŒé
+Ç"µ¹¶f~ÏqÅ$F0ûË„  SBORKA2.bak[-hXJ-’é+F0ûËŒé
+Ç"µ¹¶f~Ï’é+F0ûËà°Ô  SBORKA2.dwg\-hTJ-òJ.F0ûËŒé
+Ç"µ¹¶f~ÏòJ.F0ûËàwÒ  	SXEMA.bak]-hTJ-R¬0F0ûËƒàÕÇ"µ¹¶f~ÏR¬0F0ûËàÜ  	SXEMA.dwg--[[-----------------------------------------------------------------------------
+Icon Widget
+-------------------------------------------------------------------------------]]
+local Type, Version = "Icon", 21
+local AceGUI = LibStub and LibStub("AceGUI-3.0", true)
+if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
+
+-- Lua APIs
+local select, pairs, print = select, pairs, print
+
+-- WoW APIs
+local CreateFrame, UIParent, GetBuildInfo = CreateFrame, UIParent, GetBuildInfo
+
+--[[-----------------------------------------------------------------------------
+Scripts
+-------------------------------------------------------------------------------]]
+local function Control_OnEnter(frame)
+	frame.obj:Fire("OnEnter")
+end
+
+local function Control_OnLeave(frame)
+	frame.obj:Fire("OnLeave")
+end
+
+local function Button_OnClick(frame, button)
+	frame.obj:Fire("OnClick", button)
+	AceGUI:ClearFocus()
+end
+
+--[[-----------------------------------------------------------------------------
+Methods
+-------------------------------------------------------------------------------]]
+local methods = {
+	["OnAcquire"] = function(self)
+		self:SetHeight(110)
+		self:SetWidth(110)
+		self:SetLabel()
+		self:SetImage(nil)
+		self:SetImageSize(64, 64)
+		self:SetDisabled(false)
+	end,
+
+	-- ["OnRelease"] = nil,
+
+	["SetLabel"] = function(self, text)
+		if text and text ~= "" then
+			self.label:Show()
+			self.label:SetText(text)
+			self:SetHeight(self.image:GetHeight() + 25)
+		else
+			self.label:Hide()
+			self:SetHeight(self.image:GetHeight() + 10)
+		end
+	end,
+
+	["SetImage"] = function(self, path, ...)
+		local image = self.image
+		image:SetTexture(path)
+		
+		if image:GetTexture() then
+			local n = select("#", ...)
+			if n == 4 or n == 8 then
+				image:SetTexCoord(...)
+			else
+				image:SetTexCoord(0, 1, 0, 1)
+			end
+		end
+	end,
+
+	["SetImageSize"] = function(self, width, height)
+		self.image:SetWidth(width)
+		self.image:SetHeight(height)
+		--self.frame:SetWidth(width + 30)
+		if self.label:IsShown() then
+			self:SetHeight(height + 25)
+		else
+			self:SetHeight(height + 10)
+		end
+	end,
+
+	["SetDisabled"] = function(self, disabled)
+		self.disabled = disabled
+		if disabled then
+			self.frame:Disable()
+			self.label:SetTextColor(0.5, 0.5, 0.5)
+			self.image:SetVertexColor(0.5, 0.5, 0.5, 0.5)
+		else
+			self.frame:Enable()
+			self.label:SetTextColor(1, 1, 1)
+			self.image:SetVertexColor(1, 1, 1, 1)
+		end
+	end
+}
+
+--[[-----------------------------------------------------------------------------
+Constructor
+-------------------------------------------------------------------------------]]
+local function Constructor()
+	local frame = CreateFrame("Button", nil, UIParent)
+	frame:Hide()
+
+	frame:EnableMouse(true)
+	frame:SetScript("OnEnter", Control_OnEnter)
+	frame:SetScript("OnLeave", Control_OnLeave)
+	frame:SetScript("OnClick", Button_OnClick)
+
+	local label = frame:CreateFontString(nil, "BACKGROUND", "GameFontHighlight")
+	label:SetPoint("BOTTOMLEFT")
+	label:SetPoint("BOTTOMRIGHT")
+	label:SetJustifyH("CENTER")
+	label:SetJustifyV("TOP")
+	label:SetHeight(18)
+
+	local image = frame:CreateTexture(nil, "BACKGROUND")
+	image:SetWidth(64)
+	image:SetHeight(64)
+	image:SetPoint("TOP", 0, -5)
+
+	local highlight = frame:CreateTexture(nil, "HIGHLIGHT")
+	highlight:SetAllPoints(image)
+	highlight:SetTexture("Interface\\PaperDollInfoFrame\\UI-Character-Tab-Highlight")
+	highlight:SetTexCoord(0, 1, 0.23, 0.77)
+	highlight:SetBlendMode("ADD")
+
+	local widget = {
+		label = label,
+		image = image,
+		frame = frame,
+		type  = Type
+	}
+	for method, func in pairs(methods) do
+		widget[method] = func
+	end
+	-- SetText is deprecated, but keep it around for a while. (say, to WoW 4.0)
+	if (select(4, GetBuildInfo()) < 40000) then
+		widget.SetText = widget.SetLabel
+	else
+		widget.SetText = function(self, ...) print("AceGUI-3.0-Icon: SetText is deprecated! Use SetLabel instead!"); self:SetLabel(...) end
+	end
+
+	return AceGUI:RegisterAsWidget(widget)
+end
+
+AceGUI:RegisterWidgetType(Type, Constructor, Version)
+(bonus_type,hull_gift);}
+
+ItemCost(hull_gift,ItemCost(hull_gift)/2);
+
+AddItemToStorage(GetShipRuins(Player()),hull_gift);
+
+ShipMoney(Player(),ShipMoney(Player())-selected_cost);TDialogAnswer8‚restartÿÿÿÿ!0<> A>1>9!TDialogAnswer¶dÿÿÿÿ<size_variation[0]> 70 <cost_variation[0]> cr.TDialogAnswer¶‚ÿÿÿÿ<size_variation[1]> 70 <cost_variation[1]> cr.TDialogAnswer¶ ÿÿÿÿ<size_variation[2]> 70 <cost_variation[2]> cr.Top,¾ÿÿÿÿbasic_size_variation=newarray(3);
+
+size_variation=newarray(3);
+
+cost_variation=newarray(3);
+
+nod_cost_variation=newarray(3);TifÿÿÿÿShipRank(Player())>6TifªÿÿÿÿGetShipPirateRank(Player())==7Top4ªÿÿÿÿbonus_type=FindBonusByName('#189F0 V')Top4ÿÿÿÿbonus_type=FindBonusByName('!:0;0 V')Tif:ÿÿÿÿGetShipRuins(Player())>0TifXÿÿÿÿShipType(GetShipRuins(Player()))=='SB'TifvÿÿÿÿGalaxyTechLevel()>3Top”ÿÿÿÿbonus_name=">;84";
+
+AddDialogInject('RBK_Dialog_SB'," 5IQ <K <>65< 873>B>28BL 4;O B51O ?>4 70:07 M:A?5@8<5=B0;L=K9 :>@?CA <bonus_name>","/ E>GC 70:070BL :>@?CA",1)TDialog²RBK_Dialog_SBÿÿÿÿTifðÿÿÿÿGalaxyTechLevel()==4TifÿÿÿÿGalaxyTechLevel()==5TifÿÿÿÿGalaxyTechLevel()==6Tif,ÿÿÿÿGalaxyTechLevel()==7Tif@ÿÿÿÿGalaxyTechLevel()==8Top4ðÿÿÿÿbonus_type=FindBonusByName('>;84 I')Top4ÿÿÿÿbonus_type=FindBonusByName('>;84 II')Top4ÿÿÿÿbonus_type=FindBonusByName('>;84 III')Top4,ÿÿÿÿbonus_type=FindBonusByName('>;84 IV')Top4@ÿÿÿÿbonus_type=FindBonusByName('>;84 V')TopRÿÿÿÿcount=0;
+
+while(count<3){
+
+
+
+temp_hull=CreateHull(2,100+(100+20*count)*GalaxyTechLevel(),GalaxyTechLevel(),2);
+
+basic_size_variation[count]=ItemSize(temp_hull);
+
+if (bonus_type>-1){SpecialToEquipment(bonus_type,temp_hull);}
+
+ItemCost(temp_hull,ItemCost(temp_hull)/2);
+
+cost_variation[count]=ItemCost(temp_hull--[[-----------------------------------------------------------------------------
+InteractiveLabel Widget
+-------------------------------------------------------------------------------]]
+local Type, Version = "InteractiveLabel", 20
+local AceGUI = LibStub and LibStub("AceGUI-3.0", true)
+if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
+
+-- Lua APIs
+local select, pairs = select, pairs
+
+-- WoW APIs
+local CreateFrame, UIParent = CreateFrame, UIParent
+
+-- Global vars/functions that we don't upvalue since they might get hooked, or upgraded
+-- List them here for Mikk's FindGlobals script
+-- GLOBALS: GameFontHighlightSmall
+
+--[[-----------------------------------------------------------------------------
+Scripts
+-------------------------------------------------------------------------------]]
+local function Control_OnEnter(frame)
+	frame.obj:Fire("OnEnter")
+end
+
+local function Control_OnLeave(frame)
+	frame.obj:Fire("OnLeave")
+end
+
+local function Label_OnClick(frame, button)
+	frame.obj:Fire("OnClick", button)
+	AceGUI:ClearFocus()
+end
+
+--[[-----------------------------------------------------------------------------
+Methods
+-------------------------------------------------------------------------------]]
+local methods = {
+	["OnAcquire"] = function(self)
+		self:LabelOnAcquire()
+		self:SetHighlight()
+		self:SetHighlightTexCoord()
+		self:SetDisabled(false)
+	end,
+
+	-- ["OnRelease"] = nil,
+
+	["SetHighlight"] = function(self, ...)
+		self.highlight:SetTexture(...)
+	end,
+
+	["SetHighlightTexCoord"] = function(self, ...)
+		local c = select("#", ...)
+		if c == 4 or c == 8 then
+			self.highlight:SetTexCoord(...)
+		else
+			self.highlight:SetTexCoord(0, 1, 0, 1)
+		end
+	end,
+
+	["SetDisabled"] = function(self,disabled)
+		self.disabled = disabled
+		if disabled then
+			self.frame:EnableMouse(false)
+			self.label:SetTextColor(0.5, 0.5, 0.5)
+		else
+			self.frame:EnableMouse(true)
+			self.label:SetTextColor(1, 1, 1)
+		end
+	end
+}
+
+--[[-----------------------------------------------------------------------------
+Constructor
+-------------------------------------------------------------------------------]]
+local function Constructor()
+	-- create a Label type that we will hijack
+	local label = AceGUI:Create("Label")
+
+	local frame = label.frame
+	frame:EnableMouse(true)
+	frame:SetScript("OnEnter", Control_OnEnter)
+	frame:SetScript("OnLeave", Control_OnLeave)
+	frame:SetScript("OnMouseDown", Label_OnClick)
+
+	local highlight = frame:CreateTexture(nil, "HIGHLIGHT")
+	highlight:SetTexture(nil)
+	highlight:SetAllPoints()
+	highlight:SetBlendMode("ADD")
+
+	label.highlight = highlight
+	label.type = Type
+	label.LabelOnAcquire = label.OnAcquire
+	for method, func in pairs(methods) do
+		label[method] = func
+	end
+
+	return label
+end
+
+AceGUI:RegisterWidgetType(Type, Constructor, Version)
+
+st_variation[1];Top¶6ÿÿÿÿselected_size=basic_size_variation[2];
+
+selected_cost=cost_variation[2];
+
+selected_nod_cost=nod_cost_variation[2];TDialogMsgÊÿÿÿÿ5AL<0 @07C<=K9 2K1>@, <Name(Player())>. >A;54=OO D>@<0;L=>ABL, A=OBL =>4K A =>4-AGQB0 8;8 C 20A A A>1>9 =C6=>5 :>;8G5AB2>?TopüÿÿÿÿSound('Sound.Buy');
+
+hull_gift=CreateHull(2,selected_size,GalaxyTechLevel(),2);
+
+if (bonus_type>-1){SpecialToEquipment(bonus_type,hull_gift);}
+
+ItemCost(hull_gift,ItemCost(hull_gift)/2);
+
+AddItemToStorage(GetShipRu--[[-----------------------------------------------------------------------------
+Keybinding Widget
+Set Keybindings in the Config UI.
+-------------------------------------------------------------------------------]]
+local Type, Version = "Keybinding", 24
+local AceGUI = LibStub and LibStub("AceGUI-3.0", true)
+if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
+
+-- Lua APIs
+local pairs = pairs
+
+-- WoW APIs
+local IsShiftKeyDown, IsControlKeyDown, IsAltKeyDown = IsShiftKeyDown, IsControlKeyDown, IsAltKeyDown
+local CreateFrame, UIParent = CreateFrame, UIParent
+
+-- Global vars/functions that we don't upvalue since they might get hooked, or upgraded
+-- List them here for Mikk's FindGlobals script
+-- GLOBALS: NOT_BOUND
+
+local wowMoP
+do
+	local _, _, _, interface = GetBuildInfo()
+	wowMoP = (interface >= 50000)
+end
+
+--[[-----------------------------------------------------------------------------
+Scripts
+-------------------------------------------------------------------------------]]
+
+local function Control_OnEnter(frame)
+	frame.obj:Fire("OnEnter")
+end
+
+local function Control_OnLeave(frame)
+	frame.obj:Fire("OnLeave")
+end
+
+local function Keybinding_OnClick(frame, button)
+	if button == "LeftButton" or button == "RightButton" then
+		local self = frame.obj
+		if self.waitingForKey then
+			frame:EnableKeyboard(false)
+			self.msgframe:Hide()
+			frame:UnlockHighlight()
+			self.waitingForKey = nil
+		else
+			frame:EnableKeyboard(true)
+			self.msgframe:Show()
+			frame:LockHighlight()
+			self.waitingForKey = true
+		end
+	end
+	AceGUI:ClearFocus()
+end
+
+local ignoreKeys = {
+	["BUTTON1"] = true, ["BUTTON2"] = true,
+	["UNKNOWN"] = true,
+	["LSHIFT"] = true, ["LCTRL"] = true, ["LALT"] = true,
+	["RSHIFT"] = true, ["RCTRL"] = true, ["RALT"] = true,
+}
+local function Keybinding_OnKeyDown(frame, key)
+	local self = frame.obj
+	if self.waitingForKey then
+		local keyPressed = key
+		if keyPressed == "ESCAPE" then
+			keyPressed = ""
+		else
+			if ignoreKeys[keyPressed] then return end
+			if IsShiftKeyDown() then
+				keyPressed = "SHIFT-"..keyPressed
+			end
+			if IsControlKeyDown() then
+				keyPressed = "CTRL-"..keyPressed
+			end
+			if IsAltKeyDown() then
+				keyPressed = "ALT-"..keyPressed
+			end
+		end
+
+		frame:EnableKeyboard(false)
+		self.msgframe:Hide()
+		frame:UnlockHighlight()
+		self.waitingForKey = nil
+
+		if not self.disabled then
+			self:SetKey(keyPressed)
+			self:Fire("OnKeyChanged", keyPressed)
+		end
+	end
+end
+
+local function Keybinding_OnMouseDown(frame, button)
+	if button == "LeftButton" or button == "RightButton" then
+		return
+	elseif button == "MiddleButton" then
+		button = "BUTTON3"
+	elseif button == "Button4" then
+		button = "BUTTON4"
+	elseif button == "Button5" then
+		button = "BUTTON5"
+	end
+	Keybinding_OnKeyDown(frame, button)
+end
+
+--[[-----------------------------------------------------------------------------
+Methods
+-------------------------------------------------------------------------------]]
+local methods = {
+	["OnAcquire"] = function(self)
+		self:SetWidth(200)
+		self:SetLabel("")
+		self:SetKey("")
+		self.waitingForKey = nil
+		self.msgframe:Hide()
+		self:SetDisabled(false)
+		self.button:EnableKeyboard(false)
+	end,
+
+	-- ["OnRelease"] = nil,
+
+	["SetDisabled"] = function(self, disabled)
+		self.disabled = disabled
+		if disabled then
+			self.button:Disable()
+			self.label:SetTextColor(0.5,0.5,0.5)
+		else
+			self.button:Enable()
+			self.label:SetTextColor(1,1,1)
+		end
+	end,
+
+	["SetKey"] = function(self, key)
+		if (key or "") == "" then
+			self.button:SetText(NOT_BOUND)
+			self.button:SetNormalFontObject("GameFontNormal")
+		else
+			self.button:SetText(key)
+			self.button:SetNormalFontObject("GameFontHighlight")
+		end
+	end,
+
+	["GetKey"] = function(self)
+		local key = self.button:GetText()
+		if key == NOT_BOUND then
+			key = nil
+		end
+		return key
+	end,
+
+	["SetLabel"] = function(self, label)
+		self.label:SetText(label or "")
+		if (label or "") == "" then
+			self.alignoffset = nil
+			self:SetHeight(24)
+		else
+			self.alignoffset = 30
+			self:SetHeight(44)
+		end
+	end,
+}
+
+--[[-----------------------------------------------------------------------------
+Constructor
+-------------------------------------------------------------------------------]]
+
+local ControlBackdrop  = {
+	bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+	edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+	tile = true, tileSize = 16, edgeSize = 16,
+	insets = { left = 3, right = 3, top = 3, bottom = 3 }
+}
+
+local function keybindingMsgFixWidth(frame)
+	frame:SetWidth(frame.msg:GetWidth() + 10)
+	frame:SetScript("OnUpdate", nil)
+end
+
+local function Constructor()
+	local name = "AceGUI30KeybindingButton" .. AceGUI:GetNextWidgetNum(Type)
+
+	local frame = CreateFrame("Frame", nil, UIParent)
+	local button = CreateFrame("Button", name, frame, wowMoP and "UIPanelButtonTemplate" or "UIPanelButtonTemplate2")
+
+	button:EnableMouse(true)
+	button:RegisterForClicks("AnyDown")
+	button:SetScript("OnEnter", Control_OnEnter)
+	button:SetScript("OnLeave", Control_OnLeave)
+	button:SetScript("OnClick", Keybinding_OnClick)
+	button:SetScript("OnKeyDown", Keybinding_OnKeyDown)
+	button:SetScript("OnMouseDown", Keybinding_OnMouseDown)
+	button:SetPoint("BOTTOMLEFT")
+	button:SetPoint("BOTTOMRIGHT")
+	button:SetHeight(24)
+	button:EnableKeyboard(false)
+
+	local text = button:GetFontString()
+	text:SetPoint("LEFT", 7, 0)
+	text:SetPoint("RIGHT", -7, 0)
+
+	local label = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+	label:SetPoint("TOPLEFT")
+	label:SetPoint("TOPRIGHT")
+	label:SetJustifyH("CENTER")
+	label:SetHeight(18)
+
+	local msgframe = CreateFrame("Frame", nil, UIParent)
+	msgframe:SetHeight(30)
+	msgframe:SetBackdrop(ControlBackdrop)
+	msgframe:SetBackdropColor(0,0,0)
+	msgframe:SetFrameStrata("FULLSCREEN_DIALOG")
+	msgframe:SetFrameLevel(1000)
+	msgframe:SetToplevel(true)
+
+	local msg = msgframe:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+	msg:SetText("Press a key to bind, ESC to clear the binding or click the button again to cancel.")
+	msgframe.msg = msg
+	msg:SetPoint("TOPLEFT", 5, -5)
+	msgframe:SetScript("OnUpdate", keybindingMsgFixWidth)
+	msgframe:SetPoint("BOTTOM", button, "TOP")
+	msgframe:Hide()
+
+	local widget = {
+		button      = button,
+		label       = label,
+		msgframe    = msgframe,
+		frame       = frame,
+		alignoffset = 30,
+		type        = Type
+	}
+	for method, func in pairs(methods) do
+		widget[method] = func
+	end
+	button.obj = widget
+
+	return AceGUI:RegisterAsWidget(widget)
+end
+
+AceGUI:RegisterWidgetType(Type, Constructor, Version)
