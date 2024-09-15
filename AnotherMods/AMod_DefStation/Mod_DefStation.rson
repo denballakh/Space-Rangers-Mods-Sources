@@ -1,13 +1,13 @@
 {
   "FileID":  573785173,
   "FileVersion":  8,
-  "ViewPos.x":  -415,
-  "ViewPos.y":  -306,
+  "ViewPos.x":  -643,
+  "ViewPos.y":  -528,
   "ScriptName":  "mod_defstation",
-  "ScriptFileOut":  "H:\\mod_defstation.scr",
+  "ScriptFileOut":  "H:\\Steam\\steamapps\\common\\Space Rangers HD A War Apart\\Mods\\AnotherMods\\AMod_DefStation\\Data\\Script\\mod_defstation.scr",
   "ScriptTextOut":  "H:\\mod_defstation.txt",
-  "GraphPoint.Count":  202,
-  "GraphLink.Count":  174,
+  "GraphPoint.Count":  201,
+  "GraphLink.Count":  173,
   "GraphRectText.Count":  0,
   "Variables.Count":  27,
   "Stars.Count":  1,
@@ -21,7 +21,7 @@
   "Dialogs.Count":  14,
   "DialogMessages.Count":  33,
   "DialogAnswers.Count":  24,
-  "Operations.Count":  40,
+  "Operations.Count":  39,
   "Statements.Count":  49,
   "Loops.Count":  0,
   "Visual.Objects":  
@@ -279,7 +279,7 @@
           "Pos.y":  0,
           "Parent":  -1,
           "#":  12,
-          "Msg":  "Мы можем начать строительство станции с такими параметрами:\r\nКорпус: <bArray[0,1]> (прочность: <bArray[0,3]> )\r\nТопливный бак: <bArray[1,1]>\r\nДвигатель: <bArray[2,1]>\r\nРадар: <bArray[3,1]>\r\nСканер: <bArray[4,1]>\r\nДроид: <bArray[5,1]>\r\nЗахват: <bArray[6,1]>\r\nГенератор защиты: <bArray[7,1]>\r\nОружие 1 слота: <bArray[8,1]>\r\nОружие 2 слота: <bArray[9,1]>\r\nОружие 3 слота: <bArray[10,1]>\r\nОружие 4 слота: <bArray[11,1]>\r\nОружие 5 слота: <bArray[12,1]>\r\nАртефакт 1 слота: <bArray[13,1]>\r\nАртефакт 2 слота: <bArray[14,1]>\r\nАртефакт 3 слота: <bArray[15,1]>\r\nАртефакт 4 слота: <bArray[16,1]>\r\nМодификация корпуса: <bArray[17,1]>\r\n\r\nИтоговая цена постройки: <int1> cr.\r\nВы можете изменить некоторые параметры будущей станции.",
+          "Msg":  "Мы можем начать строительство станции с такими параметрами:\r\nКорпус: <bArray[0,1]> (прочность: <bArray[0,3]> )\r\nТопливный бак: <bArray[1,1]>\r\nДвигатель: <bArray[2,1]>\r\nРадар: <bArray[3,1]>\r\nСканер: <bArray[4,1]>\r\nДроид: <bArray[5,1]>\r\nЗахват: <bArray[6,1]>\r\nГенератор защиты: <bArray[7,1]>\r\nОружие 1 слота: <bArray[8,1]>\r\nОружие 2 слота: <bArray[9,1]>\r\nОружие 3 слота: <bArray[10,1]>\r\nОружие 4 слота: <bArray[11,1]>\r\nОружие 5 слота: <bArray[12,1]>\r\nАртфакт 1 слота: <bArray[13,1]>\r\nАртфакт 2 слота: <bArray[14,1]>\r\nАртфакт 3 слота: <bArray[15,1]>\r\nАртфакт 4 слота: <bArray[16,1]>\r\nМодификация корпуса: <bArray[17,1]>\r\n\r\nИтоговая цена постройки: <int1> cr.\r\nВы можете изменить некоторые параметры будущей станции.",
           "DMsg.Num":  "0"        
         },
         {
@@ -1406,7 +1406,7 @@
               "        }",
               "        if(int0==1)continue;",
               "    }",
-              "    InjectAnswer('choseEq',Name(dwd0)+\" <ItemSize(dwd0)> т.\",i);",
+              "    InjectAnswer('choseEq',Name(dwd0)+' <ItemSize(dwd0)> '+\"т.\",i);",
               "}",
               "InjectAnswer('choseEq',\"Назад\",100000);"          
           ]        
@@ -1721,14 +1721,13 @@
           "Pos.y":  300,
           "Parent":  -1,
           "#":  144,
-          "Total.Lines":  5,
+          "Total.Lines":  4,
           "Code.Type":  "Turn",
           "Code":          
           [
               "if(OrderLock(CurShip)) OrderLock(CurShip,0);",
-              "SetData(0, 0, CurShip);",
               "ShipOut(CurShip);",
-              "if(ShipOwner(CurShip)!=PirateClan) ShipJoin(CoalDefPla,CurShip);",
+              "if(ShipOwner(CurShip)!=7) ShipJoin(CoalDefPla,CurShip);",
               "else ShipJoin(ClanDefPla,CurShip);"          
           ]        
         },
@@ -1941,7 +1940,7 @@
           "Pos.y":  210,
           "Parent":  -1,
           "#":  196,
-          "Total.Lines":  5,
+          "Total.Lines":  6,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -1949,7 +1948,8 @@
               "tPlanet=StarPlanets(tSystem,GAnswerData);",
               "ShipOut(GetTalkShip());",
               "ShipJoin(DisassembledPlatform,GetTalkShip());",
-              "SetData(Id(tPlanet), 0, GetTalkShip());"          
+              "OrderLock(GetTalkShip(),1);",
+              "OrderLanding(GetTalkShip(),tPlanet);"          
           ]        
         },
         {
@@ -1982,21 +1982,6 @@
               "}",
               "Ether(7,'',\"<Name(CurShip)> разобрана на планете <Name(GetShipPlanet(CurShip))>.<br>На ваш склад досталвлено следующее оборудование:<br><tStr>\");",
               "ShipDestroy(CurShip);"          
-          ]        
-        },
-        {
-          "Type":  "Top",
-          "Name":  "",
-          "Pos.x":  -170,
-          "Pos.y":  80,
-          "Parent":  -1,
-          "#":  201,
-          "Total.Lines":  2,
-          "Code.Type":  "Turn",
-          "Code":          
-          [
-              "OrderLock(CurShip,1);",
-              "OrderLanding(CurShip,IdToPlanet(GetData(0, CurShip)));"          
           ]        
         }      
       ],
@@ -2739,7 +2724,7 @@
         {
           "Type":  "Tif",
           "Name":  "",
-          "Pos.x":  -210,
+          "Pos.x":  -190,
           "Pos.y":  80,
           "Parent":  -1,
           "#":  199,
@@ -4365,27 +4350,20 @@
     },
     {
       "Type":  "TGraphLink",
+      "Begin":  121,
+      "End":  199,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
       "Begin":  199,
       "End":  200,
       "Nom":  0,
       "Arrow":  true    
-    },
-    {
-      "Type":  "TGraphLink",
-      "Begin":  121,
-      "End":  201,
-      "Nom":  0,
-      "Arrow":  true    
-    },
-    {
-      "Type":  "TGraphLink",
-      "Begin":  201,
-      "End":  199,
-      "Nom":  0,
-      "Arrow":  true    
     }  
   ],
-  "BlockPar.EC.Total.Strings":  99,
+  "BlockPar.EC.Total.Strings":  88,
   "BlockPar.EC":  
   [
     {
@@ -4437,52 +4415,8 @@
       "String":  "В данный момент, на защитной станции <0> Вы можете принять следующие изменения:"    
     },
     {
-      "#":  "113",
-      "String":  "отсутствует"    
-    },
-    {
-      "#":  "114",
-      "String":  "</color>будет установлена "    
-    },
-    {
-      "#":  "115",
-      "String":  "</color>будет установлен "    
-    },
-    {
-      "#":  "116",
-      "String":  "не будет</color> дополнительных улучшений."    
-    },
-    {
-      "#":  "117",
-      "String":  "дополнительная орудийная платформа"    
-    },
-    {
-      "#":  "118",
-      "String":  "портальный генератор"    
-    },
-    {
-      "#":  "119",
-      "String":  " <0> т."    
-    },
-    {
       "#":  "12",
       "String":  "Добавить артефакт в 3 слот"    
-    },
-    {
-      "#":  "120",
-      "String":  "Убрать портальный генератор"    
-    },
-    {
-      "#":  "121",
-      "String":  "Установить портальный генератор"    
-    },
-    {
-      "#":  "122",
-      "String":  "Убрать орудийную платформу"    
-    },
-    {
-      "#":  "123",
-      "String":  "Установить орудийную платформу"    
     },
     {
       "#":  "13",
@@ -4782,7 +4716,7 @@
     },
     {
       "#":  "99",
-      "String":  "Мы можем начать строительство станции с такими параметрами:<br>Корпус: <0> (прочность: <1> )<br>Топливный бак: <2><br>Двигатель: <3><br>Радар: <4><br>Сканер: <5><br>Дроид: <6><br>Захват: <7><br>Генератор защиты: <8><br>Оружие 1 слота: <9><br>Оружие 2 слота: <10><br>Оружие 3 слота: <11><br>Оружие 4 слота: <12><br>Оружие 5 слота: <13><br>Артефакт 1 слота: <14><br>Артефакт 2 слота: <15><br>Артефакт 3 слота: <16><br>Артефакт 4 слота: <17><br>Модификация корпуса: <18><br><br>Итоговая цена постройки: <19> cr.<br>Вы можете изменить некоторые параметры будущей станции."    
+      "String":  "Мы можем начать строительство станции с такими параметрами:<br>Корпус: <0> (прочность: <1> )<br>Топливный бак: <2><br>Двигатель: <3><br>Радар: <4><br>Сканер: <5><br>Дроид: <6><br>Захват: <7><br>Генератор защиты: <8><br>Оружие 1 слота: <9><br>Оружие 2 слота: <10><br>Оружие 3 слота: <11><br>Оружие 4 слота: <12><br>Оружие 5 слота: <13><br>Артфакт 1 слота: <14><br>Артфакт 2 слота: <15><br>Артфакт 3 слота: <16><br>Артфакт 4 слота: <17><br>Модификация корпуса: <18><br><br>Итоговая цена постройки: <19> cr.<br>Вы можете изменить некоторые параметры будущей станции."    
     }  
   ]
 }

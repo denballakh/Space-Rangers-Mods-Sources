@@ -6,24 +6,6 @@
   "ScriptName":  "Mod_GTLRewards",
   "ScriptFileOut":  "C:\\Mod_GTLRewards.scr",
   "ScriptTextOut":  "C:\\Mod_GTLRewards.txt",
-  "GraphPoint.Count":  73,
-  "GraphLink.Count":  63,
-  "GraphRectText.Count":  3,
-  "Variables.Count":  18,
-  "Stars.Count":  1,
-  "Planets.Count":  1,
-  "Ships.Count":  1,
-  "States.Count":  1,
-  "Groups.Count":  1,
-  "Places.Count":  0,
-  "Items.Count":  0,
-  "Ethers.Count":  0,
-  "Dialogs.Count":  1,
-  "DialogMessages.Count":  4,
-  "DialogAnswers.Count":  14,
-  "Operations.Count":  15,
-  "Statements.Count":  16,
-  "Loops.Count":  0,
   "Visual.Objects":  
   [
     {
@@ -265,7 +247,6 @@
           "Pos.y":  130,
           "Parent":  -1,
           "#":  0,
-          "Total.Lines":  1,
           "Code.Type":  "Global",
           "Code":          
           [
@@ -279,7 +260,6 @@
           "Pos.y":  230,
           "Parent":  -1,
           "#":  8,
-          "Total.Lines":  15,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -307,7 +287,6 @@
           "Pos.y":  130,
           "Parent":  -1,
           "#":  14,
-          "Total.Lines":  47,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -329,16 +308,16 @@
               "",
               "reward_item=CreateEquipment(reward_item_type,size,GalaxyTechLevel(),GetOwner(GetShipRuins(Player())));",
               "",
-              "if(rank==\"Кадет\"){AddItemToShip(Player(),CreateMM(FindBonusByName('Торпедон'))); level=\"I\"; module_name=BonusName(FindBonusByName('Торпедон'));}",
-              "else if(rank==\"Пилот\"){AddItemToShip(Player(),CreateMM(FindBonusByName('Технобот'))); level=\"II\"; module_name=BonusName(FindBonusByName('Технобот'));}",
-              "else if(rank==\"Капитан\"){AddItemToShip(Player(),CreateMM(FindBonusByName('Сокрушитель'))); level=\"III\"; module_name=BonusName(FindBonusByName('Сокрушитель'));}",
-              "else if(rank==\"Истребитель\"){AddItemToShip(Player(),CreateMM(FindBonusByName('Концентратор'))); level=\"IV\"; module_name=BonusName(FindBonusByName('Концентратор'));}",
-              "else if(rank==\"Ас\"){AddItemToShip(Player(),CreateMM(FindBonusByName('Велокейд'))); level=\"V\"; module_name=BonusName(FindBonusByName('Велокейд'));}",
-              "else if(rank==\"Командор\"){AddItemToShip(Player(),CreateMM(FindBonusByName('Эгида'))); level=\"VI\"; module_name=BonusName(FindBonusByName('Эгида'));}",
+              "if(rank==\"Кадет\"){AddItemToShip(Player(),CreateMM(FindBonusByNameInCfg('GTLRewards_Torpedon'))); level=\"I\"; module_name=BonusName(FindBonusByNameInCfg('GTLRewards_Torpedon'));}",
+              "else if(rank==\"Пилот\"){AddItemToShip(Player(),CreateMM(FindBonusByNameInCfg('GTLRewards_Technobot'))); level=\"II\"; module_name=BonusName(FindBonusByNameInCfg('GTLRewards_Technobot'));}",
+              "else if(rank==\"Капитан\"){AddItemToShip(Player(),CreateMM(FindBonusByNameInCfg('GTLRewards_Сrusher'))); level=\"III\"; module_name=BonusName(FindBonusByNameInCfg('GTLRewards_Сrusher'));}",
+              "else if(rank==\"Истребитель\"){AddItemToShip(Player(),CreateMM(FindBonusByNameInCfg('GTLRewards_Concentrator'))); level=\"IV\"; module_name=BonusName(FindBonusByNameInCfg('GTLRewards_Concentrator'));}",
+              "else if(rank==\"Ас\"){AddItemToShip(Player(),CreateMM(FindBonusByNameInCfg('GTLRewards_Velocade'))); level=\"V\"; module_name=BonusName(FindBonusByNameInCfg('GTLRewards_Velocade'));}",
+              "else if(rank==\"Командор\"){AddItemToShip(Player(),CreateMM(FindBonusByNameInCfg('GTLRewards_Aegis'))); level=\"VI\"; module_name=BonusName(FindBonusByNameInCfg('GTLRewards_Aegis'));}",
               "else if(rank==\"Адмирал\"){",
-              "    AddItemToShip(Player(),CreateMM(FindBonusByName('Патч 0.999 Омега')));",
+              "    AddItemToShip(Player(),CreateMM(FindBonusByNameInCfg('GTLRewards_Omega')));",
               "    level=\"VII\";",
-              "    module_name=BonusName(FindBonusByName('Патч 0.999 Омега'));",
+              "    module_name=BonusName(FindBonusByNameInCfg('GTLRewards_Omega'));",
               "    if (station==\"Центрах Рейнджеров\") {RangerBaseNodes(Player(),RangerBaseNodes(Player())+10000); reward=\"10 тысяч единиц нодов.\";}",
               "    else if(station==\"Медицинских Центрах\") {ShipHealthFactor(Player(),18,7300); reward=\"уникальный штамм Кровяного Джогара сроком на 20 лет без побочных эффектов.\";}",
               "    else if(station==\"Технических Центрах\") {AddItemToShip(Player(),CreateQuestItem('Lockpick')); reward=\"уникальный набор улучшения корпуса корабля, названный нашими техниками Отмычка.\";}",
@@ -354,8 +333,8 @@
               "    else if(station=\"Бизнес Центрах\") {ShipMoney(Player(),ShipMoney(Player())+10000000); reward=\"10 миллионов cr. прямо здесь и сейчас.\";}",
               "    }",
               "",
-              "SpecialToEquipment(FindBonusByName('Милитариумный ' +type+' '+level),reward_item);",
-              "AddItemToShip(Player(),reward_item);",
+              "SpecialToEquipment(FindBonusByName(\"Милитариумный\" + ' ' + type + ' ' + level), reward_item);",
+              "AddItemToShip(Player(), reward_item);",
               "",
               "Sound('Sound.Buy');"          
           ]        
@@ -367,7 +346,6 @@
           "Pos.y":  340,
           "Parent":  -1,
           "#":  18,
-          "Total.Lines":  7,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -387,7 +365,6 @@
           "Pos.y":  200,
           "Parent":  -1,
           "#":  41,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -401,7 +378,6 @@
           "Pos.y":  220,
           "Parent":  -1,
           "#":  42,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -415,7 +391,6 @@
           "Pos.y":  240,
           "Parent":  -1,
           "#":  43,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -429,7 +404,6 @@
           "Pos.y":  260,
           "Parent":  -1,
           "#":  44,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -443,7 +417,6 @@
           "Pos.y":  280,
           "Parent":  -1,
           "#":  45,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -457,7 +430,6 @@
           "Pos.y":  300,
           "Parent":  -1,
           "#":  46,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -471,7 +443,6 @@
           "Pos.y":  320,
           "Parent":  -1,
           "#":  47,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -485,7 +456,6 @@
           "Pos.y":  150,
           "Parent":  -1,
           "#":  58,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -499,7 +469,6 @@
           "Pos.y":  160,
           "Parent":  -1,
           "#":  59,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -513,7 +482,6 @@
           "Pos.y":  190,
           "Parent":  -1,
           "#":  60,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -527,7 +495,6 @@
           "Pos.y":  190,
           "Parent":  -1,
           "#":  61,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -606,7 +573,6 @@
           "Pos.y":  230,
           "Parent":  -1,
           "#":  6,
-          "Total.Lines":  1,
           "Code.Type":  "DialogBegin",
           "Code":          
           [
@@ -620,7 +586,6 @@
           "Pos.y":  230,
           "Parent":  -1,
           "#":  7,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -634,7 +599,6 @@
           "Pos.y":  200,
           "Parent":  -1,
           "#":  12,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -648,7 +612,6 @@
           "Pos.y":  230,
           "Parent":  -1,
           "#":  19,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -662,7 +625,6 @@
           "Pos.y":  230,
           "Parent":  -1,
           "#":  20,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -676,7 +638,6 @@
           "Pos.y":  220,
           "Parent":  -1,
           "#":  27,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -690,7 +651,6 @@
           "Pos.y":  240,
           "Parent":  -1,
           "#":  28,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -704,7 +664,6 @@
           "Pos.y":  260,
           "Parent":  -1,
           "#":  29,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -718,7 +677,6 @@
           "Pos.y":  280,
           "Parent":  -1,
           "#":  30,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -732,7 +690,6 @@
           "Pos.y":  300,
           "Parent":  -1,
           "#":  31,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -746,7 +703,6 @@
           "Pos.y":  320,
           "Parent":  -1,
           "#":  32,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -760,7 +716,6 @@
           "Pos.y":  220,
           "Parent":  -1,
           "#":  51,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -774,7 +729,6 @@
           "Pos.y":  280,
           "Parent":  -1,
           "#":  52,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -788,7 +742,6 @@
           "Pos.y":  250,
           "Parent":  -1,
           "#":  57,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -802,7 +755,6 @@
           "Pos.y":  210,
           "Parent":  -1,
           "#":  69,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -816,7 +768,6 @@
           "Pos.y":  210,
           "Parent":  -1,
           "#":  70,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
