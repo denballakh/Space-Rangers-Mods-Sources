@@ -4,26 +4,8 @@
   "ViewPos.x":  -189,
   "ViewPos.y":  -131,
   "ScriptName":  "Mod_GTLFacilitate",
-  "ScriptFileOut":  "C:\\Mod_GTLFacilitate.scr",
-  "ScriptTextOut":  "C:\\Mod_GTLFacilitate.txt",
-  "GraphPoint.Count":  29,
-  "GraphLink.Count":  20,
-  "GraphRectText.Count":  0,
-  "Variables.Count":  5,
-  "Stars.Count":  1,
-  "Planets.Count":  1,
-  "Ships.Count":  1,
-  "States.Count":  1,
-  "Groups.Count":  1,
-  "Places.Count":  0,
-  "Items.Count":  0,
-  "Ethers.Count":  0,
-  "Dialogs.Count":  1,
-  "DialogMessages.Count":  3,
-  "DialogAnswers.Count":  4,
-  "Operations.Count":  7,
-  "Statements.Count":  4,
-  "Loops.Count":  0,
+  "ScriptFileOut":  "D:\\SRStuff\\git\\Space-Rangers-Mods-Sources\\Solyanka\\GTLFacilitate\\new\\Mod_GTLFacilitate.scr",
+  "ScriptTextOut":  "D:\\SRStuff\\git\\Space-Rangers-Mods-Sources\\Solyanka\\GTLFacilitate\\new\\Mod_GTLFacilitate.txt",
   "Visual.Objects":  
   [
     {
@@ -155,7 +137,6 @@
           "Pos.y":  170,
           "Parent":  -1,
           "#":  5,
-          "Total.Lines":  1,
           "Code.Type":  "Global",
           "Code":          
           [
@@ -169,12 +150,22 @@
           "Pos.y":  170,
           "Parent":  -1,
           "#":  8,
-          "Total.Lines":  2,
           "Code.Type":  "Turn",
           "Code":          
           [
-              "science_rank = GetValueFromScript('Mod_ExpScienceRanks','cur_science_rank');",
-              "if (science_rank>=2) AddDialogInject('Facilitate',\"Наши лучшие техники изобрели особую технологию, называемую Облегчитель. Рейнджер <Player> не желаете на них взглянуть?\",'Купить облегчители',1);"          
+              "//Тут условине нужно для определения разновидности универса.",
+              "//Поскольку в будущем датник в ланге Mod_ExpScienceRanks",
+              "// может менятся и там может затерется 388, то введено второе",
+              "//Которое будет введо в случае этиъ изменений",
+              "if ( ((CT('Script.Mod_ExpScienceRanks.388')) != '') || ((CT('Script.Mod_ExpScienceRanks.ThisIsUniverseOriginal')) != '') )",
+              "{",
+              "    science_rank = GetValueFromScript('Mod_ExpScienceRanks','cur_science_rank');",
+              "}",
+              "else //if (!(CT('Script.Mod_ExpScienceRanks.388')) || !(CT('Script.Mod_ExpScienceRanks.ThisIsUniverseOriginal')))",
+              "{",
+              "    science_rank = PlayerScienceRank['CurrentRank'];",
+              "}",
+              "if (science_rank>=2) AddDialogInject('Facilitate',\"Наши лучшие техники изобрели особую технологию, называемую Облегчитель. Рейнджер <Player> не желаете на них взглянуть?\",\"Купить облегчители\",1);"          
           ]        
         },
         {
@@ -184,7 +175,6 @@
           "Pos.y":  210,
           "Parent":  -1,
           "#":  13,
-          "Total.Lines":  2,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -199,11 +189,14 @@
           "Pos.y":  210,
           "Parent":  -1,
           "#":  20,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
-              "if(cur_count1==0) AddDialogBlock('Купить облегчитель',1);"          
+              "if(cur_count1 <= 0)",
+              "{",
+              "    AddDialogBlock('Купить облегчитель',1);",
+              "    AddDialogBlock('Buy Facilitator',1);",
+              "}"          
           ]        
         },
         {
@@ -213,7 +206,6 @@
           "Pos.y":  210,
           "Parent":  -1,
           "#":  21,
-          "Total.Lines":  9,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -235,11 +227,11 @@
           "Pos.y":  170,
           "Parent":  -1,
           "#":  22,
-          "Total.Lines":  4,
           "Code.Type":  "Turn",
           "Code":          
           [
-              "if(findsubstr(GameDateTxtByTurn(CurTurn()),'1 января')==0)",
+              "str thegtlfacilitatedate = '1 ' + CT('Month.01');",
+              "if(findsubstr(GameDateTxtByTurn(CurTurn()),thegtlfacilitatedate)==0)",
               "    {",
               "    count1=0;",
               "    }"          
@@ -252,7 +244,6 @@
           "Pos.y":  300,
           "Parent":  -1,
           "#":  26,
-          "Total.Lines":  4,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -260,6 +251,19 @@
               "ShipMoney(Player(),ShipMoney(Player())-cost1);",
               "Sound('Sound.Buy');",
               "count1=count1+1;"          
+          ]        
+        },
+        {
+          "Type":  "Top",
+          "Name":  "",
+          "Pos.x":  420,
+          "Pos.y":  270,
+          "Parent":  -1,
+          "#":  29,
+          "Code.Type":  "Turn",
+          "Code":          
+          [
+              "cur_count1=total1-count1;"          
           ]        
         }      
       ],
@@ -334,7 +338,6 @@
           "Pos.y":  170,
           "Parent":  -1,
           "#":  6,
-          "Total.Lines":  1,
           "Code.Type":  "DialogBegin",
           "Code":          
           [
@@ -348,7 +351,6 @@
           "Pos.y":  170,
           "Parent":  -1,
           "#":  7,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -362,7 +364,6 @@
           "Pos.y":  260,
           "Parent":  -1,
           "#":  24,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -376,7 +377,6 @@
           "Pos.y":  300,
           "Parent":  -1,
           "#":  25,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -603,12 +603,19 @@
     {
       "Type":  "TGraphLink",
       "Begin":  12,
+      "End":  29,
+      "Nom":  0,
+      "Arrow":  true    
+    },
+    {
+      "Type":  "TGraphLink",
+      "Begin":  29,
       "End":  10,
       "Nom":  0,
       "Arrow":  true    
     }  
   ],
-  "BlockPar.EC.Total.Strings":  8,
+  "BlockPar.EC.Total.Strings":  9,
   "BlockPar.EC":  
   [
     {
@@ -642,6 +649,10 @@
     {
       "#":  "48",
       "String":  "Купить облегчитель"    
+    },
+    {
+      "#":  "49",
+      "String":  "Купить облегчители"    
     }  
   ]
 }
