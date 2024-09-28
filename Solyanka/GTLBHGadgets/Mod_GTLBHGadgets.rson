@@ -4,26 +4,8 @@
   "ViewPos.x":  -163,
   "ViewPos.y":  -198,
   "ScriptName":  "Mod_GTLBHGadgets",
-  "ScriptFileOut":  "H:\\Mod_GTLBHGadgets.scr",
-  "ScriptTextOut":  "H:\\Mod_GTLBHGadgets.txt",
-  "GraphPoint.Count":  92,
-  "GraphLink.Count":  51,
-  "GraphRectText.Count":  0,
-  "Variables.Count":  31,
-  "Stars.Count":  1,
-  "Planets.Count":  1,
-  "Ships.Count":  1,
-  "States.Count":  1,
-  "Groups.Count":  1,
-  "Places.Count":  0,
-  "Items.Count":  0,
-  "Ethers.Count":  0,
-  "Dialogs.Count":  1,
-  "DialogMessages.Count":  3,
-  "DialogAnswers.Count":  7,
-  "Operations.Count":  23,
-  "Statements.Count":  22,
-  "Loops.Count":  0,
+  "ScriptFileOut":  "D:\\SRStuff\\git\\Space-Rangers-Mods-Sources\\Solyanka\\GTLBHGadgets\\new\\Mod_GTLBHGadgets.scr",
+  "ScriptTextOut":  "D:\\SRStuff\\git\\Space-Rangers-Mods-Sources\\Solyanka\\GTLBHGadgets\\new\\Mod_GTLBHGadgets.txt",
   "Visual.Objects":  
   [
     {
@@ -185,7 +167,6 @@
           "Pos.y":  160,
           "Parent":  -1,
           "#":  5,
-          "Total.Lines":  1,
           "Code.Type":  "Global",
           "Code":          
           [
@@ -199,12 +180,22 @@
           "Pos.y":  170,
           "Parent":  -1,
           "#":  8,
-          "Total.Lines":  2,
           "Code.Type":  "Turn",
           "Code":          
           [
-              "science_rank = GetValueFromScript('Mod_ExpScienceRanks','cur_science_rank');",
-              "if (science_rank>2) AddDialogInject('BHGadgets',\"Наши специалисты из области исследования Чёрных Дыр разработали специальные устройства для усиления боевого потенциала кораблей.\",'Отдел разработки бустеров',1);"          
+              "//Тут условине нужно для определения разновидности универса.",
+              "//Поскольку в будущем датник в ланге Mod_ExpScienceRanks",
+              "// может менятся и там может затерется 388, то введено второе",
+              "//Которое будет введо в случае этиъ изменений",
+              "if ( ((CT('Script.Mod_ExpScienceRanks.388')) != '') || ((CT('Script.Mod_ExpScienceRanks.ThisIsUniverseOriginal')) != '') )",
+              "{",
+              "    science_rank = GetValueFromScript('Mod_ExpScienceRanks','cur_science_rank');",
+              "}",
+              "else ",
+              "{",
+              "    science_rank = PlayerScienceRank['CurrentRank'];",
+              "}",
+              "if (science_rank>2) AddDialogInject('BHGadgets',\"Наши специалисты из области исследования Чёрных Дыр разработали специальные устройства для усиления боевого потенциала кораблей.\",\"Отдел разработки бустеров\",1);"          
           ]        
         },
         {
@@ -214,7 +205,6 @@
           "Pos.y":  210,
           "Parent":  -1,
           "#":  13,
-          "Total.Lines":  13,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -240,14 +230,13 @@
           "Pos.y":  210,
           "Parent":  -1,
           "#":  20,
-          "Total.Lines":  4,
           "Code.Type":  "Turn",
           "Code":          
           [
-              "if(cur_count1==0)AddDialogBlock('Купить Бустер S',1);",
-              "if(cur_count2==0)AddDialogBlock('Купить Бустер F',1);",
-              "if(cur_count3==0)AddDialogBlock('Купить Бустер D',1);",
-              "if(cur_count4==0)AddDialogBlock('Купить Бустер R',1);"          
+              "if(cur_count1==0)AddDialogBlock(\"Купить Бустер S\",1);",
+              "if(cur_count2==0)AddDialogBlock(\"Купить Бустер F\",1);",
+              "if(cur_count3==0)AddDialogBlock(\"Купить Бустер D\",1);",
+              "if(cur_count4==0)AddDialogBlock(\"Купить Бустер R\",1);"          
           ]        
         },
         {
@@ -257,7 +246,6 @@
           "Pos.y":  210,
           "Parent":  -1,
           "#":  21,
-          "Total.Lines":  9,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -279,11 +267,10 @@
           "Pos.y":  160,
           "Parent":  -1,
           "#":  22,
-          "Total.Lines":  6,
           "Code.Type":  "Turn",
           "Code":          
           [
-              "if(findsubstr(GameDateTxtByTurn(CurTurn()),'1 января')==0)",
+              "if(findsubstr(GameDateTxtByTurn(CurTurn()),'1 ' + CT('Month.01'))==0)",
               "{",
               "    count1=0;",
               "    count2=0;",
@@ -298,7 +285,6 @@
           "Pos.y":  340,
           "Parent":  -1,
           "#":  26,
-          "Total.Lines":  29,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -340,7 +326,6 @@
           "Pos.y":  210,
           "Parent":  -1,
           "#":  40,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -354,7 +339,6 @@
           "Pos.y":  180,
           "Parent":  -1,
           "#":  41,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -368,7 +352,6 @@
           "Pos.y":  240,
           "Parent":  -1,
           "#":  42,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -382,7 +365,6 @@
           "Pos.y":  210,
           "Parent":  -1,
           "#":  55,
-          "Total.Lines":  2,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -397,7 +379,6 @@
           "Pos.y":  210,
           "Parent":  -1,
           "#":  56,
-          "Total.Lines":  2,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -412,7 +393,6 @@
           "Pos.y":  210,
           "Parent":  -1,
           "#":  57,
-          "Total.Lines":  2,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -427,7 +407,6 @@
           "Pos.y":  270,
           "Parent":  -1,
           "#":  58,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -441,7 +420,6 @@
           "Pos.y":  270,
           "Parent":  -1,
           "#":  59,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -455,7 +433,6 @@
           "Pos.y":  270,
           "Parent":  -1,
           "#":  60,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -469,13 +446,12 @@
           "Pos.y":  330,
           "Parent":  -1,
           "#":  62,
-          "Total.Lines":  3,
           "Code.Type":  "Turn",
           "Code":          
           [
               "SA=0;",
               "ShipDeleteCustomShipInfo(Player(),'BoosterS');",
-              "Ether(0,'',\"Срод службы Бустера S подошёл к концу.\");"          
+              "Ether(0,'',\"Срок службы Бустера S подошёл к концу.\");"          
           ]        
         },
         {
@@ -485,13 +461,12 @@
           "Pos.y":  330,
           "Parent":  -1,
           "#":  64,
-          "Total.Lines":  3,
           "Code.Type":  "Turn",
           "Code":          
           [
               "FA=0;",
               "ShipDeleteCustomShipInfo(Player(),'BoosterF');",
-              "Ether(0,'',\"Срод службы Бустера F подошёл к концу.\");"          
+              "Ether(0,'',\"Срок службы Бустера F подошёл к концу.\");"          
           ]        
         },
         {
@@ -501,13 +476,12 @@
           "Pos.y":  330,
           "Parent":  -1,
           "#":  66,
-          "Total.Lines":  3,
           "Code.Type":  "Turn",
           "Code":          
           [
               "DA=0;",
               "ShipDeleteCustomShipInfo(Player(),'BoosterD');",
-              "Ether(0,'',\"Срод службы Бустера D подошёл к концу.\");"          
+              "Ether(0,'',\"Срок службы Бустера D подошёл к концу.\");"          
           ]        
         },
         {
@@ -517,7 +491,6 @@
           "Pos.y":  210,
           "Parent":  -1,
           "#":  74,
-          "Total.Lines":  2,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -532,7 +505,6 @@
           "Pos.y":  270,
           "Parent":  -1,
           "#":  76,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -546,13 +518,12 @@
           "Pos.y":  330,
           "Parent":  -1,
           "#":  78,
-          "Total.Lines":  3,
           "Code.Type":  "Turn",
           "Code":          
           [
               "RA=0;",
               "ShipDeleteCustomShipInfo(Player(),'BoosterR');",
-              "Ether(0,'',\"Срод службы Бустера R подошёл к концу.\");"          
+              "Ether(0,'',\"Срок службы Бустера R подошёл к концу.\");"          
           ]        
         },
         {
@@ -562,7 +533,6 @@
           "Pos.y":  270,
           "Parent":  -1,
           "#":  87,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -641,7 +611,6 @@
           "Pos.y":  170,
           "Parent":  -1,
           "#":  6,
-          "Total.Lines":  1,
           "Code.Type":  "DialogBegin",
           "Code":          
           [
@@ -655,7 +624,6 @@
           "Pos.y":  170,
           "Parent":  -1,
           "#":  7,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -669,7 +637,6 @@
           "Pos.y":  120,
           "Parent":  -1,
           "#":  24,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -683,7 +650,6 @@
           "Pos.y":  210,
           "Parent":  -1,
           "#":  25,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -697,7 +663,6 @@
           "Pos.y":  180,
           "Parent":  -1,
           "#":  49,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -711,7 +676,6 @@
           "Pos.y":  180,
           "Parent":  -1,
           "#":  50,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -725,7 +689,6 @@
           "Pos.y":  180,
           "Parent":  -1,
           "#":  51,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -739,7 +702,6 @@
           "Pos.y":  240,
           "Parent":  -1,
           "#":  52,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -753,7 +715,6 @@
           "Pos.y":  240,
           "Parent":  -1,
           "#":  53,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -767,7 +728,6 @@
           "Pos.y":  240,
           "Parent":  -1,
           "#":  54,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -781,7 +741,6 @@
           "Pos.y":  300,
           "Parent":  -1,
           "#":  61,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -795,7 +754,6 @@
           "Pos.y":  300,
           "Parent":  -1,
           "#":  63,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -809,7 +767,6 @@
           "Pos.y":  300,
           "Parent":  -1,
           "#":  65,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -823,7 +780,6 @@
           "Pos.y":  180,
           "Parent":  -1,
           "#":  70,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -837,7 +793,6 @@
           "Pos.y":  240,
           "Parent":  -1,
           "#":  71,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -851,7 +806,6 @@
           "Pos.y":  180,
           "Parent":  -1,
           "#":  73,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -865,7 +819,6 @@
           "Pos.y":  240,
           "Parent":  -1,
           "#":  75,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -879,7 +832,6 @@
           "Pos.y":  300,
           "Parent":  -1,
           "#":  77,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -893,7 +845,6 @@
           "Pos.y":  270,
           "Parent":  -1,
           "#":  88,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -907,7 +858,6 @@
           "Pos.y":  140,
           "Parent":  -1,
           "#":  89,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -921,7 +871,6 @@
           "Pos.y":  150,
           "Parent":  -1,
           "#":  90,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -935,7 +884,6 @@
           "Pos.y":  160,
           "Parent":  -1,
           "#":  91,
-          "Total.Lines":  1,
           "Code.Type":  "Turn",
           "Code":          
           [
@@ -1670,7 +1618,7 @@
       "Arrow":  true    
     }  
   ],
-  "BlockPar.EC.Total.Strings":  15,
+  "BlockPar.EC.Total.Strings":  16,
   "BlockPar.EC":  
   [
     {
@@ -1710,28 +1658,32 @@
       "String":  "Купить Бустер D"    
     },
     {
-      "#":  "54",
-      "String":  "Срод службы Бустера D подошёл к концу."    
-    },
-    {
-      "#":  "55",
-      "String":  "Срод службы Бустера F подошёл к концу."    
-    },
-    {
-      "#":  "56",
-      "String":  "Срод службы Бустера S подошёл к концу."    
-    },
-    {
-      "#":  "58",
-      "String":  "Срод службы Бустера R подошёл к концу."    
-    },
-    {
       "#":  "59",
       "String":  "Особая ветвь сети научных станций, занимающаяся исследованием чёрных дыр, совершила ряд научных открытий, позволивших им создать специальные устройства, способные ненадолго повысить потенциал кораблей в условиях нахождения в гиперпространстве (и в чёрных дырах).<br>К сожалению, эти устройства требуют очень редкие компоненты для изготовления, в связи с чем пришлось установить определённые лимиты согласно коэффиценту полезности исследователей (иначе говоря, согласно их текущему научному званию).<br>Мы предлагаем вам приобрести следующие бустеры:<br><clr>Бустер S<clrEnd> - Значительно увеличивает скорость и манёвренность при сражениях в чёрных дырах и гиперпространстве.<br><clr>Бустер F<clrEnd> - Значительно снижает входящий урон при сражениях в чёрных дырах и гиперпространстве.<br><clr>Бустер D<clrEnd> - Значительно увеличивает урон орудий при сражениях в чёрных дырах и гиперпространстве.<br><clr>Бустер R<clrEnd> - Значительно увеличивает скорость перезарядки орудий при сражениях в чёрных дырах и гиперпространстве.<br>--------------------------------------------------------<br>\"Бустер S\" для Вас доступен в количестве: <0> ед. по цене: <1> cr. и <2> нодов. <br><br>\"Бустер F\" для Вас доступен в количестве: <3> ед. по цене: <4> cr. и <5> нодов. <br><br>\"Бустер D\" для Вас доступен в количестве: <6> ед. по цене: <7> cr. и <8> нодов. <br><br>\"Бустер R\" для Вас доступен в количестве: <9> ед. по цене: <10> cr. и <11> нодов. <br>--------------------------------------------------------<br>Ваше состояние нод-счёта на текущий момент: <12> ед.<br>Каждый год с 1 января мы возобновляем продажу бустеров."    
     },
     {
       "#":  "60",
       "String":  "Купить Бустер R"    
+    },
+    {
+      "#":  "61",
+      "String":  "Отдел разработки бустеров"    
+    },
+    {
+      "#":  "62",
+      "String":  "Срок службы Бустера R подошёл к концу."    
+    },
+    {
+      "#":  "63",
+      "String":  "Срок службы Бустера D подошёл к концу."    
+    },
+    {
+      "#":  "64",
+      "String":  "Срок службы Бустера F подошёл к концу."    
+    },
+    {
+      "#":  "65",
+      "String":  "Срок службы Бустера S подошёл к концу."    
     }  
   ]
 }
